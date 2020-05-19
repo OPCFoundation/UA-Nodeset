@@ -36,8 +36,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   TargetNamespace="http://opcfoundation.org/UA/DI/"
   TargetXmlNamespace="http://opcfoundation.org/UA/DI/"
-  TargetVersion="1.02"
-  TargetPublicationDate="2019-05-01T00:00:00Z"
+  TargetVersion="1.02.1"
+  TargetPublicationDate="2020-04-21T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
@@ -55,12 +55,12 @@
       </Property>
       <Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
         <DefaultValue>
-          <uax:String>1.02</uax:String>
+          <uax:String>1.02.1</uax:String>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
         <DefaultValue>
-          <uax:DateTime>2019-05-01</uax:DateTime>
+          <uax:DateTime>2020-04-21</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
@@ -75,13 +75,7 @@
           </uax:ListOfInt32>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array">
-        <DefaultValue>
-          <uax:ListOfString>
-            <uax:String>1:65535</uax:String>
-          </uax:ListOfString>
-        </DefaultValue>
-      </Property>
+      <Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array"/>
       <Property SymbolicName="OpcUa:StaticStringNodeIdPattern" DataType="OpcUa:String">
         <DefaultValue>
           <uax:String></uax:String>
@@ -590,9 +584,12 @@
   <ObjectType SymbolicName="DI:LockingServicesType" BaseType="OpcUa:BaseObjectType" IsAbstract="false">
     <Description>An interface for Locking.</Description>
     <Children>
-      <Property SymbolicName="OpcUa:DefaultInstanceBrowseName" DataType="OpcUa:String" ModellingRule="None">
+      <Property SymbolicName="OpcUa:DefaultInstanceBrowseName" DataType="OpcUa:QualifiedName" ModellingRule="None">
         <DefaultValue>
-          <uax:String>Lock</uax:String>
+          <uax:QualifiedName>
+            <uax:NamespaceIndex>1</uax:NamespaceIndex>
+            <uax:Name>Lock</uax:Name>
+          </uax:QualifiedName>
         </DefaultValue>
       </Property>
       <Property SymbolicName="DI:Locked" DataType="OpcUa:Boolean" />

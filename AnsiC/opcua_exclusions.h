@@ -140,6 +140,7 @@
 /* #define OPCUA_EXCLUDE_BrokerWriterGroupTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerDataSetWriterTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerDataSetReaderTransportDataType */
+/* #define OPCUA_EXCLUDE_AliasNameDataType */
 /* #define OPCUA_EXCLUDE_RolePermissionType */
 /* #define OPCUA_EXCLUDE_DataTypeDefinition */
 /* #define OPCUA_EXCLUDE_StructureField */

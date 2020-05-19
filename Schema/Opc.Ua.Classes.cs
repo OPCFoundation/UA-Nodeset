@@ -63004,11 +63004,6 @@ namespace Opc.Ua
                 ServiceStatus.Initialize(context, ServiceStatus_InitializationString);
             }
 
-            if (GetEncryptingKey != null)
-            {
-                GetEncryptingKey.Initialize(context, GetEncryptingKey_InitializationString);
-            }
-
             if (UpdateCredential != null)
             {
                 UpdateCredential.Initialize(context, UpdateCredential_InitializationString);
@@ -63149,25 +63144,6 @@ namespace Opc.Ua
         }
 
         /// <remarks />
-        public GetEncryptingKeyMethodState GetEncryptingKey
-        {
-            get
-            {
-                return m_getEncryptingKeyMethod;
-            }
-
-            set
-            {
-                if (!Object.ReferenceEquals(m_getEncryptingKeyMethod, value))
-                {
-                    ChangeMasks |= NodeStateChangeMasks.Children;
-                }
-
-                m_getEncryptingKeyMethod = value;
-            }
-        }
-
-        /// <remarks />
         public KeyCredentialUpdateMethodState UpdateCredential
         {
             get
@@ -63234,11 +63210,6 @@ namespace Opc.Ua
             if (m_serviceStatus != null)
             {
                 children.Add(m_serviceStatus);
-            }
-
-            if (m_getEncryptingKeyMethod != null)
-            {
-                children.Add(m_getEncryptingKeyMethod);
             }
 
             if (m_updateCredentialMethod != null)
@@ -63356,27 +63327,6 @@ namespace Opc.Ua
                     break;
                 }
 
-                case Opc.Ua.BrowseNames.GetEncryptingKey:
-                {
-                    if (createOrReplace)
-                    {
-                        if (GetEncryptingKey == null)
-                        {
-                            if (replacement == null)
-                            {
-                                GetEncryptingKey = new GetEncryptingKeyMethodState(this);
-                            }
-                            else
-                            {
-                                GetEncryptingKey = (GetEncryptingKeyMethodState)replacement;
-                            }
-                        }
-                    }
-
-                    instance = GetEncryptingKey;
-                    break;
-                }
-
                 case Opc.Ua.BrowseNames.UpdateCredential:
                 {
                     if (createOrReplace)
@@ -63434,7 +63384,6 @@ namespace Opc.Ua
         private PropertyState<string> m_profileUri;
         private PropertyState<string[]> m_endpointUrls;
         private PropertyState<StatusCode> m_serviceStatus;
-        private GetEncryptingKeyMethodState m_getEncryptingKeyMethod;
         private KeyCredentialUpdateMethodState m_updateCredentialMethod;
         private MethodState m_deleteCredentialMethod;
         #endregion
@@ -82635,6 +82584,362 @@ namespace Opc.Ua
         private BaseDataVariableState<string> m_url;
         #endregion
     }
+    #endif
+    #endregion
+
+    #region AliasNameState Class
+    #if (!OPCUA_EXCLUDE_AliasNameState)
+    /// <summary>
+    /// Stores an instance of the AliasNameType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class AliasNameState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public AliasNameState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.AliasNameType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIACAQAAAAAAFQAAAEFsaWFzTmFtZVR5cGVJbnN0YW5jZQEAn1sBAJ9bn1sAAP////8A" +
+           "AAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region AliasNameCategoryState Class
+    #if (!OPCUA_EXCLUDE_AliasNameCategoryState)
+    /// <summary>
+    /// Stores an instance of the AliasNameCategoryType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class AliasNameCategoryState : FolderState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public AliasNameCategoryState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.AliasNameCategoryType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIACAQAAAAAAHQAAAEFsaWFzTmFtZUNhdGVnb3J5VHlwZUluc3RhbmNlAQCgWwEAoFug" +
+           "WwAA/////wEAAAAEYYIKBAAAAAAACQAAAEZpbmRBbGlhcwEAplsALwEAplumWwAAAQH/////AgAAABdg" +
+           "qQoCAAAAAAAOAAAASW5wdXRBcmd1bWVudHMBAKdbAC4ARKdbAACWAgAAAAEAKgEBJQAAABYAAABBbGlh" +
+           "c05hbWVTZWFyY2hQYXR0ZXJuAAz/////AAAAAAABACoBASIAAAATAAAAUmVmZXJlbmNlVHlwZUZpbHRl" +
+           "cgAR/////wAAAAAAAQAoAQEAAAABAAAAAAAAAAEB/////wAAAAAXYKkKAgAAAAAADwAAAE91dHB1dEFy" +
+           "Z3VtZW50cwEAqFsALgBEqFsAAJYBAAAAAQAqAQEiAAAADQAAAEFsaWFzTm9kZUxpc3QBAKxbAQAAAAEA" +
+           "AAAAAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAA";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        public FindAliasMethodState FindAlias
+        {
+            get
+            {
+                return m_findAliasMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_findAliasMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_findAliasMethod = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_findAliasMethod != null)
+            {
+                children.Add(m_findAliasMethod);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.FindAlias:
+                {
+                    if (createOrReplace)
+                    {
+                        if (FindAlias == null)
+                        {
+                            if (replacement == null)
+                            {
+                                FindAlias = new FindAliasMethodState(this);
+                            }
+                            else
+                            {
+                                FindAlias = (FindAliasMethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = FindAlias;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private FindAliasMethodState m_findAliasMethod;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region FindAliasMethodState Class
+    #if (!OPCUA_EXCLUDE_FindAliasMethodState)
+    /// <summary>
+    /// Stores an instance of the FindAliasMethodType Method.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class FindAliasMethodState : MethodState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public FindAliasMethodState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Constructs an instance of a node.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns>The new node.</returns>
+        public new static NodeState Construct(NodeState parent)
+        {
+            return new FindAliasMethodState(parent);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYYIKBAAAAAAAEwAAAEZpbmRBbGlhc01ldGhvZFR5cGUBAKlbAC8BAKlbqVsAAAEB////" +
+           "/wIAAAAXYKkKAgAAAAAADgAAAElucHV0QXJndW1lbnRzAQCqWwAuAESqWwAAlgIAAAABACoBASUAAAAW" +
+           "AAAAQWxpYXNOYW1lU2VhcmNoUGF0dGVybgAM/////wAAAAAAAQAqAQEiAAAAEwAAAFJlZmVyZW5jZVR5" +
+           "cGVGaWx0ZXIAEf////8AAAAAAAEAKAEBAAAAAQAAAAAAAAABAf////8AAAAAF2CpCgIAAAAAAA8AAABP" +
+           "dXRwdXRBcmd1bWVudHMBAKtbAC4ARKtbAACWAQAAAAEAKgEBIgAAAA0AAABBbGlhc05vZGVMaXN0AQCs" +
+           "WwEAAAABAAAAAAAAAAABACgBAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
+        #endregion
+        #endif
+        #endregion
+
+        #region Event Callbacks
+        /// <summary>
+        /// Raised when the the method is called.
+        /// </summary>
+        public FindAliasMethodStateMethodCallHandler OnCall;
+        #endregion
+
+        #region Public Properties
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Invokes the method, returns the result and output argument.
+        /// </summary>
+        protected override ServiceResult Call(
+            ISystemContext _context,
+            NodeId _objectId,
+            IList<object> _inputArguments,
+            IList<object> _outputArguments)
+        {
+            if (OnCall == null)
+            {
+                return base.Call(_context, _objectId, _inputArguments, _outputArguments);
+            }
+
+            ServiceResult result = null;
+
+            string aliasNameSearchPattern = (string)_inputArguments[0];
+            NodeId referenceTypeFilter = (NodeId)_inputArguments[1];
+
+            AliasNameDataType[] aliasNodeList = (AliasNameDataType[])_outputArguments[0];
+
+            if (OnCall != null)
+            {
+                result = OnCall(
+                    _context,
+                    this,
+                    _objectId,
+                    aliasNameSearchPattern,
+                    referenceTypeFilter,
+                    ref aliasNodeList);
+            }
+
+            _outputArguments[0] = aliasNodeList;
+
+            return result;
+        }
+        #endregion
+
+        #region Private Fields
+        #endregion
+    }
+
+    /// <summary>
+    /// Used to receive notifications when the method is called.
+    /// </summary>
+    /// <exclude />
+    public delegate ServiceResult FindAliasMethodStateMethodCallHandler(
+        ISystemContext context,
+        MethodState method,
+        NodeId objectId,
+        string aliasNameSearchPattern,
+        NodeId referenceTypeFilter,
+        ref AliasNameDataType[] aliasNodeList);
     #endif
     #endregion
 

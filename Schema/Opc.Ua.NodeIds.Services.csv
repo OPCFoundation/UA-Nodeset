@@ -96,6 +96,14 @@ AlarmGroupMember,16362,ReferenceType
 AlarmGroupType,16405,ObjectType
 AlarmMetricsType,17279,ObjectType
 AlarmRateVariableType,17277,VariableType
+Aliases,23470,Object
+AliasFor,23469,ReferenceType
+AliasNameCategoryType,23456,ObjectType
+AliasNameDataType,23468,DataType
+AliasNameDataType_Encoding_DefaultBinary,23499,Object
+AliasNameDataType_Encoding_DefaultJson,23511,Object
+AliasNameDataType_Encoding_DefaultXml,23505,Object
+AliasNameType,23455,ObjectType
 AllowNulls,3070,Variable
 AlwaysGeneratesEvent,3065,ReferenceType
 AnalogItemType,2368,VariableType
@@ -1455,6 +1463,7 @@ SystemDiagnosticAlarmType,18496,ObjectType
 SystemEventType,2130,ObjectType
 SystemOffNormalAlarmType,11753,ObjectType
 SystemStatusChangeEventType,11446,ObjectType
+TagVariables,23479,Object
 TargetVariablesDataType,15631,DataType
 TargetVariablesDataType_Encoding_DefaultBinary,15712,Object
 TargetVariablesDataType_Encoding_DefaultJson,16310,Object
@@ -1489,6 +1498,7 @@ TimeZoneDataType,8912,DataType
 TimeZoneDataType_Encoding_DefaultBinary,8917,Object
 TimeZoneDataType_Encoding_DefaultJson,15086,Object
 TimeZoneDataType_Encoding_DefaultXml,8913,Object
+Topics,23488,Object
 ToState,52,ReferenceType
 TrainingConditionClassType,17220,ObjectType
 TransferResult,836,DataType

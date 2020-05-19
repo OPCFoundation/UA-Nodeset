@@ -150,6 +150,7 @@
 #define OpcUaId_BrokerDataSetReaderTransportDataType 15670
 #define OpcUaId_DiagnosticsLevel 19723
 #define OpcUaId_PubSubDiagnosticsCounterClassification 19730
+#define OpcUaId_AliasNameDataType 23468
 #define OpcUaId_IdType 256
 #define OpcUaId_NodeClass 257
 #define OpcUaId_PermissionType 94
@@ -978,6 +979,14 @@
 #define OpcUaId_PubSubStatusType_Enable 14645
 #define OpcUaId_PubSubStatusType_Disable 14646
 #define OpcUaId_PubSubDiagnosticsType_Reset 19689
+#define OpcUaId_AliasNameCategoryType_SubAliasNameCategories_Placeholder_FindAlias 23459
+#define OpcUaId_AliasNameCategoryType_FindAlias 23462
+#define OpcUaId_Aliases_SubAliasNameCategories_Placeholder_FindAlias 23473
+#define OpcUaId_Aliases_FindAlias 23476
+#define OpcUaId_TagVariables_SubAliasNameCategories_Placeholder_FindAlias 23482
+#define OpcUaId_TagVariables_FindAlias 23485
+#define OpcUaId_Topics_SubAliasNameCategories_Placeholder_FindAlias 23491
+#define OpcUaId_Topics_FindAlias 23494
 
 /*============================================================================
 * Object Identifiers
@@ -1264,6 +1273,11 @@
 #define OpcUaId_PubSubDiagnosticsDataSetReaderType_Counters 20041
 #define OpcUaId_PubSubDiagnosticsDataSetReaderType_LiveValues 20072
 #define OpcUaId_DatagramConnectionTransportType_DiscoveryAddress 15072
+#define OpcUaId_AliasNameCategoryType_Alias_Placeholder 23457
+#define OpcUaId_AliasNameCategoryType_SubAliasNameCategories_Placeholder 23458
+#define OpcUaId_Aliases 23470
+#define OpcUaId_TagVariables 23479
+#define OpcUaId_Topics 23488
 #define OpcUaId_KeyValuePair_Encoding_DefaultBinary 14846
 #define OpcUaId_EndpointType_Encoding_DefaultBinary 15671
 #define OpcUaId_RationalNumber_Encoding_DefaultBinary 18815
@@ -1327,6 +1341,7 @@
 #define OpcUaId_BrokerWriterGroupTransportDataType_Encoding_DefaultBinary 15727
 #define OpcUaId_BrokerDataSetWriterTransportDataType_Encoding_DefaultBinary 15729
 #define OpcUaId_BrokerDataSetReaderTransportDataType_Encoding_DefaultBinary 15733
+#define OpcUaId_AliasNameDataType_Encoding_DefaultBinary 23499
 #define OpcUaId_RolePermissionType_Encoding_DefaultBinary 128
 #define OpcUaId_DataTypeDefinition_Encoding_DefaultBinary 121
 #define OpcUaId_StructureField_Encoding_DefaultBinary 14844
@@ -1621,6 +1636,7 @@
 #define OpcUaId_BrokerWriterGroupTransportDataType_Encoding_DefaultXml 16021
 #define OpcUaId_BrokerDataSetWriterTransportDataType_Encoding_DefaultXml 16022
 #define OpcUaId_BrokerDataSetReaderTransportDataType_Encoding_DefaultXml 16023
+#define OpcUaId_AliasNameDataType_Encoding_DefaultXml 23505
 #define OpcUaId_RolePermissionType_Encoding_DefaultXml 16126
 #define OpcUaId_DataTypeDefinition_Encoding_DefaultXml 14797
 #define OpcUaId_StructureField_Encoding_DefaultXml 14800
@@ -1915,6 +1931,7 @@
 #define OpcUaId_BrokerWriterGroupTransportDataType_Encoding_DefaultJson 16524
 #define OpcUaId_BrokerDataSetWriterTransportDataType_Encoding_DefaultJson 16525
 #define OpcUaId_BrokerDataSetReaderTransportDataType_Encoding_DefaultJson 16526
+#define OpcUaId_AliasNameDataType_Encoding_DefaultJson 23511
 #define OpcUaId_RolePermissionType_Encoding_DefaultJson 15062
 #define OpcUaId_DataTypeDefinition_Encoding_DefaultJson 15063
 #define OpcUaId_StructureField_Encoding_DefaultJson 15065
@@ -2357,6 +2374,8 @@
 #define OpcUaId_BrokerDataSetReaderTransportType 21142
 #define OpcUaId_NetworkAddressType 21145
 #define OpcUaId_NetworkAddressUrlType 21147
+#define OpcUaId_AliasNameType 23455
+#define OpcUaId_AliasNameCategoryType 23456
 
 /*============================================================================
 * ReferenceType Identifiers
@@ -2406,6 +2425,7 @@
 #define OpcUaId_HasWriterGroup 18804
 #define OpcUaId_HasDataSetReader 15297
 #define OpcUaId_HasReaderGroup 18805
+#define OpcUaId_AliasFor 23469
 
 /*============================================================================
 * Variable Identifiers
@@ -6766,6 +6786,22 @@
 #define OpcUaId_NetworkAddressType_NetworkInterface_Selections 17582
 #define OpcUaId_NetworkAddressUrlType_NetworkInterface_Selections 17585
 #define OpcUaId_NetworkAddressUrlType_Url 21149
+#define OpcUaId_AliasNameCategoryType_SubAliasNameCategories_Placeholder_FindAlias_InputArguments 23460
+#define OpcUaId_AliasNameCategoryType_SubAliasNameCategories_Placeholder_FindAlias_OutputArguments 23461
+#define OpcUaId_AliasNameCategoryType_FindAlias_InputArguments 23463
+#define OpcUaId_AliasNameCategoryType_FindAlias_OutputArguments 23464
+#define OpcUaId_Aliases_SubAliasNameCategories_Placeholder_FindAlias_InputArguments 23474
+#define OpcUaId_Aliases_SubAliasNameCategories_Placeholder_FindAlias_OutputArguments 23475
+#define OpcUaId_Aliases_FindAlias_InputArguments 23477
+#define OpcUaId_Aliases_FindAlias_OutputArguments 23478
+#define OpcUaId_TagVariables_SubAliasNameCategories_Placeholder_FindAlias_InputArguments 23483
+#define OpcUaId_TagVariables_SubAliasNameCategories_Placeholder_FindAlias_OutputArguments 23484
+#define OpcUaId_TagVariables_FindAlias_InputArguments 23486
+#define OpcUaId_TagVariables_FindAlias_OutputArguments 23487
+#define OpcUaId_Topics_SubAliasNameCategories_Placeholder_FindAlias_InputArguments 23492
+#define OpcUaId_Topics_SubAliasNameCategories_Placeholder_FindAlias_OutputArguments 23493
+#define OpcUaId_Topics_FindAlias_InputArguments 23495
+#define OpcUaId_Topics_FindAlias_OutputArguments 23496
 #define OpcUaId_MultiStateDictionaryEntryDiscreteBaseType_EnumDictionaryEntries 19082
 #define OpcUaId_MultiStateDictionaryEntryDiscreteBaseType_ValueAsDictionaryEntries 19083
 #define OpcUaId_MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries 19090
@@ -6862,6 +6898,7 @@
 #define OpcUaId_OpcUa_BinarySchema_BrokerWriterGroupTransportDataType 15940
 #define OpcUaId_OpcUa_BinarySchema_BrokerDataSetWriterTransportDataType 15943
 #define OpcUaId_OpcUa_BinarySchema_BrokerDataSetReaderTransportDataType 15946
+#define OpcUaId_OpcUa_BinarySchema_AliasNameDataType 23502
 #define OpcUaId_OpcUa_BinarySchema_RolePermissionType 16131
 #define OpcUaId_OpcUa_BinarySchema_DataTypeDefinition 18178
 #define OpcUaId_OpcUa_BinarySchema_StructureField 18181
@@ -6993,6 +7030,7 @@
 #define OpcUaId_OpcUa_XmlSchema_BrokerWriterGroupTransportDataType 16125
 #define OpcUaId_OpcUa_XmlSchema_BrokerDataSetWriterTransportDataType 16144
 #define OpcUaId_OpcUa_XmlSchema_BrokerDataSetReaderTransportDataType 16147
+#define OpcUaId_OpcUa_XmlSchema_AliasNameDataType 23508
 #define OpcUaId_OpcUa_XmlSchema_RolePermissionType 16127
 #define OpcUaId_OpcUa_XmlSchema_DataTypeDefinition 18166
 #define OpcUaId_OpcUa_XmlSchema_StructureField 18169

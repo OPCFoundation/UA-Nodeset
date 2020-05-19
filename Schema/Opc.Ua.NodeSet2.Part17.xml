@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2020-01-08T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2020-04-14T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.4" PublicationDate="2020-01-08T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.6" PublicationDate="2020-04-14T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -69,13 +69,13 @@
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
   </Aliases>
-  <UAObjectType NodeId="i=23455" BrowseName="AliasNameType" ReleaseStatus="Draft">
+  <UAObjectType NodeId="i=23455" BrowseName="AliasNameType">
     <DisplayName>AliasNameType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="i=23456" BrowseName="AliasNameCategoryType" ReleaseStatus="Draft">
+  <UAObjectType NodeId="i=23456" BrowseName="AliasNameCategoryType">
     <DisplayName>AliasNameCategoryType</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=23457</Reference>
@@ -84,7 +84,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="i=23457" BrowseName="&lt;Alias&gt;" SymbolicName="Alias_Placeholder" ReleaseStatus="Draft" ParentNodeId="i=23456">
+  <UAObject NodeId="i=23457" BrowseName="&lt;Alias&gt;" SymbolicName="Alias_Placeholder" ParentNodeId="i=23456">
     <DisplayName>&lt;Alias&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=23455</Reference>
@@ -92,7 +92,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23456</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=23458" BrowseName="&lt;SubAliasNameCategories&gt;" SymbolicName="SubAliasNameCategories_Placeholder" ReleaseStatus="Draft" ParentNodeId="i=23456">
+  <UAObject NodeId="i=23458" BrowseName="&lt;SubAliasNameCategories&gt;" SymbolicName="SubAliasNameCategories_Placeholder" ParentNodeId="i=23456">
     <DisplayName>&lt;SubAliasNameCategories&gt;</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=23459</Reference>
@@ -101,7 +101,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23456</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="i=23459" BrowseName="FindAlias" ReleaseStatus="Draft" ParentNodeId="i=23458" MethodDeclarationId="i=23462">
+  <UAMethod NodeId="i=23459" BrowseName="FindAlias" ParentNodeId="i=23458" MethodDeclarationId="i=23462">
     <DisplayName>FindAlias</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=23460</Reference>
@@ -110,7 +110,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23458</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=23460" BrowseName="InputArguments" ReleaseStatus="Draft" ParentNodeId="i=23459" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23460" BrowseName="InputArguments" ParentNodeId="i=23459" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -152,7 +152,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=23461" BrowseName="OutputArguments" ReleaseStatus="Draft" ParentNodeId="i=23459" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23461" BrowseName="OutputArguments" ParentNodeId="i=23459" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -181,7 +181,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAMethod NodeId="i=23462" BrowseName="FindAlias" ReleaseStatus="Draft" ParentNodeId="i=23456">
+  <UAMethod NodeId="i=23462" BrowseName="FindAlias" ParentNodeId="i=23456">
     <DisplayName>FindAlias</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=23463</Reference>
@@ -190,7 +190,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23456</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=23463" BrowseName="InputArguments" ReleaseStatus="Draft" ParentNodeId="i=23462" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23463" BrowseName="InputArguments" ParentNodeId="i=23462" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -232,7 +232,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=23464" BrowseName="OutputArguments" ReleaseStatus="Draft" ParentNodeId="i=23462" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23464" BrowseName="OutputArguments" ParentNodeId="i=23462" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -261,7 +261,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UADataType NodeId="i=23468" BrowseName="AliasNameDataType" ReleaseStatus="Draft">
+  <UADataType NodeId="i=23468" BrowseName="AliasNameDataType">
     <DisplayName>AliasNameDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
@@ -271,14 +271,14 @@
       <Field Name="ReferencedNodes" DataType="i=18" ValueRank="1" />
     </Definition>
   </UADataType>
-  <UAReferenceType NodeId="i=23469" BrowseName="AliasFor" ReleaseStatus="Draft">
+  <UAReferenceType NodeId="i=23469" BrowseName="AliasFor">
     <DisplayName>AliasFor</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
     <InverseName>HasAlias</InverseName>
   </UAReferenceType>
-  <UAObject NodeId="i=23470" BrowseName="Aliases" ReleaseStatus="Draft">
+  <UAObject NodeId="i=23470" BrowseName="Aliases">
     <DisplayName>Aliases</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=23476</Reference>
@@ -286,7 +286,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="i=23476" BrowseName="FindAlias" ReleaseStatus="Draft" ParentNodeId="i=23470" MethodDeclarationId="i=23462">
+  <UAMethod NodeId="i=23476" BrowseName="FindAlias" ParentNodeId="i=23470" MethodDeclarationId="i=23462">
     <DisplayName>FindAlias</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=23477</Reference>
@@ -294,7 +294,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23470</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=23477" BrowseName="InputArguments" ReleaseStatus="Draft" ParentNodeId="i=23476" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23477" BrowseName="InputArguments" ParentNodeId="i=23476" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -335,7 +335,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=23478" BrowseName="OutputArguments" ReleaseStatus="Draft" ParentNodeId="i=23476" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23478" BrowseName="OutputArguments" ParentNodeId="i=23476" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -363,15 +363,15 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=23479" BrowseName="Tags" ReleaseStatus="Draft">
-    <DisplayName>Tags</DisplayName>
+  <UAObject NodeId="i=23479" BrowseName="TagVariables">
+    <DisplayName>TagVariables</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=23485</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=23470</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="i=23485" BrowseName="FindAlias" ReleaseStatus="Draft" ParentNodeId="i=23479" MethodDeclarationId="i=23462">
+  <UAMethod NodeId="i=23485" BrowseName="FindAlias" ParentNodeId="i=23479" MethodDeclarationId="i=23462">
     <DisplayName>FindAlias</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=23486</Reference>
@@ -379,7 +379,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23479</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=23486" BrowseName="InputArguments" ReleaseStatus="Draft" ParentNodeId="i=23485" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23486" BrowseName="InputArguments" ParentNodeId="i=23485" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -420,7 +420,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=23487" BrowseName="OutputArguments" ReleaseStatus="Draft" ParentNodeId="i=23485" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23487" BrowseName="OutputArguments" ParentNodeId="i=23485" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -448,7 +448,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObject NodeId="i=23488" BrowseName="Topics" ReleaseStatus="Draft">
+  <UAObject NodeId="i=23488" BrowseName="Topics">
     <DisplayName>Topics</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=23494</Reference>
@@ -456,7 +456,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="i=23494" BrowseName="FindAlias" ReleaseStatus="Draft" ParentNodeId="i=23488" MethodDeclarationId="i=23462">
+  <UAMethod NodeId="i=23494" BrowseName="FindAlias" ParentNodeId="i=23488" MethodDeclarationId="i=23462">
     <DisplayName>FindAlias</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=23495</Reference>
@@ -464,7 +464,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">i=23488</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="i=23495" BrowseName="InputArguments" ReleaseStatus="Draft" ParentNodeId="i=23494" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23495" BrowseName="InputArguments" ParentNodeId="i=23494" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -505,7 +505,7 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="i=23496" BrowseName="OutputArguments" ReleaseStatus="Draft" ParentNodeId="i=23494" DataType="i=296" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=23496" BrowseName="OutputArguments" ParentNodeId="i=23494" DataType="i=296" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OutputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
