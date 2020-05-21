@@ -37,7 +37,7 @@
   TargetNamespace="http://opcfoundation.org/UA/DI/"
   TargetXmlNamespace="http://opcfoundation.org/UA/DI/"
   TargetVersion="1.02.1"
-  TargetPublicationDate="2020-04-21T00:00:00Z"
+  TargetPublicationDate="2020-05-19T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
@@ -60,7 +60,7 @@
       </Property>
       <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
         <DefaultValue>
-          <uax:DateTime>2020-04-21</uax:DateTime>
+          <uax:DateTime>2020-05-19</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
