@@ -40,17 +40,17 @@ The files for the core specification are in the Schema subdirectory.
 
 ### <a name="release">Release Process
 **This repository only has the released versions of the normative files.**
-Draft and Release Candidate are available in the [member only repository](https://github.com/OPCF-Members/UA-NodeSet). 
+Draft and Release Candidate are available in the [member only repository](https://github.com/OPCF-Members/UA-NodeSet).  
 
-Instructions on requesting access to the member only repository can be found [here](https://opcf-members.github.io/Help/). 
+Instructions on requesting access to the member only repository can be found [here](https://opcf-members.github.io/Help/).  
 
-If an error or problem is found in any of the files it should be [reported](https://apps.opcfoundation.org/mantis/main_page.php) as a mantis issue against the appropriate specification. 
+If an error or problem is found in any of the files it should be [reported](https://apps.opcfoundation.org/mantis/main_page.php) as a mantis issue against the appropriate specification.  
 
-The files in the master branch are also public to the OPC Foundation [website](https://opcfoundation.org/UA/schemas/). 
-**If someone is looking for the officially released version of the UANodeSets they must follow the links in the specification.** 
+The files in the master branch are also public to the OPC Foundation [website](https://opcfoundation.org/UA/schemas/).  
+**If someone is looking for the officially released version of the UANodeSets they must follow the links in the specification.**  
 
-When the files are reviewed and published a tag will be created in this repo with the publication date specified in the UANodeSet. 
-Note that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist and users must use the dates on the commits. 
+When the files are reviewed and published a tag will be created in this repo with the publication date specified in the UANodeSet.  
+Note that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist and users must use the dates on the commits.  
 
 There are currently 3 branches in the repository:
 * master (currently v1.04)
