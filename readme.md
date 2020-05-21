@@ -40,8 +40,9 @@ The files for the core specification are in the Schema subdirectory.
 
 ### <a name="release">Release Process
 **This repository only has the released versions of the normative files.**
-Draft and Release Candidate are available in the (member only repository)[https://github.com/OPCF-Members/UA-NodeSet].
-Instructions on requesting access to the member only repository can be found (here)[https://opcf-members.github.io/Help/].
+Draft and Release Candidate are available in the [member only repository](https://github.com/OPCF-Members/UA-NodeSet).
+
+Instructions on requesting access to the member only repository can be found [here](https://opcf-members.github.io/Help/).
 
 If an error or problem is found in any of the files it should be [reported](https://apps.opcfoundation.org/mantis/main_page.php) as a mantis issue against the appropriate specification. 
 
