@@ -79,11 +79,6 @@
         <Alias Alias="EdgeOperator">ns=1;i=62</Alias>
         <Alias Alias="AbstractWeightType">ns=1;i=63</Alias>
     </Aliases>
-    <Extensions>
-        <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="Ry5Zz1vFVzmO8GehemsgTw==" Version="1.6.3"/>
-        </Extension>
-    </Extensions>
     <UADataType NodeId="ns=1;i=64" BrowseName="1:CheckweigherResetMode">
         <DisplayName>CheckweigherResetMode</DisplayName>
         <References>
