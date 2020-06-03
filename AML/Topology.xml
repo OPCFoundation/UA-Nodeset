@@ -217,6 +217,7 @@
     <DisplayName>Version</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=2</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0</String>
@@ -226,6 +227,7 @@
     <DisplayName>Version</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=4</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0</String>
@@ -235,6 +237,7 @@
     <DisplayName>Version</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=6</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0</String>
@@ -244,6 +247,7 @@
     <DisplayName>ID</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=8</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">{788eb291-f103-4fdc-aba0-4893b599f556}</String>
@@ -253,6 +257,7 @@
     <DisplayName>ID</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=10</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">{19dcf818-4716-4fc1-a85f-28e1938c4c3a}</String>
@@ -273,6 +278,7 @@
     <DisplayName>ID</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=13</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">{5f535d4c-dd46-4c1c-898c-4e58419048b6}</String>
@@ -282,6 +288,7 @@
     <DisplayName>ID</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=15</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">50e10905-ac18-413c-afab-ad8ed1569fff</String>
@@ -291,6 +298,7 @@
     <DisplayName>ID</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=20</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">dd0e0dfe-10f8-4068-845b-9c29699ac79b</String>
@@ -300,6 +308,7 @@
     <DisplayName>FileName</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=22</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Topology.aml</String>
@@ -309,6 +318,7 @@
     <DisplayName>CAEXSchemaVersion</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=22</Reference>
     </References>
     <Value>
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2.15</String>

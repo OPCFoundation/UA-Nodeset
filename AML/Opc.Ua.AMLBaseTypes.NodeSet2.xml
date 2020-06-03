@@ -176,6 +176,7 @@
     <DisplayName>ID</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=3002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
     </References>
   </UAVariable>
@@ -183,6 +184,7 @@
     <DisplayName>Version</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=3002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
     </References>
   </UAVariable>
@@ -283,6 +285,8 @@
     <DisplayName>AMLOpcUaConnectionType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1011</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1012</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1013</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=1014</Reference>
