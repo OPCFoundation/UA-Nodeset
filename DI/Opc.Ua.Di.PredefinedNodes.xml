@@ -105,7 +105,7 @@
       <uax:NumericId>15003</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:String>1.02.1</uax:String>
+          <uax:String>1.02.2</uax:String>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -133,7 +133,7 @@
       <uax:NumericId>15004</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:DateTime>2020-05-19T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2020-06-02T00:00:00Z</uax:DateTime>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -4721,6 +4721,7 @@
     <uax:DataType>
       <uax:Identifier>i=290</uax:Identifier>
     </uax:DataType>
+    <uax:ValueRank>-1</uax:ValueRank>
     <uax:AccessLevel>1</uax:AccessLevel>
     <uax:UserAccessLevel>1</uax:UserAccessLevel>
     <uax:References>
