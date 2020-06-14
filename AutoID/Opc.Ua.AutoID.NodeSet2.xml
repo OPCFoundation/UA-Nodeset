@@ -96,7 +96,7 @@
   </Aliases>
   <UADataType NodeId="ns=1;i=3013" BrowseName="1:AutoIdOperationStatusEnumeration">
     <DisplayName>AutoIdOperationStatusEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6201</Reference>
@@ -536,7 +536,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:DeviceStatusEnumeration">
     <DisplayName>DeviceStatusEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
@@ -574,7 +574,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3009" BrowseName="1:LocationTypeEnumeration">
     <DisplayName>LocationTypeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6040</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -612,7 +612,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3016" BrowseName="1:RfidLockOperationEnumeration">
     <DisplayName>RfidLockOperationEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -650,7 +650,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3015" BrowseName="1:RfidLockRegionEnumeration">
     <DisplayName>RfidLockRegionEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6066</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -692,7 +692,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3014" BrowseName="1:RfidPasswordTypeEnumeration">
     <DisplayName>RfidPasswordTypeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.2.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -730,21 +730,21 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3031" BrowseName="1:CodeTypeDataType">
     <DisplayName>CodeTypeDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.1.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=3021" BrowseName="1:LocationName">
     <DisplayName>LocationName</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=3012" BrowseName="1:NmeaCoordinateString">
     <DisplayName>NmeaCoordinateString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
@@ -849,7 +849,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3011" BrowseName="1:AntennaNameIdPair">
     <DisplayName>AntennaNameIdPair</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5017</Reference>
@@ -927,7 +927,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3019" BrowseName="1:LocalCoordinate">
     <DisplayName>LocalCoordinate</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.4</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5028</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5029</Reference>
@@ -972,7 +972,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:Position">
     <DisplayName>Position</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.5</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5007</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5008</Reference>
@@ -1010,7 +1010,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3006" BrowseName="1:RfidSighting">
     <DisplayName>RfidSighting</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.13</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.13</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5009</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5010</Reference>
@@ -1055,7 +1055,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3029" BrowseName="1:Rotation">
     <DisplayName>Rotation</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.14</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.14</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5050</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5051</Reference>
@@ -1091,7 +1091,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3024" BrowseName="1:ScanDataEpc">
     <DisplayName>ScanDataEpc</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.6</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5036</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5037</Reference>
@@ -1128,7 +1128,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3001" BrowseName="1:ScanResult" IsAbstract="true">
     <DisplayName>ScanResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.8</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
@@ -1173,7 +1173,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:OcrScanResult">
     <DisplayName>OcrScanResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.9</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5005</Reference>
@@ -1221,7 +1221,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3026" BrowseName="1:OpticalScanResult">
     <DisplayName>OpticalScanResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.10</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5040</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5041</Reference>
@@ -1262,7 +1262,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3030" BrowseName="1:OpticalVerifierScanResult">
     <DisplayName>OpticalVerifierScanResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.11</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5052</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5053</Reference>
@@ -1304,7 +1304,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3007" BrowseName="1:RfidScanResult">
     <DisplayName>RfidScanResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.12</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.12</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5011</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5012</Reference>
@@ -1340,7 +1340,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3028" BrowseName="1:RtlsLocationResult">
     <DisplayName>RtlsLocationResult</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.15</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.15</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5048</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5049</Reference>
@@ -1377,7 +1377,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3010" BrowseName="1:ScanSettings">
     <DisplayName>ScanSettings</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.7</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5015</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5016</Reference>
@@ -1414,7 +1414,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3008" BrowseName="1:Location">
     <DisplayName>Location</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5013</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5014</Reference>
@@ -1451,7 +1451,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3020" BrowseName="1:ScanData">
     <DisplayName>ScanData</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5030</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5031</Reference>
@@ -1488,7 +1488,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3027" BrowseName="1:WGS84Coordinate">
     <DisplayName>WGS84Coordinate</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/12.3.16</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/9.3.16</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5046</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5047</Reference>
@@ -2349,7 +2349,7 @@
   </UAVariable>
   <UAVariableType NodeId="ns=1;i=2002" BrowseName="1:LocationVariableType" DataType="Location">
     <DisplayName>LocationVariableType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/11.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/8.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6199</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6197</Reference>
@@ -2496,7 +2496,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:AutoIdScanEventType" IsAbstract="true">
     <DisplayName>AutoIdScanEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/10.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/7.2</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1001</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
@@ -2522,7 +2522,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:OcrScanEventType" IsAbstract="true">
     <DisplayName>OcrScanEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/10.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/7.3</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
@@ -2539,7 +2539,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:OpticalScanEventType" IsAbstract="true">
     <DisplayName>OpticalScanEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/10.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/7.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1008</Reference>
@@ -2556,7 +2556,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:OpticalVerifierScanEventType" IsAbstract="true">
     <DisplayName>OpticalVerifierScanEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/10.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/7.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1011</Reference>
@@ -2573,7 +2573,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:RfidScanEventType" IsAbstract="true">
     <DisplayName>RfidScanEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/10.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/7.6</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
@@ -2607,7 +2607,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:AutoIdDeviceType" IsAbstract="true">
     <DisplayName>AutoIdDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/9.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.1.2</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1015</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
@@ -3120,7 +3120,7 @@
   </UAMethod>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:OcrReaderDeviceType">
     <DisplayName>OcrReaderDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/9.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
@@ -3131,6 +3131,7 @@
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5006" BrowseName="1:Images" ParentNodeId="ns=1;i=1002">
     <DisplayName>Images</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.3.3/#6.3.3.1</Documentation>
     <References>
       <Reference ReferenceType="Organizes">ns=1;i=5021</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
@@ -3654,7 +3655,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:OpticalReaderDeviceType">
     <DisplayName>OpticalReaderDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/9.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</Reference>
@@ -3665,6 +3666,7 @@
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5001" BrowseName="1:Images" ParentNodeId="ns=1;i=1008">
     <DisplayName>Images</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.3.3/#6.3.3.1</Documentation>
     <References>
       <Reference ReferenceType="Organizes">ns=1;i=5020</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
@@ -4188,7 +4190,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:OpticalVerifierDeviceType">
     <DisplayName>OpticalVerifierDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/9.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1008</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1013</Reference>
@@ -4278,7 +4280,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:RfidReaderDeviceType">
     <DisplayName>RfidReaderDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/9.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/6.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6048</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5038</Reference>
@@ -5399,7 +5401,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:RtlsDeviceType">
     <DisplayName>RtlsDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/9.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/7.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6214</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7056</Reference>
@@ -5669,7 +5671,7 @@
   <UAObject NodeId="ns=1;i=5019" BrowseName="1:http://opcfoundation.org/UA/AutoID/" SymbolicName="http___opcfoundation_org_UA_AutoID_">
     <DisplayName>http://opcfoundation.org/UA/AutoID/</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/AutoID/docs/13.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/AutoID/v100/docs/10.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6028</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
