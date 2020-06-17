@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -38516,12 +38516,14 @@
   </UAVariable>
   <UAObjectType NodeId="i=23455" BrowseName="AliasNameType">
     <DisplayName>AliasNameType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/6.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23456" BrowseName="AliasNameCategoryType">
     <DisplayName>AliasNameCategoryType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/6.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=23457</Reference>
       <Reference ReferenceType="HasComponent">i=23458</Reference>
@@ -38628,6 +38630,7 @@
   </UAVariable>
   <UAMethod NodeId="i=23462" BrowseName="FindAlias" ParentNodeId="i=23456">
     <DisplayName>FindAlias</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=23463</Reference>
       <Reference ReferenceType="HasProperty">i=23464</Reference>
@@ -38708,6 +38711,7 @@
   </UAVariable>
   <UADataType NodeId="i=23468" BrowseName="AliasNameDataType">
     <DisplayName>AliasNameDataType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/7.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -38718,6 +38722,7 @@
   </UADataType>
   <UAReferenceType NodeId="i=23469" BrowseName="AliasFor">
     <DisplayName>AliasFor</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/8.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -38725,6 +38730,7 @@
   </UAReferenceType>
   <UAObject NodeId="i=23470" BrowseName="Aliases">
     <DisplayName>Aliases</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/9.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=23476</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
@@ -38810,6 +38816,7 @@
   </UAVariable>
   <UAObject NodeId="i=23479" BrowseName="TagVariables">
     <DisplayName>TagVariables</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/9.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=23485</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=23470</Reference>
@@ -38895,6 +38902,7 @@
   </UAVariable>
   <UAObject NodeId="i=23488" BrowseName="Topics">
     <DisplayName>Topics</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part17/9.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">i=23494</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=23470</Reference>
