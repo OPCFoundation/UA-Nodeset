@@ -43,8 +43,8 @@
 >
   <Namespaces>
     <Namespace Name="OpcUaFdi5" Prefix="Opc.Ua.Fdi5" XmlNamespace="http://fdi-cooperation.com/OPCUA/FDI5/Types.xsd" XmlPrefix="FDI5">http://fdi-cooperation.com/OPCUA/FDI5/</Namespace>
-    <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
-    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="OpcUaDi" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" XmlPrefix="DI" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="OpcUa" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
   </Namespaces>
 
   <Object SymbolicName="FDI:OpcUaFdi5NamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType">
