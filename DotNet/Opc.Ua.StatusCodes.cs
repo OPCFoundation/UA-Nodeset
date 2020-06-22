@@ -810,7 +810,7 @@ namespace Opc.Ua
         public const uint BadTcpSecureChannelUnknown = 0x807F0000;
 
         /// <summary>
-        /// The size of the message specified in the header is too large.
+        /// The size of the message chunk specified in the header is too large.
         /// </summary>
         public const uint BadTcpMessageTooLarge = 0x80800000;
 
