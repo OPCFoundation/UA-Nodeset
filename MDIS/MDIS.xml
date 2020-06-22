@@ -40,8 +40,8 @@
   <!-- Updated file to include valve transfer sample -->
   
   <opc:Namespaces>
-    <opc:Namespace Name="OpcUa" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</opc:Namespace>
-    <opc:Namespace Name="MDIS" Prefix="Opc.MDIS">http://opcfoundation.org/UA/MDIS</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="MDIS" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" Prefix="Opc.MDIS">http://opcfoundation.org/UA/MDIS</opc:Namespace>
   </opc:Namespaces>
 
   <!--  EnableDisable -->

@@ -40,7 +40,7 @@
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="OpcUa" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</Namespace>
-    <Namespace Name="OpcUaDi" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="OpcUaDi" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" Prefix="Opc.Ua.Di" XmlNamespace="http://opcfoundation.org/UA/DI/Types.xsd" FilePath="OpcUaDiModel">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="OpcUaPlc" Prefix="Opc.Ua.Plc" XmlNamespace="http://PLCopen.org/OpcUa/IEC61131-3/Types.xsd">http://PLCopen.org/OpcUa/IEC61131-3/</Namespace>
   </Namespaces>
 
