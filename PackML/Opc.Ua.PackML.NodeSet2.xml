@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -87,7 +87,7 @@
   </Extensions>
   <UADataType NodeId="ns=1;i=11" BrowseName="1:ProductionMaintenanceModeEnum">
     <DisplayName>ProductionMaintenanceModeEnum</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=194</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -185,7 +185,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=15" BrowseName="1:PackMLAlarmDataType">
     <DisplayName>PackMLAlarmDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.8.2/#6.8.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.8.2/#6.8.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=74</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=76</Reference>
@@ -239,7 +239,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=14" BrowseName="1:PackMLCountDataType">
     <DisplayName>PackMLCountDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=69</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=70</Reference>
@@ -287,7 +287,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=16" BrowseName="1:PackMLDescriptorDataType">
     <DisplayName>PackMLDescriptorDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.5.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.5.4</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=77</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=78</Reference>
@@ -332,7 +332,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=17" BrowseName="1:PackMLIngredientsDataType">
     <DisplayName>PackMLIngredientsDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.5.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.5.5</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=79</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=80</Reference>
@@ -371,7 +371,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=18" BrowseName="1:PackMLProductDataType">
     <DisplayName>PackMLProductDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.5.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.5.6</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=81</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=82</Reference>
@@ -413,7 +413,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=19" BrowseName="1:PackMLRemoteInterfaceDataType">
     <DisplayName>PackMLRemoteInterfaceDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.5.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=83</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=84</Reference>
@@ -746,7 +746,7 @@
   </UAVariable>
   <UAReferenceType NodeId="ns=1;i=22" BrowseName="1:HasAlarm">
     <DisplayName>HasAlarm</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -754,7 +754,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=23" BrowseName="1:HasAlarmHistory">
     <DisplayName>HasAlarmHistory</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.6.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.6.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -762,7 +762,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=21" BrowseName="1:HasInterlock">
     <DisplayName>HasInterlock</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.6.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -770,7 +770,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=25" BrowseName="1:HasStopReason">
     <DisplayName>HasStopReason</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.6.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.6.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -778,7 +778,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=24" BrowseName="1:HasWarning">
     <DisplayName>HasWarning</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.6.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.6.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -786,7 +786,7 @@
   </UAReferenceType>
   <UAObjectType NodeId="ns=1;i=5" BrowseName="1:PackMLAdminObjectType">
     <DisplayName>PackMLAdminObjectType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.3.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=252</Reference>
       <Reference ReferenceType="HasAlarm">ns=1;i=6024</Reference>
@@ -955,7 +955,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=6" BrowseName="1:PackMLBaseObjectType">
     <DisplayName>PackMLBaseObjectType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=73</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=88</Reference>
@@ -1002,7 +1002,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=4" BrowseName="1:PackMLStatusObjectType">
     <DisplayName>PackMLStatusObjectType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=232</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=211</Reference>
@@ -1162,7 +1162,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=3" BrowseName="1:PackMLBaseStateMachineType">
     <DisplayName>PackMLBaseStateMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.3.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.3.6</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=364</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=62</Reference>
@@ -1214,7 +1214,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1" BrowseName="1:PackMLExecuteStateMachineType">
     <DisplayName>PackMLExecuteStateMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.3.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.3.8</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6006</Reference>
@@ -1277,7 +1277,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=2" BrowseName="1:PackMLMachineStateMachineType">
     <DisplayName>PackMLMachineStateMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.3.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.3.7</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6022</Reference>
@@ -1313,7 +1313,7 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=72" BrowseName="1:PackMLObjects">
     <DisplayName>PackMLObjects</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.2</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
@@ -1406,7 +1406,7 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=5002" BrowseName="1:http://opcfoundation.org/UA/PackML/" SymbolicName="http___opcfoundation_org_UA_PackML_">
     <DisplayName>http://opcfoundation.org/UA/PackML/</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/8.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/8.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -2880,7 +2880,7 @@
   </UAVariable>
   <UAMethod NodeId="ns=1;i=361" BrowseName="1:Reset">
     <DisplayName>Reset</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.8</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
@@ -2889,7 +2889,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=362" BrowseName="1:SetUnitMode">
     <DisplayName>SetUnitMode</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=118</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2898,7 +2898,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=363" BrowseName="1:Clear">
     <DisplayName>Clear</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.6</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=3</Reference>
       <Reference ReferenceType="HasCause" IsForward="false">ns=1;i=65</Reference>
@@ -2907,7 +2907,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=364" BrowseName="1:Abort">
     <DisplayName>Abort</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.5</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=3</Reference>
       <Reference ReferenceType="HasCause" IsForward="false">ns=1;i=67</Reference>
@@ -2925,7 +2925,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=366" BrowseName="1:Hold">
     <DisplayName>Hold</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.14</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.14</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
       <Reference ReferenceType="HasCause" IsForward="false">ns=1;i=45</Reference>
@@ -2939,7 +2939,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=367" BrowseName="1:Suspend">
     <DisplayName>Suspend</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.12</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.12</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
@@ -2948,7 +2948,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=368" BrowseName="1:Unhold">
     <DisplayName>Unhold</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.11</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
@@ -2957,7 +2957,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=369" BrowseName="1:Start">
     <DisplayName>Start</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.10</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=342</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -2967,7 +2967,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=372" BrowseName="1:Unsuspend">
     <DisplayName>Unsuspend</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.13</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.13</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
@@ -2976,7 +2976,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=375" BrowseName="1:Stop">
     <DisplayName>Stop</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.7</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2</Reference>
@@ -2993,7 +2993,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=400" BrowseName="1:SetMachSpeed">
     <DisplayName>SetMachSpeed</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=348</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3002,7 +3002,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=401" BrowseName="1:SetProduct">
     <DisplayName>SetProduct</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=349</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3011,7 +3011,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=402" BrowseName="1:SetParameter">
     <DisplayName>SetParameter</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.17</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.17</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=352</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3020,7 +3020,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=403" BrowseName="1:RemoteCommand">
     <DisplayName>RemoteCommand</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.15</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.15</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=350</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -3029,7 +3029,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=404" BrowseName="1:SetInterlock">
     <DisplayName>SetInterlock</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PackML/docs/6.7.16</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PackML/v100/docs/6.7.16</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=351</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
