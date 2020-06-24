@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -65,7 +65,7 @@
   </Aliases>
   <UAReferenceType NodeId="ns=1;i=4005" BrowseName="1:HasDiagnosisMenu">
     <DisplayName>HasDiagnosisMenu</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/11.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/11.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -73,7 +73,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4002" BrowseName="1:HasIdentificationMenu">
     <DisplayName>HasIdentificationMenu</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/11.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/11.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -81,7 +81,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4004" BrowseName="1:HasObservationMenu">
     <DisplayName>HasObservationMenu</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/11.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/11.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -89,7 +89,7 @@
   </UAReferenceType>
   <UAReferenceType NodeId="ns=1;i=4003" BrowseName="1:HasParameterMenu">
     <DisplayName>HasParameterMenu</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/11.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/11.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=35</Reference>
     </References>
@@ -97,7 +97,7 @@
   </UAReferenceType>
   <UAVariableType NodeId="ns=1;i=2002" BrowseName="1:ProcessDataVariableType" ValueRank="1" ArrayDimensions="0">
     <DisplayName>ProcessDataVariableType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/10.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/10.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6146</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6147</Reference>
@@ -128,7 +128,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:IOLinkAlarmType" IsAbstract="true">
     <DisplayName>IOLinkAlarmType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
@@ -144,7 +144,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:IOLinkDeviceAlarmType">
     <DisplayName>IOLinkDeviceAlarmType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.8</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1007</Reference>
@@ -152,7 +152,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:IOLinkIODDDeviceAlarmType">
     <DisplayName>IOLinkIODDDeviceAlarmType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.9</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1008</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
@@ -168,7 +168,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:IOLinkMasterAlarmType">
     <DisplayName>IOLinkMasterAlarmType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.11</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1007</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1014</Reference>
@@ -176,7 +176,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:IOLinkPortAlarmType">
     <DisplayName>IOLinkPortAlarmType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.10</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1007</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1015</Reference>
@@ -184,7 +184,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:IOLinkEventType" IsAbstract="true">
     <DisplayName>IOLinkEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
@@ -200,7 +200,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:IOLinkDeviceEventType">
     <DisplayName>IOLinkDeviceEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.3</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
@@ -208,7 +208,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1021" BrowseName="1:IOLinkIODDDeviceEventType">
     <DisplayName>IOLinkIODDDeviceEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6205</Reference>
@@ -224,7 +224,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:IOLinkMasterEventType" IsAbstract="true">
     <DisplayName>IOLinkMasterEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1014</Reference>
@@ -232,7 +232,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:IOLinkPortEventType" IsAbstract="true">
     <DisplayName>IOLinkPortEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/9.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/9.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6338</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
@@ -249,7 +249,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:DeviceVariantType">
     <DisplayName>DeviceVariantType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/7.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/7.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6070</Reference>
@@ -309,7 +309,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:IOLinkDeviceType">
     <DisplayName>IOLinkDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/7.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/7.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
@@ -1477,7 +1477,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:IOLinkIODDDeviceType" IsAbstract="true">
     <DisplayName>IOLinkIODDDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/7.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5014</Reference>
@@ -1728,7 +1728,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:IOLinkMasterType">
     <DisplayName>IOLinkMasterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/7.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/7.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5025</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5018</Reference>
@@ -3173,7 +3173,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:IOLinkPortType">
     <DisplayName>IOLinkPortType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/7.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/7.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5038</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5028</Reference>
@@ -5813,7 +5813,7 @@
   </UAObject>
   <UAObject NodeId="ns=1;i=10000" BrowseName="1:IODDManagement">
     <DisplayName>IODDManagement</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/8.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/8.2</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
@@ -6414,7 +6414,7 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=5005" BrowseName="1:IOLinkMasterSet">
     <DisplayName>IOLinkMasterSet</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/8.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/8.4</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
@@ -6423,7 +6423,7 @@
   <UAObject NodeId="ns=1;i=5021" BrowseName="1:http://opcfoundation.org/UA/IOLink/" SymbolicName="http___opcfoundation_org_UA_IOLink_">
     <DisplayName>http://opcfoundation.org/UA/IOLink/</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/IOLink/docs/15.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/IOLink/v100/docs/15.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
