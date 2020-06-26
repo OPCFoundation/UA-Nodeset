@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -92,7 +92,7 @@
   </Extensions>
   <UADataType NodeId="ns=1;i=3023" BrowseName="1:SystemStateDataType">
     <DisplayName>SystemStateDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.21</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.21</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -228,7 +228,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3014" BrowseName="1:TriStateBooleanDataType">
     <DisplayName>TriStateBooleanDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6367</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -307,28 +307,28 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3009" BrowseName="1:ResultStateDataType">
     <DisplayName>ResultStateDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.19</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.19</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=6</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=3018" BrowseName="1:Handle">
     <DisplayName>Handle</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=3017" BrowseName="1:TrimmedString">
     <DisplayName>TrimmedString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=3019" BrowseName="1:BinaryIdBaseDataType" IsAbstract="true">
     <DisplayName>BinaryIdBaseDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.8</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5027</Reference>
@@ -377,7 +377,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3008" BrowseName="1:ConfigurationIdDataType">
     <DisplayName>ConfigurationIdDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.13</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.13</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5090</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5091</Reference>
@@ -409,7 +409,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:RecipeIdExternalDataType">
     <DisplayName>RecipeIdExternalDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.9</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
@@ -441,7 +441,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3013" BrowseName="1:RecipeIdInternalDataType">
     <DisplayName>RecipeIdInternalDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.10</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5268</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5269</Reference>
@@ -473,7 +473,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3007" BrowseName="1:ConfigurationDataType">
     <DisplayName>ConfigurationDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.12</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.12</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5088</Reference>
@@ -518,7 +518,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3011" BrowseName="1:ConfigurationTransferOptions">
     <DisplayName>ConfigurationTransferOptions</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.14</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.14</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5246</Reference>
@@ -554,7 +554,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3016" BrowseName="1:JobIdDataType">
     <DisplayName>JobIdDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.7</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5008</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5026</Reference>
@@ -590,7 +590,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3015" BrowseName="1:MeasIdDataType">
     <DisplayName>MeasIdDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.5</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5006</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5007</Reference>
@@ -629,7 +629,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:PartIdDataType">
     <DisplayName>PartIdDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.6</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5013</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5014</Reference>
@@ -668,7 +668,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:ProcessingTimesDataType">
     <DisplayName>ProcessingTimesDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.4</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5016</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5017</Reference>
@@ -713,7 +713,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3020" BrowseName="1:ProductDataType">
     <DisplayName>ProductDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.15</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.15</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5272</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5273</Reference>
@@ -749,7 +749,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:ProductIdDataType">
     <DisplayName>ProductIdDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.16</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.16</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5224</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5225</Reference>
@@ -788,7 +788,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3012" BrowseName="1:RecipeTransferOptions">
     <DisplayName>RecipeTransferOptions</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.11</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5248</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5249</Reference>
@@ -824,7 +824,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3006" BrowseName="1:ResultDataType">
     <DisplayName>ResultDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.17</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.17</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5018</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5019</Reference>
@@ -905,7 +905,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3021" BrowseName="1:ResultIdDataType">
     <DisplayName>ResultIdDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.18</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.18</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5274</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5275</Reference>
@@ -941,7 +941,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3022" BrowseName="1:ResultTransferOptions">
     <DisplayName>ResultTransferOptions</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.20</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.20</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5276</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5277</Reference>
@@ -977,7 +977,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UADataType NodeId="ns=1;i=3024" BrowseName="1:SystemStateDescriptionDataType">
     <DisplayName>SystemStateDescriptionDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/12.22</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/12.22</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5278</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5279</Reference>
@@ -1587,7 +1587,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAReferenceType>
   <UAVariableType NodeId="ns=1;i=2002" BrowseName="1:ResultType" DataType="ResultDataType">
     <DisplayName>ResultType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/9.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6331</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6328</Reference>
@@ -1769,7 +1769,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1025" BrowseName="1:AcquisitionDoneEventType">
     <DisplayName>AcquisitionDoneEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.3.8/#8.3.8.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.8/#8.3.8.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6308</Reference>
@@ -1798,7 +1798,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1033" BrowseName="1:VisionConditionType" IsAbstract="true">
     <DisplayName>VisionConditionType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.4/#11.4.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.4/#11.4.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6206</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6207</Reference>
@@ -1999,28 +1999,28 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1035" BrowseName="1:VisionErrorConditionType">
     <DisplayName>VisionErrorConditionType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1033</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1036" BrowseName="1:VisionPersistentErrorConditionType">
     <DisplayName>VisionPersistentErrorConditionType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1033</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:VisionWarningConditionType">
     <DisplayName>VisionWarningConditionType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1033</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1027" BrowseName="1:EnterStepSequenceEventType">
     <DisplayName>EnterStepSequenceEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.4.7/#8.4.7.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.7/#8.4.7.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6322</Reference>
@@ -2037,7 +2037,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:JobStartedEventType">
     <DisplayName>JobStartedEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.3.8/#8.3.8.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.8/#8.3.8.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6141</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
@@ -2070,7 +2070,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1029" BrowseName="1:LeaveStepSequenceEventType">
     <DisplayName>LeaveStepSequenceEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.4.7/#8.4.7.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.7/#8.4.7.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
       <Reference ReferenceType="HasEffect" IsForward="false">ns=1;i=5087</Reference>
@@ -2078,7 +2078,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1028" BrowseName="1:NextStepEventType">
     <DisplayName>NextStepEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.4.7/#8.4.7.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.7/#8.4.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6324</Reference>
@@ -2095,7 +2095,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1023" BrowseName="1:ReadyEventType">
     <DisplayName>ReadyEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.3.8/#8.3.8.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.8/#8.3.8.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6294</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
@@ -2130,7 +2130,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1022" BrowseName="1:RecipePreparedEventType">
     <DisplayName>RecipePreparedEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.3.8/#8.3.8.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.8/#8.3.8.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6291</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6140</Reference>
@@ -2180,7 +2180,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:ResultReadyEventType">
     <DisplayName>ResultReadyEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.3.8/#8.3.8.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.8/#8.3.8.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6303</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6045</Reference>
@@ -2404,7 +2404,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1019" BrowseName="1:ErrorEventType">
     <DisplayName>ErrorEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.2.9/#8.2.9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.9/#8.2.9.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2311</Reference>
       <Reference ReferenceType="HasEffect" IsForward="false">ns=1;i=5034</Reference>
@@ -2412,7 +2412,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:ErrorResolvedEventType">
     <DisplayName>ErrorResolvedEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.2.9/#8.2.9.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.9/#8.2.9.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2311</Reference>
       <Reference ReferenceType="HasEffect" IsForward="false">ns=1;i=5255</Reference>
@@ -2420,7 +2420,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1018" BrowseName="1:StateChangedEventType">
     <DisplayName>StateChangedEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.2.9/#8.2.9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.9/#8.2.9.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2311</Reference>
       <Reference ReferenceType="HasEffect" IsForward="false">ns=1;i=5032</Reference>
@@ -2468,7 +2468,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:VisionEventType" IsAbstract="true">
     <DisplayName>VisionEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.1/#11.4.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.1/#11.4.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6193</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6550</Reference>
@@ -2633,21 +2633,21 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1037" BrowseName="1:VisionDiagnosticInfoEventType">
     <DisplayName>VisionDiagnosticInfoEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1015</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1038" BrowseName="1:VisionInformationEventType">
     <DisplayName>VisionInformationEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1015</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:VisionSafetyEventType">
     <DisplayName>VisionSafetyEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/11.4.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/11.4.8</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6050</Reference>
@@ -2672,7 +2672,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:ConfigurationManagementType">
     <DisplayName>ConfigurationManagementType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7048</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6132</Reference>
@@ -2688,7 +2688,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7048" BrowseName="1:ActivateConfiguration" ParentNodeId="ns=1;i=1006">
     <DisplayName>ActivateConfiguration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.2.2/#7.2.2.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6116</Reference>
@@ -2779,7 +2779,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7025" BrowseName="1:AddConfiguration" ParentNodeId="ns=1;i=1006">
     <DisplayName>AddConfiguration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.2.2/#7.2.2.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6096</Reference>
@@ -3164,7 +3164,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7041" BrowseName="1:GetConfigurationById" ParentNodeId="ns=1;i=1006">
     <DisplayName>GetConfigurationById</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.2.2/#7.2.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6100</Reference>
@@ -3278,7 +3278,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7045" BrowseName="1:GetConfigurationList" ParentNodeId="ns=1;i=1006">
     <DisplayName>GetConfigurationList</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.2.2/#7.2.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6104</Reference>
@@ -3440,7 +3440,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7046" BrowseName="1:ReleaseConfigurationHandle" ParentNodeId="ns=1;i=1006">
     <DisplayName>ReleaseConfigurationHandle</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.2.2/#7.2.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6108</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -3506,7 +3506,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7047" BrowseName="1:RemoveConfiguration" ParentNodeId="ns=1;i=1006">
     <DisplayName>RemoveConfiguration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.2.2/#7.2.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6112</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -3572,7 +3572,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:ConfigurationFolderType">
     <DisplayName>ConfigurationFolderType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6120</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -3605,7 +3605,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:ProductFolderType">
     <DisplayName>ProductFolderType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.9</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6621</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -3621,7 +3621,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:RecipeFolderType">
     <DisplayName>RecipeFolderType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.8</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5270</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -3689,7 +3689,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7076" BrowseName="1:LinkProduct" ParentNodeId="ns=1;i=5270" MethodDeclarationId="ns=1;i=7062">
     <DisplayName>LinkProduct</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.7.2/#7.7.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6613</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5270</Reference>
@@ -3755,7 +3755,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7114" BrowseName="1:Prepare" ParentNodeId="ns=1;i=5270" MethodDeclarationId="ns=1;i=7064">
     <DisplayName>Prepare</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.7.2/#7.7.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6615</Reference>
@@ -3808,7 +3808,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7120" BrowseName="1:UnlinkProduct" ParentNodeId="ns=1;i=5270" MethodDeclarationId="ns=1;i=7063">
     <DisplayName>UnlinkProduct</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.7.2/#7.7.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6616</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -3874,7 +3874,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7121" BrowseName="1:Unprepare" ParentNodeId="ns=1;i=5270" MethodDeclarationId="ns=1;i=7065">
     <DisplayName>Unprepare</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.7.2/#7.7.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6620</Reference>
@@ -3911,7 +3911,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:ResultFolderType">
     <DisplayName>ResultFolderType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.11</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6168</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -4021,7 +4021,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:RecipeManagementType">
     <DisplayName>RecipeManagementType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7013</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7014</Reference>
@@ -4040,7 +4040,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7013" BrowseName="1:AddRecipe" ParentNodeId="ns=1;i=1004">
     <DisplayName>AddRecipe</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6144</Reference>
@@ -4186,7 +4186,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7014" BrowseName="1:GetRecipeListFiltered" ParentNodeId="ns=1;i=1004">
     <DisplayName>GetRecipeListFiltered</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6156</Reference>
@@ -4396,7 +4396,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7060" BrowseName="1:PrepareProduct" ParentNodeId="ns=1;i=1004">
     <DisplayName>PrepareProduct</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6172</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -4479,7 +4479,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7015" BrowseName="1:PrepareRecipe" ParentNodeId="ns=1;i=1004">
     <DisplayName>PrepareRecipe</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6148</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -4882,7 +4882,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7056" BrowseName="1:ReleaseRecipeHandle" ParentNodeId="ns=1;i=1004">
     <DisplayName>ReleaseRecipeHandle</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6160</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -4948,7 +4948,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7057" BrowseName="1:RemoveRecipe" ParentNodeId="ns=1;i=1004">
     <DisplayName>RemoveRecipe</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6164</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5014,6 +5014,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7061" BrowseName="1:UnlinkProduct" ParentNodeId="ns=1;i=1004">
     <DisplayName>UnlinkProduct</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6180</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5095,7 +5096,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7059" BrowseName="1:UnprepareProduct" ParentNodeId="ns=1;i=1004">
     <DisplayName>UnprepareProduct</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.8</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6176</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5178,7 +5179,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7055" BrowseName="1:UnprepareRecipe" ParentNodeId="ns=1;i=1004">
     <DisplayName>UnprepareRecipe</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.5.2/#7.5.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6152</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5277,7 +5278,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:RecipeType">
     <DisplayName>RecipeType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.7.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
@@ -5744,6 +5745,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7062" BrowseName="1:LinkProduct" ParentNodeId="ns=1;i=1002">
     <DisplayName>LinkProduct</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6190</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
@@ -5809,6 +5811,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7064" BrowseName="1:Prepare" ParentNodeId="ns=1;i=1002">
     <DisplayName>Prepare</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6202</Reference>
@@ -5861,6 +5864,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7063" BrowseName="1:UnlinkProduct" ParentNodeId="ns=1;i=1002">
     <DisplayName>UnlinkProduct</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6196</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5926,6 +5930,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7065" BrowseName="1:Unprepare" ParentNodeId="ns=1;i=1002">
     <DisplayName>Unprepare</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6205</Reference>
@@ -5962,7 +5967,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:ResultManagementType">
     <DisplayName>ResultManagementType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.10.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7026</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7007</Reference>
@@ -5975,7 +5980,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7026" BrowseName="1:GetResultById" ParentNodeId="ns=1;i=1007">
     <DisplayName>GetResultById</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.10.2/#7.10.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.2/#7.10.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6209</Reference>
@@ -6426,7 +6431,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7089" BrowseName="1:GetResultListFiltered" ParentNodeId="ns=1;i=1007">
     <DisplayName>GetResultListFiltered</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.10.2/#7.10.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.2/#7.10.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6213</Reference>
@@ -6732,7 +6737,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7090" BrowseName="1:ReleaseResultHandle" ParentNodeId="ns=1;i=1007">
     <DisplayName>ReleaseResultHandle</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.10.2/#7.10.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.2/#7.10.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6217</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -7069,7 +7074,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:SafetyStateManagementType">
     <DisplayName>SafetyStateManagementType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.13.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.13.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7043</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -7079,7 +7084,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7043" BrowseName="1:ReportSafetyState" ParentNodeId="ns=1;i=1009">
     <DisplayName>ReportSafetyState</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/7.13.2/#7.13.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.13.2/#7.13.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6222</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -7177,7 +7182,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1021" BrowseName="1:VisionAutomaticModeStateMachineType">
     <DisplayName>VisionAutomaticModeStateMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7097</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5059</Reference>
@@ -7213,7 +7218,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=7097" BrowseName="1:Abort" ParentNodeId="ns=1;i=1021">
     <DisplayName>Abort</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.3.7/#8.3.7.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1021</Reference>
       <Reference ReferenceType="HasCause" IsForward="false">ns=1;i=5069</Reference>
@@ -7355,7 +7360,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7024" BrowseName="1:Sync" ParentNodeId="ns=1;i=5021" MethodDeclarationId="ns=1;i=7101">
     <DisplayName>Sync</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.4.6/#8.4.6.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.6/#8.4.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -8070,7 +8075,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7100" BrowseName="1:SimulationMode" ParentNodeId="ns=1;i=1021">
     <DisplayName>SimulationMode</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.3.7/#8.3.7.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6289</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -8384,7 +8389,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7009" BrowseName="1:StartContinuous" ParentNodeId="ns=1;i=1021">
     <DisplayName>StartContinuous</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.3.7/#8.3.7.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6086</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -8531,7 +8536,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7098" BrowseName="1:StartSingleJob" ParentNodeId="ns=1;i=1021">
     <DisplayName>StartSingleJob</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.3.7/#8.3.7.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6281</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -8678,7 +8683,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7096" BrowseName="1:Stop" ParentNodeId="ns=1;i=1021">
     <DisplayName>Stop</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.3.7/#8.3.7.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6287</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -8762,7 +8767,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:VisionStateMachineType">
     <DisplayName>VisionStateMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5024</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7066</Reference>
@@ -8819,6 +8824,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObject>
   <UAMethod NodeId="ns=1;i=7020" BrowseName="1:Abort" ParentNodeId="ns=1;i=5024" MethodDeclarationId="ns=1;i=7097">
     <DisplayName>Abort</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5024</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
@@ -8927,6 +8933,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7039" BrowseName="1:Sync" ParentNodeId="ns=1;i=5025" MethodDeclarationId="ns=1;i=7101">
     <DisplayName>Sync</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.6/#8.4.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6167</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -9241,6 +9248,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7044" BrowseName="1:SimulationMode" ParentNodeId="ns=1;i=5024" MethodDeclarationId="ns=1;i=7100">
     <DisplayName>SimulationMode</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6326</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -9446,6 +9454,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7021" BrowseName="1:StartContinuous" ParentNodeId="ns=1;i=5024" MethodDeclarationId="ns=1;i=7009">
     <DisplayName>StartContinuous</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -9591,6 +9600,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7022" BrowseName="1:StartSingleJob" ParentNodeId="ns=1;i=5024" MethodDeclarationId="ns=1;i=7098">
     <DisplayName>StartSingleJob</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -9736,6 +9746,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7023" BrowseName="1:Stop" ParentNodeId="ns=1;i=5024" MethodDeclarationId="ns=1;i=7096">
     <DisplayName>Stop</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6078</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -9817,7 +9828,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7066" BrowseName="1:ConfirmAll" ParentNodeId="ns=1;i=1017">
     <DisplayName>ConfirmAll</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.2.8/#8.2.8.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1017</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6241</Reference>
@@ -10120,7 +10131,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7094" BrowseName="1:Halt" ParentNodeId="ns=1;i=1017">
     <DisplayName>Halt</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.2.8/#8.2.8.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1017</Reference>
       <Reference ReferenceType="HasCause" IsForward="false">ns=1;i=5032</Reference>
@@ -10882,7 +10893,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7093" BrowseName="1:Reset" ParentNodeId="ns=1;i=1017">
     <DisplayName>Reset</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.2.8/#8.2.8.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6256</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -10967,7 +10978,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7095" BrowseName="1:SelectModeAutomatic" ParentNodeId="ns=1;i=1017">
     <DisplayName>SelectModeAutomatic</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/MachineVision/docs/8.2.8/#8.2.8.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.3</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6258</Reference>
@@ -11006,7 +11017,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1026" BrowseName="1:VisionStepModelStateMachineType">
     <DisplayName>VisionStepModelStateMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/8.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5078</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5082</Reference>
@@ -11196,6 +11207,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7101" BrowseName="1:Sync" ParentNodeId="ns=1;i=1026">
     <DisplayName>Sync</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.6/#8.4.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6319</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -11354,7 +11366,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:ConfigurationTransferType">
     <DisplayName>ConfigurationTransferType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15744</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7129</Reference>
@@ -11541,7 +11553,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:RecipeTransferType">
     <DisplayName>RecipeTransferType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.6.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7123</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7124</Reference>
@@ -11728,7 +11740,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1039" BrowseName="1:ResultTransferType">
     <DisplayName>ResultTransferType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.12.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.12.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=7058</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15744</Reference>
@@ -11833,7 +11845,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:VisionSystemType">
     <DisplayName>VisionSystemType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/7.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6048</Reference>
@@ -11864,6 +11876,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObject>
   <UAMethod NodeId="ns=1;i=7008" BrowseName="1:ActivateConfiguration" ParentNodeId="ns=1;i=5004" MethodDeclarationId="ns=1;i=7048">
     <DisplayName>ActivateConfiguration</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6026</Reference>
@@ -11954,6 +11967,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7054" BrowseName="1:AddConfiguration" ParentNodeId="ns=1;i=5004" MethodDeclarationId="ns=1;i=7025">
     <DisplayName>AddConfiguration</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6342</Reference>
@@ -12338,6 +12352,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7016" BrowseName="1:GetConfigurationById" ParentNodeId="ns=1;i=5004" MethodDeclarationId="ns=1;i=7041">
     <DisplayName>GetConfigurationById</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6044</Reference>
@@ -12451,6 +12466,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7017" BrowseName="1:GetConfigurationList" ParentNodeId="ns=1;i=5004" MethodDeclarationId="ns=1;i=7045">
     <DisplayName>GetConfigurationList</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6099</Reference>
@@ -12612,6 +12628,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7072" BrowseName="1:ReleaseConfigurationHandle" ParentNodeId="ns=1;i=5004" MethodDeclarationId="ns=1;i=7046">
     <DisplayName>ReleaseConfigurationHandle</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6364</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -12677,6 +12694,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7073" BrowseName="1:RemoveConfiguration" ParentNodeId="ns=1;i=5004" MethodDeclarationId="ns=1;i=7047">
     <DisplayName>RemoveConfiguration</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.2.2/#7.2.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6366</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -12770,6 +12788,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObject>
   <UAMethod NodeId="ns=1;i=7074" BrowseName="1:AddRecipe" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7013">
     <DisplayName>AddRecipe</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5015</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6369</Reference>
@@ -12915,6 +12934,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7018" BrowseName="1:GetRecipeListFiltered" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7014">
     <DisplayName>GetRecipeListFiltered</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5015</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6103</Reference>
@@ -13124,6 +13144,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7075" BrowseName="1:PrepareProduct" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7060">
     <DisplayName>PrepareProduct</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6371</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -13205,6 +13226,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7031" BrowseName="1:PrepareRecipe" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7015">
     <DisplayName>PrepareRecipe</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6107</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -13606,6 +13628,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7081" BrowseName="1:ReleaseRecipeHandle" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7056">
     <DisplayName>ReleaseRecipeHandle</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6382</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -13671,6 +13694,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7082" BrowseName="1:RemoveRecipe" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7057">
     <DisplayName>RemoveRecipe</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6384</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -13736,6 +13760,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7083" BrowseName="1:UnlinkProduct" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7061">
     <DisplayName>UnlinkProduct</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.7.2/#7.7.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6386</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -13817,6 +13842,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7084" BrowseName="1:UnprepareProduct" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7059">
     <DisplayName>UnprepareProduct</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.8</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6388</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -13898,6 +13924,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7032" BrowseName="1:UnprepareRecipe" ParentNodeId="ns=1;i=5015" MethodDeclarationId="ns=1;i=7055">
     <DisplayName>UnprepareRecipe</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.5.2/#7.5.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -14009,6 +14036,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObject>
   <UAMethod NodeId="ns=1;i=7033" BrowseName="1:GetResultById" ParentNodeId="ns=1;i=5020" MethodDeclarationId="ns=1;i=7026">
     <DisplayName>GetResultById</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.2/#7.10.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5020</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6115</Reference>
@@ -14459,6 +14487,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7035" BrowseName="1:GetResultListFiltered" ParentNodeId="ns=1;i=5020" MethodDeclarationId="ns=1;i=7089">
     <DisplayName>GetResultListFiltered</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.2/#7.10.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5020</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6124</Reference>
@@ -14764,6 +14793,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7085" BrowseName="1:ReleaseResultHandle" ParentNodeId="ns=1;i=5020" MethodDeclarationId="ns=1;i=7090">
     <DisplayName>ReleaseResultHandle</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.10.2/#7.10.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6391</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -15111,6 +15141,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObject>
   <UAMethod NodeId="ns=1;i=7036" BrowseName="1:ReportSafetyState" ParentNodeId="ns=1;i=5023" MethodDeclarationId="ns=1;i=7043">
     <DisplayName>ReportSafetyState</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/7.13.2/#7.13.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6146</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -15268,6 +15299,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAObject>
   <UAMethod NodeId="ns=1;i=7092" BrowseName="1:Abort" ParentNodeId="ns=1;i=5100" MethodDeclarationId="ns=1;i=7097">
     <DisplayName>Abort</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5100</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6405</Reference>
@@ -15376,6 +15408,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7104" BrowseName="1:Sync" ParentNodeId="ns=1;i=5102" MethodDeclarationId="ns=1;i=7101">
     <DisplayName>Sync</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.4.6/#8.4.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6418</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -15690,6 +15723,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7107" BrowseName="1:SimulationMode" ParentNodeId="ns=1;i=5100" MethodDeclarationId="ns=1;i=7100">
     <DisplayName>SimulationMode</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6428</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -15895,6 +15929,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7099" BrowseName="1:StartContinuous" ParentNodeId="ns=1;i=5100" MethodDeclarationId="ns=1;i=7009">
     <DisplayName>StartContinuous</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6409</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -16040,6 +16075,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7102" BrowseName="1:StartSingleJob" ParentNodeId="ns=1;i=5100" MethodDeclarationId="ns=1;i=7098">
     <DisplayName>StartSingleJob</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6411</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -16185,6 +16221,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7103" BrowseName="1:Stop" ParentNodeId="ns=1;i=5100" MethodDeclarationId="ns=1;i=7096">
     <DisplayName>Stop</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.3.7/#8.3.7.4</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6413</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -16266,6 +16303,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7049" BrowseName="1:ConfirmAll" ParentNodeId="ns=1;i=5053" MethodDeclarationId="ns=1;i=7066">
     <DisplayName>ConfirmAll</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5053</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6216</Reference>
@@ -16447,6 +16485,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7037" BrowseName="1:Halt" ParentNodeId="ns=1;i=5053" MethodDeclarationId="ns=1;i=7094">
     <DisplayName>Halt</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5053</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6154</Reference>
@@ -16804,6 +16843,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7038" BrowseName="1:Reset" ParentNodeId="ns=1;i=5053" MethodDeclarationId="ns=1;i=7093">
     <DisplayName>Reset</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6158</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -16885,6 +16925,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7053" BrowseName="1:SelectModeAutomatic" ParentNodeId="ns=1;i=5053" MethodDeclarationId="ns=1;i=7095">
     <DisplayName>SelectModeAutomatic</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/8.2.8/#8.2.8.3</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6325</Reference>
@@ -16922,7 +16963,7 @@ The hash is supposed to be provided by the environment if existing. The environm
   <UAObject NodeId="ns=1;i=5009" BrowseName="1:http://opcfoundation.org/UA/MachineVision" SymbolicName="http___opcfoundation_org_UA_MachineVision">
     <DisplayName>http://opcfoundation.org/UA/MachineVision</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/docs/13.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/MachineVision/v100/docs/13.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6549</Reference>
