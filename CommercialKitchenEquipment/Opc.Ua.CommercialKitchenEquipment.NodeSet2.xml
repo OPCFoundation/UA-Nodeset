@@ -95,7 +95,7 @@
   </Extensions>
   <UADataType NodeId="ns=1;i=3014" BrowseName="1:BeverageSMLEnumeration">
     <DisplayName>BeverageSMLEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/14.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/14.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6366</Reference>
@@ -133,7 +133,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3008" BrowseName="1:ChamberModeEnumeration">
     <DisplayName>ChamberModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/9.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/9.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
@@ -231,7 +231,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3015" BrowseName="1:CoffeeMachineModeEnumeration">
     <DisplayName>CoffeeMachineModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/14.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/14.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6367</Reference>
@@ -269,7 +269,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3006" BrowseName="1:CombiSteamerModeEnumeration">
     <DisplayName>CombiSteamerModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/8.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/8.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6168</Reference>
@@ -335,7 +335,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3010" BrowseName="1:CookingKettleModeEnumeration">
     <DisplayName>CookingKettleModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/11.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/11.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6102</Reference>
@@ -393,7 +393,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3021" BrowseName="1:CurrentStateEnumeration">
     <DisplayName>CurrentStateEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/17.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/17.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6529</Reference>
@@ -431,7 +431,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:EnergySourceEnumeration">
     <DisplayName>EnergySourceEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/21.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/21.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6254</Reference>
@@ -465,7 +465,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:FryerModeEnumeration">
     <DisplayName>FryerModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/6.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/6.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -515,7 +515,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:FryingPanModeEnumeration">
     <DisplayName>FryingPanModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/7.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/7.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6253</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -577,7 +577,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3025" BrowseName="1:GrillingZoneStateEnumeration">
     <DisplayName>GrillingZoneStateEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/18.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/18.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6717</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -615,7 +615,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3017" BrowseName="1:HygieneModeEnumeration">
     <DisplayName>HygieneModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/15.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/15.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6444</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -661,7 +661,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3011" BrowseName="1:MultiFunctionPanModeEnumeration">
     <DisplayName>MultiFunctionPanModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/12.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/12.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6286</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -747,7 +747,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3023" BrowseName="1:OperatingModeEnumeration">
     <DisplayName>OperatingModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/19.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/19.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6581</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -805,7 +805,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3018" BrowseName="1:OperationModeEnumeration">
     <DisplayName>OperationModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/15.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/15.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6445</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -891,7 +891,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3013" BrowseName="1:PastaCookerModeEnumeration">
     <DisplayName>PastaCookerModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/13.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/13.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6337</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -945,7 +945,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3022" BrowseName="1:PlatenPositionStateEnumeration">
     <DisplayName>PlatenPositionStateEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/18.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/18.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6557</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -983,7 +983,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3009" BrowseName="1:PressureCookingKettleModeEnumeration">
     <DisplayName>PressureCookingKettleModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/10.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/10.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1041,7 +1041,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3016" BrowseName="1:ProgramModeEnumeration">
     <DisplayName>ProgramModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/15.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/15.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6443</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1103,7 +1103,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:SignalModeEnumeration">
     <DisplayName>SignalModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/6.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/6.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6206</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1137,7 +1137,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3007" BrowseName="1:SpecialCookingModeEnumeration">
     <DisplayName>SpecialCookingModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/8.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/8.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1199,7 +1199,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3012" BrowseName="1:SpecialFunctionModeEnumeration">
     <DisplayName>SpecialFunctionModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/12.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/12.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6287</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1237,7 +1237,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3024" BrowseName="1:StatusEnumeration">
     <DisplayName>StatusEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/20.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/20.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6620</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1335,7 +1335,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3019" BrowseName="1:TrayModeEnumeration">
     <DisplayName>TrayModeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/16.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/16.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6497</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1381,7 +1381,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3020" BrowseName="1:TrayTypeEnumeration">
     <DisplayName>TrayTypeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/16.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/16.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6498</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -2147,7 +2147,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:BatchInformationType">
     <DisplayName>BatchInformationType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/5.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/5.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -2190,7 +2190,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:KitchenDeviceHAConfigType">
     <DisplayName>KitchenDeviceHAConfigType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/5.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/5.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2318</Reference>
@@ -2215,7 +2215,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:KitchenDeviceParameterType" IsAbstract="true">
     <DisplayName>KitchenDeviceParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/5.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/5.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
@@ -2249,7 +2249,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:ChamberType">
     <DisplayName>ChamberType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/9.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/9.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6192</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6188</Reference>
@@ -3028,7 +3028,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1022" BrowseName="1:CoffeeMachineParameterType">
     <DisplayName>CoffeeMachineParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/14.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/14.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6659</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6369</Reference>
@@ -3254,7 +3254,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1023" BrowseName="1:CoffeeMachineRecipeParameterType">
     <DisplayName>CoffeeMachineRecipeParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/14.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/14.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6384</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6386</Reference>
@@ -3613,7 +3613,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:CombiSteamerParameterType">
     <DisplayName>CombiSteamerParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/8.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/8.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6119</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6128</Reference>
@@ -4226,7 +4226,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:CookingKettleParameterType">
     <DisplayName>CookingKettleParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/11.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/11.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6265</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6257</Reference>
@@ -4536,7 +4536,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1029" BrowseName="1:CookingZoneParameterType">
     <DisplayName>CookingZoneParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/17.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/17.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6540</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6536</Reference>
@@ -4840,7 +4840,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1025" BrowseName="1:DishWashingMachineProgramParameterType">
     <DisplayName>DishWashingMachineProgramParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/15.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/15.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6470</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6469</Reference>
@@ -5350,7 +5350,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:FryerParameterType">
     <DisplayName>FryerParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6025</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
@@ -5568,7 +5568,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1031" BrowseName="1:FryingAndGrillingParameterType">
     <DisplayName>FryingAndGrillingParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/18.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/18.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6560</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6564</Reference>
@@ -5887,7 +5887,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:FryingPanParameterType">
     <DisplayName>FryingPanParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/7.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/7.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6067</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6070</Reference>
@@ -6252,7 +6252,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1035" BrowseName="1:IceMachineParameterType">
     <DisplayName>IceMachineParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/20.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/20.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6622</Reference>
@@ -6452,7 +6452,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1033" BrowseName="1:MicrowaveCombiOvenParameterType">
     <DisplayName>MicrowaveCombiOvenParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/19.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/19.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6582</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6592</Reference>
@@ -6834,7 +6834,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1018" BrowseName="1:MultiFunctionPanParameterType">
     <DisplayName>MultiFunctionPanParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/12.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/12.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6303</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6305</Reference>
@@ -7455,7 +7455,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:PastaCookerParameterType">
     <DisplayName>PastaCookerParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/13.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/13.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6342</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6339</Reference>
@@ -7673,7 +7673,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:PressureCookingKettleParameterType">
     <DisplayName>PressureCookingKettleParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/10.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/10.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6219</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6221</Reference>
@@ -8102,7 +8102,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1027" BrowseName="1:TrayType">
     <DisplayName>TrayType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/16.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/16.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6506</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6500</Reference>
@@ -8320,7 +8320,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:CommercialKitchenDeviceType" IsAbstract="true">
     <DisplayName>CommercialKitchenDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/5.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/5.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
@@ -8418,7 +8418,7 @@
   </UAObject>
   <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:CoffeeMachineDeviceType">
     <DisplayName>CoffeeMachineDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/14.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/14.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5014</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -8932,7 +8932,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:CombiSteamerDeviceType">
     <DisplayName>CombiSteamerDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/8.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/8.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5007</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -9241,7 +9241,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:CookingKettleDeviceType">
     <DisplayName>CookingKettleDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/11.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/11.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5010</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -9587,7 +9587,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:CookingZoneDeviceType">
     <DisplayName>CookingZoneDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/17.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/17.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5017</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -9722,7 +9722,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1026" BrowseName="1:DishWashingMachineDeviceType">
     <DisplayName>DishWashingMachineDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/15.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/15.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5015</Reference>
@@ -9865,7 +9865,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:FryerDeviceType">
     <DisplayName>FryerDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/6.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5005</Reference>
@@ -10101,7 +10101,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1032" BrowseName="1:FryingAndGrillingDeviceType">
     <DisplayName>FryingAndGrillingDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/18.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/18.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6580</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -10135,7 +10135,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:FryingPanDeviceType">
     <DisplayName>FryingPanDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/7.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/7.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6080</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
@@ -10472,7 +10472,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1036" BrowseName="1:IceMachineDeviceType">
     <DisplayName>IceMachineDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/20.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/20.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5020</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -10488,7 +10488,7 @@
   </UAObject>
   <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:MicrowaveCombiOvenDeviceType">
     <DisplayName>MicrowaveCombiOvenDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/19.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/19.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5019</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -10706,7 +10706,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1019" BrowseName="1:MultiFunctionPanDeviceType">
     <DisplayName>MultiFunctionPanDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/12.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/12.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6321</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
@@ -11062,7 +11062,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:OvenDeviceType">
     <DisplayName>OvenDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/9.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/9.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5008</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
@@ -11087,7 +11087,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1021" BrowseName="1:PastaCookerDeviceType">
     <DisplayName>PastaCookerDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/13.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/13.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6350</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6349</Reference>
@@ -11332,7 +11332,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:PressureCookingKettleDeviceType">
     <DisplayName>PressureCookingKettleDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/10.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/10.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6229</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5009</Reference>
@@ -11779,7 +11779,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1028" BrowseName="1:ServeryCounterDeviceType">
     <DisplayName>ServeryCounterDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/16.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/16.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5016</Reference>
@@ -12007,7 +12007,7 @@
   <UAObject NodeId="ns=1;i=5021" BrowseName="1:http://opcfoundation.org/UA/CommercialKitchenEquipment/" SymbolicName="http___opcfoundation_org_UA_CommercialKitchenEquipment_">
     <DisplayName>http://opcfoundation.org/UA/CommercialKitchenEquipment/</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/docs/22.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CommercialKitchenEquipment/v100/docs/22.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6707</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
