@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -4850,6 +4850,31 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTIVE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTIVE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INACTIVE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INACTIVE_2</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -4924,6 +4949,31 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTIVE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTIVE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CLEARED_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CLEARED_2</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5050,6 +5100,31 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AVAILABLE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AVAILABLE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_2</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5124,6 +5199,52 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MASTER_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MASTER_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SLAVE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>SLAVE_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SYCHRONOUS_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>SYCHRONOUS_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TANDEM_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>TANDEM_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_5</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5292,6 +5413,38 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONDITION_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CONDITION_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EVENT_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>EVENT_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SAMPLE_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>SAMPLE_3</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5393,6 +5546,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CLOSED_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CLOSED_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INDETERMINATE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INDETERMINATE_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OPEN_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OPEN_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5508,6 +5700,52 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AUTOMATIC_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AUTOMATIC_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MANUAL_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MANUAL_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MANUAL_DATA_INPUT_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MANUAL_DATA_INPUT_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SEMI_AUTOMATIC_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>SEMI_AUTOMATIC_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_5</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5624,6 +5862,31 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MACHINE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MACHINE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WORK_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>WORK_2</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -5776,6 +6039,108 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALLOCATED_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ALLOCATED_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AVAILABLE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AVAILABLE_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BROKEN_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>BROKEN_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EXPIRED_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>EXPIRED_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MEASURED_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MEASURED_5</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NEW_6</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>NEW_6</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_REGISTERED_7</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>NOT_REGISTERED_7</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RECONDITIONED_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>RECONDITIONED_8</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TAGGED_OUT_9</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>TAGGED_OUT_9</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNALLOCATED_10</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNALLOCATED_10</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_11</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_11</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNKNOWN_12</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNKNOWN_12</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>13</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>USED_13</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>USED_13</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -6004,6 +6369,41 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=22</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14798</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:StructureDefinition>
+          <uax:BaseDataType>
+            <uax:Identifier>i=22</uax:Identifier>
+          </uax:BaseDataType>
+          <uax:StructureType>Structure_0</uax:StructureType>
+          <uax:Fields>
+            <uax:StructureField>
+              <uax:Name>DataItemEnum</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=9998</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>DataItemEnumString</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+          </uax:Fields>
+        </uax:StructureDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
   </DataItemEnumDataType>
   <DataItemEnumTypeEnum xmlns="http://opcfoundation.org/UA/MTConnect/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -6017,6 +6417,304 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCELERATION_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACCELERATION_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCUMULATED_TIME_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACCUMULATED_TIME_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTIVE_AXES_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTIVE_AXES_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTUATOR_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTUATOR_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTUATOR_STATE_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTUATOR_STATE_5</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALARM_6</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ALARM_6</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AMPERAGE_7</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AMPERAGE_7</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ANGLE_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ANGLE_8</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ANGULAR_ACCELERATION_9</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ANGULAR_ACCELERATION_9</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ANGULAR_VELOCITY_10</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ANGULAR_VELOCITY_10</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ASSET_CHANGED_11</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ASSET_CHANGED_11</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AVAILABILITY_12</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AVAILABILITY_12</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>13</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AXIS_COUPLING_13</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AXIS_COUPLING_13</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>14</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AXIS_FEEDRATE_14</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AXIS_FEEDRATE_14</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>15</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BLOCK_15</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>BLOCK_15</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CODE_16</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CODE_16</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>17</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COMMUNICATIONS_17</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>COMMUNICATIONS_17</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>18</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONCENTRATION_18</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CONCENTRATION_18</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>19</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONDUCTIVITY_19</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CONDUCTIVITY_19</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>20</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONTROLLER_MODE_20</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CONTROLLER_MODE_20</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>21</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COUPLED_AXES_21</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>COUPLED_AXES_21</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>22</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DIRECTION_22</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>DIRECTION_22</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>23</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DISPLACEMENT_23</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>DISPLACEMENT_23</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>24</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DOOR_STATE_24</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>DOOR_STATE_24</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>25</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ELECTRICAL_POWER_25</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ELECTRICAL_POWER_25</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>26</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EMERGENCY_STOP_26</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>EMERGENCY_STOP_26</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>27</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EXECUTION_27</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>EXECUTION_27</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>28</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FILL_LEVEL_28</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>FILL_LEVEL_28</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>29</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FLOW_29</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>FLOW_29</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>30</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FREQUENCY_30</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>FREQUENCY_30</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>31</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>HARDWARE_31</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>HARDWARE_31</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LEVEL_32</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LEVEL_32</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>33</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LINE_33</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LINE_33</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>34</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LINEAR_FORCE_34</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LINEAR_FORCE_34</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>35</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LOAD_35</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LOAD_35</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>36</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LOGIC_PROGRAM_36</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LOGIC_PROGRAM_36</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>37</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MASS_37</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MASS_37</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>38</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MESSAGE_38</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MESSAGE_38</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>39</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MOTION_PROGRAM_39</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MOTION_PROGRAM_39</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>40</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PART_COUNT_40</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>PART_COUNT_40</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>41</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PART_ID_41</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>PART_ID_41</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -6650,6 +7348,41 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=22</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14798</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:StructureDefinition>
+          <uax:BaseDataType>
+            <uax:Identifier>i=22</uax:Identifier>
+          </uax:BaseDataType>
+          <uax:StructureType>Structure_0</uax:StructureType>
+          <uax:Fields>
+            <uax:StructureField>
+              <uax:Name>DataItemStatisticsEnum</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=10002</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+            <uax:StructureField>
+              <uax:Name>DataItemStatisticsString</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:MaxStringLength>0</uax:MaxStringLength>
+              <uax:IsOptional>false</uax:IsOptional>
+            </uax:StructureField>
+          </uax:Fields>
+        </uax:StructureDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
   </DataItemStatisticsDataType>
   <DataItemStatisticsTypeEnum xmlns="http://opcfoundation.org/UA/MTConnect/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -6663,6 +7396,80 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AVERAGE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>AVERAGE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>KURTOSIS_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>KURTOSIS_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MAXIMUM_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MAXIMUM_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MEAN_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MEAN_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MINIMUM_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MINIMUM_5</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MODE_6</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MODE_6</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RANGE_7</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>RANGE_7</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ROOT_MEAN_SQUARE_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ROOT_MEAN_SQUARE_8</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>STANDARD_DEVIATION_9</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>STANDARD_DEVIATION_9</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -6835,6 +7642,192 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTUAL_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTUAL_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALL_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ALL_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALTERNATING_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ALTERNATING_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>A_SCALE_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>A_SCALE_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BAD_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>BAD_5</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>B_SCALE_6</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>B_SCALE_6</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COMMANDED_7</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>COMMANDED_7</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONTROL_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CONTROL_8</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>C_SCALE_9</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>C_SCALE_9</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DIRECT_10</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>DIRECT_10</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DYNAMIC_11</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>DYNAMIC_11</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>D_SCALE_12</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>D_SCALE_12</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>13</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GOOD_13</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>GOOD_13</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>14</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>KINETIC_14</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>KINETIC_14</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>15</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LINE_15</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LINE_15</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MAXIMUM_16</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MAXIMUM_16</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>17</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MINIMUM_17</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MINIMUM_17</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>18</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MOLE_18</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MOLE_18</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>19</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NO_SCALE_19</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>NO_SCALE_19</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>20</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OTHER_20</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OTHER_20</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>21</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OVERRIDE_21</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OVERRIDE_21</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>22</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PROBE_22</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>PROBE_22</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>23</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TARGET_23</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>TARGET_23</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>24</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VOLUME_24</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>VOLUME_24</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>25</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WEIGHT_25</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>WEIGHT_25</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -7231,6 +8224,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EXPRESS_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>EXPRESS_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TEXT_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>TEXT_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNDEFINED_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNDEFINED_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>XML_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>XML_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -7359,6 +8391,52 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CLOCKWISE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CLOCKWISE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COUNTER_CLOCKWISE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>COUNTER_CLOCKWISE_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NEGATIVE_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>NEGATIVE_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>POSITIVE_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>POSITIVE_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_5</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -7475,6 +8553,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CLOSED_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CLOSED_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INDETERMINATE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INDETERMINATE_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OPEN_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OPEN_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -7616,6 +8733,38 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ARMED_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ARMED_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TRIGGERED_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>TRIGGERED_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_3</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -7717,6 +8866,52 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTIVE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTIVE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INTERRUPTED_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INTERRUPTED_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>READY_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>READY_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>STOPPED_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>STOPPED_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_5</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -7924,6 +9119,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACTIVE_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ACTIVE_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COMPLETE_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>COMPLETE_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FAIL_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>FAIL_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>READY_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>READY_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8065,6 +9299,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CRIB_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CRIB_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>POT_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>POT_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>STATION_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>STATION_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>READY_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>READY_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8362,6 +9635,80 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CRASH_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CRASH_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ESTOP_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ESTOP_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FAILURE_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>FAILURE_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FAULT_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>FAULT_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>JAM_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>JAM_5</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MATERIAL_6</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MATERIAL_6</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MESSAGE_7</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MESSAGE_7</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OTHER_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OTHER_8</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OVERLOAD_9</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OVERLOAD_9</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8573,6 +9920,38 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INDEPENDENT_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INDEPENDENT_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MIRROR_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MIRROR_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SYNCHRONOUS_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>SYNCHRONOUS_3</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8661,6 +10040,38 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OFF_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>OFF_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ON_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ON_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_3</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8762,6 +10173,31 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>HIGH_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>HIGH_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LOW_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>LOW_2</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8862,6 +10298,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONTOUR_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CONTOUR_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INDEX_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INDEX_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SPINDLE_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>SPINDLE_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNAVAILABLE_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UNAVAILABLE_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -8977,6 +10452,45 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CRITICAL_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>CRITICAL_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ERROR_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>ERROR_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INFORMATION_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>INFORMATION_3</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>WARNING_4</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -9209,6 +10723,31 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DOWN_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>DOWN_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UP_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>UP_2</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -9283,6 +10822,38 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MINUTES_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>MINUTES_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PART_COUNT_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>PART_COUNT_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WEAR_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Name>WEAR_3</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>

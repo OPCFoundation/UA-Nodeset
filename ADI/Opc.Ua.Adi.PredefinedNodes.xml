@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -22241,6 +22241,127 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IDLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Idle, no cleaning or acquisition cycle in progress</uax:Text>
+              </uax:Description>
+              <uax:Name>IDLE</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DIAGNOSTIC</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Scquisition cycle collecting data for diagnostic purpose</uax:Text>
+              </uax:Description>
+              <uax:Name>DIAGNOSTIC</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CLEANING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Cleaning cycle</uax:Text>
+              </uax:Description>
+              <uax:Name>CLEANING</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CALIBRATION</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Calibration acquisition cycle</uax:Text>
+              </uax:Description>
+              <uax:Name>CALIBRATION</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VALIDATION</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Validation acquisition cycle</uax:Text>
+              </uax:Description>
+              <uax:Name>VALIDATION</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SAMPLING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Sample acquisition cycle</uax:Text>
+              </uax:Description>
+              <uax:Name>SAMPLING</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32769</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DIAGNOSTIC_WITH_GRAB_SAMPLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab</uax:Text>
+              </uax:Description>
+              <uax:Name>DIAGNOSTIC_WITH_GRAB_SAMPLE</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32770</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CLEANING_WITH_GRAB_SAMPLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab</uax:Text>
+              </uax:Description>
+              <uax:Name>CLEANING_WITH_GRAB_SAMPLE</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32772</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CALIBRATION_WITH_GRAB_SAMPLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Calibration acquisition cycle and sample is extracted from the process to be sent in control lab</uax:Text>
+              </uax:Description>
+              <uax:Name>CALIBRATION_WITH_GRAB_SAMPLE</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32776</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VALIDATION_WITH_GRAB_SAMPLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Validation acquisition cycle and sample is extracted from the process to be sent in control lab</uax:Text>
+              </uax:Description>
+              <uax:Name>VALIDATION_WITH_GRAB_SAMPLE</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32784</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SAMPLING_WITH_GRAB_SAMPLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Sample acquisition cycle and sample is extracted from the process to be sent in control lab</uax:Text>
+              </uax:Description>
+              <uax:Name>SAMPLING_WITH_GRAB_SAMPLE</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -22485,6 +22606,67 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_USED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>No longer used.</uax:Text>
+              </uax:Description>
+              <uax:Name>NOT_USED</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GOOD</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The acquisition has been completed as requested without any error.</uax:Text>
+              </uax:Description>
+              <uax:Name>GOOD</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BAD</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The acquisition has been completed as requested with error.</uax:Text>
+              </uax:Description>
+              <uax:Name>BAD</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNKNOWN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The acquisition has been completed but nothing can be said about the quality of the result.</uax:Text>
+              </uax:Description>
+              <uax:Name>UNKNOWN</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PARTIAL</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The acquisition has been partially completed as requested without any error.</uax:Text>
+              </uax:Description>
+              <uax:Name>PARTIAL</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumStrings xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>
@@ -23229,6 +23411,87 @@
     <uax:SuperTypeId>
       <uax:Identifier>i=29</uax:Identifier>
     </uax:SuperTypeId>
+    <uax:DataTypeDefinition>
+      <uax:TypeId>
+        <uax:Identifier>i=14799</uax:Identifier>
+      </uax:TypeId>
+      <uax:Body>
+        <uax:EnumDefinition>
+          <uax:Fields>
+            <uax:EnumField>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NORMAL_0</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Normal</uax:Text>
+              </uax:Description>
+              <uax:Name>NORMAL_0</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING_LOW_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In low warning range</uax:Text>
+              </uax:Description>
+              <uax:Name>WARNING_LOW_1</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING_HIGH_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In high warning range</uax:Text>
+              </uax:Description>
+              <uax:Name>WARNING_HIGH_2</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In warning range (low or high) or some other warning cause</uax:Text>
+              </uax:Description>
+              <uax:Name>WARNING_4</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALARM_LOW_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In low alarm range</uax:Text>
+              </uax:Description>
+              <uax:Name>ALARM_LOW_8</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALARM_HIGH_16</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In high alarm range</uax:Text>
+              </uax:Description>
+              <uax:Name>ALARM_HIGH_16</uax:Name>
+            </uax:EnumField>
+            <uax:EnumField>
+              <uax:Value>32</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALARM_32</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In alarm range (low or high) or some other alarm cause</uax:Text>
+              </uax:Description>
+              <uax:Name>ALARM_32</uax:Name>
+            </uax:EnumField>
+          </uax:Fields>
+        </uax:EnumDefinition>
+      </uax:Body>
+    </uax:DataTypeDefinition>
     <EnumValues xmlns="http://opcfoundation.org/UA/">
       <uax:NodeClass>Variable_2</uax:NodeClass>
       <uax:NodeId>

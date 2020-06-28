@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -33,7 +33,7 @@
     <Uri>http://www.OPCFoundation.org/UA/2013/01/ISA95</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://www.OPCFoundation.org/UA/2013/01/ISA95">
+    <Model ModelUri="http://www.OPCFoundation.org/UA/2013/01/ISA95" Version="1.00" PublicationDate="2013-11-06T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" />
     </Model>
   </Models>
@@ -77,7 +77,7 @@
   <UAReferenceType NodeId="ns=1;i=4714" BrowseName="1:MadeUpOf" IsAbstract="true">
     <DisplayName>MadeUpOf</DisplayName>
     <Description>This ReferenceType is used to describe a shared aggregation</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -86,7 +86,7 @@
   <UAReferenceType NodeId="ns=1;i=4910" BrowseName="1:HasISA95ClassProperty">
     <DisplayName>HasISA95ClassProperty</DisplayName>
     <Description>This ReferenceType is used to describe the ownership of an ISA95ClassProperty</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -95,7 +95,7 @@
   <UAReferenceType NodeId="ns=1;i=2009" BrowseName="1:HasISA95Property">
     <DisplayName>HasISA95Property</DisplayName>
     <Description>This ReferenceType is used to describe the ownership of ISA-95 Property</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -104,7 +104,7 @@
   <UAReferenceType NodeId="ns=1;i=4713" BrowseName="1:HasISA95Attribute">
     <DisplayName>HasISA95Attribute</DisplayName>
     <Description>This ReferenceType indicates an ownership of ISA95Attribute</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -113,7 +113,7 @@
   <UAReferenceType NodeId="ns=1;i=4911" BrowseName="1:HasCDTSupplemental">
     <DisplayName>HasCDTSupplemental</DisplayName>
     <Description>This ReferenceType indicates an ownership of supplemental elements regarding CDT</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=46</Reference>
     </References>
@@ -122,7 +122,7 @@
   <UAReferenceType NodeId="ns=1;i=4912" BrowseName="1:DefinedBy" IsAbstract="true">
     <DisplayName>DefinedBy</DisplayName>
     <Description>This ReferenceType is used to describe a categorization of the SourceNode</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -131,7 +131,7 @@
   <UAReferenceType NodeId="ns=1;i=4913" BrowseName="1:TestedBy" IsAbstract="true">
     <DisplayName>TestedBy</DisplayName>
     <Description>A reference that is used to describe an ISA-95 Test Specification that is associated with the SourceNode</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.8</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -140,7 +140,7 @@
   <UAReferenceType NodeId="ns=1;i=4914" BrowseName="1:ImplementedBy">
     <DisplayName>ImplementedBy</DisplayName>
     <Description>A reference that is used to describe a relationship between ISA95Equipment and ISA95PhysicalAsset.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.9</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -149,7 +149,7 @@
   <UAReferenceType NodeId="ns=1;i=4915" BrowseName="1:HasTestResult">
     <DisplayName>HasTestResult</DisplayName>
     <Description>A reference that is used to describe the test results that are associated with an ISA95Property.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.10</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=46</Reference>
     </References>
@@ -158,7 +158,7 @@
   <UAReferenceType NodeId="ns=1;i=5114" BrowseName="1:LocatedIn">
     <DisplayName>LocatedIn</DisplayName>
     <Description>A reference that is used to describe the test results that are associated with an ISA95Property.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=46</Reference>
     </References>
@@ -167,7 +167,7 @@
   <UAReferenceType NodeId="ns=1;i=4916" BrowseName="1:ResultsForSpecification">
     <DisplayName>ResultsForSpecification</DisplayName>
     <Description>A reference that is used to describe the test results that are associated with an ISA95Property.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.2.11</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.2.11</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
     </References>
@@ -176,7 +176,7 @@
   <UAReferenceType NodeId="ns=1;i=4917" BrowseName="1:DefinedByPersonnelClass">
     <DisplayName>DefinedByPersonnelClass</DisplayName>
     <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4912</Reference>
     </References>
@@ -185,7 +185,7 @@
   <UAReferenceType NodeId="ns=1;i=4918" BrowseName="1:TestedByQualificationTest">
     <DisplayName>TestedByQualificationTest</DisplayName>
     <Description>This ReferenceType is used to describe a qualification test that is associated with the SourceNode.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
@@ -194,7 +194,7 @@
   <UAReferenceType NodeId="ns=1;i=4919" BrowseName="1:DefinedByEquipmentClass">
     <DisplayName>DefinedByEquipmentClass</DisplayName>
     <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4912</Reference>
     </References>
@@ -203,7 +203,7 @@
   <UAReferenceType NodeId="ns=1;i=4920" BrowseName="1:TestedByEquipmentTest">
     <DisplayName>TestedByEquipmentTest</DisplayName>
     <Description>This ReferenceType is used to describe a qualification test that is associated with the SourceNode.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
@@ -212,7 +212,7 @@
   <UAReferenceType NodeId="ns=1;i=5115" BrowseName="1:MadeUpOfEquipment">
     <DisplayName>MadeUpOfEquipment</DisplayName>
     <Description>This ReferenceType is used to describe a shared aggregation</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4714</Reference>
     </References>
@@ -221,7 +221,7 @@
   <UAReferenceType NodeId="ns=1;i=4921" BrowseName="1:DefinedByPhysicalAssetClass">
     <DisplayName>DefinedByPhysicalAssetClass</DisplayName>
     <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4912</Reference>
     </References>
@@ -230,7 +230,7 @@
   <UAReferenceType NodeId="ns=1;i=4922" BrowseName="1:TestedByPhysicalAssetTest">
     <DisplayName>TestedByPhysicalAssetTest</DisplayName>
     <Description>This ReferenceType is used to describe a qualification test that is associated with the SourceNode</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
@@ -239,7 +239,7 @@
   <UAReferenceType NodeId="ns=1;i=5116" BrowseName="1:MadeUpOfPhysicalAsset">
     <DisplayName>MadeUpOfPhysicalAsset</DisplayName>
     <Description>This ReferenceType is used to describe a shared aggregation</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4714</Reference>
     </References>
@@ -256,7 +256,7 @@
   <UAReferenceType NodeId="ns=1;i=4924" BrowseName="1:TestedByMaterialTest">
     <DisplayName>TestedByMaterialTest</DisplayName>
     <Description>This ReferenceType is used to describe a MaterialTestSpecification that is associated with the SourceNode</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.6.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.6.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4913</Reference>
     </References>
@@ -265,7 +265,7 @@
   <UAReferenceType NodeId="ns=1;i=4925" BrowseName="1:AssembledFrom" IsAbstract="true">
     <DisplayName>AssembledFrom</DisplayName>
     <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.6.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.6.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=44</Reference>
     </References>
@@ -274,7 +274,7 @@
   <UAReferenceType NodeId="ns=1;i=4926" BrowseName="1:AssembledFromDefinition">
     <DisplayName>AssembledFromDefinition</DisplayName>
     <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.6.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.6.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4925</Reference>
     </References>
@@ -283,7 +283,7 @@
   <UAReferenceType NodeId="ns=1;i=4927" BrowseName="1:AssembledFromClass">
     <DisplayName>AssembledFromClass</DisplayName>
     <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.6.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.6.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4925</Reference>
     </References>
@@ -292,7 +292,7 @@
   <UAReferenceType NodeId="ns=1;i=4928" BrowseName="1:AssembledFromLot">
     <DisplayName>AssembledFromLot</DisplayName>
     <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.6.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.6.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4925</Reference>
     </References>
@@ -301,7 +301,7 @@
   <UAReferenceType NodeId="ns=1;i=5117" BrowseName="1:MadeUpOfMaterialSublot">
     <DisplayName>MadeUpOfMaterialSublot</DisplayName>
     <Description>This ReferenceType is used to describe a shared aggregation</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/9.6.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/9.6.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4714</Reference>
     </References>
@@ -309,49 +309,49 @@
   </UAReferenceType>
   <UADataType NodeId="ns=1;i=4772" BrowseName="1:DecimalString">
     <DisplayName>DecimalString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=4773" BrowseName="1:DateString">
     <DisplayName>DateString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=4774" BrowseName="1:TimeString">
     <DisplayName>TimeString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.8</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=4775" BrowseName="1:DurationString">
     <DisplayName>DurationString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=4929" BrowseName="1:NormalizedString">
     <DisplayName>NormalizedString</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=927" BrowseName="1:Decimal">
     <DisplayName>Decimal</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=4776" BrowseName="1:CurrencyCode">
     <DisplayName>CurrencyCode</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -365,7 +365,7 @@
   </UADataType>
   <UADataType NodeId="ns=1;i=4796" BrowseName="1:CDTAmountDecimal">
     <DisplayName>CDTAmountDecimal</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4797</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=927</Reference>
@@ -381,7 +381,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4798" BrowseName="1:CDTBinaryObject">
     <DisplayName>CDTBinaryObject</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4930</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4800</Reference>
@@ -505,7 +505,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4792" BrowseName="1:CDTCode">
     <DisplayName>CDTCode</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.4</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4793</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4794</Reference>
@@ -539,7 +539,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4803" BrowseName="1:CDTDateTime">
     <DisplayName>CDTDateTime</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.5</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4804</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4805</Reference>
@@ -564,7 +564,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4806" BrowseName="1:CDTGraphic">
     <DisplayName>CDTGraphic</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.6</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4940</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4941</Reference>
@@ -616,7 +616,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4777" BrowseName="1:CDTIdentifier">
     <DisplayName>CDTIdentifier</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.7</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4778</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4779</Reference>
@@ -740,14 +740,14 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4821" BrowseName="1:CDTOrdinal">
     <DisplayName>CDTOrdinal</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.9</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=6</Reference>
     </References>
   </UADataType>
   <UADataType NodeId="ns=1;i=4822" BrowseName="1:CDTPicture">
     <DisplayName>CDTPicture</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.10</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4944</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4945</Reference>
@@ -1039,7 +1039,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4853" BrowseName="1:CDTSound">
     <DisplayName>CDTSound</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.12</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.12</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4948</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4949</Reference>
@@ -1091,7 +1091,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4856" BrowseName="1:CDTVideo">
     <DisplayName>CDTVideo</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/6.3.13</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/6.3.13</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4952</Reference>
       <Reference ReferenceType="ns=1;i=4911">ns=1;i=4953</Reference>
@@ -1143,7 +1143,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4871" BrowseName="1:ISA95EquipmentElementLevelEnum">
     <DisplayName>ISA95EquipmentElementLevelEnum</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=4872</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -1255,7 +1255,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=4862" BrowseName="1:ISA95TestResultMeasurementDataType">
     <DisplayName>ISA95TestResultMeasurementDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1270,7 +1270,7 @@
   </UADataType>
   <UADataType NodeId="ns=1;i=4873" BrowseName="1:ISA95TestResultDataType">
     <DisplayName>ISA95TestResultDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1285,7 +1285,7 @@
   </UADataType>
   <UADataType NodeId="ns=1;i=4956" BrowseName="1:ISA95AssetAssignmentDataType">
     <DisplayName>ISA95AssetAssignmentDataType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.2/#8.2.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.2/#8.2.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -1299,7 +1299,7 @@
   <UAVariableType NodeId="ns=1;i=4885" BrowseName="1:ISA95ClassPropertyType" IsAbstract="true" ValueRank="-2">
     <DisplayName>ISA95ClassPropertyType</DisplayName>
     <Description>This VariableType is used to define an ISA95ClassProperty for an ISA95Class</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.5.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4886</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
@@ -1316,7 +1316,7 @@
   <UAVariableType NodeId="ns=1;i=4263" BrowseName="1:ISA95PropertyType" IsAbstract="true" ValueRank="-2">
     <DisplayName>ISA95PropertyType</DisplayName>
     <Description>This VariableType is used to define an ISA95Property for an ISA95Object</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.5.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4887</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
@@ -1333,7 +1333,7 @@
   <UAVariableType NodeId="ns=1;i=4878" BrowseName="1:ISA95TestResultType" ValueRank="-2">
     <DisplayName>ISA95TestResultType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.5.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.5.4</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4879</Reference>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4880</Reference>
@@ -1427,7 +1427,7 @@
   <UAObjectType NodeId="ns=1;i=4957" BrowseName="1:ISA95ClassType" IsAbstract="true">
     <DisplayName>ISA95ClassType</DisplayName>
     <Description>This abstract ObjectType is used to define groupings of functionality that is associated with an ISA95Object</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.6.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.6.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -1435,7 +1435,7 @@
   <UAObjectType NodeId="ns=1;i=4958" BrowseName="1:ISA95ObjectType" IsAbstract="true">
     <DisplayName>ISA95ObjectType</DisplayName>
     <Description>This abstract ObjectType</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/7.6.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/7.6.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -1443,7 +1443,7 @@
   <UAObjectType NodeId="ns=1;i=4959" BrowseName="1:ISA95TestSpecificationType" IsAbstract="true">
     <DisplayName>ISA95TestSpecificationType</DisplayName>
     <Description>This ObjectType indicates the existence of a test specification.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.1.3/#8.1.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.1.3/#8.1.3.1</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=4960</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -1460,7 +1460,7 @@
   <UAVariableType NodeId="ns=1;i=5108" BrowseName="1:ISA95AssetAssignmentType" ValueRank="-2">
     <DisplayName>ISA95AssetAssignmentType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.3/#8.2.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.3/#8.2.3.1</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5109</Reference>
       <Reference ReferenceType="ns=1;i=4713">ns=1;i=5110</Reference>
@@ -1504,7 +1504,7 @@
   <UAVariableType NodeId="ns=1;i=4961" BrowseName="1:QualificationTestResultType" DataType="Structure" ValueRank="-2">
     <DisplayName>QualificationTestResultType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.1.2/#8.1.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.1.2/#8.1.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
@@ -1519,7 +1519,7 @@
   <UAVariableType NodeId="ns=1;i=1123" BrowseName="1:PersonnelClassPropertyType">
     <DisplayName>PersonnelClassPropertyType</DisplayName>
     <Description>This VariableType indicates ISA95ClassProperties for PersonnelClass.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.1.2/#8.1.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.1.2/#8.1.2.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=4979</Reference>
       <Reference ReferenceType="ns=1;i=4918">ns=1;i=4981</Reference>
@@ -1554,7 +1554,7 @@
   <UAVariableType NodeId="ns=1;i=5118" BrowseName="1:PersonPropertyType">
     <DisplayName>PersonPropertyType</DisplayName>
     <Description>This VariableType indicates ISA95Properties of a person</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.1.2/#8.1.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.1.2/#8.1.2.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5120</Reference>
       <Reference ReferenceType="ns=1;i=4918">ns=1;i=5122</Reference>
@@ -1652,7 +1652,7 @@
   <UAObjectType NodeId="ns=1;i=4996" BrowseName="1:PersonnelClassType">
     <DisplayName>PersonnelClassType</DisplayName>
     <Description>This ObjectType indicates a grouping of persons with similar characteristics for a definite purpose such as manufacturing operations definition, scheduling, capability and performance</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.1.3/#8.1.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.1.3/#8.1.3.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=4997</Reference>
       <Reference ReferenceType="ns=1;i=4918">ns=1;i=4999</Reference>
@@ -1687,7 +1687,7 @@
   <UAObjectType NodeId="ns=1;i=5131" BrowseName="1:PersonType">
     <DisplayName>PersonType</DisplayName>
     <Description>This ObjectType indicates a specifically identified individual</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.1.3/#8.1.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.1.3/#8.1.3.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5132</Reference>
       <Reference ReferenceType="ns=1;i=4917">ns=1;i=5302</Reference>
@@ -1731,7 +1731,7 @@
   <UAVariableType NodeId="ns=1;i=5048" BrowseName="1:GeoSpatialLocationType" DataType="String" ValueRank="-2">
     <DisplayName>GeoSpatialLocationType</DisplayName>
     <Description>This VariableType is used to provide details regarding Physical Location information for PhysicalAssetClassType</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.2/#8.3.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.2/#8.3.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=68</Reference>
     </References>
@@ -1739,7 +1739,7 @@
   <UAVariableType NodeId="ns=1;i=5049" BrowseName="1:CompanyType" ValueRank="-2">
     <DisplayName>CompanyType</DisplayName>
     <Description>This VariableType is used to provide details regarding company information for PhysicalAssetClassTypes or for instances of PhysicalAssetType</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.2/#8.3.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.2/#8.3.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
     </References>
@@ -1747,7 +1747,7 @@
   <UAVariableType NodeId="ns=1;i=5050" BrowseName="1:PhysicalAssetCapabilityTestResultType" DataType="Structure" ValueRank="-2">
     <DisplayName>PhysicalAssetCapabilityTestResultType</DisplayName>
     <Description>This VariableType indicates the results from a physical asset capability test for a specific physical asset.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.2/#8.3.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.2/#8.3.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
@@ -1762,7 +1762,7 @@
   <UAVariableType NodeId="ns=1;i=5059" BrowseName="1:PhysicalAssetClassPropertyType">
     <DisplayName>PhysicalAssetClassPropertyType</DisplayName>
     <Description>This VariableType indicates ISA95ClassProperties for a PhysicalAssetClassType</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.2/#8.3.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.2/#8.3.2.4</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5061</Reference>
       <Reference ReferenceType="ns=1;i=4922">ns=1;i=5063</Reference>
@@ -1797,7 +1797,7 @@
   <UAVariableType NodeId="ns=1;i=5065" BrowseName="1:PhysicalAssetPropertyType">
     <DisplayName>PhysicalAssetPropertyType</DisplayName>
     <Description>This VariableType indicates ISA95Properties of a role based equipment.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.2/#8.3.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.2/#8.3.2.5</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5067</Reference>
       <Reference ReferenceType="ns=1;i=4922">ns=1;i=5069</Reference>
@@ -1895,7 +1895,7 @@
   <UAObjectType NodeId="ns=1;i=5078" BrowseName="1:PhysicalAssetClassType">
     <DisplayName>PhysicalAssetClassType</DisplayName>
     <Description>This ObjectType indicates a grouping of equipment with similar characteristics for a definite purpose such as manufacturing operations definition, scheduling, capability and performance</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.3/#8.3.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.3/#8.3.3.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5079</Reference>
       <Reference ReferenceType="ns=1;i=4922">ns=1;i=5081</Reference>
@@ -1948,7 +1948,7 @@
   <UAObjectType NodeId="ns=1;i=5085" BrowseName="1:PhysicalAssetType">
     <DisplayName>PhysicalAssetType</DisplayName>
     <Description>This ObjectType defines a piece of equipment</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.3.3/#8.3.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.3.3/#8.3.3.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5086</Reference>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5136</Reference>
@@ -2154,7 +2154,7 @@
   <UAVariableType NodeId="ns=1;i=5008" BrowseName="1:EquipmentCapabilityTestResultType" DataType="Structure" ValueRank="-2">
     <DisplayName>EquipmentCapabilityTestResultType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.3/#8.2.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.3/#8.2.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
@@ -2162,7 +2162,7 @@
   <UAObjectType NodeId="ns=1;i=5015" BrowseName="1:EquipmentCapabilityTestSpecificationType">
     <DisplayName>EquipmentCapabilityTestSpecificationType</DisplayName>
     <Description>This ObjectType indicates the existence of a test specification.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.4/#8.2.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.4/#8.2.4.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4959</Reference>
     </References>
@@ -2170,7 +2170,7 @@
   <UAVariableType NodeId="ns=1;i=5017" BrowseName="1:EquipmentClassPropertyType">
     <DisplayName>EquipmentClassPropertyType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.3/#8.2.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.3/#8.2.3.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5019</Reference>
       <Reference ReferenceType="ns=1;i=4920">ns=1;i=5021</Reference>
@@ -2205,7 +2205,7 @@
   <UAVariableType NodeId="ns=1;i=954" BrowseName="1:EquipmentPropertyType">
     <DisplayName>EquipmentPropertyType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.3/#8.2.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.3/#8.2.3.4</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5023</Reference>
       <Reference ReferenceType="ns=1;i=4920">ns=1;i=5025</Reference>
@@ -2303,7 +2303,7 @@
   <UAObjectType NodeId="ns=1;i=5034" BrowseName="1:EquipmentClassType">
     <DisplayName>EquipmentClassType</DisplayName>
     <Description>This ObjectType indicates a grouping of equipment with similar characteristics for a definite purpose such as manufacturing operations definition, scheduling, capability and performance</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.4/#8.2.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.4/#8.2.4.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5035</Reference>
       <Reference ReferenceType="ns=1;i=4920">ns=1;i=5037</Reference>
@@ -2347,7 +2347,7 @@
   <UAObjectType NodeId="ns=1;i=5040" BrowseName="1:EquipmentType">
     <DisplayName>EquipmentType</DisplayName>
     <Description>This ObjectType defines a piece of equipment</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.2.4/#8.2.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.2.4/#8.2.4.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5041</Reference>
       <Reference ReferenceType="ns=1;i=4919">ns=1;i=5043</Reference>
@@ -2526,7 +2526,7 @@
   <UAVariableType NodeId="ns=1;i=5165" BrowseName="1:MaterialTestResultType" DataType="Structure" ValueRank="-2">
     <DisplayName>MaterialTestResultType</DisplayName>
     <Description>This VariableType indicates the results from executing an instance of a MaterialTestSpecificationType for a specific MaterialLotType</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.2/#8.4.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.2/#8.4.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4878</Reference>
     </References>
@@ -2534,7 +2534,7 @@
   <UAObjectType NodeId="ns=1;i=5172" BrowseName="1:MaterialTestSpecificationType">
     <DisplayName>MaterialTestSpecificationType</DisplayName>
     <Description>This ObjectType indicates the existence of a test specification.</Description>
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.3/#8.4.3.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.3/#8.4.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4959</Reference>
     </References>
@@ -2542,7 +2542,7 @@
   <UAVariableType NodeId="ns=1;i=5174" BrowseName="1:MaterialDefinitionPropertyType">
     <DisplayName>MaterialDefinitionPropertyType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.2/#8.4.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.2/#8.4.2.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5176</Reference>
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5178</Reference>
@@ -2577,7 +2577,7 @@
   <UAVariableType NodeId="ns=1;i=5180" BrowseName="1:MaterialClassPropertyType">
     <DisplayName>MaterialClassPropertyType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.2/#8.4.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.2/#8.4.2.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5182</Reference>
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5184</Reference>
@@ -2612,7 +2612,7 @@
   <UAVariableType NodeId="ns=1;i=5186" BrowseName="1:MaterialLotPropertyType" DataType="Structure">
     <DisplayName>MaterialLotPropertyType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.2/#8.4.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.2/#8.4.2.4</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4915">ns=1;i=5193</Reference>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5200</Reference>
@@ -2764,7 +2764,7 @@
   <UAObjectType NodeId="ns=1;i=5209" BrowseName="1:MaterialClassType">
     <DisplayName>MaterialClassType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.3/#8.4.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.3/#8.4.3.2</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5210</Reference>
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5212</Reference>
@@ -2844,7 +2844,7 @@
   <UAObjectType NodeId="ns=1;i=5219" BrowseName="1:MaterialDefinitionType">
     <DisplayName>MaterialDefinitionType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.3/#8.4.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.3/#8.4.3.3</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=4910">ns=1;i=5220</Reference>
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5222</Reference>
@@ -2931,7 +2931,7 @@
   <UAObjectType NodeId="ns=1;i=5232" BrowseName="1:MaterialLotType">
     <DisplayName>MaterialLotType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.3/#8.4.3.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.3/#8.4.3.4</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5233</Reference>
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5240</Reference>
@@ -3144,7 +3144,7 @@
   <UAObjectType NodeId="ns=1;i=5259" BrowseName="1:MaterialSublotType">
     <DisplayName>MaterialSublotType</DisplayName>
     <Description />
-    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/docs/8.4.3/#8.4.3.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/ISA-95/v100/docs/8.4.3/#8.4.3.5</Documentation>
     <References>
       <Reference ReferenceType="ns=1;i=2009">ns=1;i=5260</Reference>
       <Reference ReferenceType="ns=1;i=4924">ns=1;i=5267</Reference>

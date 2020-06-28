@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -42,9 +42,9 @@
 
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaMTConnect" Prefix="Opc.Ua.MTConnect" XmlNamespace="http://opcfoundation.org/UA/MTConnect/Types.xsd" XmlPrefix="DI">http://opcfoundation.org/UA/MTConnect/</opc:Namespace>
-    <opc:Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
-  
+
   <opc:Object SymbolicName="OpcUaMTConnectNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType">
     <opc:BrowseName>http://opcfoundation.org/UA/MTConnect/</opc:BrowseName>
     <opc:Children>

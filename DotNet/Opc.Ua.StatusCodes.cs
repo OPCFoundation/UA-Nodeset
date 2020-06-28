@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -810,7 +810,7 @@ namespace Opc.Ua
         public const uint BadTcpSecureChannelUnknown = 0x807F0000;
 
         /// <summary>
-        /// The size of the message specified in the header is too large.
+        /// The size of the message chunk specified in the header is too large.
         /// </summary>
         public const uint BadTcpMessageTooLarge = 0x80800000;
 

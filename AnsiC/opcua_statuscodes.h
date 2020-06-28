@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -803,7 +803,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadTcpSecureChannelUnknown 0x807F0000
 
 /*============================================================================
- * The size of the message specified in the header is too large.
+ * The size of the message chunk specified in the header is too large.
  *===========================================================================*/
 #define OpcUa_BadTcpMessageTooLarge 0x80800000
 

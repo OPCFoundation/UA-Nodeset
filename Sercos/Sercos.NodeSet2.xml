@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -191,7 +191,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=6012" BrowseName="1:FunctionalGroupType">
     <DisplayName>FunctionalGroupType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/v120/docs/5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
@@ -216,7 +216,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:SercosDeviceType">
     <DisplayName>SercosDeviceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/v120/docs/5.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5007</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
@@ -260,7 +260,7 @@
   </UAObject>
   <UAObjectType NodeId="ns=1;i=6075" BrowseName="1:ProfileSet">
     <DisplayName>ProfileSet</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/v120/docs/5.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6076</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
@@ -276,7 +276,7 @@
   </UAObject>
   <UAObjectType NodeId="ns=1;i=6077" BrowseName="1:ClassSet">
     <DisplayName>ClassSet</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/v120/docs/5.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6078</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
@@ -292,7 +292,7 @@
   </UAObject>
   <UAObjectType NodeId="ns=1;i=6079" BrowseName="1:FunctionGroupSet">
     <DisplayName>FunctionGroupSet</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/v120/docs/5.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6080</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=6012</Reference>
@@ -308,7 +308,7 @@
   </UAObject>
   <UAVariableType NodeId="ns=1;i=2001" BrowseName="1:SercosParameterType" ValueRank="-2">
     <DisplayName>SercosParameterType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Sercos/docs/5.5.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Sercos/v120/docs/5.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>

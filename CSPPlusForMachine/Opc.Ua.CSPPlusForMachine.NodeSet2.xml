@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -78,7 +78,7 @@
   </Aliases>
   <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:CsppMachineType" IsAbstract="true">
     <DisplayName>CsppMachineType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CSPPlusForMachine/docs/6.2.1/#6.2.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CSPPlusForMachine/v100/docs/6.2.1/#6.2.1.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
@@ -166,7 +166,7 @@
   </UAVariable>
   <UAVariableType NodeId="ns=1;i=2001" BrowseName="CsppAnalogItemType" DataType="Number" ValueRank="-2">
     <DisplayName>CsppAnalogItemType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/CSPPlusForMachine/docs/6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/CSPPlusForMachine/v100/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2368</Reference>
