@@ -1,0 +1,7 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/Safety" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/Safety">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NonSafetyDataPlaceholderDataType">
+        <opc:Documentation>Dummy structure to be used when no non-safety data are used</opc:Documentation>
+        <opc:Field TypeName="opc:Boolean" Name="Dummy"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>
