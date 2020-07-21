@@ -1,0 +1,18 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Safety/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Safety/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:complexType name="NonSafetyDataPlaceholderDataType">
+        <xs:annotation>
+            <xs:documentation>Dummy structure to be used when no non-safety data are used</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Dummy"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:NonSafetyDataPlaceholderDataType" name="NonSafetyDataPlaceholderDataType"/>
+    <xs:complexType name="ListOfNonSafetyDataPlaceholderDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:NonSafetyDataPlaceholderDataType" name="NonSafetyDataPlaceholderDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfNonSafetyDataPlaceholderDataType" name="ListOfNonSafetyDataPlaceholderDataType" nillable="true"/>
+</xs:schema>
