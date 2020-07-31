@@ -3041,6 +3041,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6004" BrowseName="Id" ParentNodeId="ns=1;i=6016" DataType="NodeId">
@@ -3048,6 +3049,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6016</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6007" BrowseName="CurrentState" ParentNodeId="ns=1;i=88" DataType="LocalizedText">
@@ -3056,6 +3058,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=88</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6008" BrowseName="Id" ParentNodeId="ns=1;i=6019" DataType="NodeId">
@@ -3063,6 +3066,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6019</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6009" BrowseName="1:UnitModeCurrent" ParentNodeId="ns=1;i=87" DataType="Enumeration">
@@ -3070,6 +3074,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=87</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6011" BrowseName="AvailableStates" ParentNodeId="ns=1;i=88" DataType="NodeId" ValueRank="1" ArrayDimensions="0">
@@ -3093,6 +3098,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6025</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6015" BrowseName="Id" ParentNodeId="ns=1;i=6027" DataType="NodeId">
@@ -3100,6 +3106,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6027</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6016" BrowseName="CurrentState" ParentNodeId="ns=1;i=56" DataType="LocalizedText">
@@ -3108,6 +3115,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=56</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6019" BrowseName="CurrentState" ParentNodeId="ns=1;i=90" DataType="LocalizedText">
@@ -3116,6 +3124,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=90</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6025" BrowseName="CurrentState" ParentNodeId="ns=1;i=64" DataType="LocalizedText">
@@ -3124,6 +3133,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=64</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6027" BrowseName="CurrentState" ParentNodeId="ns=1;i=89" DataType="LocalizedText">
@@ -3132,6 +3142,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=89</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6029" BrowseName="AvailableStates" ParentNodeId="ns=1;i=64" DataType="NodeId" ValueRank="1" ArrayDimensions="0">
