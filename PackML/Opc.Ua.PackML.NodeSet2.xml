@@ -1211,6 +1211,9 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
     </References>
+    <Value>
+      <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">18</uax:UInt32>
+    </Value>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1" BrowseName="1:PackMLExecuteStateMachineType">
     <DisplayName>PackMLExecuteStateMachineType</DisplayName>
@@ -2547,7 +2550,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=75</Reference>
     </References>
     <Value>
-      <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">18</uax:UInt32>
+      <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">19</uax:UInt32>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=174" BrowseName="TransitionNumber" ParentNodeId="ns=1;i=65" DataType="UInt32">
