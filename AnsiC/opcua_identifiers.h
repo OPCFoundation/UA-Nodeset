@@ -1071,6 +1071,7 @@
 #define OpcUaId_DictionaryFolderType_DictionaryEntryName_Placeholder 17593
 #define OpcUaId_Dictionaries 17594
 #define OpcUaId_InterfaceTypes 17708
+#define OpcUaId_OrderedListType_OrderedObject_Placeholder 23519
 #define OpcUaId_AlarmConditionType_ShelvingState 9178
 #define OpcUaId_AlarmConditionType_FirstInGroup 16398
 #define OpcUaId_AlarmConditionType_AlarmGroup_Placeholder 16399
@@ -2241,6 +2242,8 @@
 #define OpcUaId_IrdiDictionaryEntryType 17598
 #define OpcUaId_UriDictionaryEntryType 17600
 #define OpcUaId_BaseInterfaceType 17602
+#define OpcUaId_IOrderedObjectType 23513
+#define OpcUaId_OrderedListType 23518
 #define OpcUaId_ConditionType 2782
 #define OpcUaId_DialogConditionType 2830
 #define OpcUaId_AcknowledgeableConditionType 2881
@@ -3370,6 +3373,9 @@
 #define OpcUaId_WellKnownRole_SecurityAdmin_AddEndpoint_InputArguments 16266
 #define OpcUaId_WellKnownRole_SecurityAdmin_RemoveEndpoint_InputArguments 16268
 #define OpcUaId_CurrencyUnit 23501
+#define OpcUaId_IOrderedObjectType_NumberInList 23517
+#define OpcUaId_OrderedListType_OrderedObject_Placeholder_NumberInList 23521
+#define OpcUaId_OrderedListType_NodeVersion 23525
 #define OpcUaId_DataItemType_Definition 2366
 #define OpcUaId_DataItemType_ValuePrecision 2367
 #define OpcUaId_BaseAnalogType_InstrumentRange 17567

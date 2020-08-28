@@ -507,6 +507,7 @@ Int64,8,DataType
 Integer,27,DataType
 IntegerId,288,DataType
 InterfaceTypes,17708,Object
+IOrderedObjectType,23513,ObjectType
 IrdiDictionaryEntryType,17598,ObjectType
 IssuedIdentityToken,938,DataType
 IssuedIdentityToken_Encoding_DefaultBinary,940,Object
@@ -622,6 +623,7 @@ OptionSet_Encoding_DefaultJson,15084,Object
 OptionSet_Encoding_DefaultXml,12757,Object
 OptionSetType,11487,VariableType
 OptionSetValues,12745,Variable
+OrderedListType,23518,ObjectType
 Organizes,35,ReferenceType
 Orientation,18811,DataType
 Orientation_Encoding_DefaultBinary,18820,Object
