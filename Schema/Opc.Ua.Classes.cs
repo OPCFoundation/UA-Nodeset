@@ -24797,11 +24797,11 @@ namespace Opc.Ua
            "AAAAAA==";
 
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAGQAAAFNlbGVjdGlvbkxpc3RUeXBlSW5zdGFuY2UBALU/AQC1P7U/AAAA" +
-           "GP7///8BAf////8DAAAAF2CJCgIAAAAAAAoAAABTZWxlY3Rpb25zAQDgRAAuAETgRAAAABgBAAAAAQAA" +
-           "AAAAAAABAf////8AAAAAF2CJCgIAAAAAABUAAABTZWxlY3Rpb25EZXNjcmlwdGlvbnMBAOFEAC4AROFE" +
-           "AAAAFQEAAAABAAAAAAAAAAEB/////wAAAAAVYIkKAgAAAAAADgAAAFJlc3RyaWN0VG9MaXN0AQC4PwAu" +
-           "AES4PwAAAAH/////AQH/////AAAAAA==";
+           "//////////8VYIECAgAAAAAAGQAAAFNlbGVjdGlvbkxpc3RUeXBlSW5zdGFuY2UBALU/AQC1P7U/AAAA" +
+           "GAEB/////wMAAAAXYIkKAgAAAAAACgAAAFNlbGVjdGlvbnMBAOBEAC4AROBEAAAAGAEAAAABAAAAAAAA" +
+           "AAEB/////wAAAAAXYIkKAgAAAAAAFQAAAFNlbGVjdGlvbkRlc2NyaXB0aW9ucwEA4UQALgBE4UQAAAAV" +
+           "AQAAAAEAAAAAAAAAAQH/////AAAAABVgiQoCAAAAAAAOAAAAUmVzdHJpY3RUb0xpc3QBALg/AC4ARLg/" +
+           "AAAAAf////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -36826,6 +36826,327 @@ namespace Opc.Ua
     #endif
     #endregion
 
+    #region IOrderedObjectState Class
+    #if (!OPCUA_EXCLUDE_IOrderedObjectState)
+    /// <summary>
+    /// Stores an instance of the IOrderedObjectType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class IOrderedObjectState : BaseInterfaceState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public IOrderedObjectState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.IOrderedObjectType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+        }
+
+        #region Initialization String
+        private const string InitializationString =
+           "//////////8EYIACAQAAAAAAGgAAAElPcmRlcmVkT2JqZWN0VHlwZUluc3RhbmNlAQDZWwEA2VvZWwAA" +
+           "/////wEAAAAVYIkKAgAAAAAADAAAAE51bWJlckluTGlzdAEA3VsALgBE3VsAAAAa/////wEB/////wAA" +
+           "AAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        public PropertyState NumberInList
+        {
+            get
+            {
+                return m_numberInList;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_numberInList, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_numberInList = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_numberInList != null)
+            {
+                children.Add(m_numberInList);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.NumberInList:
+                {
+                    if (createOrReplace)
+                    {
+                        if (NumberInList == null)
+                        {
+                            if (replacement == null)
+                            {
+                                NumberInList = new PropertyState(this);
+                            }
+                            else
+                            {
+                                NumberInList = (PropertyState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = NumberInList;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState m_numberInList;
+        #endregion
+    }
+    #endif
+    #endregion
+
+    #region OrderedListState Class
+    #if (!OPCUA_EXCLUDE_OrderedListState)
+    /// <summary>
+    /// Stores an instance of the OrderedListType ObjectType.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public partial class OrderedListState : BaseObjectState
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the type with its default attribute values.
+        /// </summary>
+        public OrderedListState(NodeState parent) : base(parent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the id of the default type definition node for the instance.
+        /// </summary>
+        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
+        {
+            return Opc.Ua.NodeId.Create(Opc.Ua.ObjectTypes.OrderedListType, Opc.Ua.Namespaces.OpcUa, namespaceUris);
+        }
+
+        #if (!OPCUA_EXCLUDE_InitializationStrings)
+        /// <summary>
+        /// Initializes the instance.
+        /// </summary>
+        protected override void Initialize(ISystemContext context)
+        {
+            Initialize(context, InitializationString);
+            InitializeOptionalChildren(context);
+        }
+
+        /// <summary>
+        /// Initializes the instance with a node.
+        /// </summary>
+        protected override void Initialize(ISystemContext context, NodeState source)
+        {
+            InitializeOptionalChildren(context);
+            base.Initialize(context, source);
+        }
+
+        /// <summary>
+        /// Initializes the any option children defined for the instance.
+        /// </summary>
+        protected override void InitializeOptionalChildren(ISystemContext context)
+        {
+            base.InitializeOptionalChildren(context);
+
+            if (NodeVersion != null)
+            {
+                NodeVersion.Initialize(context, NodeVersion_InitializationString);
+            }
+        }
+
+        #region Initialization String
+        private const string NodeVersion_InitializationString =
+           "//////////8VYIkKAgAAAAAACwAAAE5vZGVWZXJzaW9uAQDlWwAuAETlWwAAAAz/////AQH/////AAAA" +
+           "AA==";
+
+        private const string InitializationString =
+           "//////////8EYIACAQAAAAAAFwAAAE9yZGVyZWRMaXN0VHlwZUluc3RhbmNlAQDeWwEA3lveWwAAAQAA" +
+           "AAApAAEAVQgBAAAAFWCJCgIAAAAAAAsAAABOb2RlVmVyc2lvbgEA5VsALgBE5VsAAAAM/////wEB////" +
+           "/wAAAAA=";
+        #endregion
+        #endif
+        #endregion
+
+        #region Public Properties
+        /// <remarks />
+        public PropertyState<string> NodeVersion
+        {
+            get
+            {
+                return m_nodeVersion;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_nodeVersion, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_nodeVersion = value;
+            }
+        }
+        #endregion
+
+        #region Overridden Methods
+        /// <summary>
+        /// Populates a list with the children that belong to the node.
+        /// </summary>
+        /// <param name="context">The context for the system being accessed.</param>
+        /// <param name="children">The list of children to populate.</param>
+        public override void GetChildren(
+            ISystemContext context,
+            IList<BaseInstanceState> children)
+        {
+            if (m_nodeVersion != null)
+            {
+                children.Add(m_nodeVersion);
+            }
+
+            base.GetChildren(context, children);
+        }
+
+        /// <summary>
+        /// Finds the child with the specified browse name.
+        /// </summary>
+        protected override BaseInstanceState FindChild(
+            ISystemContext context,
+            QualifiedName browseName,
+            bool createOrReplace,
+            BaseInstanceState replacement)
+        {
+            if (QualifiedName.IsNull(browseName))
+            {
+                return null;
+            }
+
+            BaseInstanceState instance = null;
+
+            switch (browseName.Name)
+            {
+                case Opc.Ua.BrowseNames.NodeVersion:
+                {
+                    if (createOrReplace)
+                    {
+                        if (NodeVersion == null)
+                        {
+                            if (replacement == null)
+                            {
+                                NodeVersion = new PropertyState<string>(this);
+                            }
+                            else
+                            {
+                                NodeVersion = (PropertyState<string>)replacement;
+                            }
+                        }
+                    }
+
+                    instance = NodeVersion;
+                    break;
+                }
+            }
+
+            if (instance != null)
+            {
+                return instance;
+            }
+
+            return base.FindChild(context, browseName, createOrReplace, replacement);
+        }
+        #endregion
+
+        #region Private Fields
+        private PropertyState<string> m_nodeVersion;
+        #endregion
+    }
+    #endif
+    #endregion
+
     #region DataItemState Class
     #if (!OPCUA_EXCLUDE_DataItemState)
     /// <summary>
@@ -36913,9 +37234,9 @@ namespace Opc.Ua
            "AAAAAA==";
 
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAFAAAAERhdGFJdGVtVHlwZUluc3RhbmNlAQA9CQEAPQk9CQAAABj+////" +
-           "AQH/////AgAAABVgiQoCAAAAAAAKAAAARGVmaW5pdGlvbgEAPgkALgBEPgkAAAAM/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAADgAAAFZhbHVlUHJlY2lzaW9uAQA/CQAuAEQ/CQAAAAv/////AQH/////AAAAAA==";
+           "//////////8VYIECAgAAAAAAFAAAAERhdGFJdGVtVHlwZUluc3RhbmNlAQA9CQEAPQk9CQAAABgBAf//" +
+           "//8CAAAAFWCJCgIAAAAAAAoAAABEZWZpbml0aW9uAQA+CQAuAEQ+CQAAAAz/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAOAAAAVmFsdWVQcmVjaXNpb24BAD8JAC4ARD8JAAAAC/////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -37216,11 +37537,10 @@ namespace Opc.Ua
            "/////wAAAAA=";
 
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAFgAAAEJhc2VBbmFsb2dUeXBlSW5zdGFuY2UBANY7AQDWO9Y7AAAAGv7/" +
-           "//8BAf////8DAAAAFWCJCgIAAAAAAA8AAABJbnN0cnVtZW50UmFuZ2UBAJ9EAC4ARJ9EAAABAHQD////" +
-           "/wEB/////wAAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAKBEAC4ARKBEAAABAHQD/////wEB/////wAA" +
-           "AAAVYIkKAgAAAAAAEAAAAEVuZ2luZWVyaW5nVW5pdHMBAKFEAC4ARKFEAAABAHcD/////wEB/////wAA" +
-           "AAA=";
+           "//////////8VYIECAgAAAAAAFgAAAEJhc2VBbmFsb2dUeXBlSW5zdGFuY2UBANY7AQDWO9Y7AAAAGgEB" +
+           "/////wMAAAAVYIkKAgAAAAAADwAAAEluc3RydW1lbnRSYW5nZQEAn0QALgBEn0QAAAEAdAP/////AQH/" +
+           "////AAAAABVgiQoCAAAAAAAHAAAARVVSYW5nZQEAoEQALgBEoEQAAAEAdAP/////AQH/////AAAAABVg" +
+           "iQoCAAAAAAAQAAAARW5naW5lZXJpbmdVbml0cwEAoUQALgBEoUQAAAEAdwP/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -37541,9 +37861,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAFgAAAEFuYWxvZ0l0ZW1UeXBlSW5zdGFuY2UBAEAJAQBACUAJAAAAGv7/" +
-           "//8BAf////8BAAAAFWCJCgIAAAAAAAcAAABFVVJhbmdlAQBBCQAuAERBCQAAAQB0A/////8BAf////8A" +
-           "AAAA";
+           "//////////8VYIECAgAAAAAAFgAAAEFuYWxvZ0l0ZW1UeXBlSW5zdGFuY2UBAEAJAQBACUAJAAAAGgEB" +
+           "/////wEAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAEEJAC4AREEJAAABAHQD/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -37689,9 +38008,9 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAFgAAAEFuYWxvZ1VuaXRUeXBlSW5zdGFuY2UBAFlEAQBZRFlEAAAAGv7/" +
-           "//8BAf////8BAAAAFWCJCgIAAAAAABAAAABFbmdpbmVlcmluZ1VuaXRzAQBeRAAuAEReRAAAAQB3A///" +
-           "//8BAf////8AAAAA";
+           "//////////8VYIECAgAAAAAAFgAAAEFuYWxvZ1VuaXRUeXBlSW5zdGFuY2UBAFlEAQBZRFlEAAAAGgEB" +
+           "/////wEAAAAVYIkKAgAAAAAAEAAAAEVuZ2luZWVyaW5nVW5pdHMBAF5EAC4ARF5EAAABAHcD/////wEB" +
+           "/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -37837,10 +38156,10 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAGwAAAEFuYWxvZ1VuaXRSYW5nZVR5cGVJbnN0YW5jZQEAokQBAKJEokQA" +
-           "AAAa/v///wEB/////wIAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAKZEAC4ARKZEAAABAHQD/////wEB" +
-           "/////wAAAAAVYIkKAgAAAAAAEAAAAEVuZ2luZWVyaW5nVW5pdHMBAKdEAC4ARKdEAAABAHcD/////wEB" +
-           "/////wAAAAA=";
+           "//////////8VYIECAgAAAAAAGwAAAEFuYWxvZ1VuaXRSYW5nZVR5cGVJbnN0YW5jZQEAokQBAKJEokQA" +
+           "AAAaAQH/////AgAAABVgiQoCAAAAAAAHAAAARVVSYW5nZQEApkQALgBEpkQAAAEAdAP/////AQH/////" +
+           "AAAAABVgiQoCAAAAAAAQAAAARW5naW5lZXJpbmdVbml0cwEAp0QALgBEp0QAAAEAdwP/////AQH/////" +
+           "AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -37986,8 +38305,8 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAGAAAAERpc2NyZXRlSXRlbVR5cGVJbnN0YW5jZQEARAkBAEQJRAkAAAAY" +
-           "/v///wEB/////wAAAAA=";
+           "//////////8VYIECAgAAAAAAGAAAAERpc2NyZXRlSXRlbVR5cGVJbnN0YW5jZQEARAkBAEQJRAkAAAAY" +
+           "AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -38133,10 +38452,9 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAHAAAAFR3b1N0YXRlRGlzY3JldGVUeXBlSW5zdGFuY2UBAEUJAQBFCUUJ" +
-           "AAAAAf7///8BAf////8CAAAAFWCJCgIAAAAAAAoAAABGYWxzZVN0YXRlAQBGCQAuAERGCQAAABX/////" +
-           "AQH/////AAAAABVgiQoCAAAAAAAJAAAAVHJ1ZVN0YXRlAQBHCQAuAERHCQAAABX/////AQH/////AAAA" +
-           "AA==";
+           "//////////8VYIECAgAAAAAAHAAAAFR3b1N0YXRlRGlzY3JldGVUeXBlSW5zdGFuY2UBAEUJAQBFCUUJ" +
+           "AAAAAQEB/////wIAAAAVYIkKAgAAAAAACgAAAEZhbHNlU3RhdGUBAEYJAC4AREYJAAAAFf////8BAf//" +
+           "//8AAAAAFWCJCgIAAAAAAAkAAABUcnVlU3RhdGUBAEcJAC4AREcJAAAAFf////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -38352,9 +38670,9 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAHgAAAE11bHRpU3RhdGVEaXNjcmV0ZVR5cGVJbnN0YW5jZQEASAkBAEgJ" +
-           "SAkAAAAc/v///wEB/////wEAAAAXYIkKAgAAAAAACwAAAEVudW1TdHJpbmdzAQBJCQAuAERJCQAAABUB" +
-           "AAAAAQAAAAAAAAABAf////8AAAAA";
+           "//////////8VYIECAgAAAAAAHgAAAE11bHRpU3RhdGVEaXNjcmV0ZVR5cGVJbnN0YW5jZQEASAkBAEgJ" +
+           "SAkAAAAcAQH/////AQAAABdgiQoCAAAAAAALAAAARW51bVN0cmluZ3MBAEkJAC4AREkJAAAAFQEAAAAB" +
+           "AAAAAAAAAAEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -38500,10 +38818,10 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAIwAAAE11bHRpU3RhdGVWYWx1ZURpc2NyZXRlVHlwZUluc3RhbmNlAQDm" +
-           "KwEA5ivmKwAAABr+////AQH/////AgAAABdgiQoCAAAAAAAKAAAARW51bVZhbHVlcwEA6SsALgBE6SsA" +
-           "AAEAqh0BAAAAAQAAAAAAAAABAf////8AAAAAFWCJCgIAAAAAAAsAAABWYWx1ZUFzVGV4dAEAxSwALgBE" +
-           "xSwAAAAV/////wEB/////wAAAAA=";
+           "//////////8VYIECAgAAAAAAIwAAAE11bHRpU3RhdGVWYWx1ZURpc2NyZXRlVHlwZUluc3RhbmNlAQDm" +
+           "KwEA5ivmKwAAABoBAf////8CAAAAF2CJCgIAAAAAAAoAAABFbnVtVmFsdWVzAQDpKwAuAETpKwAAAQCq" +
+           "HQEAAAABAAAAAAAAAAEB/////wAAAAAVYIkKAgAAAAAACwAAAFZhbHVlQXNUZXh0AQDFLAAuAETFLAAA" +
+           "ABX/////AQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -38787,12 +39105,12 @@ namespace Opc.Ua
            "////AAAAAA==";
 
         private const string InitializationString =
-           "//////////8VYIECAgAAAAAAFQAAAEFycmF5SXRlbVR5cGVJbnN0YW5jZQEA9S4BAPUu9S4AAAAYAQH/" +
-           "////BQAAABVgiQoCAAAAAAAPAAAASW5zdHJ1bWVudFJhbmdlAQD4LgAuAET4LgAAAQB0A/////8BAf//" +
-           "//8AAAAAFWCJCgIAAAAAAAcAAABFVVJhbmdlAQD5LgAuAET5LgAAAQB0A/////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAABAAAABFbmdpbmVlcmluZ1VuaXRzAQD6LgAuAET6LgAAAQB3A/////8BAf////8AAAAAFWCJ" +
-           "CgIAAAAAAAUAAABUaXRsZQEA+y4ALgBE+y4AAAAV/////wEB/////wAAAAAVYIkKAgAAAAAADQAAAEF4" +
-           "aXNTY2FsZVR5cGUBAPwuAC4ARPwuAAABAC0v/////wEB/////wAAAAA=";
+           "//////////8VYIkCAgAAAAAAFQAAAEFycmF5SXRlbVR5cGVJbnN0YW5jZQEA9S4BAPUu9S4AAAAYAAAA" +
+           "AAEB/////wUAAAAVYIkKAgAAAAAADwAAAEluc3RydW1lbnRSYW5nZQEA+C4ALgBE+C4AAAEAdAP/////" +
+           "AQH/////AAAAABVgiQoCAAAAAAAHAAAARVVSYW5nZQEA+S4ALgBE+S4AAAEAdAP/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAQAAAARW5naW5lZXJpbmdVbml0cwEA+i4ALgBE+i4AAAEAdwP/////AQH/////AAAA" +
+           "ABVgiQoCAAAAAAAFAAAAVGl0bGUBAPsuAC4ARPsuAAAAFf////8BAf////8AAAAAFWCJCgIAAAAAAA0A" +
+           "AABBeGlzU2NhbGVUeXBlAQD8LgAuAET8LgAAAQAtL/////8BAf////8AAAAA";
         #endregion
         #endif
         #endregion
@@ -40223,12 +40541,13 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIECAgAAAAAAHwAAAE5EaW1lbnNpb25BcnJheUl0ZW1UeXBlSW5zdGFuY2UBACQvAQAk" +
-           "LyQvAAAAGAEB/////wUAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBACgvAC4ARCgvAAABAHQD/////wEB" +
-           "/////wAAAAAVYIkKAgAAAAAAEAAAAEVuZ2luZWVyaW5nVW5pdHMBACkvAC4ARCkvAAABAHcD/////wEB" +
-           "/////wAAAAAVYIkKAgAAAAAABQAAAFRpdGxlAQAqLwAuAEQqLwAAABX/////AQH/////AAAAABVgiQoC" +
-           "AAAAAAANAAAAQXhpc1NjYWxlVHlwZQEAKy8ALgBEKy8AAAEALS//////AQH/////AAAAABdgiQoCAAAA" +
-           "AAAOAAAAQXhpc0RlZmluaXRpb24BACwvAC4ARCwvAAABAC8vAQAAAAEAAAAAAAAAAQH/////AAAAAA==";
+           "//////////8VYIkCAgAAAAAAHwAAAE5EaW1lbnNpb25BcnJheUl0ZW1UeXBlSW5zdGFuY2UBACQvAQAk" +
+           "LyQvAAAAGAAAAAABAf////8FAAAAFWCJCgIAAAAAAAcAAABFVVJhbmdlAQAoLwAuAEQoLwAAAQB0A///" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAABAAAABFbmdpbmVlcmluZ1VuaXRzAQApLwAuAEQpLwAAAQB3A///" +
+           "//8BAf////8AAAAAFWCJCgIAAAAAAAUAAABUaXRsZQEAKi8ALgBEKi8AAAAV/////wEB/////wAAAAAV" +
+           "YIkKAgAAAAAADQAAAEF4aXNTY2FsZVR5cGUBACsvAC4ARCsvAAABAC0v/////wEB/////wAAAAAXYIkK" +
+           "AgAAAAAADgAAAEF4aXNEZWZpbml0aW9uAQAsLwAuAEQsLwAAAQAvLwEAAAABAAAAAAAAAAEB/////wAA" +
+           "AAA=";
         #endregion
         #endif
         #endregion
@@ -40832,9 +41151,9 @@ namespace Opc.Ua
 
         #region Initialization String
         private const string InitializationString =
-           "//////////8VYIkCAgAAAAAAHQAAAENvbmRpdGlvblZhcmlhYmxlVHlwZUluc3RhbmNlAQAqIwEAKiMq" +
-           "IwAAABj+////AQH/////AQAAABVgiQoCAAAAAAAPAAAAU291cmNlVGltZXN0YW1wAQArIwAuAEQrIwAA" +
-           "AQAmAf////8BAf////8AAAAA";
+           "//////////8VYIECAgAAAAAAHQAAAENvbmRpdGlvblZhcmlhYmxlVHlwZUluc3RhbmNlAQAqIwEAKiMq" +
+           "IwAAABgBAf////8BAAAAFWCJCgIAAAAAAA8AAABTb3VyY2VUaW1lc3RhbXABACsjAC4ARCsjAAABACYB" +
+           "/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
