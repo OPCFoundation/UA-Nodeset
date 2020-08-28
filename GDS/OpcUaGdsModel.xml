@@ -42,7 +42,7 @@
 >
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaGds" Prefix="Opc.Ua.Gds" XmlNamespace="http://opcfoundation.org/UA/GDS/Types.xsd" XmlPrefix="GDS">http://opcfoundation.org/UA/GDS/</opc:Namespace>
-    <opc:Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.04.4" PublicationDate="2020-01-08T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
 
   <opc:Object SymbolicName="OPCUAGDSNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
