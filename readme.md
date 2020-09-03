@@ -46,19 +46,19 @@ The files for the core specification are in the Schema subdirectory.
 
 ## Release Process
 
-**This repository only has the released versions of the normative files.**  
+**This repository only has the released versions of the normative files.**
+
 Draft and Release Candidate are available in the [member only repository](https://github.com/OPCF-Members/UA-NodeSet).  
 
 Instructions on requesting access to the member only repository can be found [here](https://opcf-members.github.io/Help/).  
 
 The files in the 1.04 branch are also public to the OPC Foundation [website](https://opcfoundation.org/UA/schemas/).
-
 **If someone is looking for the officially released version of the UANodeSets they must follow the links in the specification.**  
 
 When the files are reviewed and published a tag will be created in this repo with the publication date specified in the UANodeSet.  
-Note that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist and users must use the dates on the commits.  
+**Note** that adding tags is a step that was added late in the process so tags prior to 2019-05-01 do not exist and users must use the dates on the commits.  
 
-There are currently 3 branches in the repository:
+**There are currently 3 branches in the repository:**
 
 * v1.04 - default
 * v1.03
