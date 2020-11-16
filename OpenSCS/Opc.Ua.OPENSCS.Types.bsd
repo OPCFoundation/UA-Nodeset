@@ -1,181 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
 
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://github.githubassets.com">
-  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-
-
-
-  <link crossorigin="anonymous" media="all" integrity="sha512-rejAsoJJGKFUHDunQEchnrzTFCP8j+HW+0BGXl/Fz4iEznxtf+ZDMP2v224+Na1KQbg1MmLqMl7ErrS6mxTgRw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-ade8c0b2824918a1541c3ba74047219e.css" />
-  
-    <link crossorigin="anonymous" media="all" integrity="sha512-INeF7H1cgcAYKQbIBoKBPEDgdoF4J6UUmrjW2UUzKvFIBZvQjNqFE7HGek6QJXgn1zEmHU7dRyhD9CPdquI3Tg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-20d785ec7d5c81c0182906c80682813c.css" />
-    
-    
-    
-    
-
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-8K2vvwbW+6H27Nad5ydg8PA2/aMD/LKq+EiK9s0U0hhVZxCI2tWBsYk9beAtisRw2j+Or5k2/F+6dk02nmj/PA==" type="application/javascript" src="https://github.githubassets.com/assets/environment-f0adafbf.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-C1ARy+jvNWoUKep8dSwFX7zDZIJDM42nfnyqe5suPmsAXhuUhvJIUqzt4nd/r15W6WX1ClU4SHRfUpvJlt141g==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-0b5011cb.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-Shix6Hkv5DNREArBi1dz6K2Dezl6x88FzVNzPUHKbjuk6iZAuHacGedCwe/1YQtFhf8DzLIIDhr1Sb41uwiIXg==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-4a18b1e8.js"></script>
-  
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-AkIxElaeqL7JSzVlgfGn50BTI5jyG0UkVSUlissxla9WtD5UQAGn1wZXskviDmfKyKrU9WTBgPU/X+qoPJxtKA==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-02423112.js"></script>
-  
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-P2YMkqfXJOOfxTTkNHbblY5ks3U+e9w9tiVyK9syrE5+JmlaCg1kUiuT1DfbyJXwaOLaRLT3zam2r+QrxTZ3iw==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-3f660c92.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-GWmO6WpdFzHp9+4ZFVUeij/lnuI9rml4gBDWMs3/cm7pc/jW12dLrPZgChymPOQaHSRSEnV/uEA1gUJHDryPIQ==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-19698ee9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-CA6OGHJW7NBZOqe29UPdCbAaPS/+enGcLWMFWtZxfFdP0PCFrNSvijVr3MgYasdV1rw9lfUuiAOWGxlc7+QBlg==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-080e8e18.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-tcH4xCRuMBAh1PruDaiwGnRIbHlF6bGLhxyCQ16uqok1cV5QFMguVPWJtN9KI0jGQOgN+Pha3+uOUXhXdfK/qw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-b5c1f8c4.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-gPx3bYhTjyC83X5u5KlEDJpwGAHt3AC2p5s9iMuAfPTeSj7kHlKMW231C3K3c7+jvlpWpELk8DJsefrYdRzqjA==" type="application/javascript" data-module-id="./chunk-randomColor.js" data-src="https://github.githubassets.com/assets/chunk-randomColor-80fc776d.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-E+H+wAtjiqutBvn2cnXzDIvmasIhYiS7i7JzOfFUwo+Ej8zT54OrJtP//RhwixnypgOpCF4JvqzYy6zOtORDmg==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-13e1fec0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-qdiCkJPPR4LxwUKftEmJe2v79E8xnTceYqylsWkMsGuARkiKkX9iFNwkvZJ3bDfS5YHSPD3+k+N2/I73tvlL1Q==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-a9d88290.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-NpURjBPyJ0JT8hWOMbLErYNeb0bTkKfmFX1hl1F8C/q6jckqWObeOzEAcs6TRlj+cqAR6GDohEBxDgkYBlx+QQ==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-3695118c.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-nRXmXWbTYQkOodFO0zOG/XmjOtZz/3gpqXICtuiBl3ALjqqiRgNEV46nY8UVyZb5ZH7LIz6YDQPnGSxGhi7L5w==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-9d15e65d.js"></script>
-  
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-RJH/qL01CQxNKQfUWUzz2f5zoOvILYJVOTk3IJNu53g5cnUCU9LGJbdrjBFXUCg0hC7DwuiJclKa0n6atiAqIg==" type="application/javascript" src="https://github.githubassets.com/assets/repositories-4491ffa8.js"></script>
-<script crossorigin="anonymous" defer="defer" integrity="sha512-+M/c7JNh2iCab4BgoGfvsBrpaPa/6yUQ9FtP37K7yfhqviBQcWa+8E+16J2AV/tYG8tV65BYPIu7D1jThTPJUA==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-f8cfdcec.js"></script>
-
-  <meta name="viewport" content="width=device-width">
-  
-  <title>OpenSCS/openscs.serialization.Types.bsd at master · OPCFoundation/OpenSCS</title>
-    <meta name="description" content="Open-SCS working group. Contribute to OPCFoundation/OpenSCS development by creating an account on GitHub.">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-  <meta property="fb:app_id" content="1401488693436528">
-  <meta name="apple-itunes-app" content="app-id=1477376905" />
-    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/9598363?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="OPCFoundation/OpenSCS" /><meta name="twitter:description" content="Open-SCS working group. Contribute to OPCFoundation/OpenSCS development by creating an account on GitHub." />
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/9598363?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="OPCFoundation/OpenSCS" /><meta property="og:url" content="https://github.com/OPCFoundation/OpenSCS" /><meta property="og:description" content="Open-SCS working group. Contribute to OPCFoundation/OpenSCS development by creating an account on GitHub." />
-
-
-
-  
-
-  <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/1840311/ws?session=eyJ2IjoiVjMiLCJ1IjoxODQwMzExLCJzIjo2MDE1OTUzOTEsImMiOjM4MTY0ODA2MDgsInQiOjE2MDQ0Mzg2ODd9--132e289465101a4b746638d0b832b3e645628787eea5a4fee3cbc13e3e0a2b9e" data-refresh-url="/_alive">
-  <link rel="sudo-modal" href="/sessions/sudo_modal">
-
-  <meta name="request-id" content="1ECA:253A:6B0CC2:B7D33F:5FA1CA97" data-pjax-transient="true" /><meta name="html-safe-nonce" content="9f4be66df2673b7b8735babbb8cbe497b261fd0b6b4e6c61c8f1febe72cb011b" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9PUENGb3VuZGF0aW9uL09wZW5TQ1MvdHJlZS9tYXN0ZXIvUmVmZXJlbmNlJTIwSW1wbGVtZW50YXRpb24vT3BlblNDU19SZWZlcmVuY2VfSW1wbGVtZW50YXRpb24vU2VydmVyL09wZW5zY3MvTW9kZWwvQ29kZSIsInJlcXVlc3RfaWQiOiIxRUNBOjI1M0E6NkIwQ0MyOkI3RDMzRjo1RkExQ0E5NyIsInZpc2l0b3JfaWQiOiI4MzYxMTkzMTY1MjE5Nzc1OTE3IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true" /><meta name="visitor-hmac" content="64052c932f4e26b5e05d18fa24c2a263b9d17d53912b6c7112ef62b4ffa86d56" data-pjax-transient="true" /><meta name="cookie-consent-required" content="false" />
-
-    <meta name="hovercard-subject-tag" content="repository:80025296" data-pjax-transient>
-
-
-  <meta name="github-keyboard-shortcuts" content="repository,source-code" data-pjax-transient="true" />
-
-  
-
-  <meta name="selected-link" value="repo_source" data-pjax-transient>
-
-    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
-  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
-
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-actor-id" content="1840311" /><meta name="octolytics-actor-login" content="cpipero" /><meta name="octolytics-actor-hash" content="9fdbea84947c5301ecb217575a209ae72090eb71efab97605c2ba968298bad36" />
-
-  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
-
-  
-
-
-
-
-
-
-  <meta class="js-ga-set" name="userId" content="d83a2a90d4efa390102f11e5aa83e6a2">
-
-<meta class="js-ga-set" name="dimension10" content="Responsive" data-pjax-transient>
-
-<meta class="js-ga-set" name="dimension1" content="Logged In">
-
-
-
-  
-
-      <meta name="hostname" content="github.com">
-    <meta name="user-login" content="cpipero">
-
-
-      <meta name="expected-hostname" content="github.com">
-
-      <meta name="js-proxy-site-detection-payload" content="NzVkYzZiNzcwNDAyZGFlYjRlMTFjZmFkMzFjOTdmMmViMWM1MGQ2MTZhOWQ2NzRiN2UzZWRmNDI0ZjNjNmIzN3x7InJlbW90ZV9hZGRyZXNzIjoiNzEuMjEwLjI1NC4yNDIiLCJyZXF1ZXN0X2lkIjoiMUVDQToyNTNBOjZCMENDMjpCN0QzM0Y6NUZBMUNBOTciLCJ0aW1lc3RhbXAiOjE2MDQ0Mzg2ODcsImhvc3QiOiJnaXRodWIuY29tIn0=">
-
-    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,JS_HTTP_CACHE_HEADERS">
-
-  <meta http-equiv="x-pjax-version" content="b6cc241cba3bbf55e40e82c79460ce0239fa6e3bf40cc0ba5f20368ef9e745ca">
-  
-
-        <link href="https://github.com/OPCFoundation/OpenSCS/commits/master.atom?token=AAOBJN3KKR33MZ3HOXZU7ON5VWVZ6" rel="alternate" title="Recent Commits to OpenSCS:master" type="application/atom+xml">
-
-  <meta name="go-import" content="github.com/OPCFoundation/OpenSCS git https://github.com/OPCFoundation/OpenSCS.git">
-
-  <meta name="octolytics-dimension-user_id" content="9598363" /><meta name="octolytics-dimension-user_login" content="OPCFoundation" /><meta name="octolytics-dimension-repository_id" content="80025296" /><meta name="octolytics-dimension-repository_nwo" content="OPCFoundation/OpenSCS" /><meta name="octolytics-dimension-repository_public" content="false" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="80025296" /><meta name="octolytics-dimension-repository_network_root_nwo" content="OPCFoundation/OpenSCS" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="true" />
-
-
-    <link rel="canonical" href="https://github.com/OPCFoundation/OpenSCS/blob/master/Reference%20Implementation/OpenSCS_Reference_Implementation/Server/Openscs/Model/Code/openscs.serialization.Types.bsd" data-pjax-transient>
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-  <meta name="browser-optimizely-client-errors-url" content="https://api.github.com/_private/browser/optimizely_client/errors">
-
-  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
-
-<meta name="theme-color" content="#1e2327">
-
-
-  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-
-  </head>
-
-  <body class="logged-in env-production page-responsive page-blob">
-    
-
-    <div class="position-relative js-header-wrapper ">
-      <a href="#start-of-content" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
-      <span class="progress-pjax-loader width-full js-pjax-loader-bar Progress position-fixed">
-    <span style="background-color: #79b8ff;width: 0%;" class="Progress-item progress-pjax-loader-bar "></span>
-</span>      
-      
-
-
-            <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap" role="banner" >
-    <div class="Header-item mt-n1 mb-n1  d-none d-md-flex">
-      <a class="Header-link " href="https://github.com/" data-hotkey="g d"
-  aria-label="Homepage " data-ga-click="Header, go to dashboard, icon:logo">
-  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-</a>
-
-    </div>
-
-    <div class="Header-item d-md-none">
-      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
-      </button>
-    </div>
-
-    <div class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
-          <div class="header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to"
-  role="combobox"
-  aria-owns="jump-to-results"
-  aria-label="Search or jump to"
-  aria-haspopup="listbox"
-  aria-expanded="false"
->
-  <div class="position-relative">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="80025296" data-scoped-search-url="/OPCFoundation/OpenSCS/search" data-unscoped-search-url="/search" action="/OPCFoundation/OpenSCS/search" accept-charset="UTF-8" method="get">
+</option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="80025296" data-scoped-search-url="/OPCFoundation/OpenSCS/search" data-unscoped-search-url="/search" action="/OPCFoundation/OpenSCS/search" accept-charset="UTF-8" method="get">
       <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
         <input type="text"
           class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
@@ -1869,4 +1722,3 @@ Signed-off-by: AsishG2020 &lt;asish.ganesh@beeond.net&gt;</pre></div>
 
   </body>
 </html>
-
