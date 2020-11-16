@@ -168,6 +168,7 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_AccessLevelExType_EnumeratedValues[
     { "NonatomicRead", 256 },
     { "NonatomicWrite", 512 },
     { "WriteFullArrayOnly", 1024 },
+    { "NoSubDataTypes", 2048 },
     { OpcUa_Null, 0 }
 };
 
@@ -208,6 +209,7 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_AccessRestrictionType_EnumeratedVal
     { "SigningRequired", 1 },
     { "EncryptionRequired", 2 },
     { "SessionRequired", 4 },
+    { "ApplyRestrictionsToBrowse", 8 },
     { OpcUa_Null, 0 }
 };
 

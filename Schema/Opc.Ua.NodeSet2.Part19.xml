@@ -69,7 +69,7 @@
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
   </Aliases>
-  <UAVariableType NodeId="i=19077" BrowseName="MultiStateDictionaryEntryDiscreteBaseType" DataType="Number">
+  <UAVariableType NodeId="i=19077" BrowseName="MultiStateDictionaryEntryDiscreteBaseType" DataType="Number" ValueRank="-2">
     <DisplayName>MultiStateDictionaryEntryDiscreteBaseType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=19082</Reference>

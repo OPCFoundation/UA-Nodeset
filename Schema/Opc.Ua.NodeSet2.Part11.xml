@@ -834,28 +834,18 @@
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>AbsoluteValue</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>PercentOfValue</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>PercentOfRange</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>PercentOfEURange</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Unknown</Text>
         </LocalizedText>
       </ListOfLocalizedText>

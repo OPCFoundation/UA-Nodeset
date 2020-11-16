@@ -78,8 +78,8 @@
   <UAObjectType NodeId="i=23456" BrowseName="AliasNameCategoryType">
     <DisplayName>AliasNameCategoryType</DisplayName>
     <References>
-      <Reference ReferenceType="HasComponent">i=23457</Reference>
-      <Reference ReferenceType="HasComponent">i=23458</Reference>
+      <Reference ReferenceType="Organizes">i=23457</Reference>
+      <Reference ReferenceType="Organizes">i=23458</Reference>
       <Reference ReferenceType="HasComponent">i=23462</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
     </References>
@@ -89,7 +89,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=23455</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=23456</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=23456</Reference>
     </References>
   </UAObject>
   <UAObject NodeId="i=23458" BrowseName="&lt;SubAliasNameCategories&gt;" SymbolicName="SubAliasNameCategories_Placeholder" ParentNodeId="i=23456">
@@ -98,7 +98,7 @@
       <Reference ReferenceType="HasComponent">i=23459</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=23456</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=23456</Reference>
     </References>
   </UAObject>
   <UAMethod NodeId="i=23459" BrowseName="FindAlias" ParentNodeId="i=23458" MethodDeclarationId="i=23462">
