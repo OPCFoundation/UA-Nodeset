@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2020-07-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2020-11-20T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.7" PublicationDate="2020-07-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.8" PublicationDate="2020-11-20T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -588,7 +588,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UADataType NodeId="i=120" BrowseName="NamingRuleType" ReleaseStatus="Deprecated">
+  <UADataType NodeId="i=120" BrowseName="NamingRuleType">
     <DisplayName>NamingRuleType</DisplayName>
     <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part3/8.29</Documentation>
     <References>
@@ -607,7 +607,7 @@
       </Field>
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=12169" BrowseName="EnumValues" ReleaseStatus="Deprecated" ParentNodeId="i=120" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=12169" BrowseName="EnumValues" ParentNodeId="i=120" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -675,7 +675,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=111" BrowseName="NamingRule" ReleaseStatus="Deprecated" ParentNodeId="i=77" DataType="i=120">
+  <UAVariable NodeId="i=111" BrowseName="NamingRule" ParentNodeId="i=77" DataType="i=120">
     <DisplayName>NamingRule</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -694,7 +694,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=112" BrowseName="NamingRule" ReleaseStatus="Deprecated" ParentNodeId="i=78" DataType="i=120">
+  <UAVariable NodeId="i=112" BrowseName="NamingRule" ParentNodeId="i=78" DataType="i=120">
     <DisplayName>NamingRule</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -712,7 +712,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=113" BrowseName="NamingRule" ReleaseStatus="Deprecated" ParentNodeId="i=80" DataType="i=120">
+  <UAVariable NodeId="i=113" BrowseName="NamingRule" ParentNodeId="i=80" DataType="i=120">
     <DisplayName>NamingRule</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -730,7 +730,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=114" BrowseName="NamingRule" ReleaseStatus="Deprecated" ParentNodeId="i=83" DataType="i=120">
+  <UAVariable NodeId="i=114" BrowseName="NamingRule" ParentNodeId="i=83" DataType="i=120">
     <DisplayName>NamingRule</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -748,7 +748,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11509" BrowseName="NamingRule" ReleaseStatus="Deprecated" ParentNodeId="i=11508" DataType="i=120">
+  <UAVariable NodeId="i=11509" BrowseName="NamingRule" ParentNodeId="i=11508" DataType="i=120">
     <DisplayName>NamingRule</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -766,7 +766,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11511" BrowseName="NamingRule" ReleaseStatus="Deprecated" ParentNodeId="i=11510" DataType="i=120">
+  <UAVariable NodeId="i=11511" BrowseName="NamingRule" ParentNodeId="i=11510" DataType="i=120">
     <DisplayName>NamingRule</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -919,7 +919,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15957</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-07-15T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-11-20T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=15961" BrowseName="IsNamespaceSubset" ParentNodeId="i=15957" DataType="Boolean">
