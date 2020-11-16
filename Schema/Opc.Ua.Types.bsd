@@ -242,6 +242,16 @@
     <opc:Field Name="Value" TypeName="ua:Variant" />
   </opc:StructuredType>
 
+  <opc:StructuredType Name="AdditionalParametersType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NoOfParameters" TypeName="opc:Int32" />
+    <opc:Field Name="Parameters" TypeName="tns:KeyValuePair" LengthField="NoOfParameters" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="EphemeralKeyType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="PublicKey" TypeName="opc:ByteString" />
+    <opc:Field Name="Signature" TypeName="opc:ByteString" />
+  </opc:StructuredType>
+
   <opc:StructuredType Name="EndpointType" BaseType="ua:ExtensionObject">
     <opc:Field Name="EndpointUrl" TypeName="opc:String" />
     <opc:Field Name="SecurityMode" TypeName="tns:MessageSecurityMode" />
@@ -884,6 +894,7 @@
     <opc:EnumeratedValue Name="NonatomicRead" Value="256" />
     <opc:EnumeratedValue Name="NonatomicWrite" Value="512" />
     <opc:EnumeratedValue Name="WriteFullArrayOnly" Value="1024" />
+    <opc:EnumeratedValue Name="NoSubDataTypes" Value="2048" />
   </opc:EnumeratedType>
 
   <opc:EnumeratedType Name="EventNotifierType" LengthInBits="8" IsOptionSet="true">
@@ -893,11 +904,12 @@
     <opc:EnumeratedValue Name="HistoryWrite" Value="8" />
   </opc:EnumeratedType>
 
-  <opc:EnumeratedType Name="AccessRestrictionType" LengthInBits="32" IsOptionSet="true">
+  <opc:EnumeratedType Name="AccessRestrictionType" LengthInBits="16" IsOptionSet="true">
     <opc:EnumeratedValue Name="None" Value="0" />
     <opc:EnumeratedValue Name="SigningRequired" Value="1" />
     <opc:EnumeratedValue Name="EncryptionRequired" Value="2" />
     <opc:EnumeratedValue Name="SessionRequired" Value="4" />
+    <opc:EnumeratedValue Name="ApplyRestrictionsToBrowse" Value="8" />
   </opc:EnumeratedType>
 
   <opc:StructuredType Name="RolePermissionType" BaseType="ua:ExtensionObject">
@@ -1526,6 +1538,9 @@
   <opc:OpaqueType Name="RsaEncryptedSecret">
   </opc:OpaqueType>
 
+  <opc:OpaqueType Name="EccEncryptedSecret">
+  </opc:OpaqueType>
+
   <opc:StructuredType Name="ActivateSessionRequest" BaseType="ua:ExtensionObject">
     <opc:Field Name="RequestHeader" TypeName="tns:RequestHeader" />
     <opc:Field Name="ClientSignature" TypeName="tns:SignatureData" />
@@ -1992,12 +2007,6 @@
   </opc:OpaqueType>
 
   <opc:OpaqueType Name="NumericRange">
-  </opc:OpaqueType>
-
-  <opc:OpaqueType Name="Time">
-  </opc:OpaqueType>
-
-  <opc:OpaqueType Name="Date">
   </opc:OpaqueType>
 
   <opc:StructuredType Name="EndpointConfiguration" BaseType="ua:ExtensionObject">

@@ -775,6 +775,11 @@ namespace Opc.Ua
         public const uint BadSequenceNumberUnknown = 0x807A0000;
 
         /// <summary>
+        /// The Server does not support retransmission queue and acknowledgement of sequence numbers is not available.
+        /// </summary>
+        public const uint GoodRetransmissionQueueNotSupported = 0x00E70000;
+
+        /// <summary>
         /// The requested notification message is no longer available.
         /// </summary>
         public const uint BadMessageNotAvailable = 0x807B0000;
@@ -1095,6 +1100,16 @@ namespace Opc.Ua
         public const uint BadRequestNotComplete = 0x81130000;
 
         /// <summary>
+        /// The device identity needs a ticket before it can be accepted.
+        /// </summary>
+        public const uint BadTicketRequired = 0x811F0000;
+
+        /// <summary>
+        /// The device identity needs a ticket before it can be accepted.
+        /// </summary>
+        public const uint BadTicketInvalid = 0x81200000;
+
+        /// <summary>
         /// The value does not come from the real source and has been edited by the server.
         /// </summary>
         public const uint GoodEdited = 0x00DC0000;
@@ -1258,5 +1273,65 @@ namespace Opc.Ua
         /// The operation could not be finished because all available connections are in use.
         /// </summary>
         public const uint BadMaxConnectionsReached = 0x80B70000;
+
+        /// <summary>
+        /// Transducer in MAN (FF).
+        /// </summary>
+        public const uint BadOSSInMAN = 0x83080000;
+
+        /// <summary>
+        /// SIS (FF).
+        /// </summary>
+        public const uint BadSIS = 0x83090000;
+
+        /// <summary>
+        /// Transducer in MAN (FF).
+        /// </summary>
+        public const uint UncertainOSSInMAN = 0x42080000;
+
+        /// <summary>
+        /// Simulated Value (PROFIBUS).
+        /// </summary>
+        public const uint UncertainSimulatedValue = 0x42090000;
+
+        /// <summary>
+        /// Sensor Calibration (PROFIBUS).
+        /// </summary>
+        public const uint UncertainSensorCalibration = 0x420A0000;
+
+        /// <summary>
+        /// Configuration Error (PROFIBUS).
+        /// </summary>
+        public const uint UncertainConfigurationError = 0x420F0000;
+
+        /// <summary>
+        /// Initialization Acknowledged (IA).
+        /// </summary>
+        public const uint GoodInitializationAcknowledged = 0x04010000;
+
+        /// <summary>
+        /// Initialization Request (IR).
+        /// </summary>
+        public const uint GoodInitializationRequest = 0x04020000;
+
+        /// <summary>
+        /// Not Invited (NI).
+        /// </summary>
+        public const uint GoodNotInvited = 0x04030000;
+
+        /// <summary>
+        /// [Not Selected (NS) (FF)] or [Do Not Select (PA)].
+        /// </summary>
+        public const uint GoodNotSelected = 0x04040000;
+
+        /// <summary>
+        /// Fault State Active (FSA) (FF).
+        /// </summary>
+        public const uint GoodFaultStateActive = 0x04070000;
+
+        /// <summary>
+        /// Initiate Fault State (IFS).
+        /// </summary>
+        public const uint GoodInitiateFaultState = 0x04080000;
     }
 }

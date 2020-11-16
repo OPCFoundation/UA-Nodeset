@@ -437,18 +437,12 @@
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Linear</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Log</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Ln</Text>
         </LocalizedText>
       </ListOfLocalizedText>
