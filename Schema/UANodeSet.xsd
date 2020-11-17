@@ -234,16 +234,6 @@
     </xs:list>
   </xs:simpleType>
 
-  <xs:simpleType name="CardinalityType">
-    <xs:list>
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-          <xs:pattern value="(\p{N})*|unbounded" />
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:list>
-  </xs:simpleType>
-
   <xs:simpleType name="Duration">
     <xs:restriction base="xs:double" />
   </xs:simpleType>
