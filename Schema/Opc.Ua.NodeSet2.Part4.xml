@@ -207,7 +207,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="SessionlessInvokeRequestType">
-      <Field Name="UrisVersion" DataType="i=20998" ValueRank="1" />
+      <Field Name="UrisVersion" DataType="i=20998" />
       <Field Name="NamespaceUris" DataType="i=12" ValueRank="1" />
       <Field Name="ServerUris" DataType="i=12" ValueRank="1" />
       <Field Name="LocaleIds" DataType="i=295" ValueRank="1" />

@@ -24836,7 +24836,7 @@ namespace Opc.Ua
         /// </summary>
         private void Initialize()
         {
-            m_urisVersion = new UInt32Collection();
+            m_urisVersion = (uint)0;
             m_namespaceUris = new StringCollection();
             m_serverUris = new StringCollection();
             m_localeIds = new StringCollection();
@@ -24845,26 +24845,12 @@ namespace Opc.Ua
         #endregion
 
         #region Public Properties
-        /// <summary>
-        /// 
-        /// </summary>
+        /// <remarks />
         [DataMember(Name = "UrisVersion", IsRequired = false, Order = 1)]
-        public UInt32Collection UrisVersion
+        public uint UrisVersion
         {
-            get
-            {
-                return m_urisVersion;
-            }
-
-            set
-            {
-                m_urisVersion = value;
-
-                if (value == null)
-                {
-                    m_urisVersion = new UInt32Collection();
-                }
-            }
+            get { return m_urisVersion;  }
+            set { m_urisVersion = value; }
         }
 
         /// <summary>
@@ -24966,7 +24952,7 @@ namespace Opc.Ua
         {
             encoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            encoder.WriteUInt32Array("UrisVersion", UrisVersion);
+            encoder.WriteUInt32("UrisVersion", UrisVersion);
             encoder.WriteStringArray("NamespaceUris", NamespaceUris);
             encoder.WriteStringArray("ServerUris", ServerUris);
             encoder.WriteStringArray("LocaleIds", LocaleIds);
@@ -24980,7 +24966,7 @@ namespace Opc.Ua
         {
             decoder.PushNamespace(Opc.Ua.Namespaces.OpcUaXsd);
 
-            UrisVersion = decoder.ReadUInt32Array("UrisVersion");
+            UrisVersion = decoder.ReadUInt32("UrisVersion");
             NamespaceUris = decoder.ReadStringArray("NamespaceUris");
             ServerUris = decoder.ReadStringArray("ServerUris");
             LocaleIds = decoder.ReadStringArray("LocaleIds");
@@ -25026,7 +25012,7 @@ namespace Opc.Ua
         {
             SessionlessInvokeRequestType clone = (SessionlessInvokeRequestType)base.MemberwiseClone();
 
-            clone.m_urisVersion = (UInt32Collection)Utils.Clone(this.m_urisVersion);
+            clone.m_urisVersion = (uint)Utils.Clone(this.m_urisVersion);
             clone.m_namespaceUris = (StringCollection)Utils.Clone(this.m_namespaceUris);
             clone.m_serverUris = (StringCollection)Utils.Clone(this.m_serverUris);
             clone.m_localeIds = (StringCollection)Utils.Clone(this.m_localeIds);
@@ -25037,7 +25023,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private UInt32Collection m_urisVersion;
+        private uint m_urisVersion;
         private StringCollection m_namespaceUris;
         private StringCollection m_serverUris;
         private StringCollection m_localeIds;

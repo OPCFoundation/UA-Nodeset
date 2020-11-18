@@ -1074,8 +1074,7 @@ OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ServiceFault_Encodeable
  *===========================================================================*/
 typedef struct _OpcUa_SessionlessInvokeRequestType
 {
-    OpcUa_Int32   NoOfUrisVersion;
-    OpcUa_UInt32* UrisVersion;
+    OpcUa_UInt32  UrisVersion;
     OpcUa_Int32   NoOfNamespaceUris;
     OpcUa_String* NamespaceUris;
     OpcUa_Int32   NoOfServerUris;
