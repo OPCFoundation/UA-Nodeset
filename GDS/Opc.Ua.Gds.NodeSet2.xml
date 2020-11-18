@@ -28,7 +28,7 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2020-01-08T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2020-01-08T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/GDS/</Uri>
   </NamespaceUris>
@@ -2053,6 +2053,7 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=55" BrowseName="1:KeyCredentialManagementFolderType">
     <DisplayName>KeyCredentialManagementFolderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=61</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -2088,6 +2089,7 @@
   </UAVariable>
   <UAMethod NodeId="ns=1;i=168" BrowseName="1:StartRequest" ParentNodeId="ns=1;i=61" MethodDeclarationId="ns=1;i=1023">
     <DisplayName>StartRequest</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/8.4.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=171</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=195</Reference>
@@ -2682,6 +2684,7 @@
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=233" BrowseName="1:AuthorizationServicesFolderType">
     <DisplayName>AuthorizationServicesFolderType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/9.5.2</Documentation>
     <References>
       <Reference ReferenceType="Organizes">ns=1;i=234</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
@@ -2716,6 +2719,7 @@
   </UAVariable>
   <UAMethod NodeId="ns=1;i=238" BrowseName="1:GetServiceDescription" ParentNodeId="ns=1;i=234" MethodDeclarationId="ns=1;i=1004">
     <DisplayName>GetServiceDescription</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/GDS/docs/9.5.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=239</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>

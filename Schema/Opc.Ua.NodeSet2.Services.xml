@@ -28,7 +28,7 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2020-11-20T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2020-11-20T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
     <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.8" PublicationDate="2020-11-20T00:00:00Z" />
   </Models>
@@ -22230,42 +22230,49 @@
   </UAObjectType>
   <UAObjectType NodeId="i=23537" BrowseName="EccApplicationCertificateType">
     <DisplayName>EccApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=12557</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23538" BrowseName="EccNistP256ApplicationCertificateType">
     <DisplayName>EccNistP256ApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=23537</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23539" BrowseName="EccNistP384ApplicationCertificateType">
     <DisplayName>EccNistP384ApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=23537</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23540" BrowseName="EccBrainpoolP256r1ApplicationCertificateType">
     <DisplayName>EccBrainpoolP256r1ApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=23537</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23541" BrowseName="EccBrainpoolP384r1ApplicationCertificateType">
     <DisplayName>EccBrainpoolP384r1ApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=23537</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23542" BrowseName="EccCurve25519ApplicationCertificateType">
     <DisplayName>EccCurve25519ApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=23537</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="i=23543" BrowseName="EccCurve448ApplicationCertificateType">
     <DisplayName>EccCurve448ApplicationCertificateType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=23537</Reference>
     </References>
@@ -25478,6 +25485,7 @@
   </UAObject>
   <UAObjectType NodeId="i=18001" BrowseName="KeyCredentialConfigurationType">
     <DisplayName>KeyCredentialConfigurationType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=18069</Reference>
       <Reference ReferenceType="HasProperty">i=18165</Reference>
@@ -25523,6 +25531,7 @@
   </UAVariable>
   <UAMethod NodeId="i=17534" BrowseName="GetEncryptingKey" ParentNodeId="i=18001">
     <DisplayName>GetEncryptingKey</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4/8.5.8</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=17535</Reference>
       <Reference ReferenceType="HasProperty">i=17536</Reference>
@@ -25616,6 +25625,7 @@
   </UAVariable>
   <UAMethod NodeId="i=18006" BrowseName="UpdateCredential" ParentNodeId="i=18001">
     <DisplayName>UpdateCredential</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Amendment4//#6.7.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">i=18007</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -39752,7 +39762,7 @@
   </UADataType>
   <UADataType NodeId="i=316" BrowseName="UserIdentityToken" IsAbstract="true">
     <DisplayName>UserIdentityToken</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part5/12.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/7.36.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -42305,7 +42315,7 @@
   </UADataType>
   <UADataType NodeId="i=948" BrowseName="AggregateConfiguration">
     <DisplayName>AggregateConfiguration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part11/6.4.4/#6.4.4.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part4/7.17.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
