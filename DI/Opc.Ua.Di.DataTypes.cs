@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -1108,6 +1108,238 @@ namespace Opc.Ua.Di
             for (int ii = 0; ii < this.Count; ii++)
             {
                 clone.Add((ParameterResultDataType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region SoftwareVersionFileType Enumeration
+    #if (!OPCUA_EXCLUDE_SoftwareVersionFileType)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd)]
+    public enum SoftwareVersionFileType
+    {
+        /// <remarks />
+        [EnumMember(Value = "Current_0")]
+        Current = 0,
+
+        /// <remarks />
+        [EnumMember(Value = "Pending_1")]
+        Pending = 1,
+
+        /// <remarks />
+        [EnumMember(Value = "Fallback_2")]
+        Fallback = 2,
+    }
+
+    #region SoftwareVersionFileTypeCollection Class
+    /// <summary>
+    /// A collection of SoftwareVersionFileType objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfSoftwareVersionFileType", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "SoftwareVersionFileType")]
+    #if !NET_STANDARD
+    public partial class SoftwareVersionFileTypeCollection : List<SoftwareVersionFileType>, ICloneable
+    #else
+    public partial class SoftwareVersionFileTypeCollection : List<SoftwareVersionFileType>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public SoftwareVersionFileTypeCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public SoftwareVersionFileTypeCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public SoftwareVersionFileTypeCollection(IEnumerable<SoftwareVersionFileType> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator SoftwareVersionFileTypeCollection(SoftwareVersionFileType[] values)
+        {
+            if (values != null)
+            {
+                return new SoftwareVersionFileTypeCollection(values);
+            }
+
+            return new SoftwareVersionFileTypeCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator SoftwareVersionFileType[](SoftwareVersionFileTypeCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (SoftwareVersionFileTypeCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            SoftwareVersionFileTypeCollection clone = new SoftwareVersionFileTypeCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((SoftwareVersionFileType)Utils.Clone(this[ii]));
+            }
+
+            return clone;
+        }
+    }
+    #endregion
+    #endif
+    #endregion
+
+    #region UpdateBehavior Enumeration
+    #if (!OPCUA_EXCLUDE_UpdateBehavior)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [DataContract(Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd)][Flags]
+    public enum UpdateBehavior : UInt32
+    {
+        /// <remarks />
+        [EnumMember(Value = "None_0")]
+        None = 0,
+
+        /// <remarks />
+        [EnumMember(Value = "KeepsParameters_1")]
+        KeepsParameters = 1,
+
+        /// <remarks />
+        [EnumMember(Value = "WillDisconnect_2")]
+        WillDisconnect = 2,
+
+        /// <remarks />
+        [EnumMember(Value = "RequiresPowerCycle_4")]
+        RequiresPowerCycle = 4,
+
+        /// <remarks />
+        [EnumMember(Value = "WillReboot_8")]
+        WillReboot = 8,
+
+        /// <remarks />
+        [EnumMember(Value = "NeedsPreparation_16")]
+        NeedsPreparation = 16,
+    }
+
+    #region UpdateBehaviorCollection Class
+    /// <summary>
+    /// A collection of UpdateBehavior objects.
+    /// </summary>
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [CollectionDataContract(Name = "ListOfUpdateBehavior", Namespace = Opc.Ua.Di.Namespaces.OpcUaDiXsd, ItemName = "UpdateBehavior")]
+    #if !NET_STANDARD
+    public partial class UpdateBehaviorCollection : List<UpdateBehavior>, ICloneable
+    #else
+    public partial class UpdateBehaviorCollection : List<UpdateBehavior>
+    #endif
+    {
+        #region Constructors
+        /// <summary>
+        /// Initializes the collection with default values.
+        /// </summary>
+        public UpdateBehaviorCollection() {}
+
+        /// <summary>
+        /// Initializes the collection with an initial capacity.
+        /// </summary>
+        public UpdateBehaviorCollection(int capacity) : base(capacity) {}
+
+        /// <summary>
+        /// Initializes the collection with another collection.
+        /// </summary>
+        public UpdateBehaviorCollection(IEnumerable<UpdateBehavior> collection) : base(collection) {}
+        #endregion
+
+        #region Static Operators
+        /// <summary>
+        /// Converts an array to a collection.
+        /// </summary>
+        public static implicit operator UpdateBehaviorCollection(UpdateBehavior[] values)
+        {
+            if (values != null)
+            {
+                return new UpdateBehaviorCollection(values);
+            }
+
+            return new UpdateBehaviorCollection();
+        }
+
+        /// <summary>
+        /// Converts a collection to an array.
+        /// </summary>
+        public static explicit operator UpdateBehavior[](UpdateBehaviorCollection values)
+        {
+            if (values != null)
+            {
+                return values.ToArray();
+            }
+
+            return null;
+        }
+        #endregion
+
+        #if !NET_STANDARD
+        #region ICloneable Methods
+        /// <summary>
+        /// Creates a deep copy of the collection.
+        /// </summary>
+        public object Clone()
+        {
+            return (UpdateBehaviorCollection)this.MemberwiseClone();
+        }
+        #endregion
+        #endif
+
+        /// <summary cref="Object.MemberwiseClone" />
+        public new object MemberwiseClone()
+        {
+            UpdateBehaviorCollection clone = new UpdateBehaviorCollection(this.Count);
+
+            for (int ii = 0; ii < this.Count; ii++)
+            {
+                clone.Add((UpdateBehavior)Utils.Clone(this[ii]));
             }
 
             return clone;

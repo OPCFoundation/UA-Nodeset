@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -69,6 +69,16 @@ namespace Opc.Ua.Di
         /// The identifier for the ParameterResultDataType DataType.
         /// </summary>
         public const uint ParameterResultDataType = 6525;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionFileType DataType.
+        /// </summary>
+        public const uint SoftwareVersionFileType = 331;
+
+        /// <summary>
+        /// The identifier for the UpdateBehavior DataType.
+        /// </summary>
+        public const uint UpdateBehavior = 333;
     }
     #endregion
 
@@ -109,11 +119,6 @@ namespace Opc.Ua.Di
         /// The identifier for the OPCUADINamespaceMetadata_NamespaceFile_SetPosition Method.
         /// </summary>
         public const uint OPCUADINamespaceMetadata_NamespaceFile_SetPosition = 15028;
-
-        /// <summary>
-        /// The identifier for the TopologyElementType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public const uint TopologyElementType_MethodSet_MethodIdentifier = 6018;
 
         /// <summary>
         /// The identifier for the TopologyElementType_Lock_InitLock Method.
@@ -424,6 +429,156 @@ namespace Opc.Ua.Di
         /// The identifier for the LockingServicesType_BreakLock Method.
         /// </summary>
         public const uint LockingServicesType_BreakLock = 6400;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_Prepare Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_PrepareForUpdate_Prepare = 19;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_Abort Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_PrepareForUpdate_Abort = 20;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_Resume Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation_Resume = 61;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_Confirm Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_Confirmation_Confirm = 112;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForRead Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_GenerateFileForRead = 124;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForWrite Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_GenerateFileForWrite = 127;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_CloseAndCommit Method.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_CloseAndCommit = 130;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForRead Method.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_GenerateFileForRead = 142;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForWrite Method.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_GenerateFileForWrite = 145;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_CloseAndCommit Method.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_CloseAndCommit = 148;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForRead Method.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_GenerateFileForRead = 158;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForWrite Method.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_GenerateFileForWrite = 161;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_CloseAndCommit Method.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_CloseAndCommit = 164;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForRead Method.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_GenerateFileForRead = 176;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForWrite Method.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_GenerateFileForWrite = 179;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_CloseAndCommit Method.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_CloseAndCommit = 182;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_GetUpdateBehavior Method.
+        /// </summary>
+        public const uint CachedLoadingType_GetUpdateBehavior = 189;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateDirectory Method.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_CreateDirectory = 195;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateFile Method.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_CreateFile = 198;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_DeleteFileSystemObject Method.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_DeleteFileSystemObject = 201;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_MoveOrCopy Method.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_MoveOrCopy = 203;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_GetUpdateBehavior Method.
+        /// </summary>
+        public const uint FileSystemLoadingType_GetUpdateBehavior = 206;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_ValidateFiles Method.
+        /// </summary>
+        public const uint FileSystemLoadingType_ValidateFiles = 209;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Prepare Method.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Prepare = 228;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Abort Method.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Abort = 229;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Resume Method.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Resume = 230;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallSoftwarePackage Method.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallSoftwarePackage = 265;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallFiles Method.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallFiles = 268;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Resume Method.
+        /// </summary>
+        public const uint InstallationStateMachineType_Resume = 270;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_Confirm Method.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_Confirm = 321;
     }
     #endregion
 
@@ -594,6 +749,181 @@ namespace Opc.Ua.Di
         /// The identifier for the ConnectionPointType_NetworkIdentifier Object.
         /// </summary>
         public const uint ConnectionPointType_NetworkIdentifier = 6599;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Loading Object.
+        /// </summary>
+        public const uint SoftwareUpdateType_Loading = 2;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate Object.
+        /// </summary>
+        public const uint SoftwareUpdateType_PrepareForUpdate = 4;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation Object.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation = 40;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle Object.
+        /// </summary>
+        public const uint SoftwareUpdateType_PowerCycle = 76;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation Object.
+        /// </summary>
+        public const uint SoftwareUpdateType_Confirmation = 98;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters Object.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters = 122;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion Object.
+        /// </summary>
+        public const uint PackageLoadingType_CurrentVersion = 139;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer Object.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer = 140;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion Object.
+        /// </summary>
+        public const uint CachedLoadingType_PendingVersion = 187;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion Object.
+        /// </summary>
+        public const uint CachedLoadingType_FallbackVersion = 188;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem Object.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem = 194;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Idle Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Idle = 231;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Preparing Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Preparing = 233;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdate Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparedForUpdate = 235;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Resuming Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Resuming = 237;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_IdleToPreparing Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_IdleToPreparing = 239;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToIdle Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparingToIdle = 241;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate = 243;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdateToResuming Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparedForUpdateToResuming = 245;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_ResumingToIdle Object.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_ResumingToIdle = 247;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Idle Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_Idle = 271;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Installing Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_Installing = 273;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Error Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_Error = 275;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_IdleToInstalling Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_IdleToInstalling = 277;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToIdle Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallingToIdle = 279;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToError Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallingToError = 281;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_ErrorToIdle Object.
+        /// </summary>
+        public const uint InstallationStateMachineType_ErrorToIdle = 283;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycle Object.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_NotWaitingForPowerCycle = 299;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycle Object.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_WaitingForPowerCycle = 301;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle Object.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle = 303;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle Object.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle = 305;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirm Object.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_NotWaitingForConfirm = 323;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirm Object.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_WaitingForConfirm = 325;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm Object.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm = 327;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm Object.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm = 329;
 
         /// <summary>
         /// The identifier for the FetchResultDataType_Encoding_DefaultBinary Object.
@@ -769,6 +1099,61 @@ namespace Opc.Ua.Di
         /// The identifier for the LockingServicesType ObjectType.
         /// </summary>
         public const uint LockingServicesType = 6388;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType ObjectType.
+        /// </summary>
+        public const uint SoftwareUpdateType = 1;
+
+        /// <summary>
+        /// The identifier for the SoftwareLoadingType ObjectType.
+        /// </summary>
+        public const uint SoftwareLoadingType = 135;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType ObjectType.
+        /// </summary>
+        public const uint PackageLoadingType = 137;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType ObjectType.
+        /// </summary>
+        public const uint DirectLoadingType = 153;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType ObjectType.
+        /// </summary>
+        public const uint CachedLoadingType = 171;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType ObjectType.
+        /// </summary>
+        public const uint FileSystemLoadingType = 192;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType ObjectType.
+        /// </summary>
+        public const uint SoftwareVersionType = 212;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType ObjectType.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType = 213;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType ObjectType.
+        /// </summary>
+        public const uint InstallationStateMachineType = 249;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType ObjectType.
+        /// </summary>
+        public const uint PowerCycleStateMachineType = 285;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType ObjectType.
+        /// </summary>
+        public const uint ConfirmationStateMachineType = 307;
     }
     #endregion
 
@@ -2286,6 +2671,641 @@ namespace Opc.Ua.Di
         public const uint LockingServicesType_BreakLock_OutputArguments = 6401;
 
         /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_CurrentState Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_PrepareForUpdate_CurrentState = 5;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_CurrentState_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_PrepareForUpdate_CurrentState_Id = 6;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_LastTransition_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_PrepareForUpdate_LastTransition_Id = 11;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_CurrentState Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation_CurrentState = 41;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_CurrentState_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation_CurrentState_Id = 42;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_LastTransition_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation_LastTransition_Id = 47;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_InstallSoftwarePackage_InputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation_InstallSoftwarePackage_InputArguments = 57;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_InstallFiles_InputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Installation_InstallFiles_InputArguments = 60;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle_CurrentState Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_PowerCycle_CurrentState = 77;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle_CurrentState_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_PowerCycle_CurrentState_Id = 78;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle_LastTransition_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_PowerCycle_LastTransition_Id = 83;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_CurrentState Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Confirmation_CurrentState = 99;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_CurrentState_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Confirmation_CurrentState_Id = 100;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_LastTransition_Id Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Confirmation_LastTransition_Id = 105;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_ConfirmationTimeout Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Confirmation_ConfirmationTimeout = 113;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_ClientProcessingTimeout Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_ClientProcessingTimeout = 123;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_GenerateFileForRead_InputArguments = 125;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_GenerateFileForRead_OutputArguments = 126;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_GenerateFileForWrite_InputArguments = 128;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_GenerateFileForWrite_OutputArguments = 129;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_CloseAndCommit_InputArguments = 131;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_Parameters_CloseAndCommit_OutputArguments = 132;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_UpdateStatus Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_UpdateStatus = 133;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_VendorErrorCode Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_VendorErrorCode = 402;
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public const uint SoftwareUpdateType_DefaultInstanceBrowseName = 134;
+
+        /// <summary>
+        /// The identifier for the SoftwareLoadingType_UpdateKey Variable.
+        /// </summary>
+        public const uint SoftwareLoadingType_UpdateKey = 136;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion_Manufacturer Variable.
+        /// </summary>
+        public const uint PackageLoadingType_CurrentVersion_Manufacturer = 345;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion_ManufacturerUri Variable.
+        /// </summary>
+        public const uint PackageLoadingType_CurrentVersion_ManufacturerUri = 346;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion_SoftwareRevision Variable.
+        /// </summary>
+        public const uint PackageLoadingType_CurrentVersion_SoftwareRevision = 347;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_ClientProcessingTimeout Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_ClientProcessingTimeout = 141;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_GenerateFileForRead_InputArguments = 143;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_GenerateFileForRead_OutputArguments = 144;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_GenerateFileForWrite_InputArguments = 146;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments = 147;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_CloseAndCommit_InputArguments = 149;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public const uint PackageLoadingType_FileTransfer_CloseAndCommit_OutputArguments = 150;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_ErrorMessage Variable.
+        /// </summary>
+        public const uint PackageLoadingType_ErrorMessage = 151;
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_WriteBlockSize Variable.
+        /// </summary>
+        public const uint PackageLoadingType_WriteBlockSize = 152;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_CurrentVersion_Manufacturer Variable.
+        /// </summary>
+        public const uint DirectLoadingType_CurrentVersion_Manufacturer = 352;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_CurrentVersion_ManufacturerUri Variable.
+        /// </summary>
+        public const uint DirectLoadingType_CurrentVersion_ManufacturerUri = 353;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_CurrentVersion_SoftwareRevision Variable.
+        /// </summary>
+        public const uint DirectLoadingType_CurrentVersion_SoftwareRevision = 354;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_ClientProcessingTimeout Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_ClientProcessingTimeout = 157;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_GenerateFileForRead_InputArguments = 159;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_GenerateFileForRead_OutputArguments = 160;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_GenerateFileForWrite_InputArguments = 162;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments = 163;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_CloseAndCommit_InputArguments = 165;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public const uint DirectLoadingType_FileTransfer_CloseAndCommit_OutputArguments = 166;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_UpdateBehavior Variable.
+        /// </summary>
+        public const uint DirectLoadingType_UpdateBehavior = 169;
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_WriteTimeout Variable.
+        /// </summary>
+        public const uint DirectLoadingType_WriteTimeout = 170;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_CurrentVersion_Manufacturer Variable.
+        /// </summary>
+        public const uint CachedLoadingType_CurrentVersion_Manufacturer = 359;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_CurrentVersion_ManufacturerUri Variable.
+        /// </summary>
+        public const uint CachedLoadingType_CurrentVersion_ManufacturerUri = 360;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_CurrentVersion_SoftwareRevision Variable.
+        /// </summary>
+        public const uint CachedLoadingType_CurrentVersion_SoftwareRevision = 361;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_ClientProcessingTimeout Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_ClientProcessingTimeout = 175;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_GenerateFileForRead_InputArguments = 177;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_GenerateFileForRead_OutputArguments = 178;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_GenerateFileForWrite_InputArguments = 180;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments = 181;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_CloseAndCommit_InputArguments = 183;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FileTransfer_CloseAndCommit_OutputArguments = 184;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion_Manufacturer Variable.
+        /// </summary>
+        public const uint CachedLoadingType_PendingVersion_Manufacturer = 366;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion_ManufacturerUri Variable.
+        /// </summary>
+        public const uint CachedLoadingType_PendingVersion_ManufacturerUri = 367;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion_SoftwareRevision Variable.
+        /// </summary>
+        public const uint CachedLoadingType_PendingVersion_SoftwareRevision = 368;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion_Manufacturer Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FallbackVersion_Manufacturer = 373;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion_ManufacturerUri Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FallbackVersion_ManufacturerUri = 374;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion_SoftwareRevision Variable.
+        /// </summary>
+        public const uint CachedLoadingType_FallbackVersion_SoftwareRevision = 375;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_GetUpdateBehavior_InputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_GetUpdateBehavior_InputArguments = 190;
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_GetUpdateBehavior_OutputArguments Variable.
+        /// </summary>
+        public const uint CachedLoadingType_GetUpdateBehavior_OutputArguments = 191;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateDirectory_InputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_CreateDirectory_InputArguments = 196;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateDirectory_OutputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_CreateDirectory_OutputArguments = 197;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateFile_InputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_CreateFile_InputArguments = 199;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateFile_OutputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_CreateFile_OutputArguments = 200;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_DeleteFileSystemObject_InputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_DeleteFileSystemObject_InputArguments = 202;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_MoveOrCopy_InputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_MoveOrCopy_InputArguments = 204;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_MoveOrCopy_OutputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_FileSystem_MoveOrCopy_OutputArguments = 205;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_GetUpdateBehavior_InputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_GetUpdateBehavior_InputArguments = 207;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_GetUpdateBehavior_OutputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_GetUpdateBehavior_OutputArguments = 208;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_ValidateFiles_InputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_ValidateFiles_InputArguments = 210;
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_ValidateFiles_OutputArguments Variable.
+        /// </summary>
+        public const uint FileSystemLoadingType_ValidateFiles_OutputArguments = 211;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_Manufacturer Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_Manufacturer = 380;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_ManufacturerUri Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_ManufacturerUri = 381;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_SoftwareRevision Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_SoftwareRevision = 382;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_PatchIdentifiers Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_PatchIdentifiers = 383;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_ReleaseDate Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_ReleaseDate = 384;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_ChangeLogReference Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_ChangeLogReference = 385;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_Hash Variable.
+        /// </summary>
+        public const uint SoftwareVersionType_Hash = 386;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_CurrentState_Id = 215;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_LastTransition_Id = 220;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PercentComplete Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PercentComplete = 227;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Idle_StateNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Idle_StateNumber = 232;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Preparing_StateNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Preparing_StateNumber = 234;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdate_StateNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparedForUpdate_StateNumber = 236;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Resuming_StateNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_Resuming_StateNumber = 238;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_IdleToPreparing_TransitionNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_IdleToPreparing_TransitionNumber = 240;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToIdle_TransitionNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparingToIdle_TransitionNumber = 242;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate_TransitionNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate_TransitionNumber = 244;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdateToResuming_TransitionNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_PreparedForUpdateToResuming_TransitionNumber = 246;
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_ResumingToIdle_TransitionNumber Variable.
+        /// </summary>
+        public const uint PrepareForUpdateStateMachineType_ResumingToIdle_TransitionNumber = 248;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_CurrentState_Id = 251;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_LastTransition_Id = 256;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_PercentComplete Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_PercentComplete = 263;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallationDelay Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallationDelay = 264;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallSoftwarePackage_InputArguments Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallSoftwarePackage_InputArguments = 266;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallSoftwarePackage_OutputArguments Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallSoftwarePackage_OutputArguments = 267;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallFiles_InputArguments Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallFiles_InputArguments = 269;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Idle_StateNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_Idle_StateNumber = 272;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Installing_StateNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_Installing_StateNumber = 274;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Error_StateNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_Error_StateNumber = 276;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_IdleToInstalling_TransitionNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_IdleToInstalling_TransitionNumber = 387;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToIdle_TransitionNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallingToIdle_TransitionNumber = 280;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToError_TransitionNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_InstallingToError_TransitionNumber = 282;
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_ErrorToIdle_TransitionNumber Variable.
+        /// </summary>
+        public const uint InstallationStateMachineType_ErrorToIdle_TransitionNumber = 284;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_CurrentState_Id = 287;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_LastTransition_Id = 292;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycle_StateNumber Variable.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_NotWaitingForPowerCycle_StateNumber = 300;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycle_StateNumber Variable.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_WaitingForPowerCycle_StateNumber = 302;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle_TransitionNumber Variable.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle_TransitionNumber = 304;
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle_TransitionNumber Variable.
+        /// </summary>
+        public const uint PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle_TransitionNumber = 306;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_CurrentState_Id = 309;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_LastTransition_Id = 314;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_ConfirmationTimeout Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_ConfirmationTimeout = 322;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirm_StateNumber Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_NotWaitingForConfirm_StateNumber = 324;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirm_StateNumber Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_WaitingForConfirm_StateNumber = 326;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm_TransitionNumber Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm_TransitionNumber = 328;
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm_TransitionNumber Variable.
+        /// </summary>
+        public const uint ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm_TransitionNumber = 330;
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionFileType_EnumStrings Variable.
+        /// </summary>
+        public const uint SoftwareVersionFileType_EnumStrings = 332;
+
+        /// <summary>
+        /// The identifier for the UpdateBehavior_OptionSetValues Variable.
+        /// </summary>
+        public const uint UpdateBehavior_OptionSetValues = 388;
+
+        /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema Variable.
         /// </summary>
         public const uint OpcUaDi_BinarySchema = 6435;
@@ -2404,6 +3424,16 @@ namespace Opc.Ua.Di
         /// The identifier for the ParameterResultDataType DataType.
         /// </summary>
         public static readonly ExpandedNodeId ParameterResultDataType = new ExpandedNodeId(Opc.Ua.Di.DataTypes.ParameterResultDataType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionFileType DataType.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionFileType = new ExpandedNodeId(Opc.Ua.Di.DataTypes.SoftwareVersionFileType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the UpdateBehavior DataType.
+        /// </summary>
+        public static readonly ExpandedNodeId UpdateBehavior = new ExpandedNodeId(Opc.Ua.Di.DataTypes.UpdateBehavior, Opc.Ua.Di.Namespaces.OpcUaDi);
     }
     #endregion
 
@@ -2444,11 +3474,6 @@ namespace Opc.Ua.Di
         /// The identifier for the OPCUADINamespaceMetadata_NamespaceFile_SetPosition Method.
         /// </summary>
         public static readonly ExpandedNodeId OPCUADINamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Opc.Ua.Di.Methods.OPCUADINamespaceMetadata_NamespaceFile_SetPosition, Opc.Ua.Di.Namespaces.OpcUaDi);
-
-        /// <summary>
-        /// The identifier for the TopologyElementType_MethodSet_MethodIdentifier Method.
-        /// </summary>
-        public static readonly ExpandedNodeId TopologyElementType_MethodSet_MethodIdentifier = new ExpandedNodeId(Opc.Ua.Di.Methods.TopologyElementType_MethodSet_MethodIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the TopologyElementType_Lock_InitLock Method.
@@ -2759,6 +3784,156 @@ namespace Opc.Ua.Di
         /// The identifier for the LockingServicesType_BreakLock Method.
         /// </summary>
         public static readonly ExpandedNodeId LockingServicesType_BreakLock = new ExpandedNodeId(Opc.Ua.Di.Methods.LockingServicesType_BreakLock, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_Prepare Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PrepareForUpdate_Prepare = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_PrepareForUpdate_Prepare, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_Abort Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PrepareForUpdate_Abort = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_PrepareForUpdate_Abort, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_Resume Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation_Resume = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_Installation_Resume, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_Confirm Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Confirmation_Confirm = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_Confirmation_Confirm, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForRead Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_GenerateFileForRead = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_Parameters_GenerateFileForRead, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForWrite Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_GenerateFileForWrite = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_Parameters_GenerateFileForWrite, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_CloseAndCommit Method.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_CloseAndCommit = new ExpandedNodeId(Opc.Ua.Di.Methods.SoftwareUpdateType_Parameters_CloseAndCommit, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForRead Method.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_GenerateFileForRead = new ExpandedNodeId(Opc.Ua.Di.Methods.PackageLoadingType_FileTransfer_GenerateFileForRead, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForWrite Method.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_GenerateFileForWrite = new ExpandedNodeId(Opc.Ua.Di.Methods.PackageLoadingType_FileTransfer_GenerateFileForWrite, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_CloseAndCommit Method.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_CloseAndCommit = new ExpandedNodeId(Opc.Ua.Di.Methods.PackageLoadingType_FileTransfer_CloseAndCommit, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForRead Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_GenerateFileForRead = new ExpandedNodeId(Opc.Ua.Di.Methods.DirectLoadingType_FileTransfer_GenerateFileForRead, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForWrite Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_GenerateFileForWrite = new ExpandedNodeId(Opc.Ua.Di.Methods.DirectLoadingType_FileTransfer_GenerateFileForWrite, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_CloseAndCommit Method.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_CloseAndCommit = new ExpandedNodeId(Opc.Ua.Di.Methods.DirectLoadingType_FileTransfer_CloseAndCommit, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForRead Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_GenerateFileForRead = new ExpandedNodeId(Opc.Ua.Di.Methods.CachedLoadingType_FileTransfer_GenerateFileForRead, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForWrite Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_GenerateFileForWrite = new ExpandedNodeId(Opc.Ua.Di.Methods.CachedLoadingType_FileTransfer_GenerateFileForWrite, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_CloseAndCommit Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_CloseAndCommit = new ExpandedNodeId(Opc.Ua.Di.Methods.CachedLoadingType_FileTransfer_CloseAndCommit, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_GetUpdateBehavior Method.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_GetUpdateBehavior = new ExpandedNodeId(Opc.Ua.Di.Methods.CachedLoadingType_GetUpdateBehavior, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateDirectory Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_CreateDirectory = new ExpandedNodeId(Opc.Ua.Di.Methods.FileSystemLoadingType_FileSystem_CreateDirectory, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateFile Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_CreateFile = new ExpandedNodeId(Opc.Ua.Di.Methods.FileSystemLoadingType_FileSystem_CreateFile, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_DeleteFileSystemObject Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_DeleteFileSystemObject = new ExpandedNodeId(Opc.Ua.Di.Methods.FileSystemLoadingType_FileSystem_DeleteFileSystemObject, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_MoveOrCopy Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_MoveOrCopy = new ExpandedNodeId(Opc.Ua.Di.Methods.FileSystemLoadingType_FileSystem_MoveOrCopy, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_GetUpdateBehavior Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_GetUpdateBehavior = new ExpandedNodeId(Opc.Ua.Di.Methods.FileSystemLoadingType_GetUpdateBehavior, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_ValidateFiles Method.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_ValidateFiles = new ExpandedNodeId(Opc.Ua.Di.Methods.FileSystemLoadingType_ValidateFiles, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Prepare Method.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Prepare = new ExpandedNodeId(Opc.Ua.Di.Methods.PrepareForUpdateStateMachineType_Prepare, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Abort Method.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Abort = new ExpandedNodeId(Opc.Ua.Di.Methods.PrepareForUpdateStateMachineType_Abort, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Resume Method.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Resume = new ExpandedNodeId(Opc.Ua.Di.Methods.PrepareForUpdateStateMachineType_Resume, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallSoftwarePackage Method.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallSoftwarePackage = new ExpandedNodeId(Opc.Ua.Di.Methods.InstallationStateMachineType_InstallSoftwarePackage, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallFiles Method.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallFiles = new ExpandedNodeId(Opc.Ua.Di.Methods.InstallationStateMachineType_InstallFiles, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Resume Method.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Resume = new ExpandedNodeId(Opc.Ua.Di.Methods.InstallationStateMachineType_Resume, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_Confirm Method.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_Confirm = new ExpandedNodeId(Opc.Ua.Di.Methods.ConfirmationStateMachineType_Confirm, Opc.Ua.Di.Namespaces.OpcUaDi);
     }
     #endregion
 
@@ -2929,6 +4104,181 @@ namespace Opc.Ua.Di
         /// The identifier for the ConnectionPointType_NetworkIdentifier Object.
         /// </summary>
         public static readonly ExpandedNodeId ConnectionPointType_NetworkIdentifier = new ExpandedNodeId(Opc.Ua.Di.Objects.ConnectionPointType_NetworkIdentifier, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Loading Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Loading = new ExpandedNodeId(Opc.Ua.Di.Objects.SoftwareUpdateType_Loading, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PrepareForUpdate = new ExpandedNodeId(Opc.Ua.Di.Objects.SoftwareUpdateType_PrepareForUpdate, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation = new ExpandedNodeId(Opc.Ua.Di.Objects.SoftwareUpdateType_Installation, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PowerCycle = new ExpandedNodeId(Opc.Ua.Di.Objects.SoftwareUpdateType_PowerCycle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Confirmation = new ExpandedNodeId(Opc.Ua.Di.Objects.SoftwareUpdateType_Confirmation, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters Object.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters = new ExpandedNodeId(Opc.Ua.Di.Objects.SoftwareUpdateType_Parameters, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_CurrentVersion = new ExpandedNodeId(Opc.Ua.Di.Objects.PackageLoadingType_CurrentVersion, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer = new ExpandedNodeId(Opc.Ua.Di.Objects.PackageLoadingType_FileTransfer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion Object.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_PendingVersion = new ExpandedNodeId(Opc.Ua.Di.Objects.CachedLoadingType_PendingVersion, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion Object.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FallbackVersion = new ExpandedNodeId(Opc.Ua.Di.Objects.CachedLoadingType_FallbackVersion, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem Object.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem = new ExpandedNodeId(Opc.Ua.Di.Objects.FileSystemLoadingType_FileSystem, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Idle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Idle = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_Idle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Preparing Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Preparing = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_Preparing, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdate Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparedForUpdate = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_PreparedForUpdate, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Resuming Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Resuming = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_Resuming, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_IdleToPreparing Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_IdleToPreparing = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_IdleToPreparing, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToIdle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparingToIdle = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_PreparingToIdle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdateToResuming Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparedForUpdateToResuming = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_PreparedForUpdateToResuming, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_ResumingToIdle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_ResumingToIdle = new ExpandedNodeId(Opc.Ua.Di.Objects.PrepareForUpdateStateMachineType_ResumingToIdle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Idle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Idle = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_Idle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Installing Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Installing = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_Installing, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Error Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Error = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_Error, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_IdleToInstalling Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_IdleToInstalling = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_IdleToInstalling, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToIdle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallingToIdle = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_InstallingToIdle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToError Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallingToError = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_InstallingToError, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_ErrorToIdle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_ErrorToIdle = new ExpandedNodeId(Opc.Ua.Di.Objects.InstallationStateMachineType_ErrorToIdle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_NotWaitingForPowerCycle = new ExpandedNodeId(Opc.Ua.Di.Objects.PowerCycleStateMachineType_NotWaitingForPowerCycle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_WaitingForPowerCycle = new ExpandedNodeId(Opc.Ua.Di.Objects.PowerCycleStateMachineType_WaitingForPowerCycle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle = new ExpandedNodeId(Opc.Ua.Di.Objects.PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle Object.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle = new ExpandedNodeId(Opc.Ua.Di.Objects.PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirm Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_NotWaitingForConfirm = new ExpandedNodeId(Opc.Ua.Di.Objects.ConfirmationStateMachineType_NotWaitingForConfirm, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirm Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_WaitingForConfirm = new ExpandedNodeId(Opc.Ua.Di.Objects.ConfirmationStateMachineType_WaitingForConfirm, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm = new ExpandedNodeId(Opc.Ua.Di.Objects.ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm Object.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm = new ExpandedNodeId(Opc.Ua.Di.Objects.ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
         /// The identifier for the FetchResultDataType_Encoding_DefaultBinary Object.
@@ -3104,6 +4454,61 @@ namespace Opc.Ua.Di
         /// The identifier for the LockingServicesType ObjectType.
         /// </summary>
         public static readonly ExpandedNodeId LockingServicesType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.LockingServicesType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.SoftwareUpdateType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareLoadingType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareLoadingType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.SoftwareLoadingType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.PackageLoadingType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.DirectLoadingType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.CachedLoadingType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.FileSystemLoadingType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.SoftwareVersionType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.PrepareForUpdateStateMachineType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.InstallationStateMachineType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.PowerCycleStateMachineType, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType ObjectType.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType = new ExpandedNodeId(Opc.Ua.Di.ObjectTypes.ConfirmationStateMachineType, Opc.Ua.Di.Namespaces.OpcUaDi);
     }
     #endregion
 
@@ -4621,6 +6026,641 @@ namespace Opc.Ua.Di
         public static readonly ExpandedNodeId LockingServicesType_BreakLock_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.LockingServicesType_BreakLock_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
 
         /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_CurrentState Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PrepareForUpdate_CurrentState = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_PrepareForUpdate_CurrentState, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PrepareForUpdate_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_PrepareForUpdate_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PrepareForUpdate_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PrepareForUpdate_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_PrepareForUpdate_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_CurrentState Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation_CurrentState = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Installation_CurrentState, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Installation_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Installation_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_InstallSoftwarePackage_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation_InstallSoftwarePackage_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Installation_InstallSoftwarePackage_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Installation_InstallFiles_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Installation_InstallFiles_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Installation_InstallFiles_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle_CurrentState Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PowerCycle_CurrentState = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_PowerCycle_CurrentState, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PowerCycle_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_PowerCycle_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_PowerCycle_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_PowerCycle_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_PowerCycle_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_CurrentState Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Confirmation_CurrentState = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Confirmation_CurrentState, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Confirmation_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Confirmation_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Confirmation_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Confirmation_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Confirmation_ConfirmationTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Confirmation_ConfirmationTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Confirmation_ConfirmationTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_ClientProcessingTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_ClientProcessingTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_ClientProcessingTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_GenerateFileForRead_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_GenerateFileForRead_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_GenerateFileForRead_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_GenerateFileForRead_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_GenerateFileForWrite_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_GenerateFileForWrite_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_GenerateFileForWrite_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_GenerateFileForWrite_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_CloseAndCommit_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_CloseAndCommit_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_Parameters_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_Parameters_CloseAndCommit_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_Parameters_CloseAndCommit_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_UpdateStatus Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_UpdateStatus = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_UpdateStatus, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_VendorErrorCode Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_VendorErrorCode = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_VendorErrorCode, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareUpdateType_DefaultInstanceBrowseName Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareUpdateType_DefaultInstanceBrowseName = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareUpdateType_DefaultInstanceBrowseName, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareLoadingType_UpdateKey Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareLoadingType_UpdateKey = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareLoadingType_UpdateKey, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_CurrentVersion_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_CurrentVersion_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_CurrentVersion_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_CurrentVersion_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_CurrentVersion_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_CurrentVersion_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_CurrentVersion_SoftwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_ClientProcessingTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_ClientProcessingTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_ClientProcessingTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_GenerateFileForRead_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_GenerateFileForRead_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_GenerateFileForRead_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_GenerateFileForRead_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_GenerateFileForWrite_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_GenerateFileForWrite_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_CloseAndCommit_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_CloseAndCommit_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_FileTransfer_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_FileTransfer_CloseAndCommit_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_FileTransfer_CloseAndCommit_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_ErrorMessage Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_ErrorMessage = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_ErrorMessage, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PackageLoadingType_WriteBlockSize Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PackageLoadingType_WriteBlockSize = new ExpandedNodeId(Opc.Ua.Di.Variables.PackageLoadingType_WriteBlockSize, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_CurrentVersion_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_CurrentVersion_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_CurrentVersion_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_CurrentVersion_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_CurrentVersion_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_CurrentVersion_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_CurrentVersion_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_CurrentVersion_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_CurrentVersion_SoftwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_ClientProcessingTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_ClientProcessingTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_ClientProcessingTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_GenerateFileForRead_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_GenerateFileForRead_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_GenerateFileForRead_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_GenerateFileForRead_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_GenerateFileForWrite_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_GenerateFileForWrite_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_CloseAndCommit_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_CloseAndCommit_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_FileTransfer_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_FileTransfer_CloseAndCommit_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_FileTransfer_CloseAndCommit_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_UpdateBehavior Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_UpdateBehavior = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_UpdateBehavior, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the DirectLoadingType_WriteTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId DirectLoadingType_WriteTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.DirectLoadingType_WriteTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_CurrentVersion_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_CurrentVersion_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_CurrentVersion_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_CurrentVersion_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_CurrentVersion_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_CurrentVersion_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_CurrentVersion_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_CurrentVersion_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_CurrentVersion_SoftwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_ClientProcessingTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_ClientProcessingTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_ClientProcessingTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForRead_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_GenerateFileForRead_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_GenerateFileForRead_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForRead_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_GenerateFileForRead_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_GenerateFileForRead_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForWrite_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_GenerateFileForWrite_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_GenerateFileForWrite_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_GenerateFileForWrite_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_CloseAndCommit_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_CloseAndCommit_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_CloseAndCommit_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FileTransfer_CloseAndCommit_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FileTransfer_CloseAndCommit_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FileTransfer_CloseAndCommit_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_PendingVersion_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_PendingVersion_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_PendingVersion_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_PendingVersion_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_PendingVersion_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_PendingVersion_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_PendingVersion_SoftwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FallbackVersion_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FallbackVersion_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FallbackVersion_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FallbackVersion_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_FallbackVersion_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_FallbackVersion_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_FallbackVersion_SoftwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_GetUpdateBehavior_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_GetUpdateBehavior_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_GetUpdateBehavior_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the CachedLoadingType_GetUpdateBehavior_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId CachedLoadingType_GetUpdateBehavior_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.CachedLoadingType_GetUpdateBehavior_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateDirectory_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_CreateDirectory_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_CreateDirectory_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateDirectory_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_CreateDirectory_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_CreateDirectory_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateFile_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_CreateFile_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_CreateFile_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_CreateFile_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_CreateFile_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_CreateFile_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_DeleteFileSystemObject_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_DeleteFileSystemObject_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_DeleteFileSystemObject_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_MoveOrCopy_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_MoveOrCopy_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_MoveOrCopy_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_FileSystem_MoveOrCopy_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_FileSystem_MoveOrCopy_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_FileSystem_MoveOrCopy_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_GetUpdateBehavior_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_GetUpdateBehavior_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_GetUpdateBehavior_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_GetUpdateBehavior_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_GetUpdateBehavior_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_GetUpdateBehavior_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_ValidateFiles_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_ValidateFiles_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_ValidateFiles_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the FileSystemLoadingType_ValidateFiles_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId FileSystemLoadingType_ValidateFiles_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.FileSystemLoadingType_ValidateFiles_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_Manufacturer Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_Manufacturer = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_Manufacturer, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_ManufacturerUri Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_ManufacturerUri = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_ManufacturerUri, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_SoftwareRevision Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_SoftwareRevision = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_SoftwareRevision, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_PatchIdentifiers Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_PatchIdentifiers = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_PatchIdentifiers, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_ReleaseDate Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_ReleaseDate = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_ReleaseDate, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_ChangeLogReference Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_ChangeLogReference = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_ChangeLogReference, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionType_Hash Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionType_Hash = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionType_Hash, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PercentComplete Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PercentComplete = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_PercentComplete, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Idle_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Idle_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_Idle_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Preparing_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Preparing_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_Preparing_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdate_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparedForUpdate_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_PreparedForUpdate_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_Resuming_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_Resuming_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_Resuming_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_IdleToPreparing_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_IdleToPreparing_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_IdleToPreparing_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToIdle_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparingToIdle_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_PreparingToIdle_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_PreparedForUpdateToResuming_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_PreparedForUpdateToResuming_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_PreparedForUpdateToResuming_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PrepareForUpdateStateMachineType_ResumingToIdle_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PrepareForUpdateStateMachineType_ResumingToIdle_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PrepareForUpdateStateMachineType_ResumingToIdle_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_PercentComplete Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_PercentComplete = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_PercentComplete, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallationDelay Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallationDelay = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_InstallationDelay, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallSoftwarePackage_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallSoftwarePackage_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_InstallSoftwarePackage_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallSoftwarePackage_OutputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallSoftwarePackage_OutputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_InstallSoftwarePackage_OutputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallFiles_InputArguments Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallFiles_InputArguments = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_InstallFiles_InputArguments, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Idle_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Idle_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_Idle_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Installing_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Installing_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_Installing_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_Error_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_Error_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_Error_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_IdleToInstalling_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_IdleToInstalling_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_IdleToInstalling_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToIdle_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallingToIdle_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_InstallingToIdle_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_InstallingToError_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_InstallingToError_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_InstallingToError_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the InstallationStateMachineType_ErrorToIdle_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId InstallationStateMachineType_ErrorToIdle_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.InstallationStateMachineType_ErrorToIdle_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.PowerCycleStateMachineType_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.PowerCycleStateMachineType_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycle_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_NotWaitingForPowerCycle_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PowerCycleStateMachineType_NotWaitingForPowerCycle_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycle_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_WaitingForPowerCycle_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PowerCycleStateMachineType_WaitingForPowerCycle_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_CurrentState_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_CurrentState_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_CurrentState_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_LastTransition_Id Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_LastTransition_Id = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_LastTransition_Id, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_ConfirmationTimeout Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_ConfirmationTimeout = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_ConfirmationTimeout, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirm_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_NotWaitingForConfirm_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_NotWaitingForConfirm_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirm_StateNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_WaitingForConfirm_StateNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_WaitingForConfirm_StateNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm_TransitionNumber Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm_TransitionNumber = new ExpandedNodeId(Opc.Ua.Di.Variables.ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm_TransitionNumber, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the SoftwareVersionFileType_EnumStrings Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId SoftwareVersionFileType_EnumStrings = new ExpandedNodeId(Opc.Ua.Di.Variables.SoftwareVersionFileType_EnumStrings, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
+        /// The identifier for the UpdateBehavior_OptionSetValues Variable.
+        /// </summary>
+        public static readonly ExpandedNodeId UpdateBehavior_OptionSetValues = new ExpandedNodeId(Opc.Ua.Di.Variables.UpdateBehavior_OptionSetValues, Opc.Ua.Di.Namespaces.OpcUaDi);
+
+        /// <summary>
         /// The identifier for the OpcUaDi_BinarySchema Variable.
         /// </summary>
         public static readonly ExpandedNodeId OpcUaDi_BinarySchema = new ExpandedNodeId(Opc.Ua.Di.Variables.OpcUaDi_BinarySchema, Opc.Ua.Di.Namespaces.OpcUaDi);
@@ -4715,6 +6755,11 @@ namespace Opc.Ua.Di
     public static partial class BrowseNames
     {
         /// <summary>
+        /// The BrowseName for the Abort component.
+        /// </summary>
+        public const string Abort = "Abort";
+
+        /// <summary>
         /// The BrowseName for the ActualMode component.
         /// </summary>
         public const string ActualMode = "ActualMode";
@@ -4733,6 +6778,16 @@ namespace Opc.Ua.Di
         /// The BrowseName for the BreakLock component.
         /// </summary>
         public const string BreakLock = "BreakLock";
+
+        /// <summary>
+        /// The BrowseName for the CachedLoadingType component.
+        /// </summary>
+        public const string CachedLoadingType = "CachedLoadingType";
+
+        /// <summary>
+        /// The BrowseName for the ChangeLogReference component.
+        /// </summary>
+        public const string ChangeLogReference = "ChangeLogReference";
 
         /// <summary>
         /// The BrowseName for the CheckFunctionAlarmType component.
@@ -4755,6 +6810,26 @@ namespace Opc.Ua.Di
         public const string ConfigurableObjectType = "ConfigurableObjectType";
 
         /// <summary>
+        /// The BrowseName for the Confirm component.
+        /// </summary>
+        public const string Confirm = "Confirm";
+
+        /// <summary>
+        /// The BrowseName for the Confirmation component.
+        /// </summary>
+        public const string Confirmation = "Confirmation";
+
+        /// <summary>
+        /// The BrowseName for the ConfirmationStateMachineType component.
+        /// </summary>
+        public const string ConfirmationStateMachineType = "ConfirmationStateMachineType";
+
+        /// <summary>
+        /// The BrowseName for the ConfirmationTimeout component.
+        /// </summary>
+        public const string ConfirmationTimeout = "ConfirmationTimeout";
+
+        /// <summary>
         /// The BrowseName for the ConnectionPointType component.
         /// </summary>
         public const string ConnectionPointType = "ConnectionPointType";
@@ -4773,6 +6848,11 @@ namespace Opc.Ua.Di
         /// The BrowseName for the CPIdentifier component.
         /// </summary>
         public const string CPIdentifier = "<CPIdentifier>";
+
+        /// <summary>
+        /// The BrowseName for the CurrentVersion component.
+        /// </summary>
+        public const string CurrentVersion = "CurrentVersion";
 
         /// <summary>
         /// The BrowseName for the DeviceClass component.
@@ -4835,9 +6915,29 @@ namespace Opc.Ua.Di
         public const string DeviceTypeImage = "DeviceTypeImage";
 
         /// <summary>
+        /// The BrowseName for the DirectLoadingType component.
+        /// </summary>
+        public const string DirectLoadingType = "DirectLoadingType";
+
+        /// <summary>
         /// The BrowseName for the Documentation component.
         /// </summary>
         public const string Documentation = "Documentation";
+
+        /// <summary>
+        /// The BrowseName for the Error component.
+        /// </summary>
+        public const string Error = "Error";
+
+        /// <summary>
+        /// The BrowseName for the ErrorMessage component.
+        /// </summary>
+        public const string ErrorMessage = "ErrorMessage";
+
+        /// <summary>
+        /// The BrowseName for the ErrorToIdle component.
+        /// </summary>
+        public const string ErrorToIdle = "ErrorToIdle";
 
         /// <summary>
         /// The BrowseName for the ExitLock component.
@@ -4850,6 +6950,11 @@ namespace Opc.Ua.Di
         public const string FailureAlarmType = "FailureAlarmType";
 
         /// <summary>
+        /// The BrowseName for the FallbackVersion component.
+        /// </summary>
+        public const string FallbackVersion = "FallbackVersion";
+
+        /// <summary>
         /// The BrowseName for the FetchResultDataType component.
         /// </summary>
         public const string FetchResultDataType = "FetchResultDataType";
@@ -4860,9 +6965,24 @@ namespace Opc.Ua.Di
         public const string FetchTransferResultData = "FetchTransferResultData";
 
         /// <summary>
+        /// The BrowseName for the FileSystemLoadingType component.
+        /// </summary>
+        public const string FileSystemLoadingType = "FileSystemLoadingType";
+
+        /// <summary>
+        /// The BrowseName for the FileTransfer component.
+        /// </summary>
+        public const string FileTransfer = "FileTransfer";
+
+        /// <summary>
         /// The BrowseName for the FunctionalGroupType component.
         /// </summary>
         public const string FunctionalGroupType = "FunctionalGroupType";
+
+        /// <summary>
+        /// The BrowseName for the GetUpdateBehavior component.
+        /// </summary>
+        public const string GetUpdateBehavior = "GetUpdateBehavior";
 
         /// <summary>
         /// The BrowseName for the GroupIdentifier component.
@@ -4875,6 +6995,11 @@ namespace Opc.Ua.Di
         public const string HardwareRevision = "HardwareRevision";
 
         /// <summary>
+        /// The BrowseName for the Hash component.
+        /// </summary>
+        public const string Hash = "Hash";
+
+        /// <summary>
         /// The BrowseName for the Identification component.
         /// </summary>
         public const string Identification = "Identification";
@@ -4885,6 +7010,21 @@ namespace Opc.Ua.Di
         public const string IDeviceHealthType = "IDeviceHealthType";
 
         /// <summary>
+        /// The BrowseName for the Idle component.
+        /// </summary>
+        public const string Idle = "Idle";
+
+        /// <summary>
+        /// The BrowseName for the IdleToInstalling component.
+        /// </summary>
+        public const string IdleToInstalling = "IdleToInstalling";
+
+        /// <summary>
+        /// The BrowseName for the IdleToPreparing component.
+        /// </summary>
+        public const string IdleToPreparing = "IdleToPreparing";
+
+        /// <summary>
         /// The BrowseName for the ImageSet component.
         /// </summary>
         public const string ImageSet = "ImageSet";
@@ -4893,6 +7033,46 @@ namespace Opc.Ua.Di
         /// The BrowseName for the InitLock component.
         /// </summary>
         public const string InitLock = "InitLock";
+
+        /// <summary>
+        /// The BrowseName for the Installation component.
+        /// </summary>
+        public const string Installation = "Installation";
+
+        /// <summary>
+        /// The BrowseName for the InstallationDelay component.
+        /// </summary>
+        public const string InstallationDelay = "InstallationDelay";
+
+        /// <summary>
+        /// The BrowseName for the InstallationStateMachineType component.
+        /// </summary>
+        public const string InstallationStateMachineType = "InstallationStateMachineType";
+
+        /// <summary>
+        /// The BrowseName for the InstallFiles component.
+        /// </summary>
+        public const string InstallFiles = "InstallFiles";
+
+        /// <summary>
+        /// The BrowseName for the Installing component.
+        /// </summary>
+        public const string Installing = "Installing";
+
+        /// <summary>
+        /// The BrowseName for the InstallingToError component.
+        /// </summary>
+        public const string InstallingToError = "InstallingToError";
+
+        /// <summary>
+        /// The BrowseName for the InstallingToIdle component.
+        /// </summary>
+        public const string InstallingToIdle = "InstallingToIdle";
+
+        /// <summary>
+        /// The BrowseName for the InstallSoftwarePackage component.
+        /// </summary>
+        public const string InstallSoftwarePackage = "InstallSoftwarePackage";
 
         /// <summary>
         /// The BrowseName for the IsOnline component.
@@ -4913,6 +7093,11 @@ namespace Opc.Ua.Di
         /// The BrowseName for the IVendorNameplateType component.
         /// </summary>
         public const string IVendorNameplateType = "IVendorNameplateType";
+
+        /// <summary>
+        /// The BrowseName for the Loading component.
+        /// </summary>
+        public const string Loading = "Loading";
 
         /// <summary>
         /// The BrowseName for the Lock component.
@@ -4995,6 +7180,26 @@ namespace Opc.Ua.Di
         public const string NormalMode = "NormalMode";
 
         /// <summary>
+        /// The BrowseName for the NotWaitingForConfirm component.
+        /// </summary>
+        public const string NotWaitingForConfirm = "NotWaitingForConfirm";
+
+        /// <summary>
+        /// The BrowseName for the NotWaitingForConfirmToWaitingForConfirm component.
+        /// </summary>
+        public const string NotWaitingForConfirmToWaitingForConfirm = "NotWaitingForConfirmToWaitingForConfirm";
+
+        /// <summary>
+        /// The BrowseName for the NotWaitingForPowerCycle component.
+        /// </summary>
+        public const string NotWaitingForPowerCycle = "NotWaitingForPowerCycle";
+
+        /// <summary>
+        /// The BrowseName for the NotWaitingForPowerCycleToWaitingForPowerCycle component.
+        /// </summary>
+        public const string NotWaitingForPowerCycleToWaitingForPowerCycle = "NotWaitingForPowerCycleToWaitingForPowerCycle";
+
+        /// <summary>
         /// The BrowseName for the ObjectIdentifier component.
         /// </summary>
         public const string ObjectIdentifier = "<ObjectIdentifier>";
@@ -5025,9 +7230,19 @@ namespace Opc.Ua.Di
         public const string OPCUADINamespaceMetadata = "http://opcfoundation.org/UA/DI/";
 
         /// <summary>
+        /// The BrowseName for the PackageLoadingType component.
+        /// </summary>
+        public const string PackageLoadingType = "PackageLoadingType";
+
+        /// <summary>
         /// The BrowseName for the ParameterResultDataType component.
         /// </summary>
         public const string ParameterResultDataType = "ParameterResultDataType";
+
+        /// <summary>
+        /// The BrowseName for the Parameters component.
+        /// </summary>
+        public const string Parameters = "Parameters";
 
         /// <summary>
         /// The BrowseName for the ParameterSet component.
@@ -5035,9 +7250,74 @@ namespace Opc.Ua.Di
         public const string ParameterSet = "ParameterSet";
 
         /// <summary>
+        /// The BrowseName for the PatchIdentifiers component.
+        /// </summary>
+        public const string PatchIdentifiers = "PatchIdentifiers";
+
+        /// <summary>
+        /// The BrowseName for the PendingVersion component.
+        /// </summary>
+        public const string PendingVersion = "PendingVersion";
+
+        /// <summary>
+        /// The BrowseName for the PercentComplete component.
+        /// </summary>
+        public const string PercentComplete = "PercentComplete";
+
+        /// <summary>
         /// The BrowseName for the PermittedMode component.
         /// </summary>
         public const string PermittedMode = "PermittedMode";
+
+        /// <summary>
+        /// The BrowseName for the PowerCycle component.
+        /// </summary>
+        public const string PowerCycle = "PowerCycle";
+
+        /// <summary>
+        /// The BrowseName for the PowerCycleStateMachineType component.
+        /// </summary>
+        public const string PowerCycleStateMachineType = "PowerCycleStateMachineType";
+
+        /// <summary>
+        /// The BrowseName for the Prepare component.
+        /// </summary>
+        public const string Prepare = "Prepare";
+
+        /// <summary>
+        /// The BrowseName for the PreparedForUpdate component.
+        /// </summary>
+        public const string PreparedForUpdate = "PreparedForUpdate";
+
+        /// <summary>
+        /// The BrowseName for the PreparedForUpdateToResuming component.
+        /// </summary>
+        public const string PreparedForUpdateToResuming = "PreparedForUpdateToResuming";
+
+        /// <summary>
+        /// The BrowseName for the PrepareForUpdate component.
+        /// </summary>
+        public const string PrepareForUpdate = "PrepareForUpdate";
+
+        /// <summary>
+        /// The BrowseName for the PrepareForUpdateStateMachineType component.
+        /// </summary>
+        public const string PrepareForUpdateStateMachineType = "PrepareForUpdateStateMachineType";
+
+        /// <summary>
+        /// The BrowseName for the Preparing component.
+        /// </summary>
+        public const string Preparing = "Preparing";
+
+        /// <summary>
+        /// The BrowseName for the PreparingToIdle component.
+        /// </summary>
+        public const string PreparingToIdle = "PreparingToIdle";
+
+        /// <summary>
+        /// The BrowseName for the PreparingToPreparedForUpdate component.
+        /// </summary>
+        public const string PreparingToPreparedForUpdate = "PreparingToPreparedForUpdate";
 
         /// <summary>
         /// The BrowseName for the ProductCode component.
@@ -5065,6 +7345,11 @@ namespace Opc.Ua.Di
         public const string ProtocolType = "ProtocolType";
 
         /// <summary>
+        /// The BrowseName for the ReleaseDate component.
+        /// </summary>
+        public const string ReleaseDate = "ReleaseDate";
+
+        /// <summary>
         /// The BrowseName for the RemainingLockTime component.
         /// </summary>
         public const string RemainingLockTime = "RemainingLockTime";
@@ -5073,6 +7358,21 @@ namespace Opc.Ua.Di
         /// The BrowseName for the RenewLock component.
         /// </summary>
         public const string RenewLock = "RenewLock";
+
+        /// <summary>
+        /// The BrowseName for the Resume component.
+        /// </summary>
+        public const string Resume = "Resume";
+
+        /// <summary>
+        /// The BrowseName for the Resuming component.
+        /// </summary>
+        public const string Resuming = "Resuming";
+
+        /// <summary>
+        /// The BrowseName for the ResumingToIdle component.
+        /// </summary>
+        public const string ResumingToIdle = "ResumingToIdle";
 
         /// <summary>
         /// The BrowseName for the RevisionCounter component.
@@ -5085,6 +7385,11 @@ namespace Opc.Ua.Di
         public const string SerialNumber = "SerialNumber";
 
         /// <summary>
+        /// The BrowseName for the SoftwareLoadingType component.
+        /// </summary>
+        public const string SoftwareLoadingType = "SoftwareLoadingType";
+
+        /// <summary>
         /// The BrowseName for the SoftwareRevision component.
         /// </summary>
         public const string SoftwareRevision = "SoftwareRevision";
@@ -5093,6 +7398,21 @@ namespace Opc.Ua.Di
         /// The BrowseName for the SoftwareType component.
         /// </summary>
         public const string SoftwareType = "SoftwareType";
+
+        /// <summary>
+        /// The BrowseName for the SoftwareUpdateType component.
+        /// </summary>
+        public const string SoftwareUpdateType = "SoftwareUpdateType";
+
+        /// <summary>
+        /// The BrowseName for the SoftwareVersionFileType component.
+        /// </summary>
+        public const string SoftwareVersionFileType = "SoftwareVersionFileType";
+
+        /// <summary>
+        /// The BrowseName for the SoftwareVersionType component.
+        /// </summary>
+        public const string SoftwareVersionType = "SoftwareVersionType";
 
         /// <summary>
         /// The BrowseName for the SupportedTypes component.
@@ -5143,6 +7463,61 @@ namespace Opc.Ua.Di
         /// The BrowseName for the UIElementType component.
         /// </summary>
         public const string UIElementType = "UIElementType";
+
+        /// <summary>
+        /// The BrowseName for the UpdateBehavior component.
+        /// </summary>
+        public const string UpdateBehavior = "UpdateBehavior";
+
+        /// <summary>
+        /// The BrowseName for the UpdateKey component.
+        /// </summary>
+        public const string UpdateKey = "UpdateKey";
+
+        /// <summary>
+        /// The BrowseName for the UpdateStatus component.
+        /// </summary>
+        public const string UpdateStatus = "UpdateStatus";
+
+        /// <summary>
+        /// The BrowseName for the ValidateFiles component.
+        /// </summary>
+        public const string ValidateFiles = "ValidateFiles";
+
+        /// <summary>
+        /// The BrowseName for the VendorErrorCode component.
+        /// </summary>
+        public const string VendorErrorCode = "VendorErrorCode";
+
+        /// <summary>
+        /// The BrowseName for the WaitingForConfirm component.
+        /// </summary>
+        public const string WaitingForConfirm = "WaitingForConfirm";
+
+        /// <summary>
+        /// The BrowseName for the WaitingForConfirmToNotWaitingForConfirm component.
+        /// </summary>
+        public const string WaitingForConfirmToNotWaitingForConfirm = "WaitingForConfirmToNotWaitingForConfirm";
+
+        /// <summary>
+        /// The BrowseName for the WaitingForPowerCycle component.
+        /// </summary>
+        public const string WaitingForPowerCycle = "WaitingForPowerCycle";
+
+        /// <summary>
+        /// The BrowseName for the WaitingForPowerCycleToNotWaitingForPowerCycle component.
+        /// </summary>
+        public const string WaitingForPowerCycleToNotWaitingForPowerCycle = "WaitingForPowerCycleToNotWaitingForPowerCycle";
+
+        /// <summary>
+        /// The BrowseName for the WriteBlockSize component.
+        /// </summary>
+        public const string WriteBlockSize = "WriteBlockSize";
+
+        /// <summary>
+        /// The BrowseName for the WriteTimeout component.
+        /// </summary>
+        public const string WriteTimeout = "WriteTimeout";
     }
     #endregion
 

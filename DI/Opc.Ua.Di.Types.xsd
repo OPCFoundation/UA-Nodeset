@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -122,5 +122,34 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfParameterResultDataType" type="tns:ListOfParameterResultDataType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="SoftwareVersionFileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Current_0" />
+      <xs:enumeration value="Pending_1" />
+      <xs:enumeration value="Fallback_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SoftwareVersionFileType" type="tns:SoftwareVersionFileType" />
+
+  <xs:complexType name="ListOfSoftwareVersionFileType">
+    <xs:sequence>
+      <xs:element name="SoftwareVersionFileType" type="tns:SoftwareVersionFileType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSoftwareVersionFileType" type="tns:ListOfSoftwareVersionFileType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="UpdateBehavior">
+    <xs:restriction base="xs:unsignedInt">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UpdateBehavior" type="tns:UpdateBehavior" />
+
+  <xs:complexType name="ListOfUpdateBehavior">
+    <xs:sequence>
+      <xs:element name="UpdateBehavior" type="tns:UpdateBehavior" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfUpdateBehavior" type="tns:ListOfUpdateBehavior" nillable="true"></xs:element>
 
 </xs:schema>

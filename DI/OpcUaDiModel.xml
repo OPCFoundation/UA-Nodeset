@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -36,8 +36,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   TargetNamespace="http://opcfoundation.org/UA/DI/"
   TargetXmlNamespace="http://opcfoundation.org/UA/DI/"
-  TargetVersion="1.02.2"
-  TargetPublicationDate="2020-06-02T00:00:00Z"
+  TargetVersion="1.03.0"
+  TargetPublicationDate="2021-03-09T00:00:00Z"
   xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
   <Namespaces>
@@ -55,12 +55,12 @@
       </Property>
       <Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
         <DefaultValue>
-          <uax:String>1.02.2</uax:String>
+          <uax:String>1.03.0</uax:String>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
         <DefaultValue>
-          <uax:DateTime>2020-06-02</uax:DateTime>
+          <uax:DateTime>2021-03-09</uax:DateTime>
         </DefaultValue>
       </Property>
       <Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
@@ -164,12 +164,6 @@
       </Object>
       <Object SymbolicName="DI:MethodSet" TypeDefinition="OpcUa:BaseObjectType" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
-        <Children>
-          <Method SymbolicName="DI:MethodIdentifier" ModellingRule="MandatoryPlaceholder">
-            <BrowseName>&lt;MethodIdentifier&gt;</BrowseName>
-            <Description>A method which belongs to the topology element.</Description>
-          </Method>
-        </Children>
       </Object>
       <Object SymbolicName="DI:GroupIdentifier" TypeDefinition="DI:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
@@ -392,11 +386,11 @@
     </Children>
   </ObjectType>
 
-  <ObjectType SymbolicName="DI:DeviceHealthDiagnosticAlarmType" BaseType="OpcUa:InstrumentDiagnosticAlarmType" IsAbstract="false" />
-  <ObjectType SymbolicName="DI:FailureAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
-  <ObjectType SymbolicName="DI:CheckFunctionAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
-  <ObjectType SymbolicName="DI:OffSpecAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
-  <ObjectType SymbolicName="DI:MaintenanceRequiredAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="true" />
+  <ObjectType SymbolicName="DI:DeviceHealthDiagnosticAlarmType" BaseType="OpcUa:InstrumentDiagnosticAlarmType" IsAbstract="true" />
+  <ObjectType SymbolicName="DI:FailureAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="false" />
+  <ObjectType SymbolicName="DI:CheckFunctionAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="false" />
+  <ObjectType SymbolicName="DI:OffSpecAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="false" />
+  <ObjectType SymbolicName="DI:MaintenanceRequiredAlarmType" BaseType="DI:DeviceHealthDiagnosticAlarmType" IsAbstract="false" />
 
   <ObjectType SymbolicName="DI:ConfigurableObjectType" BaseType="OpcUa:BaseObjectType">
     <Description>Defines a general pattern to expose and configure modular components</Description>
@@ -603,4 +597,643 @@
     </Children>
   </ObjectType>
 
+  <!--BEGIN SoftwareUpdate Model-->
+
+  <!--SoftwareUpdateType-->
+  <ObjectType SymbolicName="DI:SoftwareUpdateType" BaseType="OpcUa:BaseObjectType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Object SymbolicName="DI:Loading" TypeDefinition="DI:SoftwareLoadingType" ModellingRule="Optional">
+      </Object>
+      <Object SymbolicName="DI:PrepareForUpdate" TypeDefinition="DI:PrepareForUpdateStateMachineType" ModellingRule="Optional">
+      </Object>
+      <Object SymbolicName="DI:Installation" TypeDefinition="DI:InstallationStateMachineType" ModellingRule="Optional">
+      </Object>
+      <Object SymbolicName="DI:PowerCycle" TypeDefinition="DI:PowerCycleStateMachineType" ModellingRule="Optional">
+      </Object>
+      <Object SymbolicName="DI:Confirmation" TypeDefinition="DI:ConfirmationStateMachineType" ModellingRule="Optional">
+      </Object>
+      <Object SymbolicName="DI:Parameters" TypeDefinition="OpcUa:TemporaryFileTransferType" ModellingRule="Optional">
+      </Object>
+      <Variable SymbolicName="DI:UpdateStatus" DataType="OpcUa:LocalizedText" ModellingRule="Optional">
+      </Variable>
+      <Variable SymbolicName="DI:VendorErrorCode" DataType="OpcUa:Int32" ModellingRule="Optional">
+      </Variable>
+      <Property SymbolicName="OpcUa:DefaultInstanceBrowseName" DataType="OpcUa:QualifiedName" ModellingRule="None">
+        <DefaultValue>
+          <uax:QualifiedName>
+            <uax:NamespaceIndex>1</uax:NamespaceIndex>
+            <uax:Name>SoftwareUpdate</uax:Name>
+          </uax:QualifiedName>
+        </DefaultValue>
+      </Property>
+    </Children>
+  </ObjectType>
+
+
+  <!--SoftwareLoadingType-->
+  <ObjectType SymbolicName="DI:SoftwareLoadingType" BaseType="OpcUa:BaseObjectType" IsAbstract="true">
+    <Description></Description>
+    <Children>
+      <Variable SymbolicName="DI:UpdateKey" DataType="OpcUa:String" ModellingRule="Optional">
+      </Variable>
+    </Children>
+  </ObjectType>
+
+  <!--PackageLoadingType-->
+  <ObjectType SymbolicName="DI:PackageLoadingType" BaseType="DI:SoftwareLoadingType" IsAbstract="true">
+    <Description></Description>
+    <Children>
+      <Object SymbolicName="DI:CurrentVersion" TypeDefinition="DI:SoftwareVersionType" ModellingRule="Mandatory">
+      </Object>
+      <Object SymbolicName="DI:FileTransfer" TypeDefinition="OpcUa:TemporaryFileTransferType" ModellingRule="Mandatory">
+      </Object>
+      <Variable SymbolicName="DI:ErrorMessage" DataType="OpcUa:LocalizedText" ModellingRule="Mandatory">
+      </Variable>
+      <Property SymbolicName="DI:WriteBlockSize" DataType="OpcUa:UInt32" ModellingRule="Optional"/>
+    </Children>
+  </ObjectType>
+
+  <!--DirectLoadingType-->
+  <ObjectType SymbolicName="DI:DirectLoadingType" BaseType="DI:PackageLoadingType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Variable SymbolicName="DI:UpdateBehavior" DataType="DI:UpdateBehavior" ModellingRule="Mandatory">
+      </Variable>
+      <Property SymbolicName="DI:WriteTimeout" DataType="OpcUa:Duration" ModellingRule="Optional"/>
+    </Children>
+  </ObjectType>
+
+  <!--CachedLoadingType-->
+  <ObjectType SymbolicName="DI:CachedLoadingType" BaseType="DI:PackageLoadingType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Object SymbolicName="DI:PendingVersion" TypeDefinition="DI:SoftwareVersionType" ModellingRule="Mandatory">
+        <Description></Description>
+      </Object>
+      <Object SymbolicName="DI:FallbackVersion" TypeDefinition="DI:SoftwareVersionType" ModellingRule="Optional">
+        <Description></Description>
+      </Object>
+	   <Method SymbolicName="DI:GetUpdateBehavior" TypeDefinition="DI:GetUpdateBehaviorCachedLoadingMethodType" ModellingRule="Mandatory"/>
+    </Children>
+  </ObjectType>
+
+  <!--FileSystemLoadingType-->
+  <ObjectType SymbolicName="DI:FileSystemLoadingType" BaseType="DI:SoftwareLoadingType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Object SymbolicName="OpcUa:FileSystem" TypeDefinition="OpcUa:FileDirectoryType" ModellingRule="Mandatory">
+        <Description></Description>
+      </Object>
+	   <Method SymbolicName="DI:GetUpdateBehavior" TypeDefinition="DI:GetUpdateBehaviorFileSystemMethodType" ModellingRule="Mandatory"/>
+	   <Method SymbolicName="DI:ValidateFiles" TypeDefinition="DI:ValidateFilesMethodType" ModellingRule="Optional"/>
+    </Children>
+  </ObjectType>
+
+  <!--SoftwareVersionType-->
+  <ObjectType SymbolicName="DI:SoftwareVersionType" TypeDefinition="OpcUa:BaseObjectType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+    <Property SymbolicName="DI:Manufacturer" DataType="OpcUa:LocalizedText" ModellingRule="Mandatory"/>
+    <Property SymbolicName="DI:ManufacturerUri" DataType="OpcUa:String" ModellingRule="Mandatory"/>
+    <Property SymbolicName="DI:SoftwareRevision" DataType="OpcUa:String" ModellingRule="Mandatory"/>
+    <Property SymbolicName="DI:PatchIdentifiers" DataType="OpcUa:String" ModellingRule="Optional" ValueRank="Array"/>
+    <Property SymbolicName="DI:ReleaseDate" DataType="OpcUa:DateTime" ModellingRule="Optional"/>
+    <Property SymbolicName="DI:ChangeLogReference" DataType="OpcUa:String" ModellingRule="Optional"/>
+    <Property SymbolicName="DI:Hash" DataType="OpcUa:ByteString" ModellingRule="Optional"/>
+    </Children>
+  </ObjectType>
+
+  <!--PrepareStatemachine-->
+  <ObjectType SymbolicName="DI:PrepareForUpdateStateMachineType" BaseType="OpcUa:FiniteStateMachineType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Variable SymbolicName="DI:PercentComplete" DataType="OpcUa:Byte" ModellingRule="Optional">
+      </Variable>
+      <Method SymbolicName="DI:Prepare" ModellingRule="Mandatory">
+      </Method>
+      <Method SymbolicName="DI:Abort" ModellingRule="Mandatory">
+      </Method>
+      <Method SymbolicName="DI:Resume" ModellingRule="Optional">
+      </Method>
+      <Object SymbolicName="DI:Idle" TypeDefinition="OpcUa:InitialStateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>1</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:Preparing" TypeDefinition="OpcUa:StateType"  ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>2</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:PreparedForUpdate" TypeDefinition="OpcUa:StateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>3</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:Resuming" TypeDefinition="OpcUa:StateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>4</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:IdleToPreparing" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>12</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Idle</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Preparing</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:PreparingToIdle" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>21</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Preparing</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Idle</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:PreparingToPreparedForUpdate" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>23</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Preparing</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_PreparedForUpdate</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:PreparedForUpdateToResuming" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>34</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_PreparedForUpdate</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Resuming</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:ResumingToIdle" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>41</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Resuming</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PrepareForUpdateStateMachineType_Idle</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+  </ObjectType>
+
+  <!--InstallStatemachine-->
+  <ObjectType SymbolicName="DI:InstallationStateMachineType" BaseType="OpcUa:FiniteStateMachineType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Variable SymbolicName="DI:PercentComplete" DataType="OpcUa:Byte" ModellingRule="Optional">
+      </Variable>
+      <Variable SymbolicName="DI:InstallationDelay" DataType="OpcUa:Duration" ModellingRule="Optional">
+      </Variable>
+	  <Method SymbolicName="DI:InstallSoftwarePackage" TypeDefinition="DI:InstallSoftwarePackageMethodType" ModellingRule="Optional"/>
+	  <Method SymbolicName="DI:InstallFiles" TypeDefinition="DI:InstallFilesMethodType" ModellingRule="Optional"/>
+      <Method SymbolicName="DI:Resume" ModellingRule="Mandatory"/>
+      <Object SymbolicName="DI:Idle" TypeDefinition="OpcUa:InitialStateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>1</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:Installing" TypeDefinition="OpcUa:StateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>2</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:Error" TypeDefinition="OpcUa:StateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>3</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:IdleToInstalling" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>12</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Idle</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Installing</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:InstallingToIdle" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>21</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Installing</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Idle</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:InstallingToError" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>23</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Installing</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Error</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:ErrorToIdle" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>31</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Error</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:InstallationStateMachineType_Idle</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+  </ObjectType>
+
+  <!--PowercycleStateMachine-->
+  <ObjectType SymbolicName="DI:PowerCycleStateMachineType" BaseType="OpcUa:FiniteStateMachineType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Object SymbolicName="DI:NotWaitingForPowerCycle" TypeDefinition="OpcUa:InitialStateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>1</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:WaitingForPowerCycle" TypeDefinition="OpcUa:StateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>2</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:NotWaitingForPowerCycleToWaitingForPowerCycle" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>12</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PowerCycleStateMachineType_NotWaitingForPowerCycle</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PowerCycleStateMachineType_WaitingForPowerCycle</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:WaitingForPowerCycleToNotWaitingForPowerCycle" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>21</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:PowerCycleStateMachineType_WaitingForPowerCycle</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:PowerCycleStateMachineType_NotWaitingForPowerCycle</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+  </ObjectType>
+
+  <!--ConfirmStatemachine-->
+  <ObjectType SymbolicName="DI:ConfirmationStateMachineType" BaseType="OpcUa:FiniteStateMachineType" IsAbstract="false">
+    <Description></Description>
+    <Children>
+      <Method SymbolicName="DI:Confirm" ModellingRule="Mandatory">
+      </Method>
+      <Variable SymbolicName="DI:ConfirmationTimeout" DataType="OpcUa:Duration" ModellingRule="Mandatory">
+      </Variable>
+      <Object SymbolicName="DI:NotWaitingForConfirm" TypeDefinition="OpcUa:InitialStateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>1</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:WaitingForConfirm" TypeDefinition="OpcUa:StateType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:StateNumber">
+            <DefaultValue>
+              <uax:UInt32>2</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="DI:NotWaitingForConfirmToWaitingForConfirm" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>12</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:ConfirmationStateMachineType_NotWaitingForConfirm</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:ConfirmationStateMachineType_WaitingForConfirm</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="DI:WaitingForConfirmToNotWaitingForConfirm" TypeDefinition="OpcUa:TransitionType" ModellingRule="None">
+        <Children>
+          <Property SymbolicName="OpcUa:TransitionNumber">
+            <DefaultValue>
+              <uax:UInt32>21</uax:UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>OpcUa:FromState</ReferenceType>
+            <TargetId>DI:ConfirmationStateMachineType_WaitingForConfirm</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>OpcUa:ToState</ReferenceType>
+            <TargetId>DI:ConfirmationStateMachineType_NotWaitingForConfirm</TargetId>
+          </Reference>
+          <Reference IsOneWay="true">
+            <ReferenceType>OpcUa:HasEffect</ReferenceType>
+            <TargetId>OpcUa:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+  </ObjectType>
+
+  <!-- SoftwareVersionFileType -->
+  <DataType SymbolicName="DI:SoftwareVersionFileType" BaseType="OpcUa:Enumeration">
+    <Fields>
+      <Field Name="Current" Identifier="0">
+        <Description>The currently used version of the software identified by the CurrentVersion Object.</Description>
+      </Field>
+      <Field Name="Pending" Identifier="1">
+        <Description>The pending version of the software that could be installed identified by the PendingVersion Object.</Description>
+      </Field>
+      <Field Name="Fallback" Identifier="2">
+        <Description>The fallback version of the software identified by the FallbackVersion Object.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+
+  <!-- UpdateBehavior -->
+  <DataType SymbolicName="DI:UpdateBehavior" BaseType="OpcUa:UInt32" IsOptionSet="true">
+    <Fields>
+      <Field Name="KeepsParameters" BitMask="0001">
+        <Description>If KeepsParameters is not set, the device will lose its configuration during update. The Client should do a backup of the parameters before the update and restore them afterwards.</Description>
+      </Field>
+      <Field Name="WillDisconnect" BitMask="0002">
+        <Description>If WillDisconnect is set, the OPC UA Server will restart during installation. This can be the case if the update is about the firmware of the device that hosts the OPC UA Server.</Description>
+      </Field>
+      <Field Name="RequiresPowerCycle" BitMask="0004">
+        <Description>If RequiresPowerCycle is set, the devices require a manual power off / power on for installation.</Description>
+      </Field>
+      <Field Name="WillReboot" BitMask="0008">
+        <Description>If WillReboot is set, the device will reboot during the update, inclusive of embedded infrastructure elements like an integrated switch. An update Client should take this into account since the devices behind an integrated switch are not reachable for that time.</Description>
+      </Field>
+      <Field Name="NeedsPreparation" BitMask="0010">
+        <Description>If NeedsPreparation is not set, the Client can install the update without maintaining the PrepareForUpdateStateMachine. This can be used to support an installation without stopping the software.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+
+  <!-- MethodTypes -->
+
+  <Method SymbolicName="DI:InstallSoftwarePackageMethodType" >
+	<InputArguments>
+	  <Argument Name="ManufacturerUri" DataType="OpcUa:String"/>
+	  <Argument Name="SoftwareRevision" DataType="OpcUa:String"/>
+	  <Argument Name="PatchIdentifiers" DataType="OpcUa:String" ValueRank="Array"/>
+	  <Argument Name="Hash" DataType="OpcUa:ByteString" />
+	</InputArguments>
+	<OutputArguments>
+	</OutputArguments>
+  </Method>
+
+  <Method SymbolicName="DI:InstallFilesMethodType">
+      <InputArguments>
+        <Argument Name="NodeIds" DataType="OpcUa:NodeId" ValueRank="Array"/>
+      </InputArguments>
+  </Method>
+  
+  <Method SymbolicName="DI:GetUpdateBehaviorFileSystemMethodType">
+	<InputArguments>
+	  <Argument Name="NodeIds" DataType="OpcUa:NodeId" ValueRank="Array"/>
+	</InputArguments>
+	<OutputArguments>
+	  <Argument Name="UpdateBehavior" DataType="DI:UpdateBehavior" />
+	</OutputArguments>
+  </Method>
+  
+   <Method SymbolicName="DI:ValidateFilesMethodType">
+	<InputArguments>
+	  <Argument Name="NodeIds" DataType="OpcUa:NodeId" ValueRank="Array"/>
+	</InputArguments>
+	<OutputArguments>
+	  <Argument Name="ErrorCode" DataType="OpcUa:Int32" />
+	  <Argument Name="ErrorMessage" DataType="OpcUa:LocalizedText" />
+	</OutputArguments>
+  </Method>
+	  
+  <Method SymbolicName="DI:GetUpdateBehaviorCachedLoadingMethodType">
+	<InputArguments>
+	  <Argument Name="ManufacturerUri" DataType="OpcUa:String" />
+	  <Argument Name="SoftwareRevision" DataType="OpcUa:String" />
+	  <Argument Name="PatchIdentifiers" DataType="OpcUa:String" ValueRank="Array"/>
+	</InputArguments>
+	<OutputArguments>
+	  <Argument Name="UpdateBehavior" DataType="DI:UpdateBehavior" />
+	</OutputArguments>
+  </Method>
+	  
+  <!--END SoftwareUpdate Model-->
+	
 </ModelDesign>
