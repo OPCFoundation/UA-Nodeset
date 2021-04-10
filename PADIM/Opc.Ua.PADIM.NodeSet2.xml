@@ -28,14 +28,14 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2020-04-23T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-02-16T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/Dictionary/IRDI</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
     <Uri>http://opcfoundation.org/UA/PADIM/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/PADIM/" Version="1.00" PublicationDate="2020-04-23T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/PADIM/" Version="1.0.1" PublicationDate="2021-02-16T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.4" PublicationDate="2019-11-20T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/Dictionary/IRDI" Version="1.00" PublicationDate="2020-02-04T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
@@ -85,7 +85,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-04-23T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2021-02-16T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=3;i=1003" BrowseName="NamespaceUri" ParentNodeId="ns=3;i=1000" DataType="String">
@@ -107,7 +107,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.1</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=3;i=1005" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=3;i=1000" DataType="i=256" ValueRank="1">
@@ -483,7 +483,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABN611#001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1115" BrowseName="3:ActualValue" ParentNodeId="ns=3;i=1111" DataType="Number" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1115" BrowseName="3:ActualValue" ParentNodeId="ns=3;i=1111" DataType="Number" AccessLevel="3" ValueRank="-2">
     <DisplayName>Actual value</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1111</Reference>
@@ -492,7 +492,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1117" BrowseName="3:SimulationValue" ParentNodeId="ns=3;i=1111" DataType="Number" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1117" BrowseName="3:SimulationValue" ParentNodeId="ns=3;i=1111" DataType="Number" AccessLevel="3" ValueRank="-2">
     <DisplayName>Simulation value</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1111</Reference>
@@ -571,7 +571,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1111</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="ns=3;i=1128" BrowseName="3:SensorType" ParentNodeId="ns=3;i=1120" DataType="UInt32" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1128" BrowseName="3:SensorType" ParentNodeId="ns=3;i=1120" DataType="UInt32" AccessLevel="3" ValueRank="-2">
     <DisplayName>Sensor type</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1120</Reference>
@@ -579,7 +579,7 @@
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1129" BrowseName="3:SensorConnection" ParentNodeId="ns=3;i=1120" DataType="UInt32" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1129" BrowseName="3:SensorConnection" ParentNodeId="ns=3;i=1120" DataType="UInt32" AccessLevel="3" ValueRank="-2">
     <DisplayName>RTD-Sensor connection</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1120</Reference>
@@ -588,7 +588,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABB091#002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1130" BrowseName="3:SensorReference" ParentNodeId="ns=3;i=1120" DataType="UInt32" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1130" BrowseName="3:SensorReference" ParentNodeId="ns=3;i=1120" DataType="UInt32" AccessLevel="3" ValueRank="-2">
     <DisplayName>TC-Sensor reference</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1120</Reference>
@@ -597,7 +597,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABB093#002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1131" BrowseName="3:LowFlowCutOff" ParentNodeId="ns=3;i=1122" DataType="Float" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1131" BrowseName="3:LowFlowCutOff" ParentNodeId="ns=3;i=1122" DataType="Float" AccessLevel="3" ValueRank="-2">
     <DisplayName>Low flow cut off</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1122</Reference>
@@ -606,7 +606,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABJ724#002</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1132" BrowseName="3:FlowDirection" ParentNodeId="ns=3;i=1122" DataType="UInt32" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1132" BrowseName="3:FlowDirection" ParentNodeId="ns=3;i=1122" DataType="UInt32" AccessLevel="3" ValueRank="-2">
     <DisplayName>Flow direction</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1122</Reference>
@@ -639,7 +639,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABB292#005</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="ns=3;i=1136" BrowseName="3:Setpoint" ParentNodeId="ns=3;i=1125" DataType="Float" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1136" BrowseName="3:Setpoint" ParentNodeId="ns=3;i=1125" DataType="Float" AccessLevel="3" ValueRank="-2">
     <DisplayName>Setpoint</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1125</Reference>
@@ -691,7 +691,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABN635#001</Reference>
     </References>
   </UAVariableType>
-  <UAVariableType NodeId="ns=3;i=1142" BrowseName="3:MultiStateDiscreteSignalVariableType" DataType="UInt32" ValueRank="-2">
+  <UAVariableType NodeId="ns=3;i=1142" BrowseName="3:MultiStateDiscreteSignalVariableType" DataType="UInt32" ValueRank="-1">
     <DisplayName>MultiStateDiscreteSignalVariableType</DisplayName>
     <Documentation>https://reference.opcfoundation.org/v104/PADIM/v100/docs/8.15</Documentation>
     <References>
@@ -706,7 +706,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2372</Reference>
     </References>
   </UAVariableType>
-  <UAVariable NodeId="ns=3;i=1144" BrowseName="3:ActualValue" ParentNodeId="ns=3;i=1141" DataType="Boolean" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1144" BrowseName="3:ActualValue" ParentNodeId="ns=3;i=1141" DataType="Boolean" AccessLevel="3" ValueRank="-2">
     <DisplayName>ActualValue</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1141</Reference>
@@ -715,7 +715,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABN645#001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1145" BrowseName="3:SimulationValue" ParentNodeId="ns=3;i=1141" DataType="Boolean" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1145" BrowseName="3:SimulationValue" ParentNodeId="ns=3;i=1141" DataType="Boolean" AccessLevel="3" ValueRank="-2">
     <DisplayName>SimulationValue</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1141</Reference>
@@ -760,7 +760,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABN611#001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1152" BrowseName="3:ActualValue" ParentNodeId="ns=3;i=1143" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1152" BrowseName="3:ActualValue" ParentNodeId="ns=3;i=1143" AccessLevel="3" ValueRank="-2">
     <DisplayName>Actual value</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1143</Reference>
@@ -769,7 +769,7 @@
       <Reference ReferenceType="HasDictionaryEntry">ns=1;s=0112/2///61987#ABN644#001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=3;i=1153" BrowseName="3:SimulationValue" ParentNodeId="ns=3;i=1143" AccessLevel="3">
+  <UAVariable NodeId="ns=3;i=1153" BrowseName="3:SimulationValue" ParentNodeId="ns=3;i=1143" AccessLevel="3" ValueRank="-2">
     <DisplayName>Simulation value</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1143</Reference>
