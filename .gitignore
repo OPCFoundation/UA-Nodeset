@@ -1,0 +1,6 @@
+*.html
+# VS Code workspace
+*.code-workspace
+# Address Space Prototyping tool (ASP.exe)
+[Aa][Ss][Pp].exe/
+[Bb]uild[Ll]og.*
