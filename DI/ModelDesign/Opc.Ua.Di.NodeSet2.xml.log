@@ -1,0 +1,83 @@
+Address Space Prototyping (asp.exe) 5.1.0.39788
+Copyright(c) 2019 Mariusz Postol
+
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext creator - starting creation the OPC UA Address Space.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - the OPC UA defined has been uploaded.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext.ImportNodeSet - starting import http://opcfoundation.org/UA/.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finishing AddressSpaceContext.ImportNodeSet - imported 3909 nodes.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - has bee created successfully.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Starting model import form file Opc.Ua.Di.NodeSet2.xml
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext.ImportNodeSet - starting import http://opcfoundation.org/UA/DI/.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finishing AddressSpaceContext.ImportNodeSet - imported 373 nodes.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/DI/ namespace.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Selected 43 types to be validated.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Selected 3 instances referenced by the ObjectsFolder to be validated.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Removed the graph of nodes at http://opcfoundation.org/UA/:HasEncoding from the model
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Removed the graph of nodes at http://opcfoundation.org/UA/:HasEncoding from the model
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Removed the graph of nodes at http://opcfoundation.org/UA/:HasEncoding from the model
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Removed the graph of nodes at http://opcfoundation.org/UA/:HasEncoding from the model
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finishing Validator.ValidateExportModel - the model contains 46 nodes and no errors/warnings reported
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information The ModelDesign XML has been saved to file Opc.Ua.Di.Model.xml and decorated with the stylesheet XMLstylesheet
