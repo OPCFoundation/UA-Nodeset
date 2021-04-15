@@ -1,0 +1,3304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetNamespace="http://opcfoundation.org/UA/ADI/" TargetVersion="" TargetPublicationDate="2021-04-15T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/ADI/" XmlNamespace="http://opcfoundation.org/UA/ADI/" XmlPrefix="Prefix3" FilePath="" Version="1.01" PublicationDate="31.07.2013">http://opcfoundation.org/UA/ADI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix5" FilePath="" Version="1.0" PublicationDate="15.04.2021">http://opcfoundation.org/UA/DI/</Namespace>
+  </Namespaces>
+  <ObjectType xmlns:q1="http://opcfoundation.org/UA/ADI/" SymbolicName="q1:AnalyserDeviceType" IsAbstract="true">
+    <Children>
+      <Object xmlns:q2="http://opcfoundation.org/UA/DI/" SymbolicName="q2:ParameterSet" ModellingRule="Optional">
+        <Description>Flat list of Parameters</Description>
+        <Children>
+          <Variable SymbolicName="q1:DiagnosticStatus" xmlns:q3="http://opcfoundation.org/UA/" TypeDefinition="q3:DataItemType" ModellingRule="Mandatory">
+            <Description>General health status of the analyser</Description>
+          </Variable>
+          <Object SymbolicName="q1:ConfigData" xmlns:q4="http://opcfoundation.org/UA/" TypeDefinition="q4:FileType" ModellingRule="Optional">
+            <Description>Optional analyser device large configuration</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Object xmlns:q5="http://opcfoundation.org/UA/DI/" SymbolicName="q5:MethodSet" ModellingRule="Mandatory">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="q1:GetConfiguration" ModellingRule="Mandatory">
+            <OutputArguments>
+              <Argument Name="ConfigData" xmlns:q6="http://opcfoundation.org/UA/" DataType="q6:ByteString" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="q1:SetConfiguration" ModellingRule="Mandatory">
+            <InputArguments>
+              <Argument Name="ConfigData" xmlns:q7="http://opcfoundation.org/UA/" DataType="q7:ByteString" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ConfigDataDigest" xmlns:q8="http://opcfoundation.org/UA/" DataType="q8:String" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="q1:GetConfigDataDigest" ModellingRule="Mandatory">
+            <OutputArguments>
+              <Argument Name="ConfigDataDigest" xmlns:q9="http://opcfoundation.org/UA/" DataType="q9:String" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="q1:CompareConfigDataDigest" ModellingRule="Mandatory">
+            <InputArguments>
+              <Argument Name="ConfigDataDigest" xmlns:q10="http://opcfoundation.org/UA/" DataType="q10:String" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="IsEqual" xmlns:q11="http://opcfoundation.org/UA/" DataType="q11:Boolean" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="q1:ResetAllChannels" ModellingRule="Mandatory">
+            <Description>Reset all AnalyserChannels belonging to this AnalyserDevice.</Description>
+          </Method>
+          <Method SymbolicName="q1:StartAllChannels" ModellingRule="Mandatory">
+            <Description>Start all AnalyserChannels belonging to this AnalyserDevice.</Description>
+          </Method>
+          <Method SymbolicName="q1:StopAllChannels" ModellingRule="Mandatory">
+            <Description>Stop all AnalyserChannels belonging to this AnalyserDevice.</Description>
+          </Method>
+          <Method SymbolicName="q1:AbortAllChannels" ModellingRule="Mandatory">
+            <Description>Abort all AnalyserChannels belonging to this AnalyserDevice.</Description>
+          </Method>
+          <Method SymbolicName="q1:GotoOperating" ModellingRule="Mandatory">
+            <Description>AnalyserDeviceStateMachine to go to Operating state, forcing all AnalyserChannels to leave the SlaveMode state and go to the Operating state.</Description>
+          </Method>
+          <Method SymbolicName="q1:GotoMaintenance" ModellingRule="Mandatory">
+            <Description>AnalyserDeviceStateMachine to go to Maintenance state, forcing all AnalyserChannels to SlaveMode state.</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object xmlns:q12="http://opcfoundation.org/UA/DI/" SymbolicName="q12:Identification" ModellingRule="Mandatory">
+        <Description>Used to organize parameters for identification of this TopologyElement</Description>
+      </Object>
+      <Object SymbolicName="q1:Configuration" ModellingRule="Mandatory" />
+      <Object SymbolicName="q1:Status" ModellingRule="Mandatory" />
+      <Object SymbolicName="q1:FactorySettings" ModellingRule="Mandatory" />
+      <Object SymbolicName="q1:AnalyserStateMachine" TypeDefinition="q1:AnalyserDeviceStateMachineType" ModellingRule="Mandatory" />
+      <Object SymbolicName="q1:ChannelIdentifier" TypeDefinition="q1:AnalyserChannelType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ChannelIdentifier&gt;</BrowseName>
+        <Description>Channel definition</Description>
+      </Object>
+      <Object SymbolicName="q1:AccessorySlotIdentifier" TypeDefinition="q1:AccessorySlotType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;AccessorySlotIdentifier&gt;</BrowseName>
+        <Description>AccessorySlot definition</Description>
+        <Children>
+          <Object xmlns:q13="http://opcfoundation.org/UA/DI/" SymbolicName="q13:SupportedTypes" xmlns:q14="http://opcfoundation.org/UA/" TypeDefinition="q14:FolderType" ModellingRule="Mandatory">
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q15="http://opcfoundation.org/UA/ADI/" SymbolicName="q15:AnalyserDeviceStateMachineType" xmlns:q16="http://opcfoundation.org/UA/" BaseType="q16:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="q15:Powerup" TypeDefinition="q16:InitialStateType">
+        <Description>The AnalyserDevice is in its power-up sequence and cannot perform any other task.</Description>
+      </Object>
+      <Object SymbolicName="q15:Operating" TypeDefinition="q16:StateType">
+        <Description>The AnalyserDevice is in the Operating mode.</Description>
+      </Object>
+      <Object SymbolicName="q15:Local" TypeDefinition="q16:StateType">
+        <Description>The AnalyserDevice is in the Local mode. This mode is normally used to perform local physical maintenance on the analyser.</Description>
+      </Object>
+      <Object SymbolicName="q15:Maintenance" TypeDefinition="q16:StateType">
+        <Description>The AnalyserDevice is in the Maintenance mode. This mode is used to perform remote maintenance on the analyser like firmware upgrade.</Description>
+      </Object>
+      <Object SymbolicName="q15:Shutdown" TypeDefinition="q16:StateType">
+        <Description>The AnalyserDevice is in its power-down sequence and cannot perform any other task.</Description>
+      </Object>
+      <Object SymbolicName="q15:PowerupToOperatingTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_PowerupToOperatingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_PowerupToOperatingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:OperatingToLocalTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_OperatingToLocalTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_OperatingToLocalTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:OperatingToMaintenanceTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_OperatingToMaintenanceTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_OperatingToMaintenanceTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q16:HasCause</ReferenceType>
+            <TargetId>q15:AnalyserDeviceType_MethodSet_GotoMaintenance</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:LocalToOperatingTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_LocalToOperatingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_LocalToOperatingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:LocalToMaintenanceTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_LocalToMaintenanceTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_LocalToMaintenanceTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:MaintenanceToOperatingTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_MaintenanceToOperatingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_MaintenanceToOperatingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q16:HasCause</ReferenceType>
+            <TargetId>q15:AnalyserDeviceType_MethodSet_GotoOperating</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:MaintenanceToLocalTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_MaintenanceToLocalTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_MaintenanceToLocalTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:OperatingToShutdownTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_OperatingToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_OperatingToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:LocalToShutdownTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_LocalToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_LocalToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q15:MaintenanceToShutdownTransition" TypeDefinition="q16:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:FromState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_MaintenanceToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q16:ToState</ReferenceType>
+            <TargetId>q15:AnalyserDeviceStateMachineType_MaintenanceToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q17="http://opcfoundation.org/UA/ADI/" SymbolicName="q17:AnalyserChannelType">
+    <Children>
+      <Object xmlns:q18="http://opcfoundation.org/UA/DI/" SymbolicName="q18:ParameterSet" ModellingRule="Optional">
+        <Description>Flat list of Parameters</Description>
+        <Children>
+          <Variable SymbolicName="q17:ChannelId" xmlns:q19="http://opcfoundation.org/UA/" TypeDefinition="q19:DataItemType" ModellingRule="Optional" DataType="q19:String">
+            <Description>Channel Id defined by user</Description>
+          </Variable>
+          <Variable SymbolicName="q17:IsEnabled" xmlns:q20="http://opcfoundation.org/UA/" TypeDefinition="q20:DataItemType" ModellingRule="Mandatory" DataType="q20:Boolean">
+            <Description>True if the channel is enabled and accepting commands</Description>
+          </Variable>
+          <Variable SymbolicName="q17:DiagnosticStatus" xmlns:q21="http://opcfoundation.org/UA/" TypeDefinition="q21:DataItemType" ModellingRule="Mandatory">
+            <Description>AnalyserChannel health status</Description>
+          </Variable>
+          <Variable SymbolicName="q17:ActiveStream" xmlns:q22="http://opcfoundation.org/UA/" TypeDefinition="q22:DataItemType" ModellingRule="Mandatory" DataType="q22:String">
+            <Description>Active stream for this AnalyserChannel</Description>
+          </Variable>
+        </Children>
+      </Object>
+      <Object xmlns:q23="http://opcfoundation.org/UA/DI/" SymbolicName="q23:MethodSet" ModellingRule="Mandatory">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="q17:GotoOperating" ModellingRule="Mandatory">
+            <Description>Transitions the AnalyserChannel to Operating mode.</Description>
+          </Method>
+          <Method SymbolicName="q17:GotoMaintenance" ModellingRule="Mandatory">
+            <Description>Transitions the AnalyserChannel to Maintenance mode.</Description>
+          </Method>
+          <Method SymbolicName="q17:StartSingleAcquisition" ModellingRule="Mandatory">
+            <InputArguments>
+              <Argument Name="ExecutionCycle" DataType="q17:ExecutionCycleEnumeration" />
+              <Argument Name="ExecutionCycleSubcode" xmlns:q24="http://opcfoundation.org/UA/" DataType="q24:UInt32" />
+              <Argument Name="SelectedStream" xmlns:q25="http://opcfoundation.org/UA/" DataType="q25:String" />
+            </InputArguments>
+          </Method>
+          <Method SymbolicName="q17:Reset" ModellingRule="Mandatory">
+            <Description>Causes transition to the Resetting state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Start" ModellingRule="Mandatory">
+            <Description>Causes transition to the Starting state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Stop" ModellingRule="Mandatory">
+            <Description>Causes transition to the Stopping state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Hold" ModellingRule="Mandatory">
+            <Description>Causes transition to the Holding state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Unhold" ModellingRule="Mandatory">
+            <Description>Causes transition to the Unholding state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Suspend" ModellingRule="Mandatory">
+            <Description>Causes transition to the Suspending state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Unsuspend" ModellingRule="Mandatory">
+            <Description>Causes transition to the Unsuspending state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Abort" ModellingRule="Mandatory">
+            <Description>Causes transition to the Aborting state.</Description>
+          </Method>
+          <Method SymbolicName="q17:Clear" ModellingRule="Mandatory">
+            <Description>Causes transition to the Clearing state.</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="q17:GroupIdentifier" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
+        <Description>Group definition</Description>
+      </Object>
+      <Object SymbolicName="q17:Configuration" ModellingRule="Mandatory" />
+      <Object SymbolicName="q17:Status" ModellingRule="Mandatory" />
+      <Object SymbolicName="q17:ChannelStateMachine" TypeDefinition="q17:AnalyserChannelStateMachineType" ModellingRule="Mandatory" SupportsEvents="true" />
+      <Object SymbolicName="q17:StreamIdentifier" TypeDefinition="q17:StreamType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;StreamIdentifier&gt;</BrowseName>
+        <Description>Stream definition</Description>
+      </Object>
+      <Object SymbolicName="q17:AccessorySlotIdentifier" TypeDefinition="q17:AccessorySlotType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;AccessorySlotIdentifier&gt;</BrowseName>
+        <Description>AccessorySlot definition</Description>
+        <Children>
+          <Object xmlns:q26="http://opcfoundation.org/UA/DI/" SymbolicName="q26:SupportedTypes" xmlns:q27="http://opcfoundation.org/UA/" TypeDefinition="q27:FolderType" ModellingRule="Mandatory">
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q28="http://opcfoundation.org/UA/ADI/" SymbolicName="q28:AnalyserChannelStateMachineType" xmlns:q29="http://opcfoundation.org/UA/" BaseType="q29:FiniteStateMachineType">
+    <Description>Contains a nested state model that defines the top level states Operating, Local and Maintenance</Description>
+    <Children>
+      <Object SymbolicName="q28:OperatingSubStateMachine" TypeDefinition="q28:AnalyserChannel_OperatingModeSubStateMachineType" ModellingRule="Mandatory" />
+      <Object SymbolicName="q28:LocalSubStateMachine" TypeDefinition="q29:FiniteStateMachineType" ModellingRule="Optional" />
+      <Object SymbolicName="q28:MaintenanceSubStateMachine" TypeDefinition="q29:FiniteStateMachineType" ModellingRule="Optional" />
+      <Object SymbolicName="q28:SlaveMode" TypeDefinition="q29:InitialStateType">
+        <Description>The AnalyserDevice is in Local or Maintenance mode and all AnalyserChannels are in SlaveMode</Description>
+      </Object>
+      <Object SymbolicName="q28:Operating" TypeDefinition="q28:AnalyserChannelOperatingStateType" SupportsEvents="true">
+        <Description>The AnalyserChannel is in the Operating mode.</Description>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:HasSubStateMachine</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_Operating</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:Local" TypeDefinition="q28:AnalyserChannelLocalStateType">
+        <Description>The AnalyserChannel is in the Local mode. This mode is normally used to perform local physical maintenance on the analyser.</Description>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:HasSubStateMachine</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_Local</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:Maintenance" TypeDefinition="q28:AnalyserChannelMaintenanceStateType">
+        <Description>The AnalyserChannel is in the Maintenance mode. This mode is used to perform remote maintenance on the analyser like firmware upgrade.</Description>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:HasSubStateMachine</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_Maintenance</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:SlaveModeToOperatingTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_SlaveModeToOperatingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_SlaveModeToOperatingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:OperatingToLocalTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_OperatingToLocalTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_OperatingToLocalTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:OperatingToMaintenanceTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_OperatingToMaintenanceTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_OperatingToMaintenanceTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q29:HasCause</ReferenceType>
+            <TargetId>q28:AnalyserChannelType_MethodSet_GotoMaintenance</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:LocalToOperatingTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_LocalToOperatingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_LocalToOperatingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:LocalToMaintenanceTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_LocalToMaintenanceTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_LocalToMaintenanceTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:MaintenanceToOperatingTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_MaintenanceToOperatingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_MaintenanceToOperatingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q29:HasCause</ReferenceType>
+            <TargetId>q28:AnalyserChannelType_MethodSet_GotoOperating</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:MaintenanceToLocalTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_MaintenanceToLocalTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_MaintenanceToLocalTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:OperatingToSlaveModeTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_OperatingToSlaveModeTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_OperatingToSlaveModeTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:LocalToSlaveModeTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_LocalToSlaveModeTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_LocalToSlaveModeTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q28:MaintenanceToSlaveModeTransition" TypeDefinition="q29:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:ToState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_MaintenanceToSlaveModeTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q29:FromState</ReferenceType>
+            <TargetId>q28:AnalyserChannelStateMachineType_MaintenanceToSlaveModeTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q30="http://opcfoundation.org/UA/ADI/" SymbolicName="q30:AnalyserChannel_OperatingModeSubStateMachineType" xmlns:q31="http://opcfoundation.org/UA/" BaseType="q31:FiniteStateMachineType">
+    <Description>AnalyserChannel OperatingMode SubStateMachine</Description>
+    <Children>
+      <Object SymbolicName="q30:OperatingExecuteSubStateMachine" TypeDefinition="q30:AnalyserChannel_OperatingModeExecuteSubStateMachineType" ModellingRule="Mandatory" />
+      <Object SymbolicName="q30:Stopped" TypeDefinition="q31:InitialStateType">
+        <Description>This is the initial state after AnalyserDeviceStateMachine state Powerup</Description>
+      </Object>
+      <Object SymbolicName="q30:Resetting" TypeDefinition="q31:StateType">
+        <Description>This state is the result of a Reset or SetConfiguration Method call from the Stopped state.</Description>
+      </Object>
+      <Object SymbolicName="q30:Idle" TypeDefinition="q31:StateType">
+        <Description>The Resetting state is completed, all parameters have been committed and ready to start acquisition</Description>
+      </Object>
+      <Object SymbolicName="q30:Starting" TypeDefinition="q31:StateType">
+        <Description>The analyser has received the Start or SingleAcquisitionStart Method call and it is preparing to enter in Execute state.</Description>
+      </Object>
+      <Object SymbolicName="q30:Execute" TypeDefinition="q30:AnalyserChannelOperatingExecuteStateType">
+        <Description>All repetitive acquisition cycles are done in this state:</Description>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:HasSubStateMachine</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_Execute</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:Completing" TypeDefinition="q31:StateType">
+        <Description>This state is an automatic or commanded exit from the Execute state.</Description>
+      </Object>
+      <Object SymbolicName="q30:Complete" TypeDefinition="q31:StateType">
+        <Description>At this point, the Completing state is done and it transitions automatically to Stopped state to wait.</Description>
+      </Object>
+      <Object SymbolicName="q30:Suspending" TypeDefinition="q31:StateType">
+        <Description>This state is a result of a change in monitored conditions due to process conditions or factors.</Description>
+      </Object>
+      <Object SymbolicName="q30:Suspended" TypeDefinition="q31:StateType">
+        <Description>The analyser or channel may be running but no results are being generated while the analyser or channel is waiting for external process conditions to return to normal.</Description>
+      </Object>
+      <Object SymbolicName="q30:Unsuspending" TypeDefinition="q31:StateType">
+        <Description>This state is a result of a device request from Suspended state to transition back to the Execute state by calling the Unsuspend Method.</Description>
+      </Object>
+      <Object SymbolicName="q30:Holding" TypeDefinition="q31:StateType">
+        <Description>Brings the analyser or channel to a controlled stop or to a state which represents Held for the particular unit control mode</Description>
+      </Object>
+      <Object SymbolicName="q30:Held" TypeDefinition="q31:StateType">
+        <Description>The Held state holds the analyser or channel's operation. At this state, no acquisition cycle is performed.</Description>
+      </Object>
+      <Object SymbolicName="q30:Unholding" TypeDefinition="q31:StateType">
+        <Description>The Unholding state is a response to an operator command to resume the Execute state.</Description>
+      </Object>
+      <Object SymbolicName="q30:Stopping" TypeDefinition="q31:StateType">
+        <Description>Initiated by a Stop Method call, this state:</Description>
+      </Object>
+      <Object SymbolicName="q30:Aborting" TypeDefinition="q31:StateType">
+        <Description>The Aborting state can be entered at any time in response to the Abort command or on the occurrence of a machine fault.</Description>
+      </Object>
+      <Object SymbolicName="q30:Aborted" TypeDefinition="q31:StateType">
+        <Description>This state maintains machine status information relevant to the Abort condition.</Description>
+      </Object>
+      <Object SymbolicName="q30:Clearing" TypeDefinition="q31:StateType">
+        <Description>Clears faults that may have occurred when Aborting and are present in the Aborted state before proceeding to a Stopped state</Description>
+      </Object>
+      <Object SymbolicName="q30:StoppedToResettingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppedToResettingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppedToResettingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Reset</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserDeviceType_MethodSet_SetConfiguration</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ResettingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ResettingToIdleTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">3</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingToIdleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingToIdleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:IdleToStartingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">4</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_IdleToStartingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_IdleToStartingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Start</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_StartSingleAcquisition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StartingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">5</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StartingToExecuteTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">6</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingToExecuteTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingToExecuteTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ExecuteToCompletingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">7</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToCompletingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToCompletingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompletingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">8</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompletingToCompleteTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">9</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingToCompleteTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingToCompleteTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompleteToStoppedTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">10</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompleteToStoppedTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompleteToStoppedTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ExecuteToHoldingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">11</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToHoldingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToHoldingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HoldingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">12</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HoldingToHeldTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">13</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingToHeldTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingToHeldTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HeldToUnholdingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">14</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HeldToUnholdingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HeldToUnholdingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Unhold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnholdingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">15</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnholdingToHoldingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">16</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToHoldingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToHoldingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnholdingToExecuteTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">17</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToExecuteTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToExecuteTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ExecuteToSuspendingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">18</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToSuspendingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToSuspendingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Suspend</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">19</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendingToSuspendedTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">20</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingToSuspendedTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingToSuspendedTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendedToUnsuspendingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">21</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendedToUnsuspendingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendedToUnsuspendingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Unsuspend</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnsuspendingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">22</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnsuspendingToSuspendingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">23</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToSuspendingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToSuspendingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Suspend</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnsuspendingToExecuteTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">24</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToExecuteTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToExecuteTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StoppingToStoppedTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">25</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppingToStoppedTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppingToStoppedTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:AbortingToAbortedTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">26</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_AbortingToAbortedTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_AbortingToAbortedTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:AbortedToClearingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">27</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_AbortedToClearingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_AbortedToClearingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Clear</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ClearingToStoppedTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">28</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ClearingToStoppedTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ClearingToStoppedTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ResettingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">29</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:IdleToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">30</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_IdleToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_IdleToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StartingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">31</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ExecuteToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">32</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompletingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">33</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompleteToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">34</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompleteToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompleteToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">35</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendedToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">36</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendedToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendedToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnsuspendingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">37</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HoldingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">38</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HeldToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">39</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HeldToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HeldToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnholdingToStoppingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">40</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToStoppingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StoppedToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">41</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppedToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppedToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ResettingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">42</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ResettingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:IdleToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">43</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_IdleToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_IdleToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StartingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">44</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StartingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:ExecuteToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">45</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_ExecuteToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompletingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">46</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompletingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:CompleteToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">47</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompleteToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_CompleteToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">48</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:SuspendedToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">49</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendedToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_SuspendedToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnsuspendingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">50</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnsuspendingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HoldingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">51</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HoldingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:HeldToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">52</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HeldToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_HeldToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:UnholdingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">53</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_UnholdingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:StoppingToAbortingTransition" TypeDefinition="q31:TransitionType">
+        <Children>
+          <Property SymbolicName="q30:TransitionNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">54</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:FromState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q31:ToState</ReferenceType>
+            <TargetId>q30:AnalyserChannel_OperatingModeSubStateMachineType_StoppingToAbortingTransition</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>q31:HasCause</ReferenceType>
+            <TargetId>q30:AnalyserChannelType_MethodSet_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q32="http://opcfoundation.org/UA/ADI/" SymbolicName="q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType" xmlns:q33="http://opcfoundation.org/UA/" BaseType="q33:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="q32:SelectExecutionCycle" TypeDefinition="q33:InitialStateType">
+        <Description>This pseudo-state is used to decide which execution path shall be taken.</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">100</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:WaitForCalibrationTrigger" TypeDefinition="q33:StateType">
+        <Description>Wait until the analyser channel is ready to perform the Calibration acquisition cycle</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">200</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:ExtractCalibrationSample" TypeDefinition="q33:StateType">
+        <Description>Collect / setup the sampling system to perform the acquisition cycle of a Calibration cycle</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">300</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:PrepareCalibrationSample" TypeDefinition="q33:StateType">
+        <Description>Prepare the Calibration sample for the AnalyseCalibrationSample state</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">400</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:AnalyseCalibrationSample" TypeDefinition="q33:StateType">
+        <Description>Perform the analysis of the Calibration Sample</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">500</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:WaitForValidationTrigger" TypeDefinition="q33:StateType">
+        <Description>Wait until the analyser channel is ready to perform the Validation acquisition cycle</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">600</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:ExtractValidationSample" TypeDefinition="q33:StateType">
+        <Description>Collect / setup the sampling system to perform the acquisition cycle of a Validation cycle</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">700</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:PrepareValidationSample" TypeDefinition="q33:StateType">
+        <Description>Prepare the Validation sample for the AnalyseValidationSample state</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">800</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:AnalyseValidationSample" TypeDefinition="q33:StateType">
+        <Description>Perform the analysis of the Validation Sample</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">900</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:WaitForSampleTrigger" TypeDefinition="q33:StateType">
+        <Description>Wait until the analyser channel is ready to perform the Sample acquisition cycle</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1000</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:ExtractSample" TypeDefinition="q33:StateType">
+        <Description>Collect the Sample from the process</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1100</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:PrepareSample" TypeDefinition="q33:StateType">
+        <Description>Prepare the Sample for the AnalyseSample state</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1200</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:AnalyseSample" TypeDefinition="q33:StateType">
+        <Description>Perform the analysis of the Sample</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1300</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:WaitForDiagnosticTrigger" TypeDefinition="q33:StateType">
+        <Description>Wait until the analyser channel is ready to perform the diagnostic cycle,</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1400</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:Diagnostic" TypeDefinition="q33:StateType">
+        <Description>Perform the diagnostic cycle.</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1500</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:WaitForCleaningTrigger" TypeDefinition="q33:StateType">
+        <Description>Wait until the analyser channel is ready to perform the cleaning cycle,</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1600</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:Cleaning" TypeDefinition="q33:StateType">
+        <Description>Perform the cleaning cycle.</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1700</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:PublishResults" TypeDefinition="q33:StateType">
+        <Description>Publish the results of the previous acquisition cycle</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1800</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:EjectGrabSample" TypeDefinition="q33:StateType">
+        <Description>The Sample that was just analysed is ejected from the system to allow the operator or another system to grab it</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1900</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:CleanupSamplingSystem" TypeDefinition="q33:StateType">
+        <Description>Cleanup the sampling sub-system to be ready for the next acquisition</Description>
+        <Children>
+          <Property SymbolicName="q32:StateNumber">
+            <DefaultValue>
+              <UInt32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2000</UInt32>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q32:SelectExecutionCycleToWaitForCalibrationTriggerTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForCalibrationTriggerTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForCalibrationTriggerTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:WaitForCalibrationTriggerToExtractCalibrationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForCalibrationTriggerToExtractCalibrationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForCalibrationTriggerToExtractCalibrationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:ExtractCalibrationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractCalibrationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractCalibrationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:ExtractCalibrationSampleToPrepareCalibrationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractCalibrationSampleToPrepareCalibrationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractCalibrationSampleToPrepareCalibrationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PrepareCalibrationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareCalibrationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareCalibrationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PrepareCalibrationSampleToAnalyseCalibrationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareCalibrationSampleToAnalyseCalibrationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareCalibrationSampleToAnalyseCalibrationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:AnalyseCalibrationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseCalibrationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseCalibrationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:AnalyseCalibrationSampleToPublishResultsTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseCalibrationSampleToPublishResultsTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseCalibrationSampleToPublishResultsTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:SelectExecutionCycleToWaitForValidationTriggerTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForValidationTriggerTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForValidationTriggerTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:WaitForValidationTriggerToExtractValidationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForValidationTriggerToExtractValidationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForValidationTriggerToExtractValidationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:ExtractValidationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractValidationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractValidationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:ExtractValidationSampleToPrepareValidationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractValidationSampleToPrepareValidationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractValidationSampleToPrepareValidationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PrepareValidationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareValidationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareValidationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PrepareValidationSampleToAnalyseValidationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareValidationSampleToAnalyseValidationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareValidationSampleToAnalyseValidationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:AnalyseValidationSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseValidationSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseValidationSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:AnalyseValidationSampleToPublishResultsTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseValidationSampleToPublishResultsTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseValidationSampleToPublishResultsTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:SelectExecutionCycleToWaitForSampleTriggerTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForSampleTriggerTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForSampleTriggerTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:WaitForSampleTriggerToExtractSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForSampleTriggerToExtractSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForSampleTriggerToExtractSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:ExtractSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:ExtractSampleToPrepareSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractSampleToPrepareSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_ExtractSampleToPrepareSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PrepareSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PrepareSampleToAnalyseSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareSampleToAnalyseSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PrepareSampleToAnalyseSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:AnalyseSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:AnalyseSampleToPublishResultsTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseSampleToPublishResultsTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_AnalyseSampleToPublishResultsTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:SelectExecutionCycleToWaitForDiagnosticTriggerTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForDiagnosticTriggerTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForDiagnosticTriggerTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:WaitForDiagnosticTriggerToDiagnosticTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForDiagnosticTriggerToDiagnosticTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForDiagnosticTriggerToDiagnosticTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:DiagnosticTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_DiagnosticTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_DiagnosticTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:DiagnosticToPublishResultsTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_DiagnosticToPublishResultsTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_DiagnosticToPublishResultsTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:SelectExecutionCycleToWaitForCleaningTriggerTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForCleaningTriggerTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_SelectExecutionCycleToWaitForCleaningTriggerTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:WaitForCleaningTriggerToCleaningTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForCleaningTriggerToCleaningTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_WaitForCleaningTriggerToCleaningTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:CleaningTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleaningTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleaningTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:CleaningToPublishResultsTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleaningToPublishResultsTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleaningToPublishResultsTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PublishResultsToCleanupSamplingSystemTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PublishResultsToCleanupSamplingSystemTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PublishResultsToCleanupSamplingSystemTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:PublishResultsToEjectGrabSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PublishResultsToEjectGrabSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_PublishResultsToEjectGrabSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:EjectGrabSampleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_EjectGrabSampleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_EjectGrabSampleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:EjectGrabSampleToCleanupSamplingSystemTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_EjectGrabSampleToCleanupSamplingSystemTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_EjectGrabSampleToCleanupSamplingSystemTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:CleanupSamplingSystemTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q32:CleanupSamplingSystemToSelectExecutionCycleTransition" TypeDefinition="q33:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:ToState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemToSelectExecutionCycleTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q33:FromState</ReferenceType>
+            <TargetId>q32:AnalyserChannel_OperatingModeExecuteSubStateMachineType_CleanupSamplingSystemToSelectExecutionCycleTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q34="http://opcfoundation.org/UA/ADI/" SymbolicName="q34:AccessorySlotType">
+    <Description>Organizes zero or more Accessory objects identified by "AccessoryIdentifier" which represent Accessories currently being used on that AccessorySlot.</Description>
+    <Children>
+      <Property SymbolicName="q34:IsHotSwappable" ModellingRule="Mandatory" xmlns:q35="http://opcfoundation.org/UA/" DataType="q35:Boolean">
+        <Description>True if an accessory can be inserted in the accessory slot while it is powered</Description>
+      </Property>
+      <Property SymbolicName="q34:IsEnabled" ModellingRule="Mandatory" xmlns:q36="http://opcfoundation.org/UA/" DataType="q36:Boolean">
+        <Description>True if this accessory slot is capable of accepting an accessory in it</Description>
+      </Property>
+      <Object SymbolicName="q34:AccessorySlotStateMachine" TypeDefinition="q34:AccessorySlotStateMachineType" ModellingRule="Mandatory" />
+      <Object SymbolicName="q34:AccessoryIdentifier" TypeDefinition="q34:AccessoryType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;AccessoryIdentifier&gt;</BrowseName>
+        <Description>Accessory definition</Description>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q37="http://opcfoundation.org/UA/ADI/" SymbolicName="q37:AccessorySlotStateMachineType" xmlns:q38="http://opcfoundation.org/UA/" BaseType="q38:FiniteStateMachineType">
+    <Description>Describes the behaviour of an AccessorySlot when a physical accessory is inserted or removed.</Description>
+    <Children>
+      <Object SymbolicName="q37:Powerup" TypeDefinition="q38:InitialStateType">
+        <Description>The AccessorySlot is in its power-up sequence and cannot perform any other task.</Description>
+      </Object>
+      <Object SymbolicName="q37:Empty" TypeDefinition="q38:StateType">
+        <Description>This represents an AccessorySlot where no Accessory is installed.</Description>
+      </Object>
+      <Object SymbolicName="q37:Inserting" TypeDefinition="q38:StateType">
+        <Description>This represents an AccessorySlot when an Accessory is being inserted and initializing.</Description>
+      </Object>
+      <Object SymbolicName="q37:Installed" TypeDefinition="q38:StateType">
+        <Description>This represents an AccessorySlot where an Accessory is installed and ready to use.</Description>
+      </Object>
+      <Object SymbolicName="q37:Removing" TypeDefinition="q38:StateType">
+        <Description>This represents an AccessorySlot where no Accessory is installed.</Description>
+      </Object>
+      <Object SymbolicName="q37:Shutdown" TypeDefinition="q38:StateType">
+        <Description>The AccessorySlot is in its power-down sequence and cannot perform any other task.</Description>
+      </Object>
+      <Object SymbolicName="q37:PowerupToEmptyTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_PowerupToEmptyTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_PowerupToEmptyTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:EmptyToInsertingTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_EmptyToInsertingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_EmptyToInsertingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:InsertingTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:InsertingToRemovingTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingToRemovingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingToRemovingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:InsertingToInstalledTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingToInstalledTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingToInstalledTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:InstalledToRemovingTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InstalledToRemovingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InstalledToRemovingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:RemovingTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_RemovingTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_RemovingTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:RemovingToEmptyTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_RemovingToEmptyTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_RemovingToEmptyTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:EmptyToShutdownTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_EmptyToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_EmptyToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:InsertingToShutdownTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InsertingToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:InstalledToShutdownTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InstalledToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_InstalledToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q37:RemovingToShutdownTransition" TypeDefinition="q38:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:FromState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_RemovingToShutdownTransition</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>q38:ToState</ReferenceType>
+            <TargetId>q37:AccessorySlotStateMachineType_RemovingToShutdownTransition</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q39="http://opcfoundation.org/UA/ADI/" SymbolicName="q39:StreamType">
+    <Children>
+      <Object xmlns:q40="http://opcfoundation.org/UA/DI/" SymbolicName="q40:ParameterSet" ModellingRule="Optional">
+        <Description>Flat list of Parameters</Description>
+        <Children>
+          <Variable SymbolicName="q39:IsEnabled" xmlns:q41="http://opcfoundation.org/UA/" TypeDefinition="q41:DataItemType" ModellingRule="Mandatory" DataType="q41:Boolean">
+            <Description>True if this stream maybe used to perform acquisition</Description>
+          </Variable>
+          <Variable SymbolicName="q39:IsForced" xmlns:q42="http://opcfoundation.org/UA/" TypeDefinition="q42:DataItemType" ModellingRule="Optional" DataType="q42:Boolean">
+            <Description>True if this stream is forced, which means that is the only Stream on this AnalyserChannel that can be used to perform acquisition</Description>
+          </Variable>
+          <Variable SymbolicName="q39:DiagnosticStatus" xmlns:q43="http://opcfoundation.org/UA/" TypeDefinition="q43:DataItemType" ModellingRule="Mandatory">
+            <Description>Stream health status</Description>
+          </Variable>
+          <Variable SymbolicName="q39:LastCalibrationTime" xmlns:q44="http://opcfoundation.org/UA/" TypeDefinition="q44:DataItemType" ModellingRule="Optional" DataType="q44:DateTime">
+            <Description>Time at which the last calibration was run</Description>
+          </Variable>
+          <Variable SymbolicName="q39:LastValidationTime" xmlns:q45="http://opcfoundation.org/UA/" TypeDefinition="q45:DataItemType" ModellingRule="Optional" DataType="q45:DateTime">
+            <Description>Time at which the last validation was run</Description>
+          </Variable>
+          <Variable SymbolicName="q39:LastSampleTime" xmlns:q46="http://opcfoundation.org/UA/" TypeDefinition="q46:DataItemType" ModellingRule="Mandatory" DataType="q46:DateTime">
+            <Description>Time at which the last sample was acquired</Description>
+          </Variable>
+          <Variable SymbolicName="q39:TimeBetweenSamples" xmlns:q47="http://opcfoundation.org/UA/" TypeDefinition="q47:AnalogItemType" ModellingRule="Optional" DataType="q47:Duration">
+            <Description>Number of milliseconds between two consecutive starts of acquisition</Description>
+          </Variable>
+          <Variable SymbolicName="q39:IsActive" xmlns:q48="http://opcfoundation.org/UA/" TypeDefinition="q48:DataItemType" ModellingRule="Mandatory" DataType="q48:Boolean">
+            <Description>True if this stream is actually running, acquiring data</Description>
+          </Variable>
+          <Variable SymbolicName="q39:ExecutionCycle" xmlns:q49="http://opcfoundation.org/UA/" TypeDefinition="q49:DataItemType" ModellingRule="Mandatory" DataType="q39:ExecutionCycleEnumeration">
+            <Description>Indicates which Execution cycle is in progress</Description>
+          </Variable>
+          <Variable SymbolicName="q39:ExecutionCycleSubcode" xmlns:q50="http://opcfoundation.org/UA/" TypeDefinition="q50:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="q50:UInteger">
+            <Description>Indicates which Execution cycle subcode is in progress</Description>
+          </Variable>
+          <Variable SymbolicName="q39:Progress" xmlns:q51="http://opcfoundation.org/UA/" TypeDefinition="q51:DataItemType" ModellingRule="Mandatory" DataType="q51:Float">
+            <Description>Indicates the progress of an acquisition in terms of percentage of completion. Its value shall be between 0 and 100.</Description>
+          </Variable>
+          <Variable SymbolicName="q39:AcquisitionCounter" xmlns:q52="http://opcfoundation.org/UA/" TypeDefinition="q52:AnalogItemType" ModellingRule="Mandatory" DataType="q52:Counter">
+            <Description>Simple counter incremented after each Sampling acquisition performed on this Stream</Description>
+          </Variable>
+          <Variable SymbolicName="q39:AcquisitionResultStatus" xmlns:q53="http://opcfoundation.org/UA/" TypeDefinition="q53:DataItemType" ModellingRule="Mandatory" DataType="q39:AcquisitionResultStatusEnumeration">
+            <Description>Quality of the acquisition</Description>
+          </Variable>
+          <Variable SymbolicName="q39:RawData" xmlns:q54="http://opcfoundation.org/UA/" TypeDefinition="q54:DataItemType" ModellingRule="Optional" DataType="q54:BaseDataType">
+            <Description>Raw data produced as a result of data acquisition on the Stream</Description>
+          </Variable>
+          <Variable SymbolicName="q39:ScaledData" xmlns:q55="http://opcfoundation.org/UA/" TypeDefinition="q55:DataItemType" ModellingRule="Mandatory" DataType="q55:BaseDataType">
+            <Description>Scaled data produced as a result of data acquisition on the Stream and application of the analyser model</Description>
+          </Variable>
+          <Variable SymbolicName="q39:Offset" xmlns:q56="http://opcfoundation.org/UA/" TypeDefinition="q56:DataItemType" ModellingRule="Optional" DataType="q56:Duration">
+            <Description>Difference in milliseconds between the start of sample extraction and the start of the analysis.</Description>
+          </Variable>
+          <Variable SymbolicName="q39:AcquisitionEndTime" xmlns:q57="http://opcfoundation.org/UA/" TypeDefinition="q57:DataItemType" ModellingRule="Mandatory" DataType="q57:DateTime">
+            <Description>The end time of the AnalyseSample or AnalyseCalibrationSample or AnalyseValidationSample state of the AnalyserChannel_OperatingModeExecuteSubStateMachine state machine</Description>
+          </Variable>
+          <Variable SymbolicName="q39:CampaignId" xmlns:q58="http://opcfoundation.org/UA/" TypeDefinition="q58:DataItemType" ModellingRule="Optional" DataType="q58:String" AccessLevel="ReadWrite">
+            <Description>Defines the current campaign</Description>
+          </Variable>
+          <Variable SymbolicName="q39:BatchId" xmlns:q59="http://opcfoundation.org/UA/" TypeDefinition="q59:DataItemType" ModellingRule="Optional" DataType="q59:String" AccessLevel="ReadWrite">
+            <Description>Defines the current batch</Description>
+          </Variable>
+          <Variable SymbolicName="q39:SubBatchId" xmlns:q60="http://opcfoundation.org/UA/" TypeDefinition="q60:DataItemType" ModellingRule="Optional" DataType="q60:String" AccessLevel="ReadWrite">
+            <Description>Defines the current sub-batch</Description>
+          </Variable>
+          <Variable SymbolicName="q39:LotId" xmlns:q61="http://opcfoundation.org/UA/" TypeDefinition="q61:DataItemType" ModellingRule="Optional" DataType="q61:String" AccessLevel="ReadWrite">
+            <Description>Defines the current lot</Description>
+          </Variable>
+          <Variable SymbolicName="q39:MaterialId" xmlns:q62="http://opcfoundation.org/UA/" TypeDefinition="q62:DataItemType" ModellingRule="Optional" DataType="q62:String" AccessLevel="ReadWrite">
+            <Description>Defines the current material</Description>
+          </Variable>
+          <Variable SymbolicName="q39:Process" xmlns:q63="http://opcfoundation.org/UA/" TypeDefinition="q63:DataItemType" ModellingRule="Optional" DataType="q63:String" AccessLevel="ReadWrite">
+            <Description>Current Process name</Description>
+          </Variable>
+          <Variable SymbolicName="q39:Unit" xmlns:q64="http://opcfoundation.org/UA/" TypeDefinition="q64:DataItemType" ModellingRule="Optional" DataType="q64:String" AccessLevel="ReadWrite">
+            <Description>Current Unit name</Description>
+          </Variable>
+          <Variable SymbolicName="q39:Operation" xmlns:q65="http://opcfoundation.org/UA/" TypeDefinition="q65:DataItemType" ModellingRule="Optional" DataType="q65:String" AccessLevel="ReadWrite">
+            <Description>Current Operation name</Description>
+          </Variable>
+          <Variable SymbolicName="q39:Phase" xmlns:q66="http://opcfoundation.org/UA/" TypeDefinition="q66:DataItemType" ModellingRule="Optional" DataType="q66:String" AccessLevel="ReadWrite">
+            <Description>Current Phase name</Description>
+          </Variable>
+          <Variable SymbolicName="q39:UserId" xmlns:q67="http://opcfoundation.org/UA/" TypeDefinition="q67:DataItemType" ModellingRule="Optional" DataType="q67:String" AccessLevel="ReadWrite">
+            <Description>Login name of the user who is logged on at the device console</Description>
+          </Variable>
+          <Variable SymbolicName="q39:SampleId" xmlns:q68="http://opcfoundation.org/UA/" TypeDefinition="q68:DataItemType" ModellingRule="Optional" DataType="q68:String" AccessLevel="ReadWrite">
+            <Description>Identifier for the sample</Description>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="q39:GroupIdentifier" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
+        <Description>Group definition</Description>
+      </Object>
+      <Object SymbolicName="q39:Configuration" ModellingRule="Mandatory" />
+      <Object SymbolicName="q39:Status" ModellingRule="Mandatory" />
+      <Object SymbolicName="q39:AcquisitionSettings" ModellingRule="Mandatory" />
+      <Object SymbolicName="q39:AcquisitionStatus" ModellingRule="Mandatory" />
+      <Object SymbolicName="q39:AcquisitionData" ModellingRule="Mandatory" />
+      <Object SymbolicName="q39:ChemometricModelSettings" ModellingRule="Mandatory" />
+      <Object SymbolicName="q39:Context" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q69="http://opcfoundation.org/UA/ADI/" SymbolicName="q69:AnalyserChannelOperatingStateType" xmlns:q70="http://opcfoundation.org/UA/" BaseType="q70:StateType">
+    <References>
+      <Reference>
+        <ReferenceType>q70:HasSubStateMachine</ReferenceType>
+        <TargetId>q69:AnalyserChannelStateMachineType_OperatingSubStateMachine</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q71="http://opcfoundation.org/UA/ADI/" SymbolicName="q71:AnalyserChannelLocalStateType" xmlns:q72="http://opcfoundation.org/UA/" BaseType="q72:StateType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q73="http://opcfoundation.org/UA/ADI/" SymbolicName="q73:AnalyserChannelMaintenanceStateType" xmlns:q74="http://opcfoundation.org/UA/" BaseType="q74:StateType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q75="http://opcfoundation.org/UA/ADI/" SymbolicName="q75:AnalyserChannelOperatingExecuteStateType" xmlns:q76="http://opcfoundation.org/UA/" BaseType="q76:StateType">
+    <References>
+      <Reference>
+        <ReferenceType>q76:HasSubStateMachine</ReferenceType>
+        <TargetId>q75:AnalyserChannel_OperatingModeSubStateMachineType_OperatingExecuteSubStateMachine</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q77="http://opcfoundation.org/UA/ADI/" SymbolicName="q77:SpectrometerDeviceStreamType" BaseType="q77:StreamType">
+    <Children>
+      <Object SymbolicName="q77:FactorySettings" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q78="http://opcfoundation.org/UA/ADI/" SymbolicName="q78:MassSpectrometerDeviceStreamType" BaseType="q78:StreamType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q79="http://opcfoundation.org/UA/ADI/" SymbolicName="q79:ParticleSizeMonitorDeviceStreamType" BaseType="q79:StreamType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q80="http://opcfoundation.org/UA/ADI/" SymbolicName="q80:AcousticSpectrometerDeviceStreamType" BaseType="q80:StreamType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q81="http://opcfoundation.org/UA/ADI/" SymbolicName="q81:ChromatographDeviceStreamType" BaseType="q81:StreamType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q82="http://opcfoundation.org/UA/ADI/" SymbolicName="q82:MNRDeviceStreamType" BaseType="q82:StreamType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q83="http://opcfoundation.org/UA/ADI/" SymbolicName="q83:SpectrometerDeviceType" BaseType="q83:AnalyserDeviceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q84="http://opcfoundation.org/UA/ADI/" SymbolicName="q84:ParticleSizeMonitorDeviceType" BaseType="q84:AnalyserDeviceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q85="http://opcfoundation.org/UA/ADI/" SymbolicName="q85:ChromatographDeviceType" BaseType="q85:AnalyserDeviceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q86="http://opcfoundation.org/UA/ADI/" SymbolicName="q86:MassSpectrometerDeviceType" BaseType="q86:AnalyserDeviceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q87="http://opcfoundation.org/UA/ADI/" SymbolicName="q87:AcousticSpectrometerDeviceType" BaseType="q87:AnalyserDeviceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q88="http://opcfoundation.org/UA/ADI/" SymbolicName="q88:NMRDeviceType" BaseType="q88:AnalyserDeviceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q89="http://opcfoundation.org/UA/ADI/" SymbolicName="q89:AccessoryType">
+    <Children>
+      <Object SymbolicName="q89:Configuration" ModellingRule="Mandatory" />
+      <Object SymbolicName="q89:Status" ModellingRule="Mandatory" />
+      <Object SymbolicName="q89:FactorySettings" ModellingRule="Mandatory" />
+      <Property SymbolicName="q89:IsHotSwappable" ModellingRule="Mandatory" xmlns:q90="http://opcfoundation.org/UA/" DataType="q90:Boolean">
+        <Description>True if this accessory can be inserted in the accessory slot while it is powered</Description>
+      </Property>
+      <Property SymbolicName="q89:IsReady" ModellingRule="Mandatory" xmlns:q91="http://opcfoundation.org/UA/" DataType="q91:Boolean">
+        <Description>True if this accessory is ready for use</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q92="http://opcfoundation.org/UA/ADI/" SymbolicName="q92:DetectorType" BaseType="q92:AccessoryType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q93="http://opcfoundation.org/UA/ADI/" SymbolicName="q93:SmartSamplingSystemType" BaseType="q93:AccessoryType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q94="http://opcfoundation.org/UA/ADI/" SymbolicName="q94:SourceType" BaseType="q94:AccessoryType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q95="http://opcfoundation.org/UA/ADI/" SymbolicName="q95:GcOvenType" BaseType="q95:AccessoryType">
+    <ClassName />
+  </ObjectType>
+  <DataType xmlns:q96="http://opcfoundation.org/UA/ADI/" SymbolicName="q96:ExecutionCycleEnumeration" xmlns:q97="http://opcfoundation.org/UA/" BaseType="q97:Enumeration">
+    <Children>
+      <Property SymbolicName="q97:EnumValues" ModellingRule="Mandatory" DataType="q97:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>0</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>IDLE</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Idle, no cleaning or acquisition cycle in progress</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>1</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>DIAGNOSTIC</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Scquisition cycle collecting data for diagnostic purpose</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>2</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>CLEANING</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Cleaning cycle</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>4</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>CALIBRATION</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Calibration acquisition cycle</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>8</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>VALIDATION</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Validation acquisition cycle</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>16</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>SAMPLING</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Sample acquisition cycle</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>32769</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>DIAGNOSTIC_WITH_GRAB_SAMPLE</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>32770</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>CLEANING_WITH_GRAB_SAMPLE</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>32772</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>CALIBRATION_WITH_GRAB_SAMPLE</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Calibration acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>32776</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>VALIDATION_WITH_GRAB_SAMPLE</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Validation acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>32784</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>SAMPLING_WITH_GRAB_SAMPLE</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Sample acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+          </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="IDLE" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Idle, no cleaning or acquisition cycle in progress</Description>
+      </Field>
+      <Field Name="DIAGNOSTIC" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Scquisition cycle collecting data for diagnostic purpose</Description>
+      </Field>
+      <Field Name="CLEANING" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Cleaning cycle</Description>
+      </Field>
+      <Field Name="CALIBRATION" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>Calibration acquisition cycle</Description>
+      </Field>
+      <Field Name="VALIDATION" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>Validation acquisition cycle</Description>
+      </Field>
+      <Field Name="SAMPLING" Identifier="16" BitMask="" ArrayDimensions="">
+        <Description>Sample acquisition cycle</Description>
+      </Field>
+      <Field Name="DIAGNOSTIC_WITH_GRAB_SAMPLE" Identifier="32769" BitMask="" ArrayDimensions="">
+        <Description>Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab</Description>
+      </Field>
+      <Field Name="CLEANING_WITH_GRAB_SAMPLE" Identifier="32770" BitMask="" ArrayDimensions="">
+        <Description>Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab</Description>
+      </Field>
+      <Field Name="CALIBRATION_WITH_GRAB_SAMPLE" Identifier="32772" BitMask="" ArrayDimensions="">
+        <Description>Calibration acquisition cycle and sample is extracted from the process to be sent in control lab</Description>
+      </Field>
+      <Field Name="VALIDATION_WITH_GRAB_SAMPLE" Identifier="32776" BitMask="" ArrayDimensions="">
+        <Description>Validation acquisition cycle and sample is extracted from the process to be sent in control lab</Description>
+      </Field>
+      <Field Name="SAMPLING_WITH_GRAB_SAMPLE" Identifier="32784" BitMask="" ArrayDimensions="">
+        <Description>Sample acquisition cycle and sample is extracted from the process to be sent in control lab</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType xmlns:q98="http://opcfoundation.org/UA/ADI/" SymbolicName="q98:AcquisitionResultStatusEnumeration" xmlns:q99="http://opcfoundation.org/UA/" BaseType="q99:Enumeration">
+    <Children>
+      <Property SymbolicName="q99:EnumStrings" ModellingRule="Mandatory" DataType="q99:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <LocalizedText>
+              <Locale></Locale>
+              <Text>NOT_USED</Text>
+            </LocalizedText>
+            <LocalizedText>
+              <Locale></Locale>
+              <Text>GOOD</Text>
+            </LocalizedText>
+            <LocalizedText>
+              <Locale></Locale>
+              <Text>BAD</Text>
+            </LocalizedText>
+            <LocalizedText>
+              <Locale></Locale>
+              <Text>UNKNOWN</Text>
+            </LocalizedText>
+            <LocalizedText>
+              <Locale></Locale>
+              <Text>PARTIAL</Text>
+            </LocalizedText>
+          </ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="NOT_USED" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>No longer used.</Description>
+      </Field>
+      <Field Name="GOOD" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>The acquisition has been completed as requested without any error.</Description>
+      </Field>
+      <Field Name="BAD" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>The acquisition has been completed as requested with error.</Description>
+      </Field>
+      <Field Name="UNKNOWN" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>The acquisition has been completed but nothing can be said about the quality of the result.</Description>
+      </Field>
+      <Field Name="PARTIAL" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>The acquisition has been partially completed as requested without any error.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <VariableType xmlns:q100="http://opcfoundation.org/UA/ADI/" SymbolicName="q100:EngineeringValueType" xmlns:q101="http://opcfoundation.org/UA/" BaseType="q101:DataItemType" DataType="q101:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>Expose key results of an analyser and the associated values that qualified it</Description>
+    <Children>
+      <Variable SymbolicName="q100:Identifier" TypeDefinition="q101:DataItemType" ModellingRule="OptionalPlaceholder" DataType="q101:BaseDataType">
+        <BrowseName>&lt;Identifier&gt;</BrowseName>
+        <Description>Point to the data source</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType xmlns:q102="http://opcfoundation.org/UA/ADI/" SymbolicName="q102:ChemometricModelType" xmlns:q103="http://opcfoundation.org/UA/" DataType="q103:ByteString" ValueRank="ScalarOrArray">
+    <Description>Hold the descriptions of a mathematical process and associated information to convert scaled data into one or more process values.</Description>
+    <Children>
+      <Property SymbolicName="q102:Name" ModellingRule="Mandatory" DataType="q103:LocalizedText" />
+      <Property SymbolicName="q102:CreationDate" ModellingRule="Mandatory" DataType="q103:DateTime" />
+      <Property SymbolicName="q102:ModelDescription" ModellingRule="Mandatory" DataType="q103:LocalizedText" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q102:HasInput</ReferenceType>
+        <TargetId>q102:User_defined_Input</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q102:HasOutput</ReferenceType>
+        <TargetId>q102:User_defined_Output</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ReferenceType xmlns:q104="http://opcfoundation.org/UA/ADI/" SymbolicName="q104:HasInput" xmlns:q105="http://opcfoundation.org/UA/" BaseType="q105:HasOrderedComponent">
+    <Description>TargetNode is providing an input value for a ChemometricModel.</Description>
+    <ClassName />
+    <InverseName>InputOf</InverseName>
+  </ReferenceType>
+  <ReferenceType xmlns:q106="http://opcfoundation.org/UA/ADI/" SymbolicName="q106:HasOutput" xmlns:q107="http://opcfoundation.org/UA/" BaseType="q107:HasOrderedComponent">
+    <Description>TargetNode is exposing an output value of a ChemometricModel.</Description>
+    <ClassName />
+    <InverseName>OutputOf</InverseName>
+  </ReferenceType>
+  <VariableType xmlns:q108="http://opcfoundation.org/UA/ADI/" SymbolicName="q108:ProcessVariableType" xmlns:q109="http://opcfoundation.org/UA/" BaseType="q109:DataItemType" DataType="q109:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>Provides a stable address space view from the user point of view even if the ADI server address space changes, after the new configuration is loaded.</Description>
+    <References>
+      <Reference>
+        <ReferenceType>q108:HasDataSource</ReferenceType>
+        <TargetId>q108:SourceName</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ReferenceType xmlns:q110="http://opcfoundation.org/UA/ADI/" SymbolicName="q110:HasDataSource" xmlns:q111="http://opcfoundation.org/UA/" BaseType="q111:HasOrderedComponent">
+    <Description>TargetNode is providing the value for the SourceNode.</Description>
+    <ClassName />
+    <InverseName>DataSourceOf</InverseName>
+  </ReferenceType>
+  <VariableType xmlns:q112="http://opcfoundation.org/UA/ADI/" SymbolicName="q112:MVAModelType" BaseType="q112:ChemometricModelType" xmlns:q113="http://opcfoundation.org/UA/" DataType="q113:ByteString" ValueRank="ScalarOrArray">
+    <Description>Hold the descriptions of a mathematical process and associated information to convert scaled data into one or more process values.</Description>
+    <Children>
+      <Property SymbolicName="q112:MainDataIndex" ModellingRule="Mandatory" DataType="q113:Int32" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q112:HasOutput</ReferenceType>
+        <TargetId>q112:User_defined_Output</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType xmlns:q114="http://opcfoundation.org/UA/ADI/" SymbolicName="q114:MVAOutputParameterType" xmlns:q115="http://opcfoundation.org/UA/" DataType="q115:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>Hold the descriptions of a mathematical process and associated information to convert scaled data into one or more process values.</Description>
+    <Children>
+      <Property SymbolicName="q114:WarningLimits" ModellingRule="Optional" DataType="q115:Range" />
+      <Property SymbolicName="q114:AlarmLimits" ModellingRule="Optional" DataType="q115:Range" />
+      <Property SymbolicName="q114:AlarmState" ModellingRule="Mandatory" DataType="q114:AlarmStateEnumeration" />
+      <Property SymbolicName="q114:VendorSpecificError" ModellingRule="Optional" DataType="q115:String" />
+      <Variable SymbolicName="q114:Statistics" TypeDefinition="q114:MVAOutputParameterType" ModellingRule="OptionalPlaceholder" DataType="q115:BaseDataType" ValueRank="Array" ArrayDimensions="0" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <DataType xmlns:q116="http://opcfoundation.org/UA/ADI/" SymbolicName="q116:AlarmStateEnumeration" xmlns:q117="http://opcfoundation.org/UA/" BaseType="q117:Enumeration">
+    <Children>
+      <Property SymbolicName="q117:EnumValues" ModellingRule="Mandatory" DataType="q117:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>0</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>NORMAL_0</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>Normal</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>1</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>WARNING_LOW_1</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>In low warning range</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>2</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>WARNING_HIGH_2</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>In high warning range</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>4</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>WARNING_4</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>In warning range (low or high) or some other warning cause</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>8</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>ALARM_LOW_8</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>In low alarm range</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>16</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>ALARM_HIGH_16</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>In high alarm range</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+            <ExtensionObject>
+              <TypeId>
+                <Identifier>i=7616</Identifier>
+              </TypeId>
+              <Body>
+                <EnumValueType>
+                  <Value>32</Value>
+                  <DisplayName>
+                    <Locale></Locale>
+                    <Text>ALARM_32</Text>
+                  </DisplayName>
+                  <Description>
+                    <Locale></Locale>
+                    <Text>In alarm range (low or high) or some other alarm cause</Text>
+                  </Description>
+                </EnumValueType>
+              </Body>
+            </ExtensionObject>
+          </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="NORMAL_0" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Normal</Description>
+      </Field>
+      <Field Name="WARNING_LOW_1" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>In low warning range</Description>
+      </Field>
+      <Field Name="WARNING_HIGH_2" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>In high warning range</Description>
+      </Field>
+      <Field Name="WARNING_4" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>In warning range (low or high) or some other warning cause</Description>
+      </Field>
+      <Field Name="ALARM_LOW_8" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>In low alarm range</Description>
+      </Field>
+      <Field Name="ALARM_HIGH_16" Identifier="16" BitMask="" ArrayDimensions="">
+        <Description>In high alarm range</Description>
+      </Field>
+      <Field Name="ALARM_32" Identifier="32" BitMask="" ArrayDimensions="">
+        <Description>In alarm range (low or high) or some other alarm cause</Description>
+      </Field>
+    </Fields>
+  </DataType>
+</ModelDesign>
