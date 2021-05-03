@@ -1,14 +1,14 @@
-Address Space Prototyping (asp.exe) 5.1.0.47
+Address Space Prototyping (asp.exe) 6.3.0.30902
 Copyright(c) 2021 Mariusz Postol
 
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext creator - starting creation the OPC UA Address Space.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - the OPC UA defined has been uploaded.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finishing AddressSpaceContext.ImportNodeSet - imported 3909 nodes.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/; Imported 3909 nodes.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - has bee created successfully.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Starting model import form file Opc.Ua.Di.NodeSet2.xml
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finishing AddressSpaceContext.ImportNodeSet - imported 373 nodes.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/DI/; Imported 373 nodes.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Starting model import form file Opc.Ua.Adi.NodeSet2.xml
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finishing AddressSpaceContext.ImportNodeSet - imported 685 nodes.
+Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/ADI/; Imported 685 nodes.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/ADI/ namespace.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Selected 41 types to be validated.
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Selected 0 instances referenced by the ObjectsFolder to be validated.
