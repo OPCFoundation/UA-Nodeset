@@ -1,4 +1,4 @@
-Address Space Prototyping (asp.exe) 6.3.0.30902
+Address Space Prototyping (asp.exe) 6.3.0.34196
 Copyright(c) 2021 Mariusz Postol
 
 Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext creator - starting creation the OPC UA Address Space.
