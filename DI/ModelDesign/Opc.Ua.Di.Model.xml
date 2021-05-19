@@ -1,69 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-03T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-19T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
   </Namespaces>
-  <ReferenceType xmlns:q1="http://opcfoundation.org/UA/DI/" SymbolicName="q1:ConnectsTo" Category="DI ConnectsTo" xmlns:q2="http://opcfoundation.org/UA/" BaseType="q2:HierarchicalReferences" Symmetric="true">
+  <ReferenceType SymbolicName="Prefix2:ConnectsTo" Category="DI ConnectsTo" BaseType="Prefix0:HierarchicalReferences" Symmetric="true">
     <Description>Used to indicate that source and target Node have a topological connection.</Description>
     <ClassName />
   </ReferenceType>
-  <ReferenceType xmlns:q3="http://opcfoundation.org/UA/DI/" SymbolicName="q3:ConnectsToParent" Category="DI ConnectsTo" BaseType="q3:ConnectsTo" Symmetric="true">
+  <ReferenceType SymbolicName="Prefix2:ConnectsToParent" Category="DI ConnectsTo" BaseType="Prefix2:ConnectsTo" Symmetric="true">
     <Description>Defines the parent (i.e. the communication Device) of a Network.</Description>
     <ClassName />
   </ReferenceType>
-  <ReferenceType xmlns:q4="http://opcfoundation.org/UA/DI/" SymbolicName="q4:IsOnline" Category="DI Offline" xmlns:q5="http://opcfoundation.org/UA/" BaseType="q5:Aggregates">
+  <ReferenceType SymbolicName="Prefix2:IsOnline" Category="DI Offline" BaseType="Prefix0:Aggregates">
     <Description>Used to bind the offline representation of a Device to the online representation.</Description>
     <ClassName />
     <InverseName>OnlineOf</InverseName>
   </ReferenceType>
-  <ObjectType xmlns:q6="http://opcfoundation.org/UA/DI/" SymbolicName="q6:TopologyElementType" Category="DI Information Model" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:TopologyElementType" Category="DI Information Model" IsAbstract="true">
     <Description>Defines the basic information components for all configurable elements in a device topology</Description>
     <Children>
-      <Object SymbolicName="q6:ParameterSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Optional">
         <Description>Flat list of Parameters</Description>
         <Children>
-          <Variable SymbolicName="q6:ParameterIdentifier" ModellingRule="MandatoryPlaceholder" xmlns:q7="http://opcfoundation.org/UA/" DataType="q7:BaseDataType">
+          <Variable SymbolicName="Prefix2:ParameterIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:BaseDataType">
             <BrowseName>&lt;ParameterIdentifier&gt;</BrowseName>
             <Description>A parameter which belongs to the topology element.</Description>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q6:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
       </Object>
-      <Object SymbolicName="q6:GroupIdentifier" TypeDefinition="q6:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix2:GroupIdentifier" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
         <Description>An application specific functional group used to organize parameters and methods.</Description>
       </Object>
-      <Object SymbolicName="q6:Identification" TypeDefinition="q6:FunctionalGroupType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:Identification" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional">
         <Description>Used to organize parameters for identification of this TopologyElement</Description>
       </Object>
-      <Object SymbolicName="q6:Lock" TypeDefinition="q6:LockingServicesType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:Lock" TypeDefinition="Prefix2:LockingServicesType" ModellingRule="Optional">
         <Description>Used to lock the topology element.</Description>
         <Children>
-          <Method SymbolicName="q6:InitLock">
+          <Method SymbolicName="Prefix2:InitLock">
             <InputArguments>
-              <Argument Name="Context" xmlns:q8="http://opcfoundation.org/UA/" DataType="q8:String" />
+              <Argument Name="Context" DataType="Prefix0:String" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="InitLockStatus" xmlns:q9="http://opcfoundation.org/UA/" DataType="q9:Int32" />
+              <Argument Name="InitLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q6:RenewLock">
+          <Method SymbolicName="Prefix2:RenewLock">
             <OutputArguments>
-              <Argument Name="RenewLockStatus" xmlns:q10="http://opcfoundation.org/UA/" DataType="q10:Int32" />
+              <Argument Name="RenewLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q6:ExitLock">
+          <Method SymbolicName="Prefix2:ExitLock">
             <OutputArguments>
-              <Argument Name="ExitLockStatus" xmlns:q11="http://opcfoundation.org/UA/" DataType="q11:Int32" />
+              <Argument Name="ExitLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q6:BreakLock">
+          <Method SymbolicName="Prefix2:BreakLock">
             <OutputArguments>
-              <Argument Name="BreakLockStatus" xmlns:q12="http://opcfoundation.org/UA/" DataType="q12:Int32" />
+              <Argument Name="BreakLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
         </Children>
@@ -71,117 +71,117 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q13="http://opcfoundation.org/UA/DI/" SymbolicName="q13:FunctionalGroupType" Category="DI Information Model" xmlns:q14="http://opcfoundation.org/UA/" BaseType="q14:FolderType">
+  <ObjectType SymbolicName="Prefix2:FunctionalGroupType" Category="DI Information Model" BaseType="Prefix0:FolderType">
     <Description>FolderType is used to organize the Parameters and Methods from the complete set (ParameterSet, MethodSet) with regard to their application</Description>
     <Children>
-      <Object SymbolicName="q13:GroupIdentifier" TypeDefinition="q13:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix2:GroupIdentifier" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
         <Description>An application specific functional group used to organize parameters and methods.</Description>
       </Object>
-      <Variable SymbolicName="q13:UIElement" TypeDefinition="q13:UIElementType" ModellingRule="Optional" DataType="q14:BaseDataType">
+      <Variable SymbolicName="Prefix2:UIElement" TypeDefinition="Prefix2:UIElementType" ModellingRule="Optional" DataType="Prefix0:BaseDataType">
         <Description>A user interface element assigned to this group.</Description>
       </Variable>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q15="http://opcfoundation.org/UA/DI/" SymbolicName="q15:LockingServicesType" Category="DI Locking">
+  <ObjectType SymbolicName="Prefix2:LockingServicesType" Category="DI Locking">
     <Description>An interface for Locking.</Description>
     <Children>
-      <Property xmlns:q16="http://opcfoundation.org/UA/" SymbolicName="q16:DefaultInstanceBrowseName" DataType="q16:QualifiedName">
+      <Property SymbolicName="Prefix0:DefaultInstanceBrowseName" DataType="Prefix0:QualifiedName">
         <DefaultValue>
           <QualifiedName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <NamespaceIndex>1</NamespaceIndex>
-            <Name>Lock</Name>
-          </QualifiedName>
+        <NamespaceIndex>1</NamespaceIndex>
+        <Name>Lock</Name>
+      </QualifiedName>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="q15:Locked" ModellingRule="Mandatory" xmlns:q17="http://opcfoundation.org/UA/" DataType="q17:Boolean" />
-      <Property SymbolicName="q15:LockingClient" ModellingRule="Mandatory" xmlns:q18="http://opcfoundation.org/UA/" DataType="q18:String" />
-      <Property SymbolicName="q15:LockingUser" ModellingRule="Mandatory" xmlns:q19="http://opcfoundation.org/UA/" DataType="q19:String" />
-      <Property SymbolicName="q15:RemainingLockTime" ModellingRule="Mandatory" xmlns:q20="http://opcfoundation.org/UA/" DataType="q20:Duration" />
-      <Method SymbolicName="q15:InitLock" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:Locked" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Property SymbolicName="Prefix2:LockingClient" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:LockingUser" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:RemainingLockTime" ModellingRule="Mandatory" DataType="Prefix0:Duration" />
+      <Method SymbolicName="Prefix2:InitLock" ModellingRule="Mandatory">
         <InputArguments>
-          <Argument Name="Context" xmlns:q21="http://opcfoundation.org/UA/" DataType="q21:String" />
+          <Argument Name="Context" DataType="Prefix0:String" />
         </InputArguments>
         <OutputArguments>
-          <Argument Name="InitLockStatus" xmlns:q22="http://opcfoundation.org/UA/" DataType="q22:Int32" />
+          <Argument Name="InitLockStatus" DataType="Prefix0:Int32" />
         </OutputArguments>
       </Method>
-      <Method SymbolicName="q15:RenewLock" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:RenewLock" ModellingRule="Mandatory">
         <OutputArguments>
-          <Argument Name="RenewLockStatus" xmlns:q23="http://opcfoundation.org/UA/" DataType="q23:Int32" />
+          <Argument Name="RenewLockStatus" DataType="Prefix0:Int32" />
         </OutputArguments>
       </Method>
-      <Method SymbolicName="q15:ExitLock" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:ExitLock" ModellingRule="Mandatory">
         <OutputArguments>
-          <Argument Name="ExitLockStatus" xmlns:q24="http://opcfoundation.org/UA/" DataType="q24:Int32" />
+          <Argument Name="ExitLockStatus" DataType="Prefix0:Int32" />
         </OutputArguments>
       </Method>
-      <Method SymbolicName="q15:BreakLock" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:BreakLock" ModellingRule="Mandatory">
         <OutputArguments>
-          <Argument Name="BreakLockStatus" xmlns:q25="http://opcfoundation.org/UA/" DataType="q25:Int32" />
+          <Argument Name="BreakLockStatus" DataType="Prefix0:Int32" />
         </OutputArguments>
       </Method>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q26="http://opcfoundation.org/UA/DI/" SymbolicName="q26:IVendorNameplateType" Category="DI Nameplate" xmlns:q27="http://opcfoundation.org/UA/" BaseType="q27:BaseInterfaceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:IVendorNameplateType" Category="DI Nameplate" BaseType="Prefix0:BaseInterfaceType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="q26:Manufacturer" ModellingRule="Optional" DataType="q27:LocalizedText" />
-      <Property SymbolicName="q26:ManufacturerUri" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:Model" ModellingRule="Optional" DataType="q27:LocalizedText" />
-      <Property SymbolicName="q26:HardwareRevision" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:SoftwareRevision" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:DeviceRevision" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:ProductCode" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:DeviceManual" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:DeviceClass" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:SerialNumber" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:ProductInstanceUri" ModellingRule="Optional" DataType="q27:String" />
-      <Property SymbolicName="q26:RevisionCounter" ModellingRule="Optional" DataType="q27:Int32" />
+      <Property SymbolicName="Prefix2:Manufacturer" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
+      <Property SymbolicName="Prefix2:ManufacturerUri" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:Model" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
+      <Property SymbolicName="Prefix2:HardwareRevision" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:SoftwareRevision" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:DeviceRevision" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:ProductCode" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:DeviceManual" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:DeviceClass" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:SerialNumber" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:ProductInstanceUri" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:RevisionCounter" ModellingRule="Optional" DataType="Prefix0:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q28="http://opcfoundation.org/UA/DI/" SymbolicName="q28:ITagNameplateType" Category="DI TagNameplate" xmlns:q29="http://opcfoundation.org/UA/" BaseType="q29:BaseInterfaceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:ITagNameplateType" Category="DI TagNameplate" BaseType="Prefix0:BaseInterfaceType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="q28:AssetId" ModellingRule="Optional" DataType="q29:String" />
-      <Property SymbolicName="q28:ComponentName" ModellingRule="Optional" DataType="q29:LocalizedText" />
+      <Property SymbolicName="Prefix2:AssetId" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:ComponentName" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q30="http://opcfoundation.org/UA/DI/" SymbolicName="q30:IDeviceHealthType" Category="DI DeviceHealth" xmlns:q31="http://opcfoundation.org/UA/" BaseType="q31:BaseInterfaceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:IDeviceHealthType" Category="DI DeviceHealth" BaseType="Prefix0:BaseInterfaceType" IsAbstract="true">
     <Children>
-      <Variable SymbolicName="q30:DeviceHealth" ModellingRule="Optional" DataType="q30:DeviceHealthEnumeration" />
-      <Object SymbolicName="q30:DeviceHealthAlarms" TypeDefinition="q31:FolderType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix2:DeviceHealth" ModellingRule="Optional" DataType="Prefix2:DeviceHealthEnumeration" />
+      <Object SymbolicName="Prefix2:DeviceHealthAlarms" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q32="http://opcfoundation.org/UA/DI/" SymbolicName="q32:ISupportInfoType" Category="DI DeviceSupportInfo" xmlns:q33="http://opcfoundation.org/UA/" BaseType="q33:BaseInterfaceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:ISupportInfoType" Category="DI DeviceSupportInfo" BaseType="Prefix0:BaseInterfaceType" IsAbstract="true">
     <Children>
-      <Object SymbolicName="q32:DeviceTypeImage" TypeDefinition="q33:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:DeviceTypeImage" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Children>
-          <Variable SymbolicName="q32:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q33:Image">
+          <Variable SymbolicName="Prefix2:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:Image">
             <BrowseName>&lt;ImageIdentifier&gt;</BrowseName>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q32:Documentation" TypeDefinition="q33:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:Documentation" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Children>
-          <Variable SymbolicName="q32:DocumentIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q33:ByteString">
+          <Variable SymbolicName="Prefix2:DocumentIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:ByteString">
             <BrowseName>&lt;DocumentIdentifier&gt;</BrowseName>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q32:ProtocolSupport" TypeDefinition="q33:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:ProtocolSupport" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Children>
-          <Variable SymbolicName="q32:ProtocolSupportIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q33:ByteString">
+          <Variable SymbolicName="Prefix2:ProtocolSupportIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:ByteString">
             <BrowseName>&lt;ProtocolSupportIdentifier&gt;</BrowseName>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q32:ImageSet" TypeDefinition="q33:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:ImageSet" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Children>
-          <Variable SymbolicName="q32:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q33:Image">
+          <Variable SymbolicName="Prefix2:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:Image">
             <BrowseName>&lt;ImageIdentifier&gt;</BrowseName>
           </Variable>
         </Children>
@@ -189,98 +189,98 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q34="http://opcfoundation.org/UA/DI/" SymbolicName="q34:ComponentType" Category="DI Information Model" BaseType="q34:TopologyElementType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:ComponentType" Category="DI Information Model" BaseType="Prefix2:TopologyElementType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="q34:Manufacturer" ModellingRule="Optional" xmlns:q35="http://opcfoundation.org/UA/" DataType="q35:LocalizedText" />
-      <Property SymbolicName="q34:ManufacturerUri" ModellingRule="Optional" xmlns:q36="http://opcfoundation.org/UA/" DataType="q36:String" />
-      <Property SymbolicName="q34:Model" ModellingRule="Optional" xmlns:q37="http://opcfoundation.org/UA/" DataType="q37:LocalizedText" />
-      <Property SymbolicName="q34:HardwareRevision" ModellingRule="Optional" xmlns:q38="http://opcfoundation.org/UA/" DataType="q38:String" />
-      <Property SymbolicName="q34:SoftwareRevision" ModellingRule="Optional" xmlns:q39="http://opcfoundation.org/UA/" DataType="q39:String" />
-      <Property SymbolicName="q34:DeviceRevision" ModellingRule="Optional" xmlns:q40="http://opcfoundation.org/UA/" DataType="q40:String" />
-      <Property SymbolicName="q34:ProductCode" ModellingRule="Optional" xmlns:q41="http://opcfoundation.org/UA/" DataType="q41:String" />
-      <Property SymbolicName="q34:DeviceManual" ModellingRule="Optional" xmlns:q42="http://opcfoundation.org/UA/" DataType="q42:String" />
-      <Property SymbolicName="q34:DeviceClass" ModellingRule="Optional" xmlns:q43="http://opcfoundation.org/UA/" DataType="q43:String" />
-      <Property SymbolicName="q34:SerialNumber" ModellingRule="Optional" xmlns:q44="http://opcfoundation.org/UA/" DataType="q44:String" />
-      <Property SymbolicName="q34:ProductInstanceUri" ModellingRule="Optional" xmlns:q45="http://opcfoundation.org/UA/" DataType="q45:String" />
-      <Property SymbolicName="q34:RevisionCounter" ModellingRule="Optional" xmlns:q46="http://opcfoundation.org/UA/" DataType="q46:Int32" />
-      <Property SymbolicName="q34:AssetId" ModellingRule="Optional" xmlns:q47="http://opcfoundation.org/UA/" DataType="q47:String" />
-      <Property SymbolicName="q34:ComponentName" ModellingRule="Optional" xmlns:q48="http://opcfoundation.org/UA/" DataType="q48:LocalizedText" />
+      <Property SymbolicName="Prefix2:Manufacturer" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
+      <Property SymbolicName="Prefix2:ManufacturerUri" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:Model" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
+      <Property SymbolicName="Prefix2:HardwareRevision" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:SoftwareRevision" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:DeviceRevision" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:ProductCode" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:DeviceManual" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:DeviceClass" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:SerialNumber" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:ProductInstanceUri" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:RevisionCounter" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Property SymbolicName="Prefix2:AssetId" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:ComponentName" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
     </Children>
     <References>
       <Reference>
-        <ReferenceType xmlns:q49="http://opcfoundation.org/UA/">q49:HasInterface</ReferenceType>
-        <TargetId>q34:IVendorNameplateType</TargetId>
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix2:IVendorNameplateType</TargetId>
       </Reference>
       <Reference>
-        <ReferenceType xmlns:q50="http://opcfoundation.org/UA/">q50:HasInterface</ReferenceType>
-        <TargetId>q34:ITagNameplateType</TargetId>
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix2:ITagNameplateType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q51="http://opcfoundation.org/UA/DI/" SymbolicName="q51:DeviceType" Category="DI DeviceType" BaseType="q51:ComponentType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:DeviceType" Category="DI DeviceType" BaseType="Prefix2:ComponentType" IsAbstract="true">
     <Description>Defines the basic information components for all configurable elements in a device topology</Description>
     <Children>
-      <Property SymbolicName="q51:Manufacturer" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:Manufacturer" ModellingRule="Mandatory">
         <Description>Name of the company that manufactured the device</Description>
       </Property>
-      <Property SymbolicName="q51:Model" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:Model" ModellingRule="Mandatory">
         <Description>Model name of the device</Description>
       </Property>
-      <Property SymbolicName="q51:HardwareRevision" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:HardwareRevision" ModellingRule="Mandatory">
         <Description>Revision level of the hardware of the device</Description>
       </Property>
-      <Property SymbolicName="q51:SoftwareRevision" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:SoftwareRevision" ModellingRule="Mandatory">
         <Description>Revision level of the software/firmware of the device</Description>
       </Property>
-      <Property SymbolicName="q51:DeviceRevision" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:DeviceRevision" ModellingRule="Mandatory">
         <Description>Overall revision level of the device</Description>
       </Property>
-      <Property SymbolicName="q51:DeviceManual" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:DeviceManual" ModellingRule="Mandatory">
         <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
       </Property>
-      <Property SymbolicName="q51:SerialNumber" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:SerialNumber" ModellingRule="Mandatory">
         <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
       </Property>
-      <Property SymbolicName="q51:RevisionCounter" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix2:RevisionCounter" ModellingRule="Mandatory">
         <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
       </Property>
-      <Object SymbolicName="q51:CPIdentifier" TypeDefinition="q51:ConnectionPointType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix2:CPIdentifier" TypeDefinition="Prefix2:ConnectionPointType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;CPIdentifier&gt;</BrowseName>
       </Object>
-      <Variable SymbolicName="q51:DeviceHealth" ModellingRule="Optional" DataType="q51:DeviceHealthEnumeration" />
-      <Object SymbolicName="q51:DeviceHealthAlarms" xmlns:q52="http://opcfoundation.org/UA/" TypeDefinition="q52:FolderType" ModellingRule="Optional" />
-      <Object SymbolicName="q51:DeviceTypeImage" xmlns:q53="http://opcfoundation.org/UA/" TypeDefinition="q53:FolderType" ModellingRule="Optional">
+      <Variable SymbolicName="Prefix2:DeviceHealth" ModellingRule="Optional" DataType="Prefix2:DeviceHealthEnumeration" />
+      <Object SymbolicName="Prefix2:DeviceHealthAlarms" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:DeviceTypeImage" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Description>Organizes pictures of the device.</Description>
         <Children>
-          <Variable SymbolicName="q51:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q53:Image">
+          <Variable SymbolicName="Prefix2:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:Image">
             <BrowseName>&lt;ImageIdentifier&gt;</BrowseName>
             <Description>An image of the device.</Description>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q51:Documentation" xmlns:q54="http://opcfoundation.org/UA/" TypeDefinition="q54:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:Documentation" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Description>Organizes documents for the device.</Description>
         <Children>
-          <Variable SymbolicName="q51:DocumentIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q54:ByteString">
+          <Variable SymbolicName="Prefix2:DocumentIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:ByteString">
             <BrowseName>&lt;DocumentIdentifier&gt;</BrowseName>
             <Description>A document for the device.</Description>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q51:ProtocolSupport" xmlns:q55="http://opcfoundation.org/UA/" TypeDefinition="q55:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:ProtocolSupport" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Description>Protocol-specific files for the device.</Description>
         <Children>
-          <Variable SymbolicName="q51:ProtocolSupportIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q55:ByteString">
+          <Variable SymbolicName="Prefix2:ProtocolSupportIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:ByteString">
             <BrowseName>&lt;ProtocolSupportIdentifier&gt;</BrowseName>
             <Description>A protocol-specific file for the device.</Description>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="q51:ImageSet" xmlns:q56="http://opcfoundation.org/UA/" TypeDefinition="q56:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:ImageSet" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
         <Description>Organizes images that are used within UIElements.</Description>
         <Children>
-          <Variable SymbolicName="q51:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="q56:Image">
+          <Variable SymbolicName="Prefix2:ImageIdentifier" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:Image">
             <BrowseName>&lt;ImageIdentifier&gt;</BrowseName>
             <Description>An image for a UIElement.</Description>
           </Variable>
@@ -289,114 +289,114 @@
     </Children>
     <References>
       <Reference>
-        <ReferenceType xmlns:q57="http://opcfoundation.org/UA/">q57:HasInterface</ReferenceType>
-        <TargetId>q51:ISupportInfoType</TargetId>
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix2:ISupportInfoType</TargetId>
       </Reference>
       <Reference>
-        <ReferenceType xmlns:q58="http://opcfoundation.org/UA/">q58:HasInterface</ReferenceType>
-        <TargetId>q51:IDeviceHealthType</TargetId>
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix2:IDeviceHealthType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q59="http://opcfoundation.org/UA/DI/" SymbolicName="q59:ConnectionPointType" Category="DI ConnectionPoint" BaseType="q59:TopologyElementType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:ConnectionPointType" Category="DI ConnectionPoint" BaseType="Prefix2:TopologyElementType" IsAbstract="true">
     <Description>Represents the interface (interface card) of a Device to a Network.</Description>
     <Children>
-      <Object SymbolicName="q59:NetworkAddress" TypeDefinition="q59:FunctionalGroupType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix2:NetworkAddress" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Mandatory">
         <Description>The address of the device on this network.</Description>
       </Object>
-      <Object SymbolicName="q59:ProfileIdentifier" TypeDefinition="q59:ProtocolType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix2:ProfileIdentifier" TypeDefinition="Prefix2:ProtocolType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>&lt;ProfileIdentifier&gt;</BrowseName>
       </Object>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>q59:ConnectsTo</ReferenceType>
-        <TargetId>q59:NetworkIdentifier</TargetId>
+        <ReferenceType>Prefix2:ConnectsTo</ReferenceType>
+        <TargetId>Prefix2:NetworkIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q60="http://opcfoundation.org/UA/DI/" SymbolicName="q60:SoftwareType" Category="DI Software Component" BaseType="q60:ComponentType">
+  <ObjectType SymbolicName="Prefix2:SoftwareType" Category="DI Software Component" BaseType="Prefix2:ComponentType">
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q61="http://opcfoundation.org/UA/DI/" SymbolicName="q61:BlockType" Category="DI Blocks" BaseType="q61:TopologyElementType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:BlockType" Category="DI Blocks" BaseType="Prefix2:TopologyElementType" IsAbstract="true">
     <Description>Adds the concept of Blocks needed for block-oriented FieldDevices</Description>
     <Children>
-      <Property SymbolicName="q61:RevisionCounter" ModellingRule="Optional" xmlns:q62="http://opcfoundation.org/UA/" DataType="q62:Int32">
+      <Property SymbolicName="Prefix2:RevisionCounter" ModellingRule="Optional" DataType="Prefix0:Int32">
         <Description>Incremental counter indicating the number of times the static data within the Block has been modified</Description>
       </Property>
-      <Property SymbolicName="q61:ActualMode" ModellingRule="Optional" xmlns:q63="http://opcfoundation.org/UA/" DataType="q63:LocalizedText">
+      <Property SymbolicName="Prefix2:ActualMode" ModellingRule="Optional" DataType="Prefix0:LocalizedText">
         <Description>Current mode of operation the Block is able to achieve</Description>
       </Property>
-      <Property SymbolicName="q61:PermittedMode" ModellingRule="Optional" xmlns:q64="http://opcfoundation.org/UA/" DataType="q64:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix2:PermittedMode" ModellingRule="Optional" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <Description>Modes of operation that are allowed for the Block based on application requirements</Description>
       </Property>
-      <Property SymbolicName="q61:NormalMode" ModellingRule="Optional" xmlns:q65="http://opcfoundation.org/UA/" DataType="q65:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix2:NormalMode" ModellingRule="Optional" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <Description>Mode the Block should be set to during normal operating conditions</Description>
       </Property>
-      <Property SymbolicName="q61:TargetMode" ModellingRule="Optional" xmlns:q66="http://opcfoundation.org/UA/" DataType="q66:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix2:TargetMode" ModellingRule="Optional" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <Description>Mode of operation that is desired for the Block</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q67="http://opcfoundation.org/UA/DI/" SymbolicName="q67:DeviceHealthDiagnosticAlarmType" Category="DI HealthDiagnosticsAlarm" xmlns:q68="http://opcfoundation.org/UA/" BaseType="q68:InstrumentDiagnosticAlarmType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:DeviceHealthDiagnosticAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="Prefix0:InstrumentDiagnosticAlarmType" IsAbstract="true">
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q69="http://opcfoundation.org/UA/DI/" SymbolicName="q69:FailureAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="q69:DeviceHealthDiagnosticAlarmType">
+  <ObjectType SymbolicName="Prefix2:FailureAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="Prefix2:DeviceHealthDiagnosticAlarmType">
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q70="http://opcfoundation.org/UA/DI/" SymbolicName="q70:CheckFunctionAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="q70:DeviceHealthDiagnosticAlarmType">
+  <ObjectType SymbolicName="Prefix2:CheckFunctionAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="Prefix2:DeviceHealthDiagnosticAlarmType">
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q71="http://opcfoundation.org/UA/DI/" SymbolicName="q71:OffSpecAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="q71:DeviceHealthDiagnosticAlarmType">
+  <ObjectType SymbolicName="Prefix2:OffSpecAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="Prefix2:DeviceHealthDiagnosticAlarmType">
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q72="http://opcfoundation.org/UA/DI/" SymbolicName="q72:MaintenanceRequiredAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="q72:DeviceHealthDiagnosticAlarmType">
+  <ObjectType SymbolicName="Prefix2:MaintenanceRequiredAlarmType" Category="DI HealthDiagnosticsAlarm" BaseType="Prefix2:DeviceHealthDiagnosticAlarmType">
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q73="http://opcfoundation.org/UA/DI/" SymbolicName="q73:ConfigurableObjectType" Category="DI Information Model">
+  <ObjectType SymbolicName="Prefix2:ConfigurableObjectType" Category="DI Information Model">
     <Description>Defines a general pattern to expose and configure modular components</Description>
     <Children>
-      <Object SymbolicName="q73:SupportedTypes" xmlns:q74="http://opcfoundation.org/UA/" TypeDefinition="q74:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix2:SupportedTypes" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
         <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
       </Object>
-      <Object SymbolicName="q73:ObjectIdentifier" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix2:ObjectIdentifier" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;ObjectIdentifier&gt;</BrowseName>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <VariableType xmlns:q75="http://opcfoundation.org/UA/DI/" SymbolicName="q75:UIElementType" Category="DI Information Model" IsAbstract="true" xmlns:q76="http://opcfoundation.org/UA/" DataType="q76:BaseDataType">
+  <VariableType SymbolicName="Prefix2:UIElementType" Category="DI Information Model" IsAbstract="true" DataType="Prefix0:BaseDataType">
     <Description>The base type for all UI Element Types.</Description>
     <ClassName />
   </VariableType>
-  <ObjectType xmlns:q77="http://opcfoundation.org/UA/DI/" SymbolicName="q77:ProtocolType" Category="DI Network, DI Protocol">
+  <ObjectType SymbolicName="Prefix2:ProtocolType" Category="DI Network, DI Protocol">
     <Description>General structure of a Protocol ObjectType</Description>
     <ClassName />
   </ObjectType>
-  <DataType xmlns:q78="http://opcfoundation.org/UA/DI/" SymbolicName="q78:DeviceHealthEnumeration" xmlns:q79="http://opcfoundation.org/UA/" BaseType="q79:Enumeration">
+  <DataType SymbolicName="Prefix2:DeviceHealthEnumeration" BaseType="Prefix0:Enumeration">
     <Children>
-      <Property SymbolicName="q79:EnumStrings" ModellingRule="Mandatory" DataType="q79:LocalizedText" ValueRank="Array" ArrayDimensions="5">
+      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <LocalizedText>
-              <Text>NORMAL</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>FAILURE</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>CHECK_FUNCTION</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>OFF_SPEC</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>MAINTENANCE_REQUIRED</Text>
-            </LocalizedText>
-          </ListOfLocalizedText>
+        <LocalizedText>
+          <Text>NORMAL</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>FAILURE</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>CHECK_FUNCTION</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>OFF_SPEC</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MAINTENANCE_REQUIRED</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
         </DefaultValue>
       </Property>
     </Children>
@@ -419,36 +419,36 @@
       </Field>
     </Fields>
   </DataType>
-  <ObjectType xmlns:q80="http://opcfoundation.org/UA/DI/" SymbolicName="q80:NetworkType" Category="DI Network">
+  <ObjectType SymbolicName="Prefix2:NetworkType" Category="DI Network">
     <Description>Represents the communication means for Devices that are connected to it.</Description>
     <Children>
-      <Object SymbolicName="q80:ProfileIdentifier" TypeDefinition="q80:ProtocolType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix2:ProfileIdentifier" TypeDefinition="Prefix2:ProtocolType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>&lt;ProfileIdentifier&gt;</BrowseName>
       </Object>
-      <Object SymbolicName="q80:Lock" TypeDefinition="q80:LockingServicesType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:Lock" TypeDefinition="Prefix2:LockingServicesType" ModellingRule="Optional">
         <Description>Used to lock the Network.</Description>
         <Children>
-          <Method SymbolicName="q80:InitLock">
+          <Method SymbolicName="Prefix2:InitLock">
             <InputArguments>
-              <Argument Name="Context" xmlns:q81="http://opcfoundation.org/UA/" DataType="q81:String" />
+              <Argument Name="Context" DataType="Prefix0:String" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="InitLockStatus" xmlns:q82="http://opcfoundation.org/UA/" DataType="q82:Int32" />
+              <Argument Name="InitLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q80:RenewLock">
+          <Method SymbolicName="Prefix2:RenewLock">
             <OutputArguments>
-              <Argument Name="RenewLockStatus" xmlns:q83="http://opcfoundation.org/UA/" DataType="q83:Int32" />
+              <Argument Name="RenewLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q80:ExitLock">
+          <Method SymbolicName="Prefix2:ExitLock">
             <OutputArguments>
-              <Argument Name="ExitLockStatus" xmlns:q84="http://opcfoundation.org/UA/" DataType="q84:Int32" />
+              <Argument Name="ExitLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q80:BreakLock">
+          <Method SymbolicName="Prefix2:BreakLock">
             <OutputArguments>
-              <Argument Name="BreakLockStatus" xmlns:q85="http://opcfoundation.org/UA/" DataType="q85:Int32" />
+              <Argument Name="BreakLockStatus" DataType="Prefix0:Int32" />
             </OutputArguments>
           </Method>
         </Children>
@@ -456,498 +456,498 @@
     </Children>
     <References>
       <Reference>
-        <ReferenceType>q80:ConnectsTo</ReferenceType>
-        <TargetId>q80:CPIdentifier</TargetId>
+        <ReferenceType>Prefix2:ConnectsTo</ReferenceType>
+        <TargetId>Prefix2:CPIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <DataType xmlns:q86="http://opcfoundation.org/UA/DI/" SymbolicName="q86:FetchResultDataType" xmlns:q87="http://opcfoundation.org/UA/" BaseType="q87:Structure" IsAbstract="true">
+  <DataType SymbolicName="Prefix2:FetchResultDataType" BaseType="Prefix0:Structure" IsAbstract="true">
     <ClassName />
     <Fields />
   </DataType>
-  <DataType xmlns:q88="http://opcfoundation.org/UA/DI/" SymbolicName="q88:TransferResultErrorDataType" BaseType="q88:FetchResultDataType">
+  <DataType SymbolicName="Prefix2:TransferResultErrorDataType" BaseType="Prefix2:FetchResultDataType">
     <ClassName />
     <Fields>
-      <Field Name="Status" BitMask="" xmlns:q89="http://opcfoundation.org/UA/" DataType="q89:Int32" ArrayDimensions="" />
-      <Field Name="Diagnostics" BitMask="" xmlns:q90="http://opcfoundation.org/UA/" DataType="q90:DiagnosticInfo" ArrayDimensions="" />
+      <Field Name="Status" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
+      <Field Name="Diagnostics" BitMask="" DataType="Prefix0:DiagnosticInfo" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType xmlns:q91="http://opcfoundation.org/UA/DI/" SymbolicName="q91:TransferResultDataDataType" BaseType="q91:FetchResultDataType">
+  <DataType SymbolicName="Prefix2:TransferResultDataDataType" BaseType="Prefix2:FetchResultDataType">
     <ClassName />
     <Fields>
-      <Field Name="SequenceNumber" BitMask="" xmlns:q92="http://opcfoundation.org/UA/" DataType="q92:Int32" ArrayDimensions="" />
-      <Field Name="EndOfResults" BitMask="" xmlns:q93="http://opcfoundation.org/UA/" DataType="q93:Boolean" ArrayDimensions="" />
-      <Field Name="ParameterDefs" BitMask="" DataType="q91:ParameterResultDataType" ValueRank="Array" ArrayDimensions="" />
+      <Field Name="SequenceNumber" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
+      <Field Name="EndOfResults" BitMask="" DataType="Prefix0:Boolean" ArrayDimensions="" />
+      <Field Name="ParameterDefs" BitMask="" DataType="Prefix2:ParameterResultDataType" ValueRank="Array" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType xmlns:q94="http://opcfoundation.org/UA/DI/" SymbolicName="q94:ParameterResultDataType" xmlns:q95="http://opcfoundation.org/UA/" BaseType="q95:Structure">
+  <DataType SymbolicName="Prefix2:ParameterResultDataType" BaseType="Prefix0:Structure">
     <ClassName />
     <Fields>
-      <Field Name="NodePath" BitMask="" DataType="q95:QualifiedName" ValueRank="Array" ArrayDimensions="" />
-      <Field Name="StatusCode" BitMask="" DataType="q95:StatusCode" ArrayDimensions="" />
-      <Field Name="Diagnostics" BitMask="" DataType="q95:DiagnosticInfo" ArrayDimensions="" />
+      <Field Name="NodePath" BitMask="" DataType="Prefix0:QualifiedName" ValueRank="Array" ArrayDimensions="" />
+      <Field Name="StatusCode" BitMask="" DataType="Prefix0:StatusCode" ArrayDimensions="" />
+      <Field Name="Diagnostics" BitMask="" DataType="Prefix0:DiagnosticInfo" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <ObjectType xmlns:q96="http://opcfoundation.org/UA/DI/" SymbolicName="q96:TransferServicesType" Category="DI Offline">
+  <ObjectType SymbolicName="Prefix2:TransferServicesType" Category="DI Offline">
     <Children>
-      <Method SymbolicName="q96:TransferToDevice" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:TransferToDevice" ModellingRule="Mandatory">
         <OutputArguments>
-          <Argument Name="TransferID" xmlns:q97="http://opcfoundation.org/UA/" DataType="q97:Int32" />
-          <Argument Name="InitTransferStatus" xmlns:q98="http://opcfoundation.org/UA/" DataType="q98:Int32" />
+          <Argument Name="TransferID" DataType="Prefix0:Int32" />
+          <Argument Name="InitTransferStatus" DataType="Prefix0:Int32" />
         </OutputArguments>
       </Method>
-      <Method SymbolicName="q96:TransferFromDevice" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:TransferFromDevice" ModellingRule="Mandatory">
         <OutputArguments>
-          <Argument Name="TransferID" xmlns:q99="http://opcfoundation.org/UA/" DataType="q99:Int32" />
-          <Argument Name="InitTransferStatus" xmlns:q100="http://opcfoundation.org/UA/" DataType="q100:Int32" />
+          <Argument Name="TransferID" DataType="Prefix0:Int32" />
+          <Argument Name="InitTransferStatus" DataType="Prefix0:Int32" />
         </OutputArguments>
       </Method>
-      <Method SymbolicName="q96:FetchTransferResultData" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:FetchTransferResultData" ModellingRule="Mandatory">
         <InputArguments>
-          <Argument Name="TransferID" xmlns:q101="http://opcfoundation.org/UA/" DataType="q101:Int32" />
-          <Argument Name="SequenceNumber" xmlns:q102="http://opcfoundation.org/UA/" DataType="q102:Int32" />
-          <Argument Name="MaxParameterResultsToReturn" xmlns:q103="http://opcfoundation.org/UA/" DataType="q103:Int32" />
-          <Argument Name="OmitGoodResults" xmlns:q104="http://opcfoundation.org/UA/" DataType="q104:Boolean" />
+          <Argument Name="TransferID" DataType="Prefix0:Int32" />
+          <Argument Name="SequenceNumber" DataType="Prefix0:Int32" />
+          <Argument Name="MaxParameterResultsToReturn" DataType="Prefix0:Int32" />
+          <Argument Name="OmitGoodResults" DataType="Prefix0:Boolean" />
         </InputArguments>
         <OutputArguments>
-          <Argument Name="FetchResultData" xmlns:q105="http://opcfoundation.org/UA/" DataType="q105:Structure" />
+          <Argument Name="FetchResultData" DataType="Prefix0:Structure" />
         </OutputArguments>
       </Method>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q106="http://opcfoundation.org/UA/DI/" SymbolicName="q106:SoftwareUpdateType" Category="DI SU Software Update">
+  <ObjectType SymbolicName="Prefix2:SoftwareUpdateType" Category="DI SU Software Update">
     <Children>
-      <Object SymbolicName="q106:Loading" TypeDefinition="q106:SoftwareLoadingType" ModellingRule="Optional" />
-      <Object SymbolicName="q106:PrepareForUpdate" TypeDefinition="q106:PrepareForUpdateStateMachineType" ModellingRule="Optional" />
-      <Object SymbolicName="q106:Installation" TypeDefinition="q106:InstallationStateMachineType" ModellingRule="Optional" />
-      <Object SymbolicName="q106:PowerCycle" TypeDefinition="q106:PowerCycleStateMachineType" ModellingRule="Optional" />
-      <Object SymbolicName="q106:Confirmation" TypeDefinition="q106:ConfirmationStateMachineType" ModellingRule="Optional" />
-      <Object SymbolicName="q106:Parameters" xmlns:q107="http://opcfoundation.org/UA/" TypeDefinition="q107:TemporaryFileTransferType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix2:Loading" TypeDefinition="Prefix2:SoftwareLoadingType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:PrepareForUpdate" TypeDefinition="Prefix2:PrepareForUpdateStateMachineType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Installation" TypeDefinition="Prefix2:InstallationStateMachineType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:PowerCycle" TypeDefinition="Prefix2:PowerCycleStateMachineType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Confirmation" TypeDefinition="Prefix2:ConfirmationStateMachineType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Parameters" TypeDefinition="Prefix0:TemporaryFileTransferType" ModellingRule="Optional">
         <Children>
-          <Method SymbolicName="q107:GenerateFileForRead">
+          <Method SymbolicName="Prefix0:GenerateFileForRead">
             <InputArguments>
               <Argument Name="GenerateOptions" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="FileNodeId" DataType="q107:NodeId" />
-              <Argument Name="FileHandle" DataType="q107:UInt32" />
-              <Argument Name="CompletionStateMachine" DataType="q107:NodeId" />
+              <Argument Name="FileNodeId" DataType="Prefix0:NodeId" />
+              <Argument Name="FileHandle" DataType="Prefix0:UInt32" />
+              <Argument Name="CompletionStateMachine" DataType="Prefix0:NodeId" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q107:GenerateFileForWrite">
+          <Method SymbolicName="Prefix0:GenerateFileForWrite">
             <InputArguments>
               <Argument Name="GenerateOptions" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="FileNodeId" DataType="q107:NodeId" />
-              <Argument Name="FileHandle" DataType="q107:UInt32" />
+              <Argument Name="FileNodeId" DataType="Prefix0:NodeId" />
+              <Argument Name="FileHandle" DataType="Prefix0:UInt32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q107:CloseAndCommit">
+          <Method SymbolicName="Prefix0:CloseAndCommit">
             <InputArguments>
-              <Argument Name="FileHandle" DataType="q107:UInt32" />
+              <Argument Name="FileHandle" DataType="Prefix0:UInt32" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="CompletionStateMachine" DataType="q107:NodeId" />
+              <Argument Name="CompletionStateMachine" DataType="Prefix0:NodeId" />
             </OutputArguments>
           </Method>
         </Children>
       </Object>
-      <Variable SymbolicName="q106:UpdateStatus" ModellingRule="Optional" xmlns:q108="http://opcfoundation.org/UA/" DataType="q108:LocalizedText" />
-      <Variable SymbolicName="q106:VendorErrorCode" ModellingRule="Optional" xmlns:q109="http://opcfoundation.org/UA/" DataType="q109:Int32" />
-      <Property xmlns:q110="http://opcfoundation.org/UA/" SymbolicName="q110:DefaultInstanceBrowseName" DataType="q110:QualifiedName">
+      <Variable SymbolicName="Prefix2:UpdateStatus" ModellingRule="Optional" DataType="Prefix0:LocalizedText" />
+      <Variable SymbolicName="Prefix2:VendorErrorCode" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Property SymbolicName="Prefix0:DefaultInstanceBrowseName" DataType="Prefix0:QualifiedName">
         <DefaultValue>
           <QualifiedName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <NamespaceIndex>1</NamespaceIndex>
-            <Name>SoftwareUpdate</Name>
-          </QualifiedName>
+        <NamespaceIndex>1</NamespaceIndex>
+        <Name>SoftwareUpdate</Name>
+      </QualifiedName>
         </DefaultValue>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q111="http://opcfoundation.org/UA/DI/" SymbolicName="q111:SoftwareLoadingType" Category="DI SU Software Update" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:SoftwareLoadingType" Category="DI SU Software Update" IsAbstract="true">
     <Children>
-      <Variable SymbolicName="q111:UpdateKey" ModellingRule="Optional" xmlns:q112="http://opcfoundation.org/UA/" DataType="q112:String" />
+      <Variable SymbolicName="Prefix2:UpdateKey" ModellingRule="Optional" DataType="Prefix0:String" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q113="http://opcfoundation.org/UA/DI/" SymbolicName="q113:PrepareForUpdateStateMachineType" Category="DI SU PrepareForUpdate" xmlns:q114="http://opcfoundation.org/UA/" BaseType="q114:FiniteStateMachineType">
+  <ObjectType SymbolicName="Prefix2:PrepareForUpdateStateMachineType" Category="DI SU PrepareForUpdate" BaseType="Prefix0:FiniteStateMachineType">
     <Children>
-      <Variable SymbolicName="q113:PercentComplete" ModellingRule="Optional" DataType="q114:Byte" />
-      <Method SymbolicName="q113:Prepare" ModellingRule="Mandatory" />
-      <Method SymbolicName="q113:Abort" ModellingRule="Mandatory" />
-      <Method SymbolicName="q113:Resume" ModellingRule="Optional" />
-      <Object SymbolicName="q113:Idle" TypeDefinition="q114:InitialStateType" />
-      <Object SymbolicName="q113:Preparing" TypeDefinition="q114:StateType" />
-      <Object SymbolicName="q113:PreparedForUpdate" TypeDefinition="q114:StateType" />
-      <Object SymbolicName="q113:Resuming" TypeDefinition="q114:StateType" />
-      <Object SymbolicName="q113:IdleToPreparing" TypeDefinition="q114:TransitionType">
+      <Variable SymbolicName="Prefix2:PercentComplete" ModellingRule="Optional" DataType="Prefix0:Byte" />
+      <Method SymbolicName="Prefix2:Prepare" ModellingRule="Mandatory" />
+      <Method SymbolicName="Prefix2:Abort" ModellingRule="Mandatory" />
+      <Method SymbolicName="Prefix2:Resume" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Idle" TypeDefinition="Prefix0:InitialStateType" />
+      <Object SymbolicName="Prefix2:Preparing" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:PreparedForUpdate" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:Resuming" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:IdleToPreparing" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q114:FromState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_IdleToPreparing</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_IdleToPreparing</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q114:ToState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_IdleToPreparing</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_IdleToPreparing</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q114:HasEffect</ReferenceType>
-            <TargetId>q114:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q113:PreparingToIdle" TypeDefinition="q114:TransitionType">
+      <Object SymbolicName="Prefix2:PreparingToIdle" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q114:ToState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_PreparingToIdle</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_PreparingToIdle</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q114:FromState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_PreparingToIdle</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_PreparingToIdle</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q114:HasEffect</ReferenceType>
-            <TargetId>q114:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q113:PreparingToPreparedForUpdate" TypeDefinition="q114:TransitionType">
+      <Object SymbolicName="Prefix2:PreparingToPreparedForUpdate" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q114:FromState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q114:ToState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_PreparingToPreparedForUpdate</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q114:HasEffect</ReferenceType>
-            <TargetId>q114:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q113:PreparedForUpdateToResuming" TypeDefinition="q114:TransitionType">
+      <Object SymbolicName="Prefix2:PreparedForUpdateToResuming" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q114:FromState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_PreparedForUpdateToResuming</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_PreparedForUpdateToResuming</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q114:ToState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_PreparedForUpdateToResuming</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_PreparedForUpdateToResuming</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q114:HasEffect</ReferenceType>
-            <TargetId>q114:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q113:ResumingToIdle" TypeDefinition="q114:TransitionType">
+      <Object SymbolicName="Prefix2:ResumingToIdle" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q114:ToState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_ResumingToIdle</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_ResumingToIdle</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q114:FromState</ReferenceType>
-            <TargetId>q113:PrepareForUpdateStateMachineType_ResumingToIdle</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PrepareForUpdateStateMachineType_ResumingToIdle</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q114:HasEffect</ReferenceType>
-            <TargetId>q114:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q115="http://opcfoundation.org/UA/DI/" SymbolicName="q115:InstallationStateMachineType" Category="DI SU Software Update" xmlns:q116="http://opcfoundation.org/UA/" BaseType="q116:FiniteStateMachineType">
+  <ObjectType SymbolicName="Prefix2:InstallationStateMachineType" Category="DI SU Software Update" BaseType="Prefix0:FiniteStateMachineType">
     <Children>
-      <Variable SymbolicName="q115:PercentComplete" ModellingRule="Optional" DataType="q116:Byte" />
-      <Variable SymbolicName="q115:InstallationDelay" ModellingRule="Optional" DataType="q116:Duration" />
-      <Method SymbolicName="q115:InstallSoftwarePackage" ModellingRule="Optional">
+      <Variable SymbolicName="Prefix2:PercentComplete" ModellingRule="Optional" DataType="Prefix0:Byte" />
+      <Variable SymbolicName="Prefix2:InstallationDelay" ModellingRule="Optional" DataType="Prefix0:Duration" />
+      <Method SymbolicName="Prefix2:InstallSoftwarePackage" ModellingRule="Optional">
         <InputArguments>
-          <Argument Name="ManufacturerUri" DataType="q116:String" />
-          <Argument Name="SoftwareRevision" DataType="q116:String" />
-          <Argument Name="PatchIdentifiers" DataType="q116:String" ValueRank="Array" />
-          <Argument Name="Hash" DataType="q116:ByteString" />
+          <Argument Name="ManufacturerUri" DataType="Prefix0:String" />
+          <Argument Name="SoftwareRevision" DataType="Prefix0:String" />
+          <Argument Name="PatchIdentifiers" DataType="Prefix0:String" ValueRank="Array" />
+          <Argument Name="Hash" DataType="Prefix0:ByteString" />
         </InputArguments>
       </Method>
-      <Method SymbolicName="q115:InstallFiles" ModellingRule="Optional">
+      <Method SymbolicName="Prefix2:InstallFiles" ModellingRule="Optional">
         <InputArguments>
-          <Argument Name="NodeIds" DataType="q116:NodeId" ValueRank="Array" />
+          <Argument Name="NodeIds" DataType="Prefix0:NodeId" ValueRank="Array" />
         </InputArguments>
       </Method>
-      <Method SymbolicName="q115:Resume" ModellingRule="Mandatory" />
-      <Object SymbolicName="q115:Idle" TypeDefinition="q116:InitialStateType" />
-      <Object SymbolicName="q115:Installing" TypeDefinition="q116:StateType" />
-      <Object SymbolicName="q115:Error" TypeDefinition="q116:StateType" />
-      <Object SymbolicName="q115:IdleToInstalling" TypeDefinition="q116:TransitionType">
+      <Method SymbolicName="Prefix2:Resume" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix2:Idle" TypeDefinition="Prefix0:InitialStateType" />
+      <Object SymbolicName="Prefix2:Installing" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:Error" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:IdleToInstalling" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q116:FromState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_IdleToInstalling</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_IdleToInstalling</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q116:ToState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_IdleToInstalling</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_IdleToInstalling</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q116:HasEffect</ReferenceType>
-            <TargetId>q116:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q115:InstallingToIdle" TypeDefinition="q116:TransitionType">
+      <Object SymbolicName="Prefix2:InstallingToIdle" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q116:ToState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_InstallingToIdle</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_InstallingToIdle</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q116:FromState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_InstallingToIdle</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_InstallingToIdle</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q116:HasEffect</ReferenceType>
-            <TargetId>q116:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q115:InstallingToError" TypeDefinition="q116:TransitionType">
+      <Object SymbolicName="Prefix2:InstallingToError" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q116:FromState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_InstallingToError</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_InstallingToError</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q116:ToState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_InstallingToError</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_InstallingToError</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q116:HasEffect</ReferenceType>
-            <TargetId>q116:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q115:ErrorToIdle" TypeDefinition="q116:TransitionType">
+      <Object SymbolicName="Prefix2:ErrorToIdle" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q116:ToState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_ErrorToIdle</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_ErrorToIdle</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q116:FromState</ReferenceType>
-            <TargetId>q115:InstallationStateMachineType_ErrorToIdle</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:InstallationStateMachineType_ErrorToIdle</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q116:HasEffect</ReferenceType>
-            <TargetId>q116:TransitionEventType</TargetId>
-          </Reference>
-        </References>
-      </Object>
-    </Children>
-    <ClassName />
-  </ObjectType>
-  <ObjectType xmlns:q117="http://opcfoundation.org/UA/DI/" SymbolicName="q117:PowerCycleStateMachineType" Category="DI SU Manual Power Cycle" xmlns:q118="http://opcfoundation.org/UA/" BaseType="q118:FiniteStateMachineType">
-    <Children>
-      <Object SymbolicName="q117:NotWaitingForPowerCycle" TypeDefinition="q118:InitialStateType" />
-      <Object SymbolicName="q117:WaitingForPowerCycle" TypeDefinition="q118:StateType" />
-      <Object SymbolicName="q117:NotWaitingForPowerCycleToWaitingForPowerCycle" TypeDefinition="q118:TransitionType">
-        <References>
-          <Reference IsInverse="true">
-            <ReferenceType>q118:FromState</ReferenceType>
-            <TargetId>q117:PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle</TargetId>
-          </Reference>
-          <Reference IsInverse="true">
-            <ReferenceType>q118:ToState</ReferenceType>
-            <TargetId>q117:PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle</TargetId>
-          </Reference>
-          <Reference>
-            <ReferenceType>q118:HasEffect</ReferenceType>
-            <TargetId>q118:TransitionEventType</TargetId>
-          </Reference>
-        </References>
-      </Object>
-      <Object SymbolicName="q117:WaitingForPowerCycleToNotWaitingForPowerCycle" TypeDefinition="q118:TransitionType">
-        <References>
-          <Reference IsInverse="true">
-            <ReferenceType>q118:ToState</ReferenceType>
-            <TargetId>q117:PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle</TargetId>
-          </Reference>
-          <Reference IsInverse="true">
-            <ReferenceType>q118:FromState</ReferenceType>
-            <TargetId>q117:PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle</TargetId>
-          </Reference>
-          <Reference>
-            <ReferenceType>q118:HasEffect</ReferenceType>
-            <TargetId>q118:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q119="http://opcfoundation.org/UA/DI/" SymbolicName="q119:ConfirmationStateMachineType" Category="DI SU Update Confirmation" xmlns:q120="http://opcfoundation.org/UA/" BaseType="q120:FiniteStateMachineType">
+  <ObjectType SymbolicName="Prefix2:PowerCycleStateMachineType" Category="DI SU Manual Power Cycle" BaseType="Prefix0:FiniteStateMachineType">
     <Children>
-      <Method SymbolicName="q119:Confirm" ModellingRule="Mandatory" />
-      <Variable SymbolicName="q119:ConfirmationTimeout" ModellingRule="Mandatory" DataType="q120:Duration" />
-      <Object SymbolicName="q119:NotWaitingForConfirm" TypeDefinition="q120:InitialStateType" />
-      <Object SymbolicName="q119:WaitingForConfirm" TypeDefinition="q120:StateType" />
-      <Object SymbolicName="q119:NotWaitingForConfirmToWaitingForConfirm" TypeDefinition="q120:TransitionType">
+      <Object SymbolicName="Prefix2:NotWaitingForPowerCycle" TypeDefinition="Prefix0:InitialStateType" />
+      <Object SymbolicName="Prefix2:WaitingForPowerCycle" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:NotWaitingForPowerCycleToWaitingForPowerCycle" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q120:FromState</ReferenceType>
-            <TargetId>q119:ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q120:ToState</ReferenceType>
-            <TargetId>q119:ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PowerCycleStateMachineType_NotWaitingForPowerCycleToWaitingForPowerCycle</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q120:HasEffect</ReferenceType>
-            <TargetId>q120:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="q119:WaitingForConfirmToNotWaitingForConfirm" TypeDefinition="q120:TransitionType">
+      <Object SymbolicName="Prefix2:WaitingForPowerCycleToNotWaitingForPowerCycle" TypeDefinition="Prefix0:TransitionType">
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>q120:ToState</ReferenceType>
-            <TargetId>q119:ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm</TargetId>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle</TargetId>
           </Reference>
           <Reference IsInverse="true">
-            <ReferenceType>q120:FromState</ReferenceType>
-            <TargetId>q119:ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm</TargetId>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PowerCycleStateMachineType_WaitingForPowerCycleToNotWaitingForPowerCycle</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>q120:HasEffect</ReferenceType>
-            <TargetId>q120:TransitionEventType</TargetId>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
           </Reference>
         </References>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q121="http://opcfoundation.org/UA/DI/" SymbolicName="q121:PackageLoadingType" Category="DI SU Software Update" BaseType="q121:SoftwareLoadingType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix2:ConfirmationStateMachineType" Category="DI SU Update Confirmation" BaseType="Prefix0:FiniteStateMachineType">
     <Children>
-      <Object SymbolicName="q121:CurrentVersion" TypeDefinition="q121:SoftwareVersionType" ModellingRule="Mandatory" />
-      <Object SymbolicName="q121:FileTransfer" xmlns:q122="http://opcfoundation.org/UA/" TypeDefinition="q122:TemporaryFileTransferType" ModellingRule="Mandatory">
+      <Method SymbolicName="Prefix2:Confirm" ModellingRule="Mandatory" />
+      <Variable SymbolicName="Prefix2:ConfirmationTimeout" ModellingRule="Mandatory" DataType="Prefix0:Duration" />
+      <Object SymbolicName="Prefix2:NotWaitingForConfirm" TypeDefinition="Prefix0:InitialStateType" />
+      <Object SymbolicName="Prefix2:WaitingForConfirm" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:NotWaitingForConfirmToWaitingForConfirm" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:ConfirmationStateMachineType_NotWaitingForConfirmToWaitingForConfirm</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:WaitingForConfirmToNotWaitingForConfirm" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:ConfirmationStateMachineType_WaitingForConfirmToNotWaitingForConfirm</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasEffect</ReferenceType>
+            <TargetId>Prefix0:TransitionEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix2:PackageLoadingType" Category="DI SU Software Update" BaseType="Prefix2:SoftwareLoadingType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix2:CurrentVersion" TypeDefinition="Prefix2:SoftwareVersionType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix2:FileTransfer" TypeDefinition="Prefix0:TemporaryFileTransferType" ModellingRule="Mandatory">
         <Children>
-          <Method SymbolicName="q122:GenerateFileForRead">
+          <Method SymbolicName="Prefix0:GenerateFileForRead">
             <InputArguments>
               <Argument Name="GenerateOptions" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="FileNodeId" DataType="q122:NodeId" />
-              <Argument Name="FileHandle" DataType="q122:UInt32" />
-              <Argument Name="CompletionStateMachine" DataType="q122:NodeId" />
+              <Argument Name="FileNodeId" DataType="Prefix0:NodeId" />
+              <Argument Name="FileHandle" DataType="Prefix0:UInt32" />
+              <Argument Name="CompletionStateMachine" DataType="Prefix0:NodeId" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q122:GenerateFileForWrite">
+          <Method SymbolicName="Prefix0:GenerateFileForWrite">
             <InputArguments>
               <Argument Name="GenerateOptions" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="FileNodeId" DataType="q122:NodeId" />
-              <Argument Name="FileHandle" DataType="q122:UInt32" />
+              <Argument Name="FileNodeId" DataType="Prefix0:NodeId" />
+              <Argument Name="FileHandle" DataType="Prefix0:UInt32" />
             </OutputArguments>
           </Method>
-          <Method SymbolicName="q122:CloseAndCommit">
+          <Method SymbolicName="Prefix0:CloseAndCommit">
             <InputArguments>
-              <Argument Name="FileHandle" DataType="q122:UInt32" />
+              <Argument Name="FileHandle" DataType="Prefix0:UInt32" />
             </InputArguments>
             <OutputArguments>
-              <Argument Name="CompletionStateMachine" DataType="q122:NodeId" />
+              <Argument Name="CompletionStateMachine" DataType="Prefix0:NodeId" />
             </OutputArguments>
           </Method>
         </Children>
       </Object>
-      <Variable SymbolicName="q121:ErrorMessage" ModellingRule="Mandatory" xmlns:q123="http://opcfoundation.org/UA/" DataType="q123:LocalizedText" />
-      <Property SymbolicName="q121:WriteBlockSize" ModellingRule="Optional" xmlns:q124="http://opcfoundation.org/UA/" DataType="q124:UInt32" />
+      <Variable SymbolicName="Prefix2:ErrorMessage" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" />
+      <Property SymbolicName="Prefix2:WriteBlockSize" ModellingRule="Optional" DataType="Prefix0:UInt32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q125="http://opcfoundation.org/UA/DI/" SymbolicName="q125:SoftwareVersionType" Category="DI SU Software Update">
+  <ObjectType SymbolicName="Prefix2:SoftwareVersionType" Category="DI SU Software Update">
     <Children>
-      <Property SymbolicName="q125:Manufacturer" ModellingRule="Mandatory" xmlns:q126="http://opcfoundation.org/UA/" DataType="q126:LocalizedText" />
-      <Property SymbolicName="q125:ManufacturerUri" ModellingRule="Mandatory" xmlns:q127="http://opcfoundation.org/UA/" DataType="q127:String" />
-      <Property SymbolicName="q125:SoftwareRevision" ModellingRule="Mandatory" xmlns:q128="http://opcfoundation.org/UA/" DataType="q128:String" />
-      <Property SymbolicName="q125:PatchIdentifiers" ModellingRule="Optional" xmlns:q129="http://opcfoundation.org/UA/" DataType="q129:String" ValueRank="Array" ArrayDimensions="0" />
-      <Property SymbolicName="q125:ReleaseDate" ModellingRule="Optional" xmlns:q130="http://opcfoundation.org/UA/" DataType="q130:DateTime" />
-      <Property SymbolicName="q125:ChangeLogReference" ModellingRule="Optional" xmlns:q131="http://opcfoundation.org/UA/" DataType="q131:String" />
-      <Property SymbolicName="q125:Hash" ModellingRule="Optional" xmlns:q132="http://opcfoundation.org/UA/" DataType="q132:ByteString" />
+      <Property SymbolicName="Prefix2:Manufacturer" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" />
+      <Property SymbolicName="Prefix2:ManufacturerUri" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:SoftwareRevision" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:PatchIdentifiers" ModellingRule="Optional" DataType="Prefix0:String" ValueRank="Array" ArrayDimensions="0" />
+      <Property SymbolicName="Prefix2:ReleaseDate" ModellingRule="Optional" DataType="Prefix0:DateTime" />
+      <Property SymbolicName="Prefix2:ChangeLogReference" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix2:Hash" ModellingRule="Optional" DataType="Prefix0:ByteString" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q133="http://opcfoundation.org/UA/DI/" SymbolicName="q133:DirectLoadingType" Category="DI SU DirectLoading" BaseType="q133:PackageLoadingType">
+  <ObjectType SymbolicName="Prefix2:DirectLoadingType" Category="DI SU DirectLoading" BaseType="Prefix2:PackageLoadingType">
     <Children>
-      <Variable SymbolicName="q133:UpdateBehavior" ModellingRule="Mandatory" DataType="q133:UpdateBehavior" />
-      <Property SymbolicName="q133:WriteTimeout" ModellingRule="Optional" xmlns:q134="http://opcfoundation.org/UA/" DataType="q134:Duration" />
+      <Variable SymbolicName="Prefix2:UpdateBehavior" ModellingRule="Mandatory" DataType="Prefix2:UpdateBehavior" />
+      <Property SymbolicName="Prefix2:WriteTimeout" ModellingRule="Optional" DataType="Prefix0:Duration" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q135="http://opcfoundation.org/UA/DI/" SymbolicName="q135:CachedLoadingType" Category="DI SU CachedLoading" BaseType="q135:PackageLoadingType">
+  <ObjectType SymbolicName="Prefix2:CachedLoadingType" Category="DI SU CachedLoading" BaseType="Prefix2:PackageLoadingType">
     <Children>
-      <Object SymbolicName="q135:PendingVersion" TypeDefinition="q135:SoftwareVersionType" ModellingRule="Mandatory" />
-      <Object SymbolicName="q135:FallbackVersion" TypeDefinition="q135:SoftwareVersionType" ModellingRule="Optional" />
-      <Method SymbolicName="q135:GetUpdateBehavior" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix2:PendingVersion" TypeDefinition="Prefix2:SoftwareVersionType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix2:FallbackVersion" TypeDefinition="Prefix2:SoftwareVersionType" ModellingRule="Optional" />
+      <Method SymbolicName="Prefix2:GetUpdateBehavior" ModellingRule="Mandatory">
         <InputArguments>
-          <Argument Name="ManufacturerUri" xmlns:q136="http://opcfoundation.org/UA/" DataType="q136:String" />
-          <Argument Name="SoftwareRevision" xmlns:q137="http://opcfoundation.org/UA/" DataType="q137:String" />
-          <Argument Name="PatchIdentifiers" xmlns:q138="http://opcfoundation.org/UA/" DataType="q138:String" ValueRank="Array" />
+          <Argument Name="ManufacturerUri" DataType="Prefix0:String" />
+          <Argument Name="SoftwareRevision" DataType="Prefix0:String" />
+          <Argument Name="PatchIdentifiers" DataType="Prefix0:String" ValueRank="Array" />
         </InputArguments>
         <OutputArguments>
-          <Argument Name="UpdateBehavior" DataType="q135:UpdateBehavior" />
+          <Argument Name="UpdateBehavior" DataType="Prefix2:UpdateBehavior" />
         </OutputArguments>
       </Method>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType xmlns:q139="http://opcfoundation.org/UA/DI/" SymbolicName="q139:FileSystemLoadingType" Category="DI SU FileSystem Loading" BaseType="q139:SoftwareLoadingType">
+  <ObjectType SymbolicName="Prefix2:FileSystemLoadingType" Category="DI SU FileSystem Loading" BaseType="Prefix2:SoftwareLoadingType">
     <Children>
-      <Object xmlns:q140="http://opcfoundation.org/UA/" SymbolicName="q140:FileSystem" TypeDefinition="q140:FileDirectoryType" ModellingRule="Mandatory" />
-      <Method SymbolicName="q139:GetUpdateBehavior" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix0:FileSystem" TypeDefinition="Prefix0:FileDirectoryType" ModellingRule="Mandatory" />
+      <Method SymbolicName="Prefix2:GetUpdateBehavior" ModellingRule="Mandatory">
         <InputArguments>
-          <Argument Name="NodeIds" xmlns:q141="http://opcfoundation.org/UA/" DataType="q141:NodeId" ValueRank="Array" />
+          <Argument Name="NodeIds" DataType="Prefix0:NodeId" ValueRank="Array" />
         </InputArguments>
         <OutputArguments>
-          <Argument Name="UpdateBehavior" DataType="q139:UpdateBehavior" />
+          <Argument Name="UpdateBehavior" DataType="Prefix2:UpdateBehavior" />
         </OutputArguments>
       </Method>
-      <Method SymbolicName="q139:ValidateFiles" ModellingRule="Optional">
+      <Method SymbolicName="Prefix2:ValidateFiles" ModellingRule="Optional">
         <InputArguments>
-          <Argument Name="NodeIds" xmlns:q142="http://opcfoundation.org/UA/" DataType="q142:NodeId" ValueRank="Array" />
+          <Argument Name="NodeIds" DataType="Prefix0:NodeId" ValueRank="Array" />
         </InputArguments>
         <OutputArguments>
-          <Argument Name="ErrorCode" xmlns:q143="http://opcfoundation.org/UA/" DataType="q143:Int32" />
-          <Argument Name="ErrorMessage" xmlns:q144="http://opcfoundation.org/UA/" DataType="q144:LocalizedText" />
+          <Argument Name="ErrorCode" DataType="Prefix0:Int32" />
+          <Argument Name="ErrorMessage" DataType="Prefix0:LocalizedText" />
         </OutputArguments>
       </Method>
     </Children>
     <ClassName />
   </ObjectType>
-  <DataType xmlns:q145="http://opcfoundation.org/UA/DI/" SymbolicName="q145:SoftwareVersionFileType" xmlns:q146="http://opcfoundation.org/UA/" BaseType="q146:Enumeration">
+  <DataType SymbolicName="Prefix2:SoftwareVersionFileType" BaseType="Prefix0:Enumeration">
     <Children>
-      <Property SymbolicName="q146:EnumStrings" ModellingRule="Mandatory" DataType="q146:LocalizedText" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <LocalizedText>
-              <Text>Current</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>Pending</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>Fallback</Text>
-            </LocalizedText>
-          </ListOfLocalizedText>
+        <LocalizedText>
+          <Text>Current</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Pending</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Fallback</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
         </DefaultValue>
       </Property>
     </Children>
@@ -964,27 +964,27 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType xmlns:q147="http://opcfoundation.org/UA/DI/" SymbolicName="q147:UpdateBehavior" Category="DI SU Software Update" xmlns:q148="http://opcfoundation.org/UA/" BaseType="q148:UInt32" IsOptionSet="true">
+  <DataType SymbolicName="Prefix2:UpdateBehavior" Category="DI SU Software Update" BaseType="Prefix0:UInt32" IsOptionSet="true">
     <Children>
-      <Property SymbolicName="q148:OptionSetValues" ModellingRule="Mandatory" DataType="q148:LocalizedText" ValueRank="Array" ArrayDimensions="5">
+      <Property SymbolicName="Prefix0:OptionSetValues" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <LocalizedText>
-              <Text>KeepsParameters</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>WillDisconnect</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>RequiresPowerCycle</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>WillReboot</Text>
-            </LocalizedText>
-            <LocalizedText>
-              <Text>NeedsPreparation</Text>
-            </LocalizedText>
-          </ListOfLocalizedText>
+        <LocalizedText>
+          <Text>KeepsParameters</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>WillDisconnect</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>RequiresPowerCycle</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>WillReboot</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>NeedsPreparation</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
         </DefaultValue>
       </Property>
     </Children>
@@ -1007,16 +1007,16 @@
       </Field>
     </Fields>
   </DataType>
-  <Object xmlns:q149="http://opcfoundation.org/UA/DI/" SymbolicName="q149:DeviceSet" Category="DI DeviceSet">
+  <Object SymbolicName="Prefix2:DeviceSet" Category="DI DeviceSet">
     <Description>Contains all instances of devices</Description>
   </Object>
-  <Object xmlns:q150="http://opcfoundation.org/UA/DI/" SymbolicName="q150:NetworkSet" Category="DI NetworkSet">
+  <Object SymbolicName="Prefix2:NetworkSet" Category="DI NetworkSet">
     <Description>Contains all instances of communication networks</Description>
   </Object>
-  <Object xmlns:q151="http://opcfoundation.org/UA/DI/" SymbolicName="q151:DeviceTopology" Category="DI DeviceTopology">
+  <Object SymbolicName="Prefix2:DeviceTopology" Category="DI DeviceTopology">
     <Description>Starting point of the configured device topology.</Description>
     <Children>
-      <Property SymbolicName="q151:OnlineAccess" xmlns:q152="http://opcfoundation.org/UA/" DataType="q152:Boolean">
+      <Property SymbolicName="Prefix2:OnlineAccess" DataType="Prefix0:Boolean">
         <Description>Hint of whether the Server is currently able to communicate to Devices in the topology.</Description>
       </Property>
     </Children>
