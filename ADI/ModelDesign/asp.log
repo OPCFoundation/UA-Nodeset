@@ -1,50 +1,54 @@
-Address Space Prototyping (asp.exe) 6.3.0.30902
-Copyright(c) 2021 Mariusz Postol
-
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext creator - starting creation the OPC UA Address Space.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - the OPC UA defined has been uploaded.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/; Imported 3909 nodes.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - has bee created successfully.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Starting model import form file Opc.Ua.Di.NodeSet2.xml
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/DI/; Imported 373 nodes.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Starting model import form file Opc.Ua.Adi.NodeSet2.xml
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/ADI/; Imported 685 nodes.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/ADI/ namespace.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Selected 41 types to be validated.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Selected 0 instances referenced by the ObjectsFolder to be validated.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Information, Error Focus: NodeClass, Identifier: P3-0502020001 Description: NodeId is not defined. References to node with NodeId: ns=1;i=9378 is omitted during the import.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.
-Trace: Information, Error Focus: XML, Identifier: P0-0001050000 Description: Selected model contains errors. Finishing Validator.ValidateExportModel - the model contains 41 nodes and 1 errors reported.
-Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information The ModelDesign XML has been saved to file Opc.Ua.Adi.Model.xml and decorated with the stylesheet XMLstylesheet
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.1.38703";;;;"2021-05-20T08:42:26.9622139Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-20T08:42:26.9632155Z";;
+"AddressSpacePrototyping";Verbose;6710129;;"Creating Address Space populated using Standard Model. It will take a while ...";;;;"2021-05-20T08:42:27.0872138Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Entering AddressSpaceContext creator - starting creation the OPC UA Address Space.";;;;"2021-05-20T08:42:27.1012178Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - the OPC UA defined has been uploaded.";;;;"2021-05-20T08:42:27.3502146Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/; Imported 3909 nodes.";;;;"2021-05-20T08:43:31.8685223Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Address Space - has bee created successfully.";;;;"2021-05-20T08:43:31.8685223Z";;
+"AddressSpacePrototyping";Verbose;1637887216;;"Importing UANodeSet document from file C:\VS.git\UAOOI\OPCF\mpostol.UA-Nodeset\DI\Opc.Ua.Di.NodeSet2.xml";;;;"2021-05-20T08:43:31.8835483Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file {model.Name}";;;;"2021-05-20T08:43:31.8845475Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/DI/; Imported 373 nodes.";;;;"2021-05-20T08:43:46.4847384Z";;
+"AddressSpacePrototyping";Verbose;1637887216;;"Importing UANodeSet document from file C:\VS.git\UAOOI\OPCF\mpostol.UA-Nodeset\ADI\Opc.Ua.Adi.NodeSet2.xml";;;;"2021-05-20T08:43:46.4847384Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file {model.Name}";;;;"2021-05-20T08:43:46.4847384Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Finished import UANodeSet for http://opcfoundation.org/UA/ADI/; Imported 685 nodes.";;;;"2021-05-20T08:44:24.3132670Z";;
+"AddressSpacePrototyping";Verbose;1637887217;;"Validating and exporting a model from namespace http://opcfoundation.org/UA/ADI/";;;;"2021-05-20T08:44:24.3132670Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/ADI/ namespace.";;;;"2021-05-20T08:44:24.3132670Z";;
+"UANodeSetValidation";Verbose;938023414;;"Selected 41 types to be validated.";;;;"2021-05-20T08:44:24.3312553Z";;
+"UANodeSetValidation";Verbose;863907859;;"Selected 0 instances referenced by the ObjectsFolder to be validated.";;;;"2021-05-20T08:44:24.3312553Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.4020770Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.4468455Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: NodeClass, Identifier: P3-0502020001 Description: NodeId is not defined. References to node with NodeId: ns=1;i=9378 is omitted during the import.";;;;"2021-05-20T08:44:24.4468455Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.4742414Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.5222363Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.7779586Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.9308331Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.9318746Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:24.9787604Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0175293Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0175293Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0175293Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0175293Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0644054Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0800299Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0800299Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0800299Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0800299Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0800299Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0800299Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0956573Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.0956573Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.1021942Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.1042188Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.1042188Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.1042188Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.1143087Z";;
+"UANodeSetValidation";Verbose;43988162;;"Trace: Verbose, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Documentation is not supported. You must fix it manually.";;;;"2021-05-20T08:44:25.1143087Z";;
+"UANodeSetValidation";Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 41 nodes and 1 errors reported.";;;;"2021-05-20T08:44:25.1143087Z";;
+"AddressSpacePrototyping";Verbose;1637887217;;"Writing model to XML file Opc.Ua.Adi.Model.xml";;;;"2021-05-20T08:44:25.1143087Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.Adi.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-20T08:44:25.2951020Z";;
