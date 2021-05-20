@@ -1,4 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
 
 <ModelDesign
 		xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
@@ -9,8 +37,8 @@
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 		TargetNamespace="http://opcfoundation.org/UA/Robotics/"
 		TargetXmlNamespace="http://opcfoundation.org/UA/Robotics/"
-		TargetVersion="1.01.0"
-		TargetPublicationDate="2019-09-06T00:00:00Z"
+		TargetVersion="1.01.2"
+		TargetPublicationDate="2021-05-20T00:00:00Z"
 		xmlns="http://opcfoundation.org/UA/ModelDesign.xsd"
 		xsi:noNamespaceSchemaLocation=".\UA Model Design.xsd"> 
 
@@ -30,12 +58,12 @@
 			</Property>
 			<Property SymbolicName="OpcUa:NamespaceVersion" DataType="OpcUa:String">
 				<DefaultValue>
-					<uax:String>0.93</uax:String>
+					<uax:String>1.01</uax:String>
 				</DefaultValue>
 			</Property>
 			<Property SymbolicName="OpcUa:NamespacePublicationDate" DataType="OpcUa:DateTime">
 				<DefaultValue>
-					<uax:DateTime>2019-01-23T00:00:00Z</uax:DateTime>
+					<uax:DateTime>2020-05-20T00:00:00Z</uax:DateTime>
 				</DefaultValue>
 			</Property>
 			<Property SymbolicName="OpcUa:IsNamespaceSubset" DataType="OpcUa:Boolean">
@@ -50,18 +78,12 @@
 					</uax:ListOfInt32>
 				</DefaultValue>
 			</Property>
-			<Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array">
-				<DefaultValue>
-					<uax:ListOfString>
-						<uax:String>1:65535</uax:String>
-					</uax:ListOfString>
-				</DefaultValue>
-			</Property>
-			<Property SymbolicName="OpcUa:StaticStringNodeIdPattern" DataType="OpcUa:String">
-				<DefaultValue>
-					<uax:String/>
-				</DefaultValue>
-			</Property>
+      <Property SymbolicName="OpcUa:StaticNumericNodeIdRange" DataType="OpcUa:NumericRange" ValueRank="Array"/>
+      <Property SymbolicName="OpcUa:StaticStringNodeIdPattern" DataType="OpcUa:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
 			<Property SymbolicName="OpcUa:DefaultRolePermissions" ModellingRule="Mandatory" />
 			<Property SymbolicName="OpcUa:DefaultUserRolePermissions" ModellingRule="Mandatory" />
 			<Property SymbolicName="OpcUa:DefaultAccessRestrictions" ModellingRule="Mandatory" />
@@ -239,13 +261,6 @@
 			<Property SymbolicName="DI:Model" DataType="OpcUa:LocalizedText" ValueRank="Scalar" ModellingRule="Mandatory" />
 			<Property SymbolicName="DI:ProductCode" DataType="OpcUa:String" ValueRank="Scalar" ModellingRule="Mandatory" />
 
-			<Object SymbolicName="ROB:GearIdentifier" TypeDefinition="ROB:GearType" ModellingRule="OptionalPlaceholder">
-				<BrowseName>&lt;GearIdentifier&gt;</BrowseName>
-				<Description>IsConnectedTo is a reference to provide the relationship between a motor and a gear of a powertrain.</Description>
-				<ReferenceType>ROB:IsConnectedTo</ReferenceType>
-			</Object>
-
-
 			<Object SymbolicName="DI:ParameterSet" ModellingRule="Mandatory">
 				<Children>
 					<Variable SymbolicName="ROB:BrakeReleased" TypeDefinition="OpcUa:BaseDataVariableType" DataType="OpcUa:Boolean" ModellingRule="Optional">
@@ -285,11 +300,6 @@
 				<Description>Pitch describes the distance covered in millimeters (mm) for linear motion per one revolution of the output side of the driving unit. Pitch is used in combination with GearRatio to describe the overall transmission from input to output of the gear.</Description>
 			</Variable>
 
-			<Object SymbolicName="ROB:MotorIdentifier" TypeDefinition="ROB:MotorType" ModellingRule="OptionalPlaceholder">
-				<BrowseName>&lt;MotorIdentifier&gt;</BrowseName>
-				<Description>IsConnectedTo is a reference to provide the relationship between a motor and a gear of a powertrain.</Description>
-				<ReferenceType>ROB:IsConnectedTo</ReferenceType>
-			</Object>		
 		</Children>
 	</ObjectType>
 
