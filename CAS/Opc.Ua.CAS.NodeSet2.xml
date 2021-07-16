@@ -36,7 +36,7 @@
     <Uri>http://opcfoundation.org/UA/IA/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/CAS/" Version="1.0.0" PublicationDate="2021-06-11T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/CAS/" Version="1.00.1" PublicationDate="2021-07-13T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.7" PublicationDate="2020-07-15T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.03.0" PublicationDate="2021-03-09T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/IA/" Version="1.00.0" PublicationDate="2020-08-31T00:00:00Z" />
@@ -105,7 +105,7 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="qDzoBMYIkp7vZGLAIGDBBQ==" Version="1.6.5" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="SHz3oIMWQt0Z5cov7W4tpA==" Version="1.6.5" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3022" BrowseName="1:AirnetHealthStateEnum">
@@ -4258,7 +4258,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1035</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1038</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
     </References>
   </UAObject>
   <UAObject NodeId="ns=1;i=5013" BrowseName="2:Components" ParentNodeId="ns=1;i=1035">
@@ -4276,7 +4276,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent">ns=1;i=5205</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5207</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5208</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5209</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5210</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5211</Reference>
@@ -5752,7 +5752,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5142</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7834" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5142" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7834" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5142" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -6091,7 +6091,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5143</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9621" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5143" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9621" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5143" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -6430,7 +6430,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5146</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9995" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5146" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9995" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5146" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -9241,7 +9241,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10665</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=8524" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=5703" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8524" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=5703" DataType="String">
     <DisplayName>ResetCondition</DisplayName>
     <Description Locale="en">The reason and context for the reset of the statistics, which is done without a trigger from an OPC UA Client, like calling the ResetStatistics Method. ResetCondition is a vendor-specific, human readable string. ResetCondition is non-localized and might contain an expression that can be parsed by certain clients. Examples are: “AFTER 4 HOURS”, “AFTER 1000 ITEMS”, “OPERATOR”. “OPERATOR” means, that an operator resets the statistics on a local HMI.</Description>
     <References>
@@ -9369,7 +9369,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10688</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=8540" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5703" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8540" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5703" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -9801,7 +9801,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5060</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=6179" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5060" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6179" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5060" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -10140,7 +10140,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5108</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=6674" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5108" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6674" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5108" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -10479,7 +10479,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5066</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9600" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5066" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9600" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5066" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -10818,7 +10818,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5067</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9974" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5067" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9974" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5067" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -11157,7 +11157,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1011</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=6113" BrowseName="4:StartTime" ParentNodeId="ns=1;i=1011" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6113" BrowseName="4:StartTime" ParentNodeId="ns=1;i=1011" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -11935,7 +11935,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5179</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7716" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5179" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7716" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5179" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -12835,7 +12835,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5202</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=6630" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5202" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6630" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5202" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -13753,7 +13753,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5217</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7281" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5217" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7281" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5217" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -14653,7 +14653,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5251</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9316" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5251" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9316" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5251" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -15617,7 +15617,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=6541" BrowseName="4:StartTime" ParentNodeId="ns=1;i=1012" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6541" BrowseName="4:StartTime" ParentNodeId="ns=1;i=1012" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -18313,7 +18313,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=7890" BrowseName="1:Volume" ParentNodeId="ns=1;i=1023" DataType="Double" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7890" BrowseName="1:Volume" ParentNodeId="ns=1;i=1023" DataType="Double">
     <DisplayName>Volume</DisplayName>
     <Description>Total volume of the receiver.</Description>
     <References>
@@ -25161,7 +25161,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6005</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6231" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=1018" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6231" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=1018" DataType="String">
     <DisplayName>ResetCondition</DisplayName>
     <Description Locale="en">The reason and context for the reset of the statistics, which is done without a trigger from an OPC UA Client, like calling the ResetStatistics Method. ResetCondition is a vendor-specific, human readable string. ResetCondition is non-localized and might contain an expression that can be parsed by certain clients. Examples are: “AFTER 4 HOURS”, “AFTER 1000 ITEMS”, “OPERATOR”. “OPERATOR” means, that an operator resets the statistics on a local HMI.</Description>
     <References>
@@ -25289,7 +25289,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6230" BrowseName="4:StartTime" ParentNodeId="ns=1;i=1018" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6230" BrowseName="4:StartTime" ParentNodeId="ns=1;i=1018" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -26208,7 +26208,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5134</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8134" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5134" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8134" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5134" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -26547,7 +26547,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5139</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8141" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5139" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8141" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5139" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -26886,7 +26886,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5147</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8148" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5147" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8148" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5147" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -28299,7 +28299,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5151</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8474" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5151" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8474" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5151" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -29217,7 +29217,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5156</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8620" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5156" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8620" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5156" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -30117,7 +30117,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5157</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8650" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5157" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8650" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5157" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -30717,6 +30717,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7976</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=7971" BrowseName="Definition" ParentNodeId="ns=1;i=7967" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -30780,6 +30783,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7988</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=7977" BrowseName="Definition" ParentNodeId="ns=1;i=7968" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -30843,6 +30849,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5051</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=8160</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=7989" BrowseName="Definition" ParentNodeId="ns=1;i=7969" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -30906,6 +30915,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5051</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=8308</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=8196" BrowseName="Definition" ParentNodeId="ns=1;i=7970" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -31445,7 +31457,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5109</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7820" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5109" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7820" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5109" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -31784,7 +31796,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5052</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9607" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5052" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9607" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5052" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -32123,7 +32135,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5110</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9981" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5110" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9981" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5110" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -33536,7 +33548,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5034</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7011" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5034" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7011" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5034" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -34454,7 +34466,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5037</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8804" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5037" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8804" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5037" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -35354,7 +35366,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5040</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9328" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5040" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9328" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5040" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -35579,7 +35591,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent">ns=1;i=5130</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=12533" BrowseName="1:ActiveAirnet" ParentNodeId="ns=1;i=1021" DataType="NodeId" AccessLevel="7" Historizing="true">
+  <UAVariable NodeId="ns=1;i=12533" BrowseName="1:ActiveAirnet" ParentNodeId="ns=1;i=1021" DataType="NodeId" AccessLevel="3">
     <DisplayName>ActiveAirnet</DisplayName>
     <Description Locale="en">Indicates which airnet is currently using this component.</Description>
     <References>
@@ -35615,6 +35627,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=9307</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=9170" BrowseName="Definition" ParentNodeId="ns=1;i=8240" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -35678,6 +35693,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7773</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=7735" BrowseName="Definition" ParentNodeId="ns=1;i=7680" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -35741,6 +35759,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5140</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7794</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=7774" BrowseName="Definition" ParentNodeId="ns=1;i=7682" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -35804,6 +35825,9 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5140</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=7966</Reference>
     </References>
+    <Value>
+      <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=7887" BrowseName="Definition" ParentNodeId="ns=1;i=7734" DataType="String">
     <DisplayName>Definition</DisplayName>
@@ -36578,7 +36602,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5116</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7179" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5116" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7179" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5116" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -37496,7 +37520,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5123</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8946" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5123" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8946" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5123" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -38396,7 +38420,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5124</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9357" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5124" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9357" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5124" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -38920,7 +38944,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5155</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7841" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5155" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7841" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5155" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -39259,7 +39283,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5178</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9628" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5178" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9628" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5178" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -39598,7 +39622,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5180</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=10002" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5180" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10002" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5180" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -45739,7 +45763,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5165</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7168" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5165" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7168" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5165" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -46657,7 +46681,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5166</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=8846" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5166" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8846" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5166" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -47557,7 +47581,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5169</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9345" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5169" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9345" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5169" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -47889,7 +47913,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6396</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6054" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=5130" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6054" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=5130" DataType="String">
     <DisplayName>ResetCondition</DisplayName>
     <Description Locale="en">The reason and context for the reset of the statistics, which is done without a trigger from an OPC UA Client, like calling the ResetStatistics Method. ResetCondition is a vendor-specific, human readable string. ResetCondition is non-localized and might contain an expression that can be parsed by certain clients. Examples are: “AFTER 4 HOURS”, “AFTER 1000 ITEMS”, “OPERATOR”. “OPERATOR” means, that an operator resets the statistics on a local HMI.</Description>
     <References>
@@ -48017,7 +48041,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7579</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6060" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5130" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6060" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5130" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -49111,7 +49135,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=10637" BrowseName="1:Volume" ParentNodeId="ns=1;i=5062" DataType="Double" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=10637" BrowseName="1:Volume" ParentNodeId="ns=1;i=5062" DataType="Double">
     <DisplayName>Volume</DisplayName>
     <Description>Total volume of the receiver.</Description>
     <References>
@@ -51038,7 +51062,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5127</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=7827" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5127" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=7827" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5127" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -51377,7 +51401,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5132</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9614" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5132" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9614" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5132" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -51716,7 +51740,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5133</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=9988" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5133" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9988" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5133" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -54526,7 +54550,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6259</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=8518" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=5018" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8518" BrowseName="4:ResetCondition" ParentNodeId="ns=1;i=5018" DataType="String">
     <DisplayName>ResetCondition</DisplayName>
     <Description Locale="en">The reason and context for the reset of the statistics, which is done without a trigger from an OPC UA Client, like calling the ResetStatistics Method. ResetCondition is a vendor-specific, human readable string. ResetCondition is non-localized and might contain an expression that can be parsed by certain clients. Examples are: “AFTER 4 HOURS”, “AFTER 1000 ITEMS”, “OPERATOR”. “OPERATOR” means, that an operator resets the statistics on a local HMI.</Description>
     <References>
@@ -54654,7 +54678,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=10096</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=8521" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5018" DataType="DateTime" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8521" BrowseName="4:StartTime" ParentNodeId="ns=1;i=5018" DataType="DateTime">
     <DisplayName>StartTime</DisplayName>
     <Description Locale="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
     <References>
@@ -54704,7 +54728,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2021-06-11T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2021-07-13T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6981" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5150" DataType="String">
@@ -54724,7 +54748,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00.1</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6983" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5150" DataType="IdType" ValueRank="1" ArrayDimensions="0">
@@ -54762,13 +54786,6 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       </uax:String>
     </Value>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5033" BrowseName="1:Maintenance" ParentNodeId="ns=1;i=1021">
-    <DisplayName>Maintenance</DisplayName>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1018</Reference>
-    </References>
-  </UAObject>
   <UAObject NodeId="ns=1;i=5042" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -54900,7 +54917,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=12503" BrowseName="1:ActiveAirnet" ParentNodeId="ns=1;i=5414" DataType="NodeId" AccessLevel="7" Historizing="true">
+  <UAVariable NodeId="ns=1;i=12503" BrowseName="1:ActiveAirnet" ParentNodeId="ns=1;i=5414" DataType="NodeId" AccessLevel="3">
     <DisplayName>ActiveAirnet</DisplayName>
     <Description Locale="en">Indicates which airnet is currently using this component.</Description>
     <References>
