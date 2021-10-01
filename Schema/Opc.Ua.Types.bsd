@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -124,7 +124,7 @@
     <opc:Field Name="AdditionalInfoSpecified" TypeName="opc:Bit" />
     <opc:Field Name="InnerStatusCodeSpecified" TypeName="opc:Bit" />
     <opc:Field Name="InnerDiagnosticInfoSpecified" TypeName="opc:Bit" />
-    <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="2" />
+    <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="1" />
     <opc:Field Name="SymbolicId" TypeName="opc:Int32" SwitchField="SymbolicIdSpecified" />
     <opc:Field Name="NamespaceURI" TypeName="opc:Int32" SwitchField="NamespaceURISpecified" />
     <opc:Field Name="Locale" TypeName="opc:Int32" SwitchField="LocaleSpecified" />
@@ -218,6 +218,9 @@
     <opc:EnumeratedValue Name="Constraint" Value="3" />
   </opc:EnumeratedType>
     
+
+  <opc:EnumeratedType Name="Enumeration" LengthInBits="32">
+  </opc:EnumeratedType>
 
   <opc:OpaqueType Name="ImageBMP">
   </opc:OpaqueType>
@@ -2163,7 +2166,7 @@
     <opc:Field Name="DisabledMonitoredItemCount" TypeName="opc:UInt32" />
     <opc:Field Name="MonitoringQueueOverflowCount" TypeName="opc:UInt32" />
     <opc:Field Name="NextSequenceNumber" TypeName="opc:UInt32" />
-    <opc:Field Name="EventQueueOverFlowCount" TypeName="opc:UInt32" />
+    <opc:Field Name="EventQueueOverflowCount" TypeName="opc:UInt32" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="ModelChangeStructureVerbMask" LengthInBits="32">

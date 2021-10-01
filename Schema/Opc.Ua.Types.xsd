@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -3445,7 +3445,7 @@
       <xs:element name="DisabledMonitoredItemCount" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="MonitoringQueueOverflowCount" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="NextSequenceNumber" type="xs:unsignedInt" minOccurs="0" />
-      <xs:element name="EventQueueOverFlowCount" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="EventQueueOverflowCount" type="xs:unsignedInt" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SubscriptionDiagnosticsDataType" type="tns:SubscriptionDiagnosticsDataType" />

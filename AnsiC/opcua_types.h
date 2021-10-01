@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -6077,7 +6077,7 @@ typedef struct _OpcUa_SubscriptionDiagnosticsDataType
     OpcUa_UInt32  DisabledMonitoredItemCount;
     OpcUa_UInt32  MonitoringQueueOverflowCount;
     OpcUa_UInt32  NextSequenceNumber;
-    OpcUa_UInt32  EventQueueOverFlowCount;
+    OpcUa_UInt32  EventQueueOverflowCount;
 }
 OpcUa_SubscriptionDiagnosticsDataType;
 

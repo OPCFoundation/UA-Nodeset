@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-07-23T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.03.7" PublicationDate="2019-07-23T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.03.8" PublicationDate="2021-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -68,6 +68,17 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
   <UADataType NodeId="i=18" BrowseName="ExpandedNodeId">
     <DisplayName>ExpandedNodeId</DisplayName>
@@ -116,29 +127,20 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=307</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Server</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Client</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>ClientAndServer</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>DiscoveryServer</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -277,29 +279,20 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=302</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Invalid</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>None</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Sign</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>SignAndEncrypt</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -322,29 +315,20 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=303</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Anonymous</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>UserName</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Certificate</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>IssuedToken</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -441,6 +425,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="DiscoveryConfiguration" />
   </UADataType>
   <UADataType NodeId="i=12891" BrowseName="MdnsDiscoveryConfiguration">
     <DisplayName>MdnsDiscoveryConfiguration</DisplayName>
@@ -489,19 +474,14 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=315</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Issue</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Renew</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -638,6 +618,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
+    <Definition Name="AnonymousIdentityToken" />
   </UADataType>
   <UADataType NodeId="i=322" BrowseName="UserNameIdentityToken">
     <DisplayName>UserNameIdentityToken</DisplayName>
@@ -779,7 +760,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=348</Reference>
     </References>
     <Value>
@@ -792,8 +772,6 @@
             <EnumValueType>
               <Value>0</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>None</Text>
               </DisplayName>
             </EnumValueType>
@@ -807,8 +785,6 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>AccessLevel</Text>
               </DisplayName>
             </EnumValueType>
@@ -822,8 +798,6 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ArrayDimensions</Text>
               </DisplayName>
             </EnumValueType>
@@ -837,8 +811,6 @@
             <EnumValueType>
               <Value>4</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>BrowseName</Text>
               </DisplayName>
             </EnumValueType>
@@ -852,8 +824,6 @@
             <EnumValueType>
               <Value>8</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ContainsNoLoops</Text>
               </DisplayName>
             </EnumValueType>
@@ -867,8 +837,6 @@
             <EnumValueType>
               <Value>16</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>DataType</Text>
               </DisplayName>
             </EnumValueType>
@@ -882,8 +850,6 @@
             <EnumValueType>
               <Value>32</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Description</Text>
               </DisplayName>
             </EnumValueType>
@@ -897,8 +863,6 @@
             <EnumValueType>
               <Value>64</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>DisplayName</Text>
               </DisplayName>
             </EnumValueType>
@@ -912,8 +876,6 @@
             <EnumValueType>
               <Value>128</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>EventNotifier</Text>
               </DisplayName>
             </EnumValueType>
@@ -927,8 +889,6 @@
             <EnumValueType>
               <Value>256</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Executable</Text>
               </DisplayName>
             </EnumValueType>
@@ -942,8 +902,6 @@
             <EnumValueType>
               <Value>512</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Historizing</Text>
               </DisplayName>
             </EnumValueType>
@@ -957,8 +915,6 @@
             <EnumValueType>
               <Value>1024</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>InverseName</Text>
               </DisplayName>
             </EnumValueType>
@@ -972,8 +928,6 @@
             <EnumValueType>
               <Value>2048</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>IsAbstract</Text>
               </DisplayName>
             </EnumValueType>
@@ -987,8 +941,6 @@
             <EnumValueType>
               <Value>4096</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>MinimumSamplingInterval</Text>
               </DisplayName>
             </EnumValueType>
@@ -1002,8 +954,6 @@
             <EnumValueType>
               <Value>8192</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>NodeClass</Text>
               </DisplayName>
             </EnumValueType>
@@ -1017,8 +967,6 @@
             <EnumValueType>
               <Value>16384</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>NodeId</Text>
               </DisplayName>
             </EnumValueType>
@@ -1032,8 +980,6 @@
             <EnumValueType>
               <Value>32768</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Symmetric</Text>
               </DisplayName>
             </EnumValueType>
@@ -1047,8 +993,6 @@
             <EnumValueType>
               <Value>65536</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>UserAccessLevel</Text>
               </DisplayName>
             </EnumValueType>
@@ -1062,8 +1006,6 @@
             <EnumValueType>
               <Value>131072</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>UserExecutable</Text>
               </DisplayName>
             </EnumValueType>
@@ -1077,8 +1019,6 @@
             <EnumValueType>
               <Value>262144</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>UserWriteMask</Text>
               </DisplayName>
             </EnumValueType>
@@ -1092,8 +1032,6 @@
             <EnumValueType>
               <Value>524288</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ValueRank</Text>
               </DisplayName>
             </EnumValueType>
@@ -1107,8 +1045,6 @@
             <EnumValueType>
               <Value>1048576</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>WriteMask</Text>
               </DisplayName>
             </EnumValueType>
@@ -1122,8 +1058,6 @@
             <EnumValueType>
               <Value>2097152</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Value</Text>
               </DisplayName>
             </EnumValueType>
@@ -1137,8 +1071,6 @@
             <EnumValueType>
               <Value>4194303</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>All</Text>
               </DisplayName>
             </EnumValueType>
@@ -1152,8 +1084,6 @@
             <EnumValueType>
               <Value>1335396</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>BaseNode</Text>
               </DisplayName>
             </EnumValueType>
@@ -1167,8 +1097,6 @@
             <EnumValueType>
               <Value>1335524</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Object</Text>
               </DisplayName>
             </EnumValueType>
@@ -1182,8 +1110,6 @@
             <EnumValueType>
               <Value>1337444</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ObjectTypeOrDataType</Text>
               </DisplayName>
             </EnumValueType>
@@ -1197,8 +1123,6 @@
             <EnumValueType>
               <Value>4026999</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Variable</Text>
               </DisplayName>
             </EnumValueType>
@@ -1212,8 +1136,6 @@
             <EnumValueType>
               <Value>3958902</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>VariableType</Text>
               </DisplayName>
             </EnumValueType>
@@ -1227,8 +1149,6 @@
             <EnumValueType>
               <Value>1466724</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Method</Text>
               </DisplayName>
             </EnumValueType>
@@ -1242,8 +1162,6 @@
             <EnumValueType>
               <Value>1371236</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ReferenceType</Text>
               </DisplayName>
             </EnumValueType>
@@ -1257,8 +1175,6 @@
             <EnumValueType>
               <Value>1335532</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>View</Text>
               </DisplayName>
             </EnumValueType>
@@ -1549,7 +1465,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=347</Reference>
     </References>
     <Value>
@@ -1562,8 +1477,6 @@
             <EnumValueType>
               <Value>0</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>None</Text>
               </DisplayName>
             </EnumValueType>
@@ -1577,8 +1490,6 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>AccessLevel</Text>
               </DisplayName>
             </EnumValueType>
@@ -1592,8 +1503,6 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ArrayDimensions</Text>
               </DisplayName>
             </EnumValueType>
@@ -1607,8 +1516,6 @@
             <EnumValueType>
               <Value>4</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>BrowseName</Text>
               </DisplayName>
             </EnumValueType>
@@ -1622,8 +1529,6 @@
             <EnumValueType>
               <Value>8</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ContainsNoLoops</Text>
               </DisplayName>
             </EnumValueType>
@@ -1637,8 +1542,6 @@
             <EnumValueType>
               <Value>16</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>DataType</Text>
               </DisplayName>
             </EnumValueType>
@@ -1652,8 +1555,6 @@
             <EnumValueType>
               <Value>32</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Description</Text>
               </DisplayName>
             </EnumValueType>
@@ -1667,8 +1568,6 @@
             <EnumValueType>
               <Value>64</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>DisplayName</Text>
               </DisplayName>
             </EnumValueType>
@@ -1682,8 +1581,6 @@
             <EnumValueType>
               <Value>128</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>EventNotifier</Text>
               </DisplayName>
             </EnumValueType>
@@ -1697,8 +1594,6 @@
             <EnumValueType>
               <Value>256</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Executable</Text>
               </DisplayName>
             </EnumValueType>
@@ -1712,8 +1607,6 @@
             <EnumValueType>
               <Value>512</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Historizing</Text>
               </DisplayName>
             </EnumValueType>
@@ -1727,8 +1620,6 @@
             <EnumValueType>
               <Value>1024</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>InverseName</Text>
               </DisplayName>
             </EnumValueType>
@@ -1742,8 +1633,6 @@
             <EnumValueType>
               <Value>2048</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>IsAbstract</Text>
               </DisplayName>
             </EnumValueType>
@@ -1757,8 +1646,6 @@
             <EnumValueType>
               <Value>4096</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>MinimumSamplingInterval</Text>
               </DisplayName>
             </EnumValueType>
@@ -1772,8 +1659,6 @@
             <EnumValueType>
               <Value>8192</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>NodeClass</Text>
               </DisplayName>
             </EnumValueType>
@@ -1787,8 +1672,6 @@
             <EnumValueType>
               <Value>16384</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>NodeId</Text>
               </DisplayName>
             </EnumValueType>
@@ -1802,8 +1685,6 @@
             <EnumValueType>
               <Value>32768</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Symmetric</Text>
               </DisplayName>
             </EnumValueType>
@@ -1817,8 +1698,6 @@
             <EnumValueType>
               <Value>65536</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>UserAccessLevel</Text>
               </DisplayName>
             </EnumValueType>
@@ -1832,8 +1711,6 @@
             <EnumValueType>
               <Value>131072</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>UserExecutable</Text>
               </DisplayName>
             </EnumValueType>
@@ -1847,8 +1724,6 @@
             <EnumValueType>
               <Value>262144</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>UserWriteMask</Text>
               </DisplayName>
             </EnumValueType>
@@ -1862,8 +1737,6 @@
             <EnumValueType>
               <Value>524288</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ValueRank</Text>
               </DisplayName>
             </EnumValueType>
@@ -1877,8 +1750,6 @@
             <EnumValueType>
               <Value>1048576</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>WriteMask</Text>
               </DisplayName>
             </EnumValueType>
@@ -1892,8 +1763,6 @@
             <EnumValueType>
               <Value>2097152</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ValueForVariableType</Text>
               </DisplayName>
             </EnumValueType>
@@ -1919,29 +1788,20 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=510</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Forward</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Inverse</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Both</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Invalid</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -1995,7 +1855,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=517</Reference>
     </References>
     <Value>
@@ -2008,8 +1867,6 @@
             <EnumValueType>
               <Value>0</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>None</Text>
               </DisplayName>
             </EnumValueType>
@@ -2023,8 +1880,6 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ReferenceTypeId</Text>
               </DisplayName>
             </EnumValueType>
@@ -2038,8 +1893,6 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>IsForward</Text>
               </DisplayName>
             </EnumValueType>
@@ -2053,8 +1906,6 @@
             <EnumValueType>
               <Value>4</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>NodeClass</Text>
               </DisplayName>
             </EnumValueType>
@@ -2068,8 +1919,6 @@
             <EnumValueType>
               <Value>8</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>BrowseName</Text>
               </DisplayName>
             </EnumValueType>
@@ -2083,8 +1932,6 @@
             <EnumValueType>
               <Value>16</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>DisplayName</Text>
               </DisplayName>
             </EnumValueType>
@@ -2098,8 +1945,6 @@
             <EnumValueType>
               <Value>32</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>TypeDefinition</Text>
               </DisplayName>
             </EnumValueType>
@@ -2113,8 +1958,6 @@
             <EnumValueType>
               <Value>63</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>All</Text>
               </DisplayName>
             </EnumValueType>
@@ -2128,8 +1971,6 @@
             <EnumValueType>
               <Value>3</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ReferenceTypeInfo</Text>
               </DisplayName>
             </EnumValueType>
@@ -2143,8 +1984,6 @@
             <EnumValueType>
               <Value>60</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>TargetInfo</Text>
               </DisplayName>
             </EnumValueType>
@@ -2435,99 +2274,62 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=576</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Equals</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>IsNull</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>GreaterThan</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>LessThan</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>GreaterThanOrEqual</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>LessThanOrEqual</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Like</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Not</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Between</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>InList</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>And</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Or</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Cast</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>InView</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>OfType</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>RelatedTo</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>BitwiseAnd</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>BitwiseOr</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -2580,6 +2382,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="FilterOperand" />
   </UADataType>
   <UADataType NodeId="i=592" BrowseName="ElementOperand">
     <DisplayName>ElementOperand</DisplayName>
@@ -2724,34 +2527,23 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=625</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Source</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Server</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Both</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Neither</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Invalid</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -2820,6 +2612,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="HistoryReadDetails" />
   </UADataType>
   <UADataType NodeId="i=644" BrowseName="ReadEventDetails">
     <DisplayName>ReadEventDetails</DisplayName>
@@ -2990,7 +2783,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11234</Reference>
     </References>
     <Value>
@@ -3003,8 +2795,6 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Insert</Text>
               </DisplayName>
             </EnumValueType>
@@ -3018,8 +2808,6 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Replace</Text>
               </DisplayName>
             </EnumValueType>
@@ -3033,8 +2821,6 @@
             <EnumValueType>
               <Value>3</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Update</Text>
               </DisplayName>
             </EnumValueType>
@@ -3048,8 +2834,6 @@
             <EnumValueType>
               <Value>4</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Delete</Text>
               </DisplayName>
             </EnumValueType>
@@ -3075,7 +2859,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11293</Reference>
     </References>
     <Value>
@@ -3088,8 +2871,6 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Insert</Text>
               </DisplayName>
             </EnumValueType>
@@ -3103,8 +2884,6 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Replace</Text>
               </DisplayName>
             </EnumValueType>
@@ -3118,8 +2897,6 @@
             <EnumValueType>
               <Value>3</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Update</Text>
               </DisplayName>
             </EnumValueType>
@@ -3133,8 +2910,6 @@
             <EnumValueType>
               <Value>4</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Remove</Text>
               </DisplayName>
             </EnumValueType>
@@ -3295,24 +3070,17 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=716</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Disabled</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Sampling</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Reporting</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -3334,24 +3102,17 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=717</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Status</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>StatusValue</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>StatusValueTimestamp</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -3373,24 +3134,17 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=718</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>None</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Absolute</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Percent</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -3401,6 +3155,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="MonitoringFilter" />
   </UADataType>
   <UADataType NodeId="i=722" BrowseName="DataChangeFilter">
     <DisplayName>DataChangeFilter</DisplayName>
@@ -3453,6 +3208,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="MonitoringFilterResult" />
   </UADataType>
   <UADataType NodeId="i=734" BrowseName="EventFilterResult">
     <DisplayName>EventFilterResult</DisplayName>
@@ -3745,6 +3501,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="NotificationData" />
   </UADataType>
   <UADataType NodeId="i=809" BrowseName="DataChangeNotification">
     <DisplayName>DataChangeNotification</DisplayName>

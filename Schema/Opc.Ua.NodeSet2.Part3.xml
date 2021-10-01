@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2019-07-23T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.03.7" PublicationDate="2019-07-23T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.03.8" PublicationDate="2021-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -68,6 +68,17 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
   <UAObject NodeId="i=3062" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
@@ -108,6 +119,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=24</Reference>
     </References>
+    <Definition Name="Enumeration" />
   </UADataType>
   <UADataType NodeId="i=1" BrowseName="Boolean">
     <DisplayName>Boolean</DisplayName>
@@ -386,7 +398,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=120</Reference>
     </References>
     <Value>
@@ -399,13 +410,9 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Mandatory</Text>
               </DisplayName>
               <Description>
-                <Locale>
-                </Locale>
                 <Text>The BrowseName must appear in all instances of the type.</Text>
               </Description>
             </EnumValueType>
@@ -419,13 +426,9 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Optional</Text>
               </DisplayName>
               <Description>
-                <Locale>
-                </Locale>
                 <Text>The BrowseName may appear in an instance of the type.</Text>
               </Description>
             </EnumValueType>
@@ -439,13 +442,9 @@
             <EnumValueType>
               <Value>3</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Constraint</Text>
               </DisplayName>
               <Description>
-                <Locale>
-                </Locale>
                 <Text>The modelling rule defines a constraint and the BrowseName is not used in an instance of the type.</Text>
               </Description>
             </EnumValueType>
@@ -585,29 +584,20 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=256</Reference>
     </References>
     <Value>
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Numeric</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>String</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Guid</Text>
         </LocalizedText>
         <LocalizedText>
-          <Locale>
-          </Locale>
           <Text>Opaque</Text>
         </LocalizedText>
       </ListOfLocalizedText>
@@ -635,7 +625,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=257</Reference>
     </References>
     <Value>
@@ -648,8 +637,6 @@
             <EnumValueType>
               <Value>0</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Unspecified</Text>
               </DisplayName>
             </EnumValueType>
@@ -663,8 +650,6 @@
             <EnumValueType>
               <Value>1</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Object</Text>
               </DisplayName>
             </EnumValueType>
@@ -678,8 +663,6 @@
             <EnumValueType>
               <Value>2</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Variable</Text>
               </DisplayName>
             </EnumValueType>
@@ -693,8 +676,6 @@
             <EnumValueType>
               <Value>4</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>Method</Text>
               </DisplayName>
             </EnumValueType>
@@ -708,8 +689,6 @@
             <EnumValueType>
               <Value>8</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ObjectType</Text>
               </DisplayName>
             </EnumValueType>
@@ -723,8 +702,6 @@
             <EnumValueType>
               <Value>16</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>VariableType</Text>
               </DisplayName>
             </EnumValueType>
@@ -738,8 +715,6 @@
             <EnumValueType>
               <Value>32</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>ReferenceType</Text>
               </DisplayName>
             </EnumValueType>
@@ -753,8 +728,6 @@
             <EnumValueType>
               <Value>64</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>DataType</Text>
               </DisplayName>
             </EnumValueType>
@@ -768,8 +741,6 @@
             <EnumValueType>
               <Value>128</Value>
               <DisplayName>
-                <Locale>
-                </Locale>
                 <Text>View</Text>
               </DisplayName>
             </EnumValueType>
@@ -799,12 +770,14 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=258</Reference>
     </References>
+    <Definition Name="InstanceNode" />
   </UADataType>
   <UADataType NodeId="i=11880" BrowseName="TypeNode">
     <DisplayName>TypeNode</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=258</Reference>
     </References>
+    <Definition Name="TypeNode" />
   </UADataType>
   <UADataType NodeId="i=261" BrowseName="ObjectNode">
     <DisplayName>ObjectNode</DisplayName>
@@ -928,7 +901,7 @@
       <Field Name="Description" DataType="i=21" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=12755" BrowseName="OptionSet">
+  <UADataType NodeId="i=12755" BrowseName="OptionSet" IsAbstract="true">
     <DisplayName>OptionSet</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
@@ -943,6 +916,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="Union" />
   </UADataType>
   <UADataType NodeId="i=12877" BrowseName="NormalizedString">
     <DisplayName>NormalizedString</DisplayName>

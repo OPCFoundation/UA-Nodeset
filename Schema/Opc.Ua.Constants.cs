@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -8725,9 +8725,9 @@ namespace Opc.Ua
         public const uint SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_NextSequenceNumber = 12814;
 
         /// <summary>
-        /// The identifier for the SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverFlowCount Variable.
+        /// The identifier for the SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverflowCount Variable.
         /// </summary>
-        public const uint SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverFlowCount = 12815;
+        public const uint SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverflowCount = 12815;
 
         /// <summary>
         /// The identifier for the SubscriptionDiagnosticsType_SessionId Variable.
@@ -8880,9 +8880,9 @@ namespace Opc.Ua
         public const uint SubscriptionDiagnosticsType_NextSequenceNumber = 8897;
 
         /// <summary>
-        /// The identifier for the SubscriptionDiagnosticsType_EventQueueOverFlowCount Variable.
+        /// The identifier for the SubscriptionDiagnosticsType_EventQueueOverflowCount Variable.
         /// </summary>
-        public const uint SubscriptionDiagnosticsType_EventQueueOverFlowCount = 8902;
+        public const uint SubscriptionDiagnosticsType_EventQueueOverflowCount = 8902;
 
         /// <summary>
         /// The identifier for the SessionDiagnosticsArrayType_SessionDiagnostics Variable.
@@ -9815,26 +9815,6 @@ namespace Opc.Ua
         public const uint Server_RequestServerStateChange_InputArguments = 12887;
 
         /// <summary>
-        /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
-        /// </summary>
-        public const uint Server_ServerRedundancy_CurrentServerId = 11312;
-
-        /// <summary>
-        /// The identifier for the Server_ServerRedundancy_RedundantServerArray Variable.
-        /// </summary>
-        public const uint Server_ServerRedundancy_RedundantServerArray = 11313;
-
-        /// <summary>
-        /// The identifier for the Server_ServerRedundancy_ServerUriArray Variable.
-        /// </summary>
-        public const uint Server_ServerRedundancy_ServerUriArray = 11314;
-
-        /// <summary>
-        /// The identifier for the Server_ServerRedundancy_ServerNetworkGroups Variable.
-        /// </summary>
-        public const uint Server_ServerRedundancy_ServerNetworkGroups = 14415;
-
-        /// <summary>
         /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceUri Variable.
         /// </summary>
         public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceUri = 15183;
@@ -9933,6 +9913,26 @@ namespace Opc.Ua
         /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments Variable.
         /// </summary>
         public const uint Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments = 15210;
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
+        /// </summary>
+        public const uint Server_ServerRedundancy_CurrentServerId = 11312;
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_RedundantServerArray Variable.
+        /// </summary>
+        public const uint Server_ServerRedundancy_RedundantServerArray = 11313;
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_ServerUriArray Variable.
+        /// </summary>
+        public const uint Server_ServerRedundancy_ServerUriArray = 11314;
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_ServerNetworkGroups Variable.
+        /// </summary>
+        public const uint Server_ServerRedundancy_ServerNetworkGroups = 14415;
 
         /// <summary>
         /// The identifier for the HistoryServerCapabilities_AccessHistoryDataCapability Variable.
@@ -23995,9 +23995,9 @@ namespace Opc.Ua
         public static readonly NodeId SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_NextSequenceNumber = new NodeId(Opc.Ua.Variables.SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_NextSequenceNumber);
 
         /// <summary>
-        /// The identifier for the SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverFlowCount Variable.
+        /// The identifier for the SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverflowCount Variable.
         /// </summary>
-        public static readonly NodeId SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverFlowCount = new NodeId(Opc.Ua.Variables.SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverFlowCount);
+        public static readonly NodeId SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverflowCount = new NodeId(Opc.Ua.Variables.SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverflowCount);
 
         /// <summary>
         /// The identifier for the SubscriptionDiagnosticsType_SessionId Variable.
@@ -24150,9 +24150,9 @@ namespace Opc.Ua
         public static readonly NodeId SubscriptionDiagnosticsType_NextSequenceNumber = new NodeId(Opc.Ua.Variables.SubscriptionDiagnosticsType_NextSequenceNumber);
 
         /// <summary>
-        /// The identifier for the SubscriptionDiagnosticsType_EventQueueOverFlowCount Variable.
+        /// The identifier for the SubscriptionDiagnosticsType_EventQueueOverflowCount Variable.
         /// </summary>
-        public static readonly NodeId SubscriptionDiagnosticsType_EventQueueOverFlowCount = new NodeId(Opc.Ua.Variables.SubscriptionDiagnosticsType_EventQueueOverFlowCount);
+        public static readonly NodeId SubscriptionDiagnosticsType_EventQueueOverflowCount = new NodeId(Opc.Ua.Variables.SubscriptionDiagnosticsType_EventQueueOverflowCount);
 
         /// <summary>
         /// The identifier for the SessionDiagnosticsArrayType_SessionDiagnostics Variable.
@@ -25085,26 +25085,6 @@ namespace Opc.Ua
         public static readonly NodeId Server_RequestServerStateChange_InputArguments = new NodeId(Opc.Ua.Variables.Server_RequestServerStateChange_InputArguments);
 
         /// <summary>
-        /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
-        /// </summary>
-        public static readonly NodeId Server_ServerRedundancy_CurrentServerId = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_CurrentServerId);
-
-        /// <summary>
-        /// The identifier for the Server_ServerRedundancy_RedundantServerArray Variable.
-        /// </summary>
-        public static readonly NodeId Server_ServerRedundancy_RedundantServerArray = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_RedundantServerArray);
-
-        /// <summary>
-        /// The identifier for the Server_ServerRedundancy_ServerUriArray Variable.
-        /// </summary>
-        public static readonly NodeId Server_ServerRedundancy_ServerUriArray = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_ServerUriArray);
-
-        /// <summary>
-        /// The identifier for the Server_ServerRedundancy_ServerNetworkGroups Variable.
-        /// </summary>
-        public static readonly NodeId Server_ServerRedundancy_ServerNetworkGroups = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_ServerNetworkGroups);
-
-        /// <summary>
         /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceUri Variable.
         /// </summary>
         public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceUri = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceUri);
@@ -25203,6 +25183,26 @@ namespace Opc.Ua
         /// The identifier for the Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments Variable.
         /// </summary>
         public static readonly NodeId Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments = new NodeId(Opc.Ua.Variables.Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments);
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_CurrentServerId Variable.
+        /// </summary>
+        public static readonly NodeId Server_ServerRedundancy_CurrentServerId = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_CurrentServerId);
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_RedundantServerArray Variable.
+        /// </summary>
+        public static readonly NodeId Server_ServerRedundancy_RedundantServerArray = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_RedundantServerArray);
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_ServerUriArray Variable.
+        /// </summary>
+        public static readonly NodeId Server_ServerRedundancy_ServerUriArray = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_ServerUriArray);
+
+        /// <summary>
+        /// The identifier for the Server_ServerRedundancy_ServerNetworkGroups Variable.
+        /// </summary>
+        public static readonly NodeId Server_ServerRedundancy_ServerNetworkGroups = new NodeId(Opc.Ua.Variables.Server_ServerRedundancy_ServerNetworkGroups);
 
         /// <summary>
         /// The identifier for the HistoryServerCapabilities_AccessHistoryDataCapability Variable.
@@ -32269,9 +32269,9 @@ namespace Opc.Ua
         public const string EventNotificationsCount = "EventNotificationsCount";
 
         /// <summary>
-        /// The BrowseName for the EventQueueOverFlowCount component.
+        /// The BrowseName for the EventQueueOverflowCount component.
         /// </summary>
-        public const string EventQueueOverFlowCount = "EventQueueOverFlowCount";
+        public const string EventQueueOverflowCount = "EventQueueOverflowCount";
 
         /// <summary>
         /// The BrowseName for the EventQueueOverflowEventType component.
@@ -34402,6 +34402,26 @@ namespace Opc.Ua
         /// The BrowseName for the Server component.
         /// </summary>
         public const string Server = "Server";
+
+        /// <summary>
+        /// The BrowseName for the Server_ServerRedundancy_CurrentServerId component.
+        /// </summary>
+        public const string Server_ServerRedundancy_CurrentServerId = "CurrentServerId";
+
+        /// <summary>
+        /// The BrowseName for the Server_ServerRedundancy_RedundantServerArray component.
+        /// </summary>
+        public const string Server_ServerRedundancy_RedundantServerArray = "RedundantServerArray";
+
+        /// <summary>
+        /// The BrowseName for the Server_ServerRedundancy_ServerNetworkGroups component.
+        /// </summary>
+        public const string Server_ServerRedundancy_ServerNetworkGroups = "ServerNetworkGroups";
+
+        /// <summary>
+        /// The BrowseName for the Server_ServerRedundancy_ServerUriArray component.
+        /// </summary>
+        public const string Server_ServerRedundancy_ServerUriArray = "ServerUriArray";
 
         /// <summary>
         /// The BrowseName for the ServerArray component.

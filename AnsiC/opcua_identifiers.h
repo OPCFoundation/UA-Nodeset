@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -1780,7 +1780,7 @@
 #define OpcUaId_SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_DisabledMonitoredItemCount 12812
 #define OpcUaId_SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_MonitoringQueueOverflowCount 12813
 #define OpcUaId_SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_NextSequenceNumber 12814
-#define OpcUaId_SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverFlowCount 12815
+#define OpcUaId_SubscriptionDiagnosticsArrayType_SubscriptionDiagnostics_EventQueueOverflowCount 12815
 #define OpcUaId_SubscriptionDiagnosticsType_SessionId 2173
 #define OpcUaId_SubscriptionDiagnosticsType_SubscriptionId 2174
 #define OpcUaId_SubscriptionDiagnosticsType_Priority 2175
@@ -1811,7 +1811,7 @@
 #define OpcUaId_SubscriptionDiagnosticsType_DisabledMonitoredItemCount 8895
 #define OpcUaId_SubscriptionDiagnosticsType_MonitoringQueueOverflowCount 8896
 #define OpcUaId_SubscriptionDiagnosticsType_NextSequenceNumber 8897
-#define OpcUaId_SubscriptionDiagnosticsType_EventQueueOverFlowCount 8902
+#define OpcUaId_SubscriptionDiagnosticsType_EventQueueOverflowCount 8902
 #define OpcUaId_SessionDiagnosticsArrayType_SessionDiagnostics 12816
 #define OpcUaId_SessionDiagnosticsArrayType_SessionDiagnostics_SessionId 12817
 #define OpcUaId_SessionDiagnosticsArrayType_SessionDiagnostics_SessionName 12818
@@ -1998,10 +1998,6 @@
 #define OpcUaId_Server_SetSubscriptionDurable_InputArguments 12750
 #define OpcUaId_Server_SetSubscriptionDurable_OutputArguments 12751
 #define OpcUaId_Server_RequestServerStateChange_InputArguments 12887
-#define OpcUaId_Server_ServerRedundancy_CurrentServerId 11312
-#define OpcUaId_Server_ServerRedundancy_RedundantServerArray 11313
-#define OpcUaId_Server_ServerRedundancy_ServerUriArray 11314
-#define OpcUaId_Server_ServerRedundancy_ServerNetworkGroups 14415
 #define OpcUaId_Server_Namespaces_OPCUANamespaceUri_NamespaceUri 15183
 #define OpcUaId_Server_Namespaces_OPCUANamespaceUri_NamespaceVersion 15184
 #define OpcUaId_Server_Namespaces_OPCUANamespaceUri_NamespacePublicationDate 15185
@@ -2022,6 +2018,10 @@
 #define OpcUaId_Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_InputArguments 15207
 #define OpcUaId_Server_Namespaces_OPCUANamespaceUri_NamespaceFile_GetPosition_OutputArguments 15208
 #define OpcUaId_Server_Namespaces_OPCUANamespaceUri_NamespaceFile_SetPosition_InputArguments 15210
+#define OpcUaId_Server_ServerRedundancy_CurrentServerId 11312
+#define OpcUaId_Server_ServerRedundancy_RedundantServerArray 11313
+#define OpcUaId_Server_ServerRedundancy_ServerUriArray 11314
+#define OpcUaId_Server_ServerRedundancy_ServerNetworkGroups 14415
 #define OpcUaId_HistoryServerCapabilities_AccessHistoryDataCapability 11193
 #define OpcUaId_HistoryServerCapabilities_AccessHistoryEventsCapability 11242
 #define OpcUaId_HistoryServerCapabilities_MaxReturnDataValues 11273

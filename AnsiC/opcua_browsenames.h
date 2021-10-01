@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -367,7 +367,7 @@
 #define OpcUa_BrowseName_EventIds "EventIds"
 #define OpcUa_BrowseName_EventNotificationList "EventNotificationList"
 #define OpcUa_BrowseName_EventNotificationsCount "EventNotificationsCount"
-#define OpcUa_BrowseName_EventQueueOverFlowCount "EventQueueOverFlowCount"
+#define OpcUa_BrowseName_EventQueueOverflowCount "EventQueueOverflowCount"
 #define OpcUa_BrowseName_EventQueueOverflowEventType "EventQueueOverflowEventType"
 #define OpcUa_BrowseName_EventType "EventType"
 #define OpcUa_BrowseName_EventTypesFolder "EventTypes"
@@ -794,6 +794,10 @@
 #define OpcUa_BrowseName_SemanticChangeEventType "SemanticChangeEventType"
 #define OpcUa_BrowseName_SemanticChangeStructureDataType "SemanticChangeStructureDataType"
 #define OpcUa_BrowseName_Server "Server"
+#define OpcUa_BrowseName_Server_ServerRedundancy_CurrentServerId "CurrentServerId"
+#define OpcUa_BrowseName_Server_ServerRedundancy_RedundantServerArray "RedundantServerArray"
+#define OpcUa_BrowseName_Server_ServerRedundancy_ServerNetworkGroups "ServerNetworkGroups"
+#define OpcUa_BrowseName_Server_ServerRedundancy_ServerUriArray "ServerUriArray"
 #define OpcUa_BrowseName_ServerArray "ServerArray"
 #define OpcUa_BrowseName_ServerCapabilities "ServerCapabilities"
 #define OpcUa_BrowseName_ServerCapabilitiesType "ServerCapabilitiesType"

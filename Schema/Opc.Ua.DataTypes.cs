@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -45319,7 +45319,7 @@ namespace Opc.Ua
             m_disabledMonitoredItemCount = (uint)0;
             m_monitoringQueueOverflowCount = (uint)0;
             m_nextSequenceNumber = (uint)0;
-            m_eventQueueOverFlowCount = (uint)0;
+            m_eventQueueOverflowCount = (uint)0;
         }
         #endregion
 
@@ -45565,11 +45565,11 @@ namespace Opc.Ua
         }
 
         /// <remarks />
-        [DataMember(Name = "EventQueueOverFlowCount", IsRequired = false, Order = 31)]
-        public uint EventQueueOverFlowCount
+        [DataMember(Name = "EventQueueOverflowCount", IsRequired = false, Order = 31)]
+        public uint EventQueueOverflowCount
         {
-            get { return m_eventQueueOverFlowCount;  }
-            set { m_eventQueueOverFlowCount = value; }
+            get { return m_eventQueueOverflowCount;  }
+            set { m_eventQueueOverflowCount = value; }
         }
         #endregion
 
@@ -45627,7 +45627,7 @@ namespace Opc.Ua
             encoder.WriteUInt32("DisabledMonitoredItemCount", DisabledMonitoredItemCount);
             encoder.WriteUInt32("MonitoringQueueOverflowCount", MonitoringQueueOverflowCount);
             encoder.WriteUInt32("NextSequenceNumber", NextSequenceNumber);
-            encoder.WriteUInt32("EventQueueOverFlowCount", EventQueueOverFlowCount);
+            encoder.WriteUInt32("EventQueueOverflowCount", EventQueueOverflowCount);
 
             encoder.PopNamespace();
         }
@@ -45667,7 +45667,7 @@ namespace Opc.Ua
             DisabledMonitoredItemCount = decoder.ReadUInt32("DisabledMonitoredItemCount");
             MonitoringQueueOverflowCount = decoder.ReadUInt32("MonitoringQueueOverflowCount");
             NextSequenceNumber = decoder.ReadUInt32("NextSequenceNumber");
-            EventQueueOverFlowCount = decoder.ReadUInt32("EventQueueOverFlowCount");
+            EventQueueOverflowCount = decoder.ReadUInt32("EventQueueOverflowCount");
 
             decoder.PopNamespace();
         }
@@ -45717,7 +45717,7 @@ namespace Opc.Ua
             if (!Utils.IsEqual(m_disabledMonitoredItemCount, value.m_disabledMonitoredItemCount)) return false;
             if (!Utils.IsEqual(m_monitoringQueueOverflowCount, value.m_monitoringQueueOverflowCount)) return false;
             if (!Utils.IsEqual(m_nextSequenceNumber, value.m_nextSequenceNumber)) return false;
-            if (!Utils.IsEqual(m_eventQueueOverFlowCount, value.m_eventQueueOverFlowCount)) return false;
+            if (!Utils.IsEqual(m_eventQueueOverflowCount, value.m_eventQueueOverflowCount)) return false;
 
             return true;
         }
@@ -45765,7 +45765,7 @@ namespace Opc.Ua
             clone.m_disabledMonitoredItemCount = (uint)Utils.Clone(this.m_disabledMonitoredItemCount);
             clone.m_monitoringQueueOverflowCount = (uint)Utils.Clone(this.m_monitoringQueueOverflowCount);
             clone.m_nextSequenceNumber = (uint)Utils.Clone(this.m_nextSequenceNumber);
-            clone.m_eventQueueOverFlowCount = (uint)Utils.Clone(this.m_eventQueueOverFlowCount);
+            clone.m_eventQueueOverflowCount = (uint)Utils.Clone(this.m_eventQueueOverflowCount);
 
             return clone;
         }
@@ -45802,7 +45802,7 @@ namespace Opc.Ua
         private uint m_disabledMonitoredItemCount;
         private uint m_monitoringQueueOverflowCount;
         private uint m_nextSequenceNumber;
-        private uint m_eventQueueOverFlowCount;
+        private uint m_eventQueueOverflowCount;
         #endregion
     }
 

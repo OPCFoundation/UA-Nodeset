@@ -1,3 +1,6 @@
+Good,0x00000000,"The operation succeeded."
+Uncertain,0x40000000,"The operation was uncertain."
+Bad,0x80000000,"The operation failed."
 BadUnexpectedError,0x80010000,"An unexpected error occurred."
 BadInternalError,0x80020000,"An internal error occurred as a result of a programming or configuration error."
 BadOutOfMemory,0x80030000,"Not enough memory to complete the operation."
