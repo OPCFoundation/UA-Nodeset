@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -264,7 +264,9 @@ typedef enum _OpcUa_StructureType
 {
     OpcUa_StructureType_Structure                   = 0,
     OpcUa_StructureType_StructureWithOptionalFields = 1,
-    OpcUa_StructureType_Union                       = 2
+    OpcUa_StructureType_Union                       = 2,
+    OpcUa_StructureType_StructureWithSubtypedValues = 3,
+    OpcUa_StructureType_UnionWithSubtypedValues     = 4
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_StructureType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif
@@ -6872,22 +6874,22 @@ OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ProgramDiagnosticDataTy
  *===========================================================================*/
 typedef struct _OpcUa_ProgramDiagnostic2DataType
 {
-    OpcUa_NodeId       CreateSessionId;
-    OpcUa_String       CreateClientName;
-    OpcUa_DateTime     InvocationCreationTime;
-    OpcUa_DateTime     LastTransitionTime;
-    OpcUa_String       LastMethodCall;
-    OpcUa_NodeId       LastMethodSessionId;
-    OpcUa_Int32        NoOfLastMethodInputArguments;
-    OpcUa_Argument*    LastMethodInputArguments;
-    OpcUa_Int32        NoOfLastMethodOutputArguments;
-    OpcUa_Argument*    LastMethodOutputArguments;
-    OpcUa_Int32        NoOfLastMethodInputValues;
-    OpcUa_Variant*     LastMethodInputValues;
-    OpcUa_Int32        NoOfLastMethodOutputValues;
-    OpcUa_Variant*     LastMethodOutputValues;
-    OpcUa_DateTime     LastMethodCallTime;
-    OpcUa_StatusResult LastMethodReturnStatus;
+    OpcUa_NodeId     CreateSessionId;
+    OpcUa_String     CreateClientName;
+    OpcUa_DateTime   InvocationCreationTime;
+    OpcUa_DateTime   LastTransitionTime;
+    OpcUa_String     LastMethodCall;
+    OpcUa_NodeId     LastMethodSessionId;
+    OpcUa_Int32      NoOfLastMethodInputArguments;
+    OpcUa_Argument*  LastMethodInputArguments;
+    OpcUa_Int32      NoOfLastMethodOutputArguments;
+    OpcUa_Argument*  LastMethodOutputArguments;
+    OpcUa_Int32      NoOfLastMethodInputValues;
+    OpcUa_Variant*   LastMethodInputValues;
+    OpcUa_Int32      NoOfLastMethodOutputValues;
+    OpcUa_Variant*   LastMethodOutputValues;
+    OpcUa_DateTime   LastMethodCallTime;
+    OpcUa_StatusCode LastMethodReturnStatus;
 }
 OpcUa_ProgramDiagnostic2DataType;
 

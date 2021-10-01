@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2021-01-21T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.9" PublicationDate="2021-01-21T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -68,6 +68,17 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
   <UADataType NodeId="i=15534" BrowseName="DataTypeSchemaHeader" IsAbstract="true">
     <DisplayName>DataTypeSchemaHeader</DisplayName>
@@ -142,13 +153,13 @@
       <Field Name="Paused" Value="1" />
       <Field Name="Operational" Value="2" />
       <Field Name="Error" Value="3" />
+      <Field Name="PreOperational" Value="4" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=14648" BrowseName="EnumStrings" ParentNodeId="i=14647" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=14647</Reference>
     </References>
     <Value>
@@ -164,6 +175,9 @@
         </LocalizedText>
         <LocalizedText>
           <Text>Error</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>PreOperational</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -213,7 +227,6 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15904</Reference>
     </References>
     <Value>
@@ -244,7 +257,7 @@
       <Field Name="DataSetFolder" DataType="i=12" ValueRank="1" />
       <Field Name="DataSetMetaData" DataType="i=14523" />
       <Field Name="ExtensionFields" DataType="i=14533" ValueRank="1" />
-      <Field Name="DataSetSource" DataType="i=22" />
+      <Field Name="DataSetSource" DataType="i=15580" AllowSubTypes="true" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15580" BrowseName="PublishedDataSetSourceDataType" IsAbstract="true">
@@ -252,6 +265,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="PublishedDataSetSourceDataType" />
   </UADataType>
   <UADataType NodeId="i=14273" BrowseName="PublishedVariableDataType">
     <DisplayName>PublishedVariableDataType</DisplayName>
@@ -308,7 +322,6 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15583</Reference>
     </References>
     <Value>
@@ -347,8 +360,8 @@
       <Field Name="KeyFrameCount" DataType="i=7" />
       <Field Name="DataSetName" DataType="i=12" />
       <Field Name="DataSetWriterProperties" DataType="i=14533" ValueRank="1" />
-      <Field Name="TransportSettings" DataType="i=22" />
-      <Field Name="MessageSettings" DataType="i=22" />
+      <Field Name="TransportSettings" DataType="i=15598" AllowSubTypes="true" />
+      <Field Name="MessageSettings" DataType="i=15605" AllowSubTypes="true" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15598" BrowseName="DataSetWriterTransportDataType" IsAbstract="true">
@@ -356,12 +369,14 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="DataSetWriterTransportDataType" />
   </UADataType>
   <UADataType NodeId="i=15605" BrowseName="DataSetWriterMessageDataType" IsAbstract="true">
     <DisplayName>DataSetWriterMessageDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="DataSetWriterMessageDataType" />
   </UADataType>
   <UADataType NodeId="i=15609" BrowseName="PubSubGroupDataType" IsAbstract="true">
     <DisplayName>PubSubGroupDataType</DisplayName>
@@ -390,8 +405,8 @@
       <Field Name="Priority" DataType="i=3" />
       <Field Name="LocaleIds" DataType="i=295" ValueRank="1" />
       <Field Name="HeaderLayoutUri" DataType="i=12" />
-      <Field Name="TransportSettings" DataType="i=22" />
-      <Field Name="MessageSettings" DataType="i=22" />
+      <Field Name="TransportSettings" DataType="i=15611" AllowSubTypes="true" />
+      <Field Name="MessageSettings" DataType="i=15616" AllowSubTypes="true" />
       <Field Name="DataSetWriters" DataType="i=15597" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -400,12 +415,14 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="WriterGroupTransportDataType" />
   </UADataType>
   <UADataType NodeId="i=15616" BrowseName="WriterGroupMessageDataType" IsAbstract="true">
     <DisplayName>WriterGroupMessageDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="WriterGroupMessageDataType" />
   </UADataType>
   <UADataType NodeId="i=15617" BrowseName="PubSubConnectionDataType">
     <DisplayName>PubSubConnectionDataType</DisplayName>
@@ -417,9 +434,9 @@
       <Field Name="Enabled" DataType="i=1" />
       <Field Name="PublisherId" />
       <Field Name="TransportProfileUri" DataType="i=12" />
-      <Field Name="Address" DataType="i=22" />
+      <Field Name="Address" DataType="i=15502" AllowSubTypes="true" />
       <Field Name="ConnectionProperties" DataType="i=14533" ValueRank="1" />
-      <Field Name="TransportSettings" DataType="i=22" />
+      <Field Name="TransportSettings" DataType="i=15618" AllowSubTypes="true" />
       <Field Name="WriterGroups" DataType="i=15480" ValueRank="1" />
       <Field Name="ReaderGroups" DataType="i=15520" ValueRank="1" />
     </Definition>
@@ -429,6 +446,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="ConnectionTransportDataType" />
   </UADataType>
   <UADataType NodeId="i=15502" BrowseName="NetworkAddressDataType" IsAbstract="true">
     <DisplayName>NetworkAddressDataType</DisplayName>
@@ -454,8 +472,8 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=15609</Reference>
     </References>
     <Definition Name="ReaderGroupDataType">
-      <Field Name="TransportSettings" DataType="i=22" />
-      <Field Name="MessageSettings" DataType="i=22" />
+      <Field Name="TransportSettings" DataType="i=15621" AllowSubTypes="true" />
+      <Field Name="MessageSettings" DataType="i=15622" AllowSubTypes="true" />
       <Field Name="DataSetReaders" DataType="i=15623" ValueRank="1" />
     </Definition>
   </UADataType>
@@ -464,12 +482,14 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="ReaderGroupTransportDataType" />
   </UADataType>
   <UADataType NodeId="i=15622" BrowseName="ReaderGroupMessageDataType" IsAbstract="true">
     <DisplayName>ReaderGroupMessageDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="ReaderGroupMessageDataType" />
   </UADataType>
   <UADataType NodeId="i=15623" BrowseName="DataSetReaderDataType">
     <DisplayName>DataSetReaderDataType</DisplayName>
@@ -491,9 +511,9 @@
       <Field Name="SecurityGroupId" DataType="i=12" />
       <Field Name="SecurityKeyServices" DataType="i=312" ValueRank="1" />
       <Field Name="DataSetReaderProperties" DataType="i=14533" ValueRank="1" />
-      <Field Name="TransportSettings" DataType="i=22" />
-      <Field Name="MessageSettings" DataType="i=22" />
-      <Field Name="SubscribedDataSet" DataType="i=22" />
+      <Field Name="TransportSettings" DataType="i=15628" AllowSubTypes="true" />
+      <Field Name="MessageSettings" DataType="i=15629" AllowSubTypes="true" />
+      <Field Name="SubscribedDataSet" DataType="i=15630" AllowSubTypes="true" />
     </Definition>
   </UADataType>
   <UADataType NodeId="i=15628" BrowseName="DataSetReaderTransportDataType" IsAbstract="true">
@@ -501,18 +521,21 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="DataSetReaderTransportDataType" />
   </UADataType>
   <UADataType NodeId="i=15629" BrowseName="DataSetReaderMessageDataType" IsAbstract="true">
     <DisplayName>DataSetReaderMessageDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="DataSetReaderMessageDataType" />
   </UADataType>
   <UADataType NodeId="i=15630" BrowseName="SubscribedDataSetDataType" IsAbstract="true">
     <DisplayName>SubscribedDataSetDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="SubscribedDataSetDataType" />
   </UADataType>
   <UADataType NodeId="i=15631" BrowseName="TargetVariablesDataType">
     <DisplayName>TargetVariablesDataType</DisplayName>
@@ -554,7 +577,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15874</Reference>
     </References>
     <Value>
@@ -608,7 +630,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=20408</Reference>
     </References>
     <Value>
@@ -649,7 +670,6 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15642</Reference>
     </References>
     <Value>
@@ -722,7 +742,6 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15646</Reference>
     </References>
     <Value>
@@ -796,7 +815,6 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15654</Reference>
     </References>
     <Value>
@@ -843,13 +861,13 @@
       <Field Name="SequenceNumber" Value="2" />
       <Field Name="Timestamp" Value="3" />
       <Field Name="Status" Value="4" />
+      <Field Name="MessageType" Value="5" />
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=15659" BrowseName="OptionSetValues" ParentNodeId="i=15658" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15658</Reference>
     </References>
     <Value>
@@ -868,6 +886,9 @@
         </LocalizedText>
         <LocalizedText>
           <Text>Status</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MessageType</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -938,7 +959,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=15008</Reference>
     </References>
     <Value>
@@ -10101,7 +10121,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=19723</Reference>
     </References>
     <Value>
@@ -10181,7 +10200,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=19730</Reference>
     </References>
     <Value>

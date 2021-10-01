@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -77,6 +77,7 @@
 /*============================================================================
 * DataType Exclusions
  *===========================================================================*/
+/* #define OPCUA_EXCLUDE_Union */
 /* #define OPCUA_EXCLUDE_KeyValuePair */
 /* #define OPCUA_EXCLUDE_AdditionalParametersType */
 /* #define OPCUA_EXCLUDE_EphemeralKeyType */
@@ -143,6 +144,7 @@
 /* #define OPCUA_EXCLUDE_BrokerDataSetWriterTransportDataType */
 /* #define OPCUA_EXCLUDE_BrokerDataSetReaderTransportDataType */
 /* #define OPCUA_EXCLUDE_AliasNameDataType */
+/* #define OPCUA_EXCLUDE_UnsignedRationalNumber */
 /* #define OPCUA_EXCLUDE_RolePermissionType */
 /* #define OPCUA_EXCLUDE_DataTypeDefinition */
 /* #define OPCUA_EXCLUDE_StructureField */
@@ -164,7 +166,6 @@
 /* #define OPCUA_EXCLUDE_EnumValueType */
 /* #define OPCUA_EXCLUDE_EnumField */
 /* #define OPCUA_EXCLUDE_OptionSet */
-/* #define OPCUA_EXCLUDE_Union */
 /* #define OPCUA_EXCLUDE_TimeZoneDataType */
 /* #define OPCUA_EXCLUDE_ApplicationDescription */
 /* #define OPCUA_EXCLUDE_RequestHeader */

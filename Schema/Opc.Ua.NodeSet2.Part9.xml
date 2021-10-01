@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2021-01-21T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.9" PublicationDate="2021-01-21T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -68,6 +68,17 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
   <UAVariableType NodeId="i=8995" BrowseName="TwoStateVariableType" DataType="LocalizedText">
     <DisplayName>TwoStateVariableType</DisplayName>
@@ -479,7 +490,7 @@
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
               <Description>
-                <Text>The identifier for the suscription to refresh.</Text>
+                <Text>The identifier for the subscription to refresh.</Text>
               </Description>
             </Argument>
           </Body>
@@ -518,7 +529,7 @@
               <ValueRank>-1</ValueRank>
               <ArrayDimensions />
               <Description>
-                <Text>The identifier for the suscription to refresh.</Text>
+                <Text>The identifier for the subscription to refresh.</Text>
               </Description>
             </Argument>
           </Body>
@@ -563,7 +574,7 @@
     <DisplayName>EnabledState</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9036</Reference>
-      <Reference ReferenceType="i=9004">i=9055</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9055</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2830</Reference>
@@ -584,7 +595,7 @@
       <Reference ReferenceType="HasProperty">i=9060</Reference>
       <Reference ReferenceType="HasProperty">i=9062</Reference>
       <Reference ReferenceType="HasProperty">i=9063</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9035</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9035</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2830</Reference>
@@ -736,8 +747,8 @@
     <DisplayName>EnabledState</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9074</Reference>
-      <Reference ReferenceType="i=9004">i=9093</Reference>
-      <Reference ReferenceType="i=9004">i=9102</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9093</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9102</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2881</Reference>
@@ -758,7 +769,7 @@
       <Reference ReferenceType="HasProperty">i=9098</Reference>
       <Reference ReferenceType="HasProperty">i=9100</Reference>
       <Reference ReferenceType="HasProperty">i=9101</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9073</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9073</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2881</Reference>
@@ -815,7 +826,7 @@
       <Reference ReferenceType="HasProperty">i=9107</Reference>
       <Reference ReferenceType="HasProperty">i=9109</Reference>
       <Reference ReferenceType="HasProperty">i=9110</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9073</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9073</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2881</Reference>
@@ -991,7 +1002,7 @@
       <Reference ReferenceType="HasProperty">i=9215</Reference>
       <Reference ReferenceType="HasProperty">i=9216</Reference>
       <Reference ReferenceType="HasProperty">i=16389</Reference>
-      <Reference ReferenceType="HasProperty">i=16390</Reference>
+      <Reference ReferenceType="HasComponent">i=16390</Reference>
       <Reference ReferenceType="HasComponent">i=16380</Reference>
       <Reference ReferenceType="HasProperty">i=16395</Reference>
       <Reference ReferenceType="HasProperty">i=16396</Reference>
@@ -1014,9 +1025,9 @@
     <DisplayName>EnabledState</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9119</Reference>
-      <Reference ReferenceType="i=9004">i=9160</Reference>
-      <Reference ReferenceType="i=9004">i=9169</Reference>
-      <Reference ReferenceType="i=9004">i=9178</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9160</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9169</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9178</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
@@ -1039,7 +1050,7 @@
       <Reference ReferenceType="HasProperty">i=9166</Reference>
       <Reference ReferenceType="HasProperty">i=9167</Reference>
       <Reference ReferenceType="HasProperty">i=9168</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9118</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9118</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
@@ -1120,7 +1131,7 @@
       <Reference ReferenceType="HasProperty">i=9174</Reference>
       <Reference ReferenceType="HasProperty">i=9176</Reference>
       <Reference ReferenceType="HasProperty">i=9177</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9118</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9118</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
@@ -1235,7 +1246,7 @@
       <Reference ReferenceType="HasComponent">i=9213</Reference>
       <Reference ReferenceType="HasComponent">i=9211</Reference>
       <Reference ReferenceType="HasComponent">i=9212</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9118</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9118</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2929</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
@@ -1376,7 +1387,7 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=17986</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=2915</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=2915</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="i=16380" BrowseName="SilenceState" ParentNodeId="i=2915" DataType="LocalizedText">
@@ -2027,10 +2038,10 @@
     <DisplayName>Unshelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=6098</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2935</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2936</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2940</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2943</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2935</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2936</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2940</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2943</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2050,10 +2061,10 @@
     <DisplayName>TimedShelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=6100</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2935</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2940</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2942</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2945</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2935</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2940</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2942</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2945</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2073,10 +2084,10 @@
     <DisplayName>OneShotShelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=6101</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2936</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2942</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2943</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2945</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2936</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2942</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2943</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2945</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2096,10 +2107,10 @@
     <DisplayName>UnshelvedToTimedShelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11322</Reference>
-      <Reference ReferenceType="i=51">i=2930</Reference>
-      <Reference ReferenceType="i=52">i=2932</Reference>
-      <Reference ReferenceType="i=54">i=2915</Reference>
-      <Reference ReferenceType="i=53">i=2949</Reference>
+      <Reference ReferenceType="FromState">i=2930</Reference>
+      <Reference ReferenceType="ToState">i=2932</Reference>
+      <Reference ReferenceType="HasEffect">i=2915</Reference>
+      <Reference ReferenceType="HasCause">i=2949</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2119,10 +2130,10 @@
     <DisplayName>UnshelvedToOneShotShelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11323</Reference>
-      <Reference ReferenceType="i=51">i=2930</Reference>
-      <Reference ReferenceType="i=52">i=2933</Reference>
-      <Reference ReferenceType="i=54">i=2915</Reference>
-      <Reference ReferenceType="i=53">i=2948</Reference>
+      <Reference ReferenceType="FromState">i=2930</Reference>
+      <Reference ReferenceType="ToState">i=2933</Reference>
+      <Reference ReferenceType="HasEffect">i=2915</Reference>
+      <Reference ReferenceType="HasCause">i=2948</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2142,10 +2153,10 @@
     <DisplayName>TimedShelvedToUnshelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11324</Reference>
-      <Reference ReferenceType="i=51">i=2932</Reference>
-      <Reference ReferenceType="i=52">i=2930</Reference>
-      <Reference ReferenceType="i=54">i=2915</Reference>
-      <Reference ReferenceType="i=53">i=2947</Reference>
+      <Reference ReferenceType="FromState">i=2932</Reference>
+      <Reference ReferenceType="ToState">i=2930</Reference>
+      <Reference ReferenceType="HasEffect">i=2915</Reference>
+      <Reference ReferenceType="HasCause">i=2947</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2165,10 +2176,10 @@
     <DisplayName>TimedShelvedToOneShotShelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11325</Reference>
-      <Reference ReferenceType="i=51">i=2932</Reference>
-      <Reference ReferenceType="i=52">i=2933</Reference>
-      <Reference ReferenceType="i=54">i=2915</Reference>
-      <Reference ReferenceType="i=53">i=2948</Reference>
+      <Reference ReferenceType="FromState">i=2932</Reference>
+      <Reference ReferenceType="ToState">i=2933</Reference>
+      <Reference ReferenceType="HasEffect">i=2915</Reference>
+      <Reference ReferenceType="HasCause">i=2948</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2188,10 +2199,10 @@
     <DisplayName>OneShotShelvedToUnshelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11326</Reference>
-      <Reference ReferenceType="i=51">i=2933</Reference>
-      <Reference ReferenceType="i=52">i=2930</Reference>
-      <Reference ReferenceType="i=54">i=2915</Reference>
-      <Reference ReferenceType="i=53">i=2947</Reference>
+      <Reference ReferenceType="FromState">i=2933</Reference>
+      <Reference ReferenceType="ToState">i=2930</Reference>
+      <Reference ReferenceType="HasEffect">i=2915</Reference>
+      <Reference ReferenceType="HasCause">i=2947</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2211,10 +2222,10 @@
     <DisplayName>OneShotShelvedToTimedShelved</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11327</Reference>
-      <Reference ReferenceType="i=51">i=2933</Reference>
-      <Reference ReferenceType="i=52">i=2932</Reference>
-      <Reference ReferenceType="i=54">i=2915</Reference>
-      <Reference ReferenceType="i=53">i=2949</Reference>
+      <Reference ReferenceType="FromState">i=2933</Reference>
+      <Reference ReferenceType="ToState">i=2932</Reference>
+      <Reference ReferenceType="HasEffect">i=2915</Reference>
+      <Reference ReferenceType="HasCause">i=2949</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
     </References>
@@ -2234,8 +2245,8 @@
     <DisplayName>TimedShelve</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2991</Reference>
-      <Reference ReferenceType="i=53" IsForward="false">i=2935</Reference>
-      <Reference ReferenceType="i=53" IsForward="false">i=2945</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2935</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2945</Reference>
       <Reference ReferenceType="i=3065">i=11093</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
@@ -2274,8 +2285,8 @@
   <UAMethod NodeId="i=2947" BrowseName="Unshelve" ParentNodeId="i=2929">
     <DisplayName>Unshelve</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2940</Reference>
-      <Reference ReferenceType="i=53" IsForward="false">i=2943</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2940</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2943</Reference>
       <Reference ReferenceType="i=3065">i=11093</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
@@ -2284,8 +2295,8 @@
   <UAMethod NodeId="i=2948" BrowseName="OneShotShelve" ParentNodeId="i=2929">
     <DisplayName>OneShotShelve</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2936</Reference>
-      <Reference ReferenceType="i=53" IsForward="false">i=2942</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2936</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2942</Reference>
       <Reference ReferenceType="i=3065">i=11093</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2929</Reference>
@@ -2387,8 +2398,8 @@
     <DisplayName>HighHigh</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9330</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=9339</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=9340</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=9339</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=9340</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2408,8 +2419,8 @@
     <DisplayName>High</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9332</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=9339</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=9340</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=9339</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=9340</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2429,8 +2440,8 @@
     <DisplayName>Low</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9334</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=9337</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=9338</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=9337</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=9338</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2450,8 +2461,8 @@
     <DisplayName>LowLow</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9336</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=9337</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=9338</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=9337</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=9338</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2471,8 +2482,8 @@
     <DisplayName>LowLowToLow</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11340</Reference>
-      <Reference ReferenceType="i=51">i=9335</Reference>
-      <Reference ReferenceType="i=52">i=9333</Reference>
+      <Reference ReferenceType="FromState">i=9335</Reference>
+      <Reference ReferenceType="ToState">i=9333</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2492,8 +2503,8 @@
     <DisplayName>LowToLowLow</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11341</Reference>
-      <Reference ReferenceType="i=51">i=9333</Reference>
-      <Reference ReferenceType="i=52">i=9335</Reference>
+      <Reference ReferenceType="FromState">i=9333</Reference>
+      <Reference ReferenceType="ToState">i=9335</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2513,8 +2524,8 @@
     <DisplayName>HighHighToHigh</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11342</Reference>
-      <Reference ReferenceType="i=51">i=9329</Reference>
-      <Reference ReferenceType="i=52">i=9331</Reference>
+      <Reference ReferenceType="FromState">i=9329</Reference>
+      <Reference ReferenceType="ToState">i=9331</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2534,8 +2545,8 @@
     <DisplayName>HighToHighHigh</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=11343</Reference>
-      <Reference ReferenceType="i=51">i=9331</Reference>
-      <Reference ReferenceType="i=52">i=9329</Reference>
+      <Reference ReferenceType="FromState">i=9331</Reference>
+      <Reference ReferenceType="ToState">i=9329</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9318</Reference>
     </References>
@@ -2563,7 +2574,7 @@
     <DisplayName>ActiveState</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9399</Reference>
-      <Reference ReferenceType="i=9004">i=9455</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=9455</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9341</Reference>
@@ -2582,7 +2593,7 @@
     <References>
       <Reference ReferenceType="HasComponent">i=9456</Reference>
       <Reference ReferenceType="HasComponent">i=9461</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9398</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9398</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=9318</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9341</Reference>
@@ -2646,10 +2657,10 @@
     <DisplayName>ActiveState</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=9964</Reference>
-      <Reference ReferenceType="i=9004">i=10020</Reference>
-      <Reference ReferenceType="i=9004">i=10029</Reference>
-      <Reference ReferenceType="i=9004">i=10038</Reference>
-      <Reference ReferenceType="i=9004">i=10047</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=10020</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=10029</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=10038</Reference>
+      <Reference ReferenceType="HasTrueSubState">i=10047</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9906</Reference>
@@ -2670,7 +2681,7 @@
       <Reference ReferenceType="HasProperty">i=10025</Reference>
       <Reference ReferenceType="HasProperty">i=10027</Reference>
       <Reference ReferenceType="HasProperty">i=10028</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9963</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9963</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9906</Reference>
@@ -2727,7 +2738,7 @@
       <Reference ReferenceType="HasProperty">i=10034</Reference>
       <Reference ReferenceType="HasProperty">i=10036</Reference>
       <Reference ReferenceType="HasProperty">i=10037</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9963</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9963</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9906</Reference>
@@ -2784,7 +2795,7 @@
       <Reference ReferenceType="HasProperty">i=10043</Reference>
       <Reference ReferenceType="HasProperty">i=10045</Reference>
       <Reference ReferenceType="HasProperty">i=10046</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9963</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9963</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9906</Reference>
@@ -2841,7 +2852,7 @@
       <Reference ReferenceType="HasProperty">i=10052</Reference>
       <Reference ReferenceType="HasProperty">i=10054</Reference>
       <Reference ReferenceType="HasProperty">i=10055</Reference>
-      <Reference ReferenceType="i=9004" IsForward="false">i=9963</Reference>
+      <Reference ReferenceType="HasTrueSubState" IsForward="false">i=9963</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=8995</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=9906</Reference>
@@ -3002,7 +3013,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=10637</Reference>
     </References>
   </UAVariable>
-  <UAObjectType NodeId="i=11753" BrowseName="SystemOffNormalAlarmType" IsAbstract="true">
+  <UAObjectType NodeId="i=11753" BrowseName="SystemOffNormalAlarmType">
     <DisplayName>SystemOffNormalAlarmType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=10637</Reference>

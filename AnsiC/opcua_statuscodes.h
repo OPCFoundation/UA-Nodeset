@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -1266,6 +1266,61 @@ OPCUA_BEGIN_EXTERN_C
  * The operation could not be finished because all available connections are in use.
  *===========================================================================*/
 #define OpcUa_BadMaxConnectionsReached 0x80B70000
+
+/*============================================================================
+ * The value may not be accurate because the transducer is in manual mode.
+ *===========================================================================*/
+#define OpcUa_UncertainTransducerInManual 0x42080000
+
+/*============================================================================
+ * The value is simulated.
+ *===========================================================================*/
+#define OpcUa_UncertainSimulatedValue 0x42090000
+
+/*============================================================================
+ * The value may not be accurate due to a sensor calibration fault.
+ *===========================================================================*/
+#define OpcUa_UncertainSensorCalibration 0x420A0000
+
+/*============================================================================
+ * The value may not be accurate due to a configuration issue.
+ *===========================================================================*/
+#define OpcUa_UncertainConfigurationError 0x420F0000
+
+/*============================================================================
+ * The value source supports cascade handshaking and the value has been Initialized based on an initialization request from a cascade secondary.
+ *===========================================================================*/
+#define OpcUa_GoodCascadeInitializationAcknowledged 0x04010000
+
+/*============================================================================
+ * The value source supports cascade handshaking and is requesting initialization of a cascade primary.
+ *===========================================================================*/
+#define OpcUa_GoodCascadeInitializationRequest 0x04020000
+
+/*============================================================================
+ * The value source supports cascade handshaking, however, the source’s current state does not allow for cascade.
+ *===========================================================================*/
+#define OpcUa_GoodCascadeNotInvited 0x04030000
+
+/*============================================================================
+ * The value source supports cascade handshaking, however, the source has not selected the corresponding cascade primary for use.
+ *===========================================================================*/
+#define OpcUa_GoodCascadeNotSelected 0x04040000
+
+/*============================================================================
+ * There is a fault state condition active in the value source.
+ *===========================================================================*/
+#define OpcUa_GoodFaultStateActive 0x04070000
+
+/*============================================================================
+ * A fault state condition is being requested of the destination.
+ *===========================================================================*/
+#define OpcUa_GoodInitiateFaultState 0x04080000
+
+/*============================================================================
+ * The value is accurate, and the signal source supports cascade handshaking.
+ *===========================================================================*/
+#define OpcUa_GoodCascade 0x04090000
 
 OPCUA_END_EXTERN_C
 

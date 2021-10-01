@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2021-01-21T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.9" PublicationDate="2021-01-21T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -68,6 +68,17 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
   <UAObjectType NodeId="i=2391" BrowseName="ProgramStateMachineType">
     <DisplayName>ProgramStateMachineType</DisplayName>
@@ -217,7 +228,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2391</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="i=2399" BrowseName="ProgramDiagnostic" ParentNodeId="i=2391" DataType="i=15396">
+  <UAVariable NodeId="i=2399" BrowseName="ProgramDiagnostic" ParentNodeId="i=2391" DataType="i=24033">
     <DisplayName>ProgramDiagnostic</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=3840</Reference>
@@ -345,10 +356,10 @@
     <DisplayName>Halted</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2407</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2408</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2412</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2420</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2424</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2408</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2412</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2420</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2424</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -368,11 +379,11 @@
     <DisplayName>Ready</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2401</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2408</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2410</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2414</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2422</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2424</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2408</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2410</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2414</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2422</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2424</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -392,11 +403,11 @@
     <DisplayName>Running</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2403</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2410</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2412</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2414</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2416</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2418</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2410</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2412</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2414</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2416</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2418</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -416,10 +427,10 @@
     <DisplayName>Suspended</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2405</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">i=2416</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2418</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2420</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">i=2422</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">i=2416</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2418</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2420</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">i=2422</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -439,10 +450,10 @@
     <DisplayName>HaltedToReady</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2409</Reference>
-      <Reference ReferenceType="i=51">i=2406</Reference>
-      <Reference ReferenceType="i=52">i=2400</Reference>
-      <Reference ReferenceType="i=53">i=2430</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2406</Reference>
+      <Reference ReferenceType="ToState">i=2400</Reference>
+      <Reference ReferenceType="HasCause">i=2430</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -462,10 +473,10 @@
     <DisplayName>ReadyToRunning</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2411</Reference>
-      <Reference ReferenceType="i=51">i=2400</Reference>
-      <Reference ReferenceType="i=52">i=2402</Reference>
-      <Reference ReferenceType="i=53">i=2426</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2400</Reference>
+      <Reference ReferenceType="ToState">i=2402</Reference>
+      <Reference ReferenceType="HasCause">i=2426</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -485,10 +496,10 @@
     <DisplayName>RunningToHalted</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2413</Reference>
-      <Reference ReferenceType="i=51">i=2402</Reference>
-      <Reference ReferenceType="i=52">i=2406</Reference>
-      <Reference ReferenceType="i=53">i=2429</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2402</Reference>
+      <Reference ReferenceType="ToState">i=2406</Reference>
+      <Reference ReferenceType="HasCause">i=2429</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -508,9 +519,9 @@
     <DisplayName>RunningToReady</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2415</Reference>
-      <Reference ReferenceType="i=51">i=2402</Reference>
-      <Reference ReferenceType="i=52">i=2400</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2402</Reference>
+      <Reference ReferenceType="ToState">i=2400</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -530,10 +541,10 @@
     <DisplayName>RunningToSuspended</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2417</Reference>
-      <Reference ReferenceType="i=51">i=2402</Reference>
-      <Reference ReferenceType="i=52">i=2404</Reference>
-      <Reference ReferenceType="i=53">i=2427</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2402</Reference>
+      <Reference ReferenceType="ToState">i=2404</Reference>
+      <Reference ReferenceType="HasCause">i=2427</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -553,10 +564,10 @@
     <DisplayName>SuspendedToRunning</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2419</Reference>
-      <Reference ReferenceType="i=51">i=2404</Reference>
-      <Reference ReferenceType="i=52">i=2402</Reference>
-      <Reference ReferenceType="i=53">i=2428</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2404</Reference>
+      <Reference ReferenceType="ToState">i=2402</Reference>
+      <Reference ReferenceType="HasCause">i=2428</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -576,10 +587,10 @@
     <DisplayName>SuspendedToHalted</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2421</Reference>
-      <Reference ReferenceType="i=51">i=2404</Reference>
-      <Reference ReferenceType="i=52">i=2406</Reference>
-      <Reference ReferenceType="i=53">i=2429</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2404</Reference>
+      <Reference ReferenceType="ToState">i=2406</Reference>
+      <Reference ReferenceType="HasCause">i=2429</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -599,9 +610,9 @@
     <DisplayName>SuspendedToReady</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2423</Reference>
-      <Reference ReferenceType="i=51">i=2404</Reference>
-      <Reference ReferenceType="i=52">i=2400</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2404</Reference>
+      <Reference ReferenceType="ToState">i=2400</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -621,10 +632,10 @@
     <DisplayName>ReadyToHalted</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=2425</Reference>
-      <Reference ReferenceType="i=51">i=2400</Reference>
-      <Reference ReferenceType="i=52">i=2406</Reference>
-      <Reference ReferenceType="i=53">i=2429</Reference>
-      <Reference ReferenceType="i=54">i=2378</Reference>
+      <Reference ReferenceType="FromState">i=2400</Reference>
+      <Reference ReferenceType="ToState">i=2406</Reference>
+      <Reference ReferenceType="HasCause">i=2429</Reference>
+      <Reference ReferenceType="HasEffect">i=2378</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -643,7 +654,7 @@
   <UAMethod NodeId="i=2426" BrowseName="Start" ParentNodeId="i=2391">
     <DisplayName>Start</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2410</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2410</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -651,7 +662,7 @@
   <UAMethod NodeId="i=2427" BrowseName="Suspend" ParentNodeId="i=2391">
     <DisplayName>Suspend</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2416</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2416</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -659,7 +670,7 @@
   <UAMethod NodeId="i=2428" BrowseName="Resume" ParentNodeId="i=2391">
     <DisplayName>Resume</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2418</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2418</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -667,9 +678,9 @@
   <UAMethod NodeId="i=2429" BrowseName="Halt" ParentNodeId="i=2391">
     <DisplayName>Halt</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2412</Reference>
-      <Reference ReferenceType="i=53" IsForward="false">i=2420</Reference>
-      <Reference ReferenceType="i=53" IsForward="false">i=2424</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2412</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2420</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2424</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -677,7 +688,7 @@
   <UAMethod NodeId="i=2430" BrowseName="Reset" ParentNodeId="i=2391">
     <DisplayName>Reset</DisplayName>
     <References>
-      <Reference ReferenceType="i=53" IsForward="false">i=2408</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2408</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -832,7 +843,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=2380</Reference>
     </References>
   </UAVariable>
-  <UAVariableType NodeId="i=15383" BrowseName="ProgramDiagnostic2Type" DataType="i=15396">
+  <UAVariableType NodeId="i=15383" BrowseName="ProgramDiagnostic2Type" DataType="i=24033">
     <DisplayName>ProgramDiagnostic2Type</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">i=15384</Reference>
@@ -964,7 +975,7 @@
       <Field Name="LastMethodReturnStatus" DataType="i=299" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="i=15396" BrowseName="ProgramDiagnostic2DataType">
+  <UADataType NodeId="i=24033" BrowseName="ProgramDiagnostic2DataType">
     <DisplayName>ProgramDiagnostic2DataType</DisplayName>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
@@ -981,7 +992,7 @@
       <Field Name="LastMethodInputValues" ValueRank="1" />
       <Field Name="LastMethodOutputValues" ValueRank="1" />
       <Field Name="LastMethodCallTime" DataType="i=294" />
-      <Field Name="LastMethodReturnStatus" DataType="i=299" />
+      <Field Name="LastMethodReturnStatus" DataType="i=19" />
     </Definition>
   </UADataType>
   <UAObject NodeId="i=896" BrowseName="Default Binary" SymbolicName="DefaultBinary">
@@ -992,11 +1003,11 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=15397" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+  <UAObject NodeId="i=24034" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15396</Reference>
-      <Reference ReferenceType="HasDescription">i=15398</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=24033</Reference>
+      <Reference ReferenceType="HasDescription">i=24035</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1008,11 +1019,11 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=15401" BrowseName="Default XML" SymbolicName="DefaultXml">
+  <UAObject NodeId="i=24038" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15396</Reference>
-      <Reference ReferenceType="HasDescription">i=15402</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=24033</Reference>
+      <Reference ReferenceType="HasDescription">i=24039</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
@@ -1023,10 +1034,10 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="i=15405" BrowseName="Default JSON" SymbolicName="DefaultJson">
+  <UAObject NodeId="i=24042" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
     <References>
-      <Reference ReferenceType="HasEncoding" IsForward="false">i=15396</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">i=24033</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>

@@ -208,6 +208,7 @@ CertificateGroupType,12555,ObjectType
 CertificateType,12556,ObjectType
 CertificateUpdatedAuditEventType,12620,ObjectType
 ChoiceStateType,15109,ObjectType
+Communication,24227,Object
 ComplexNumberType,12171,DataType
 ComplexNumberType_Encoding_DefaultBinary,12181,Object
 ComplexNumberType_Encoding_DefaultJson,15377,Object
@@ -307,6 +308,7 @@ DataTypeSchemaHeader_Encoding_DefaultXml,15950,Object
 DataTypesFolder,90,Object
 DataTypeSystemType,75,ObjectType
 DataValue,23,DataType
+Date,293,DataType
 DateString,12881,DataType
 DateTime,13,DataType
 Decimal,50,DataType
@@ -341,6 +343,7 @@ DoubleComplexNumberType,12172,DataType
 DoubleComplexNumberType_Encoding_DefaultBinary,12182,Object
 DoubleComplexNumberType_Encoding_DefaultJson,15378,Object
 DoubleComplexNumberType_Encoding_DefaultXml,12174,Object
+Duplex,24210,DataType
 Duration,290,DataType
 DurationString,12879,DataType
 EccApplicationCertificateType,23537,ObjectType
@@ -498,6 +501,7 @@ HistoryServerCapabilities,11192,Object
 HistoryServerCapabilitiesType,2330,ObjectType
 HistoryUpdateType,11234,DataType
 HttpsCertificateType,12558,ObjectType
+IBaseEthernetCapabilitiesType,24167,ObjectType
 Icon,3067,Variable
 IdentityCriteriaType,15632,DataType
 IdentityMappingRuleType,15634,DataType
@@ -505,6 +509,17 @@ IdentityMappingRuleType_Encoding_DefaultBinary,15736,Object
 IdentityMappingRuleType_Encoding_DefaultJson,15042,Object
 IdentityMappingRuleType_Encoding_DefaultXml,15728,Object
 IdType,256,DataType
+IIeeeAutoNegotiationStatusType,24233,ObjectType
+IIeeeBaseEthernetPortType,24158,ObjectType
+IIeeeBaseTsnStatusStreamType,24183,ObjectType
+IIeeeBaseTsnStreamType,24173,ObjectType
+IIeeeBaseTsnTrafficSpecificationType,24179,ObjectType
+IIeeeTsnInterfaceConfigurationListenerType,24195,ObjectType
+IIeeeTsnInterfaceConfigurationTalkerType,24191,ObjectType
+IIeeeTsnInterfaceConfigurationType,24188,ObjectType
+IIeeeTsnMacAddressType,24199,ObjectType
+IIeeeTsnVlanTagType,24202,ObjectType
+IIetfBaseNetworkInterfaceType,24148,ObjectType
 Image,30,DataType
 ImageBMP,2000,DataType
 ImageGIF,2001,DataType
@@ -520,9 +535,13 @@ Int32,6,DataType
 Int64,8,DataType
 Integer,27,DataType
 IntegerId,288,DataType
+InterfaceAdminStatus,24212,DataType
+InterfaceOperStatus,24214,DataType
 InterfaceTypes,17708,Object
 IOrderedObjectType,23513,ObjectType
+IPriorityMappingEntryType,24205,ObjectType
 IrdiDictionaryEntryType,17598,ObjectType
+ISrClassType,24169,ObjectType
 IssuedIdentityToken,938,DataType
 IssuedIdentityToken_Encoding_DefaultBinary,940,Object
 IssuedIdentityToken_Encoding_DefaultJson,15144,Object
@@ -555,6 +574,7 @@ KeyValuePair_Encoding_DefaultBinary,14846,Object
 KeyValuePair_Encoding_DefaultJson,15041,Object
 KeyValuePair_Encoding_DefaultXml,14802,Object
 LimitAlarmType,2955,ObjectType
+ListenerStreams,24232,Object
 LiteralOperand,595,DataType
 LiteralOperand_Encoding_DefaultBinary,597,Object
 LiteralOperand_Encoding_DefaultJson,15208,Object
@@ -563,6 +583,7 @@ LocaleId,295,DataType
 LocalizedText,21,DataType
 LocalTime,3069,Variable
 MaintenanceConditionClassType,11165,ObjectType
+MappingTables,24228,Object
 MaxArrayLength,11512,Variable
 MaxByteStringLength,12908,Variable
 MaxCharacters,15002,Variable
@@ -594,6 +615,7 @@ NamespaceMetadataType,11616,ObjectType
 NamespacesType,11645,ObjectType
 NamingRuleType,120,DataType
 NDimensionArrayItemType,12068,VariableType
+NegotiationStatus,24216,DataType
 NetworkAddressDataType,15502,DataType
 NetworkAddressDataType_Encoding_DefaultBinary,21151,Object
 NetworkAddressDataType_Encoding_DefaultJson,21199,Object
@@ -608,6 +630,7 @@ NetworkGroupDataType,11944,DataType
 NetworkGroupDataType_Encoding_DefaultBinary,11958,Object
 NetworkGroupDataType_Encoding_DefaultJson,15364,Object
 NetworkGroupDataType_Encoding_DefaultXml,11950,Object
+NetworkInterfaces,24229,Object
 NodeAttributesMask,348,DataType
 NodeClass,257,DataType
 NodeId,17,DataType
@@ -649,10 +672,10 @@ OverrideValueHandling,15874,DataType
 PerformUpdateType,11293,DataType
 PermissionType,94,DataType
 ProcessConditionClassType,11164,ObjectType
-ProgramDiagnostic2DataType,15396,DataType
-ProgramDiagnostic2DataType_Encoding_DefaultBinary,15397,Object
-ProgramDiagnostic2DataType_Encoding_DefaultJson,15405,Object
-ProgramDiagnostic2DataType_Encoding_DefaultXml,15401,Object
+ProgramDiagnostic2DataType,24033,DataType
+ProgramDiagnostic2DataType_Encoding_DefaultBinary,24034,Object
+ProgramDiagnostic2DataType_Encoding_DefaultJson,24042,Object
+ProgramDiagnostic2DataType_Encoding_DefaultXml,24038,Object
 ProgramDiagnostic2Type,15383,VariableType
 ProgramDiagnosticDataType,894,DataType
 ProgramDiagnosticDataType_Encoding_DefaultBinary,896,Object
@@ -765,6 +788,7 @@ RelativePathElement,537,DataType
 RelativePathElement_Encoding_DefaultBinary,539,Object
 RelativePathElement_Encoding_DefaultJson,15188,Object
 RelativePathElement_Encoding_DefaultXml,538,Object
+Resources,24226,Object
 RoleMappingRuleChangedAuditEventType,17641,ObjectType
 RolePermissionType,96,DataType
 RolePermissionType_Encoding_DefaultBinary,128,Object
@@ -860,6 +884,7 @@ StatusResult,299,DataType
 StatusResult_Encoding_DefaultBinary,301,Object
 StatusResult_Encoding_DefaultJson,15371,Object
 StatusResult_Encoding_DefaultXml,300,Object
+Streams,24230,Object
 String,12,DataType
 Structure,22,DataType
 StructureDefinition,99,DataType
@@ -897,6 +922,7 @@ SystemEventType,2130,ObjectType
 SystemOffNormalAlarmType,11753,ObjectType
 SystemStatusChangeEventType,11446,ObjectType
 TagVariables,23479,Object
+TalkerStreams,24231,Object
 TargetVariablesDataType,15631,DataType
 TargetVariablesDataType_Encoding_DefaultBinary,15712,Object
 TargetVariablesDataType_Encoding_DefaultJson,16310,Object
@@ -924,6 +950,7 @@ ThreeDVector_Encoding_DefaultBinary,18817,Object
 ThreeDVector_Encoding_DefaultJson,19066,Object
 ThreeDVector_Encoding_DefaultXml,18853,Object
 ThreeDVectorType,17716,VariableType
+Time,292,DataType
 TimeString,12880,DataType
 TimeZoneDataType,8912,DataType
 TimeZoneDataType_Encoding_DefaultBinary,8917,Object
@@ -945,6 +972,10 @@ TrustListMasks,12552,DataType
 TrustListOutOfDateAlarmType,19297,ObjectType
 TrustListType,12522,ObjectType
 TrustListUpdatedAuditEventType,12561,ObjectType
+TsnFailureCode,24218,DataType
+TsnListenerStatus,24224,DataType
+TsnStreamState,24220,DataType
+TsnTalkerStatus,24222,DataType
 TwoStateDiscreteType,2373,VariableType
 TwoStateVariableType,8995,VariableType
 TypesFolder,86,Object
@@ -977,6 +1008,10 @@ Union,12756,DataType
 Union_Encoding_DefaultBinary,12766,Object
 Union_Encoding_DefaultJson,15085,Object
 Union_Encoding_DefaultXml,12758,Object
+UnsignedRationalNumber,24107,DataType
+UnsignedRationalNumber_Encoding_DefaultBinary,24110,Object
+UnsignedRationalNumber_Encoding_DefaultJson,24134,Object
+UnsignedRationalNumber_Encoding_DefaultXml,24122,Object
 UriDictionaryEntryType,17600,ObjectType
 UserCredentialCertificateType,15181,ObjectType
 UserIdentityToken,316,DataType

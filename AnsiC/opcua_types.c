@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -345,6 +345,8 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_StructureType_EnumeratedValues[] =
     { "Structure", 0 },
     { "StructureWithOptionalFields", 1 },
     { "Union", 2 },
+    { "StructureWithSubtypedValues", 3 },
+    { "UnionWithSubtypedValues", 4 },
     { OpcUa_Null, 0 }
 };
 
@@ -29033,7 +29035,7 @@ OpcUa_Void OpcUa_ProgramDiagnostic2DataType_Initialize(OpcUa_ProgramDiagnostic2D
         OpcUa_Field_InitializeArray(Variant, LastMethodInputValues);
         OpcUa_Field_InitializeArray(Variant, LastMethodOutputValues);
         OpcUa_Field_Initialize(DateTime, LastMethodCallTime);
-        OpcUa_Field_InitializeEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+        OpcUa_Field_Initialize(StatusCode, LastMethodReturnStatus);
     }
 }
 
@@ -29055,7 +29057,7 @@ OpcUa_Void OpcUa_ProgramDiagnostic2DataType_Clear(OpcUa_ProgramDiagnostic2DataTy
         OpcUa_Field_ClearArray(Variant, LastMethodInputValues);
         OpcUa_Field_ClearArray(Variant, LastMethodOutputValues);
         OpcUa_Field_Clear(DateTime, LastMethodCallTime);
-        OpcUa_Field_ClearEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+        OpcUa_Field_Clear(StatusCode, LastMethodReturnStatus);
     }
 }
 
@@ -29085,7 +29087,7 @@ OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_GetSize(OpcUa_ProgramDiagnosti
     OpcUa_Field_GetSizeArray(Variant, LastMethodInputValues);
     OpcUa_Field_GetSizeArray(Variant, LastMethodOutputValues);
     OpcUa_Field_GetSize(DateTime, LastMethodCallTime);
-    OpcUa_Field_GetSizeEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+    OpcUa_Field_GetSize(StatusCode, LastMethodReturnStatus);
 
     *a_pSize = iSize;
 
@@ -29118,7 +29120,7 @@ OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_Encode(OpcUa_ProgramDiagnostic
     OpcUa_Field_WriteArray(Variant, LastMethodInputValues);
     OpcUa_Field_WriteArray(Variant, LastMethodOutputValues);
     OpcUa_Field_Write(DateTime, LastMethodCallTime);
-    OpcUa_Field_WriteEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+    OpcUa_Field_Write(StatusCode, LastMethodReturnStatus);
 
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;
@@ -29151,7 +29153,7 @@ OpcUa_StatusCode OpcUa_ProgramDiagnostic2DataType_Decode(OpcUa_ProgramDiagnostic
     OpcUa_Field_ReadArray(Variant, LastMethodInputValues);
     OpcUa_Field_ReadArray(Variant, LastMethodOutputValues);
     OpcUa_Field_Read(DateTime, LastMethodCallTime);
-    OpcUa_Field_ReadEncodeable(OpcUa_StatusResult, LastMethodReturnStatus);
+    OpcUa_Field_Read(StatusCode, LastMethodReturnStatus);
 
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;

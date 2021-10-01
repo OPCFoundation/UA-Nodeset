@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2021-01-21T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.9" PublicationDate="2021-01-21T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -68,6 +68,17 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
   <UADataType NodeId="i=18" BrowseName="ExpandedNodeId">
     <DisplayName>ExpandedNodeId</DisplayName>
@@ -122,7 +133,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=307</Reference>
     </References>
     <Value>
@@ -305,7 +315,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=302</Reference>
     </References>
     <Value>
@@ -342,7 +351,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=303</Reference>
     </References>
     <Value>
@@ -453,6 +461,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="DiscoveryConfiguration" />
   </UADataType>
   <UADataType NodeId="i=12891" BrowseName="MdnsDiscoveryConfiguration">
     <DisplayName>MdnsDiscoveryConfiguration</DisplayName>
@@ -501,7 +510,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=315</Reference>
     </References>
     <Value>
@@ -646,6 +654,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=316</Reference>
     </References>
+    <Definition Name="AnonymousIdentityToken" />
   </UADataType>
   <UADataType NodeId="i=322" BrowseName="UserNameIdentityToken">
     <DisplayName>UserNameIdentityToken</DisplayName>
@@ -802,7 +811,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=348</Reference>
     </References>
     <Value>
@@ -1569,7 +1577,6 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=347</Reference>
     </References>
     <Value>
@@ -1672,7 +1679,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=510</Reference>
     </References>
     <Value>
@@ -1740,7 +1746,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=517</Reference>
     </References>
     <Value>
@@ -2148,7 +2153,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=576</Reference>
     </References>
     <Value>
@@ -2257,6 +2261,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="FilterOperand" />
   </UADataType>
   <UADataType NodeId="i=592" BrowseName="ElementOperand">
     <DisplayName>ElementOperand</DisplayName>
@@ -2401,7 +2406,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=625</Reference>
     </References>
     <Value>
@@ -2487,6 +2491,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="HistoryReadDetails" />
   </UADataType>
   <UADataType NodeId="i=644" BrowseName="ReadEventDetails" Purpose="ServicesOnly">
     <DisplayName>ReadEventDetails</DisplayName>
@@ -2666,7 +2671,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11234</Reference>
     </References>
     <Value>
@@ -2743,7 +2747,6 @@
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=11293</Reference>
     </References>
     <Value>
@@ -2955,7 +2958,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=716</Reference>
     </References>
     <Value>
@@ -2988,7 +2990,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=717</Reference>
     </References>
     <Value>
@@ -3021,7 +3022,6 @@
     <DisplayName>EnumStrings</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">i=718</Reference>
     </References>
     <Value>
@@ -3043,6 +3043,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="MonitoringFilter" />
   </UADataType>
   <UADataType NodeId="i=722" BrowseName="DataChangeFilter" Purpose="ServicesOnly">
     <DisplayName>DataChangeFilter</DisplayName>
@@ -3095,6 +3096,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="MonitoringFilterResult" />
   </UADataType>
   <UADataType NodeId="i=734" BrowseName="EventFilterResult" Purpose="ServicesOnly">
     <DisplayName>EventFilterResult</DisplayName>
@@ -3387,6 +3389,7 @@
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
+    <Definition Name="NotificationData" />
   </UADataType>
   <UADataType NodeId="i=809" BrowseName="DataChangeNotification" Purpose="ServicesOnly">
     <DisplayName>DataChangeNotification</DisplayName>
