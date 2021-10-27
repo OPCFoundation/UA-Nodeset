@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -364,7 +364,7 @@
               <uax:ValueRank>-1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
             <uax:StructureField>
               <uax:Name>ApplicationUri</uax:Name>
@@ -374,7 +374,7 @@
               <uax:ValueRank>-1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
             <uax:StructureField>
               <uax:Name>ApplicationType</uax:Name>
@@ -384,7 +384,7 @@
               <uax:ValueRank>-1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
             <uax:StructureField>
               <uax:Name>ApplicationNames</uax:Name>
@@ -394,7 +394,7 @@
               <uax:ValueRank>1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
             <uax:StructureField>
               <uax:Name>ProductUri</uax:Name>
@@ -404,7 +404,7 @@
               <uax:ValueRank>-1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
             <uax:StructureField>
               <uax:Name>DiscoveryUrls</uax:Name>
@@ -414,7 +414,7 @@
               <uax:ValueRank>1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
             <uax:StructureField>
               <uax:Name>ServerCapabilities</uax:Name>
@@ -424,7 +424,7 @@
               <uax:ValueRank>1</uax:ValueRank>
               <uax:ArrayDimensions />
               <uax:MaxStringLength>0</uax:MaxStringLength>
-              <uax:IsOptional>false</uax:IsOptional>
+              <uax:IsOptional>true</uax:IsOptional>
             </uax:StructureField>
           </uax:Fields>
         </uax:StructureDefinition>

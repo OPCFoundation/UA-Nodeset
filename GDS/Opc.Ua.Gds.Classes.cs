@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -69,6 +69,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -149,9 +150,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult FindApplicationsMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         string applicationUri,
         ref ApplicationRecordDataType[] applications);
     #endif
@@ -190,6 +191,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -270,9 +272,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult RegisterApplicationMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         ApplicationRecordDataType application,
         ref NodeId applicationId);
     #endif
@@ -311,6 +313,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -384,9 +387,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult UpdateApplicationMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         ApplicationRecordDataType application);
     #endif
     #endregion
@@ -424,6 +427,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -497,9 +501,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult UnregisterApplicationMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId);
     #endif
     #endregion
@@ -537,6 +541,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -617,9 +622,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult GetApplicationMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         ref ApplicationRecordDataType application);
     #endif
@@ -658,6 +663,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -761,9 +767,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult QueryApplicationsMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         uint startingRecordId,
         uint maxRecordsToReturn,
         string applicationName,
@@ -810,6 +816,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -907,9 +914,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult QueryServersMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         uint startingRecordId,
         uint maxRecordsToReturn,
         string applicationName,
@@ -952,6 +959,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -1468,6 +1476,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -1556,6 +1565,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -1644,9 +1654,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult StartSigningRequestMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         NodeId certificateGroupId,
         NodeId certificateTypeId,
@@ -1688,6 +1698,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -1784,9 +1795,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult StartNewKeyPairRequestMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         NodeId certificateGroupId,
         NodeId certificateTypeId,
@@ -1831,6 +1842,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -1921,9 +1933,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult FinishRequestMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         NodeId requestId,
         ref byte[] certificate,
@@ -1965,6 +1977,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -2045,9 +2058,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult GetCertificateGroupsMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         ref NodeId[] certificateGroupIds);
     #endif
@@ -2086,6 +2099,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -2169,9 +2183,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult GetTrustListMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         NodeId certificateGroupId,
         ref NodeId trustListId);
@@ -2211,6 +2225,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -2287,9 +2302,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult RevokeCertificateMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         byte[] certificate);
     #endif
@@ -2328,6 +2343,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -2413,9 +2429,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult GetCertificateStatusMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         NodeId certificateGroupId,
         NodeId certificateTypeId,
@@ -2456,6 +2472,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -2539,9 +2556,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult GetCertificatesMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId applicationId,
         NodeId certificateGroupId,
         ref byte[] certificates);
@@ -2581,6 +2598,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -2665,9 +2683,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult CheckRevocationStatusMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         byte[] certificate,
         ref StatusCode certificateStatus,
         ref DateTime validityTime);
@@ -2705,6 +2723,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -3334,6 +3353,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -3551,6 +3571,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -3768,6 +3789,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -3840,6 +3862,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4211,6 +4234,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4299,9 +4323,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult KeyCredentialStartRequestMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         string applicationUri,
         byte[] publicKey,
         string securityPolicyUri,
@@ -4343,6 +4367,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4440,9 +4465,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult KeyCredentialFinishRequestMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         NodeId requestId,
         bool cancelRequest,
         ref string credentialId,
@@ -4486,6 +4511,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4559,9 +4585,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult KeyCredentialRevokeMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         string credentialId);
     #endif
     #endregion
@@ -4597,6 +4623,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4684,6 +4711,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4771,6 +4799,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4858,6 +4887,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -4930,6 +4960,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -5306,6 +5337,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -5389,9 +5421,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult GetServiceDescriptionMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         ref string serviceUri,
         ref byte[] serviceCertificate,
         ref UserTokenPolicy[] userTokenPolicies);
@@ -5431,6 +5463,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }
@@ -5514,9 +5547,9 @@ namespace Opc.Ua.Gds
     /// </summary>
     /// <exclude />
     public delegate ServiceResult RequestAccessTokenMethodStateMethodCallHandler(
-        ISystemContext context,
-        MethodState method,
-        NodeId objectId,
+        ISystemContext _context,
+        MethodState _method,
+        NodeId _objectId,
         UserIdentityToken identityToken,
         string resourceId,
         ref string accessToken);
@@ -5554,6 +5587,7 @@ namespace Opc.Ua.Gds
         /// </summary>
         protected override void Initialize(ISystemContext context)
         {
+            base.Initialize(context);
             Initialize(context, InitializationString);
             InitializeOptionalChildren(context);
         }

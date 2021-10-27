@@ -98,6 +98,7 @@ Argument_Encoding_DefaultBinary,298,Object
 Argument_Encoding_DefaultJson,15081,Object
 Argument_Encoding_DefaultXml,297,Object
 ArrayItemType,12021,VariableType
+AssociatedWith,24137,ReferenceType
 AttributeOperand,598,DataType
 AttributeOperand_Encoding_DefaultBinary,600,Object
 AttributeOperand_Encoding_DefaultJson,15209,Object
@@ -308,7 +309,6 @@ DataTypeSchemaHeader_Encoding_DefaultXml,15950,Object
 DataTypesFolder,90,Object
 DataTypeSystemType,75,ObjectType
 DataValue,23,DataType
-Date,293,DataType
 DateString,12881,DataType
 DateTime,13,DataType
 Decimal,50,DataType
@@ -480,6 +480,7 @@ HasOrderedComponent,49,ReferenceType
 HasProperty,46,ReferenceType
 HasPubSubConnection,14476,ReferenceType
 HasReaderGroup,18805,ReferenceType
+HasStructuredComponent,24136,ReferenceType
 HasSubStateMachine,117,ReferenceType
 HasSubtype,45,ReferenceType
 HasTrueSubState,9004,ReferenceType
@@ -541,6 +542,7 @@ InterfaceTypes,17708,Object
 IOrderedObjectType,23513,ObjectType
 IPriorityMappingEntryType,24205,ObjectType
 IrdiDictionaryEntryType,17598,ObjectType
+IsDeprecated,23562,ReferenceType
 ISrClassType,24169,ObjectType
 IssuedIdentityToken,938,DataType
 IssuedIdentityToken_Encoding_DefaultBinary,940,Object
@@ -671,6 +673,14 @@ OutputArguments,3073,Variable
 OverrideValueHandling,15874,DataType
 PerformUpdateType,11293,DataType
 PermissionType,94,DataType
+PortableNodeId,24106,DataType
+PortableNodeId_Encoding_DefaultBinary,24109,Object
+PortableNodeId_Encoding_DefaultJson,24133,Object
+PortableNodeId_Encoding_DefaultXml,24121,Object
+PortableQualifiedName,24105,DataType
+PortableQualifiedName_Encoding_DefaultBinary,24108,Object
+PortableQualifiedName_Encoding_DefaultJson,24132,Object
+PortableQualifiedName_Encoding_DefaultXml,24120,Object
 ProcessConditionClassType,11164,ObjectType
 ProgramDiagnostic2DataType,24033,DataType
 ProgramDiagnostic2DataType_Encoding_DefaultBinary,24034,Object
@@ -816,6 +826,7 @@ SemanticChangeStructureDataType,897,DataType
 SemanticChangeStructureDataType_Encoding_DefaultBinary,899,Object
 SemanticChangeStructureDataType_Encoding_DefaultJson,15374,Object
 SemanticChangeStructureDataType_Encoding_DefaultXml,898,Object
+SemanticVersionString,24263,DataType
 Server,2253,Object
 Server_ServerRedundancy_CurrentServerId,11312,Variable
 Server_ServerRedundancy_RedundantServerArray,11313,Variable
@@ -950,7 +961,6 @@ ThreeDVector_Encoding_DefaultBinary,18817,Object
 ThreeDVector_Encoding_DefaultJson,19066,Object
 ThreeDVector_Encoding_DefaultXml,18853,Object
 ThreeDVectorType,17716,VariableType
-Time,292,DataType
 TimeString,12880,DataType
 TimeZoneDataType,8912,DataType
 TimeZoneDataType_Encoding_DefaultBinary,8917,Object
@@ -1013,6 +1023,7 @@ UnsignedRationalNumber_Encoding_DefaultBinary,24110,Object
 UnsignedRationalNumber_Encoding_DefaultJson,24134,Object
 UnsignedRationalNumber_Encoding_DefaultXml,24122,Object
 UriDictionaryEntryType,17600,ObjectType
+UriString,23751,DataType
 UserCredentialCertificateType,15181,ObjectType
 UserIdentityToken,316,DataType
 UserIdentityToken_Encoding_DefaultBinary,318,Object

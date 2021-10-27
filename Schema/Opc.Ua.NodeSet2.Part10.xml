@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-10-26T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.05" PublicationDate="2021-10-26T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -454,6 +454,7 @@
       <Reference ReferenceType="ToState">i=2400</Reference>
       <Reference ReferenceType="HasCause">i=2430</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -477,6 +478,7 @@
       <Reference ReferenceType="ToState">i=2402</Reference>
       <Reference ReferenceType="HasCause">i=2426</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -500,6 +502,7 @@
       <Reference ReferenceType="ToState">i=2406</Reference>
       <Reference ReferenceType="HasCause">i=2429</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -522,6 +525,7 @@
       <Reference ReferenceType="FromState">i=2402</Reference>
       <Reference ReferenceType="ToState">i=2400</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -545,6 +549,7 @@
       <Reference ReferenceType="ToState">i=2404</Reference>
       <Reference ReferenceType="HasCause">i=2427</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -568,6 +573,7 @@
       <Reference ReferenceType="ToState">i=2402</Reference>
       <Reference ReferenceType="HasCause">i=2428</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -590,7 +596,9 @@
       <Reference ReferenceType="FromState">i=2404</Reference>
       <Reference ReferenceType="ToState">i=2406</Reference>
       <Reference ReferenceType="HasCause">i=2429</Reference>
+      <Reference ReferenceType="HasCause">i=2430</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -613,6 +621,8 @@
       <Reference ReferenceType="FromState">i=2404</Reference>
       <Reference ReferenceType="ToState">i=2400</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
+      <Reference ReferenceType="HasCause">i=2430</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -636,6 +646,7 @@
       <Reference ReferenceType="ToState">i=2406</Reference>
       <Reference ReferenceType="HasCause">i=2429</Reference>
       <Reference ReferenceType="HasEffect">i=2378</Reference>
+      <Reference ReferenceType="HasEffect">i=11856</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
@@ -689,6 +700,8 @@
     <DisplayName>Reset</DisplayName>
     <References>
       <Reference ReferenceType="HasCause" IsForward="false">i=2408</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2420</Reference>
+      <Reference ReferenceType="HasCause" IsForward="false">i=2422</Reference>
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=2391</Reference>
     </References>
