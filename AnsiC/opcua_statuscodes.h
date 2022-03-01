@@ -1322,6 +1322,11 @@ OPCUA_BEGIN_EXTERN_C
  *===========================================================================*/
 #define OpcUa_GoodCascade 0x04090000
 
+/*============================================================================
+ * The DataSet specified for the DataSetWriter creation is invalid.
+ *===========================================================================*/
+#define OpcUa_BadDataSetIdInvalid 0x80E70000
+
 OPCUA_END_EXTERN_C
 
 #endif /* _OpcUa_StatusCodes_H_ */
