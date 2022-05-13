@@ -28,7 +28,7 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/IA" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/IA">
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/IA/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/IA/">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
     <opc:EnumeratedType LengthInBits="32" Name="LevelDisplayMode">
         <opc:Documentation>Contains the values used to indicate how a percentual value is displayed if the stacklight unit works in Levelmeter mode.</opc:Documentation>
