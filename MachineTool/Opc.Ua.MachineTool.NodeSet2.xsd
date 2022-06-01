@@ -81,6 +81,22 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfMachineOperationMode" name="ListOfMachineOperationMode" nillable="true"/>
+    <xs:simpleType name="MaintenanceMode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Service_0"/>
+            <xs:enumeration value="Inspection_1"/>
+            <xs:enumeration value="Repair_2"/>
+            <xs:enumeration value="Upgrade_3"/>
+            <xs:enumeration value="Other_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MaintenanceMode" name="MaintenanceMode"/>
+    <xs:complexType name="ListOfMaintenanceMode">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MaintenanceMode" name="MaintenanceMode" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMaintenanceMode" name="ListOfMaintenanceMode" nillable="true"/>
     <xs:simpleType name="PartQuality">
         <xs:restriction base="xs:string">
             <xs:enumeration value="CapabilityUnavailable_0"/>
