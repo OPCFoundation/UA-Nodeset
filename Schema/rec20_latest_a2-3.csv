@@ -1572,7 +1572,8 @@ X,M0,magnetic tape,,3.6,,
 ,M49,chain (based on U.S. survey foot),Unit of the length according the Anglo-American system of units.,2,ch (US survey) ,"2,011684 x 10 m"
 ,M5,microcurie,,2S,µCi,"3,7 x 10⁴ Bq"
 ,M50,furlong,Unit commonly used in Great Britain at rural distances: 1 furlong = 40 rods = 10 chains (UK) = 1/8 mile = 1/10 furlong = 220 yards = 660 foot.,2,fur,"2,011 68 x 10² m"
-,M51,foot (U.S. survey),"Unit commonly used in the United States for ordnance survey.",2,ft (US survey) ,"3,048 006 x 10⁻¹ m"
+,M51,foot (U.S. survey),"Unit commonly used in the United States for ordnance survey.
+",2,ft (US survey) ,"3,048 006 x 10⁻¹ m"
 ,M52,mile (based on U.S. survey foot),Unit commonly used in the United States for ordnance survey.,2,mi (US survey) ,"1,609347 x 10³ m"
 ,M53,metre per pascal,SI base unit metre divided by the derived SI unit pascal.,1M,m/Pa,kg⁻¹ x m² x s²
 ,M55,metre per radiant,Unit of the translation factor for implementation from rotation to linear movement.,1S,m/rad,m/rad
