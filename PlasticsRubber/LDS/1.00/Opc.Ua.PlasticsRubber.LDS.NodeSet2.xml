@@ -83,7 +83,7 @@
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:AdditiveStatusEnumeration">
     <DisplayName>AdditiveStatusEnumeration</DisplayName>
     <Description>Actual status of the additive provides a minimal error handling for devices without event support.</Description>
-    <Documentation>https://reference.opcfoundation.org11.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/11.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6087</Reference>
@@ -201,7 +201,7 @@
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:ComponentStatusEnumeration">
     <DisplayName>ComponentStatusEnumeration</DisplayName>
     <Description>Actual status of the component provides a minimal error handling for devices without event support.</Description>
-    <Documentation>https://reference.opcfoundation.org10.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/10.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
@@ -356,7 +356,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:MaterialBalanceSystemTypeEnumeration">
     <DisplayName>MaterialBalanceSystemTypeEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org9.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.8</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6056</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -390,7 +390,7 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:PurgeStatusEnumeration">
     <DisplayName>PurgeStatusEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org9.20</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.20</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6055</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -590,7 +590,7 @@
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:AdditiveType">
     <DisplayName>AdditiveType</DisplayName>
     <Description>Information about used additives</Description>
-    <Documentation>https://reference.opcfoundation.org11.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/11.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
@@ -1650,7 +1650,7 @@
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:AdditiveAlarmType">
     <DisplayName>AdditiveAlarmType</DisplayName>
     <Description>Represent additive-related text messages</Description>
-    <Documentation>https://reference.opcfoundation.org12.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/12.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1052</Reference>
     </References>
@@ -1658,7 +1658,7 @@
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:ComponentAlarmType">
     <DisplayName>ComponentAlarmType</DisplayName>
     <Description>Represent component-related text messages</Description>
-    <Documentation>https://reference.opcfoundation.org12.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/12.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1052</Reference>
     </References>
@@ -1666,7 +1666,7 @@
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:LDSCycleParametersEventType" IsAbstract="true">
     <DisplayName>LDSCycleParametersEventType</DisplayName>
     <Description>Information on a dosing cycle</Description>
-    <Documentation>https://reference.opcfoundation.org9.24.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.24.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6483</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6461</Reference>
@@ -2176,7 +2176,7 @@
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:ComponentType">
     <DisplayName>ComponentType</DisplayName>
     <Description>Information about the mixing components A and B</Description>
-    <Documentation>https://reference.opcfoundation.org10.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/10.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6044</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6049</Reference>
@@ -2275,7 +2275,7 @@
   <UAMethod NodeId="ns=1;i=7020" BrowseName="1:SetSetValueDensity" ParentNodeId="ns=1;i=1005">
     <DisplayName>SetSetValueDensity</DisplayName>
     <Description>This optional method is used to modify SetValueDensity if allowed by the device.</Description>
-    <Documentation>https://reference.opcfoundation.org10.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/10.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6448</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -2355,7 +2355,7 @@
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:LDS_InterfaceType">
     <DisplayName>LDS_InterfaceType</DisplayName>
     <Description>Root ObjectType representing a LSR dosing system with its subcomponents</Description>
-    <Documentation>https://reference.opcfoundation.org6.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/6.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6206</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6205</Reference>
@@ -4097,7 +4097,7 @@
   <UAMethod NodeId="ns=1;i=7045" BrowseName="1:SetSetValueDensity" ParentNodeId="ns=1;i=5029" MethodDeclarationId="ns=1;i=7020">
     <DisplayName>SetSetValueDensity</DisplayName>
     <Description>This optional method is used to modify SetValueDensity if allowed by the device.</Description>
-    <Documentation>https://reference.opcfoundation.org10.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/10.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6641</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5418,7 +5418,7 @@
   <UAMethod NodeId="ns=1;i=7011" BrowseName="1:IdentifyDevice" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=1;i=7002">
     <DisplayName>IdentifyDevice</DisplayName>
     <Description>The peripheral device on which this method is called shows itself by e.g. activation of a LED.</Description>
-    <Documentation>https://reference.opcfoundation.org9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5575,7 +5575,7 @@
   <UAMethod NodeId="ns=1;i=7031" BrowseName="1:ResetAllErrors" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=1;i=7003">
     <DisplayName>ResetAllErrors</DisplayName>
     <Description>Method to reset all errors of the device</Description>
-    <Documentation>https://reference.opcfoundation.org9.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.5</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
@@ -5584,7 +5584,7 @@
   <UAMethod NodeId="ns=1;i=7030" BrowseName="1:ResetErrorById" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=1;i=7010">
     <DisplayName>ResetErrorById</DisplayName>
     <Description>Method to reset one error of the device</Description>
-    <Documentation>https://reference.opcfoundation.org9.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6425</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5622,7 +5622,7 @@
   <UAMethod NodeId="ns=1;i=7014" BrowseName="1:SetCycleNumber" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=1;i=7006">
     <DisplayName>SetCycleNumber</DisplayName>
     <Description>Method to set the cycle number of the LDS to synchronize it with the cycle number of the injection moulding machine</Description>
-    <Documentation>https://reference.opcfoundation.org9.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6094</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5720,7 +5720,7 @@
   <UAMethod NodeId="ns=1;i=7040" BrowseName="1:StartDosing" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=1;i=7021">
     <DisplayName>StartDosing</DisplayName>
     <Description>If RemoteControlActivated = 2, this Method (without arguments) is used to start the dosing</Description>
-    <Documentation>https://reference.opcfoundation.org9.23</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.23</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
@@ -5728,7 +5728,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=7041" BrowseName="1:StopDosing" ParentNodeId="ns=1;i=5010" MethodDeclarationId="ns=1;i=7028">
     <DisplayName>StopDosing</DisplayName>
-    <Documentation>https://reference.opcfoundation.org9.23</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.23</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
@@ -5764,7 +5764,7 @@
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:OperationType">
     <DisplayName>OperationType</DisplayName>
     <Description>This ObjectType contains components which are necessary to operate the LDS.</Description>
-    <Documentation>https://reference.opcfoundation.org9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/HotRunner/v100/docs/9.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6072</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6060</Reference>
@@ -7067,7 +7067,7 @@
   <UAMethod NodeId="ns=1;i=7029" BrowseName="1:SetSetValueDensity" ParentNodeId="ns=1;i=5005" MethodDeclarationId="ns=1;i=7020">
     <DisplayName>SetSetValueDensity</DisplayName>
     <Description>This optional method is used to modify SetValueDensity if allowed by the device.</Description>
-    <Documentation>https://reference.opcfoundation.org10.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/10.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6625</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -8388,7 +8388,7 @@
   <UAMethod NodeId="ns=1;i=7002" BrowseName="1:IdentifyDevice" ParentNodeId="ns=1;i=1006">
     <DisplayName>IdentifyDevice</DisplayName>
     <Description>The peripheral device on which this method is called shows itself by e.g. activation of a LED.</Description>
-    <Documentation>https://reference.opcfoundation.org9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/HotRunner/v100/docs/9.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -8545,7 +8545,7 @@
   <UAMethod NodeId="ns=1;i=7003" BrowseName="1:ResetAllErrors" ParentNodeId="ns=1;i=1006">
     <DisplayName>ResetAllErrors</DisplayName>
     <Description>Method to reset all errors of the device</Description>
-    <Documentation>https://reference.opcfoundation.org9.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/HotRunner/v100/docs/9.5</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
@@ -8554,7 +8554,7 @@
   <UAMethod NodeId="ns=1;i=7010" BrowseName="1:ResetErrorById" ParentNodeId="ns=1;i=1006">
     <DisplayName>ResetErrorById</DisplayName>
     <Description>Method to reset one error of the device</Description>
-    <Documentation>https://reference.opcfoundation.org9.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/HotRunner/v100/docs/9.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -8592,7 +8592,7 @@
   <UAMethod NodeId="ns=1;i=7006" BrowseName="1:SetCycleNumber" ParentNodeId="ns=1;i=1006">
     <DisplayName>SetCycleNumber</DisplayName>
     <Description>Method to set the cycle number of the LDS to synchronize it with the cycle number of the injection moulding machine</Description>
-    <Documentation>https://reference.opcfoundation.org9.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6039</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -8690,7 +8690,7 @@
   <UAMethod NodeId="ns=1;i=7021" BrowseName="1:StartDosing" ParentNodeId="ns=1;i=1006">
     <DisplayName>StartDosing</DisplayName>
     <Description>If RemoteControlActivated = 2, this Method (without arguments) is used to start the dosing</Description>
-    <Documentation>https://reference.opcfoundation.org9.23</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.23</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
@@ -8698,7 +8698,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=7028" BrowseName="1:StopDosing" ParentNodeId="ns=1;i=1006">
     <DisplayName>StopDosing</DisplayName>
-    <Documentation>https://reference.opcfoundation.org9.23</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/9.23</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
@@ -8733,7 +8733,7 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=5017" BrowseName="1:http://opcfoundation.org/UA/PlasticsRubber/LDS/" SymbolicName="http___opcfoundation_org_UA_PlasticsRubber_LDS_">
     <DisplayName>http://opcfoundation.org/UA/PlasticsRubber/LDS/</DisplayName>
-    <Documentation>https://reference.opcfoundation.org14.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/LDS/v100/docs/14.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6202</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>

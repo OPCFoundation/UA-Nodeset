@@ -30,22 +30,22 @@
 
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
-    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Calibrator/</Uri>
+    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Calibrator/</Uri>
     <Uri>http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Uri>
-    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Uri>
+    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/GeneralTypes/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Calibrator/" Version="1.00" PublicationDate="2020-06-01T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" Version="1.02" PublicationDate="2020-06-01T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" Version="1.00" PublicationDate="2020-06-01T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Calibrator/" Version="2.00" PublicationDate="2022-05-01T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.7" PublicationDate="2020-07-15T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.02.0" PublicationDate="2022-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" Version="1.03" PublicationDate="2021-05-10T12:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/GeneralTypes/" Version="2.00" PublicationDate="2022-05-01T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="UInt16">i=5</Alias>
-    <Alias Alias="UInt32">i=7</Alias>
     <Alias Alias="Double">i=11</Alias>
     <Alias Alias="String">i=12</Alias>
     <Alias Alias="DateTime">i=13</Alias>
@@ -68,12 +68,13 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="Yo7AXahTMEpcHjfHknRcHw==" Version="1.6.3" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="EoU87tYDaQ+2UkiyfOzXsA==" Version="1.6.5" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:CalibrationZonesType">
     <DisplayName>CalibrationZonesType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Calibrator/v100/docs/7.5.1</Documentation>
+    <Category>OPC 40084-10 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Calibrator/v200/docs/6.5.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5016</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -122,8 +123,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5018" BrowseName="1:AirShowerPressure" ParentNodeId="ns=1;i=5016">
@@ -307,8 +307,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6043" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5018" DataType="Boolean">
@@ -1029,8 +1028,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6052" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5019" DataType="Boolean">
@@ -1745,8 +1743,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6058" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5021" DataType="Boolean">
@@ -2443,8 +2440,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6127" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5022" DataType="Boolean">
@@ -3159,8 +3155,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6158" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5024" DataType="Boolean">
@@ -3865,8 +3860,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6488" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5048" DataType="Boolean">
@@ -4563,8 +4557,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6493" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5049" DataType="Boolean">
@@ -5261,8 +5254,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6498" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5050" DataType="Boolean">
@@ -5959,8 +5951,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6503" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5051" DataType="Boolean">
@@ -6478,7 +6469,8 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:CalibrationZoneType">
     <DisplayName>CalibrationZoneType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Calibrator/v100/docs/7.5.3</Documentation>
+    <Category>OPC 40084-10 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Calibrator/v200/docs/6.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5009</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5008</Reference>
@@ -6512,8 +6504,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5008" BrowseName="1:AirShowerPressure" ParentNodeId="ns=1;i=1002">
@@ -6697,8 +6688,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6069" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5008" DataType="Boolean">
@@ -7419,8 +7409,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6005" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5001" DataType="Boolean">
@@ -8135,8 +8124,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6327" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5037" DataType="Boolean">
@@ -8833,8 +8821,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6333" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5038" DataType="Boolean">
@@ -9549,8 +9536,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6064" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5007" DataType="Boolean">
@@ -10068,14 +10054,15 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:Calibrator_InterfaceType">
     <DisplayName>Calibrator_InterfaceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Calibrator/v100/docs/7.1</Documentation>
+    <Category>OPC 40084-10 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Calibrator/v200/docs/6.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5036</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5035</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5033</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5034</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5032</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1002</Reference>
     </References>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5036" BrowseName="1:CalibrationZones" ParentNodeId="ns=1;i=1004">
@@ -10281,8 +10268,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6543" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5073" DataType="Boolean">
@@ -10979,8 +10965,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6562" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5074" DataType="Boolean">
@@ -11677,8 +11662,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6647" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5075" DataType="Boolean">
@@ -12375,8 +12359,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6699" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5076" DataType="Boolean">
@@ -12910,8 +12893,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5033" BrowseName="1:PositionsX" ParentNodeId="ns=1;i=1004">
@@ -12932,8 +12914,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5034" BrowseName="1:PositionsY" ParentNodeId="ns=1;i=1004">
@@ -12954,8 +12935,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5032" BrowseName="1:PositionZ" ParentNodeId="ns=1;i=1004">
@@ -13139,8 +13119,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6312" BrowseName="2:IsPresent" ParentNodeId="ns=1;i=5032" DataType="Boolean">
@@ -13445,7 +13424,7 @@
       <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6313" BrowseName="2:Position" ParentNodeId="ns=1;i=5032" DataType="UInt32">
+  <UAVariable NodeId="ns=1;i=6313" BrowseName="2:Position" ParentNodeId="ns=1;i=5032" DataType="String">
     <DisplayName>Position</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -13453,7 +13432,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7036" BrowseName="2:ResetMonitoring" ParentNodeId="ns=1;i=5032" MethodDeclarationId="ns=2;i=7053">
@@ -13659,9 +13638,9 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5064" BrowseName="1:http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Calibrator/" SymbolicName="http___opcfoundation_org_UA_PlasticsRubber_Extrusion_Calibrator_">
-    <DisplayName>http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Calibrator/</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Calibrator/v100/docs/9.1</Documentation>
+  <UAObject NodeId="ns=1;i=5064" BrowseName="1:http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Calibrator/" SymbolicName="http___opcfoundation_org_UA_PlasticsRubber_Extrusion_v2_Calibrator_">
+    <DisplayName>http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Calibrator/</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Calibrator/v200/docs/8.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6714</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -13691,7 +13670,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-06-01T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-05-01T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6716" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5064" DataType="String">
@@ -13701,7 +13680,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Calibrator/</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Calibrator/</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6717" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=5064" DataType="String">
@@ -13711,7 +13690,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2.00</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6718" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5064" DataType="IdType" ValueRank="1" ArrayDimensions="0">
@@ -13722,8 +13701,8 @@
     </References>
     <Value>
       <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:Int32>0</uax:Int32>
-      </uax:ListOfInt32>
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6719" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5064" DataType="NumericRange" ValueRank="1" ArrayDimensions="0">

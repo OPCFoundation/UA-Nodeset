@@ -30,16 +30,17 @@
 
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
-    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/</Uri>
-    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Uri>
+    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/</Uri>
+    <Uri>http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/GeneralTypes/</Uri>
     <Uri>http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/" Version="1.00" PublicationDate="2020-06-01T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.3" PublicationDate="2019-09-09T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02" PublicationDate="2019-05-01T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" Version="1.02" PublicationDate="2020-06-01T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" Version="1.00" PublicationDate="2020-06-01T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/" Version="2.00" PublicationDate="2022-05-01T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.7" PublicationDate="2020-07-15T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.02.0" PublicationDate="2022-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" Version="1.03" PublicationDate="2021-05-10T12:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/GeneralTypes/" Version="2.00" PublicationDate="2022-05-01T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -67,12 +68,12 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="hpuDHUR5UKR3eCEQ7SRz+w==" Version="1.6.3" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="K02pF8/tz91Meq90qm60cA==" Version="1.6.5" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:WallThickeningEnumeration">
     <DisplayName>WallThickeningEnumeration</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Cutter/v100/docs/7.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -93,24 +94,24 @@
     </References>
     <Value>
       <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:LocalizedText>
-          <uax:Text>NO</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>FRONT</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>END</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>BOTH</uax:Text>
-        </uax:LocalizedText>
-      </uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>NO</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FRONT</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>END</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>BOTH</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6005" BrowseName="1:OPC40084_9" SymbolicName="OPC40084_9_BinarySchema" DataType="ByteString">
     <DisplayName>OPC40084_9</DisplayName>
-    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutters/</Description>
+    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
@@ -119,18 +120,18 @@
     <Value>
       <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
         W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9Qb
-        GFzdGljc1J1YmJlci9FeHRydXNpb24vQ3V0dGVyLyIgRGVmYXVsdEJ5dGVPcmRlcj0iTGl0d
-        GxlRW5kaWFuIiB4bWxuczpvcGM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hcnlTY
-        2hlbWEvIiB4bWxuczp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgVGFyZ2V0T
-        mFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUGxhc3RpY3NSdWJiZXIvR
-        Xh0cnVzaW9uL0N1dHRlci8iPgogPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZ
-        m91bmRhdGlvbi5vcmcvVUEvIi8+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0c
-        z0iMzIiIE5hbWU9IldhbGxUaGlja2VuaW5nRW51bWVyYXRpb24iPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9Ik5PIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
-        E5hbWU9IkZST05UIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
-        kVORCIgVmFsdWU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJCT1RIIiBWY
-        Wx1ZT0iMyIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0aW9uYXJ5P
-        go=</uax:ByteString>
+        GFzdGljc1J1YmJlci9FeHRydXNpb25fdjIvQ3V0dGVyLyIgRGVmYXVsdEJ5dGVPcmRlcj0iT
+        Gl0dGxlRW5kaWFuIiB4bWxuczpvcGM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hc
+        nlTY2hlbWEvIiB4bWxuczp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgVGFyZ
+        2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUGxhc3RpY3NSdWJiZ
+        XIvRXh0cnVzaW9uX3YyL0N1dHRlci8iPgogPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwO
+        i8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIi8+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0a
+        EluQml0cz0iMzIiIE5hbWU9IldhbGxUaGlja2VuaW5nRW51bWVyYXRpb24iPgogIDxvcGM6R
+        W51bWVyYXRlZFZhbHVlIE5hbWU9Ik5PIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IkZST05UIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9IkVORCIgVmFsdWU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJCT
+        1RIIiBWYWx1ZT0iMyIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0a
+        W9uYXJ5Pgo=</uax:ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6006" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6005" DataType="String">
@@ -140,12 +141,12 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6007" BrowseName="1:OPC40084_9" SymbolicName="OPC40084_9_XmlSchema" DataType="ByteString">
     <DisplayName>OPC40084_9</DisplayName>
-    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutters/</Description>
+    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
@@ -153,26 +154,26 @@
     </References>
     <Value>
       <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
-        HRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUGxhc3RpY3NSdWJiZXIvRXh0cnVzaW9uL0N1d
-        HRlci9UeXBlcy54c2QiIHhtbG5zOnRucz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBL
-        1BsYXN0aWNzUnViYmVyL0V4dHJ1c2lvbi9DdXR0ZXIvVHlwZXMueHNkIiB4bWxuczp1YT0ia
-        HR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiB4bWxuczp4c
-        z0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPgogPHhzOmltcG9ydCBuYW1lc
-        3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIvP
-        gogPHhzOnNpbXBsZVR5cGUgbmFtZT0iV2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiI+CiAgP
-        HhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
-        Wx1ZT0iTk9fMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkZST05UXzEiLz4KICAgP
-        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJFTkRfMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsd
-        WU9IkJPVEhfMyIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8e
-        HM6ZWxlbWVudCB0eXBlPSJ0bnM6V2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiIgbmFtZT0iV
-        2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc
-        3RPZldhbGxUaGlja2VuaW5nRW51bWVyYXRpb24iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzO
-        mVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zO
-        ldhbGxUaGlja2VuaW5nRW51bWVyYXRpb24iIG5hbWU9IldhbGxUaGlja2VuaW5nRW51bWVyY
-        XRpb24iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxle
-        FR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mV2FsbFRoaWNrZW5pbmdFbnVtZ
-        XJhdGlvbiIgbmFtZT0iTGlzdE9mV2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiIgbmlsbGFib
-        GU9InRydWUiLz4KPC94czpzY2hlbWE+Cg==</uax:ByteString>
+        HRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUGxhc3RpY3NSdWJiZXIvRXh0cnVzaW9uX3YyL
+        0N1dHRlci9UeXBlcy54c2QiIHhtbG5zOnRucz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL
+        1VBL1BsYXN0aWNzUnViYmVyL0V4dHJ1c2lvbl92Mi9DdXR0ZXIvVHlwZXMueHNkIiB4bWxuc
+        zp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiB4b
+        Wxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPgogPHhzOmltcG9yd
+        CBuYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzL
+        nhzZCIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iV2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvb
+        iI+CiAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhd
+        GlvbiB2YWx1ZT0iTk9fMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkZST05UXzEiL
+        z4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJFTkRfMiIvPgogICA8eHM6ZW51bWVyYXRpb
+        24gdmFsdWU9IkJPVEhfMyIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5c
+        GU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6V2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiIgb
+        mFtZT0iV2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiIvPgogPHhzOmNvbXBsZXhUeXBlIG5hb
+        WU9Ikxpc3RPZldhbGxUaGlja2VuaW5nRW51bWVyYXRpb24iPgogIDx4czpzZXF1ZW5jZT4KI
+        CAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZ
+        T0idG5zOldhbGxUaGlja2VuaW5nRW51bWVyYXRpb24iIG5hbWU9IldhbGxUaGlja2VuaW5nR
+        W51bWVyYXRpb24iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y
+        29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mV2FsbFRoaWNrZW5pb
+        mdFbnVtZXJhdGlvbiIgbmFtZT0iTGlzdE9mV2FsbFRoaWNrZW5pbmdFbnVtZXJhdGlvbiIgb
+        mlsbGFibGU9InRydWUiLz4KPC94czpzY2hlbWE+Cg==</uax:ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6008" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6007" DataType="String">
@@ -182,12 +183,13 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/Types.xsd</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/Types.xsd</uax:String>
     </Value>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:CutEventType" IsAbstract="true">
     <DisplayName>CutEventType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Cutter/v100/docs/7.12</Documentation>
+    <Category>OPC 40084-9 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.12</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
@@ -222,7 +224,8 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:CuttingProductsType">
     <DisplayName>CuttingProductsType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Cutter/v100/docs/7.5</Documentation>
+    <Category>OPC 40084-9 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.5</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6029</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
@@ -354,7 +357,8 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:CuttingProductType">
     <DisplayName>CuttingProductType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Cutter/v100/docs/7.6</Documentation>
+    <Category>OPC 40084-9 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.6</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -468,10 +472,10 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:Cutter_InterfaceType">
     <DisplayName>Cutter_InterfaceType</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Cutter/v100/docs/7.1</Documentation>
+    <Category>OPC 40084-9 Basic</Category>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.1</Documentation>
     <References>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1002</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
@@ -482,6 +486,7 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6048</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6045</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6044</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
     </References>
   </UAObjectType>
   <UAObject NodeId="ns=1;i=5003" BrowseName="1:CuttingProducts" ParentNodeId="ns=1;i=1005">
@@ -664,6 +669,7 @@
   </UAMethod>
   <UAMethod NodeId="ns=1;i=7002" BrowseName="1:ManualCut" ParentNodeId="ns=1;i=1005">
     <DisplayName>ManualCut</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.9</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -1073,6 +1079,7 @@
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7003" BrowseName="1:SampleCut" ParentNodeId="ns=1;i=1005">
     <DisplayName>SampleCut</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/6.10</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
@@ -1145,9 +1152,9 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5006" BrowseName="1:http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/" SymbolicName="http___opcfoundation_org_UA_PlasticsRubber_Extrusion_Cutter_">
-    <DisplayName>http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/v104/PlasticsRubber/Extrusion/Cutter/v100/docs/9.1</Documentation>
+  <UAObject NodeId="ns=1;i=5006" BrowseName="1:http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/" SymbolicName="http___opcfoundation_org_UA_PlasticsRubber_Extrusion_v2_Cutter_">
+    <DisplayName>http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/v105/PlasticsRubber/Extrusion/Cutter/v200/docs/8.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6049</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -1177,7 +1184,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-06-01T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-05-01T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6086" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5006" DataType="String">
@@ -1187,7 +1194,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PlasticsRubber/Extrusion_v2/Cutter/</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6087" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=5006" DataType="String">
@@ -1197,7 +1204,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2.00</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6088" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5006" DataType="IdType" ValueRank="1" ArrayDimensions="0">
@@ -1208,8 +1215,8 @@
     </References>
     <Value>
       <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:Int32>0</uax:Int32>
-      </uax:ListOfInt32>
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6089" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5006" DataType="NumericRange" ValueRank="1" ArrayDimensions="0">
