@@ -12,7 +12,7 @@
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2021-09-07T00:00:00Z" Version="1.03.1"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" PublicationDate="2022-05-01T00:00:00Z" Version="1.02.0"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/IA/" PublicationDate="2021-07-31T00:00:00Z" Version="1.01.0"/>
-            <RequiredModel ModelUri="http://opcfoundation.org/UA/MachineTool/" PublicationDate="2022-05-09T12:00:00Z" Version="1.01.0"/>
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/MachineTool/" PublicationDate="2022-06-08T12:00:00Z" Version="1.01.0"/>
         </Model>
     </Models>
     <Aliases>
@@ -37,7 +37,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="p9gQlwVliUaRyjjEIttPvw==" Version="1.6.5"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="7zdnEShCtE9OOiUoRehHaQ==" Version="1.6.5"/>
         </Extension>
     </Extensions>
     <UAObject NodeId="ns=1;i=5002" BrowseName="1:SampleMachineTool">
@@ -236,8 +236,8 @@
         <DisplayName>Equipment</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=12</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=5025</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5015</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5025</Reference>
         </References>
     </UAObject>
     <UAObject ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=5025" BrowseName="2:Tools">
@@ -303,10 +303,10 @@
         <References>
             <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5015</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=11</Reference>
+            <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5024</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6024</Reference>
-            <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5024</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6022" BrowseName="4:Manufacturer">
@@ -370,9 +370,9 @@
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6019</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=5026</Reference>
             <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5018</Reference>
             <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5024</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5026</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6019" BrowseName="CurrentState">
@@ -603,46 +603,5 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
         </References>
-    </UAVariable>
-    <UAObject NodeId="ns=1;i=5014" BrowseName="1:MaintenanceMode">
-        <DisplayName>MaintenanceMode</DisplayName>
-        <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=5027</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1004</Reference>
-        </References>
-    </UAObject>
-    <UAObject ParentNodeId="ns=1;i=5014" NodeId="ns=1;i=5027" BrowseName="2:Inspection">
-        <DisplayName>Inspection</DisplayName>
-        <References>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5014</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
-        </References>
-    </UAObject>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5014" NodeId="ns=1;i=6021" BrowseName="CurrentState">
-        <DisplayName>CurrentState</DisplayName>
-        <References>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5014</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="NodeId" ParentNodeId="ns=1;i=6021" NodeId="ns=1;i=6031" BrowseName="Id">
-        <DisplayName>Id</DisplayName>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6021</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5027" NodeId="ns=1;i=6034" BrowseName="StateNumber">
-        <DisplayName>StateNumber</DisplayName>
-        <References>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5027</Reference>
-        </References>
-        <Value>
-            <uax:UInt32>1</uax:UInt32>
-        </Value>
     </UAVariable>
 </UANodeSet>
