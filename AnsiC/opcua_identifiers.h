@@ -1315,13 +1315,6 @@
 #define OpcUaId_DataTypeDictionaryType_DataTypeVersion 106
 #define OpcUaId_DataTypeDictionaryType_NamespaceUri 107
 #define OpcUaId_NamingRuleType_EnumValues 12169
-#define OpcUaId_ModellingRuleType_NamingRule 111
-#define OpcUaId_ModellingRule_Mandatory_NamingRule 112
-#define OpcUaId_ModellingRule_Optional_NamingRule 113
-#define OpcUaId_ModellingRule_ExposesItsArray_NamingRule 114
-#define OpcUaId_ModellingRule_MandatoryShared_NamingRule 116
-#define OpcUaId_ModellingRule_OptionalPlaceholder_NamingRule 11509
-#define OpcUaId_ModellingRule_MandatoryPlaceholder_NamingRule 11511
 #define OpcUaId_NodeVersion 3068
 #define OpcUaId_ViewVersion 12170
 #define OpcUaId_Icon 3067

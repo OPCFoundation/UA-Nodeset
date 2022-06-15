@@ -163,6 +163,8 @@ OpcUa_StatusCode OpcUa_Server_BeginFindServers(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -321,6 +323,8 @@ OpcUa_StatusCode OpcUa_Server_BeginFindServersOnNetwork(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -478,6 +482,8 @@ OpcUa_StatusCode OpcUa_Server_BeginGetEndpoints(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -613,6 +619,8 @@ OpcUa_StatusCode OpcUa_Server_BeginRegisterServer(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -771,6 +779,8 @@ OpcUa_StatusCode OpcUa_Server_BeginRegisterServer2(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -978,6 +988,8 @@ OpcUa_StatusCode OpcUa_Server_BeginCreateSession(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -1155,6 +1167,8 @@ OpcUa_StatusCode OpcUa_Server_BeginActivateSession(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -1290,6 +1304,8 @@ OpcUa_StatusCode OpcUa_Server_BeginCloseSession(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -1429,6 +1445,8 @@ OpcUa_StatusCode OpcUa_Server_BeginCancel(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -1583,6 +1601,8 @@ OpcUa_StatusCode OpcUa_Server_BeginAddNodes(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -1737,6 +1757,8 @@ OpcUa_StatusCode OpcUa_Server_BeginAddReferences(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -1891,6 +1913,8 @@ OpcUa_StatusCode OpcUa_Server_BeginDeleteNodes(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2045,6 +2069,8 @@ OpcUa_StatusCode OpcUa_Server_BeginDeleteReferences(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2207,6 +2233,8 @@ OpcUa_StatusCode OpcUa_Server_BeginBrowse(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2365,6 +2393,8 @@ OpcUa_StatusCode OpcUa_Server_BeginBrowseNext(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2519,6 +2549,8 @@ OpcUa_StatusCode OpcUa_Server_BeginTranslateBrowsePathsToNodeIds(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2665,6 +2697,8 @@ OpcUa_StatusCode OpcUa_Server_BeginRegisterNodes(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2803,6 +2837,8 @@ OpcUa_StatusCode OpcUa_Server_BeginUnregisterNodes(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -2989,6 +3025,8 @@ OpcUa_StatusCode OpcUa_Server_BeginQueryFirst(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -3140,6 +3178,8 @@ OpcUa_StatusCode OpcUa_Server_BeginQueryNext(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -3302,6 +3342,8 @@ OpcUa_StatusCode OpcUa_Server_BeginRead(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -3468,6 +3510,8 @@ OpcUa_StatusCode OpcUa_Server_BeginHistoryRead(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -3622,6 +3666,8 @@ OpcUa_StatusCode OpcUa_Server_BeginWrite(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -3776,6 +3822,8 @@ OpcUa_StatusCode OpcUa_Server_BeginHistoryUpdate(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -3930,6 +3978,8 @@ OpcUa_StatusCode OpcUa_Server_BeginCall(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -4092,6 +4142,8 @@ OpcUa_StatusCode OpcUa_Server_BeginCreateMonitoredItems(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -4254,6 +4306,8 @@ OpcUa_StatusCode OpcUa_Server_BeginModifyMonitoredItems(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -4416,6 +4470,8 @@ OpcUa_StatusCode OpcUa_Server_BeginSetMonitoringMode(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -4601,6 +4657,8 @@ OpcUa_StatusCode OpcUa_Server_BeginSetTriggering(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -4759,6 +4817,8 @@ OpcUa_StatusCode OpcUa_Server_BeginDeleteMonitoredItems(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -4930,6 +4990,8 @@ OpcUa_StatusCode OpcUa_Server_BeginCreateSubscription(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -5097,6 +5159,8 @@ OpcUa_StatusCode OpcUa_Server_BeginModifySubscription(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -5255,6 +5319,8 @@ OpcUa_StatusCode OpcUa_Server_BeginSetPublishingMode(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -5429,6 +5495,8 @@ OpcUa_StatusCode OpcUa_Server_BeginPublish(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -5572,6 +5640,8 @@ OpcUa_StatusCode OpcUa_Server_BeginRepublish(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -5730,6 +5800,8 @@ OpcUa_StatusCode OpcUa_Server_BeginTransferSubscriptions(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);
@@ -5884,6 +5956,8 @@ OpcUa_StatusCode OpcUa_Server_BeginDeleteSubscriptions(
             &pFaultType);
 
         OpcUa_GotoErrorIfBad(uStatus);
+        OpcUa_GotoErrorIfTrue(pFault == OpcUa_Null, OpcUa_BadUnexpectedError);
+        OpcUa_GotoErrorIfTrue(pFaultType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
         /* free the response */
         OpcUa_EncodeableObject_Delete(pResponseType, (OpcUa_Void**)&pResponse);

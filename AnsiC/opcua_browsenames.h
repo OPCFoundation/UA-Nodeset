@@ -604,7 +604,6 @@
 #define OpcUa_BrowseName_NamespacesType "NamespacesType"
 #define OpcUa_BrowseName_NamespaceUri "NamespaceUri"
 #define OpcUa_BrowseName_NamespaceVersion "NamespaceVersion"
-#define OpcUa_BrowseName_NamingRule "NamingRule"
 #define OpcUa_BrowseName_NamingRuleType "NamingRuleType"
 #define OpcUa_BrowseName_NDimensionArrayItemType "NDimensionArrayItemType"
 #define OpcUa_BrowseName_NetworkGroupDataType "NetworkGroupDataType"

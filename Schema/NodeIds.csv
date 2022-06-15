@@ -78,11 +78,6 @@ DataTypeDescriptionType_DataTypeVersion,104,Variable
 DataTypeDescriptionType_DictionaryFragment,105,Variable
 DataTypeDictionaryType_DataTypeVersion,106,Variable
 DataTypeDictionaryType_NamespaceUri,107,Variable
-ModellingRuleType_NamingRule,111,Variable
-ModellingRule_Mandatory_NamingRule,112,Variable
-ModellingRule_Optional_NamingRule,113,Variable
-ModellingRule_ExposesItsArray_NamingRule,114,Variable
-ModellingRule_MandatoryShared_NamingRule,116,Variable
 HasSubStateMachine,117,ReferenceType
 NamingRuleType,120,DataType
 Decimal128,121,DataType
@@ -4239,9 +4234,7 @@ AggregateFunction_StartBound,11505,Object
 AggregateFunction_EndBound,11506,Object
 AggregateFunction_DeltaBounds,11507,Object
 ModellingRule_OptionalPlaceholder,11508,Object
-ModellingRule_OptionalPlaceholder_NamingRule,11509,Variable
 ModellingRule_MandatoryPlaceholder,11510,Object
-ModellingRule_MandatoryPlaceholder_NamingRule,11511,Variable
 MaxArrayLength,11512,Variable
 EngineeringUnits,11513,Variable
 ServerType_ServerCapabilities_MaxArrayLength,11514,Variable

@@ -28,9 +28,9 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-09-15T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2022-03-29T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/" Version="1.03.8" PublicationDate="2021-09-15T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/" XmlSchemaUri="http://opcfoundation.org/UA/2008/02/Types.xsd" Version="1.03.9" PublicationDate="2022-03-29T00:00:00Z" />
   </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
@@ -528,7 +528,7 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UADataType NodeId="i=120" BrowseName="NamingRuleType">
+  <UADataType NodeId="i=120" BrowseName="NamingRuleType" ReleaseStatus="Deprecated">
     <DisplayName>NamingRuleType</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty">i=12169</Reference>
@@ -546,7 +546,7 @@
       </Field>
     </Definition>
   </UADataType>
-  <UAVariable NodeId="i=12169" BrowseName="EnumValues" ParentNodeId="i=120" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
+  <UAVariable NodeId="i=12169" BrowseName="EnumValues" ReleaseStatus="Deprecated" ParentNodeId="i=120" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
     <DisplayName>EnumValues</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -608,123 +608,45 @@
   <UAObjectType NodeId="i=77" BrowseName="ModellingRuleType">
     <DisplayName>ModellingRuleType</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=111</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="i=111" BrowseName="NamingRule" ParentNodeId="i=77" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=77</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=78" BrowseName="Mandatory" SymbolicName="ModellingRule_Mandatory">
     <DisplayName>Mandatory</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=112</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=112" BrowseName="NamingRule" ParentNodeId="i=78" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=78</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=80" BrowseName="Optional" SymbolicName="ModellingRule_Optional">
     <DisplayName>Optional</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=113</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=113" BrowseName="NamingRule" ParentNodeId="i=80" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=80</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=83" BrowseName="ExposesItsArray" SymbolicName="ModellingRule_ExposesItsArray">
     <DisplayName>ExposesItsArray</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=114</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=114" BrowseName="NamingRule" ParentNodeId="i=83" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=83</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">3</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=79" BrowseName="MandatoryShared" SymbolicName="ModellingRule_MandatoryShared">
     <DisplayName>MandatoryShared</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=116</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=116" BrowseName="NamingRule" ParentNodeId="i=79" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=79</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=11508" BrowseName="OptionalPlaceholder" SymbolicName="ModellingRule_OptionalPlaceholder">
     <DisplayName>OptionalPlaceholder</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=11509</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11509" BrowseName="NamingRule" ParentNodeId="i=11508" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11508</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=11510" BrowseName="MandatoryPlaceholder" SymbolicName="ModellingRule_MandatoryPlaceholder">
     <DisplayName>MandatoryPlaceholder</DisplayName>
     <References>
-      <Reference ReferenceType="HasProperty">i=11511</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=77</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="i=11511" BrowseName="NamingRule" ParentNodeId="i=11510" DataType="i=120">
-    <DisplayName>NamingRule</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">i=11510</Reference>
-    </References>
-    <Value>
-      <Int32 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</Int32>
-    </Value>
-  </UAVariable>
   <UAObject NodeId="i=84" BrowseName="Root" SymbolicName="RootFolder">
     <DisplayName>Root</DisplayName>
     <References>
@@ -8769,7 +8691,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15182</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.03</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.03.9</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=15185" BrowseName="NamespacePublicationDate" ParentNodeId="i=15182" DataType="DateTime">
@@ -8779,7 +8701,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">i=15182</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2021-09-15T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-03-29T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="i=15186" BrowseName="IsNamespaceSubset" ParentNodeId="i=15182" DataType="Boolean">
@@ -19336,10 +19258,18 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="IdType">
-      <Field Name="Numeric" Value="0" />
-      <Field Name="String" Value="1" />
-      <Field Name="Guid" Value="2" />
-      <Field Name="Opaque" Value="3" />
+      <Field Name="Numeric" Value="0">
+        <Description>The identifier is a numeric value. 0 is a null value.</Description>
+      </Field>
+      <Field Name="String" Value="1">
+        <Description>The identifier is a string value. An empty string is a null value.</Description>
+      </Field>
+      <Field Name="Guid" Value="2">
+        <Description>The identifier is a 16 byte structure. 16 zero bytes is a null value.</Description>
+      </Field>
+      <Field Name="Opaque" Value="3">
+        <Description>The identifier is an array of bytes. A zero length array is a null value.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=7591" BrowseName="EnumStrings" ParentNodeId="i=256" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
@@ -19372,15 +19302,33 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="NodeClass">
-      <Field Name="Unspecified" Value="0" />
-      <Field Name="Object" Value="1" />
-      <Field Name="Variable" Value="2" />
-      <Field Name="Method" Value="4" />
-      <Field Name="ObjectType" Value="8" />
-      <Field Name="VariableType" Value="16" />
-      <Field Name="ReferenceType" Value="32" />
-      <Field Name="DataType" Value="64" />
-      <Field Name="View" Value="128" />
+      <Field Name="Unspecified" Value="0">
+        <Description>No classes are selected.</Description>
+      </Field>
+      <Field Name="Object" Value="1">
+        <Description>The node is an object.</Description>
+      </Field>
+      <Field Name="Variable" Value="2">
+        <Description>The node is a variable.</Description>
+      </Field>
+      <Field Name="Method" Value="4">
+        <Description>The node is a method.</Description>
+      </Field>
+      <Field Name="ObjectType" Value="8">
+        <Description>The node is an object type.</Description>
+      </Field>
+      <Field Name="VariableType" Value="16">
+        <Description>The node is an variable type.</Description>
+      </Field>
+      <Field Name="ReferenceType" Value="32">
+        <Description>The node is a reference type.</Description>
+      </Field>
+      <Field Name="DataType" Value="64">
+        <Description>The node is a data type.</Description>
+      </Field>
+      <Field Name="View" Value="128">
+        <Description>The node is a view.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=11878" BrowseName="EnumValues" ParentNodeId="i=257" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
@@ -19401,6 +19349,9 @@
               <DisplayName>
                 <Text>Unspecified</Text>
               </DisplayName>
+              <Description>
+                <Text>No classes are selected.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19414,6 +19365,9 @@
               <DisplayName>
                 <Text>Object</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is an object.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19427,6 +19381,9 @@
               <DisplayName>
                 <Text>Variable</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is a variable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19440,6 +19397,9 @@
               <DisplayName>
                 <Text>Method</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is a method.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19453,6 +19413,9 @@
               <DisplayName>
                 <Text>ObjectType</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is an object type.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19466,6 +19429,9 @@
               <DisplayName>
                 <Text>VariableType</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is an variable type.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19479,6 +19445,9 @@
               <DisplayName>
                 <Text>ReferenceType</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is a reference type.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19492,6 +19461,9 @@
               <DisplayName>
                 <Text>DataType</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is a data type.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19505,6 +19477,9 @@
               <DisplayName>
                 <Text>View</Text>
               </DisplayName>
+              <Description>
+                <Text>The node is a view.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19623,10 +19598,18 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="ApplicationType">
-      <Field Name="Server" Value="0" />
-      <Field Name="Client" Value="1" />
-      <Field Name="ClientAndServer" Value="2" />
-      <Field Name="DiscoveryServer" Value="3" />
+      <Field Name="Server" Value="0">
+        <Description>The application is a server.</Description>
+      </Field>
+      <Field Name="Client" Value="1">
+        <Description>The application is a client.</Description>
+      </Field>
+      <Field Name="ClientAndServer" Value="2">
+        <Description>The application is a client and a server.</Description>
+      </Field>
+      <Field Name="DiscoveryServer" Value="3">
+        <Description>The application is a discovery server.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=7597" BrowseName="EnumStrings" ParentNodeId="i=307" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
@@ -19692,10 +19675,18 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="MessageSecurityMode">
-      <Field Name="Invalid" Value="0" />
-      <Field Name="None" Value="1" />
-      <Field Name="Sign" Value="2" />
-      <Field Name="SignAndEncrypt" Value="3" />
+      <Field Name="Invalid" Value="0">
+        <Description>An invalid mode.</Description>
+      </Field>
+      <Field Name="None" Value="1">
+        <Description>No security is used.</Description>
+      </Field>
+      <Field Name="Sign" Value="2">
+        <Description>The message is signed.</Description>
+      </Field>
+      <Field Name="SignAndEncrypt" Value="3">
+        <Description>The message is signed and encrypted.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=7595" BrowseName="EnumStrings" ParentNodeId="i=302" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
@@ -19728,10 +19719,18 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="UserTokenType">
-      <Field Name="Anonymous" Value="0" />
-      <Field Name="UserName" Value="1" />
-      <Field Name="Certificate" Value="2" />
-      <Field Name="IssuedToken" Value="3" />
+      <Field Name="Anonymous" Value="0">
+        <Description>An anonymous user.</Description>
+      </Field>
+      <Field Name="UserName" Value="1">
+        <Description>A user identified by a user name and password.</Description>
+      </Field>
+      <Field Name="Certificate" Value="2">
+        <Description>A user identified by an X509 certificate.</Description>
+      </Field>
+      <Field Name="IssuedToken" Value="3">
+        <Description>A user identified by WS-Security XML token.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=7596" BrowseName="EnumStrings" ParentNodeId="i=303" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
@@ -19826,8 +19825,12 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="SecurityTokenRequestType">
-      <Field Name="Issue" Value="0" />
-      <Field Name="Renew" Value="1" />
+      <Field Name="Issue" Value="0">
+        <Description>The channel is being created.</Description>
+      </Field>
+      <Field Name="Renew" Value="1">
+        <Description>The channel is being renewed.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=7598" BrowseName="EnumStrings" ParentNodeId="i=315" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
@@ -19916,38 +19919,102 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="NodeAttributesMask">
-      <Field Name="None" Value="0" />
-      <Field Name="AccessLevel" Value="1" />
-      <Field Name="ArrayDimensions" Value="2" />
-      <Field Name="BrowseName" Value="4" />
-      <Field Name="ContainsNoLoops" Value="8" />
-      <Field Name="DataType" Value="16" />
-      <Field Name="Description" Value="32" />
-      <Field Name="DisplayName" Value="64" />
-      <Field Name="EventNotifier" Value="128" />
-      <Field Name="Executable" Value="256" />
-      <Field Name="Historizing" Value="512" />
-      <Field Name="InverseName" Value="1024" />
-      <Field Name="IsAbstract" Value="2048" />
-      <Field Name="MinimumSamplingInterval" Value="4096" />
-      <Field Name="NodeClass" Value="8192" />
-      <Field Name="NodeId" Value="16384" />
-      <Field Name="Symmetric" Value="32768" />
-      <Field Name="UserAccessLevel" Value="65536" />
-      <Field Name="UserExecutable" Value="131072" />
-      <Field Name="UserWriteMask" Value="262144" />
-      <Field Name="ValueRank" Value="524288" />
-      <Field Name="WriteMask" Value="1048576" />
-      <Field Name="Value" Value="2097152" />
-      <Field Name="All" Value="4194303" />
-      <Field Name="BaseNode" Value="1335396" />
-      <Field Name="Object" Value="1335524" />
-      <Field Name="ObjectTypeOrDataType" Value="1337444" />
-      <Field Name="Variable" Value="4026999" />
-      <Field Name="VariableType" Value="3958902" />
-      <Field Name="Method" Value="1466724" />
-      <Field Name="ReferenceType" Value="1371236" />
-      <Field Name="View" Value="1335532" />
+      <Field Name="None" Value="0">
+        <Description>No attribuites provided.</Description>
+      </Field>
+      <Field Name="AccessLevel" Value="1">
+        <Description>The access level attribute is specified.</Description>
+      </Field>
+      <Field Name="ArrayDimensions" Value="2">
+        <Description>The array dimensions attribute is specified.</Description>
+      </Field>
+      <Field Name="BrowseName" Value="4">
+        <Description>The browse name attribute is specified.</Description>
+      </Field>
+      <Field Name="ContainsNoLoops" Value="8">
+        <Description>The contains no loops attribute is specified.</Description>
+      </Field>
+      <Field Name="DataType" Value="16">
+        <Description>The data type attribute is specified.</Description>
+      </Field>
+      <Field Name="Description" Value="32">
+        <Description>The description attribute is specified.</Description>
+      </Field>
+      <Field Name="DisplayName" Value="64">
+        <Description>The display name attribute is specified.</Description>
+      </Field>
+      <Field Name="EventNotifier" Value="128">
+        <Description>The event notifier attribute is specified.</Description>
+      </Field>
+      <Field Name="Executable" Value="256">
+        <Description>The executable attribute is specified.</Description>
+      </Field>
+      <Field Name="Historizing" Value="512">
+        <Description>The historizing attribute is specified.</Description>
+      </Field>
+      <Field Name="InverseName" Value="1024">
+        <Description>The inverse name attribute is specified.</Description>
+      </Field>
+      <Field Name="IsAbstract" Value="2048">
+        <Description>The is abstract attribute is specified.</Description>
+      </Field>
+      <Field Name="MinimumSamplingInterval" Value="4096">
+        <Description>The minimum sampling interval attribute is specified.</Description>
+      </Field>
+      <Field Name="NodeClass" Value="8192">
+        <Description>The node class attribute is specified.</Description>
+      </Field>
+      <Field Name="NodeId" Value="16384">
+        <Description>The node id attribute is specified.</Description>
+      </Field>
+      <Field Name="Symmetric" Value="32768">
+        <Description>The symmetric attribute is specified.</Description>
+      </Field>
+      <Field Name="UserAccessLevel" Value="65536">
+        <Description>The user access level attribute is specified.</Description>
+      </Field>
+      <Field Name="UserExecutable" Value="131072">
+        <Description>The user executable attribute is specified.</Description>
+      </Field>
+      <Field Name="UserWriteMask" Value="262144">
+        <Description>The user write mask attribute is specified.</Description>
+      </Field>
+      <Field Name="ValueRank" Value="524288">
+        <Description>The value rank attribute is specified.</Description>
+      </Field>
+      <Field Name="WriteMask" Value="1048576">
+        <Description>The write mask attribute is specified.</Description>
+      </Field>
+      <Field Name="Value" Value="2097152">
+        <Description>The value attribute is specified.</Description>
+      </Field>
+      <Field Name="All" Value="4194303">
+        <Description>All attributes are specified.</Description>
+      </Field>
+      <Field Name="BaseNode" Value="1335396">
+        <Description>All base attributes are specified.</Description>
+      </Field>
+      <Field Name="Object" Value="1335524">
+        <Description>All object attributes are specified.</Description>
+      </Field>
+      <Field Name="ObjectTypeOrDataType" Value="1337444">
+        <Description>All object type or data type attributes are specified.</Description>
+      </Field>
+      <Field Name="Variable" Value="4026999">
+        <Description>All variable attributes are specified.</Description>
+      </Field>
+      <Field Name="VariableType" Value="3958902">
+        <Description>All variable type attributes are specified.</Description>
+      </Field>
+      <Field Name="Method" Value="1466724">
+        <Description>All method attributes are specified.</Description>
+      </Field>
+      <Field Name="ReferenceType" Value="1371236">
+        <Description>All reference type attributes are specified.</Description>
+      </Field>
+      <Field Name="View" Value="1335532">
+        <Description>All view attributes are specified.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=11881" BrowseName="EnumValues" ParentNodeId="i=348" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
@@ -19968,6 +20035,9 @@
               <DisplayName>
                 <Text>None</Text>
               </DisplayName>
+              <Description>
+                <Text>No attribuites provided.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19981,6 +20051,9 @@
               <DisplayName>
                 <Text>AccessLevel</Text>
               </DisplayName>
+              <Description>
+                <Text>The access level attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -19994,6 +20067,9 @@
               <DisplayName>
                 <Text>ArrayDimensions</Text>
               </DisplayName>
+              <Description>
+                <Text>The array dimensions attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20007,6 +20083,9 @@
               <DisplayName>
                 <Text>BrowseName</Text>
               </DisplayName>
+              <Description>
+                <Text>The browse name attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20020,6 +20099,9 @@
               <DisplayName>
                 <Text>ContainsNoLoops</Text>
               </DisplayName>
+              <Description>
+                <Text>The contains no loops attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20033,6 +20115,9 @@
               <DisplayName>
                 <Text>DataType</Text>
               </DisplayName>
+              <Description>
+                <Text>The data type attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20046,6 +20131,9 @@
               <DisplayName>
                 <Text>Description</Text>
               </DisplayName>
+              <Description>
+                <Text>The description attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20059,6 +20147,9 @@
               <DisplayName>
                 <Text>DisplayName</Text>
               </DisplayName>
+              <Description>
+                <Text>The display name attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20072,6 +20163,9 @@
               <DisplayName>
                 <Text>EventNotifier</Text>
               </DisplayName>
+              <Description>
+                <Text>The event notifier attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20085,6 +20179,9 @@
               <DisplayName>
                 <Text>Executable</Text>
               </DisplayName>
+              <Description>
+                <Text>The executable attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20098,6 +20195,9 @@
               <DisplayName>
                 <Text>Historizing</Text>
               </DisplayName>
+              <Description>
+                <Text>The historizing attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20111,6 +20211,9 @@
               <DisplayName>
                 <Text>InverseName</Text>
               </DisplayName>
+              <Description>
+                <Text>The inverse name attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20124,6 +20227,9 @@
               <DisplayName>
                 <Text>IsAbstract</Text>
               </DisplayName>
+              <Description>
+                <Text>The is abstract attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20137,6 +20243,9 @@
               <DisplayName>
                 <Text>MinimumSamplingInterval</Text>
               </DisplayName>
+              <Description>
+                <Text>The minimum sampling interval attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20150,6 +20259,9 @@
               <DisplayName>
                 <Text>NodeClass</Text>
               </DisplayName>
+              <Description>
+                <Text>The node class attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20163,6 +20275,9 @@
               <DisplayName>
                 <Text>NodeId</Text>
               </DisplayName>
+              <Description>
+                <Text>The node id attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20176,6 +20291,9 @@
               <DisplayName>
                 <Text>Symmetric</Text>
               </DisplayName>
+              <Description>
+                <Text>The symmetric attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20189,6 +20307,9 @@
               <DisplayName>
                 <Text>UserAccessLevel</Text>
               </DisplayName>
+              <Description>
+                <Text>The user access level attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20202,6 +20323,9 @@
               <DisplayName>
                 <Text>UserExecutable</Text>
               </DisplayName>
+              <Description>
+                <Text>The user executable attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20215,6 +20339,9 @@
               <DisplayName>
                 <Text>UserWriteMask</Text>
               </DisplayName>
+              <Description>
+                <Text>The user write mask attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20228,6 +20355,9 @@
               <DisplayName>
                 <Text>ValueRank</Text>
               </DisplayName>
+              <Description>
+                <Text>The value rank attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20241,6 +20371,9 @@
               <DisplayName>
                 <Text>WriteMask</Text>
               </DisplayName>
+              <Description>
+                <Text>The write mask attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20254,6 +20387,9 @@
               <DisplayName>
                 <Text>Value</Text>
               </DisplayName>
+              <Description>
+                <Text>The value attribute is specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20267,6 +20403,9 @@
               <DisplayName>
                 <Text>All</Text>
               </DisplayName>
+              <Description>
+                <Text>All attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20280,6 +20419,9 @@
               <DisplayName>
                 <Text>BaseNode</Text>
               </DisplayName>
+              <Description>
+                <Text>All base attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20293,6 +20435,9 @@
               <DisplayName>
                 <Text>Object</Text>
               </DisplayName>
+              <Description>
+                <Text>All object attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20306,6 +20451,9 @@
               <DisplayName>
                 <Text>ObjectTypeOrDataType</Text>
               </DisplayName>
+              <Description>
+                <Text>All object type or data type attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20319,6 +20467,9 @@
               <DisplayName>
                 <Text>Variable</Text>
               </DisplayName>
+              <Description>
+                <Text>All variable attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20332,6 +20483,9 @@
               <DisplayName>
                 <Text>VariableType</Text>
               </DisplayName>
+              <Description>
+                <Text>All variable type attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20345,6 +20499,9 @@
               <DisplayName>
                 <Text>Method</Text>
               </DisplayName>
+              <Description>
+                <Text>All method attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20358,6 +20515,9 @@
               <DisplayName>
                 <Text>ReferenceType</Text>
               </DisplayName>
+              <Description>
+                <Text>All reference type attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20371,6 +20531,9 @@
               <DisplayName>
                 <Text>View</Text>
               </DisplayName>
+              <Description>
+                <Text>All view attributes are specified.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20436,29 +20599,75 @@
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="AttributeWriteMask">
-      <Field Name="None" Value="0" />
-      <Field Name="AccessLevel" Value="1" />
-      <Field Name="ArrayDimensions" Value="2" />
-      <Field Name="BrowseName" Value="4" />
-      <Field Name="ContainsNoLoops" Value="8" />
-      <Field Name="DataType" Value="16" />
-      <Field Name="Description" Value="32" />
-      <Field Name="DisplayName" Value="64" />
-      <Field Name="EventNotifier" Value="128" />
-      <Field Name="Executable" Value="256" />
-      <Field Name="Historizing" Value="512" />
-      <Field Name="InverseName" Value="1024" />
-      <Field Name="IsAbstract" Value="2048" />
-      <Field Name="MinimumSamplingInterval" Value="4096" />
-      <Field Name="NodeClass" Value="8192" />
-      <Field Name="NodeId" Value="16384" />
-      <Field Name="Symmetric" Value="32768" />
-      <Field Name="UserAccessLevel" Value="65536" />
-      <Field Name="UserExecutable" Value="131072" />
-      <Field Name="UserWriteMask" Value="262144" />
-      <Field Name="ValueRank" Value="524288" />
-      <Field Name="WriteMask" Value="1048576" />
-      <Field Name="ValueForVariableType" Value="2097152" />
+      <Field Name="None" Value="0">
+        <Description>No attributes are writable.</Description>
+      </Field>
+      <Field Name="AccessLevel" Value="1">
+        <Description>The access level attribute is writable.</Description>
+      </Field>
+      <Field Name="ArrayDimensions" Value="2">
+        <Description>The array dimensions attribute is writable.</Description>
+      </Field>
+      <Field Name="BrowseName" Value="4">
+        <Description>The browse name attribute is writable.</Description>
+      </Field>
+      <Field Name="ContainsNoLoops" Value="8">
+        <Description>The contains no loops attribute is writable.</Description>
+      </Field>
+      <Field Name="DataType" Value="16">
+        <Description>The data type attribute is writable.</Description>
+      </Field>
+      <Field Name="Description" Value="32">
+        <Description>The description attribute is writable.</Description>
+      </Field>
+      <Field Name="DisplayName" Value="64">
+        <Description>The display name attribute is writable.</Description>
+      </Field>
+      <Field Name="EventNotifier" Value="128">
+        <Description>The event notifier attribute is writable.</Description>
+      </Field>
+      <Field Name="Executable" Value="256">
+        <Description>The executable attribute is writable.</Description>
+      </Field>
+      <Field Name="Historizing" Value="512">
+        <Description>The historizing attribute is writable.</Description>
+      </Field>
+      <Field Name="InverseName" Value="1024">
+        <Description>The inverse name attribute is writable.</Description>
+      </Field>
+      <Field Name="IsAbstract" Value="2048">
+        <Description>The is abstract attribute is writable.</Description>
+      </Field>
+      <Field Name="MinimumSamplingInterval" Value="4096">
+        <Description>The minimum sampling interval attribute is writable.</Description>
+      </Field>
+      <Field Name="NodeClass" Value="8192">
+        <Description>The node class attribute is writable.</Description>
+      </Field>
+      <Field Name="NodeId" Value="16384">
+        <Description>The node id attribute is writable.</Description>
+      </Field>
+      <Field Name="Symmetric" Value="32768">
+        <Description>The symmetric attribute is writable.</Description>
+      </Field>
+      <Field Name="UserAccessLevel" Value="65536">
+        <Description>The user access level attribute is writable.</Description>
+      </Field>
+      <Field Name="UserExecutable" Value="131072">
+        <Description>The user executable attribute is writable.</Description>
+      </Field>
+      <Field Name="UserWriteMask" Value="262144">
+        <Description>The user write mask attribute is writable.</Description>
+      </Field>
+      <Field Name="ValueRank" Value="524288">
+        <Description>The value rank attribute is writable.</Description>
+      </Field>
+      <Field Name="WriteMask" Value="1048576">
+        <Description>The write mask attribute is writable.</Description>
+      </Field>
+      <Field Name="ValueForVariableType" Value="2097152">
+        <Description>The value attribute is writable.</Description>
+      </Field>
     </Definition>
   </UADataType>
   <UAVariable NodeId="i=11882" BrowseName="EnumValues" ParentNodeId="i=347" DataType="i=7594" ValueRank="1" ArrayDimensions="0">
@@ -20479,6 +20688,9 @@
               <DisplayName>
                 <Text>None</Text>
               </DisplayName>
+              <Description>
+                <Text>No attributes are writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20492,6 +20704,9 @@
               <DisplayName>
                 <Text>AccessLevel</Text>
               </DisplayName>
+              <Description>
+                <Text>The access level attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20505,6 +20720,9 @@
               <DisplayName>
                 <Text>ArrayDimensions</Text>
               </DisplayName>
+              <Description>
+                <Text>The array dimensions attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20518,6 +20736,9 @@
               <DisplayName>
                 <Text>BrowseName</Text>
               </DisplayName>
+              <Description>
+                <Text>The browse name attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20531,6 +20752,9 @@
               <DisplayName>
                 <Text>ContainsNoLoops</Text>
               </DisplayName>
+              <Description>
+                <Text>The contains no loops attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20544,6 +20768,9 @@
               <DisplayName>
                 <Text>DataType</Text>
               </DisplayName>
+              <Description>
+                <Text>The data type attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20557,6 +20784,9 @@
               <DisplayName>
                 <Text>Description</Text>
               </DisplayName>
+              <Description>
+                <Text>The description attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20570,6 +20800,9 @@
               <DisplayName>
                 <Text>DisplayName</Text>
               </DisplayName>
+              <Description>
+                <Text>The display name attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20583,6 +20816,9 @@
               <DisplayName>
                 <Text>EventNotifier</Text>
               </DisplayName>
+              <Description>
+                <Text>The event notifier attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20596,6 +20832,9 @@
               <DisplayName>
                 <Text>Executable</Text>
               </DisplayName>
+              <Description>
+                <Text>The executable attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20609,6 +20848,9 @@
               <DisplayName>
                 <Text>Historizing</Text>
               </DisplayName>
+              <Description>
+                <Text>The historizing attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20622,6 +20864,9 @@
               <DisplayName>
                 <Text>InverseName</Text>
               </DisplayName>
+              <Description>
+                <Text>The inverse name attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20635,6 +20880,9 @@
               <DisplayName>
                 <Text>IsAbstract</Text>
               </DisplayName>
+              <Description>
+                <Text>The is abstract attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20648,6 +20896,9 @@
               <DisplayName>
                 <Text>MinimumSamplingInterval</Text>
               </DisplayName>
+              <Description>
+                <Text>The minimum sampling interval attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20661,6 +20912,9 @@
               <DisplayName>
                 <Text>NodeClass</Text>
               </DisplayName>
+              <Description>
+                <Text>The node class attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20674,6 +20928,9 @@
               <DisplayName>
                 <Text>NodeId</Text>
               </DisplayName>
+              <Description>
+                <Text>The node id attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20687,6 +20944,9 @@
               <DisplayName>
                 <Text>Symmetric</Text>
               </DisplayName>
+              <Description>
+                <Text>The symmetric attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20700,6 +20960,9 @@
               <DisplayName>
                 <Text>UserAccessLevel</Text>
               </DisplayName>
+              <Description>
+                <Text>The user access level attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20713,6 +20976,9 @@
               <DisplayName>
                 <Text>UserExecutable</Text>
               </DisplayName>
+              <Description>
+                <Text>The user executable attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20726,6 +20992,9 @@
               <DisplayName>
                 <Text>UserWriteMask</Text>
               </DisplayName>
+              <Description>
+                <Text>The user write mask attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20739,6 +21008,9 @@
               <DisplayName>
                 <Text>ValueRank</Text>
               </DisplayName>
+              <Description>
+                <Text>The value rank attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20752,6 +21024,9 @@
               <DisplayName>
                 <Text>WriteMask</Text>
               </DisplayName>
+              <Description>
+                <Text>The write mask attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
@@ -20765,6 +21040,9 @@
               <DisplayName>
                 <Text>ValueForVariableType</Text>
               </DisplayName>
+              <Description>
+                <Text>The value attribute is writable.</Text>
+              </Description>
             </EnumValueType>
           </Body>
         </ExtensionObject>
