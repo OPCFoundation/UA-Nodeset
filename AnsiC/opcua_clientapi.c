@@ -94,6 +94,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_FindServers(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -234,6 +236,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_FindServersOnNetwork(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -373,6 +377,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_GetEndpoints(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -499,6 +505,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_RegisterServer(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -626,6 +634,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_RegisterServer2(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -792,6 +802,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateSession(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -964,6 +976,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_ActivateSession(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1099,6 +1113,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CloseSession(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1215,6 +1231,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Cancel(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1340,6 +1358,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_AddNodes(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1470,6 +1490,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_AddReferences(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1600,6 +1622,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteNodes(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1730,6 +1754,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteReferences(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -1866,6 +1892,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Browse(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2005,6 +2033,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_BrowseNext(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2138,6 +2168,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_TranslateBrowsePathsToNodeIds(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2264,6 +2296,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_RegisterNodes(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2384,6 +2418,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_UnregisterNodes(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2530,6 +2566,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_QueryFirst(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2675,6 +2713,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_QueryNext(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2811,6 +2851,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Read(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -2956,6 +2998,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_HistoryRead(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3095,6 +3139,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Write(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3225,6 +3271,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_HistoryUpdate(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3355,6 +3403,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Call(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3491,6 +3541,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateMonitoredItems(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3633,6 +3685,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_ModifyMonitoredItems(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3775,6 +3829,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_SetMonitoringMode(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -3930,6 +3986,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_SetTriggering(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4078,6 +4136,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteMonitoredItems(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4224,6 +4284,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_CreateSubscription(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4378,6 +4440,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_ModifySubscription(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4523,6 +4587,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_SetPublishingMode(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4666,6 +4732,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Publish(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4796,6 +4864,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_Republish(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -4927,6 +4997,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_TransferSubscriptions(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)
@@ -5060,6 +5132,8 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ClientApi_DeleteSubscriptions(
         &pResponseType);
 
     OpcUa_GotoErrorIfBad(uStatus);
+    OpcUa_GotoErrorIfTrue(pResponse == OpcUa_Null, OpcUa_BadUnexpectedError);
+    OpcUa_GotoErrorIfTrue(pResponseType == OpcUa_Null, OpcUa_BadUnexpectedError);
 
     /* check for fault */
     if (pResponseType->TypeId == OpcUaId_ServiceFault)

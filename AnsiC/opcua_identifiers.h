@@ -2307,7 +2307,7 @@
 #define OpcUaId_HighlyManagedAlarmConditionClassType 17219
 #define OpcUaId_TrainingConditionClassType 17220
 #define OpcUaId_StatisticalConditionClassType 18665
-#define OpcUaId_TestingConditionSubClassType 17221
+#define OpcUaId_TestingConditionClassType 17221
 #define OpcUaId_AuditConditionEventType 2790
 #define OpcUaId_AuditConditionEnableEventType 2803
 #define OpcUaId_AuditConditionCommentEventType 2829
@@ -2492,12 +2492,6 @@
 #define OpcUaId_DataTypeDictionaryType_NamespaceUri 107
 #define OpcUaId_DataTypeDictionaryType_Deprecated 15001
 #define OpcUaId_NamingRuleType_EnumValues 12169
-#define OpcUaId_ModellingRuleType_NamingRule 111
-#define OpcUaId_ModellingRule_Mandatory_NamingRule 112
-#define OpcUaId_ModellingRule_Optional_NamingRule 113
-#define OpcUaId_ModellingRule_ExposesItsArray_NamingRule 114
-#define OpcUaId_ModellingRule_OptionalPlaceholder_NamingRule 11509
-#define OpcUaId_ModellingRule_MandatoryPlaceholder_NamingRule 11511
 #define OpcUaId_OPCUANamespaceMetadata_NamespaceUri 15958
 #define OpcUaId_OPCUANamespaceMetadata_NamespaceVersion 15959
 #define OpcUaId_OPCUANamespaceMetadata_NamespacePublicationDate 15960
@@ -2842,6 +2836,7 @@
 #define OpcUaId_AuditOpenSecureChannelEventType_SecurityPolicyUri 2063
 #define OpcUaId_AuditOpenSecureChannelEventType_SecurityMode 2065
 #define OpcUaId_AuditOpenSecureChannelEventType_RequestedLifetime 2066
+#define OpcUaId_AuditOpenSecureChannelEventType_CertificateErrorEventId 24135
 #define OpcUaId_AuditSessionEventType_SessionId 2070
 #define OpcUaId_AuditCreateSessionEventType_SecureChannelId 2072
 #define OpcUaId_AuditCreateSessionEventType_ClientCertificate 2073
