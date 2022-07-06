@@ -36,13 +36,6 @@
         <opc:EnumeratedValue Name="Service" Value="4"/>
         <opc:EnumeratedValue Name="Other" Value="5"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MaintenanceMode">
-        <opc:EnumeratedValue Name="Service" Value="0"/>
-        <opc:EnumeratedValue Name="Inspection" Value="1"/>
-        <opc:EnumeratedValue Name="Repair" Value="2"/>
-        <opc:EnumeratedValue Name="Upgrade" Value="3"/>
-        <opc:EnumeratedValue Name="Other" Value="4"/>
-    </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="PartQuality">
         <opc:EnumeratedValue Name="CapabilityUnavailable" Value="0"/>
         <opc:EnumeratedValue Name="Good" Value="1"/>

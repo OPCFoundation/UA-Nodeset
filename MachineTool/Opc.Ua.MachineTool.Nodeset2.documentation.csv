@@ -73,4 +73,3 @@ Id,Name,Link,ConformanceUnits
 1002,ObligationType,"https://reference.opcfoundation.org/v105/MachineTool/v101/docs/8.3.13","MachineTool Monitoring Obligation;"
 1003,MachineOperationModeStateMachineType,"https://reference.opcfoundation.org/v105/MachineTool/v101/docs/8.3.10","MachineTool Monitoring MaintenanceMode;3:Machinery Operation Mode;"
 1004,MaintenanceModeStateMachineType,"https://reference.opcfoundation.org/v105/MachineTool/v101/docs/8.3.11","MachineTool Monitoring MaintenanceMode;"
-3002,MaintenanceMode,"",""
