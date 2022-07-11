@@ -125,9 +125,9 @@
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="RioChannelDiagnosisReasonEnumeration">
         <opc:EnumeratedValue Name="ALL_DISAPPEARS" Value="0"/>
-        <opc:EnumeratedValue Name="APPEARED" Value="1"/>
-        <opc:EnumeratedValue Name="DISAPPEARED" Value="2"/>
-        <opc:EnumeratedValue Name="DISAPPEARED_OTHER_REMAIN" Value="3"/>
+        <opc:EnumeratedValue Name="APPEARS" Value="1"/>
+        <opc:EnumeratedValue Name="DISAPPEARS" Value="2"/>
+        <opc:EnumeratedValue Name="DISAPPEARS_OTHER_REMAIN" Value="3"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="RioChannelDiagnosisStatusEnumeration">
         <opc:EnumeratedValue Name="HI_LIM_EXCEEDED" Value="0"/>

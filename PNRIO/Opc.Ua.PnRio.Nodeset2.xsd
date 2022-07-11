@@ -19,9 +19,9 @@
     <xs:simpleType name="RioChannelDiagnosisReasonEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="ALL_DISAPPEARS_0"/>
-            <xs:enumeration value="APPEARED_1"/>
-            <xs:enumeration value="DISAPPEARED_2"/>
-            <xs:enumeration value="DISAPPEARED_OTHER_REMAIN_3"/>
+            <xs:enumeration value="APPEARS_1"/>
+            <xs:enumeration value="DISAPPEARS_2"/>
+            <xs:enumeration value="DISAPPEARS_OTHER_REMAIN_3"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:RioChannelDiagnosisReasonEnumeration" name="RioChannelDiagnosisReasonEnumeration"/>
