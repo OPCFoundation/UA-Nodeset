@@ -1,0 +1,1053 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/BACnet_V2/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/BACnet_V2/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetAddress">
+        <opc:Field TypeName="opc:UInt16" Name="NetworkNumber"/>
+        <opc:Field TypeName="opc:ByteString" Name="MacAddress"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetAddressBinding">
+        <opc:Field TypeName="opc:UInt32" Name="DeviceObjectIdentifier"/>
+        <opc:Field TypeName="tns:BACnetAddress" Name="DeviceAddress"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetCOVSubscription">
+        <opc:Field TypeName="opc:Bit" Name="CovIncrementSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="tns:BACnetRecipientProcess" Name="Recipient"/>
+        <opc:Field TypeName="tns:BACnetDeviceObjectPropertyReference" Name="MonitoredPropertyReference"/>
+        <opc:Field TypeName="opc:Boolean" Name="IssueConfirmedNotifications"/>
+        <opc:Field TypeName="opc:UInt32" Name="TimeRemaining"/>
+        <opc:Field SwitchField="CovIncrementSpecified" TypeName="opc:Float" Name="CovIncrement"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetDailySchedule">
+        <opc:Field TypeName="opc:Int32" Name="NoOfDay-schedule"/>
+        <opc:Field LengthField="NoOfDay-schedule" TypeName="tns:BACnetTimeValue" Name="Day-schedule"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetDate">
+        <opc:Field TypeName="opc:UInt16" Name="Year"/>
+        <opc:Field TypeName="tns:BACnetMonth" Name="Month"/>
+        <opc:Field TypeName="tns:BACnetDayOfMonth" Name="DayOfMonth"/>
+        <opc:Field TypeName="tns:BACnetDayOfWeek" Name="DayOfWeek"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetDateRange">
+        <opc:Field TypeName="tns:BACnetDate" Name="StartDate"/>
+        <opc:Field TypeName="tns:BACnetDate" Name="EndTime"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetDateTime">
+        <opc:Field TypeName="tns:BACnetDate" Name="Date"/>
+        <opc:Field TypeName="tns:BACnetTime" Name="Time"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetDestination">
+        <opc:Field TypeName="tns:BACnetDaysOfWeek" Name="ValidDays"/>
+        <opc:Field TypeName="tns:BACnetTime" Name="FromTime"/>
+        <opc:Field TypeName="tns:BACnetTime" Name="ToTime"/>
+        <opc:Field TypeName="tns:BACnetRecipient" Name="Recipient"/>
+        <opc:Field TypeName="opc:UInt32" Name="ProcessIdentifier"/>
+        <opc:Field TypeName="opc:Boolean" Name="IssueConfirmedNotifications"/>
+        <opc:Field TypeName="tns:BACnetEventTransitionBits" Name="Transitions"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetDeviceObjectPropertyReference">
+        <opc:Field TypeName="opc:Bit" Name="PropertyIdentifierSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PropertyArrayIndexSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DeviceIdentifierSpecified"/>
+        <opc:Field Length="29" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:UInt32" Name="ObjectIdentifier"/>
+        <opc:Field SwitchField="PropertyIdentifierSpecified" TypeName="tns:BACnetPropertyIdentifier" Name="PropertyIdentifier"/>
+        <opc:Field SwitchField="PropertyArrayIndexSpecified" TypeName="opc:UInt32" Name="PropertyArrayIndex"/>
+        <opc:Field SwitchField="DeviceIdentifierSpecified" TypeName="opc:UInt32" Name="DeviceIdentifier"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventFaultParameterExtended">
+        <opc:Field TypeName="opc:UInt16" Name="VendorId"/>
+        <opc:Field TypeName="ua:Variant" Name="Extended-fault-type"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfParameters"/>
+        <opc:Field LengthField="NoOfParameters" TypeName="tns:BACnetEventParameterExtendedParameters" Name="Parameters"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterBufferReady">
+        <opc:Field TypeName="opc:UInt32" Name="Notification-threshold"/>
+        <opc:Field TypeName="opc:UInt32" Name="Previous-notification-count"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterChangeOfBitstring">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="Bitmask"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfList-of-bitstring-values"/>
+        <opc:Field LengthField="NoOfList-of-bitstring-values" TypeName="ua:ExtensionObject" Name="List-of-bitstring-values"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterChangeOfCharacterString">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfAlarmValues"/>
+        <opc:Field LengthField="NoOfAlarmValues" TypeName="opc:CharArray" Name="AlarmValues"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterChangeOfLifeSafety">
+        <opc:Field TypeName="tns:BACnetLifeSafetyState" Name="NewState"/>
+        <opc:Field TypeName="tns:BACnetLifeSafetyMode" Name="NewMode"/>
+        <opc:Field TypeName="tns:BACnetLifeSafetyOperation" Name="OperationExtended"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterChangeOfState">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfList-of-values"/>
+        <opc:Field LengthField="NoOfList-of-values" TypeName="tns:BACnetPropertyStates" Name="List-of-values"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterChangeOfValue">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="Cov-criteria-bitmask"/>
+        <opc:Field TypeName="opc:Float" Name="Cov-criteria-referenced-property-increment"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterCommandFailure">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="tns:BACnetDeviceObjectPropertyReference" Name="Feedback-property-reference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterDoubleOutOfRange">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:Double" Name="Low-limit"/>
+        <opc:Field TypeName="opc:Double" Name="High-limit"/>
+        <opc:Field TypeName="opc:Double" Name="Deadband"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterFloatingLimit">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="tns:BACnetDeviceObjectPropertyReference" Name="Setpoint-reference"/>
+        <opc:Field TypeName="opc:Double" Name="Low-diff-limit"/>
+        <opc:Field TypeName="opc:Double" Name="High-diff-limit"/>
+        <opc:Field TypeName="opc:Double" Name="Deadband"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterOutOfRange">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:Double" Name="Low-limit"/>
+        <opc:Field TypeName="opc:Double" Name="High-limit"/>
+        <opc:Field TypeName="opc:Double" Name="Deadband"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterSignedOutOfRange">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:Int32" Name="Low-limit"/>
+        <opc:Field TypeName="opc:Int32" Name="High-limit"/>
+        <opc:Field TypeName="opc:UInt32" Name="Deadband"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterUnsignedOutOfRange">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:UInt32" Name="Low-limit"/>
+        <opc:Field TypeName="opc:UInt32" Name="High-limit"/>
+        <opc:Field TypeName="opc:UInt32" Name="Deadband"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetEventParameterUnsignedRange">
+        <opc:Field TypeName="opc:UInt32" Name="Time-delay"/>
+        <opc:Field TypeName="opc:UInt32" Name="Low-limit"/>
+        <opc:Field TypeName="opc:UInt32" Name="High-limit"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetFaultParameterFaultCharacterstring">
+        <opc:Field TypeName="opc:CharArray" Name="Fault-characterstring"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetFaultParameterFaultLifeSafety">
+        <opc:Field TypeName="opc:Int32" Name="NoOfList-of-fault-values"/>
+        <opc:Field LengthField="NoOfList-of-fault-values" TypeName="tns:BACnetLifeSafetyState" Name="List-of-fault-values"/>
+        <opc:Field TypeName="tns:BACnetDeviceObjectPropertyReference" Name="Mode-property-reference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetFaultParameterFaultState">
+        <opc:Field TypeName="opc:Int32" Name="NoOfList-of-fault-values"/>
+        <opc:Field LengthField="NoOfList-of-fault-values" TypeName="tns:BACnetProgramStates" Name="List-of-fault-values"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetFaultParameterFaultStatusFlags">
+        <opc:Field TypeName="opc:Int32" Name="NoOfStatus-flags-reference"/>
+        <opc:Field LengthField="NoOfStatus-flags-reference" TypeName="tns:BACnetDeviceObjectPropertyReference" Name="Status-flags-reference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetPropertyStates">
+        <opc:Field TypeName="opc:Boolean" Name="BooleanValue"/>
+        <opc:Field TypeName="tns:BACnetBinaryPV" Name="BinaryValue"/>
+        <opc:Field TypeName="tns:BACnetEventEnumType" Name="EventType"/>
+        <opc:Field TypeName="tns:BACnetPolarity" Name="Polarity"/>
+        <opc:Field TypeName="tns:BACnetProgramRequest" Name="ProgramChange"/>
+        <opc:Field TypeName="tns:BACnetProgramStates" Name="ProgramState"/>
+        <opc:Field TypeName="tns:BACnetProgramError" Name="ProgramError"/>
+        <opc:Field TypeName="tns:BACnetReliability" Name="Reliability"/>
+        <opc:Field TypeName="tns:BACnetEventState" Name="State"/>
+        <opc:Field TypeName="tns:BACnetDeviceStatus" Name="SystemStatus"/>
+        <opc:Field TypeName="ua:EUInformation" Name="Units"/>
+        <opc:Field TypeName="opc:UInt32" Name="UnsignedValue"/>
+        <opc:Field TypeName="tns:BACnetLifeSafetyMode" Name="LifeSafetyMode"/>
+        <opc:Field TypeName="tns:BACnetLifeSafetyState" Name="LifeSafetyState"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetRecipientProcess">
+        <opc:Field TypeName="tns:BACnetRecipient" Name="Recipient"/>
+        <opc:Field TypeName="opc:UInt32" Name="ProcessIdentifier"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetSpecialEvent">
+        <opc:Field TypeName="tns:BACnetSpecialEventPeriod" Name="Period"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfListOfTimeValues"/>
+        <opc:Field LengthField="NoOfListOfTimeValues" TypeName="tns:BACnetTimeValue" Name="ListOfTimeValues"/>
+        <opc:Field TypeName="opc:Byte" Name="EventPriority"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetTime">
+        <opc:Field TypeName="opc:Byte" Name="Hour"/>
+        <opc:Field TypeName="opc:Byte" Name="Minute"/>
+        <opc:Field TypeName="opc:Byte" Name="Second"/>
+        <opc:Field TypeName="opc:Byte" Name="Hundredths"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetTimeValue">
+        <opc:Field TypeName="tns:BACnetTime" Name="Time"/>
+        <opc:Field TypeName="tns:BACnetTimeValueValue" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetTimeValueValue">
+        <opc:Field TypeName="opc:Boolean" Name="BooleanValue"/>
+        <opc:Field TypeName="ua:Variant" Name="UnsignedValue"/>
+        <opc:Field TypeName="ua:Variant" Name="SignedValue"/>
+        <opc:Field TypeName="opc:ByteString" Name="OctedStringValue"/>
+        <opc:Field TypeName="opc:CharArray" Name="CharStringValue"/>
+        <opc:Field TypeName="opc:UInt32" Name="ObjectIdentifierValue"/>
+        <opc:Field TypeName="opc:Int32" Name="EnumerationValue"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="BitStringValue"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BACnetWeekNDay">
+        <opc:Field TypeName="tns:BACnetMonth" Name="Month"/>
+        <opc:Field TypeName="tns:BACnetDay" Name="Day"/>
+        <opc:Field TypeName="tns:BACnetDayOfWeek" Name="DayOfWeek"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:OptionSet" Name="BACnetDaysOfWeek">
+        <opc:Field TypeName="opc:ByteString" Name="Value"/>
+        <opc:Field TypeName="opc:ByteString" Name="ValidBits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:OptionSet" Name="BACnetEventTransitionBits">
+        <opc:Field TypeName="opc:ByteString" Name="Value"/>
+        <opc:Field TypeName="opc:ByteString" Name="ValidBits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:OptionSet" Name="BACnetLimitEnable">
+        <opc:Field TypeName="opc:ByteString" Name="Value"/>
+        <opc:Field TypeName="opc:ByteString" Name="ValidBits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:OptionSet" Name="BACnetObjectTypeSupportedBits">
+        <opc:Field TypeName="opc:ByteString" Name="Value"/>
+        <opc:Field TypeName="opc:ByteString" Name="ValidBits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:OptionSet" Name="BACnetServicesSupportedBits">
+        <opc:Field TypeName="opc:ByteString" Name="Value"/>
+        <opc:Field TypeName="opc:ByteString" Name="ValidBits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:OptionSet" Name="BACnetStatusFlags">
+        <opc:Field TypeName="opc:ByteString" Name="Value"/>
+        <opc:Field TypeName="opc:ByteString" Name="ValidBits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetCalendarEntry">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetDate" SwitchValue="1" Name="Date"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetDateRange" SwitchValue="2" Name="DateRange"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetWeekNDay" SwitchValue="3" Name="WeekNDay"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetClientCOV">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Float" SwitchValue="1" Name="Real-increment"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetEventParameter">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterChangeOfBitstring" SwitchValue="1" Name="Change-of-bitstring"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterChangeOfState" SwitchValue="2" Name="Change-of-state"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterChangeOfValue" SwitchValue="3" Name="Change-of-value"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterCommandFailure" SwitchValue="4" Name="Command-failure"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterFloatingLimit" SwitchValue="5" Name="Floating-limit"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterOutOfRange" SwitchValue="6" Name="Out-of-range"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventFaultParameterExtended" SwitchValue="7" Name="Extended"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterBufferReady" SwitchValue="8" Name="Buffer-ready"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterUnsignedRange" SwitchValue="9" Name="Unsigned-range"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterDoubleOutOfRange" SwitchValue="10" Name="Double-out-of-range"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterSignedOutOfRange" SwitchValue="11" Name="Signed-out-of-range"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterUnsignedOutOfRange" SwitchValue="12" Name="Unsigned-out-of-range"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterChangeOfCharacterString" SwitchValue="13" Name="Change-of-characterstring"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventParameterChangeOfLifeSafety" SwitchValue="14" Name="Change-of-life-safety"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetEventParameterExtendedParameters">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Double" SwitchValue="1" Name="Real"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:UInt32" SwitchValue="2" Name="Unsigned"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Boolean" SwitchValue="3" Name="Boolean"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Double" SwitchValue="4" Name="Double"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Int32" SwitchValue="5" Name="NoOfOcted"/>
+        <opc:Field LengthField="NoOfOcted" SwitchField="SwitchField" TypeName="opc:Byte" SwitchValue="5" Name="Octed"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:CharArray" SwitchValue="6" Name="CharacterString"/>
+        <opc:Field SwitchField="SwitchField" TypeName="ua:ExtensionObject" SwitchValue="7" Name="BitString"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:UInt32" SwitchValue="8" Name="Enum"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetDate" SwitchValue="9" Name="Date"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetTime" SwitchValue="10" Name="Time"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:UInt32" SwitchValue="11" Name="ObjectIdentifier"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetDeviceObjectPropertyReference" SwitchValue="12" Name="Reference"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Int32" SwitchValue="13" Name="Integer"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetFaultParameter">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetFaultParameterFaultCharacterstring" SwitchValue="1" Name="Fault-characterstring"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetFaultParameterFaultLifeSafety" SwitchValue="2" Name="Fault-life-safety"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetFaultParameterFaultState" SwitchValue="3" Name="Fault-state"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetFaultParameterFaultStatusFlags" SwitchValue="4" Name="Fault-status-flags"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetEventFaultParameterExtended" SwitchValue="5" Name="Fault-extended"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetMessageClass">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="ua:Variant" SwitchValue="1" Name="Unsigned"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:CharArray" SwitchValue="2" Name="String"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetPriorityValue">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Float" SwitchValue="1" Name="Real"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Int32" SwitchValue="2" Name="Enumerated"/>
+        <opc:Field SwitchField="SwitchField" TypeName="ua:Variant" SwitchValue="3" Name="Unsigned"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Boolean" SwitchValue="4" Name="Boolean"/>
+        <opc:Field SwitchField="SwitchField" TypeName="ua:Variant" SwitchValue="5" Name="Signed"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Double" SwitchValue="6" Name="Double"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetRecipient">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:UInt32" SwitchValue="1" Name="Device"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetAddress" SwitchValue="2" Name="Address"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetSpecialEventPeriod">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetCalendarEntry" SwitchValue="1" Name="CalendarEntry"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:UInt32" SwitchValue="2" Name="CalendarReference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="BACnetTimeStamp">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetTime" SwitchValue="1" Name="Time"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:UInt16" SwitchValue="2" Name="SequenceNumber"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:BACnetDateTime" SwitchValue="3" Name="DateTime"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetAction">
+        <opc:EnumeratedValue Name="direct" Value="0"/>
+        <opc:EnumeratedValue Name="reverse" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetBackupState">
+        <opc:EnumeratedValue Name="Idle" Value="0"/>
+        <opc:EnumeratedValue Name="Preparing_For_Backup" Value="1"/>
+        <opc:EnumeratedValue Name="Preparing_For_Restore" Value="2"/>
+        <opc:EnumeratedValue Name="Performing_A_Backup" Value="3"/>
+        <opc:EnumeratedValue Name="Performing_A_Restore" Value="4"/>
+        <opc:EnumeratedValue Name="Backup_Failure" Value="5"/>
+        <opc:EnumeratedValue Name="Restore_Failure" Value="6"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetBinaryPV">
+        <opc:EnumeratedValue Name="Inactive" Value="0"/>
+        <opc:EnumeratedValue Name="Active" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetDay">
+        <opc:EnumeratedValue Name="days numbered 1-7" Value="1"/>
+        <opc:EnumeratedValue Name="days numbered 8-14" Value="2"/>
+        <opc:EnumeratedValue Name="days numbered 15-21" Value="3"/>
+        <opc:EnumeratedValue Name="days numbered 22-28" Value="4"/>
+        <opc:EnumeratedValue Name="days numbered 29-31" Value="5"/>
+        <opc:EnumeratedValue Name="last 7 days of this month" Value="6"/>
+        <opc:EnumeratedValue Name="any week of this month" Value="255"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetDayOfMonth">
+        <opc:EnumeratedValue Name="1" Value="1"/>
+        <opc:EnumeratedValue Name="2" Value="2"/>
+        <opc:EnumeratedValue Name="3" Value="3"/>
+        <opc:EnumeratedValue Name="4" Value="4"/>
+        <opc:EnumeratedValue Name="5" Value="5"/>
+        <opc:EnumeratedValue Name="6" Value="6"/>
+        <opc:EnumeratedValue Name="7" Value="7"/>
+        <opc:EnumeratedValue Name="8" Value="8"/>
+        <opc:EnumeratedValue Name="9" Value="9"/>
+        <opc:EnumeratedValue Name="10" Value="10"/>
+        <opc:EnumeratedValue Name="11" Value="11"/>
+        <opc:EnumeratedValue Name="12" Value="12"/>
+        <opc:EnumeratedValue Name="13" Value="13"/>
+        <opc:EnumeratedValue Name="14" Value="14"/>
+        <opc:EnumeratedValue Name="15" Value="15"/>
+        <opc:EnumeratedValue Name="16" Value="16"/>
+        <opc:EnumeratedValue Name="17" Value="17"/>
+        <opc:EnumeratedValue Name="18" Value="18"/>
+        <opc:EnumeratedValue Name="19" Value="19"/>
+        <opc:EnumeratedValue Name="20" Value="20"/>
+        <opc:EnumeratedValue Name="21" Value="21"/>
+        <opc:EnumeratedValue Name="22" Value="22"/>
+        <opc:EnumeratedValue Name="23" Value="23"/>
+        <opc:EnumeratedValue Name="24" Value="24"/>
+        <opc:EnumeratedValue Name="25" Value="25"/>
+        <opc:EnumeratedValue Name="26" Value="26"/>
+        <opc:EnumeratedValue Name="27" Value="27"/>
+        <opc:EnumeratedValue Name="28" Value="28"/>
+        <opc:EnumeratedValue Name="29" Value="29"/>
+        <opc:EnumeratedValue Name="30" Value="30"/>
+        <opc:EnumeratedValue Name="31" Value="31"/>
+        <opc:EnumeratedValue Name="Last day of month" Value="32"/>
+        <opc:EnumeratedValue Name="Odd day of month" Value="33"/>
+        <opc:EnumeratedValue Name="Even day of month" Value="34"/>
+        <opc:EnumeratedValue Name="Unspecified" Value="255"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetDayOfWeek">
+        <opc:EnumeratedValue Name="Monday" Value="1"/>
+        <opc:EnumeratedValue Name="Tuesday" Value="2"/>
+        <opc:EnumeratedValue Name="Wednesday" Value="3"/>
+        <opc:EnumeratedValue Name="Thursday" Value="4"/>
+        <opc:EnumeratedValue Name="Friday" Value="5"/>
+        <opc:EnumeratedValue Name="Saturday" Value="6"/>
+        <opc:EnumeratedValue Name="Sunday" Value="7"/>
+        <opc:EnumeratedValue Name="unspecified" Value="255"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetDeviceCommunicationEnabled">
+        <opc:EnumeratedValue Name="Enable" Value="0"/>
+        <opc:EnumeratedValue Name="Disable" Value="1"/>
+        <opc:EnumeratedValue Name="DisableInitiation" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetDeviceStatus">
+        <opc:EnumeratedValue Name="Operational" Value="0"/>
+        <opc:EnumeratedValue Name="OperationalReadOnly" Value="1"/>
+        <opc:EnumeratedValue Name="DownloadRequired" Value="2"/>
+        <opc:EnumeratedValue Name="DownloadInProgress" Value="3"/>
+        <opc:EnumeratedValue Name="NonOperational" Value="4"/>
+        <opc:EnumeratedValue Name="BackupInProgress" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetEventEnumType">
+        <opc:EnumeratedValue Name="ChangeOfBitstring" Value="0"/>
+        <opc:EnumeratedValue Name="ChangeOfState" Value="1"/>
+        <opc:EnumeratedValue Name="ChangeOfValue" Value="2"/>
+        <opc:EnumeratedValue Name="CommandFailure" Value="3"/>
+        <opc:EnumeratedValue Name="FloatingLimit" Value="4"/>
+        <opc:EnumeratedValue Name="OutOfRange" Value="5"/>
+        <opc:EnumeratedValue Name="ChangeOfLifeSafety" Value="8"/>
+        <opc:EnumeratedValue Name="Extended" Value="9"/>
+        <opc:EnumeratedValue Name="BufferReady" Value="10"/>
+        <opc:EnumeratedValue Name="UnsignedRange" Value="11"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetEventState">
+        <opc:EnumeratedValue Name="Normal" Value="0"/>
+        <opc:EnumeratedValue Name="Fault" Value="1"/>
+        <opc:EnumeratedValue Name="OffNormal" Value="2"/>
+        <opc:EnumeratedValue Name="HighLimit" Value="3"/>
+        <opc:EnumeratedValue Name="LowLimit" Value="4"/>
+        <opc:EnumeratedValue Name="LifeSafetyAlarm" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetEventType">
+        <opc:EnumeratedValue Name="change-of-bitstring" Value="0"/>
+        <opc:EnumeratedValue Name="change-of-state" Value="1"/>
+        <opc:EnumeratedValue Name="change-of-value" Value="2"/>
+        <opc:EnumeratedValue Name="command-failure" Value="3"/>
+        <opc:EnumeratedValue Name="out-of-range" Value="5"/>
+        <opc:EnumeratedValue Name="change-of-life-safety" Value="8"/>
+        <opc:EnumeratedValue Name="floating-limit" Value="4"/>
+        <opc:EnumeratedValue Name="extended" Value="9"/>
+        <opc:EnumeratedValue Name="buffer-ready" Value="10"/>
+        <opc:EnumeratedValue Name="unsigned-range" Value="11"/>
+        <opc:EnumeratedValue Name="access-event" Value="13"/>
+        <opc:EnumeratedValue Name="double-out-of-range" Value="14"/>
+        <opc:EnumeratedValue Name="signed-out-of-range" Value="15"/>
+        <opc:EnumeratedValue Name="unsigned-out-of-range" Value="16"/>
+        <opc:EnumeratedValue Name="change-of-characterstring" Value="17"/>
+        <opc:EnumeratedValue Name="change-of-status-flags" Value="18"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetFaultType">
+        <opc:EnumeratedValue Name="none" Value="0"/>
+        <opc:EnumeratedValue Name="fault-characterstring" Value="1"/>
+        <opc:EnumeratedValue Name="fault-exended" Value="2"/>
+        <opc:EnumeratedValue Name="fault-life-safety" Value="3"/>
+        <opc:EnumeratedValue Name="fault-state" Value="4"/>
+        <opc:EnumeratedValue Name="fault-status-flags" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetLifeSafetyMode">
+        <opc:EnumeratedValue Name="Off" Value="0"/>
+        <opc:EnumeratedValue Name="On" Value="1"/>
+        <opc:EnumeratedValue Name="Test" Value="2"/>
+        <opc:EnumeratedValue Name="Manned" Value="3"/>
+        <opc:EnumeratedValue Name="UnManned" Value="4"/>
+        <opc:EnumeratedValue Name="Armed" Value="5"/>
+        <opc:EnumeratedValue Name="Disarmed" Value="6"/>
+        <opc:EnumeratedValue Name="Prearmed" Value="7"/>
+        <opc:EnumeratedValue Name="Slow" Value="8"/>
+        <opc:EnumeratedValue Name="Fast" Value="9"/>
+        <opc:EnumeratedValue Name="Disconnected" Value="10"/>
+        <opc:EnumeratedValue Name="Enabled" Value="11"/>
+        <opc:EnumeratedValue Name="Disabled" Value="12"/>
+        <opc:EnumeratedValue Name="AutomaticReleaseDisabled" Value="13"/>
+        <opc:EnumeratedValue Name="Default" Value="14"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetLifeSafetyOperation">
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="Silence" Value="1"/>
+        <opc:EnumeratedValue Name="SilenceAudible" Value="2"/>
+        <opc:EnumeratedValue Name="SilenceVisible" Value="3"/>
+        <opc:EnumeratedValue Name="Reset" Value="4"/>
+        <opc:EnumeratedValue Name="ResetAlarm" Value="5"/>
+        <opc:EnumeratedValue Name="ResetFault" Value="6"/>
+        <opc:EnumeratedValue Name="Unsilence" Value="7"/>
+        <opc:EnumeratedValue Name="UnsilenceAudible" Value="8"/>
+        <opc:EnumeratedValue Name="UnsilenceVisible" Value="9"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetLifeSafetyState">
+        <opc:EnumeratedValue Name="Quiet" Value="0"/>
+        <opc:EnumeratedValue Name="PreAlarm" Value="1"/>
+        <opc:EnumeratedValue Name="Alarm" Value="2"/>
+        <opc:EnumeratedValue Name="Fault" Value="3"/>
+        <opc:EnumeratedValue Name="FaultPreAlarm" Value="4"/>
+        <opc:EnumeratedValue Name="FaultAlarm" Value="5"/>
+        <opc:EnumeratedValue Name="NotReady" Value="6"/>
+        <opc:EnumeratedValue Name="Active" Value="7"/>
+        <opc:EnumeratedValue Name="Tamper" Value="8"/>
+        <opc:EnumeratedValue Name="TestAlarm" Value="9"/>
+        <opc:EnumeratedValue Name="TestActive" Value="10"/>
+        <opc:EnumeratedValue Name="TestFault" Value="11"/>
+        <opc:EnumeratedValue Name="TestFaultAlarm" Value="12"/>
+        <opc:EnumeratedValue Name="Holdup" Value="13"/>
+        <opc:EnumeratedValue Name="Duress" Value="14"/>
+        <opc:EnumeratedValue Name="TamperAlarm" Value="15"/>
+        <opc:EnumeratedValue Name="Abnormal" Value="16"/>
+        <opc:EnumeratedValue Name="EmergencyPower" Value="17"/>
+        <opc:EnumeratedValue Name="Delayed" Value="18"/>
+        <opc:EnumeratedValue Name="Blocked" Value="19"/>
+        <opc:EnumeratedValue Name="LocalAlarm" Value="20"/>
+        <opc:EnumeratedValue Name="GeneralAlarm" Value="21"/>
+        <opc:EnumeratedValue Name="Supervisory" Value="22"/>
+        <opc:EnumeratedValue Name="TestSupervisory" Value="23"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetLoggingType">
+        <opc:EnumeratedValue Name="Polled" Value="0"/>
+        <opc:EnumeratedValue Name="COV" Value="1"/>
+        <opc:EnumeratedValue Name="Triggered" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetMessagePriority">
+        <opc:EnumeratedValue Name="normal" Value="0"/>
+        <opc:EnumeratedValue Name="urgent" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetMonth">
+        <opc:EnumeratedValue Name="January" Value="1"/>
+        <opc:EnumeratedValue Name="February" Value="2"/>
+        <opc:EnumeratedValue Name="March" Value="3"/>
+        <opc:EnumeratedValue Name="April" Value="4"/>
+        <opc:EnumeratedValue Name="May" Value="5"/>
+        <opc:EnumeratedValue Name="June" Value="6"/>
+        <opc:EnumeratedValue Name="July" Value="7"/>
+        <opc:EnumeratedValue Name="August" Value="8"/>
+        <opc:EnumeratedValue Name="September" Value="9"/>
+        <opc:EnumeratedValue Name="October" Value="10"/>
+        <opc:EnumeratedValue Name="November" Value="11"/>
+        <opc:EnumeratedValue Name="December" Value="12"/>
+        <opc:EnumeratedValue Name="Odd" Value="13"/>
+        <opc:EnumeratedValue Name="Even" Value="14"/>
+        <opc:EnumeratedValue Name="Unspecified" Value="255"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetNodeType">
+        <opc:EnumeratedValue Name="UNKNOWN" Value="0"/>
+        <opc:EnumeratedValue Name="SYSTEM" Value="1"/>
+        <opc:EnumeratedValue Name="NETWORK" Value="2"/>
+        <opc:EnumeratedValue Name="DEVICE" Value="3"/>
+        <opc:EnumeratedValue Name="ORGANIZATIONAL" Value="4"/>
+        <opc:EnumeratedValue Name="AREA" Value="5"/>
+        <opc:EnumeratedValue Name="EQUIPMENT" Value="6"/>
+        <opc:EnumeratedValue Name="POINT" Value="7"/>
+        <opc:EnumeratedValue Name="COLLECTION" Value="8"/>
+        <opc:EnumeratedValue Name="PROPERTY" Value="9"/>
+        <opc:EnumeratedValue Name="FUNCTIONAL" Value="10"/>
+        <opc:EnumeratedValue Name="OTHER" Value="11"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetNotifyType">
+        <opc:EnumeratedValue Name="Alarm" Value="0"/>
+        <opc:EnumeratedValue Name="Event" Value="1"/>
+        <opc:EnumeratedValue Name="AckNotification" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetObjectTypeEnum">
+        <opc:EnumeratedValue Name="analog-input" Value="0"/>
+        <opc:EnumeratedValue Name="analog-output" Value="1"/>
+        <opc:EnumeratedValue Name="analog-value" Value="2"/>
+        <opc:EnumeratedValue Name="binary-input" Value="3"/>
+        <opc:EnumeratedValue Name="binary-output" Value="4"/>
+        <opc:EnumeratedValue Name="binary-value" Value="5"/>
+        <opc:EnumeratedValue Name="calendar" Value="6"/>
+        <opc:EnumeratedValue Name="command" Value="7"/>
+        <opc:EnumeratedValue Name="device" Value="8"/>
+        <opc:EnumeratedValue Name="event-enrollment" Value="9"/>
+        <opc:EnumeratedValue Name="file" Value="10"/>
+        <opc:EnumeratedValue Name="group" Value="11"/>
+        <opc:EnumeratedValue Name="loop" Value="12"/>
+        <opc:EnumeratedValue Name="multi-state-input" Value="13"/>
+        <opc:EnumeratedValue Name="multi-state-output" Value="14"/>
+        <opc:EnumeratedValue Name="notification-class" Value="15"/>
+        <opc:EnumeratedValue Name="programm" Value="16"/>
+        <opc:EnumeratedValue Name="schedule" Value="17"/>
+        <opc:EnumeratedValue Name="averaring" Value="18"/>
+        <opc:EnumeratedValue Name="multi-state-value" Value="19"/>
+        <opc:EnumeratedValue Name="trend-log" Value="20"/>
+        <opc:EnumeratedValue Name="life-safety-point" Value="21"/>
+        <opc:EnumeratedValue Name="life-safety-zone" Value="22"/>
+        <opc:EnumeratedValue Name="accumulator" Value="23"/>
+        <opc:EnumeratedValue Name="pulse-converter" Value="24"/>
+        <opc:EnumeratedValue Name="event-log" Value="25"/>
+        <opc:EnumeratedValue Name="global-group" Value="26"/>
+        <opc:EnumeratedValue Name="trend-log-multiple" Value="27"/>
+        <opc:EnumeratedValue Name="load-control" Value="28"/>
+        <opc:EnumeratedValue Name="structured-view" Value="29"/>
+        <opc:EnumeratedValue Name="access-door" Value="30"/>
+        <opc:EnumeratedValue Name="unasigned" Value="31"/>
+        <opc:EnumeratedValue Name="access-credential" Value="32"/>
+        <opc:EnumeratedValue Name="access-point" Value="33"/>
+        <opc:EnumeratedValue Name="access-rights" Value="34"/>
+        <opc:EnumeratedValue Name="access-user" Value="35"/>
+        <opc:EnumeratedValue Name="access-zone" Value="36"/>
+        <opc:EnumeratedValue Name="credentional-data-input" Value="37"/>
+        <opc:EnumeratedValue Name="network-security" Value="38"/>
+        <opc:EnumeratedValue Name="bitstring-value" Value="39"/>
+        <opc:EnumeratedValue Name="characterstring-value" Value="40"/>
+        <opc:EnumeratedValue Name="date-pattern-value" Value="41"/>
+        <opc:EnumeratedValue Name="date-value" Value="42"/>
+        <opc:EnumeratedValue Name="datetime-pattern-value" Value="43"/>
+        <opc:EnumeratedValue Name="datetime-value" Value="44"/>
+        <opc:EnumeratedValue Name="integer-value" Value="45"/>
+        <opc:EnumeratedValue Name="large-analog-value" Value="46"/>
+        <opc:EnumeratedValue Name="octetstring-value" Value="47"/>
+        <opc:EnumeratedValue Name="positive-integer-value" Value="48"/>
+        <opc:EnumeratedValue Name="time-pattern-value" Value="49"/>
+        <opc:EnumeratedValue Name="time-value" Value="50"/>
+        <opc:EnumeratedValue Name="notification-forwarder" Value="51"/>
+        <opc:EnumeratedValue Name="altert-enrollment" Value="52"/>
+        <opc:EnumeratedValue Name="channel" Value="53"/>
+        <opc:EnumeratedValue Name="lighting-output" Value="54"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetPolarity">
+        <opc:EnumeratedValue Name="Normal" Value="0"/>
+        <opc:EnumeratedValue Name="Reverse" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetProgramError">
+        <opc:EnumeratedValue Name="Normal" Value="0"/>
+        <opc:EnumeratedValue Name="LoadFailed" Value="1"/>
+        <opc:EnumeratedValue Name="Internal" Value="2"/>
+        <opc:EnumeratedValue Name="Program" Value="3"/>
+        <opc:EnumeratedValue Name="Other" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetProgramRequest">
+        <opc:EnumeratedValue Name="Ready" Value="0"/>
+        <opc:EnumeratedValue Name="Load" Value="1"/>
+        <opc:EnumeratedValue Name="Run" Value="2"/>
+        <opc:EnumeratedValue Name="Halt" Value="3"/>
+        <opc:EnumeratedValue Name="Restart" Value="4"/>
+        <opc:EnumeratedValue Name="Unload" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetProgramStates">
+        <opc:EnumeratedValue Name="Idle" Value="0"/>
+        <opc:EnumeratedValue Name="Loading" Value="1"/>
+        <opc:EnumeratedValue Name="Running" Value="2"/>
+        <opc:EnumeratedValue Name="Waiting" Value="3"/>
+        <opc:EnumeratedValue Name="Halted" Value="4"/>
+        <opc:EnumeratedValue Name="Unloading" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetPropertyIdentifier">
+        <opc:EnumeratedValue Name="AckedTransitions" Value="0"/>
+        <opc:EnumeratedValue Name="AckRequired" Value="1"/>
+        <opc:EnumeratedValue Name="Action" Value="2"/>
+        <opc:EnumeratedValue Name="ActionText" Value="3"/>
+        <opc:EnumeratedValue Name="ActiveText" Value="4"/>
+        <opc:EnumeratedValue Name="ActiveVtSessions" Value="5"/>
+        <opc:EnumeratedValue Name="AlarmValue" Value="6"/>
+        <opc:EnumeratedValue Name="AlarmValues" Value="7"/>
+        <opc:EnumeratedValue Name="All" Value="8"/>
+        <opc:EnumeratedValue Name="AllWritesSuccessful" Value="9"/>
+        <opc:EnumeratedValue Name="ApduSegmentTimeout" Value="10"/>
+        <opc:EnumeratedValue Name="ApduTimeout" Value="11"/>
+        <opc:EnumeratedValue Name="ApplicationSoftwareVersion" Value="12"/>
+        <opc:EnumeratedValue Name="Archive" Value="13"/>
+        <opc:EnumeratedValue Name="Bias" Value="14"/>
+        <opc:EnumeratedValue Name="ChangeOfStateCount" Value="15"/>
+        <opc:EnumeratedValue Name="ChangeOfStateTime" Value="16"/>
+        <opc:EnumeratedValue Name="NotificationClass" Value="17"/>
+        <opc:EnumeratedValue Name="this property deleted" Value="18"/>
+        <opc:EnumeratedValue Name="ControlledVariableReference" Value="19"/>
+        <opc:EnumeratedValue Name="ControlledVariableUnits" Value="20"/>
+        <opc:EnumeratedValue Name="ControlledVariableValue" Value="21"/>
+        <opc:EnumeratedValue Name="CovIncrement" Value="22"/>
+        <opc:EnumeratedValue Name="DateList" Value="23"/>
+        <opc:EnumeratedValue Name="DaylightSavingsStatus" Value="24"/>
+        <opc:EnumeratedValue Name="Deadband" Value="25"/>
+        <opc:EnumeratedValue Name="DerivativeConstant" Value="26"/>
+        <opc:EnumeratedValue Name="DerivativeConstantUnits" Value="27"/>
+        <opc:EnumeratedValue Name="Description" Value="28"/>
+        <opc:EnumeratedValue Name="DescriptionOfHalt" Value="29"/>
+        <opc:EnumeratedValue Name="DeviceAddressBinding" Value="30"/>
+        <opc:EnumeratedValue Name="DeviceType" Value="31"/>
+        <opc:EnumeratedValue Name="EffectivePeriod" Value="32"/>
+        <opc:EnumeratedValue Name="ElapsedActiveTime" Value="33"/>
+        <opc:EnumeratedValue Name="ErrorLimit" Value="34"/>
+        <opc:EnumeratedValue Name="EventEnable" Value="35"/>
+        <opc:EnumeratedValue Name="EventState" Value="36"/>
+        <opc:EnumeratedValue Name="EventType" Value="37"/>
+        <opc:EnumeratedValue Name="ExceptionSchedule" Value="38"/>
+        <opc:EnumeratedValue Name="FaultValues" Value="39"/>
+        <opc:EnumeratedValue Name="FeedbackValue" Value="40"/>
+        <opc:EnumeratedValue Name="FileAccessMethod" Value="41"/>
+        <opc:EnumeratedValue Name="FileSize" Value="42"/>
+        <opc:EnumeratedValue Name="FileType" Value="43"/>
+        <opc:EnumeratedValue Name="FirmwareRevision" Value="44"/>
+        <opc:EnumeratedValue Name="HighLimit" Value="45"/>
+        <opc:EnumeratedValue Name="InactiveText" Value="46"/>
+        <opc:EnumeratedValue Name="InProcess" Value="47"/>
+        <opc:EnumeratedValue Name="InstanceOf" Value="48"/>
+        <opc:EnumeratedValue Name="IntegralConstant" Value="49"/>
+        <opc:EnumeratedValue Name="IntegralConstantUnits" Value="50"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 4_51" Value="51"/>
+        <opc:EnumeratedValue Name="LimitEnable" Value="52"/>
+        <opc:EnumeratedValue Name="ListOfGroupMembers" Value="53"/>
+        <opc:EnumeratedValue Name="ListOfObjectPropertyReferences" Value="54"/>
+        <opc:EnumeratedValue Name="Unassigned_55" Value="55"/>
+        <opc:EnumeratedValue Name="LocalDate" Value="56"/>
+        <opc:EnumeratedValue Name="LocalTime" Value="57"/>
+        <opc:EnumeratedValue Name="Location" Value="58"/>
+        <opc:EnumeratedValue Name="LowLimit" Value="59"/>
+        <opc:EnumeratedValue Name="ManipulatedVariableReference" Value="60"/>
+        <opc:EnumeratedValue Name="MaximumOutput" Value="61"/>
+        <opc:EnumeratedValue Name="MaxApduLengthAccepted" Value="62"/>
+        <opc:EnumeratedValue Name="MaxInfoFrames" Value="63"/>
+        <opc:EnumeratedValue Name="MaxMaster" Value="64"/>
+        <opc:EnumeratedValue Name="MaxPresValue" Value="65"/>
+        <opc:EnumeratedValue Name="MinimumOffTime" Value="66"/>
+        <opc:EnumeratedValue Name="MinimumOnTime" Value="67"/>
+        <opc:EnumeratedValue Name="MinimumOutput" Value="68"/>
+        <opc:EnumeratedValue Name="MinPresValue" Value="69"/>
+        <opc:EnumeratedValue Name="ModelName" Value="70"/>
+        <opc:EnumeratedValue Name="ModificationDate" Value="71"/>
+        <opc:EnumeratedValue Name="NotifyType" Value="72"/>
+        <opc:EnumeratedValue Name="NumberOfApduRetries" Value="73"/>
+        <opc:EnumeratedValue Name="NumberOfStates" Value="74"/>
+        <opc:EnumeratedValue Name="ObjectIdentifier" Value="75"/>
+        <opc:EnumeratedValue Name="ObjectList" Value="76"/>
+        <opc:EnumeratedValue Name="ObjectName" Value="77"/>
+        <opc:EnumeratedValue Name="ObjectPropertyReference" Value="78"/>
+        <opc:EnumeratedValue Name="ObjectType" Value="79"/>
+        <opc:EnumeratedValue Name="Optional" Value="80"/>
+        <opc:EnumeratedValue Name="OutOfService" Value="81"/>
+        <opc:EnumeratedValue Name="OutputUnits" Value="82"/>
+        <opc:EnumeratedValue Name="EventParameters" Value="83"/>
+        <opc:EnumeratedValue Name="Polarity" Value="84"/>
+        <opc:EnumeratedValue Name="PresentValue" Value="85"/>
+        <opc:EnumeratedValue Name="Priority" Value="86"/>
+        <opc:EnumeratedValue Name="PriorityArray" Value="87"/>
+        <opc:EnumeratedValue Name="PriorityForWriting" Value="88"/>
+        <opc:EnumeratedValue Name="ProcessIdentifier" Value="89"/>
+        <opc:EnumeratedValue Name="ProgramChange" Value="90"/>
+        <opc:EnumeratedValue Name="ProgramLocation" Value="91"/>
+        <opc:EnumeratedValue Name="ProgramState" Value="92"/>
+        <opc:EnumeratedValue Name="ProportionalConstant" Value="93"/>
+        <opc:EnumeratedValue Name="ProportionalConstantUnits" Value="94"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 2_95" Value="95"/>
+        <opc:EnumeratedValue Name="ProtocolObjectTypesSupported" Value="96"/>
+        <opc:EnumeratedValue Name="ProtocolServicesSupported" Value="97"/>
+        <opc:EnumeratedValue Name="ProtocolVersion" Value="98"/>
+        <opc:EnumeratedValue Name="ReadOnly" Value="99"/>
+        <opc:EnumeratedValue Name="ReasonForHalt" Value="100"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 4_101" Value="101"/>
+        <opc:EnumeratedValue Name="RecipientList" Value="102"/>
+        <opc:EnumeratedValue Name="Reliability" Value="103"/>
+        <opc:EnumeratedValue Name="RelinquishDefault" Value="104"/>
+        <opc:EnumeratedValue Name="Required" Value="105"/>
+        <opc:EnumeratedValue Name="Resolution" Value="106"/>
+        <opc:EnumeratedValue Name="SegmentationSupported" Value="107"/>
+        <opc:EnumeratedValue Name="Setpoint" Value="108"/>
+        <opc:EnumeratedValue Name="SetpointReference" Value="109"/>
+        <opc:EnumeratedValue Name="StateText" Value="110"/>
+        <opc:EnumeratedValue Name="StatusFlags" Value="111"/>
+        <opc:EnumeratedValue Name="SystemStatus" Value="112"/>
+        <opc:EnumeratedValue Name="TimeDelay" Value="113"/>
+        <opc:EnumeratedValue Name="TimeOfActiveTimeReset" Value="114"/>
+        <opc:EnumeratedValue Name="TimeOfStateCountReset" Value="115"/>
+        <opc:EnumeratedValue Name="TimeSynchronizationRecipients" Value="116"/>
+        <opc:EnumeratedValue Name="Units" Value="117"/>
+        <opc:EnumeratedValue Name="UpdateInterval" Value="118"/>
+        <opc:EnumeratedValue Name="UtcOffset" Value="119"/>
+        <opc:EnumeratedValue Name="VendorIdentifier" Value="120"/>
+        <opc:EnumeratedValue Name="VendorName" Value="121"/>
+        <opc:EnumeratedValue Name="VtClassesSupported" Value="122"/>
+        <opc:EnumeratedValue Name="WeeklySchedule" Value="123"/>
+        <opc:EnumeratedValue Name="AttemptedSamples" Value="124"/>
+        <opc:EnumeratedValue Name="AverageValue" Value="125"/>
+        <opc:EnumeratedValue Name="BufferSize" Value="126"/>
+        <opc:EnumeratedValue Name="ClientCovIncrement" Value="127"/>
+        <opc:EnumeratedValue Name="CovResubscriptionInterval" Value="128"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 3_129" Value="129"/>
+        <opc:EnumeratedValue Name="EventTimeStamps" Value="130"/>
+        <opc:EnumeratedValue Name="LogBuffer" Value="131"/>
+        <opc:EnumeratedValue Name="LogDeviceObjectProperty" Value="132"/>
+        <opc:EnumeratedValue Name="Enable" Value="133"/>
+        <opc:EnumeratedValue Name="LogInterval" Value="134"/>
+        <opc:EnumeratedValue Name="MaximumValue" Value="135"/>
+        <opc:EnumeratedValue Name="MinimumValue" Value="136"/>
+        <opc:EnumeratedValue Name="NotificationThreshold" Value="137"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 3_138" Value="138"/>
+        <opc:EnumeratedValue Name="ProtocolRevision" Value="139"/>
+        <opc:EnumeratedValue Name="RecordsSinceNotification" Value="140"/>
+        <opc:EnumeratedValue Name="RecordCount" Value="141"/>
+        <opc:EnumeratedValue Name="StartTime" Value="142"/>
+        <opc:EnumeratedValue Name="StopTime" Value="143"/>
+        <opc:EnumeratedValue Name="StopWhenFull" Value="144"/>
+        <opc:EnumeratedValue Name="TotalRecordCount" Value="145"/>
+        <opc:EnumeratedValue Name="ValidSamples" Value="146"/>
+        <opc:EnumeratedValue Name="WindowInterval" Value="147"/>
+        <opc:EnumeratedValue Name="WindowSamples" Value="148"/>
+        <opc:EnumeratedValue Name="MaximumValueTimestamp" Value="149"/>
+        <opc:EnumeratedValue Name="MinimumValueTimestamp" Value="150"/>
+        <opc:EnumeratedValue Name="VarianceValue" Value="151"/>
+        <opc:EnumeratedValue Name="ActiveCovSubscriptions" Value="152"/>
+        <opc:EnumeratedValue Name="BackupFailureTimeout" Value="153"/>
+        <opc:EnumeratedValue Name="ConfigurationFiles" Value="154"/>
+        <opc:EnumeratedValue Name="DatabaseRevision" Value="155"/>
+        <opc:EnumeratedValue Name="DirectReading" Value="156"/>
+        <opc:EnumeratedValue Name="LastRestoreTime" Value="157"/>
+        <opc:EnumeratedValue Name="MaintenanceRequired" Value="158"/>
+        <opc:EnumeratedValue Name="MemberOf" Value="159"/>
+        <opc:EnumeratedValue Name="Mode" Value="160"/>
+        <opc:EnumeratedValue Name="OperationExpected" Value="161"/>
+        <opc:EnumeratedValue Name="Setting" Value="162"/>
+        <opc:EnumeratedValue Name="Silenced" Value="163"/>
+        <opc:EnumeratedValue Name="TrackingValue" Value="164"/>
+        <opc:EnumeratedValue Name="ZoneMembers" Value="165"/>
+        <opc:EnumeratedValue Name="LifeSafetyAlarmValues" Value="166"/>
+        <opc:EnumeratedValue Name="MaxSegmentsAccepted" Value="167"/>
+        <opc:EnumeratedValue Name="ProfileName" Value="168"/>
+        <opc:EnumeratedValue Name="AutoSlaveDiscovery" Value="169"/>
+        <opc:EnumeratedValue Name="ManualSlaveAddressBinding" Value="170"/>
+        <opc:EnumeratedValue Name="SlaveAddressBinding" Value="171"/>
+        <opc:EnumeratedValue Name="SlaveProxyEnable" Value="172"/>
+        <opc:EnumeratedValue Name="LastNotifyRecord" Value="173"/>
+        <opc:EnumeratedValue Name="ScheduleDefault" Value="174"/>
+        <opc:EnumeratedValue Name="AcceptedModes" Value="175"/>
+        <opc:EnumeratedValue Name="AdjustValue" Value="176"/>
+        <opc:EnumeratedValue Name="Count" Value="177"/>
+        <opc:EnumeratedValue Name="CountBeforeChange" Value="178"/>
+        <opc:EnumeratedValue Name="CountChangeTime" Value="179"/>
+        <opc:EnumeratedValue Name="CovPeriod" Value="180"/>
+        <opc:EnumeratedValue Name="InputReference" Value="181"/>
+        <opc:EnumeratedValue Name="LimitMonitoringInterval" Value="182"/>
+        <opc:EnumeratedValue Name="LoggingObject" Value="183"/>
+        <opc:EnumeratedValue Name="LoggingRecord" Value="184"/>
+        <opc:EnumeratedValue Name="Prescale" Value="185"/>
+        <opc:EnumeratedValue Name="PulseRate" Value="186"/>
+        <opc:EnumeratedValue Name="Scale" Value="187"/>
+        <opc:EnumeratedValue Name="ScaleFactor" Value="188"/>
+        <opc:EnumeratedValue Name="UpdateTime" Value="189"/>
+        <opc:EnumeratedValue Name="ValueBeforeChange" Value="190"/>
+        <opc:EnumeratedValue Name="ValueSet" Value="191"/>
+        <opc:EnumeratedValue Name="ValueChangeTime" Value="192"/>
+        <opc:EnumeratedValue Name="AlignIntervals" Value="193"/>
+        <opc:EnumeratedValue Name="Unassigned_194" Value="194"/>
+        <opc:EnumeratedValue Name="IntervalOffset" Value="195"/>
+        <opc:EnumeratedValue Name="LastRestartReason" Value="196"/>
+        <opc:EnumeratedValue Name="LoggingType" Value="197"/>
+        <opc:EnumeratedValue Name="Unassigned_198" Value="198"/>
+        <opc:EnumeratedValue Name="Unassigned_199" Value="199"/>
+        <opc:EnumeratedValue Name="Unassigned_200" Value="200"/>
+        <opc:EnumeratedValue Name="Unassigned_201" Value="201"/>
+        <opc:EnumeratedValue Name="RestartNotificationRecipients" Value="202"/>
+        <opc:EnumeratedValue Name="TimeOfDeviceRestart" Value="203"/>
+        <opc:EnumeratedValue Name="TimeSynchronizationInterval" Value="204"/>
+        <opc:EnumeratedValue Name="Trigger" Value="205"/>
+        <opc:EnumeratedValue Name="UtcTimeSynchronizationRecipients" Value="206"/>
+        <opc:EnumeratedValue Name="NodeSubtype" Value="207"/>
+        <opc:EnumeratedValue Name="NodeType" Value="208"/>
+        <opc:EnumeratedValue Name="StructuredObjectList" Value="209"/>
+        <opc:EnumeratedValue Name="SubordinateAnnotations" Value="210"/>
+        <opc:EnumeratedValue Name="SubordinateList" Value="211"/>
+        <opc:EnumeratedValue Name="ActualShedLevel" Value="212"/>
+        <opc:EnumeratedValue Name="DutyWindow" Value="213"/>
+        <opc:EnumeratedValue Name="ExpectedShedLevel" Value="214"/>
+        <opc:EnumeratedValue Name="FullDutyBaseline" Value="215"/>
+        <opc:EnumeratedValue Name="Unassigned_216" Value="216"/>
+        <opc:EnumeratedValue Name="Unassigned_217" Value="217"/>
+        <opc:EnumeratedValue Name="RequestedShedLevel" Value="218"/>
+        <opc:EnumeratedValue Name="ShedDuration" Value="219"/>
+        <opc:EnumeratedValue Name="ShedLevelDescriptions" Value="220"/>
+        <opc:EnumeratedValue Name="ShedLevels" Value="221"/>
+        <opc:EnumeratedValue Name="StateDescription" Value="222"/>
+        <opc:EnumeratedValue Name="Unassigned_223" Value="223"/>
+        <opc:EnumeratedValue Name="Unassigned_224" Value="224"/>
+        <opc:EnumeratedValue Name="Unassigned_225" Value="225"/>
+        <opc:EnumeratedValue Name="DoorAlarmState" Value="226"/>
+        <opc:EnumeratedValue Name="DoorExtendedPulseTime" Value="227"/>
+        <opc:EnumeratedValue Name="DoorMembers" Value="228"/>
+        <opc:EnumeratedValue Name="DoorOpenTooLongTime" Value="229"/>
+        <opc:EnumeratedValue Name="DoorPulseTime" Value="230"/>
+        <opc:EnumeratedValue Name="DoorStatus" Value="231"/>
+        <opc:EnumeratedValue Name="DoorUnlockDelayTime" Value="232"/>
+        <opc:EnumeratedValue Name="LockStatus" Value="233"/>
+        <opc:EnumeratedValue Name="MaskedAlarmValues" Value="234"/>
+        <opc:EnumeratedValue Name="SecuredStatus" Value="235"/>
+        <opc:EnumeratedValue Name="Unassigned_236" Value="236"/>
+        <opc:EnumeratedValue Name="Unassigned_237" Value="237"/>
+        <opc:EnumeratedValue Name="Unassigned_238" Value="238"/>
+        <opc:EnumeratedValue Name="Unassigned_239" Value="239"/>
+        <opc:EnumeratedValue Name="Unassigned_240" Value="240"/>
+        <opc:EnumeratedValue Name="Unassigned_241" Value="241"/>
+        <opc:EnumeratedValue Name="Unassigned_242" Value="242"/>
+        <opc:EnumeratedValue Name="Unassigned_243" Value="243"/>
+        <opc:EnumeratedValue Name="AbsenteeLimit" Value="244"/>
+        <opc:EnumeratedValue Name="AccessAlarmEvents" Value="245"/>
+        <opc:EnumeratedValue Name="AccessDoors" Value="246"/>
+        <opc:EnumeratedValue Name="AccessEvent" Value="247"/>
+        <opc:EnumeratedValue Name="AccessEventAuthenticationFactor" Value="248"/>
+        <opc:EnumeratedValue Name="AccessEventCredential" Value="249"/>
+        <opc:EnumeratedValue Name="AccessEventTime" Value="250"/>
+        <opc:EnumeratedValue Name="AccessTransactionEvents" Value="251"/>
+        <opc:EnumeratedValue Name="Accompaniment" Value="252"/>
+        <opc:EnumeratedValue Name="AccompanimentTime" Value="253"/>
+        <opc:EnumeratedValue Name="ActivationTime" Value="254"/>
+        <opc:EnumeratedValue Name="ActiveAuthenticationPolicy" Value="255"/>
+        <opc:EnumeratedValue Name="AssignedAccessRights" Value="256"/>
+        <opc:EnumeratedValue Name="AuthenticationFactors" Value="257"/>
+        <opc:EnumeratedValue Name="AuthenticationPolicyList" Value="258"/>
+        <opc:EnumeratedValue Name="AuthenticationPolicyNames" Value="259"/>
+        <opc:EnumeratedValue Name="AuthenticationStatus" Value="260"/>
+        <opc:EnumeratedValue Name="AuthorizationMode" Value="261"/>
+        <opc:EnumeratedValue Name="BelongsTo" Value="262"/>
+        <opc:EnumeratedValue Name="CredentialDisable" Value="263"/>
+        <opc:EnumeratedValue Name="CredentialStatus" Value="264"/>
+        <opc:EnumeratedValue Name="Credentials" Value="265"/>
+        <opc:EnumeratedValue Name="CredentialsInZone" Value="266"/>
+        <opc:EnumeratedValue Name="DaysRemaining" Value="267"/>
+        <opc:EnumeratedValue Name="EntryPoints" Value="268"/>
+        <opc:EnumeratedValue Name="ExitPoints" Value="269"/>
+        <opc:EnumeratedValue Name="ExpiryTime" Value="270"/>
+        <opc:EnumeratedValue Name="ExtendedTimeEnable" Value="271"/>
+        <opc:EnumeratedValue Name="FailedAttemptEvents" Value="272"/>
+        <opc:EnumeratedValue Name="FailedAttempts" Value="273"/>
+        <opc:EnumeratedValue Name="FailedAttemptsTime" Value="274"/>
+        <opc:EnumeratedValue Name="LastAccessEvent" Value="275"/>
+        <opc:EnumeratedValue Name="LastAccessPoint" Value="276"/>
+        <opc:EnumeratedValue Name="LastCredentialAdded" Value="277"/>
+        <opc:EnumeratedValue Name="LastCredentialAddedTime" Value="278"/>
+        <opc:EnumeratedValue Name="LastCredentialRemoved" Value="279"/>
+        <opc:EnumeratedValue Name="LastCredentialRemovedTime" Value="280"/>
+        <opc:EnumeratedValue Name="LastUseTime" Value="281"/>
+        <opc:EnumeratedValue Name="Lockout" Value="282"/>
+        <opc:EnumeratedValue Name="LockoutRelinquishTime" Value="283"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 13_284" Value="284"/>
+        <opc:EnumeratedValue Name="MaxFailedAttempts" Value="285"/>
+        <opc:EnumeratedValue Name="Members" Value="286"/>
+        <opc:EnumeratedValue Name="MusterPoint" Value="287"/>
+        <opc:EnumeratedValue Name="NegativeAccessRules" Value="288"/>
+        <opc:EnumeratedValue Name="NumberOfAuthenticationPolicies" Value="289"/>
+        <opc:EnumeratedValue Name="OccupancyCount" Value="290"/>
+        <opc:EnumeratedValue Name="OccupancyCountAdjust" Value="291"/>
+        <opc:EnumeratedValue Name="OccupancyCountEnable" Value="292"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 13_293" Value="293"/>
+        <opc:EnumeratedValue Name="OccupancyLowerLimit" Value="294"/>
+        <opc:EnumeratedValue Name="OccupancyLowerLimitEnforced" Value="295"/>
+        <opc:EnumeratedValue Name="OccupancyState" Value="296"/>
+        <opc:EnumeratedValue Name="OccupancyUpperLimit" Value="297"/>
+        <opc:EnumeratedValue Name="OccupancyUpperLimitEnforced" Value="298"/>
+        <opc:EnumeratedValue Name="Removed In Version 1 Revision 13_299" Value="299"/>
+        <opc:EnumeratedValue Name="PassbackMode" Value="300"/>
+        <opc:EnumeratedValue Name="PassbackTimeout" Value="301"/>
+        <opc:EnumeratedValue Name="PositiveAccessRules" Value="302"/>
+        <opc:EnumeratedValue Name="ReasonForDisable" Value="303"/>
+        <opc:EnumeratedValue Name="SupportedFormats" Value="304"/>
+        <opc:EnumeratedValue Name="SupportedFormatClasses" Value="305"/>
+        <opc:EnumeratedValue Name="ThreatAuthority" Value="306"/>
+        <opc:EnumeratedValue Name="ThreatLevel" Value="307"/>
+        <opc:EnumeratedValue Name="TraceFlag" Value="308"/>
+        <opc:EnumeratedValue Name="TransactionNotificationClass" Value="309"/>
+        <opc:EnumeratedValue Name="UserExternalIdentifier" Value="310"/>
+        <opc:EnumeratedValue Name="UserInformationReference" Value="311"/>
+        <opc:EnumeratedValue Name="Unassigned_312" Value="312"/>
+        <opc:EnumeratedValue Name="Unassigned_313" Value="313"/>
+        <opc:EnumeratedValue Name="Unassigned_314" Value="314"/>
+        <opc:EnumeratedValue Name="Unassigned_315" Value="315"/>
+        <opc:EnumeratedValue Name="Unassigned_316" Value="316"/>
+        <opc:EnumeratedValue Name="UserName" Value="317"/>
+        <opc:EnumeratedValue Name="UserType" Value="318"/>
+        <opc:EnumeratedValue Name="UsesRemaining" Value="319"/>
+        <opc:EnumeratedValue Name="ZoneFrom" Value="320"/>
+        <opc:EnumeratedValue Name="ZoneTo" Value="321"/>
+        <opc:EnumeratedValue Name="AccessEventTag" Value="322"/>
+        <opc:EnumeratedValue Name="GlobalIdentifier" Value="323"/>
+        <opc:EnumeratedValue Name="Unassigned_324" Value="324"/>
+        <opc:EnumeratedValue Name="Unassigned_325" Value="325"/>
+        <opc:EnumeratedValue Name="VerificationTime" Value="326"/>
+        <opc:EnumeratedValue Name="BaseDeviceSecurityPolicy" Value="327"/>
+        <opc:EnumeratedValue Name="DistributionKeyRevision" Value="328"/>
+        <opc:EnumeratedValue Name="DoNotHide" Value="329"/>
+        <opc:EnumeratedValue Name="KeySets" Value="330"/>
+        <opc:EnumeratedValue Name="LastKeyServer" Value="331"/>
+        <opc:EnumeratedValue Name="NetworkAccessSecurityPolicies" Value="332"/>
+        <opc:EnumeratedValue Name="PacketReorderTime" Value="333"/>
+        <opc:EnumeratedValue Name="SecurityPduTimeout" Value="334"/>
+        <opc:EnumeratedValue Name="SecurityTimeWindow" Value="335"/>
+        <opc:EnumeratedValue Name="SupportedSecurityAlgorithms" Value="336"/>
+        <opc:EnumeratedValue Name="UpdateKeySetTimeout" Value="337"/>
+        <opc:EnumeratedValue Name="BackupAndRestoreState" Value="338"/>
+        <opc:EnumeratedValue Name="BackupPreparationTime" Value="339"/>
+        <opc:EnumeratedValue Name="RestoreCompletionTime" Value="340"/>
+        <opc:EnumeratedValue Name="RestorePreparationTime" Value="341"/>
+        <opc:EnumeratedValue Name="BitMask" Value="342"/>
+        <opc:EnumeratedValue Name="BitText" Value="343"/>
+        <opc:EnumeratedValue Name="IsUtc" Value="344"/>
+        <opc:EnumeratedValue Name="GroupMembers" Value="345"/>
+        <opc:EnumeratedValue Name="GroupMemberNames" Value="346"/>
+        <opc:EnumeratedValue Name="MemberStatusFlags" Value="347"/>
+        <opc:EnumeratedValue Name="RequestedUpdateInterval" Value="348"/>
+        <opc:EnumeratedValue Name="CovuPeriod" Value="349"/>
+        <opc:EnumeratedValue Name="CovuRecipients" Value="350"/>
+        <opc:EnumeratedValue Name="EventMessageTexts" Value="351"/>
+        <opc:EnumeratedValue Name="EventMessageTextsConfig" Value="352"/>
+        <opc:EnumeratedValue Name="EventDetectionEnable" Value="353"/>
+        <opc:EnumeratedValue Name="EventAlgorithmInhibit" Value="354"/>
+        <opc:EnumeratedValue Name="EventAlgorithmInhibitRef" Value="355"/>
+        <opc:EnumeratedValue Name="TimeDelayNormal" Value="356"/>
+        <opc:EnumeratedValue Name="ReliabilityEvaluationInhibit" Value="357"/>
+        <opc:EnumeratedValue Name="FaultParameters" Value="358"/>
+        <opc:EnumeratedValue Name="FaultType" Value="359"/>
+        <opc:EnumeratedValue Name="LocalForwardingOnly" Value="360"/>
+        <opc:EnumeratedValue Name="ProcessIdentifierFilter" Value="361"/>
+        <opc:EnumeratedValue Name="SubscribedRecipients" Value="362"/>
+        <opc:EnumeratedValue Name="PortFilter" Value="363"/>
+        <opc:EnumeratedValue Name="AuthorizationExemptions" Value="364"/>
+        <opc:EnumeratedValue Name="AllowGroupDelayInhibit" Value="365"/>
+        <opc:EnumeratedValue Name="ChannelNumber" Value="366"/>
+        <opc:EnumeratedValue Name="ControlGroups" Value="367"/>
+        <opc:EnumeratedValue Name="ExecutionDelay" Value="368"/>
+        <opc:EnumeratedValue Name="LastPriority" Value="369"/>
+        <opc:EnumeratedValue Name="WriteStatus" Value="370"/>
+        <opc:EnumeratedValue Name="PropertyList" Value="371"/>
+        <opc:EnumeratedValue Name="SerialNumber" Value="372"/>
+        <opc:EnumeratedValue Name="BlinkWarnEnable" Value="373"/>
+        <opc:EnumeratedValue Name="DefaultFadeTime" Value="374"/>
+        <opc:EnumeratedValue Name="DefaultRampRate" Value="375"/>
+        <opc:EnumeratedValue Name="DefaultStepIncrement" Value="376"/>
+        <opc:EnumeratedValue Name="EgressTime" Value="377"/>
+        <opc:EnumeratedValue Name="InProgress" Value="378"/>
+        <opc:EnumeratedValue Name="InstantaneousPower" Value="379"/>
+        <opc:EnumeratedValue Name="LightingCommand" Value="380"/>
+        <opc:EnumeratedValue Name="LightingCommandDefaultPriority" Value="381"/>
+        <opc:EnumeratedValue Name="MaxActualValue" Value="382"/>
+        <opc:EnumeratedValue Name="MinActualValue" Value="383"/>
+        <opc:EnumeratedValue Name="Power" Value="384"/>
+        <opc:EnumeratedValue Name="Transition" Value="385"/>
+        <opc:EnumeratedValue Name="EgressActive" Value="386"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetReinitializedStateofDevice">
+        <opc:EnumeratedValue Name="Coldstart" Value="0"/>
+        <opc:EnumeratedValue Name="Warmstart" Value="1"/>
+        <opc:EnumeratedValue Name="Startbackup" Value="2"/>
+        <opc:EnumeratedValue Name="Endbackup" Value="3"/>
+        <opc:EnumeratedValue Name="Startrestore" Value="4"/>
+        <opc:EnumeratedValue Name="Endrestore" Value="5"/>
+        <opc:EnumeratedValue Name="Abortrestore" Value="6"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetReliability">
+        <opc:EnumeratedValue Name="NoFaultDetected" Value="0"/>
+        <opc:EnumeratedValue Name="NoSensor" Value="1"/>
+        <opc:EnumeratedValue Name="OverRange" Value="2"/>
+        <opc:EnumeratedValue Name="UnderRange" Value="3"/>
+        <opc:EnumeratedValue Name="OpenLoop" Value="4"/>
+        <opc:EnumeratedValue Name="ShortedLoop" Value="5"/>
+        <opc:EnumeratedValue Name="NoOutput" Value="6"/>
+        <opc:EnumeratedValue Name="UnreliableOther" Value="7"/>
+        <opc:EnumeratedValue Name="ProcessError" Value="8"/>
+        <opc:EnumeratedValue Name="MultiStateFault" Value="9"/>
+        <opc:EnumeratedValue Name="ConfigurationError" Value="10"/>
+        <opc:EnumeratedValue Name="CommunicationFailure" Value="12"/>
+        <opc:EnumeratedValue Name="MemberFault" Value="13"/>
+        <opc:EnumeratedValue Name="MONITORED_OBJECT_FAULT" Value="14"/>
+        <opc:EnumeratedValue Name="TRIPPED" Value="15"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetRestartReason">
+        <opc:EnumeratedValue Name="unknown" Value="0"/>
+        <opc:EnumeratedValue Name="coldstart" Value="1"/>
+        <opc:EnumeratedValue Name="warmstart" Value="2"/>
+        <opc:EnumeratedValue Name="detected_power_lost" Value="3"/>
+        <opc:EnumeratedValue Name="detected_powered_off" Value="4"/>
+        <opc:EnumeratedValue Name="hardware_watchdog" Value="5"/>
+        <opc:EnumeratedValue Name="software_watchdog" Value="6"/>
+        <opc:EnumeratedValue Name="suspended" Value="7"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BACnetSegmentation">
+        <opc:EnumeratedValue Name="segmented-both" Value="0"/>
+        <opc:EnumeratedValue Name="segmented-transmit" Value="1"/>
+        <opc:EnumeratedValue Name="segmented-receive" Value="2"/>
+        <opc:EnumeratedValue Name="no-segmentation" Value="3"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

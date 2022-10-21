@@ -1,0 +1,1785 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/BACnet_V2/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/BACnet_V2/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="BACnetAction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="direct_0"/>
+            <xs:enumeration value="reverse_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetAction" name="BACnetAction"/>
+    <xs:complexType name="ListOfBACnetAction">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetAction" name="BACnetAction" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetAction" name="ListOfBACnetAction" nillable="true"/>
+    <xs:simpleType name="BACnetBackupState">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Idle_0"/>
+            <xs:enumeration value="Preparing_For_Backup_1"/>
+            <xs:enumeration value="Preparing_For_Restore_2"/>
+            <xs:enumeration value="Performing_A_Backup_3"/>
+            <xs:enumeration value="Performing_A_Restore_4"/>
+            <xs:enumeration value="Backup_Failure_5"/>
+            <xs:enumeration value="Restore_Failure_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetBackupState" name="BACnetBackupState"/>
+    <xs:complexType name="ListOfBACnetBackupState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetBackupState" name="BACnetBackupState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetBackupState" name="ListOfBACnetBackupState" nillable="true"/>
+    <xs:simpleType name="BACnetBinaryPV">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Inactive_0"/>
+            <xs:enumeration value="Active_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetBinaryPV" name="BACnetBinaryPV"/>
+    <xs:complexType name="ListOfBACnetBinaryPV">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetBinaryPV" name="BACnetBinaryPV" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetBinaryPV" name="ListOfBACnetBinaryPV" nillable="true"/>
+    <xs:simpleType name="BACnetDay">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="days numbered 1-7_1"/>
+            <xs:enumeration value="days numbered 8-14_2"/>
+            <xs:enumeration value="days numbered 15-21_3"/>
+            <xs:enumeration value="days numbered 22-28_4"/>
+            <xs:enumeration value="days numbered 29-31_5"/>
+            <xs:enumeration value="last 7 days of this month_6"/>
+            <xs:enumeration value="any week of this month_255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetDay" name="BACnetDay"/>
+    <xs:complexType name="ListOfBACnetDay">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDay" name="BACnetDay" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDay" name="ListOfBACnetDay" nillable="true"/>
+    <xs:simpleType name="BACnetDayOfMonth">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="1_1"/>
+            <xs:enumeration value="2_2"/>
+            <xs:enumeration value="3_3"/>
+            <xs:enumeration value="4_4"/>
+            <xs:enumeration value="5_5"/>
+            <xs:enumeration value="6_6"/>
+            <xs:enumeration value="7_7"/>
+            <xs:enumeration value="8_8"/>
+            <xs:enumeration value="9_9"/>
+            <xs:enumeration value="10_10"/>
+            <xs:enumeration value="11_11"/>
+            <xs:enumeration value="12_12"/>
+            <xs:enumeration value="13_13"/>
+            <xs:enumeration value="14_14"/>
+            <xs:enumeration value="15_15"/>
+            <xs:enumeration value="16_16"/>
+            <xs:enumeration value="17_17"/>
+            <xs:enumeration value="18_18"/>
+            <xs:enumeration value="19_19"/>
+            <xs:enumeration value="20_20"/>
+            <xs:enumeration value="21_21"/>
+            <xs:enumeration value="22_22"/>
+            <xs:enumeration value="23_23"/>
+            <xs:enumeration value="24_24"/>
+            <xs:enumeration value="25_25"/>
+            <xs:enumeration value="26_26"/>
+            <xs:enumeration value="27_27"/>
+            <xs:enumeration value="28_28"/>
+            <xs:enumeration value="29_29"/>
+            <xs:enumeration value="30_30"/>
+            <xs:enumeration value="31_31"/>
+            <xs:enumeration value="Last day of month_32"/>
+            <xs:enumeration value="Odd day of month_33"/>
+            <xs:enumeration value="Even day of month_34"/>
+            <xs:enumeration value="Unspecified_255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetDayOfMonth" name="BACnetDayOfMonth"/>
+    <xs:complexType name="ListOfBACnetDayOfMonth">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDayOfMonth" name="BACnetDayOfMonth" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDayOfMonth" name="ListOfBACnetDayOfMonth" nillable="true"/>
+    <xs:simpleType name="BACnetDayOfWeek">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Monday_1"/>
+            <xs:enumeration value="Tuesday_2"/>
+            <xs:enumeration value="Wednesday_3"/>
+            <xs:enumeration value="Thursday_4"/>
+            <xs:enumeration value="Friday_5"/>
+            <xs:enumeration value="Saturday_6"/>
+            <xs:enumeration value="Sunday_7"/>
+            <xs:enumeration value="unspecified_255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetDayOfWeek" name="BACnetDayOfWeek"/>
+    <xs:complexType name="ListOfBACnetDayOfWeek">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDayOfWeek" name="BACnetDayOfWeek" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDayOfWeek" name="ListOfBACnetDayOfWeek" nillable="true"/>
+    <xs:simpleType name="BACnetDeviceCommunicationEnabled">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Enable_0"/>
+            <xs:enumeration value="Disable_1"/>
+            <xs:enumeration value="DisableInitiation_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetDeviceCommunicationEnabled" name="BACnetDeviceCommunicationEnabled"/>
+    <xs:complexType name="ListOfBACnetDeviceCommunicationEnabled">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDeviceCommunicationEnabled" name="BACnetDeviceCommunicationEnabled" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDeviceCommunicationEnabled" name="ListOfBACnetDeviceCommunicationEnabled" nillable="true"/>
+    <xs:simpleType name="BACnetDeviceStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Operational_0"/>
+            <xs:enumeration value="OperationalReadOnly_1"/>
+            <xs:enumeration value="DownloadRequired_2"/>
+            <xs:enumeration value="DownloadInProgress_3"/>
+            <xs:enumeration value="NonOperational_4"/>
+            <xs:enumeration value="BackupInProgress_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetDeviceStatus" name="BACnetDeviceStatus"/>
+    <xs:complexType name="ListOfBACnetDeviceStatus">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDeviceStatus" name="BACnetDeviceStatus" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDeviceStatus" name="ListOfBACnetDeviceStatus" nillable="true"/>
+    <xs:simpleType name="BACnetEventEnumType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ChangeOfBitstring_0"/>
+            <xs:enumeration value="ChangeOfState_1"/>
+            <xs:enumeration value="ChangeOfValue_2"/>
+            <xs:enumeration value="CommandFailure_3"/>
+            <xs:enumeration value="FloatingLimit_4"/>
+            <xs:enumeration value="OutOfRange_5"/>
+            <xs:enumeration value="ChangeOfLifeSafety_8"/>
+            <xs:enumeration value="Extended_9"/>
+            <xs:enumeration value="BufferReady_10"/>
+            <xs:enumeration value="UnsignedRange_11"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetEventEnumType" name="BACnetEventEnumType"/>
+    <xs:complexType name="ListOfBACnetEventEnumType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventEnumType" name="BACnetEventEnumType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventEnumType" name="ListOfBACnetEventEnumType" nillable="true"/>
+    <xs:simpleType name="BACnetEventState">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Fault_1"/>
+            <xs:enumeration value="OffNormal_2"/>
+            <xs:enumeration value="HighLimit_3"/>
+            <xs:enumeration value="LowLimit_4"/>
+            <xs:enumeration value="LifeSafetyAlarm_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetEventState" name="BACnetEventState"/>
+    <xs:complexType name="ListOfBACnetEventState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventState" name="BACnetEventState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventState" name="ListOfBACnetEventState" nillable="true"/>
+    <xs:simpleType name="BACnetEventType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="change-of-bitstring_0"/>
+            <xs:enumeration value="change-of-state_1"/>
+            <xs:enumeration value="change-of-value_2"/>
+            <xs:enumeration value="command-failure_3"/>
+            <xs:enumeration value="out-of-range_5"/>
+            <xs:enumeration value="change-of-life-safety_8"/>
+            <xs:enumeration value="floating-limit_4"/>
+            <xs:enumeration value="extended_9"/>
+            <xs:enumeration value="buffer-ready_10"/>
+            <xs:enumeration value="unsigned-range_11"/>
+            <xs:enumeration value="access-event_13"/>
+            <xs:enumeration value="double-out-of-range_14"/>
+            <xs:enumeration value="signed-out-of-range_15"/>
+            <xs:enumeration value="unsigned-out-of-range_16"/>
+            <xs:enumeration value="change-of-characterstring_17"/>
+            <xs:enumeration value="change-of-status-flags_18"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetEventType" name="BACnetEventType"/>
+    <xs:complexType name="ListOfBACnetEventType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventType" name="BACnetEventType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventType" name="ListOfBACnetEventType" nillable="true"/>
+    <xs:simpleType name="BACnetFaultType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="none_0"/>
+            <xs:enumeration value="fault-characterstring_1"/>
+            <xs:enumeration value="fault-exended_2"/>
+            <xs:enumeration value="fault-life-safety_3"/>
+            <xs:enumeration value="fault-state_4"/>
+            <xs:enumeration value="fault-status-flags_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetFaultType" name="BACnetFaultType"/>
+    <xs:complexType name="ListOfBACnetFaultType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetFaultType" name="BACnetFaultType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetFaultType" name="ListOfBACnetFaultType" nillable="true"/>
+    <xs:simpleType name="BACnetLifeSafetyMode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Off_0"/>
+            <xs:enumeration value="On_1"/>
+            <xs:enumeration value="Test_2"/>
+            <xs:enumeration value="Manned_3"/>
+            <xs:enumeration value="UnManned_4"/>
+            <xs:enumeration value="Armed_5"/>
+            <xs:enumeration value="Disarmed_6"/>
+            <xs:enumeration value="Prearmed_7"/>
+            <xs:enumeration value="Slow_8"/>
+            <xs:enumeration value="Fast_9"/>
+            <xs:enumeration value="Disconnected_10"/>
+            <xs:enumeration value="Enabled_11"/>
+            <xs:enumeration value="Disabled_12"/>
+            <xs:enumeration value="AutomaticReleaseDisabled_13"/>
+            <xs:enumeration value="Default_14"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetLifeSafetyMode" name="BACnetLifeSafetyMode"/>
+    <xs:complexType name="ListOfBACnetLifeSafetyMode">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetLifeSafetyMode" name="BACnetLifeSafetyMode" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetLifeSafetyMode" name="ListOfBACnetLifeSafetyMode" nillable="true"/>
+    <xs:simpleType name="BACnetLifeSafetyOperation">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="Silence_1"/>
+            <xs:enumeration value="SilenceAudible_2"/>
+            <xs:enumeration value="SilenceVisible_3"/>
+            <xs:enumeration value="Reset_4"/>
+            <xs:enumeration value="ResetAlarm_5"/>
+            <xs:enumeration value="ResetFault_6"/>
+            <xs:enumeration value="Unsilence_7"/>
+            <xs:enumeration value="UnsilenceAudible_8"/>
+            <xs:enumeration value="UnsilenceVisible_9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetLifeSafetyOperation" name="BACnetLifeSafetyOperation"/>
+    <xs:complexType name="ListOfBACnetLifeSafetyOperation">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetLifeSafetyOperation" name="BACnetLifeSafetyOperation" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetLifeSafetyOperation" name="ListOfBACnetLifeSafetyOperation" nillable="true"/>
+    <xs:simpleType name="BACnetLifeSafetyState">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Quiet_0"/>
+            <xs:enumeration value="PreAlarm_1"/>
+            <xs:enumeration value="Alarm_2"/>
+            <xs:enumeration value="Fault_3"/>
+            <xs:enumeration value="FaultPreAlarm_4"/>
+            <xs:enumeration value="FaultAlarm_5"/>
+            <xs:enumeration value="NotReady_6"/>
+            <xs:enumeration value="Active_7"/>
+            <xs:enumeration value="Tamper_8"/>
+            <xs:enumeration value="TestAlarm_9"/>
+            <xs:enumeration value="TestActive_10"/>
+            <xs:enumeration value="TestFault_11"/>
+            <xs:enumeration value="TestFaultAlarm_12"/>
+            <xs:enumeration value="Holdup_13"/>
+            <xs:enumeration value="Duress_14"/>
+            <xs:enumeration value="TamperAlarm_15"/>
+            <xs:enumeration value="Abnormal_16"/>
+            <xs:enumeration value="EmergencyPower_17"/>
+            <xs:enumeration value="Delayed_18"/>
+            <xs:enumeration value="Blocked_19"/>
+            <xs:enumeration value="LocalAlarm_20"/>
+            <xs:enumeration value="GeneralAlarm_21"/>
+            <xs:enumeration value="Supervisory_22"/>
+            <xs:enumeration value="TestSupervisory_23"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetLifeSafetyState" name="BACnetLifeSafetyState"/>
+    <xs:complexType name="ListOfBACnetLifeSafetyState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetLifeSafetyState" name="BACnetLifeSafetyState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetLifeSafetyState" name="ListOfBACnetLifeSafetyState" nillable="true"/>
+    <xs:simpleType name="BACnetLoggingType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Polled_0"/>
+            <xs:enumeration value="COV_1"/>
+            <xs:enumeration value="Triggered_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetLoggingType" name="BACnetLoggingType"/>
+    <xs:complexType name="ListOfBACnetLoggingType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetLoggingType" name="BACnetLoggingType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetLoggingType" name="ListOfBACnetLoggingType" nillable="true"/>
+    <xs:simpleType name="BACnetMessagePriority">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="normal_0"/>
+            <xs:enumeration value="urgent_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetMessagePriority" name="BACnetMessagePriority"/>
+    <xs:complexType name="ListOfBACnetMessagePriority">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetMessagePriority" name="BACnetMessagePriority" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetMessagePriority" name="ListOfBACnetMessagePriority" nillable="true"/>
+    <xs:simpleType name="BACnetMonth">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="January_1"/>
+            <xs:enumeration value="February_2"/>
+            <xs:enumeration value="March_3"/>
+            <xs:enumeration value="April_4"/>
+            <xs:enumeration value="May_5"/>
+            <xs:enumeration value="June_6"/>
+            <xs:enumeration value="July_7"/>
+            <xs:enumeration value="August_8"/>
+            <xs:enumeration value="September_9"/>
+            <xs:enumeration value="October_10"/>
+            <xs:enumeration value="November_11"/>
+            <xs:enumeration value="December_12"/>
+            <xs:enumeration value="Odd_13"/>
+            <xs:enumeration value="Even_14"/>
+            <xs:enumeration value="Unspecified_255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetMonth" name="BACnetMonth"/>
+    <xs:complexType name="ListOfBACnetMonth">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetMonth" name="BACnetMonth" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetMonth" name="ListOfBACnetMonth" nillable="true"/>
+    <xs:simpleType name="BACnetNodeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UNKNOWN_0"/>
+            <xs:enumeration value="SYSTEM_1"/>
+            <xs:enumeration value="NETWORK_2"/>
+            <xs:enumeration value="DEVICE_3"/>
+            <xs:enumeration value="ORGANIZATIONAL_4"/>
+            <xs:enumeration value="AREA_5"/>
+            <xs:enumeration value="EQUIPMENT_6"/>
+            <xs:enumeration value="POINT_7"/>
+            <xs:enumeration value="COLLECTION_8"/>
+            <xs:enumeration value="PROPERTY_9"/>
+            <xs:enumeration value="FUNCTIONAL_10"/>
+            <xs:enumeration value="OTHER_11"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetNodeType" name="BACnetNodeType"/>
+    <xs:complexType name="ListOfBACnetNodeType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetNodeType" name="BACnetNodeType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetNodeType" name="ListOfBACnetNodeType" nillable="true"/>
+    <xs:simpleType name="BACnetNotifyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Alarm_0"/>
+            <xs:enumeration value="Event_1"/>
+            <xs:enumeration value="AckNotification_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetNotifyType" name="BACnetNotifyType"/>
+    <xs:complexType name="ListOfBACnetNotifyType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetNotifyType" name="BACnetNotifyType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetNotifyType" name="ListOfBACnetNotifyType" nillable="true"/>
+    <xs:simpleType name="BACnetObjectTypeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="analog-input_0"/>
+            <xs:enumeration value="analog-output_1"/>
+            <xs:enumeration value="analog-value_2"/>
+            <xs:enumeration value="binary-input_3"/>
+            <xs:enumeration value="binary-output_4"/>
+            <xs:enumeration value="binary-value_5"/>
+            <xs:enumeration value="calendar_6"/>
+            <xs:enumeration value="command_7"/>
+            <xs:enumeration value="device_8"/>
+            <xs:enumeration value="event-enrollment_9"/>
+            <xs:enumeration value="file_10"/>
+            <xs:enumeration value="group_11"/>
+            <xs:enumeration value="loop_12"/>
+            <xs:enumeration value="multi-state-input_13"/>
+            <xs:enumeration value="multi-state-output_14"/>
+            <xs:enumeration value="notification-class_15"/>
+            <xs:enumeration value="programm_16"/>
+            <xs:enumeration value="schedule_17"/>
+            <xs:enumeration value="averaring_18"/>
+            <xs:enumeration value="multi-state-value_19"/>
+            <xs:enumeration value="trend-log_20"/>
+            <xs:enumeration value="life-safety-point_21"/>
+            <xs:enumeration value="life-safety-zone_22"/>
+            <xs:enumeration value="accumulator_23"/>
+            <xs:enumeration value="pulse-converter_24"/>
+            <xs:enumeration value="event-log_25"/>
+            <xs:enumeration value="global-group_26"/>
+            <xs:enumeration value="trend-log-multiple_27"/>
+            <xs:enumeration value="load-control_28"/>
+            <xs:enumeration value="structured-view_29"/>
+            <xs:enumeration value="access-door_30"/>
+            <xs:enumeration value="unasigned_31"/>
+            <xs:enumeration value="access-credential_32"/>
+            <xs:enumeration value="access-point_33"/>
+            <xs:enumeration value="access-rights_34"/>
+            <xs:enumeration value="access-user_35"/>
+            <xs:enumeration value="access-zone_36"/>
+            <xs:enumeration value="credentional-data-input_37"/>
+            <xs:enumeration value="network-security_38"/>
+            <xs:enumeration value="bitstring-value_39"/>
+            <xs:enumeration value="characterstring-value_40"/>
+            <xs:enumeration value="date-pattern-value_41"/>
+            <xs:enumeration value="date-value_42"/>
+            <xs:enumeration value="datetime-pattern-value_43"/>
+            <xs:enumeration value="datetime-value_44"/>
+            <xs:enumeration value="integer-value_45"/>
+            <xs:enumeration value="large-analog-value_46"/>
+            <xs:enumeration value="octetstring-value_47"/>
+            <xs:enumeration value="positive-integer-value_48"/>
+            <xs:enumeration value="time-pattern-value_49"/>
+            <xs:enumeration value="time-value_50"/>
+            <xs:enumeration value="notification-forwarder_51"/>
+            <xs:enumeration value="altert-enrollment_52"/>
+            <xs:enumeration value="channel_53"/>
+            <xs:enumeration value="lighting-output_54"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetObjectTypeEnum" name="BACnetObjectTypeEnum"/>
+    <xs:complexType name="ListOfBACnetObjectTypeEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetObjectTypeEnum" name="BACnetObjectTypeEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetObjectTypeEnum" name="ListOfBACnetObjectTypeEnum" nillable="true"/>
+    <xs:simpleType name="BACnetPolarity">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Reverse_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetPolarity" name="BACnetPolarity"/>
+    <xs:complexType name="ListOfBACnetPolarity">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetPolarity" name="BACnetPolarity" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetPolarity" name="ListOfBACnetPolarity" nillable="true"/>
+    <xs:simpleType name="BACnetProgramError">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="LoadFailed_1"/>
+            <xs:enumeration value="Internal_2"/>
+            <xs:enumeration value="Program_3"/>
+            <xs:enumeration value="Other_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetProgramError" name="BACnetProgramError"/>
+    <xs:complexType name="ListOfBACnetProgramError">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetProgramError" name="BACnetProgramError" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetProgramError" name="ListOfBACnetProgramError" nillable="true"/>
+    <xs:simpleType name="BACnetProgramRequest">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Ready_0"/>
+            <xs:enumeration value="Load_1"/>
+            <xs:enumeration value="Run_2"/>
+            <xs:enumeration value="Halt_3"/>
+            <xs:enumeration value="Restart_4"/>
+            <xs:enumeration value="Unload_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetProgramRequest" name="BACnetProgramRequest"/>
+    <xs:complexType name="ListOfBACnetProgramRequest">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetProgramRequest" name="BACnetProgramRequest" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetProgramRequest" name="ListOfBACnetProgramRequest" nillable="true"/>
+    <xs:simpleType name="BACnetProgramStates">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Idle_0"/>
+            <xs:enumeration value="Loading_1"/>
+            <xs:enumeration value="Running_2"/>
+            <xs:enumeration value="Waiting_3"/>
+            <xs:enumeration value="Halted_4"/>
+            <xs:enumeration value="Unloading_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetProgramStates" name="BACnetProgramStates"/>
+    <xs:complexType name="ListOfBACnetProgramStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetProgramStates" name="BACnetProgramStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetProgramStates" name="ListOfBACnetProgramStates" nillable="true"/>
+    <xs:simpleType name="BACnetPropertyIdentifier">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AckedTransitions_0"/>
+            <xs:enumeration value="AckRequired_1"/>
+            <xs:enumeration value="Action_2"/>
+            <xs:enumeration value="ActionText_3"/>
+            <xs:enumeration value="ActiveText_4"/>
+            <xs:enumeration value="ActiveVtSessions_5"/>
+            <xs:enumeration value="AlarmValue_6"/>
+            <xs:enumeration value="AlarmValues_7"/>
+            <xs:enumeration value="All_8"/>
+            <xs:enumeration value="AllWritesSuccessful_9"/>
+            <xs:enumeration value="ApduSegmentTimeout_10"/>
+            <xs:enumeration value="ApduTimeout_11"/>
+            <xs:enumeration value="ApplicationSoftwareVersion_12"/>
+            <xs:enumeration value="Archive_13"/>
+            <xs:enumeration value="Bias_14"/>
+            <xs:enumeration value="ChangeOfStateCount_15"/>
+            <xs:enumeration value="ChangeOfStateTime_16"/>
+            <xs:enumeration value="NotificationClass_17"/>
+            <xs:enumeration value="this property deleted_18"/>
+            <xs:enumeration value="ControlledVariableReference_19"/>
+            <xs:enumeration value="ControlledVariableUnits_20"/>
+            <xs:enumeration value="ControlledVariableValue_21"/>
+            <xs:enumeration value="CovIncrement_22"/>
+            <xs:enumeration value="DateList_23"/>
+            <xs:enumeration value="DaylightSavingsStatus_24"/>
+            <xs:enumeration value="Deadband_25"/>
+            <xs:enumeration value="DerivativeConstant_26"/>
+            <xs:enumeration value="DerivativeConstantUnits_27"/>
+            <xs:enumeration value="Description_28"/>
+            <xs:enumeration value="DescriptionOfHalt_29"/>
+            <xs:enumeration value="DeviceAddressBinding_30"/>
+            <xs:enumeration value="DeviceType_31"/>
+            <xs:enumeration value="EffectivePeriod_32"/>
+            <xs:enumeration value="ElapsedActiveTime_33"/>
+            <xs:enumeration value="ErrorLimit_34"/>
+            <xs:enumeration value="EventEnable_35"/>
+            <xs:enumeration value="EventState_36"/>
+            <xs:enumeration value="EventType_37"/>
+            <xs:enumeration value="ExceptionSchedule_38"/>
+            <xs:enumeration value="FaultValues_39"/>
+            <xs:enumeration value="FeedbackValue_40"/>
+            <xs:enumeration value="FileAccessMethod_41"/>
+            <xs:enumeration value="FileSize_42"/>
+            <xs:enumeration value="FileType_43"/>
+            <xs:enumeration value="FirmwareRevision_44"/>
+            <xs:enumeration value="HighLimit_45"/>
+            <xs:enumeration value="InactiveText_46"/>
+            <xs:enumeration value="InProcess_47"/>
+            <xs:enumeration value="InstanceOf_48"/>
+            <xs:enumeration value="IntegralConstant_49"/>
+            <xs:enumeration value="IntegralConstantUnits_50"/>
+            <xs:enumeration value="Removed In Version 1 Revision 4_51_51"/>
+            <xs:enumeration value="LimitEnable_52"/>
+            <xs:enumeration value="ListOfGroupMembers_53"/>
+            <xs:enumeration value="ListOfObjectPropertyReferences_54"/>
+            <xs:enumeration value="Unassigned_55_55"/>
+            <xs:enumeration value="LocalDate_56"/>
+            <xs:enumeration value="LocalTime_57"/>
+            <xs:enumeration value="Location_58"/>
+            <xs:enumeration value="LowLimit_59"/>
+            <xs:enumeration value="ManipulatedVariableReference_60"/>
+            <xs:enumeration value="MaximumOutput_61"/>
+            <xs:enumeration value="MaxApduLengthAccepted_62"/>
+            <xs:enumeration value="MaxInfoFrames_63"/>
+            <xs:enumeration value="MaxMaster_64"/>
+            <xs:enumeration value="MaxPresValue_65"/>
+            <xs:enumeration value="MinimumOffTime_66"/>
+            <xs:enumeration value="MinimumOnTime_67"/>
+            <xs:enumeration value="MinimumOutput_68"/>
+            <xs:enumeration value="MinPresValue_69"/>
+            <xs:enumeration value="ModelName_70"/>
+            <xs:enumeration value="ModificationDate_71"/>
+            <xs:enumeration value="NotifyType_72"/>
+            <xs:enumeration value="NumberOfApduRetries_73"/>
+            <xs:enumeration value="NumberOfStates_74"/>
+            <xs:enumeration value="ObjectIdentifier_75"/>
+            <xs:enumeration value="ObjectList_76"/>
+            <xs:enumeration value="ObjectName_77"/>
+            <xs:enumeration value="ObjectPropertyReference_78"/>
+            <xs:enumeration value="ObjectType_79"/>
+            <xs:enumeration value="Optional_80"/>
+            <xs:enumeration value="OutOfService_81"/>
+            <xs:enumeration value="OutputUnits_82"/>
+            <xs:enumeration value="EventParameters_83"/>
+            <xs:enumeration value="Polarity_84"/>
+            <xs:enumeration value="PresentValue_85"/>
+            <xs:enumeration value="Priority_86"/>
+            <xs:enumeration value="PriorityArray_87"/>
+            <xs:enumeration value="PriorityForWriting_88"/>
+            <xs:enumeration value="ProcessIdentifier_89"/>
+            <xs:enumeration value="ProgramChange_90"/>
+            <xs:enumeration value="ProgramLocation_91"/>
+            <xs:enumeration value="ProgramState_92"/>
+            <xs:enumeration value="ProportionalConstant_93"/>
+            <xs:enumeration value="ProportionalConstantUnits_94"/>
+            <xs:enumeration value="Removed In Version 1 Revision 2_95_95"/>
+            <xs:enumeration value="ProtocolObjectTypesSupported_96"/>
+            <xs:enumeration value="ProtocolServicesSupported_97"/>
+            <xs:enumeration value="ProtocolVersion_98"/>
+            <xs:enumeration value="ReadOnly_99"/>
+            <xs:enumeration value="ReasonForHalt_100"/>
+            <xs:enumeration value="Removed In Version 1 Revision 4_101_101"/>
+            <xs:enumeration value="RecipientList_102"/>
+            <xs:enumeration value="Reliability_103"/>
+            <xs:enumeration value="RelinquishDefault_104"/>
+            <xs:enumeration value="Required_105"/>
+            <xs:enumeration value="Resolution_106"/>
+            <xs:enumeration value="SegmentationSupported_107"/>
+            <xs:enumeration value="Setpoint_108"/>
+            <xs:enumeration value="SetpointReference_109"/>
+            <xs:enumeration value="StateText_110"/>
+            <xs:enumeration value="StatusFlags_111"/>
+            <xs:enumeration value="SystemStatus_112"/>
+            <xs:enumeration value="TimeDelay_113"/>
+            <xs:enumeration value="TimeOfActiveTimeReset_114"/>
+            <xs:enumeration value="TimeOfStateCountReset_115"/>
+            <xs:enumeration value="TimeSynchronizationRecipients_116"/>
+            <xs:enumeration value="Units_117"/>
+            <xs:enumeration value="UpdateInterval_118"/>
+            <xs:enumeration value="UtcOffset_119"/>
+            <xs:enumeration value="VendorIdentifier_120"/>
+            <xs:enumeration value="VendorName_121"/>
+            <xs:enumeration value="VtClassesSupported_122"/>
+            <xs:enumeration value="WeeklySchedule_123"/>
+            <xs:enumeration value="AttemptedSamples_124"/>
+            <xs:enumeration value="AverageValue_125"/>
+            <xs:enumeration value="BufferSize_126"/>
+            <xs:enumeration value="ClientCovIncrement_127"/>
+            <xs:enumeration value="CovResubscriptionInterval_128"/>
+            <xs:enumeration value="Removed In Version 1 Revision 3_129_129"/>
+            <xs:enumeration value="EventTimeStamps_130"/>
+            <xs:enumeration value="LogBuffer_131"/>
+            <xs:enumeration value="LogDeviceObjectProperty_132"/>
+            <xs:enumeration value="Enable_133"/>
+            <xs:enumeration value="LogInterval_134"/>
+            <xs:enumeration value="MaximumValue_135"/>
+            <xs:enumeration value="MinimumValue_136"/>
+            <xs:enumeration value="NotificationThreshold_137"/>
+            <xs:enumeration value="Removed In Version 1 Revision 3_138_138"/>
+            <xs:enumeration value="ProtocolRevision_139"/>
+            <xs:enumeration value="RecordsSinceNotification_140"/>
+            <xs:enumeration value="RecordCount_141"/>
+            <xs:enumeration value="StartTime_142"/>
+            <xs:enumeration value="StopTime_143"/>
+            <xs:enumeration value="StopWhenFull_144"/>
+            <xs:enumeration value="TotalRecordCount_145"/>
+            <xs:enumeration value="ValidSamples_146"/>
+            <xs:enumeration value="WindowInterval_147"/>
+            <xs:enumeration value="WindowSamples_148"/>
+            <xs:enumeration value="MaximumValueTimestamp_149"/>
+            <xs:enumeration value="MinimumValueTimestamp_150"/>
+            <xs:enumeration value="VarianceValue_151"/>
+            <xs:enumeration value="ActiveCovSubscriptions_152"/>
+            <xs:enumeration value="BackupFailureTimeout_153"/>
+            <xs:enumeration value="ConfigurationFiles_154"/>
+            <xs:enumeration value="DatabaseRevision_155"/>
+            <xs:enumeration value="DirectReading_156"/>
+            <xs:enumeration value="LastRestoreTime_157"/>
+            <xs:enumeration value="MaintenanceRequired_158"/>
+            <xs:enumeration value="MemberOf_159"/>
+            <xs:enumeration value="Mode_160"/>
+            <xs:enumeration value="OperationExpected_161"/>
+            <xs:enumeration value="Setting_162"/>
+            <xs:enumeration value="Silenced_163"/>
+            <xs:enumeration value="TrackingValue_164"/>
+            <xs:enumeration value="ZoneMembers_165"/>
+            <xs:enumeration value="LifeSafetyAlarmValues_166"/>
+            <xs:enumeration value="MaxSegmentsAccepted_167"/>
+            <xs:enumeration value="ProfileName_168"/>
+            <xs:enumeration value="AutoSlaveDiscovery_169"/>
+            <xs:enumeration value="ManualSlaveAddressBinding_170"/>
+            <xs:enumeration value="SlaveAddressBinding_171"/>
+            <xs:enumeration value="SlaveProxyEnable_172"/>
+            <xs:enumeration value="LastNotifyRecord_173"/>
+            <xs:enumeration value="ScheduleDefault_174"/>
+            <xs:enumeration value="AcceptedModes_175"/>
+            <xs:enumeration value="AdjustValue_176"/>
+            <xs:enumeration value="Count_177"/>
+            <xs:enumeration value="CountBeforeChange_178"/>
+            <xs:enumeration value="CountChangeTime_179"/>
+            <xs:enumeration value="CovPeriod_180"/>
+            <xs:enumeration value="InputReference_181"/>
+            <xs:enumeration value="LimitMonitoringInterval_182"/>
+            <xs:enumeration value="LoggingObject_183"/>
+            <xs:enumeration value="LoggingRecord_184"/>
+            <xs:enumeration value="Prescale_185"/>
+            <xs:enumeration value="PulseRate_186"/>
+            <xs:enumeration value="Scale_187"/>
+            <xs:enumeration value="ScaleFactor_188"/>
+            <xs:enumeration value="UpdateTime_189"/>
+            <xs:enumeration value="ValueBeforeChange_190"/>
+            <xs:enumeration value="ValueSet_191"/>
+            <xs:enumeration value="ValueChangeTime_192"/>
+            <xs:enumeration value="AlignIntervals_193"/>
+            <xs:enumeration value="Unassigned_194_194"/>
+            <xs:enumeration value="IntervalOffset_195"/>
+            <xs:enumeration value="LastRestartReason_196"/>
+            <xs:enumeration value="LoggingType_197"/>
+            <xs:enumeration value="Unassigned_198_198"/>
+            <xs:enumeration value="Unassigned_199_199"/>
+            <xs:enumeration value="Unassigned_200_200"/>
+            <xs:enumeration value="Unassigned_201_201"/>
+            <xs:enumeration value="RestartNotificationRecipients_202"/>
+            <xs:enumeration value="TimeOfDeviceRestart_203"/>
+            <xs:enumeration value="TimeSynchronizationInterval_204"/>
+            <xs:enumeration value="Trigger_205"/>
+            <xs:enumeration value="UtcTimeSynchronizationRecipients_206"/>
+            <xs:enumeration value="NodeSubtype_207"/>
+            <xs:enumeration value="NodeType_208"/>
+            <xs:enumeration value="StructuredObjectList_209"/>
+            <xs:enumeration value="SubordinateAnnotations_210"/>
+            <xs:enumeration value="SubordinateList_211"/>
+            <xs:enumeration value="ActualShedLevel_212"/>
+            <xs:enumeration value="DutyWindow_213"/>
+            <xs:enumeration value="ExpectedShedLevel_214"/>
+            <xs:enumeration value="FullDutyBaseline_215"/>
+            <xs:enumeration value="Unassigned_216_216"/>
+            <xs:enumeration value="Unassigned_217_217"/>
+            <xs:enumeration value="RequestedShedLevel_218"/>
+            <xs:enumeration value="ShedDuration_219"/>
+            <xs:enumeration value="ShedLevelDescriptions_220"/>
+            <xs:enumeration value="ShedLevels_221"/>
+            <xs:enumeration value="StateDescription_222"/>
+            <xs:enumeration value="Unassigned_223_223"/>
+            <xs:enumeration value="Unassigned_224_224"/>
+            <xs:enumeration value="Unassigned_225_225"/>
+            <xs:enumeration value="DoorAlarmState_226"/>
+            <xs:enumeration value="DoorExtendedPulseTime_227"/>
+            <xs:enumeration value="DoorMembers_228"/>
+            <xs:enumeration value="DoorOpenTooLongTime_229"/>
+            <xs:enumeration value="DoorPulseTime_230"/>
+            <xs:enumeration value="DoorStatus_231"/>
+            <xs:enumeration value="DoorUnlockDelayTime_232"/>
+            <xs:enumeration value="LockStatus_233"/>
+            <xs:enumeration value="MaskedAlarmValues_234"/>
+            <xs:enumeration value="SecuredStatus_235"/>
+            <xs:enumeration value="Unassigned_236_236"/>
+            <xs:enumeration value="Unassigned_237_237"/>
+            <xs:enumeration value="Unassigned_238_238"/>
+            <xs:enumeration value="Unassigned_239_239"/>
+            <xs:enumeration value="Unassigned_240_240"/>
+            <xs:enumeration value="Unassigned_241_241"/>
+            <xs:enumeration value="Unassigned_242_242"/>
+            <xs:enumeration value="Unassigned_243_243"/>
+            <xs:enumeration value="AbsenteeLimit_244"/>
+            <xs:enumeration value="AccessAlarmEvents_245"/>
+            <xs:enumeration value="AccessDoors_246"/>
+            <xs:enumeration value="AccessEvent_247"/>
+            <xs:enumeration value="AccessEventAuthenticationFactor_248"/>
+            <xs:enumeration value="AccessEventCredential_249"/>
+            <xs:enumeration value="AccessEventTime_250"/>
+            <xs:enumeration value="AccessTransactionEvents_251"/>
+            <xs:enumeration value="Accompaniment_252"/>
+            <xs:enumeration value="AccompanimentTime_253"/>
+            <xs:enumeration value="ActivationTime_254"/>
+            <xs:enumeration value="ActiveAuthenticationPolicy_255"/>
+            <xs:enumeration value="AssignedAccessRights_256"/>
+            <xs:enumeration value="AuthenticationFactors_257"/>
+            <xs:enumeration value="AuthenticationPolicyList_258"/>
+            <xs:enumeration value="AuthenticationPolicyNames_259"/>
+            <xs:enumeration value="AuthenticationStatus_260"/>
+            <xs:enumeration value="AuthorizationMode_261"/>
+            <xs:enumeration value="BelongsTo_262"/>
+            <xs:enumeration value="CredentialDisable_263"/>
+            <xs:enumeration value="CredentialStatus_264"/>
+            <xs:enumeration value="Credentials_265"/>
+            <xs:enumeration value="CredentialsInZone_266"/>
+            <xs:enumeration value="DaysRemaining_267"/>
+            <xs:enumeration value="EntryPoints_268"/>
+            <xs:enumeration value="ExitPoints_269"/>
+            <xs:enumeration value="ExpiryTime_270"/>
+            <xs:enumeration value="ExtendedTimeEnable_271"/>
+            <xs:enumeration value="FailedAttemptEvents_272"/>
+            <xs:enumeration value="FailedAttempts_273"/>
+            <xs:enumeration value="FailedAttemptsTime_274"/>
+            <xs:enumeration value="LastAccessEvent_275"/>
+            <xs:enumeration value="LastAccessPoint_276"/>
+            <xs:enumeration value="LastCredentialAdded_277"/>
+            <xs:enumeration value="LastCredentialAddedTime_278"/>
+            <xs:enumeration value="LastCredentialRemoved_279"/>
+            <xs:enumeration value="LastCredentialRemovedTime_280"/>
+            <xs:enumeration value="LastUseTime_281"/>
+            <xs:enumeration value="Lockout_282"/>
+            <xs:enumeration value="LockoutRelinquishTime_283"/>
+            <xs:enumeration value="Removed In Version 1 Revision 13_284_284"/>
+            <xs:enumeration value="MaxFailedAttempts_285"/>
+            <xs:enumeration value="Members_286"/>
+            <xs:enumeration value="MusterPoint_287"/>
+            <xs:enumeration value="NegativeAccessRules_288"/>
+            <xs:enumeration value="NumberOfAuthenticationPolicies_289"/>
+            <xs:enumeration value="OccupancyCount_290"/>
+            <xs:enumeration value="OccupancyCountAdjust_291"/>
+            <xs:enumeration value="OccupancyCountEnable_292"/>
+            <xs:enumeration value="Removed In Version 1 Revision 13_293_293"/>
+            <xs:enumeration value="OccupancyLowerLimit_294"/>
+            <xs:enumeration value="OccupancyLowerLimitEnforced_295"/>
+            <xs:enumeration value="OccupancyState_296"/>
+            <xs:enumeration value="OccupancyUpperLimit_297"/>
+            <xs:enumeration value="OccupancyUpperLimitEnforced_298"/>
+            <xs:enumeration value="Removed In Version 1 Revision 13_299_299"/>
+            <xs:enumeration value="PassbackMode_300"/>
+            <xs:enumeration value="PassbackTimeout_301"/>
+            <xs:enumeration value="PositiveAccessRules_302"/>
+            <xs:enumeration value="ReasonForDisable_303"/>
+            <xs:enumeration value="SupportedFormats_304"/>
+            <xs:enumeration value="SupportedFormatClasses_305"/>
+            <xs:enumeration value="ThreatAuthority_306"/>
+            <xs:enumeration value="ThreatLevel_307"/>
+            <xs:enumeration value="TraceFlag_308"/>
+            <xs:enumeration value="TransactionNotificationClass_309"/>
+            <xs:enumeration value="UserExternalIdentifier_310"/>
+            <xs:enumeration value="UserInformationReference_311"/>
+            <xs:enumeration value="Unassigned_312_312"/>
+            <xs:enumeration value="Unassigned_313_313"/>
+            <xs:enumeration value="Unassigned_314_314"/>
+            <xs:enumeration value="Unassigned_315_315"/>
+            <xs:enumeration value="Unassigned_316_316"/>
+            <xs:enumeration value="UserName_317"/>
+            <xs:enumeration value="UserType_318"/>
+            <xs:enumeration value="UsesRemaining_319"/>
+            <xs:enumeration value="ZoneFrom_320"/>
+            <xs:enumeration value="ZoneTo_321"/>
+            <xs:enumeration value="AccessEventTag_322"/>
+            <xs:enumeration value="GlobalIdentifier_323"/>
+            <xs:enumeration value="Unassigned_324_324"/>
+            <xs:enumeration value="Unassigned_325_325"/>
+            <xs:enumeration value="VerificationTime_326"/>
+            <xs:enumeration value="BaseDeviceSecurityPolicy_327"/>
+            <xs:enumeration value="DistributionKeyRevision_328"/>
+            <xs:enumeration value="DoNotHide_329"/>
+            <xs:enumeration value="KeySets_330"/>
+            <xs:enumeration value="LastKeyServer_331"/>
+            <xs:enumeration value="NetworkAccessSecurityPolicies_332"/>
+            <xs:enumeration value="PacketReorderTime_333"/>
+            <xs:enumeration value="SecurityPduTimeout_334"/>
+            <xs:enumeration value="SecurityTimeWindow_335"/>
+            <xs:enumeration value="SupportedSecurityAlgorithms_336"/>
+            <xs:enumeration value="UpdateKeySetTimeout_337"/>
+            <xs:enumeration value="BackupAndRestoreState_338"/>
+            <xs:enumeration value="BackupPreparationTime_339"/>
+            <xs:enumeration value="RestoreCompletionTime_340"/>
+            <xs:enumeration value="RestorePreparationTime_341"/>
+            <xs:enumeration value="BitMask_342"/>
+            <xs:enumeration value="BitText_343"/>
+            <xs:enumeration value="IsUtc_344"/>
+            <xs:enumeration value="GroupMembers_345"/>
+            <xs:enumeration value="GroupMemberNames_346"/>
+            <xs:enumeration value="MemberStatusFlags_347"/>
+            <xs:enumeration value="RequestedUpdateInterval_348"/>
+            <xs:enumeration value="CovuPeriod_349"/>
+            <xs:enumeration value="CovuRecipients_350"/>
+            <xs:enumeration value="EventMessageTexts_351"/>
+            <xs:enumeration value="EventMessageTextsConfig_352"/>
+            <xs:enumeration value="EventDetectionEnable_353"/>
+            <xs:enumeration value="EventAlgorithmInhibit_354"/>
+            <xs:enumeration value="EventAlgorithmInhibitRef_355"/>
+            <xs:enumeration value="TimeDelayNormal_356"/>
+            <xs:enumeration value="ReliabilityEvaluationInhibit_357"/>
+            <xs:enumeration value="FaultParameters_358"/>
+            <xs:enumeration value="FaultType_359"/>
+            <xs:enumeration value="LocalForwardingOnly_360"/>
+            <xs:enumeration value="ProcessIdentifierFilter_361"/>
+            <xs:enumeration value="SubscribedRecipients_362"/>
+            <xs:enumeration value="PortFilter_363"/>
+            <xs:enumeration value="AuthorizationExemptions_364"/>
+            <xs:enumeration value="AllowGroupDelayInhibit_365"/>
+            <xs:enumeration value="ChannelNumber_366"/>
+            <xs:enumeration value="ControlGroups_367"/>
+            <xs:enumeration value="ExecutionDelay_368"/>
+            <xs:enumeration value="LastPriority_369"/>
+            <xs:enumeration value="WriteStatus_370"/>
+            <xs:enumeration value="PropertyList_371"/>
+            <xs:enumeration value="SerialNumber_372"/>
+            <xs:enumeration value="BlinkWarnEnable_373"/>
+            <xs:enumeration value="DefaultFadeTime_374"/>
+            <xs:enumeration value="DefaultRampRate_375"/>
+            <xs:enumeration value="DefaultStepIncrement_376"/>
+            <xs:enumeration value="EgressTime_377"/>
+            <xs:enumeration value="InProgress_378"/>
+            <xs:enumeration value="InstantaneousPower_379"/>
+            <xs:enumeration value="LightingCommand_380"/>
+            <xs:enumeration value="LightingCommandDefaultPriority_381"/>
+            <xs:enumeration value="MaxActualValue_382"/>
+            <xs:enumeration value="MinActualValue_383"/>
+            <xs:enumeration value="Power_384"/>
+            <xs:enumeration value="Transition_385"/>
+            <xs:enumeration value="EgressActive_386"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetPropertyIdentifier" name="BACnetPropertyIdentifier"/>
+    <xs:complexType name="ListOfBACnetPropertyIdentifier">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetPropertyIdentifier" name="BACnetPropertyIdentifier" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetPropertyIdentifier" name="ListOfBACnetPropertyIdentifier" nillable="true"/>
+    <xs:simpleType name="BACnetReinitializedStateofDevice">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Coldstart_0"/>
+            <xs:enumeration value="Warmstart_1"/>
+            <xs:enumeration value="Startbackup_2"/>
+            <xs:enumeration value="Endbackup_3"/>
+            <xs:enumeration value="Startrestore_4"/>
+            <xs:enumeration value="Endrestore_5"/>
+            <xs:enumeration value="Abortrestore_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetReinitializedStateofDevice" name="BACnetReinitializedStateofDevice"/>
+    <xs:complexType name="ListOfBACnetReinitializedStateofDevice">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetReinitializedStateofDevice" name="BACnetReinitializedStateofDevice" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetReinitializedStateofDevice" name="ListOfBACnetReinitializedStateofDevice" nillable="true"/>
+    <xs:simpleType name="BACnetReliability">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NoFaultDetected_0"/>
+            <xs:enumeration value="NoSensor_1"/>
+            <xs:enumeration value="OverRange_2"/>
+            <xs:enumeration value="UnderRange_3"/>
+            <xs:enumeration value="OpenLoop_4"/>
+            <xs:enumeration value="ShortedLoop_5"/>
+            <xs:enumeration value="NoOutput_6"/>
+            <xs:enumeration value="UnreliableOther_7"/>
+            <xs:enumeration value="ProcessError_8"/>
+            <xs:enumeration value="MultiStateFault_9"/>
+            <xs:enumeration value="ConfigurationError_10"/>
+            <xs:enumeration value="CommunicationFailure_12"/>
+            <xs:enumeration value="MemberFault_13"/>
+            <xs:enumeration value="MONITORED_OBJECT_FAULT_14"/>
+            <xs:enumeration value="TRIPPED_15"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetReliability" name="BACnetReliability"/>
+    <xs:complexType name="ListOfBACnetReliability">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetReliability" name="BACnetReliability" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetReliability" name="ListOfBACnetReliability" nillable="true"/>
+    <xs:simpleType name="BACnetRestartReason">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="unknown_0"/>
+            <xs:enumeration value="coldstart_1"/>
+            <xs:enumeration value="warmstart_2"/>
+            <xs:enumeration value="detected_power_lost_3"/>
+            <xs:enumeration value="detected_powered_off_4"/>
+            <xs:enumeration value="hardware_watchdog_5"/>
+            <xs:enumeration value="software_watchdog_6"/>
+            <xs:enumeration value="suspended_7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetRestartReason" name="BACnetRestartReason"/>
+    <xs:complexType name="ListOfBACnetRestartReason">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetRestartReason" name="BACnetRestartReason" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetRestartReason" name="ListOfBACnetRestartReason" nillable="true"/>
+    <xs:simpleType name="BACnetSegmentation">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="segmented-both_0"/>
+            <xs:enumeration value="segmented-transmit_1"/>
+            <xs:enumeration value="segmented-receive_2"/>
+            <xs:enumeration value="no-segmentation_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BACnetSegmentation" name="BACnetSegmentation"/>
+    <xs:complexType name="ListOfBACnetSegmentation">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetSegmentation" name="BACnetSegmentation" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetSegmentation" name="ListOfBACnetSegmentation" nillable="true"/>
+    <xs:complexType name="BACnetAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="NetworkNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:base64Binary" name="MacAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetAddress" name="BACnetAddress"/>
+    <xs:complexType name="ListOfBACnetAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetAddress" name="BACnetAddress" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetAddress" name="ListOfBACnetAddress" nillable="true"/>
+    <xs:complexType name="BACnetAddressBinding">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="DeviceObjectIdentifier"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetAddress" name="DeviceAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetAddressBinding" name="BACnetAddressBinding"/>
+    <xs:complexType name="ListOfBACnetAddressBinding">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetAddressBinding" name="BACnetAddressBinding" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetAddressBinding" name="ListOfBACnetAddressBinding" nillable="true"/>
+    <xs:complexType name="BACnetCOVSubscription">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetRecipientProcess" name="Recipient"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDeviceObjectPropertyReference" name="MonitoredPropertyReference"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="IssueConfirmedNotifications"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="TimeRemaining"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:float" name="CovIncrement"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetCOVSubscription" name="BACnetCOVSubscription"/>
+    <xs:complexType name="ListOfBACnetCOVSubscription">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetCOVSubscription" name="BACnetCOVSubscription" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetCOVSubscription" name="ListOfBACnetCOVSubscription" nillable="true"/>
+    <xs:complexType name="BACnetDailySchedule">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetTimeValue" name="Day-schedule"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDailySchedule" name="BACnetDailySchedule"/>
+    <xs:complexType name="ListOfBACnetDailySchedule">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDailySchedule" name="BACnetDailySchedule" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDailySchedule" name="ListOfBACnetDailySchedule" nillable="true"/>
+    <xs:complexType name="BACnetDate">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Year"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetMonth" name="Month"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDayOfMonth" name="DayOfMonth"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDayOfWeek" name="DayOfWeek"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDate" name="BACnetDate"/>
+    <xs:complexType name="ListOfBACnetDate">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDate" name="BACnetDate" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDate" name="ListOfBACnetDate" nillable="true"/>
+    <xs:complexType name="BACnetDateRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDate" name="StartDate"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDate" name="EndTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDateRange" name="BACnetDateRange"/>
+    <xs:complexType name="ListOfBACnetDateRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDateRange" name="BACnetDateRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDateRange" name="ListOfBACnetDateRange" nillable="true"/>
+    <xs:complexType name="BACnetDateTime">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDate" name="Date"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTime" name="Time"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDateTime" name="BACnetDateTime"/>
+    <xs:complexType name="ListOfBACnetDateTime">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDateTime" name="BACnetDateTime" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDateTime" name="ListOfBACnetDateTime" nillable="true"/>
+    <xs:complexType name="BACnetDestination">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDaysOfWeek" name="ValidDays"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTime" name="FromTime"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTime" name="ToTime"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetRecipient" name="Recipient"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ProcessIdentifier"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="IssueConfirmedNotifications"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventTransitionBits" name="Transitions"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDestination" name="BACnetDestination"/>
+    <xs:complexType name="ListOfBACnetDestination">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDestination" name="BACnetDestination" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDestination" name="ListOfBACnetDestination" nillable="true"/>
+    <xs:complexType name="BACnetDeviceObjectPropertyReference">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ObjectIdentifier"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetPropertyIdentifier" name="PropertyIdentifier"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="PropertyArrayIndex"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="DeviceIdentifier"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDeviceObjectPropertyReference" name="BACnetDeviceObjectPropertyReference"/>
+    <xs:complexType name="ListOfBACnetDeviceObjectPropertyReference">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDeviceObjectPropertyReference" name="BACnetDeviceObjectPropertyReference" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDeviceObjectPropertyReference" name="ListOfBACnetDeviceObjectPropertyReference" nillable="true"/>
+    <xs:complexType name="BACnetEventFaultParameterExtended">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="VendorId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="Extended-fault-type"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetEventParameterExtendedParameters" name="Parameters"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventFaultParameterExtended" name="BACnetEventFaultParameterExtended"/>
+    <xs:complexType name="ListOfBACnetEventFaultParameterExtended">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventFaultParameterExtended" name="BACnetEventFaultParameterExtended" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventFaultParameterExtended" name="ListOfBACnetEventFaultParameterExtended" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterBufferReady">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Notification-threshold"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Previous-notification-count"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterBufferReady" name="BACnetEventParameterBufferReady"/>
+    <xs:complexType name="ListOfBACnetEventParameterBufferReady">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterBufferReady" name="BACnetEventParameterBufferReady" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterBufferReady" name="ListOfBACnetEventParameterBufferReady" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterChangeOfBitstring">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="Bitmask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="List-of-bitstring-values"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterChangeOfBitstring" name="BACnetEventParameterChangeOfBitstring"/>
+    <xs:complexType name="ListOfBACnetEventParameterChangeOfBitstring">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterChangeOfBitstring" name="BACnetEventParameterChangeOfBitstring" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterChangeOfBitstring" name="ListOfBACnetEventParameterChangeOfBitstring" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterChangeOfCharacterString">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="AlarmValues"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterChangeOfCharacterString" name="BACnetEventParameterChangeOfCharacterString"/>
+    <xs:complexType name="ListOfBACnetEventParameterChangeOfCharacterString">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterChangeOfCharacterString" name="BACnetEventParameterChangeOfCharacterString" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterChangeOfCharacterString" name="ListOfBACnetEventParameterChangeOfCharacterString" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterChangeOfLifeSafety">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetLifeSafetyState" name="NewState"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetLifeSafetyMode" name="NewMode"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetLifeSafetyOperation" name="OperationExtended"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterChangeOfLifeSafety" name="BACnetEventParameterChangeOfLifeSafety"/>
+    <xs:complexType name="ListOfBACnetEventParameterChangeOfLifeSafety">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterChangeOfLifeSafety" name="BACnetEventParameterChangeOfLifeSafety" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterChangeOfLifeSafety" name="ListOfBACnetEventParameterChangeOfLifeSafety" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterChangeOfState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetPropertyStates" name="List-of-values"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterChangeOfState" name="BACnetEventParameterChangeOfState"/>
+    <xs:complexType name="ListOfBACnetEventParameterChangeOfState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterChangeOfState" name="BACnetEventParameterChangeOfState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterChangeOfState" name="ListOfBACnetEventParameterChangeOfState" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterChangeOfValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="Cov-criteria-bitmask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:float" name="Cov-criteria-referenced-property-increment"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterChangeOfValue" name="BACnetEventParameterChangeOfValue"/>
+    <xs:complexType name="ListOfBACnetEventParameterChangeOfValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterChangeOfValue" name="BACnetEventParameterChangeOfValue" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterChangeOfValue" name="ListOfBACnetEventParameterChangeOfValue" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterCommandFailure">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDeviceObjectPropertyReference" name="Feedback-property-reference"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterCommandFailure" name="BACnetEventParameterCommandFailure"/>
+    <xs:complexType name="ListOfBACnetEventParameterCommandFailure">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterCommandFailure" name="BACnetEventParameterCommandFailure" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterCommandFailure" name="ListOfBACnetEventParameterCommandFailure" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterDoubleOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Low-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="High-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Deadband"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterDoubleOutOfRange" name="BACnetEventParameterDoubleOutOfRange"/>
+    <xs:complexType name="ListOfBACnetEventParameterDoubleOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterDoubleOutOfRange" name="BACnetEventParameterDoubleOutOfRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterDoubleOutOfRange" name="ListOfBACnetEventParameterDoubleOutOfRange" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterFloatingLimit">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDeviceObjectPropertyReference" name="Setpoint-reference"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Low-diff-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="High-diff-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Deadband"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterFloatingLimit" name="BACnetEventParameterFloatingLimit"/>
+    <xs:complexType name="ListOfBACnetEventParameterFloatingLimit">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterFloatingLimit" name="BACnetEventParameterFloatingLimit" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterFloatingLimit" name="ListOfBACnetEventParameterFloatingLimit" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Low-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="High-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Deadband"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterOutOfRange" name="BACnetEventParameterOutOfRange"/>
+    <xs:complexType name="ListOfBACnetEventParameterOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterOutOfRange" name="BACnetEventParameterOutOfRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterOutOfRange" name="ListOfBACnetEventParameterOutOfRange" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterSignedOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="Low-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="High-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Deadband"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterSignedOutOfRange" name="BACnetEventParameterSignedOutOfRange"/>
+    <xs:complexType name="ListOfBACnetEventParameterSignedOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterSignedOutOfRange" name="BACnetEventParameterSignedOutOfRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterSignedOutOfRange" name="ListOfBACnetEventParameterSignedOutOfRange" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterUnsignedOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Low-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="High-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Deadband"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterUnsignedOutOfRange" name="BACnetEventParameterUnsignedOutOfRange"/>
+    <xs:complexType name="ListOfBACnetEventParameterUnsignedOutOfRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterUnsignedOutOfRange" name="BACnetEventParameterUnsignedOutOfRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterUnsignedOutOfRange" name="ListOfBACnetEventParameterUnsignedOutOfRange" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterUnsignedRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Time-delay"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Low-limit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="High-limit"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterUnsignedRange" name="BACnetEventParameterUnsignedRange"/>
+    <xs:complexType name="ListOfBACnetEventParameterUnsignedRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterUnsignedRange" name="BACnetEventParameterUnsignedRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterUnsignedRange" name="ListOfBACnetEventParameterUnsignedRange" nillable="true"/>
+    <xs:complexType name="BACnetFaultParameterFaultCharacterstring">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Fault-characterstring"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetFaultParameterFaultCharacterstring" name="BACnetFaultParameterFaultCharacterstring"/>
+    <xs:complexType name="ListOfBACnetFaultParameterFaultCharacterstring">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetFaultParameterFaultCharacterstring" name="BACnetFaultParameterFaultCharacterstring" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetFaultParameterFaultCharacterstring" name="ListOfBACnetFaultParameterFaultCharacterstring" nillable="true"/>
+    <xs:complexType name="BACnetFaultParameterFaultLifeSafety">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetLifeSafetyState" name="List-of-fault-values"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDeviceObjectPropertyReference" name="Mode-property-reference"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetFaultParameterFaultLifeSafety" name="BACnetFaultParameterFaultLifeSafety"/>
+    <xs:complexType name="ListOfBACnetFaultParameterFaultLifeSafety">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetFaultParameterFaultLifeSafety" name="BACnetFaultParameterFaultLifeSafety" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetFaultParameterFaultLifeSafety" name="ListOfBACnetFaultParameterFaultLifeSafety" nillable="true"/>
+    <xs:complexType name="BACnetFaultParameterFaultState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetProgramStates" name="List-of-fault-values"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetFaultParameterFaultState" name="BACnetFaultParameterFaultState"/>
+    <xs:complexType name="ListOfBACnetFaultParameterFaultState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetFaultParameterFaultState" name="BACnetFaultParameterFaultState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetFaultParameterFaultState" name="ListOfBACnetFaultParameterFaultState" nillable="true"/>
+    <xs:complexType name="BACnetFaultParameterFaultStatusFlags">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetDeviceObjectPropertyReference" name="Status-flags-reference"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetFaultParameterFaultStatusFlags" name="BACnetFaultParameterFaultStatusFlags"/>
+    <xs:complexType name="ListOfBACnetFaultParameterFaultStatusFlags">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetFaultParameterFaultStatusFlags" name="BACnetFaultParameterFaultStatusFlags" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetFaultParameterFaultStatusFlags" name="ListOfBACnetFaultParameterFaultStatusFlags" nillable="true"/>
+    <xs:complexType name="BACnetPropertyStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="BooleanValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetBinaryPV" name="BinaryValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventEnumType" name="EventType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetPolarity" name="Polarity"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetProgramRequest" name="ProgramChange"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetProgramStates" name="ProgramState"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetProgramError" name="ProgramError"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetReliability" name="Reliability"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventState" name="State"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDeviceStatus" name="SystemStatus"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="Units"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="UnsignedValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetLifeSafetyMode" name="LifeSafetyMode"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetLifeSafetyState" name="LifeSafetyState"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetPropertyStates" name="BACnetPropertyStates"/>
+    <xs:complexType name="ListOfBACnetPropertyStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetPropertyStates" name="BACnetPropertyStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetPropertyStates" name="ListOfBACnetPropertyStates" nillable="true"/>
+    <xs:complexType name="BACnetRecipientProcess">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetRecipient" name="Recipient"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ProcessIdentifier"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetRecipientProcess" name="BACnetRecipientProcess"/>
+    <xs:complexType name="ListOfBACnetRecipientProcess">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetRecipientProcess" name="BACnetRecipientProcess" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetRecipientProcess" name="ListOfBACnetRecipientProcess" nillable="true"/>
+    <xs:complexType name="BACnetSpecialEvent">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetSpecialEventPeriod" name="Period"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBACnetTimeValue" name="ListOfTimeValues"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="EventPriority"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetSpecialEvent" name="BACnetSpecialEvent"/>
+    <xs:complexType name="ListOfBACnetSpecialEvent">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetSpecialEvent" name="BACnetSpecialEvent" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetSpecialEvent" name="ListOfBACnetSpecialEvent" nillable="true"/>
+    <xs:complexType name="BACnetTime">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="Hour"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="Minute"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="Second"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="Hundredths"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetTime" name="BACnetTime"/>
+    <xs:complexType name="ListOfBACnetTime">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetTime" name="BACnetTime" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetTime" name="ListOfBACnetTime" nillable="true"/>
+    <xs:complexType name="BACnetTimeValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTime" name="Time"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTimeValueValue" name="Value"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetTimeValue" name="BACnetTimeValue"/>
+    <xs:complexType name="ListOfBACnetTimeValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetTimeValue" name="BACnetTimeValue" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetTimeValue" name="ListOfBACnetTimeValue" nillable="true"/>
+    <xs:complexType name="BACnetTimeValueValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="BooleanValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="UnsignedValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="SignedValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:base64Binary" name="OctedStringValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CharStringValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ObjectIdentifierValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="EnumerationValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="BitStringValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetTimeValueValue" name="BACnetTimeValueValue"/>
+    <xs:complexType name="ListOfBACnetTimeValueValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetTimeValueValue" name="BACnetTimeValueValue" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetTimeValueValue" name="ListOfBACnetTimeValueValue" nillable="true"/>
+    <xs:complexType name="BACnetWeekNDay">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetMonth" name="Month"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDay" name="Day"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDayOfWeek" name="DayOfWeek"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetWeekNDay" name="BACnetWeekNDay"/>
+    <xs:complexType name="ListOfBACnetWeekNDay">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetWeekNDay" name="BACnetWeekNDay" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetWeekNDay" name="ListOfBACnetWeekNDay" nillable="true"/>
+    <xs:complexType name="BACnetDaysOfWeek">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BACnetDaysOfWeek" name="BACnetDaysOfWeek"/>
+    <xs:complexType name="ListOfBACnetDaysOfWeek">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetDaysOfWeek" name="BACnetDaysOfWeek" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetDaysOfWeek" name="ListOfBACnetDaysOfWeek" nillable="true"/>
+    <xs:complexType name="BACnetEventTransitionBits">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventTransitionBits" name="BACnetEventTransitionBits"/>
+    <xs:complexType name="ListOfBACnetEventTransitionBits">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventTransitionBits" name="BACnetEventTransitionBits" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventTransitionBits" name="ListOfBACnetEventTransitionBits" nillable="true"/>
+    <xs:complexType name="BACnetLimitEnable">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BACnetLimitEnable" name="BACnetLimitEnable"/>
+    <xs:complexType name="ListOfBACnetLimitEnable">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetLimitEnable" name="BACnetLimitEnable" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetLimitEnable" name="ListOfBACnetLimitEnable" nillable="true"/>
+    <xs:complexType name="BACnetObjectTypeSupportedBits">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BACnetObjectTypeSupportedBits" name="BACnetObjectTypeSupportedBits"/>
+    <xs:complexType name="ListOfBACnetObjectTypeSupportedBits">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetObjectTypeSupportedBits" name="BACnetObjectTypeSupportedBits" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetObjectTypeSupportedBits" name="ListOfBACnetObjectTypeSupportedBits" nillable="true"/>
+    <xs:complexType name="BACnetServicesSupportedBits">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BACnetServicesSupportedBits" name="BACnetServicesSupportedBits"/>
+    <xs:complexType name="ListOfBACnetServicesSupportedBits">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetServicesSupportedBits" name="BACnetServicesSupportedBits" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetServicesSupportedBits" name="ListOfBACnetServicesSupportedBits" nillable="true"/>
+    <xs:complexType name="BACnetStatusFlags">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BACnetStatusFlags" name="BACnetStatusFlags"/>
+    <xs:complexType name="ListOfBACnetStatusFlags">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetStatusFlags" name="BACnetStatusFlags" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetStatusFlags" name="ListOfBACnetStatusFlags" nillable="true"/>
+    <xs:complexType name="BACnetCalendarEntry">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDate" name="Date"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDateRange" name="DateRange"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetWeekNDay" name="WeekNDay"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetCalendarEntry" name="BACnetCalendarEntry"/>
+    <xs:complexType name="ListOfBACnetCalendarEntry">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetCalendarEntry" name="BACnetCalendarEntry" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetCalendarEntry" name="ListOfBACnetCalendarEntry" nillable="true"/>
+    <xs:complexType name="BACnetClientCOV">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:float" name="Real-increment"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetClientCOV" name="BACnetClientCOV"/>
+    <xs:complexType name="ListOfBACnetClientCOV">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetClientCOV" name="BACnetClientCOV" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetClientCOV" name="ListOfBACnetClientCOV" nillable="true"/>
+    <xs:complexType name="BACnetEventParameter">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterChangeOfBitstring" name="Change-of-bitstring"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterChangeOfState" name="Change-of-state"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterChangeOfValue" name="Change-of-value"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterCommandFailure" name="Command-failure"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterFloatingLimit" name="Floating-limit"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterOutOfRange" name="Out-of-range"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventFaultParameterExtended" name="Extended"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterBufferReady" name="Buffer-ready"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterUnsignedRange" name="Unsigned-range"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterDoubleOutOfRange" name="Double-out-of-range"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterSignedOutOfRange" name="Signed-out-of-range"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterUnsignedOutOfRange" name="Unsigned-out-of-range"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterChangeOfCharacterString" name="Change-of-characterstring"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventParameterChangeOfLifeSafety" name="Change-of-life-safety"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameter" name="BACnetEventParameter"/>
+    <xs:complexType name="ListOfBACnetEventParameter">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameter" name="BACnetEventParameter" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameter" name="ListOfBACnetEventParameter" nillable="true"/>
+    <xs:complexType name="BACnetEventParameterExtendedParameters">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Real"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Unsigned"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Boolean"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Double"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfByte" name="Octed"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CharacterString"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="BitString"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Enum"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDate" name="Date"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTime" name="Time"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ObjectIdentifier"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDeviceObjectPropertyReference" name="Reference"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="Integer"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetEventParameterExtendedParameters" name="BACnetEventParameterExtendedParameters"/>
+    <xs:complexType name="ListOfBACnetEventParameterExtendedParameters">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetEventParameterExtendedParameters" name="BACnetEventParameterExtendedParameters" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetEventParameterExtendedParameters" name="ListOfBACnetEventParameterExtendedParameters" nillable="true"/>
+    <xs:complexType name="BACnetFaultParameter">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetFaultParameterFaultCharacterstring" name="Fault-characterstring"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetFaultParameterFaultLifeSafety" name="Fault-life-safety"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetFaultParameterFaultState" name="Fault-state"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetFaultParameterFaultStatusFlags" name="Fault-status-flags"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetEventFaultParameterExtended" name="Fault-extended"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetFaultParameter" name="BACnetFaultParameter"/>
+    <xs:complexType name="ListOfBACnetFaultParameter">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetFaultParameter" name="BACnetFaultParameter" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetFaultParameter" name="ListOfBACnetFaultParameter" nillable="true"/>
+    <xs:complexType name="BACnetMessageClass">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="Unsigned"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="String"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetMessageClass" name="BACnetMessageClass"/>
+    <xs:complexType name="ListOfBACnetMessageClass">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetMessageClass" name="BACnetMessageClass" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetMessageClass" name="ListOfBACnetMessageClass" nillable="true"/>
+    <xs:complexType name="BACnetPriorityValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:float" name="Real"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="Enumerated"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="Unsigned"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Boolean"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="Signed"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Double"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetPriorityValue" name="BACnetPriorityValue"/>
+    <xs:complexType name="ListOfBACnetPriorityValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetPriorityValue" name="BACnetPriorityValue" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetPriorityValue" name="ListOfBACnetPriorityValue" nillable="true"/>
+    <xs:complexType name="BACnetRecipient">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Device"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetAddress" name="Address"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetRecipient" name="BACnetRecipient"/>
+    <xs:complexType name="ListOfBACnetRecipient">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetRecipient" name="BACnetRecipient" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetRecipient" name="ListOfBACnetRecipient" nillable="true"/>
+    <xs:complexType name="BACnetSpecialEventPeriod">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetCalendarEntry" name="CalendarEntry"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="CalendarReference"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetSpecialEventPeriod" name="BACnetSpecialEventPeriod"/>
+    <xs:complexType name="ListOfBACnetSpecialEventPeriod">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetSpecialEventPeriod" name="BACnetSpecialEventPeriod" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetSpecialEventPeriod" name="ListOfBACnetSpecialEventPeriod" nillable="true"/>
+    <xs:complexType name="BACnetTimeStamp">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetTime" name="Time"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="SequenceNumber"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:BACnetDateTime" name="DateTime"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BACnetTimeStamp" name="BACnetTimeStamp"/>
+    <xs:complexType name="ListOfBACnetTimeStamp">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BACnetTimeStamp" name="BACnetTimeStamp" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBACnetTimeStamp" name="ListOfBACnetTimeStamp" nillable="true"/>
+</xs:schema>
