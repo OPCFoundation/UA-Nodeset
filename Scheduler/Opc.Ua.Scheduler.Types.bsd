@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<opc:TypeDictionary
+  xmlns:opc="http://opcfoundation.org/BinarySchema/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:tns="http://opcfoundation.org/UA/Scheduler/"
+  DefaultByteOrder="LittleEndian"
+  TargetNamespace="http://opcfoundation.org/UA/Scheduler/"
+>
+  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
+
+  <opc:StructuredType Name="SpecialEventType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This structure contains a period, a list of time values, and a priority. It is a means to identify moments in time over one or more days.</opc:Documentation>
+    <opc:Field Name="Period" TypeName="tns:SpecialEventPeriodType" />
+    <opc:Field Name="NoOfListOfTimeActions" TypeName="opc:Int32" />
+    <opc:Field Name="ListOfTimeActions" TypeName="tns:TimeActionsType" LengthField="NoOfListOfTimeActions" />
+    <opc:Field Name="EventPriority" TypeName="opc:Byte" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="SpecialEventPeriodType" BaseType="ua:Union">
+    <opc:Documentation>This union contains a calendar entry or a reference to a calendar object</opc:Documentation>
+    <opc:Field Name="CalendarEntry" TypeName="tns:CalendarEntryType" />
+    <opc:Field Name="CalendarReference" TypeName="ua:NodeId" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CalendarEntryType" BaseType="ua:Union">
+    <opc:Documentation>This union that defines various calendar date values</opc:Documentation>
+    <opc:Field Name="Date" TypeName="tns:DateType" />
+    <opc:Field Name="DateRange" TypeName="tns:DateRangeType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="DateType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This structure defines a calendar date. It allows to define a concrete date, e.g. 2022-02-12. By using wildcards, it also allows to define repeating dates, like every Wednesday, every odd day of a month, every 24th of December, every last day of a month in 2023, etc.</opc:Documentation>
+    <opc:Field Name="Year" TypeName="opc:UInt16" />
+    <opc:Field Name="Month" TypeName="tns:Month" />
+    <opc:Field Name="DayOfMonth" TypeName="tns:DayOfMonth" />
+    <opc:Field Name="DayOfWeek" TypeName="tns:DayOfWeek" />
+  </opc:StructuredType>
+
+  <opc:EnumeratedType Name="Month" LengthInBits="32">
+    <opc:Documentation>This enumeration indicates either a specific Gregorian calendar month, or a relative relationship ("odd", "even", and "unspecified").</opc:Documentation>
+    <opc:EnumeratedValue Name="Unspecified" Value="0" />
+    <opc:EnumeratedValue Name="January" Value="1" />
+    <opc:EnumeratedValue Name="February" Value="2" />
+    <opc:EnumeratedValue Name="March" Value="3" />
+    <opc:EnumeratedValue Name="April" Value="4" />
+    <opc:EnumeratedValue Name="May" Value="5" />
+    <opc:EnumeratedValue Name="June" Value="6" />
+    <opc:EnumeratedValue Name="July" Value="7" />
+    <opc:EnumeratedValue Name="August" Value="8" />
+    <opc:EnumeratedValue Name="September" Value="9" />
+    <opc:EnumeratedValue Name="October" Value="10" />
+    <opc:EnumeratedValue Name="November" Value="11" />
+    <opc:EnumeratedValue Name="December" Value="12" />
+    <opc:EnumeratedValue Name="Odd" Value="13" />
+    <opc:EnumeratedValue Name="Even" Value="14" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="DayOfMonth" LengthInBits="32">
+    <opc:Documentation>This enumeration indicates specific days of the month by specific date ("1", "22", and so on) or by relative position ("last day of month", "even day of month", and so on).</opc:Documentation>
+    <opc:EnumeratedValue Name="Unspecified" Value="0" />
+    <opc:EnumeratedValue Name="Day1" Value="1" />
+    <opc:EnumeratedValue Name="Day2" Value="2" />
+    <opc:EnumeratedValue Name="Day3" Value="3" />
+    <opc:EnumeratedValue Name="Day4" Value="4" />
+    <opc:EnumeratedValue Name="Day5" Value="5" />
+    <opc:EnumeratedValue Name="Day6" Value="6" />
+    <opc:EnumeratedValue Name="Day7" Value="7" />
+    <opc:EnumeratedValue Name="Day8" Value="8" />
+    <opc:EnumeratedValue Name="Day9" Value="9" />
+    <opc:EnumeratedValue Name="Day10" Value="10" />
+    <opc:EnumeratedValue Name="Day11" Value="11" />
+    <opc:EnumeratedValue Name="Day12" Value="12" />
+    <opc:EnumeratedValue Name="Day13" Value="13" />
+    <opc:EnumeratedValue Name="Day14" Value="14" />
+    <opc:EnumeratedValue Name="Day15" Value="15" />
+    <opc:EnumeratedValue Name="Day16" Value="16" />
+    <opc:EnumeratedValue Name="Day17" Value="17" />
+    <opc:EnumeratedValue Name="Day18" Value="18" />
+    <opc:EnumeratedValue Name="Day19" Value="19" />
+    <opc:EnumeratedValue Name="Day20" Value="20" />
+    <opc:EnumeratedValue Name="Day21" Value="21" />
+    <opc:EnumeratedValue Name="Day22" Value="22" />
+    <opc:EnumeratedValue Name="Day23" Value="23" />
+    <opc:EnumeratedValue Name="Day24" Value="24" />
+    <opc:EnumeratedValue Name="Day25" Value="25" />
+    <opc:EnumeratedValue Name="Day26" Value="26" />
+    <opc:EnumeratedValue Name="Day27" Value="27" />
+    <opc:EnumeratedValue Name="Day28" Value="28" />
+    <opc:EnumeratedValue Name="Day29" Value="29" />
+    <opc:EnumeratedValue Name="Day30" Value="30" />
+    <opc:EnumeratedValue Name="Day31" Value="31" />
+    <opc:EnumeratedValue Name="LastDayOfMonth" Value="32" />
+    <opc:EnumeratedValue Name="OddDayOfMonth" Value="33" />
+    <opc:EnumeratedValue Name="EvenDayOfMonth" Value="34" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="DayOfWeek" LengthInBits="32">
+    <opc:Documentation>This enumeration indicates each of the seven days of the week, or "unspecified".</opc:Documentation>
+    <opc:EnumeratedValue Name="Unspecified" Value="0" />
+    <opc:EnumeratedValue Name="Monday" Value="1" />
+    <opc:EnumeratedValue Name="Tuesday" Value="2" />
+    <opc:EnumeratedValue Name="Wednesday" Value="3" />
+    <opc:EnumeratedValue Name="Thursday" Value="4" />
+    <opc:EnumeratedValue Name="Friday" Value="5" />
+    <opc:EnumeratedValue Name="Saturday" Value="6" />
+    <opc:EnumeratedValue Name="Sunday" Value="7" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="DateRangeType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This structure defines a time span, with absolute start and end dates. The StartDate and EndDate are limited to specific values, i.e., wild cards like odd months are not allowed. The Year field shall not be 0; the Month field shall be a value between 1 to 12; the DayOfMonth field shall be between 1 to 31 and the DayOfMonth field shall be "unspecified".</opc:Documentation>
+    <opc:Field Name="StartDate" TypeName="tns:DateType" />
+    <opc:Field Name="EndDate" TypeName="tns:DateType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="TimeActionsType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This structure contains a time and an array of actions. It is used to define actions to be executed at a specific point in time.</opc:Documentation>
+    <opc:Field Name="Time" TypeName="tns:TimeType" />
+    <opc:Field Name="NoOfActions" TypeName="opc:Int32" />
+    <opc:Field Name="Actions" TypeName="ua:ExtensionObject" LengthField="NoOfActions" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="BaseActionType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This abstract structure defines the base of an action. The base only contains information, if the last execution of the action was successful.</opc:Documentation>
+    <opc:Field Name="LastActionResult" TypeName="ua:StatusCode" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="WriteLocalVariableActionType" BaseType="tns:BaseActionType">
+    <opc:Documentation>This structure defines an action to write the value of a Variable managed in the same Server where the action is used.</opc:Documentation>
+    <opc:Field Name="LastActionResult" TypeName="ua:StatusCode" SourceType="tns:BaseActionType" />
+    <opc:Field Name="Variable" TypeName="ua:NodeId" />
+    <opc:Field Name="Value" TypeName="ua:Variant" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CallLocalMethodActionType" BaseType="tns:BaseActionType">
+    <opc:Documentation>This structure defines an action to call a Method of an Object managed in the same Server where the action is used.</opc:Documentation>
+    <opc:Field Name="LastActionResult" TypeName="ua:StatusCode" SourceType="tns:BaseActionType" />
+    <opc:Field Name="ObjectId" TypeName="ua:NodeId" />
+    <opc:Field Name="MethodId" TypeName="ua:NodeId" />
+    <opc:Field Name="NoOfInputValues" TypeName="opc:Int32" />
+    <opc:Field Name="InputValues" TypeName="ua:Variant" LengthField="NoOfInputValues" />
+    <opc:Field Name="NoOfLastOutputValues" TypeName="opc:Int32" />
+    <opc:Field Name="LastOutputValues" TypeName="ua:Variant" LengthField="NoOfLastOutputValues" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="TimeType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This structure that represents a point in time during a day</opc:Documentation>
+    <opc:Field Name="Hour" TypeName="opc:Byte" />
+    <opc:Field Name="Minute" TypeName="opc:Byte" />
+    <opc:Field Name="Second" TypeName="opc:Byte" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="DailyScheduleType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>This structure defines a sequence of TimeActionsType structures. Each element in the sequence defines a time/actions pair that describes the actions to be executed at a given point in the day.</opc:Documentation>
+    <opc:Field Name="NoOfDaySchedule" TypeName="opc:Int32" />
+    <opc:Field Name="DaySchedule" TypeName="tns:TimeActionsType" LengthField="NoOfDaySchedule" />
+  </opc:StructuredType>
+
+</opc:TypeDictionary>

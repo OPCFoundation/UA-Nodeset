@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -28,13 +28,13 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2021-11-08T07:43:31.32Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2022-02-22T07:34:19.982Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/Safety</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/Safety" Version="1.05.00" PublicationDate="2021-11-14T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05" PublicationDate="2021-10-26T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/Safety" XmlSchemaUri="http://opcfoundation.org/UA/Safety/Types.xsd" Version="1.05.02" PublicationDate="2022-06-28T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2021-10-26T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -46,7 +46,6 @@
     <Alias Alias="String">i=12</Alias>
     <Alias Alias="Guid">i=14</Alias>
     <Alias Alias="LocalizedText">i=21</Alias>
-    <Alias Alias="Structure">i=22</Alias>
     <Alias Alias="HasComponent">i=47</Alias>
     <Alias Alias="HasProperty">i=46</Alias>
     <Alias Alias="Organizes">i=35</Alias>
@@ -64,17 +63,17 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <si:Generator Product="SiOME" Edition="Standard" Version="2.3.6" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" />
+      <si:Generator Product="SiOME" Edition="Standard" Version="2.3.20-beta" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" />
     </Extension>
     <Extension>
-      <si:GeneratorExtension Hash="466a2c2c8d49a36dfeb5800df2740bf6" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" />
+      <si:GeneratorExtension Hash="385882a565318961a55754863143e56c" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:InFlagsType">
     <DisplayName>InFlagsType</DisplayName>
     <Description>Byte with Non safety Flags from SafetyConsumer</Description>
     <Category>SafetySupport</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
@@ -95,28 +94,27 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3005</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
       <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:LocalizedText>
-          <uax:Text>CommunicationError</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>OperatorAckRequested</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>FSV_Activated</uax:Text>
-        </uax:LocalizedText>
-      </uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CommunicationError</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OperatorAckRequested</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FSV_Activated</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
     </Value>
   </UAVariable>
   <UADataType NodeId="ns=1;i=3006" BrowseName="1:OutFlagsType">
     <DisplayName>OutFlagsType</DisplayName>
     <Description>Byte with Safety Flags from SafetyProvider</Description>
     <Category>SafetySupport</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
@@ -136,27 +134,26 @@
     <DisplayName>OptionSetValues</DisplayName>
     <References>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3006</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
       <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:LocalizedText>
-          <uax:Text>OperatorAckProvider</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>ActivateFSV</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>TestModeActivated</uax:Text>
-        </uax:LocalizedText>
-      </uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OperatorAckProvider</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ActivateFSV</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>TestModeActivated</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
     </Value>
   </UAVariable>
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:NonSafetyDataPlaceholderDataType">
     <DisplayName>NonSafetyDataPlaceholderDataType</DisplayName>
     <Description>Dummy structure to be used when no non-safety data are used</Description>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
@@ -172,7 +169,7 @@
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:RequestSPDUDataType">
     <DisplayName>RequestSPDUDataType</DisplayName>
     <Category>SafetyPDUs</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5010</Reference>
@@ -185,18 +182,14 @@
       <Field Name="InFlags" DataType="InFlagsType" />
     </Definition>
   </UADataType>
-  <UADataType NodeId="ns=1;i=3004" BrowseName="1:ResponseSPDUDataType">
+  <UADataType NodeId="ns=1;i=3004" BrowseName="1:ResponseSPDUDataType" IsAbstract="true">
     <DisplayName>ResponseSPDUDataType</DisplayName>
     <Category>SafetyPDUs</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
-      <Reference ReferenceType="HasEncoding">ns=1;i=5013</Reference>
-      <Reference ReferenceType="HasEncoding">ns=1;i=5015</Reference>
-      <Reference ReferenceType="HasEncoding">ns=1;i=5014</Reference>
     </References>
     <Definition Name="1:ResponseSPDUDataType">
-      <Field Name="OutSafetyData" DataType="Structure" />
       <Field Name="OutFlags" DataType="OutFlagsType" />
       <Field Name="OutSPDU_ID_1" DataType="UInt32" />
       <Field Name="OutSPDU_ID_2" DataType="UInt32" />
@@ -204,14 +197,13 @@
       <Field Name="OutSafetyConsumerID" DataType="UInt32" />
       <Field Name="OutMonitoringNumber" DataType="UInt32" />
       <Field Name="OutCRC" DataType="UInt32" />
-      <Field Name="OutNonSafetyData" DataType="Structure" />
     </Definition>
   </UADataType>
   <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:SafetyConsumerParametersType">
     <DisplayName>SafetyConsumerParametersType</DisplayName>
     <Description>Safety parameters for the SafetyProvider</Description>
     <Category>SafetyConsumerParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -300,7 +292,7 @@
     <DisplayName>SafetyObjectsType</DisplayName>
     <Description>Base type of all safety objects</Description>
     <Category>SafetySupport</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -308,7 +300,7 @@
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:SafetyConsumerType">
     <DisplayName>SafetyConsumerType</DisplayName>
     <Category>SafetyConsumerParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
     </References>
@@ -321,68 +313,10 @@
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1006</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5008" BrowseName="1:SafetyPDUs" ParentNodeId="ns=1;i=1005">
-    <DisplayName>SafetyPDUs</DisplayName>
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
-    </References>
-  </UAObject>
-  <UAVariable NodeId="ns=1;i=6035" BrowseName="1:&lt;RequestSPDU&gt;" SymbolicName="RequestSPDU" ParentNodeId="ns=1;i=5008" DataType="RequestSPDUDataType">
-    <DisplayName>&lt;RequestSPDU&gt;</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5008</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5008</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    </References>
-    <Value>
-      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5011</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <RequestSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
-            <InSafetyConsumerID>0</InSafetyConsumerID>
-            <InMonitoringNumber>0</InMonitoringNumber>
-            <InFlags>0</InFlags>
-          </RequestSPDUDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6036" BrowseName="1:&lt;ResponseSPDU&gt;" SymbolicName="ResponseSPDU" ParentNodeId="ns=1;i=5008" DataType="ResponseSPDUDataType">
-    <DisplayName>&lt;ResponseSPDU&gt;</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5008</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5008</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    </References>
-    <Value>
-      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5014</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <ResponseSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
-            <OutFlags>0</OutFlags>
-            <OutSPDU_ID_1>0</OutSPDU_ID_1>
-            <OutSPDU_ID_2>0</OutSPDU_ID_2>
-            <OutSPDU_ID_3>0</OutSPDU_ID_3>
-            <OutSafetyConsumerID>0</OutSafetyConsumerID>
-            <OutMonitoringNumber>0</OutMonitoringNumber>
-            <OutCRC>0</OutCRC>
-          </ResponseSPDUDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
-    </Value>
-  </UAVariable>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:SafetyProviderType">
     <DisplayName>SafetyProviderType</DisplayName>
     <Category>SafetyProviderParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
     </References>
@@ -399,7 +333,7 @@
   <UAMethod NodeId="ns=1;i=7001" BrowseName="1:ReadSafetyData" ParentNodeId="ns=1;i=1003">
     <DisplayName>ReadSafetyData</DisplayName>
     <Category>ReadSafetyData</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -414,61 +348,61 @@
     </References>
     <Value>
       <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>InSafetyConsumerID</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>SafetyConsumer identifier</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>InMonitoringNumber</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Monitoring Number of the RequestSPDU</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>InFlags</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3005</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Byte with non-safety flags from SafetyConsumer</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-      </uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InSafetyConsumerID</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>SafetyConsumer identifier</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InMonitoringNumber</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Monitoring Number of the RequestSPDU</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InFlags</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3005</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Byte with non-safety flags from SafetyConsumer</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6008" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7001" DataType="Argument" ValueRank="1" ArrayDimensions="9">
@@ -480,175 +414,175 @@
     </References>
     <Value>
       <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSafetyData</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=22</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety Data</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutFlags</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3006</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Byte with safety flags from SafetyProvider</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSPDU_ID_1</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety PDU Identifier Part1</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSPDU_ID_2</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety PDU Identifier Part2</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSPDU_ID_3</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety PDU Identifier Part3</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSafetyConsumerID</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>SafetyConsumer identifier</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutMonitoringNumber</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Monitoring Number of the ResponseSPDU</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutCRC</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>CRC-checksum over the ResponseSPDU</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutNonSafetyData</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=22</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Non-safe data</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-      </uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSafetyData</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=22</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety Data</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutFlags</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3006</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Byte with safety flags from SafetyProvider</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSPDU_ID_1</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety PDU Identifier Part1</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSPDU_ID_2</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety PDU Identifier Part2</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSPDU_ID_3</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety PDU Identifier Part3</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSafetyConsumerID</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>SafetyConsumer identifier</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutMonitoringNumber</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Monitoring Number of the ResponseSPDU</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutCRC</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>CRC-checksum over the ResponseSPDU</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutNonSafetyData</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=22</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Non-safe data</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
     </Value>
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7002" BrowseName="1:ReadSafetyDiagnostics" ParentNodeId="ns=1;i=1003">
     <DisplayName>ReadSafetyDiagnostics</DisplayName>
     <Category>ReadSafetyDiagnostics</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -663,287 +597,229 @@
     </References>
     <Value>
       <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>InSafetyConsumerID</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>SafetyConsumer identifier</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>InMonitoringNumber</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Monitoring Number of the RequestSPDU</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>InFlags</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3005</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Byte with non-safety flags from SafetyConsumer</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSafetyData</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=22</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety Data</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutFlags</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3006</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Byte with safety flags from SafetyProvider</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSPDU_ID_1</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety PDU Identifier Part1</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSPDU_ID_2</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety PDU Identifier Part2</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSPDU_ID_3</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Safety PDU Identifier Part3</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutSafetyConsumerID</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>SafetyConsumer identifier</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutMonitoringNumber</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Monitoring Number of the ResponseSPDU</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutCRC</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>CRC-checksum over the ResponseSPDU</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>OutNonSafetyData</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=22</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Non-safe data</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-      </uax:ListOfExtensionObject>
-    </Value>
-  </UAVariable>
-  <UAObject NodeId="ns=1;i=5007" BrowseName="1:SafetyPDUs" ParentNodeId="ns=1;i=1003">
-    <DisplayName>SafetyPDUs</DisplayName>
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
-    </References>
-  </UAObject>
-  <UAVariable NodeId="ns=1;i=6037" BrowseName="1:&lt;RequestSPDU&gt;" SymbolicName="RequestSPDU" ParentNodeId="ns=1;i=5007" DataType="RequestSPDUDataType">
-    <DisplayName>&lt;RequestSPDU&gt;</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5007</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    </References>
-    <Value>
-      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5011</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <RequestSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
-            <InSafetyConsumerID>0</InSafetyConsumerID>
-            <InMonitoringNumber>0</InMonitoringNumber>
-            <InFlags>0</InFlags>
-          </RequestSPDUDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6038" BrowseName="1:&lt;ResponseSPDU&gt;" SymbolicName="ResponseSPDU" ParentNodeId="ns=1;i=5007" DataType="ResponseSPDUDataType">
-    <DisplayName>&lt;ResponseSPDU&gt;</DisplayName>
-    <References>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5007</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    </References>
-    <Value>
-      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5014</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <ResponseSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
-            <OutFlags>0</OutFlags>
-            <OutSPDU_ID_1>0</OutSPDU_ID_1>
-            <OutSPDU_ID_2>0</OutSPDU_ID_2>
-            <OutSPDU_ID_3>0</OutSPDU_ID_3>
-            <OutSafetyConsumerID>0</OutSafetyConsumerID>
-            <OutMonitoringNumber>0</OutMonitoringNumber>
-            <OutCRC>0</OutCRC>
-          </ResponseSPDUDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InSafetyConsumerID</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>SafetyConsumer identifier</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InMonitoringNumber</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Monitoring Number of the RequestSPDU</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InFlags</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3005</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Byte with non-safety flags from SafetyConsumer</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSafetyData</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=22</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety Data</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutFlags</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3006</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Byte with safety flags from SafetyProvider</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSPDU_ID_1</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety PDU Identifier Part1</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSPDU_ID_2</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety PDU Identifier Part2</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSPDU_ID_3</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Safety PDU Identifier Part3</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutSafetyConsumerID</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>SafetyConsumer identifier</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutMonitoringNumber</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Monitoring Number of the ResponseSPDU</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutCRC</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>CRC-checksum over the ResponseSPDU</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>OutNonSafetyData</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=22</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Non-safe data</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
     </Value>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:SafetyPDUsType">
     <DisplayName>SafetyPDUsType</DisplayName>
     <Category>SafetyPDUs</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -957,17 +833,17 @@
     </References>
     <Value>
       <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5011</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <RequestSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
-            <InSafetyConsumerID>0</InSafetyConsumerID>
-            <InMonitoringNumber>0</InMonitoringNumber>
-            <InFlags>0</InFlags>
-          </RequestSPDUDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>ns=1;i=5011</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <RequestSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
+                        <InSafetyConsumerID>0</InSafetyConsumerID>
+                        <InMonitoringNumber>0</InMonitoringNumber>
+                        <InFlags>0</InFlags>
+                    </RequestSPDUDataType>
+                </uax:Body>
+            </uax:ExtensionObject>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6030" BrowseName="1:&lt;ResponseSPDU&gt;" SymbolicName="ResponseSPDU" ParentNodeId="ns=1;i=1007" DataType="ResponseSPDUDataType">
@@ -977,30 +853,12 @@
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=11510</Reference>
     </References>
-    <Value>
-      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5014</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <ResponseSPDUDataType xmlns="http://opcfoundation.org/UA/Safety/Types.xsd">
-            <OutFlags>0</OutFlags>
-            <OutSPDU_ID_1>0</OutSPDU_ID_1>
-            <OutSPDU_ID_2>0</OutSPDU_ID_2>
-            <OutSPDU_ID_3>0</OutSPDU_ID_3>
-            <OutSafetyConsumerID>0</OutSafetyConsumerID>
-            <OutMonitoringNumber>0</OutMonitoringNumber>
-            <OutCRC>0</OutCRC>
-          </ResponseSPDUDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
-    </Value>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:SafetyProviderParametersType">
     <DisplayName>SafetyProviderParametersType</DisplayName>
     <Description>Safety parameters for the SafetyProvider</Description>
     <Category>SafetyProviderParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -1071,7 +929,7 @@
     <DisplayName>SafetyACSet</DisplayName>
     <Description>Contains all instances of safety objects (SafetyProvider or SafetyConsumer)</Description>
     <Category>SafetyACSet</Category>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/6.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.1</Documentation>
     <References>
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
@@ -1080,7 +938,7 @@
   <UAObject NodeId="ns=1;i=5006" BrowseName="1:http://opcfoundation.org/UA/Safety" SymbolicName="http___opcfoundation_org_UA_Safety" ParentNodeId="i=11715">
     <DisplayName>http://opcfoundation.org/UA/Safety</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
-    <Documentation>https://reference.opcfoundation.org/v105/Safety/docs/14.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/14.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -1105,7 +963,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2021-11-14T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-06-28T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6024" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5006" DataType="String">
@@ -1127,7 +985,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.05</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.05.02</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6026" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5006" DataType="IdType" ValueRank="1" ArrayDimensions="1">
@@ -1139,8 +997,8 @@
     </References>
     <Value>
       <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:Int32>0</uax:Int32>
-      </uax:ListOfInt32>
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6027" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5006" DataType="NumericRange" ValueRank="1" ArrayDimensions="1">
@@ -1152,8 +1010,8 @@
     </References>
     <Value>
       <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>1:2147483647</uax:String>
-      </uax:ListOfString>
+                <uax:String>1:2147483647</uax:String>
+            </uax:ListOfString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6028" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=5006" DataType="String">
@@ -1164,8 +1022,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:String>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5003" BrowseName="Default Binary" SymbolicName="DefaultBinary">
@@ -1199,24 +1056,6 @@
     </References>
   </UAObject>
   <UAObject NodeId="ns=1;i=5012" BrowseName="Default JSON" SymbolicName="DefaultJson">
-    <DisplayName>Default JSON</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=5013" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=5014" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=5015" BrowseName="Default JSON" SymbolicName="DefaultJson">
     <DisplayName>Default JSON</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -1520,4 +1359,20 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
     </References>
   </UAVariable>
+  <UAObject NodeId="ns=1;i=5000" BrowseName="1:SafetyPDUs" ParentNodeId="ns=1;i=1003">
+    <DisplayName>SafetyPDUs</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5007" BrowseName="1:SafetyPDUs" ParentNodeId="ns=1;i=1005">
+    <DisplayName>SafetyPDUs</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
 </UANodeSet>

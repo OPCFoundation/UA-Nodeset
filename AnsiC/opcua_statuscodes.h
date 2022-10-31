@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -1053,7 +1053,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_GoodNoData 0x00A50000
 
 /*============================================================================
- * The data or event field was successfully replaced in the historical database.
+ * More data is available in the time range beyond the number of values requested.
  *===========================================================================*/
 #define OpcUa_GoodMoreData 0x00A60000
 
@@ -1093,6 +1093,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadRequestNotComplete 0x81130000
 
 /*============================================================================
+ * The operation is not allowed because a transaction is in progress.
+ *===========================================================================*/
+#define OpcUa_BadTransactionPending 0x80E80000
+
+/*============================================================================
  * The device identity needs a ticket before it can be accepted.
  *===========================================================================*/
 #define OpcUa_BadTicketRequired 0x811F0000
@@ -1101,6 +1106,11 @@ OPCUA_BEGIN_EXTERN_C
  * The device identity needs a ticket before it can be accepted.
  *===========================================================================*/
 #define OpcUa_BadTicketInvalid 0x81200000
+
+/*============================================================================
+ * The requested operation is not allowed, because the Node is locked by a different application.
+ *===========================================================================*/
+#define OpcUa_BadLocked 0x80E90000
 
 /*============================================================================
  * The value does not come from the real source and has been edited by the server.

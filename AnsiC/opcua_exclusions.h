@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -94,6 +94,7 @@
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_CurrencyUnitType */
 /* #define OPCUA_EXCLUDE_TrustListDataType */
+/* #define OPCUA_EXCLUDE_TransactionErrorType */
 /* #define OPCUA_EXCLUDE_DecimalDataType */
 /* #define OPCUA_EXCLUDE_DataTypeSchemaHeader */
 /* #define OPCUA_EXCLUDE_DataTypeDescription */
@@ -165,6 +166,8 @@
 /* #define OPCUA_EXCLUDE_AliasNameDataType */
 /* #define OPCUA_EXCLUDE_UserManagementDataType */
 /* #define OPCUA_EXCLUDE_PriorityMappingEntryType */
+/* #define OPCUA_EXCLUDE_ReferenceDescriptionDataType */
+/* #define OPCUA_EXCLUDE_ReferenceListEntryDataType */
 /* #define OPCUA_EXCLUDE_RolePermissionType */
 /* #define OPCUA_EXCLUDE_DataTypeDefinition */
 /* #define OPCUA_EXCLUDE_StructureField */

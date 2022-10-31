@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<xs:schema
+  xmlns:GDS="http://opcfoundation.org/UA/GDS/Types.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://opcfoundation.org/UA/Onboarding/Types.xsd"
+  targetNamespace="http://opcfoundation.org/UA/Onboarding/Types.xsd"
+  elementFormDefault="qualified"
+>
+  <xs:annotation>
+    <xs:appinfo>
+      <tns:Model ModelUri="http://opcfoundation.org/UA/Onboarding/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:import namespace="http://opcfoundation.org/UA/GDS/Types.xsd" />
+  <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+
+  <xs:complexType name="CertificateAuthorityType">
+    <xs:sequence>
+      <xs:element name="AuthorityCertificate" type="xs:base64Binary" minOccurs="0" nillable="true" />
+      <xs:element name="IssuerCertificates" type="ua:ListOfByteString" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CertificateAuthorityType" type="tns:CertificateAuthorityType" />
+
+  <xs:complexType name="ListOfCertificateAuthorityType">
+    <xs:sequence>
+      <xs:element name="CertificateAuthorityType" type="tns:CertificateAuthorityType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCertificateAuthorityType" type="tns:ListOfCertificateAuthorityType" nillable="true"></xs:element>
+
+  <xs:complexType name="BaseTicketType">
+    <xs:sequence>
+      <xs:element name="ManufacturerName" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ModelName" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ModelVersion" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="HardwareRevision" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="SoftwareRevision" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="SerialNumber" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ManufactureDate" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="Authorities" type="tns:ListOfCertificateAuthorityType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseTicketType" type="tns:BaseTicketType" />
+
+  <xs:complexType name="ListOfBaseTicketType">
+    <xs:sequence>
+      <xs:element name="BaseTicketType" type="tns:BaseTicketType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfBaseTicketType" type="tns:ListOfBaseTicketType" nillable="true"></xs:element>
+
+  <xs:complexType name="DeviceIdentityTicketType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseTicketType">
+        <xs:sequence>
+          <xs:element name="ProductInstanceUri" type="xs:string" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeviceIdentityTicketType" type="tns:DeviceIdentityTicketType" />
+
+  <xs:complexType name="ListOfDeviceIdentityTicketType">
+    <xs:sequence>
+      <xs:element name="DeviceIdentityTicketType" type="tns:DeviceIdentityTicketType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDeviceIdentityTicketType" type="tns:ListOfDeviceIdentityTicketType" nillable="true"></xs:element>
+
+  <xs:complexType name="CompositeIdentityTicketType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseTicketType">
+        <xs:sequence>
+          <xs:element name="CompositeInstanceUri" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="Devices" type="ua:ListOfString" minOccurs="0" nillable="true" />
+          <xs:element name="Composites" type="ua:ListOfString" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CompositeIdentityTicketType" type="tns:CompositeIdentityTicketType" />
+
+  <xs:complexType name="ListOfCompositeIdentityTicketType">
+    <xs:sequence>
+      <xs:element name="CompositeIdentityTicketType" type="tns:CompositeIdentityTicketType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCompositeIdentityTicketType" type="tns:ListOfCompositeIdentityTicketType" nillable="true"></xs:element>
+
+  <xs:complexType name="TicketListType">
+    <xs:sequence>
+      <xs:element name="Devices" type="ua:ListOfString" minOccurs="0" nillable="true" />
+      <xs:element name="Composites" type="ua:ListOfString" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TicketListType" type="tns:TicketListType" />
+
+  <xs:complexType name="ListOfTicketListType">
+    <xs:sequence>
+      <xs:element name="TicketListType" type="tns:TicketListType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfTicketListType" type="tns:ListOfTicketListType" nillable="true"></xs:element>
+
+  <xs:complexType name="ManagerDescription">
+    <xs:sequence>
+      <xs:element name="Name" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+      <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+      <xs:element name="PurposeUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ProtocolUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="EndpointUrls" type="ua:ListOfString" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ManagerDescription" type="tns:ManagerDescription" />
+
+  <xs:complexType name="ListOfManagerDescription">
+    <xs:sequence>
+      <xs:element name="ManagerDescription" type="tns:ManagerDescription" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfManagerDescription" type="tns:ListOfManagerDescription" nillable="true"></xs:element>
+
+</xs:schema>

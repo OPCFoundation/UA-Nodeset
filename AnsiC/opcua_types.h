@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -171,7 +171,9 @@ typedef enum _OpcUa_AccessLevelExType
     OpcUa_AccessLevelExType_NonatomicRead      = 256,
     OpcUa_AccessLevelExType_NonatomicWrite     = 512,
     OpcUa_AccessLevelExType_WriteFullArrayOnly = 1024,
-    OpcUa_AccessLevelExType_NoSubDataTypes     = 2048
+    OpcUa_AccessLevelExType_NoSubDataTypes     = 2048,
+    OpcUa_AccessLevelExType_NonVolatile        = 4096,
+    OpcUa_AccessLevelExType_Constant           = 8192
 #if OPCUA_FORCE_INT32_ENUMS
     ,_OpcUa_AccessLevelExType_MaxEnumerationValue = OpcUa_Int32_Max
 #endif

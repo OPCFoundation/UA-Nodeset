@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<opc:TypeDictionary
+  xmlns:GDS="http://opcfoundation.org/UA/GDS/"
+  xmlns:opc="http://opcfoundation.org/BinarySchema/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:tns="http://opcfoundation.org/UA/Onboarding/"
+  DefaultByteOrder="LittleEndian"
+  TargetNamespace="http://opcfoundation.org/UA/Onboarding/"
+>
+  <opc:Import Namespace="http://opcfoundation.org/UA/GDS/" Location="Opc.Ua.Gds.BinarySchema.bsd"/>
+  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
+
+  <opc:StructuredType Name="CertificateAuthorityType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="AuthorityCertificate" TypeName="opc:ByteString" />
+    <opc:Field Name="NoOfIssuerCertificates" TypeName="opc:Int32" />
+    <opc:Field Name="IssuerCertificates" TypeName="opc:ByteString" LengthField="NoOfIssuerCertificates" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="BaseTicketType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ManufacturerName" TypeName="opc:String" />
+    <opc:Field Name="ModelName" TypeName="opc:String" />
+    <opc:Field Name="ModelVersion" TypeName="opc:String" />
+    <opc:Field Name="HardwareRevision" TypeName="opc:String" />
+    <opc:Field Name="SoftwareRevision" TypeName="opc:String" />
+    <opc:Field Name="SerialNumber" TypeName="opc:String" />
+    <opc:Field Name="ManufactureDate" TypeName="opc:DateTime" />
+    <opc:Field Name="NoOfAuthorities" TypeName="opc:Int32" />
+    <opc:Field Name="Authorities" TypeName="tns:CertificateAuthorityType" LengthField="NoOfAuthorities" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="DeviceIdentityTicketType" BaseType="tns:BaseTicketType">
+    <opc:Field Name="ManufacturerName" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="ModelName" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="ModelVersion" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="HardwareRevision" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="SoftwareRevision" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="SerialNumber" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="ManufactureDate" TypeName="opc:DateTime" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="NoOfAuthorities" TypeName="opc:Int32" />
+    <opc:Field Name="Authorities" TypeName="tns:CertificateAuthorityType" LengthField="NoOfAuthorities" />
+    <opc:Field Name="ProductInstanceUri" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CompositeIdentityTicketType" BaseType="tns:BaseTicketType">
+    <opc:Field Name="ManufacturerName" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="ModelName" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="ModelVersion" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="HardwareRevision" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="SoftwareRevision" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="SerialNumber" TypeName="opc:String" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="ManufactureDate" TypeName="opc:DateTime" SourceType="tns:BaseTicketType" />
+    <opc:Field Name="NoOfAuthorities" TypeName="opc:Int32" />
+    <opc:Field Name="Authorities" TypeName="tns:CertificateAuthorityType" LengthField="NoOfAuthorities" />
+    <opc:Field Name="CompositeInstanceUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfDevices" TypeName="opc:Int32" />
+    <opc:Field Name="Devices" TypeName="opc:String" LengthField="NoOfDevices" />
+    <opc:Field Name="NoOfComposites" TypeName="opc:Int32" />
+    <opc:Field Name="Composites" TypeName="opc:String" LengthField="NoOfComposites" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="TicketListType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NoOfDevices" TypeName="opc:Int32" />
+    <opc:Field Name="Devices" TypeName="opc:String" LengthField="NoOfDevices" />
+    <opc:Field Name="NoOfComposites" TypeName="opc:Int32" />
+    <opc:Field Name="Composites" TypeName="opc:String" LengthField="NoOfComposites" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ManagerDescription" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Name" TypeName="ua:LocalizedText" />
+    <opc:Field Name="IsRequired" TypeName="opc:Boolean" />
+    <opc:Field Name="PurposeUri" TypeName="opc:String" />
+    <opc:Field Name="ProtocolUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfEndpointUrls" TypeName="opc:Int32" />
+    <opc:Field Name="EndpointUrls" TypeName="opc:String" LengthField="NoOfEndpointUrls" />
+  </opc:StructuredType>
+
+</opc:TypeDictionary>

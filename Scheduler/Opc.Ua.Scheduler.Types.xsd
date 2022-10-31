@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://opcfoundation.org/UA/Scheduler/Types.xsd"
+  targetNamespace="http://opcfoundation.org/UA/Scheduler/Types.xsd"
+  elementFormDefault="qualified"
+>
+  <xs:annotation>
+    <xs:appinfo>
+      <tns:Model ModelUri="http://opcfoundation.org/UA/Scheduler/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+
+  <xs:complexType name="SpecialEventType">
+    <xs:annotation>
+      <xs:documentation>This structure contains a period, a list of time values, and a priority. It is a means to identify moments in time over one or more days.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Period" type="tns:SpecialEventPeriodType" minOccurs="0" nillable="true" />
+      <xs:element name="ListOfTimeActions" type="tns:ListOfTimeActionsType" minOccurs="0" nillable="true" />
+      <xs:element name="EventPriority" type="xs:unsignedByte" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SpecialEventType" type="tns:SpecialEventType" />
+
+  <xs:complexType name="ListOfSpecialEventType">
+    <xs:sequence>
+      <xs:element name="SpecialEventType" type="tns:SpecialEventType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSpecialEventType" type="tns:ListOfSpecialEventType" nillable="true"></xs:element>
+
+  <xs:complexType name="SpecialEventPeriodType">
+    <xs:annotation>
+      <xs:documentation>This union contains a calendar entry or a reference to a calendar object</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="ua:Union">
+        <xs:sequence>
+          <xs:element name="CalendarEntry" type="tns:CalendarEntryType" minOccurs="0" nillable="true" />
+          <xs:element name="CalendarReference" type="ua:NodeId" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SpecialEventPeriodType" type="tns:SpecialEventPeriodType" />
+
+  <xs:complexType name="ListOfSpecialEventPeriodType">
+    <xs:sequence>
+      <xs:element name="SpecialEventPeriodType" type="tns:SpecialEventPeriodType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSpecialEventPeriodType" type="tns:ListOfSpecialEventPeriodType" nillable="true"></xs:element>
+
+  <xs:complexType name="CalendarEntryType">
+    <xs:annotation>
+      <xs:documentation>This union that defines various calendar date values</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="ua:Union">
+        <xs:sequence>
+          <xs:element name="Date" type="tns:DateType" minOccurs="0" nillable="true" />
+          <xs:element name="DateRange" type="tns:DateRangeType" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CalendarEntryType" type="tns:CalendarEntryType" />
+
+  <xs:complexType name="ListOfCalendarEntryType">
+    <xs:sequence>
+      <xs:element name="CalendarEntryType" type="tns:CalendarEntryType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCalendarEntryType" type="tns:ListOfCalendarEntryType" nillable="true"></xs:element>
+
+  <xs:complexType name="DateType">
+    <xs:annotation>
+      <xs:documentation>This structure defines a calendar date. It allows to define a concrete date, e.g. 2022-02-12. By using wildcards, it also allows to define repeating dates, like every Wednesday, every odd day of a month, every 24th of December, every last day of a month in 2023, etc.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Year" type="xs:unsignedShort" minOccurs="0" />
+      <xs:element name="Month" type="tns:Month" minOccurs="0" />
+      <xs:element name="DayOfMonth" type="tns:DayOfMonth" minOccurs="0" />
+      <xs:element name="DayOfWeek" type="tns:DayOfWeek" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DateType" type="tns:DateType" />
+
+  <xs:complexType name="ListOfDateType">
+    <xs:sequence>
+      <xs:element name="DateType" type="tns:DateType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDateType" type="tns:ListOfDateType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="Month">
+    <xs:annotation>
+      <xs:documentation>This enumeration indicates either a specific Gregorian calendar month, or a relative relationship ("odd", "even", and "unspecified").</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified_0" />
+      <xs:enumeration value="January_1" />
+      <xs:enumeration value="February_2" />
+      <xs:enumeration value="March_3" />
+      <xs:enumeration value="April_4" />
+      <xs:enumeration value="May_5" />
+      <xs:enumeration value="June_6" />
+      <xs:enumeration value="July_7" />
+      <xs:enumeration value="August_8" />
+      <xs:enumeration value="September_9" />
+      <xs:enumeration value="October_10" />
+      <xs:enumeration value="November_11" />
+      <xs:enumeration value="December_12" />
+      <xs:enumeration value="Odd_13" />
+      <xs:enumeration value="Even_14" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Month" type="tns:Month" />
+
+  <xs:complexType name="ListOfMonth">
+    <xs:sequence>
+      <xs:element name="Month" type="tns:Month" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfMonth" type="tns:ListOfMonth" nillable="true"></xs:element>
+
+  <xs:simpleType  name="DayOfMonth">
+    <xs:annotation>
+      <xs:documentation>This enumeration indicates specific days of the month by specific date ("1", "22", and so on) or by relative position ("last day of month", "even day of month", and so on).</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified_0" />
+      <xs:enumeration value="Day1_1" />
+      <xs:enumeration value="Day2_2" />
+      <xs:enumeration value="Day3_3" />
+      <xs:enumeration value="Day4_4" />
+      <xs:enumeration value="Day5_5" />
+      <xs:enumeration value="Day6_6" />
+      <xs:enumeration value="Day7_7" />
+      <xs:enumeration value="Day8_8" />
+      <xs:enumeration value="Day9_9" />
+      <xs:enumeration value="Day10_10" />
+      <xs:enumeration value="Day11_11" />
+      <xs:enumeration value="Day12_12" />
+      <xs:enumeration value="Day13_13" />
+      <xs:enumeration value="Day14_14" />
+      <xs:enumeration value="Day15_15" />
+      <xs:enumeration value="Day16_16" />
+      <xs:enumeration value="Day17_17" />
+      <xs:enumeration value="Day18_18" />
+      <xs:enumeration value="Day19_19" />
+      <xs:enumeration value="Day20_20" />
+      <xs:enumeration value="Day21_21" />
+      <xs:enumeration value="Day22_22" />
+      <xs:enumeration value="Day23_23" />
+      <xs:enumeration value="Day24_24" />
+      <xs:enumeration value="Day25_25" />
+      <xs:enumeration value="Day26_26" />
+      <xs:enumeration value="Day27_27" />
+      <xs:enumeration value="Day28_28" />
+      <xs:enumeration value="Day29_29" />
+      <xs:enumeration value="Day30_30" />
+      <xs:enumeration value="Day31_31" />
+      <xs:enumeration value="LastDayOfMonth_32" />
+      <xs:enumeration value="OddDayOfMonth_33" />
+      <xs:enumeration value="EvenDayOfMonth_34" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DayOfMonth" type="tns:DayOfMonth" />
+
+  <xs:complexType name="ListOfDayOfMonth">
+    <xs:sequence>
+      <xs:element name="DayOfMonth" type="tns:DayOfMonth" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDayOfMonth" type="tns:ListOfDayOfMonth" nillable="true"></xs:element>
+
+  <xs:simpleType  name="DayOfWeek">
+    <xs:annotation>
+      <xs:documentation>This enumeration indicates each of the seven days of the week, or "unspecified".</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified_0" />
+      <xs:enumeration value="Monday_1" />
+      <xs:enumeration value="Tuesday_2" />
+      <xs:enumeration value="Wednesday_3" />
+      <xs:enumeration value="Thursday_4" />
+      <xs:enumeration value="Friday_5" />
+      <xs:enumeration value="Saturday_6" />
+      <xs:enumeration value="Sunday_7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DayOfWeek" type="tns:DayOfWeek" />
+
+  <xs:complexType name="ListOfDayOfWeek">
+    <xs:sequence>
+      <xs:element name="DayOfWeek" type="tns:DayOfWeek" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDayOfWeek" type="tns:ListOfDayOfWeek" nillable="true"></xs:element>
+
+  <xs:complexType name="DateRangeType">
+    <xs:annotation>
+      <xs:documentation>This structure defines a time span, with absolute start and end dates. The StartDate and EndDate are limited to specific values, i.e., wild cards like odd months are not allowed. The Year field shall not be 0; the Month field shall be a value between 1 to 12; the DayOfMonth field shall be between 1 to 31 and the DayOfMonth field shall be "unspecified".</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StartDate" type="tns:DateType" minOccurs="0" nillable="true" />
+      <xs:element name="EndDate" type="tns:DateType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DateRangeType" type="tns:DateRangeType" />
+
+  <xs:complexType name="ListOfDateRangeType">
+    <xs:sequence>
+      <xs:element name="DateRangeType" type="tns:DateRangeType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDateRangeType" type="tns:ListOfDateRangeType" nillable="true"></xs:element>
+
+  <xs:complexType name="TimeActionsType">
+    <xs:annotation>
+      <xs:documentation>This structure contains a time and an array of actions. It is used to define actions to be executed at a specific point in time.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Time" type="tns:TimeType" minOccurs="0" nillable="true" />
+      <xs:element name="Actions" type="ua:ListOfExtensionObject" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TimeActionsType" type="tns:TimeActionsType" />
+
+  <xs:complexType name="ListOfTimeActionsType">
+    <xs:sequence>
+      <xs:element name="TimeActionsType" type="tns:TimeActionsType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfTimeActionsType" type="tns:ListOfTimeActionsType" nillable="true"></xs:element>
+
+  <xs:complexType name="BaseActionType">
+    <xs:annotation>
+      <xs:documentation>This abstract structure defines the base of an action. The base only contains information, if the last execution of the action was successful.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="LastActionResult" type="ua:StatusCode" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseActionType" type="tns:BaseActionType" />
+
+  <xs:complexType name="ListOfBaseActionType">
+    <xs:sequence>
+      <xs:element name="BaseActionType" type="tns:BaseActionType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfBaseActionType" type="tns:ListOfBaseActionType" nillable="true"></xs:element>
+
+  <xs:complexType name="WriteLocalVariableActionType">
+    <xs:annotation>
+      <xs:documentation>This structure defines an action to write the value of a Variable managed in the same Server where the action is used.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseActionType">
+        <xs:sequence>
+          <xs:element name="Variable" type="ua:NodeId" minOccurs="0" nillable="true" />
+          <xs:element name="Value" type="ua:Variant" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WriteLocalVariableActionType" type="tns:WriteLocalVariableActionType" />
+
+  <xs:complexType name="ListOfWriteLocalVariableActionType">
+    <xs:sequence>
+      <xs:element name="WriteLocalVariableActionType" type="tns:WriteLocalVariableActionType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfWriteLocalVariableActionType" type="tns:ListOfWriteLocalVariableActionType" nillable="true"></xs:element>
+
+  <xs:complexType name="CallLocalMethodActionType">
+    <xs:annotation>
+      <xs:documentation>This structure defines an action to call a Method of an Object managed in the same Server where the action is used.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseActionType">
+        <xs:sequence>
+          <xs:element name="ObjectId" type="ua:NodeId" minOccurs="0" nillable="true" />
+          <xs:element name="MethodId" type="ua:NodeId" minOccurs="0" nillable="true" />
+          <xs:element name="InputValues" type="ua:ListOfVariant" minOccurs="0" nillable="true" />
+          <xs:element name="LastOutputValues" type="ua:ListOfVariant" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CallLocalMethodActionType" type="tns:CallLocalMethodActionType" />
+
+  <xs:complexType name="ListOfCallLocalMethodActionType">
+    <xs:sequence>
+      <xs:element name="CallLocalMethodActionType" type="tns:CallLocalMethodActionType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCallLocalMethodActionType" type="tns:ListOfCallLocalMethodActionType" nillable="true"></xs:element>
+
+  <xs:complexType name="TimeType">
+    <xs:annotation>
+      <xs:documentation>This structure that represents a point in time during a day</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Hour" type="xs:unsignedByte" minOccurs="0" />
+      <xs:element name="Minute" type="xs:unsignedByte" minOccurs="0" />
+      <xs:element name="Second" type="xs:unsignedByte" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TimeType" type="tns:TimeType" />
+
+  <xs:complexType name="ListOfTimeType">
+    <xs:sequence>
+      <xs:element name="TimeType" type="tns:TimeType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfTimeType" type="tns:ListOfTimeType" nillable="true"></xs:element>
+
+  <xs:complexType name="DailyScheduleType">
+    <xs:annotation>
+      <xs:documentation>This structure defines a sequence of TimeActionsType structures. Each element in the sequence defines a time/actions pair that describes the actions to be executed at a given point in the day.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="DaySchedule" type="tns:ListOfTimeActionsType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyScheduleType" type="tns:DailyScheduleType" />
+
+  <xs:complexType name="ListOfDailyScheduleType">
+    <xs:sequence>
+      <xs:element name="DailyScheduleType" type="tns:DailyScheduleType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfDailyScheduleType" type="tns:ListOfDailyScheduleType" nillable="true"></xs:element>
+
+</xs:schema>

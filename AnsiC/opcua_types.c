@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -169,6 +169,8 @@ static struct _OpcUa_EnumeratedValue g_OpcUa_AccessLevelExType_EnumeratedValues[
     { "NonatomicWrite", 512 },
     { "WriteFullArrayOnly", 1024 },
     { "NoSubDataTypes", 2048 },
+    { "NonVolatile", 4096 },
+    { "Constant", 8192 },
     { OpcUa_Null, 0 }
 };
 

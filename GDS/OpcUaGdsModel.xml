@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -37,12 +37,12 @@
   xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
   xmlns:uasc="http://opcfoundation.org/UA/PushConfiguration/"
   TargetNamespace="http://opcfoundation.org/UA/GDS/"
-  TargetVersion="1.04.4"
-  TargetPublicationDate="2020-01-08T00:00:00Z"
+  TargetVersion="1.05.02"
+  TargetPublicationDate="2022-11-01T00:00:00Z"
 >
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaGds" Prefix="Opc.Ua.Gds" XmlNamespace="http://opcfoundation.org/UA/GDS/Types.xsd" XmlPrefix="GDS">http://opcfoundation.org/UA/GDS/</opc:Namespace>
-    <opc:Namespace Name="OpcUa" Version="1.04.4" PublicationDate="2020-01-08T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.05.02" PublicationDate="2022-06-28T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
 
   <opc:Object SymbolicName="OPCUAGDSNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
@@ -55,12 +55,12 @@
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <opc:DefaultValue>
-          <uax:String>1.04.4</uax:String>
+          <uax:String>1.05.02</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <opc:DefaultValue>
-          <uax:DateTime>2020-01-08T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2022-11-01T00:00:00Z</uax:DateTime>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
@@ -282,7 +282,8 @@
       <opc:Argument Name="CertificateGroupId" DataType="ua:NodeId"></opc:Argument>
     </opc:InputArguments>
     <opc:OutputArguments>
-      <opc:Argument Name="Certificates" DataType="ua:ByteString" ValueRank="Scalar"></opc:Argument>
+      <opc:Argument Name="CertificateTypeIds" DataType="ua:NodeId" ValueRank="Array"></opc:Argument>
+      <opc:Argument Name="Certificates" DataType="ua:ByteString" ValueRank="Array"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
 
@@ -306,10 +307,10 @@
       <opc:Method SymbolicName="FinishRequest" TypeDefinition="FinishRequestMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="RevokeCertificate" TypeDefinition="RevokeCertificateMethodType" ModellingRule="Optional" />
       <opc:Method SymbolicName="GetCertificateGroups" TypeDefinition="GetCertificateGroupsMethodType" ModellingRule="Mandatory" />
-      <opc:Method SymbolicName="GetCertificates" TypeDefinition="GetCertificatesMethodType" ModellingRule="Optional" ReleaseStatus="Draft" />
+      <opc:Method SymbolicName="GetCertificates" TypeDefinition="GetCertificatesMethodType" ModellingRule="Optional" />
       <opc:Method SymbolicName="GetTrustList" TypeDefinition="GetTrustListMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="GetCertificateStatus" TypeDefinition="GetCertificateStatusMethodType" ModellingRule="Mandatory" />
-      <opc:Method SymbolicName="CheckRevocationStatus" TypeDefinition="CheckRevocationStatusMethodType" ModellingRule="Optional" ReleaseStatus="Draft" />
+      <opc:Method SymbolicName="CheckRevocationStatus" TypeDefinition="CheckRevocationStatusMethodType" ModellingRule="Optional" />
     </opc:Children>
   </opc:ObjectType>
 
@@ -349,6 +350,7 @@
     <opc:Children>
       <opc:Property SymbolicName="ResourceUri"  DataType="ua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
       <opc:Property SymbolicName="ProfileUris"  DataType="ua:String" ValueRank="Array" ModellingRule="Mandatory" />
+      <opc:Property SymbolicName="SecurityPolicyUris"  DataType="ua:String" ValueRank="Array" ModellingRule="Optional" />
       <opc:Method SymbolicName="StartRequest" TypeDefinition="KeyCredentialStartRequestMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="FinishRequest" TypeDefinition="KeyCredentialFinishRequestMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="Revoke" TypeDefinition="KeyCredentialRevokeMethodType" ModellingRule="Optional" />

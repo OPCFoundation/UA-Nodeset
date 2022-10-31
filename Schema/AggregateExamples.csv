@@ -1,0 +1,3583 @@
+Generate Test Data for Part 13 Spec
+Start of Raw Data Tables
+
+Historian1
+
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00,,"Bad_NoData","First archive entry, Point created"
+12:00:10,10,"Good",""
+12:00:20,20,"Good",""
+12:00:30,30,"Good",""
+12:00:40,,"Bad","ANNOTATION: Operator 1 Jan-02-2012 8:00:00 Scan failed, Bad data entered ANNOTATION: Jan-04-2012 7:10:00 Value cannot be verified"
+12:00:50,50,"Good","ANNOTATION: Engineer1 Jan-04-2012 7:00:00 Scanner fixed"
+12:01:00,60,"Good",""
+12:01:10,70,"Uncertain","ANNOTATION: Technician_1 Jan-02-2012 8:00:00 Value flagged as questionable"
+12:01:20,80,"Good",""
+12:01:30,90,"Good",""
+,,"No Data","No more entries, awaiting next Value"
+
+Historian2
+
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00,,"Bad_NoData","First archive entry, Point created"
+12:00:02,10,"Good",""
+12:00:25,20,"Good",""
+12:00:28,25,"Good",""
+12:00:39,30,"Good",""
+12:00:42,undefined,"Bad","Bad quality data received, Bad data entered"
+12:00:48,40,"Good","Received Good StatusCode value"
+12:00:52,50,"Good",""
+12:01:12,60,"Good",""
+12:01:17,70,"Uncertain","Value is flagged as questionable"
+12:01:23,70,"Good",""
+12:01:26,80,"Good",""
+12:01:30,90,"Good",""
+,,"No Data","No more entries, awaiting next Value"
+
+Historian3
+
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00,,"Bad_NoData","First archive entry, Point created"
+12:00:02,10,"Good",""
+12:00:25,20,"Good",""
+12:00:28,25,"Good",""
+12:00:39,30,"Good",""
+12:00:42,undefined,"Bad","Bad quality data received, Bad data entered"
+12:00:48,40,"Good","Received Good StatusCode value"
+12:00:52,50,"Good",""
+12:01:12,60,"Good",""
+12:01:17,70,"Uncertain","Value is flagged as questionable"
+12:01:23,70,"Good",""
+12:01:26,80,"Good",""
+12:01:30,90,"Good",""
+,,"No Data","No more entries, awaiting next Value"
+
+Historian4
+
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00,,"Bad_NoData","First archive entry, Point created"
+12:00:02,true,"Good",""
+12:00:25,false,"Good",""
+12:00:28,true,"Good",""
+12:00:39,true,"Good",""
+12:00:42,undefined,"Bad","Bad quality data received, Bad data entered"
+12:00:48,true,"Good","Received Good StatusCode value"
+12:00:52,false,"Good",""
+12:01:12,false,"Good",""
+12:01:17,true,"Uncertain","Value is flagged as questionable"
+12:01:23,true,"Good",""
+12:01:26,false,"Good",""
+12:01:30,true,"Good",""
+,,"No Data","No more entries, awaiting next Value"
+
+Historian5
+
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00,,"Bad_NoData","First archive entry, Point created"
+12:00:02,10,"Good",""
+12:00:25,20,"Good",""
+12:00:28,10,"Good",""
+12:00:39,30,"Good",""
+12:00:42,undefined,"Bad","Bad quality data received, Bad data entered"
+12:00:48,30,"Good","Received Good StatusCode value"
+12:00:52,50,"Good",""
+12:01:12,30,"Good",""
+12:01:17,70,"Uncertain","Value is flagged as questionable"
+12:01:23,70,"Good",""
+12:01:26,80,"Good",""
+12:01:30,70,"Good",""
+,,"No Data","No more entries, awaiting next scan"
+End of Raw Data Tables
+Start of Processed Data Tables
+
+Aggregate,Interpolative
+
+Historian1
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,10,"Good",""
+12:00:15.000,15,"Good, Interpolated",""
+12:00:20.000,20,"Good",""
+12:00:25.000,25,"Good, Interpolated",""
+12:00:30.000,30,"Good",""
+12:00:35.000,35,"UncertainDataSubNormal, Interpolated",""
+12:00:40.000,40,"UncertainDataSubNormal, Interpolated",""
+12:00:45.000,45,"UncertainDataSubNormal, Interpolated",""
+12:00:50.000,50,"Good",""
+12:00:55.000,55,"Good, Interpolated",""
+12:01:00.000,60,"Good",""
+12:01:05.000,65,"UncertainDataSubNormal, Interpolated",""
+12:01:10.000,70,"Uncertain",""
+12:01:15.000,75,"UncertainDataSubNormal, Interpolated",""
+12:01:20.000,80,"Good",""
+12:01:25.000,85,"Good, Interpolated",""
+12:01:30.000,90,"Good",""
+12:01:35.000,90,"UncertainDataSubNormal, Interpolated",""
+
+Aggregate,Interpolative
+
+Historian2
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,11.304,"Good, Interpolated",""
+12:00:10.000,13.478,"Good, Interpolated",""
+12:00:15.000,15.652,"Good, Interpolated",""
+12:00:20.000,17.826,"Good, Interpolated",""
+12:00:25.000,20,"Good",""
+12:00:30.000,25.909,"Good, Interpolated",""
+12:00:35.000,28.182,"Good, Interpolated",""
+12:00:40.000,31.111,"UncertainDataSubNormal, Interpolated",""
+12:00:45.000,36.667,"UncertainDataSubNormal, Interpolated",""
+12:00:50.000,45,"Good, Interpolated",""
+12:00:55.000,51.500,"Good, Interpolated",""
+12:01:00.000,54,"Good, Interpolated",""
+12:01:05.000,56.500,"Good, Interpolated",""
+12:01:10.000,59,"Good, Interpolated",""
+12:01:15.000,62.727,"UncertainDataSubNormal, Interpolated",""
+12:01:20.000,67.273,"UncertainDataSubNormal, Interpolated",""
+12:01:25.000,76.667,"Good, Interpolated",""
+12:01:30.000,90,"Good",""
+12:01:35.000,102.500,"UncertainDataSubNormal, Interpolated",""
+
+Aggregate,Interpolative
+
+Historian3
+
+Processing Interval ,5000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,10,"Good, Interpolated",""
+12:00:10.000,10,"Good, Interpolated",""
+12:00:15.000,10,"Good, Interpolated",""
+12:00:20.000,10,"Good, Interpolated",""
+12:00:25.000,20,"Good",""
+12:00:30.000,25,"Good, Interpolated",""
+12:00:35.000,25,"Good, Interpolated",""
+12:00:40.000,30,"Good, Interpolated",""
+12:00:45.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:50.000,40,"Good, Interpolated",""
+12:00:55.000,50,"Good, Interpolated",""
+12:01:00.000,50,"Good, Interpolated",""
+12:01:05.000,50,"Good, Interpolated",""
+12:01:10.000,50,"Good, Interpolated",""
+12:01:15.000,60,"Good, Interpolated",""
+12:01:20.000,60,"UncertainDataSubNormal, Interpolated",""
+12:01:25.000,70,"Good, Interpolated",""
+12:01:30.000,90,"Good",""
+12:01:35.000,90,"UncertainDataSubNormal, Interpolated",""
+
+Aggregate,Interpolative
+
+Historian5
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,11.3043,"Good, Interpolated",""
+12:00:10.000,13.4783,"Good, Interpolated",""
+12:00:15.000,15.6522,"Good, Interpolated",""
+12:00:20.000,17.8261,"Good, Interpolated",""
+12:00:25.000,20,"Good",""
+12:00:30.000,13.6364,"Good, Interpolated",""
+12:00:35.000,22.7273,"Good, Interpolated",""
+12:00:40.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:45.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:50.000,40,"Good, Interpolated",""
+12:00:55.000,47,"Good, Interpolated",""
+12:01:00.000,42,"Good, Interpolated",""
+12:01:05.000,37,"Good, Interpolated",""
+12:01:10.000,32,"Good, Interpolated",""
+12:01:15.000,54,"UncertainDataSubNormal, Interpolated",""
+12:01:20.000,70,"UncertainDataSubNormal, Interpolated",""
+12:01:25.000,76.6667,"Good, Interpolated",""
+12:01:30.000,70,"Good",""
+12:01:35.000,70,"UncertainDataSubNormal, Interpolated",""
+
+Aggregate,Average
+
+Historian1
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,10,"Good, Calculated",""
+12:00:15.000,,"BadNoData",""
+12:00:20.000,20,"Good, Calculated",""
+12:00:25.000,,"BadNoData",""
+12:00:30.000,30,"Good, Calculated",""
+12:00:35.000,,"BadNoData",""
+12:00:40.000,,"BadNoData",""
+12:00:45.000,,"BadNoData",""
+12:00:50.000,50,"Good, Calculated",""
+12:00:55.000,,"BadNoData",""
+12:01:00.000,60,"Good, Calculated",""
+12:01:05.000,,"BadNoData",""
+12:01:10.000,,"BadNoData",""
+12:01:15.000,,"BadNoData",""
+12:01:20.000,80,"Good, Calculated",""
+12:01:25.000,,"BadNoData",""
+12:01:30.000,90,"Good, Calculated",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Average
+
+Historian2
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,,"BadNoData",""
+12:00:15.000,,"BadNoData",""
+12:00:20.000,,"BadNoData",""
+12:00:25.000,22.500,"Good, Calculated",""
+12:00:30.000,,"BadNoData",""
+12:00:35.000,30,"Good, Calculated",""
+12:00:40.000,,"BadNoData",""
+12:00:45.000,40,"Good, Calculated",""
+12:00:50.000,50,"Good, Calculated",""
+12:00:55.000,,"BadNoData",""
+12:01:00.000,,"BadNoData",""
+12:01:05.000,,"BadNoData",""
+12:01:10.000,60,"Good, Calculated",""
+12:01:15.000,,"BadNoData",""
+12:01:20.000,70,"Good, Calculated",""
+12:01:25.000,80,"Good, Calculated",""
+12:01:30.000,90,"Good, Calculated",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Average
+
+Historian3
+
+Processing Interval ,5000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,,"BadNoData",""
+12:00:15.000,,"BadNoData",""
+12:00:20.000,,"BadNoData",""
+12:00:25.000,22.500,"Good, Calculated",""
+12:00:30.000,,"BadNoData",""
+12:00:35.000,30,"Good, Calculated",""
+12:00:40.000,,"BadNoData",""
+12:00:45.000,40,"Good, Calculated",""
+12:00:50.000,50,"Good, Calculated",""
+12:00:55.000,,"BadNoData",""
+12:01:00.000,,"BadNoData",""
+12:01:05.000,,"BadNoData",""
+12:01:10.000,60,"Good, Calculated",""
+12:01:15.000,,"BadNoData",""
+12:01:20.000,70,"Good, Calculated",""
+12:01:25.000,80,"Good, Calculated",""
+12:01:30.000,90,"Good, Calculated",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Average
+
+Historian5
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,,"BadNoData",""
+12:00:15.000,,"BadNoData",""
+12:00:20.000,,"BadNoData",""
+12:00:25.000,15,"Good, Calculated",""
+12:00:30.000,,"BadNoData",""
+12:00:35.000,30,"Good, Calculated",""
+12:00:40.000,,"BadNoData",""
+12:00:45.000,30,"Good, Calculated",""
+12:00:50.000,50,"Good, Calculated",""
+12:00:55.000,,"BadNoData",""
+12:01:00.000,,"BadNoData",""
+12:01:05.000,,"BadNoData",""
+12:01:10.000,30,"Good, Calculated",""
+12:01:15.000,,"BadNoData",""
+12:01:20.000,70,"Good, Calculated",""
+12:01:25.000,80,"Good, Calculated",""
+12:01:30.000,70,"Good, Calculated",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage
+
+Historian1
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,12.500,"Good, Calculated",""
+12:00:15.000,17.500,"Good, Calculated",""
+12:00:20.000,22.500,"Good, Calculated",""
+12:00:25.000,27.500,"Good, Calculated",""
+12:00:30.000,32.500,"UncertainDataSubNormal, Calculated",""
+12:00:35.000,37.500,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,42.500,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,47.500,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,52.500,"Good, Calculated",""
+12:00:55.000,57.500,"Good, Calculated",""
+12:01:00.000,62.500,"UncertainDataSubNormal, Calculated",""
+12:01:05.000,67.500,"UncertainDataSubNormal, Calculated",""
+12:01:10.000,72.500,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,77.500,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,82.500,"Good, Calculated",""
+12:01:25.000,87.500,"Good, Calculated",""
+12:01:30.000,90,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage
+
+Historian2
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10.652,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,12.391,"Good, Calculated",""
+12:00:10.000,14.565,"Good, Calculated",""
+12:00:15.000,16.739,"Good, Calculated",""
+12:00:20.000,18.913,"Good, Calculated",""
+12:00:25.000,23.682,"Good, Calculated",""
+12:00:30.000,27.045,"Good, Calculated",""
+12:00:35.000,29.384,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,33.889,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,40,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,49.450,"Good, Calculated",""
+12:00:55.000,52.750,"Good, Calculated",""
+12:01:00.000,55.250,"Good, Calculated",""
+12:01:05.000,57.750,"Good, Calculated",""
+12:01:10.000,60.618,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,65,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,70.515,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,83.667,"Good, Calculated",""
+12:01:30.000,96.250,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage
+
+Historian3
+
+Processing Interval ,5000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10.652,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,12.391,"Good, Calculated",""
+12:00:10.000,14.565,"Good, Calculated",""
+12:00:15.000,16.739,"Good, Calculated",""
+12:00:20.000,18.913,"Good, Calculated",""
+12:00:25.000,23.682,"Good, Calculated",""
+12:00:30.000,27.045,"Good, Calculated",""
+12:00:35.000,29.384,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,33.889,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,40,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,49.450,"Good, Calculated",""
+12:00:55.000,52.750,"Good, Calculated",""
+12:01:00.000,55.250,"Good, Calculated",""
+12:01:05.000,57.750,"Good, Calculated",""
+12:01:10.000,60.618,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,65,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,70.515,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,83.667,"Good, Calculated",""
+12:01:30.000,90,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage
+
+Historian5
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10.6522,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,12.3913,"Good, Calculated",""
+12:00:10.000,14.5652,"Good, Calculated",""
+12:00:15.000,16.7391,"Good, Calculated",""
+12:00:20.000,18.9130,"Good, Calculated",""
+12:00:25.000,13.7273,"Good, Calculated",""
+12:00:30.000,18.1818,"Good, Calculated",""
+12:00:35.000,27.0909,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,32,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,47.1000,"Good, Calculated",""
+12:00:55.000,44.500,"Good, Calculated",""
+12:01:00.000,39.500,"Good, Calculated",""
+12:01:05.000,34.500,"Good, Calculated",""
+12:01:10.000,37.6000,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,66.8000,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,71.3333,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,75.6667,"Good, Calculated",""
+12:01:30.000,70,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage2
+
+Historian1
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,12.500,"Good, Calculated",""
+12:00:15.000,17.500,"Good, Calculated",""
+12:00:20.000,22.500,"Good, Calculated",""
+12:00:25.000,27.500,"Good, Calculated",""
+12:00:30.000,30,"Good, Calculated",""
+12:00:35.000,30,"Good, Calculated",""
+12:00:40.000,,"BadNoData",""
+12:00:45.000,,"BadNoData",""
+12:00:50.000,52.500,"Good, Calculated",""
+12:00:55.000,57.500,"Good, Calculated",""
+12:01:00.000,62.500,"Good, Calculated",""
+12:01:05.000,67.500,"Good, Calculated",""
+12:01:10.000,72.500,"Good, Calculated",""
+12:01:15.000,77.500,"Good, Calculated",""
+12:01:20.000,82.500,"Good, Calculated",""
+12:01:25.000,87.500,"Good, Calculated",""
+12:01:30.000,90,"Good, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage2
+
+Historian2
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10.652,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,12.391,"Good, Calculated",""
+12:00:10.000,14.565,"Good, Calculated",""
+12:00:15.000,16.739,"Good, Calculated",""
+12:00:20.000,18.913,"Good, Calculated",""
+12:00:25.000,23.682,"Good, Calculated",""
+12:00:30.000,27.045,"Good, Calculated",""
+12:00:35.000,29.273,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,,"Bad, Calculated",""
+12:00:45.000,42.500,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,49.450,"Good, Calculated",""
+12:00:55.000,52.750,"Good, Calculated",""
+12:01:00.000,55.250,"Good, Calculated",""
+12:01:05.000,57.750,"Good, Calculated",""
+12:01:10.000,59.800,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,,"Bad, Calculated",""
+12:01:20.000,73.333,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,83.667,"Good, Calculated",""
+12:01:30.000,,"Bad, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage2
+
+Historian3
+
+Processing Interval ,5000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:05.000,10,"Good, Calculated",""
+12:00:10.000,10,"Good, Calculated",""
+12:00:15.000,10,"Good, Calculated",""
+12:00:20.000,10,"Good, Calculated",""
+12:00:25.000,22,"Good, Calculated",""
+12:00:30.000,25,"Good, Calculated",""
+12:00:35.000,26,"Good, Calculated",""
+12:00:40.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,40,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,46,"Good, Calculated",""
+12:00:55.000,50,"Good, Calculated",""
+12:01:00.000,50,"Good, Calculated",""
+12:01:05.000,50,"Good, Calculated",""
+12:01:10.000,56,"Good, Calculated",""
+12:01:15.000,60,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,70,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,78,"Good, Calculated",""
+12:01:30.000,90,"Good, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,TimeAverage2
+
+Historian5
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10.6522,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,12.3913,"Good, Calculated",""
+12:00:10.000,14.5652,"Good, Calculated",""
+12:00:15.000,16.7391,"Good, Calculated",""
+12:00:20.000,18.9130,"Good, Calculated",""
+12:00:25.000,13.7273,"Good, Calculated",""
+12:00:30.000,18.1818,"Good, Calculated",""
+12:00:35.000,27.0909,"Good, Calculated",""
+12:00:40.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,35,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,47.1000,"Good, Calculated",""
+12:00:55.000,44.500,"Good, Calculated",""
+12:01:00.000,39.500,"Good, Calculated",""
+12:01:05.000,34.500,"Good, Calculated",""
+12:01:10.000,37.6000,"Good, Calculated",""
+12:01:15.000,66.8000,"Good, Calculated",""
+12:01:20.000,71.3333,"Good, Calculated",""
+12:01:25.000,75.6667,"Good, Calculated",""
+12:01:30.000,70,"Good, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total
+
+Historian1
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,62.500,"Good, Calculated",""
+12:00:15.000,87.500,"Good, Calculated",""
+12:00:20.000,112.500,"Good, Calculated",""
+12:00:25.000,137.500,"Good, Calculated",""
+12:00:30.000,162.500,"UncertainDataSubNormal, Calculated",""
+12:00:35.000,187.500,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,212.500,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,237.500,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,262.500,"Good, Calculated",""
+12:00:55.000,287.500,"Good, Calculated",""
+12:01:00.000,312.500,"UncertainDataSubNormal, Calculated",""
+12:01:05.000,337.500,"UncertainDataSubNormal, Calculated",""
+12:01:10.000,362.500,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,387.500,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,412.500,"Good, Calculated",""
+12:01:25.000,437.500,"Good, Calculated",""
+12:01:30.000,450,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total
+
+Historian2
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,31.957,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,61.957,"Good, Calculated",""
+12:00:10.000,72.826,"Good, Calculated",""
+12:00:15.000,83.696,"Good, Calculated",""
+12:00:20.000,94.565,"Good, Calculated",""
+12:00:25.000,118.409,"Good, Calculated",""
+12:00:30.000,135.227,"Good, Calculated",""
+12:00:35.000,146.919,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,169.444,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,200,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,247.250,"Good, Calculated",""
+12:00:55.000,263.750,"Good, Calculated",""
+12:01:00.000,276.250,"Good, Calculated",""
+12:01:05.000,288.750,"Good, Calculated",""
+12:01:10.000,303.091,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,325,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,352.576,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,418.333,"Good, Calculated",""
+12:01:30.000,481.250,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total
+
+Historian3
+
+Processing Interval ,5000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,30,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,50,"Good, Calculated",""
+12:00:10.000,50,"Good, Calculated",""
+12:00:15.000,50,"Good, Calculated",""
+12:00:20.000,50,"Good, Calculated",""
+12:00:25.000,110,"Good, Calculated",""
+12:00:30.000,125,"Good, Calculated",""
+12:00:35.000,130,"Good, Calculated",""
+12:00:40.000,150,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,170,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,230,"Good, Calculated",""
+12:00:55.000,250,"Good, Calculated",""
+12:01:00.000,250,"Good, Calculated",""
+12:01:05.000,250,"Good, Calculated",""
+12:01:10.000,280,"Good, Calculated",""
+12:01:15.000,300,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,320,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,390,"Good, Calculated",""
+12:01:30.000,450,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total
+
+Historian5
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,31.9565,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,61.9565,"Good, Calculated",""
+12:00:10.000,72.8261,"Good, Calculated",""
+12:00:15.000,83.6957,"Good, Calculated",""
+12:00:20.000,94.5652,"Good, Calculated",""
+12:00:25.000,68.6364,"Good, Calculated",""
+12:00:30.000,90.9091,"Good, Calculated",""
+12:00:35.000,135.4545,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,150,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,160,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,235.500,"Good, Calculated",""
+12:00:55.000,222.500,"Good, Calculated",""
+12:01:00.000,197.500,"Good, Calculated",""
+12:01:05.000,172.500,"Good, Calculated",""
+12:01:10.000,188,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,334,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,356.6667,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,378.3333,"Good, Calculated",""
+12:01:30.000,350,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total2
+
+Historian1
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData",""
+12:00:05.000,,"BadNoData",""
+12:00:10.000,62.500,"Good, Calculated",""
+12:00:15.000,87.500,"Good, Calculated",""
+12:00:20.000,112.500,"Good, Calculated",""
+12:00:25.000,137.500,"Good, Calculated",""
+12:00:30.000,150,"Good, Calculated",""
+12:00:35.000,150,"Good, Calculated",""
+12:00:40.000,,"BadNoData",""
+12:00:45.000,,"BadNoData",""
+12:00:50.000,262.500,"Good, Calculated",""
+12:00:55.000,287.500,"Good, Calculated",""
+12:01:00.000,312.500,"Good, Calculated",""
+12:01:05.000,337.500,"Good, Calculated",""
+12:01:10.000,362.500,"Good, Calculated",""
+12:01:15.000,387.500,"Good, Calculated",""
+12:01:20.000,412.500,"Good, Calculated",""
+12:01:25.000,437.500,"Good, Calculated",""
+12:01:30.000,0.090,"Good, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total2
+
+Historian2
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,31.957,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,61.957,"Good, Calculated",""
+12:00:10.000,72.826,"Good, Calculated",""
+12:00:15.000,83.696,"Good, Calculated",""
+12:00:20.000,94.565,"Good, Calculated",""
+12:00:25.000,118.409,"Good, Calculated",""
+12:00:30.000,135.227,"Good, Calculated",""
+12:00:35.000,146.364,"UncertainDataSubNormal, Calculated",""
+12:00:40.000,,"Bad, Calculated",""
+12:00:45.000,85,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,247.250,"Good, Calculated",""
+12:00:55.000,263.750,"Good, Calculated",""
+12:01:00.000,276.250,"Good, Calculated",""
+12:01:05.000,288.750,"Good, Calculated",""
+12:01:10.000,299,"UncertainDataSubNormal, Calculated",""
+12:01:15.000,,"Bad, Calculated",""
+12:01:20.000,146.667,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,418.333,"Good, Calculated",""
+12:01:30.000,,"Bad, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total2
+
+Historian3
+
+Processing Interval ,5000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,30,"Good, Calculated, Partial",""
+12:00:05.000,50,"Good, Calculated",""
+12:00:10.000,50,"Good, Calculated",""
+12:00:15.000,50,"Good, Calculated",""
+12:00:20.000,50,"Good, Calculated",""
+12:00:25.000,110,"Good, Calculated",""
+12:00:30.000,125,"Good, Calculated",""
+12:00:35.000,130,"Good, Calculated",""
+12:00:40.000,60,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,80,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,230,"Good, Calculated",""
+12:00:55.000,250,"Good, Calculated",""
+12:01:00.000,250,"Good, Calculated",""
+12:01:05.000,250,"Good, Calculated",""
+12:01:10.000,280,"Good, Calculated",""
+12:01:15.000,120,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,140,"UncertainDataSubNormal, Calculated",""
+12:01:25.000,390,"Good, Calculated",""
+12:01:30.000,0.090,"Good, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Total2
+
+Historian5
+
+Processing Interval ,5000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,31.9565,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:05.000,61.9565,"Good, Calculated",""
+12:00:10.000,72.8261,"Good, Calculated",""
+12:00:15.000,83.6957,"Good, Calculated",""
+12:00:20.000,94.5652,"Good, Calculated",""
+12:00:25.000,68.6364,"Good, Calculated",""
+12:00:30.000,90.9091,"Good, Calculated",""
+12:00:35.000,135.4545,"Good, Calculated",""
+12:00:40.000,60,"UncertainDataSubNormal, Calculated",""
+12:00:45.000,70,"UncertainDataSubNormal, Calculated",""
+12:00:50.000,235.500,"Good, Calculated",""
+12:00:55.000,222.500,"Good, Calculated",""
+12:01:00.000,197.500,"Good, Calculated",""
+12:01:05.000,172.500,"Good, Calculated",""
+12:01:10.000,188,"Good, Calculated",""
+12:01:15.000,334,"Good, Calculated",""
+12:01:20.000,356.6667,"Good, Calculated",""
+12:01:25.000,378.3333,"Good, Calculated",""
+12:01:30.000,0.07,"Good, Calculated, Partial",""
+12:01:35.000,,"BadNoData",""
+
+Aggregate,Minimum
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,20,"Good, Calculated",""
+12:00:32.000,,"BadNoData",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,20,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,60,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,70,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,20,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,60,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,70,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,10,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,30,"Good",""
+12:01:04.000,30,"Good, Calculated",""
+12:01:20.000,70,"Good, Calculated, MultipleValues, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,30,"Good, Calculated",""
+12:00:32.000,,"BadNoData",""
+12:00:48.000,60,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,90,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,25,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,60,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,90,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,25,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,60,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,90,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,20,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,30,"Good, Calculated",""
+12:01:20.000,80,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:10.000,10,"Good, Partial",""
+12:00:20.000,20,"Good",""
+12:00:32.000,,"BadNoData",""
+12:00:50.000,50,"Good",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal",""
+12:00:48.000,40,"Good",""
+12:01:12.000,60,"UncertainDataSubNormal",""
+12:01:23.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal",""
+12:00:48.000,40,"Good",""
+12:01:12.000,60,"UncertainDataSubNormal",""
+12:01:23.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,10,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal",""
+12:00:48.000,30,"Good",""
+12:01:12.000,30,"Good",""
+12:01:23.000,70,"Good, MultipleValues, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:10.000,10,"Good, Partial",""
+12:00:30.000,30,"Good",""
+12:00:32.000,,"BadNoData",""
+12:01:00.000,60,"Good",""
+12:01:04.000,,"BadNoData",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,25,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal",""
+12:00:52.000,50,"Good",""
+12:01:12.000,60,"UncertainDataSubNormal",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,25,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal",""
+12:00:52.000,50,"Good",""
+12:01:12.000,60,"UncertainDataSubNormal",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal",""
+12:00:52.000,50,"Good",""
+12:01:12.000,30,"Good",""
+12:01:26.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,10,"Good, Calculated",""
+12:00:32.000,,"BadNoData",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,5,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,20,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,5,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,20,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,10,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,20,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum2
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,16,"Good, Interpolated",""
+12:00:32.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,50,"UncertainDataSubNormal, Calculated",""
+12:01:04.000,64,"Good, Interpolated",""
+12:01:20.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum2
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,16.0870,"Good, Interpolated",""
+12:00:32.000,26.818,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,56,"UncertainDataSubNormal, Interpolated",""
+12:01:20.000,70,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum2
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,10,"Good, Interpolated",""
+12:00:32.000,25,"Good, Interpolated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,50,"Good, Interpolated",""
+12:01:20.000,70,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Minimum2
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,10,"Good, Calculated",""
+12:00:32.000,17.2727,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,30,"Good",""
+12:01:04.000,30,"Good, Calculated",""
+12:01:20.000,70,"Good, Interpolated, MultipleValues, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum2
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,16,"UncertainDataSubNormal, Interpolated, Partial",""
+12:00:16.000,30,"Good, Calculated, MultipleValues",""
+12:00:32.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,64,"UncertainDataSubNormal, Interpolated",""
+12:01:04.000,80,"Good, Calculated",""
+12:01:20.000,90,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum2
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,16.0870,"UncertainDataSubNormal, Interpolated, Partial",""
+12:00:16.000,26.818,"Good, Interpolated",""
+12:00:32.000,40,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,56,"Good, Interpolated",""
+12:01:04.000,60,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,90,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum2
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,25,"Good, Calculated",""
+12:00:32.000,30,"Good, Calculated",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,60,"Good, Calculated",""
+12:01:20.000,90,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Maximum2
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,16.0870,"UncertainDataSubNormal, Interpolated, Partial",""
+12:00:16.000,20,"Good, Calculated",""
+12:00:32.000,30,"UncertainDataSubNormal, Calculated, MultipleValues",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,70,"Good, Calculated, MultipleValues",""
+12:01:20.000,80,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime2
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:10.000,10,"UncertainDataSubNormal, Partial",""
+12:00:16.000,16,"Good, Interpolated",""
+12:00:32.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:50.000,50,"UncertainDataSubNormal",""
+12:01:04.000,64,"Good, Interpolated",""
+12:01:20.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime2
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"UncertainDataSubNormal, Partial",""
+12:00:16.000,16.087,"Good, Interpolated",""
+12:00:32.000,26.818,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,56,"UncertainDataSubNormal, Interpolated",""
+12:01:23.000,70,"UncertainDataSubNormal, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime2
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:16.000,10,"Good, Interpolated",""
+12:00:32.000,25,"Good, Interpolated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,50,"Good, Interpolated",""
+12:01:23.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MinimumActualTime2
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"UncertainDataSubNormal, Partial",""
+12:00:28.000,10,"Good",""
+12:00:32.000,17.2727,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,30,"Good",""
+12:01:12.000,30,"Good",""
+12:01:20.000,70,"Good, Interpolated, MultipleValues, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime2
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:15.999,16,"UncertainDataSubNormal, Interpolated, Partial",""
+12:00:30.000,30,"Good, MultipleValues",""
+12:00:32.000,30,"UncertainDataSubNormal, Interpolated",""
+12:01:03.999,64,"UncertainDataSubNormal, Interpolated",""
+12:01:19.999,80,"Good, Interpolated",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime2
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:15.999,16.087,"UncertainDataSubNormal, Interpolated, Partial",""
+12:00:31.999,26.818,"Good, Interpolated",""
+12:00:47.999,40,"UncertainDataSubNormal, Interpolated",""
+12:01:03.999,56,"Good, Interpolated",""
+12:01:12.000,60,"UncertainDataSubNormal",""
+12:01:30.000,90,"UncertainDataSubNormal, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime2
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,25,"Good",""
+12:00:39.000,30,"Good",""
+12:00:52.000,50,"Good",""
+12:01:12.000,60,"Good",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,MaximumActualTime2
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:15.999,16.0870,"UncertainDataSubNormal, Interpolated, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"UncertainDataSubNormal, MultipleValues",""
+12:00:52.000,50,"Good",""
+12:01:17.000,70,"Good, MultipleValues",""
+12:01:26.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range2
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,6,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,14,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,14,"UncertainDataSubNormal, Calculated",""
+12:01:04.000,16,"Good, Calculated",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range2
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,6.087,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,10.731,"Good, Calculated",""
+12:00:32.000,13.182,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,16,"Good, Calculated",""
+12:01:04.000,4,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,20,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range2
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,15,"Good, Calculated",""
+12:00:32.000,5,"Good, Calculated",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,10,"Good, Calculated",""
+12:01:20.000,20,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Range2
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,6.0870,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,10,"Good, Calculated",""
+12:00:32.000,12.7273,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,20,"Good, Calculated",""
+12:01:04.000,40,"Good, Calculated",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Count
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,,"Bad",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,2,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Count
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Count
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"Good, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Count
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Count
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,AnnotationCount
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"Good, Calculated",""
+12:01:20.000,2,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,AnnotationCount
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,2,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,2,"Good, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,AnnotationCount
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,2,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,2,"Good, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,AnnotationCount
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,2,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,2,"Good, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,AnnotationCount
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,2,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,2,"Good, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateZero
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateZero
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,0,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateZero
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,0,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateZero
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,3000,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,12000,"Good, Calculated",""
+12:01:04.000,13000,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,4000,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateZero
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateNonZero
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,6000,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,14000,"UncertainDataSubNormal, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,10001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateNonZero
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,7001,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateNonZero
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"Good, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"Good, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"Good, Calculated",""
+12:01:20.000,7001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateNonZero
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,13000,"Good, Calculated",""
+12:00:32.000,10000,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,4000,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,3001,"UncertainDataSubNormal, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationInStateNonZero
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"UncertainDataSubNormal, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"Good, Calculated",""
+12:01:20.000,7001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,NumberOfTransitions
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,,"Bad",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,2,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,NumberOfTransitions
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,NumberOfTransitions
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"Good, Calculated",""
+12:00:48.000,2,"Good, Calculated",""
+12:01:04.000,1,"Good, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,NumberOfTransitions
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,1,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,3,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,NumberOfTransitions
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,1,"Good, Calculated, Partial",""
+12:00:16.000,2,"Good, Calculated",""
+12:00:32.000,1,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,1,"Good, Calculated",""
+12:01:04.000,2,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,2,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Start
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:10.000,10,"Good, Partial",""
+12:00:20.000,20,"Good",""
+12:00:40.000,,"Bad",""
+12:00:50.000,50,"Good",""
+12:01:10.000,70,"Uncertain",""
+12:01:20.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Start
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"Good",""
+12:00:48.000,40,"Good",""
+12:01:12.000,60,"Good",""
+12:01:23.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Start
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"Good",""
+12:00:48.000,40,"Good",""
+12:01:12.000,60,"Good",""
+12:01:23.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Start
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:25.000,20,"Good",""
+12:00:39.000,30,"Good",""
+12:00:48.000,30,"Good",""
+12:01:12.000,30,"Good",""
+12:01:23.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,End
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:10.000,10,"Good, Partial",""
+12:00:30.000,30,"Good",""
+12:00:40.000,,"Bad",""
+12:01:00.000,60,"Good",""
+12:01:10.000,70,"Uncertain",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,End
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,25,"Good",""
+12:00:42.000,,"Bad",""
+12:00:52.000,50,"Good",""
+12:01:17.000,70,"Uncertain",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,End
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,25,"Good",""
+12:00:42.000,,"Bad",""
+12:00:52.000,50,"Good",""
+12:01:17.000,70,"Uncertain",""
+12:01:30.000,90,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,End
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:02.000,10,"Good, Partial",""
+12:00:28.000,10,"Good",""
+12:00:42.000,,"Bad",""
+12:00:52.000,50,"Good",""
+12:01:17.000,70,"Uncertain",""
+12:01:30.000,70,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Delta
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,10,"Good, Calculated",""
+12:00:32.000,,"BadNoData",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Delta
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,5,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,20,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Delta
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,5,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,20,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,Delta
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:16.000,-10,"Good, Calculated",""
+12:00:32.000,0,"UncertainDataSubNormal, Calculated",""
+12:00:48.000,20,"Good, Calculated",""
+12:01:04.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,StartBound
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,16,"Good, Interpolated",""
+12:00:32.000,30,"UncertainDataSubNormal, Interpolated",""
+12:00:48.000,,"BadNoData",""
+12:01:04.000,64,"UncertainDataSubNormal, Interpolated",""
+12:01:20.000,80,"Good, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,StartBound
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,16.087,"Good, Interpolated",""
+12:00:32.000,26.818,"Good, Interpolated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,56,"Good, Interpolated",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,StartBound
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,10,"Good, Interpolated",""
+12:00:32.000,25,"Good, Interpolated",""
+12:00:48.000,40,"Good",""
+12:01:04.000,50,"Good, Interpolated",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,StartBound
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,16.0870,"Good, Interpolated",""
+12:00:32.000,17.2727,"Good, Interpolated",""
+12:00:48.000,30,"Good",""
+12:01:04.000,38,"Good, Interpolated",""
+12:01:20.000,70,"UncertainDataSubNormal, Interpolated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,EndBound
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,16,"Good, Calculated, Partial",""
+12:00:16.000,30,"UncertainDataSubNormal, Calculated",""
+12:00:32.000,,"BadNoData",""
+12:00:48.000,64,"UncertainDataSubNormal, Calculated",""
+12:01:04.000,80,"Good, Calculated",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,EndBound
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,16.087,"Good, Calculated, Partial",""
+12:00:16.000,26.818,"Good, Calculated",""
+12:00:32.000,40,"Good, Calculated",""
+12:00:48.000,56,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,EndBound
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10,"Good, Calculated, Partial",""
+12:00:16.000,25,"Good, Calculated",""
+12:00:32.000,40,"Good, Calculated",""
+12:00:48.000,50,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,EndBound
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,16.0870,"Good, Calculated, Partial",""
+12:00:16.000,17.2727,"Good, Calculated",""
+12:00:32.000,30,"Good, Calculated",""
+12:00:48.000,38,"Good, Calculated",""
+12:01:04.000,70,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DeltaBounds
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,14,"UncertainDataSubNormal, Calculated",""
+12:00:32.000,,"BadNoData",""
+12:00:48.000,,"BadNoData",""
+12:01:04.000,16,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DeltaBounds
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,10.731,"Good, Calculated",""
+12:00:32.000,13.182,"Good, Calculated",""
+12:00:48.000,16,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DeltaBounds
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,15,"Good, Calculated",""
+12:00:32.000,15,"Good, Calculated",""
+12:00:48.000,10,"Good, Calculated",""
+12:01:04.000,,"BadNoData",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DeltaBounds
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,,"BadNoData, Partial",""
+12:00:16.000,1.1858,"Good, Calculated",""
+12:00:32.000,12.7273,"Good, Calculated",""
+12:00:48.000,8,"Good, Calculated",""
+12:01:04.000,32,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,,"BadNoData, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationGood
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,6000,"Good, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,0,"Good, Calculated",""
+12:00:48.000,14000,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,10001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationGood
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"Good, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"Good, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"Good, Calculated",""
+12:01:20.000,7001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationGood
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"Good, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"Good, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"Good, Calculated",""
+12:01:20.000,7001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationGood
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"Good, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"Good, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"Good, Calculated",""
+12:01:20.000,7001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationGood
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,14000,"Good, Calculated, Partial",""
+12:00:16.000,16000,"Good, Calculated",""
+12:00:32.000,10000,"Good, Calculated",""
+12:00:48.000,16000,"Good, Calculated",""
+12:01:04.000,13000,"Good, Calculated",""
+12:01:20.000,7001,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationBad
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,10000,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,8000,"Good, Calculated",""
+12:00:48.000,2000,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationBad
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,2000,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,6000,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,3000,"Good, Calculated",""
+12:01:20.000,3000,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationBad
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,2000,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,6000,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,3000,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationBad
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,2000,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,6000,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,3000,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,DurationBad
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,2000,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,6000,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentGood
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,37.500,"Good, Calculated, Partial",""
+12:00:16.000,100,"Good, Calculated",""
+12:00:32.000,0,"Good, Calculated",""
+12:00:48.000,87.500,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,100,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentGood
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,87.500,"Good, Calculated, Partial",""
+12:00:16.000,100,"Good, Calculated",""
+12:00:32.000,62.500,"Good, Calculated",""
+12:00:48.000,100,"Good, Calculated",""
+12:01:04.000,81.2500,"Good, Calculated",""
+12:01:20.000,70.003,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentGood
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,87.500,"Good, Calculated, Partial",""
+12:00:16.000,100,"Good, Calculated",""
+12:00:32.000,62.500,"Good, Calculated",""
+12:00:48.000,100,"Good, Calculated",""
+12:01:04.000,81.250,"Good, Calculated",""
+12:01:20.000,70.003,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentGood
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,87.500,"Good, Calculated, Partial",""
+12:00:16.000,100,"Good, Calculated",""
+12:00:32.000,62.500,"Good, Calculated",""
+12:00:48.000,100,"Good, Calculated",""
+12:01:04.000,81.2500,"Good, Calculated",""
+12:01:20.000,70.003,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentGood
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,87.500,"Good, Calculated, Partial",""
+12:00:16.000,100,"Good, Calculated",""
+12:00:32.000,62.500,"Good, Calculated",""
+12:00:48.000,100,"Good, Calculated",""
+12:01:04.000,81.2500,"Good, Calculated",""
+12:01:20.000,70.003,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentBad
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,62.500,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,50,"Good, Calculated",""
+12:00:48.000,12.500,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentBad
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,12.500,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,37.500,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,18.7500,"Good, Calculated",""
+12:01:20.000,29.997,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentBad
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,12.500,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,37.500,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,18.7500,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentBad
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,12.500,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,37.500,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,18.7500,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,PercentBad
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,12.500,"Good, Calculated, Partial",""
+12:00:16.000,0,"Good, Calculated",""
+12:00:32.000,37.500,"Good, Calculated",""
+12:00:48.000,0,"Good, Calculated",""
+12:01:04.000,0,"Good, Calculated",""
+12:01:20.000,0,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,Good,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated",""
+12:01:20.000,Good,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,Good,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated",""
+12:01:20.000,Good,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,Good,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated",""
+12:01:20.000,Good,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,Good,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated",""
+12:01:20.000,Good,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,Good,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated",""
+12:01:20.000,Good,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality2
+
+Historian1
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,BadNoData,"Good, Calculated, Partial",""
+12:00:16.000,UncertainDataSubNormal,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated, MultipleValues",""
+12:00:48.000,BadNoData,"Good, Calculated",""
+12:01:04.000,UncertainDataSubNormal,"Good, Calculated, MultipleValues",""
+12:01:20.000,BadNoData,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality2
+
+Historian2
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,BadNoData,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,BadNoData,"Good, Calculated",""
+12:01:20.000,BadNoData,"Good, Calculated, Partial, MultipleValues",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality2
+
+Historian3
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,BadNoData,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated, MultipleValues",""
+12:01:20.000,BadNoData,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality2
+
+Historian4
+
+Processing Interval ,16000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,BadNoData,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated, MultipleValues",""
+12:01:20.000,BadNoData,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,WorstQuality2
+
+Historian5
+
+Processing Interval ,16000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,BadNoData,"Good, Calculated, Partial",""
+12:00:16.000,Good,"Good, Calculated",""
+12:00:32.000,Bad,"Good, Calculated",""
+12:00:48.000,Good,"Good, Calculated",""
+12:01:04.000,Uncertain,"Good, Calculated, MultipleValues",""
+12:01:20.000,BadNoData,"Good, Calculated, Partial",""
+12:01:36.000,,"BadNoData",""
+
+Aggregate,StandardDeviationPopulation
+
+Historian1
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,5,"Good, Calculated",""
+12:00:40.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,5,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationPopulation
+
+Historian2
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,4.082,"Good, Calculated",""
+12:00:40.000,5,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,8.165,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationPopulation
+
+Historian3
+
+Processing Interval ,20000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,4.082,"Good, Calculated",""
+12:00:40.000,5,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,8.165,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationPopulation
+
+Historian5
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,8.165,"Good, Calculated",""
+12:00:40.000,10,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,4.714,"Good, Calculated, Partial",""
+
+Aggregate,VariancePopulation
+
+Historian1
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,25,"Good, Calculated",""
+12:00:40.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,25,"Good, Calculated, Partial",""
+
+Aggregate,VariancePopulation
+
+Historian2
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,16.667,"Good, Calculated",""
+12:00:40.000,25,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,66.667,"Good, Calculated, Partial",""
+
+Aggregate,VariancePopulation
+
+Historian3
+
+Processing Interval ,20000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,16.667,"Good, Calculated",""
+12:00:40.000,25,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,66.667,"Good, Calculated, Partial",""
+
+Aggregate,VariancePopulation
+
+Historian5
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,66.667,"Good, Calculated",""
+12:00:40.000,100,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,22.222,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationSample
+
+Historian1
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,7.071,"Good, Calculated",""
+12:00:40.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,7.071,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationSample
+
+Historian2
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,5,"Good, Calculated",""
+12:00:40.000,7.071,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationSample
+
+Historian3
+
+Processing Interval ,20000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,5,"Good, Calculated",""
+12:00:40.000,7.071,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,10,"Good, Calculated, Partial",""
+
+Aggregate,StandardDeviationSample
+
+Historian5
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,10,"Good, Calculated",""
+12:00:40.000,14.142,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,5.7735,"Good, Calculated, Partial",""
+
+Aggregate,VarianceSample
+
+Historian1
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,50,"Good, Calculated",""
+12:00:40.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,50,"Good, Calculated, Partial",""
+
+Aggregate,VarianceSample
+
+Historian2
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,true
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,true
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,25,"Good, Calculated",""
+12:00:40.000,50,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,100,"Good, Calculated, Partial",""
+
+Aggregate,VarianceSample
+
+Historian3
+
+Processing Interval ,20000
+Stepped ,true
+Treat Uncertain as Bad ,true
+Percent Bad ,50
+Percent Good ,50
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,25,"Good, Calculated",""
+12:00:40.000,50,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,100,"Good, Calculated, Partial",""
+
+Aggregate,VarianceSample
+
+Historian5
+
+Processing Interval ,20000
+Stepped ,false
+Treat Uncertain as Bad ,false
+Percent Bad ,100
+Percent Good ,100
+Use Sloped Extrapolation ,false
+
+Timestamp,Value,StatusCode,Notes
+12:00:00.000,0,"Good, Calculated, Partial",""
+12:00:20.000,100,"Good, Calculated",""
+12:00:40.000,200,"UncertainDataSubNormal, Calculated",""
+12:01:00.000,0,"UncertainDataSubNormal, Calculated",""
+12:01:20.000,33.333,"Good, Calculated, Partial",""
+End of Processed Data Tables
+Test Aggregates Complete
