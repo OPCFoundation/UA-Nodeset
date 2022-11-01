@@ -1,0 +1,9 @@
+Id,Name,Link,ConformanceUnits
+1002,SpatialObjectType,"https://reference.opcfoundation.org/RSL/v100/docs/6.1.1","RSL Base;RSL SpatialObject Identifier;RSL SpatialObject AttachPoints;RSL SpatialObject InternalFrames;RSL SpatialObject AlternativeFrames;"
+1003,SpatialObjectsListType,"https://reference.opcfoundation.org/RSL/v100/docs/6.2.1","RSL Base;"
+2002,RelativeValueType,"https://reference.opcfoundation.org/RSL/v100/docs/7.1",""
+2003,SpatialLocationType,"https://reference.opcfoundation.org/RSL/v100/docs/7.2",""
+2004,CartesianFrameAngleOrientationType,"https://reference.opcfoundation.org/RSL/v100/docs/7.3","CartesianFrameAngleOrientationType;"
+2005,RpyOrientationType,"https://reference.opcfoundation.org/RSL/v100/docs/7.4","CartesianFrameAngleOrientationType;"
+5001,RelativeSpatialLocations,"https://reference.opcfoundation.org/RSL/v100/docs/8.1","RSL Base;"
+5005,http://opcfoundation.org/UA/RSL/,"https://reference.opcfoundation.org/RSL/v100/docs/10.1",""
