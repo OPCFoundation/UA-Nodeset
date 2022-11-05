@@ -24,7 +24,7 @@ Id,Name,Link,ConformanceUnits
 476,NumberOfUsagesIndicationType,"https://reference.opcfoundation.org/DI/v104/docs/10.6.2","DI LT Nb Of Usages Indication;"
 477,LengthIndicationType,"https://reference.opcfoundation.org/DI/v104/docs/10.7.2","DI LT Length Indication;"
 478,DiameterIndicationType,"https://reference.opcfoundation.org/DI/v104/docs/10.8.2","DI LT Diameter Indication;"
-479,SubstanceVolumeIndicationType,"https://reference.opcfoundation.org/DI/v104/docs/10.9.2","DI LT Substance Indication;"
+479,SubstanceVolumeIndicationType,"https://reference.opcfoundation.org/DI/v104/docs/10.9.2","DI LT Substance Volume Indication;"
 480,IOperationCounterType,"https://reference.opcfoundation.org/DI/v104/docs/4.5.5","DI OperationCounter Interface;"
 1001,TopologyElementType,"https://reference.opcfoundation.org/DI/v104/docs/4.3","DI Information Model;"
 1002,DeviceType,"https://reference.opcfoundation.org/DI/v104/docs/4.7","DI DeviceType;"

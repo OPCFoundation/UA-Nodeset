@@ -1874,7 +1874,7 @@
   <UAObjectType NodeId="ns=1;i=479" BrowseName="1:SubstanceVolumeIndicationType" IsAbstract="true">
     <DisplayName>SubstanceVolumeIndicationType</DisplayName>
     <Description>Indicates the volume of a substance, for example of a liquid.</Description>
-    <Category>DI LT Substance Indication</Category>
+    <Category>DI LT Substance Volume Indication</Category>
     <Documentation>https://reference.opcfoundation.org/DI/v104/docs/10.9.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=473</Reference>
