@@ -1,0 +1,65 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/FX/CM/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/FX/CM/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationFlowQosDataType">
+        <opc:Field TypeName="opc:CharArray" Name="QosCategory"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfTransmitQos"/>
+        <opc:Field LengthField="NoOfTransmitQos" TypeName="ua:ExtensionObject" Name="TransmitQos"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfReceiveQos"/>
+        <opc:Field LengthField="NoOfReceiveQos" TypeName="ua:ExtensionObject" Name="ReceiveQos"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NodeIdTranslationDataType">
+        <opc:Field TypeName="ua:NodeId" Name="NodePlaceholder"/>
+        <opc:Field TypeName="tns:PortableNodeIdentifier" Name="PortableNode"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableKeyValuePair">
+        <opc:Field TypeName="ua:PortableQualifiedName" Name="Key"/>
+        <opc:Field TypeName="ua:Variant" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableNodeIdentifierValuePair">
+        <opc:Field TypeName="tns:PortableNodeIdentifier" Name="Key"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfArrayIndex"/>
+        <opc:Field LengthField="NoOfArrayIndex" TypeName="opc:UInt32" Name="ArrayIndex"/>
+        <opc:Field TypeName="ua:Variant" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableRelativePath">
+        <opc:Field TypeName="opc:Int32" Name="NoOfElements"/>
+        <opc:Field LengthField="NoOfElements" TypeName="tns:PortableRelativePathElement" Name="Elements"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableRelativePathElement">
+        <opc:Field TypeName="ua:PortableNodeId" Name="ReferenceTypeId"/>
+        <opc:Field TypeName="opc:Boolean" Name="IsInverse"/>
+        <opc:Field TypeName="opc:Boolean" Name="IncludeSubtypes"/>
+        <opc:Field TypeName="ua:PortableQualifiedName" Name="TargetName"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SecurityKeyServerAddressDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Address"/>
+        <opc:Field TypeName="opc:CharArray" Name="SecurityPolicyUri"/>
+        <opc:Field TypeName="opc:CharArray" Name="ServerUri"/>
+        <opc:Field TypeName="opc:Boolean" Name="UsePushModel"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ServerAddressDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Address"/>
+        <opc:Field TypeName="ua:MessageSecurityMode" Name="SecurityMode"/>
+        <opc:Field TypeName="opc:CharArray" Name="SecurityPolicyUri"/>
+        <opc:Field TypeName="opc:CharArray" Name="ServerUri"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="PortableNodeIdentifier">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="ua:PortableNodeId" SwitchValue="1" Name="Node"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:CharArray" SwitchValue="2" Name="Alias"/>
+        <opc:Field SwitchField="SwitchField" TypeName="tns:PortableRelativePath" SwitchValue="3" Name="IdentifierBrowsePath"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="FxEditEnum">
+        <opc:EnumeratedValue Name="StartEditing" Value="0"/>
+        <opc:EnumeratedValue Name="CommitUpdates" Value="1"/>
+        <opc:EnumeratedValue Name="DiscardUpdates" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FxProcessEnum">
+        <opc:EnumeratedValue Name="ActionEstablishConnectionsEnabled" Value="0"/>
+        <opc:EnumeratedValue Name="ActionEstablishConnectionsDisabled" Value="1"/>
+        <opc:EnumeratedValue Name="ActionEstablishConnections" Value="2"/>
+        <opc:EnumeratedValue Name="ActionRemoveConnections" Value="3"/>
+        <opc:EnumeratedValue Name="ActionEnableConnections" Value="4"/>
+        <opc:EnumeratedValue Name="ActionDisableConnections" Value="5"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

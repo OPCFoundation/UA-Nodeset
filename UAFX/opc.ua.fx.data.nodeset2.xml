@@ -1,0 +1,2869 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/FX/Data/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/UA/FX/Data/" Version="1.00.00" PublicationDate="2022-10-15T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2022-01-24T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="IdType">i=256</Alias>
+    <Alias Alias="Duration">i=290</Alias>
+    <Alias Alias="NumericRange">i=291</Alias>
+    <Alias Alias="Argument">i=296</Alias>
+    <Alias Alias="EnumValueType">i=7594</Alias>
+    <Alias Alias="KeyValuePair">i=14533</Alias>
+    <Alias Alias="ConfigurationVersionDataType">i=14593</Alias>
+    <Alias Alias="EndpointType">i=15528</Alias>
+    <Alias Alias="IdentityMappingRuleType">i=15634</Alias>
+    <Alias Alias="PubSubConfiguration2DataType">i=23602</Alias>
+    <Alias Alias="UriString">i=23751</Alias>
+    <Alias Alias="PortableQualifiedName">i=24105</Alias>
+    <Alias Alias="PubSubConfigurationRefDataType">i=25519</Alias>
+    <Alias Alias="PubSubConfigurationValueDataType">i=25520</Alias>
+    <Alias Alias="PubSubConnectionEndpointModeEnum">ns=1;i=31</Alias>
+    <Alias Alias="NodeIdValuePair">ns=1;i=1028</Alias>
+    <Alias Alias="AssetVerificationModeEnum">ns=1;i=1029</Alias>
+    <Alias Alias="NodeIdArray">ns=1;i=1034</Alias>
+    <Alias Alias="AssetVerificationResultEnum">ns=1;i=1037</Alias>
+    <Alias Alias="FunctionalEntityVerificationResultEnum">ns=1;i=3002</Alias>
+    <Alias Alias="RelatedEndpointDataType">ns=1;i=3003</Alias>
+    <Alias Alias="CommunicationLinkConfigurationDataType">ns=1;i=3007</Alias>
+    <Alias Alias="ConnectionEndpointParameterDataType">ns=1;i=3009</Alias>
+    <Alias Alias="ConnectionEndpointDefinitionDataType">ns=1;i=3011</Alias>
+  </Aliases>
+  <Extensions>
+    <Extension>
+      <ua:ModelInfo Tool="UaModeler" Hash="u7IxAXzJNFlrxFT+UZyCyg==" Version="1.6.7" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+    </Extension>
+  </Extensions>
+  <UADataType NodeId="ns=1;i=1029" BrowseName="1:AssetVerificationModeEnum">
+    <DisplayName>AssetVerificationModeEnum</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6327</Reference>
+    </References>
+    <Definition Name="1:AssetVerificationModeEnum">
+      <Field Name="AssetCompatibility" Value="0">
+        <Description>Verify whether an Asset’s functionality matches or is compatible to the expectation of system engineering.</Description>
+      </Field>
+      <Field Name="AssetIdentity" Value="1">
+        <Description>Verify whether an Asset’s identity meets the expectation of system engineering.</Description>
+      </Field>
+      <Field Name="AssetIdentityAndCompatibility" Value="2">
+        <Description>Verify whether an Asset’s identity meets the expectation of system engineering and whether its functionality matches or is compatible to the expectation of system engineering.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6327" BrowseName="EnumValues" ParentNodeId="ns=1;i=1029" DataType="EnumValueType" ValueRank="1" ArrayDimensions="3">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1029</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AssetCompatibility</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Verify whether an Asset’s functionality matches or is compatible to the expectation of system engineering.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AssetIdentity</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Verify whether an Asset’s identity meets the expectation of system engineering.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AssetIdentityAndCompatibility</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Verify whether an Asset’s identity meets the expectation of system engineering and whether its functionality matches or is compatible to the expectation of system engineering.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1037" BrowseName="1:AssetVerificationResultEnum">
+    <DisplayName>AssetVerificationResultEnum</DisplayName>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.7</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6326</Reference>
+    </References>
+    <Definition Name="1:AssetVerificationResultEnum">
+      <Field Name="NotSet" Value="0">
+        <Description>The verification result is not set.</Description>
+      </Field>
+      <Field Name="Match" Value="1">
+        <Description>Asset matches expectation.</Description>
+      </Field>
+      <Field Name="Compatible" Value="2">
+        <Description>Asset does not match expectation but is compatible.</Description>
+      </Field>
+      <Field Name="Mismatch" Value="3">
+        <Description>Asset does not match expectation and is not compatible.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6326" BrowseName="EnumValues" ParentNodeId="ns=1;i=1037" DataType="EnumValueType" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1037</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>NotSet</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The verification result is not set.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Match</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Asset matches expectation.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Compatible</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Asset does not match expectation but is compatible.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Mismatch</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Asset does not match expectation and is not compatible.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3002" BrowseName="1:FunctionalEntityVerificationResultEnum">
+    <DisplayName>FunctionalEntityVerificationResultEnum</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.20</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6532</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:FunctionalEntityVerificationResultEnum">
+      <Field Name="NotSet" Value="0">
+        <Description>The verification result is not set.</Description>
+      </Field>
+      <Field Name="Match" Value="1">
+        <Description>FunctionalEntity matches expectation.</Description>
+      </Field>
+      <Field Name="Mismatch" Value="2">
+        <Description>FunctionalEntity does not match expectation.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6532" BrowseName="EnumValues" ParentNodeId="ns=1;i=3002" DataType="EnumValueType" ValueRank="1" ArrayDimensions="3">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3002</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>NotSet</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The verification result is not set.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Match</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>FunctionalEntity matches expectation.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Mismatch</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>FunctionalEntity does not match expectation.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=31" BrowseName="1:PubSubConnectionEndpointModeEnum">
+    <DisplayName>PubSubConnectionEndpointModeEnum</DisplayName>
+    <Category>UAFX ConnectionEndpoint PubSub</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.37</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6240</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:PubSubConnectionEndpointModeEnum">
+      <Field Name="PublisherSubscriber" Value="1">
+        <Description>Reference to DataSetReader and DataSetWriter required.</Description>
+      </Field>
+      <Field Name="Publisher" Value="2">
+        <Description>Reference to DataSetWriter is required.</Description>
+      </Field>
+      <Field Name="Subscriber" Value="3">
+        <Description>Reference to DataSetReader is required.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6240" BrowseName="EnumValues" ParentNodeId="ns=1;i=31" DataType="EnumValueType" ValueRank="1" ArrayDimensions="3">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=31</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PublisherSubscriber</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Reference to DataSetReader and DataSetWriter required.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Publisher</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Reference to DataSetWriter is required.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Subscriber</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Reference to DataSetReader is required.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1024" BrowseName="1:FxCommandMask">
+    <DisplayName>FxCommandMask</DisplayName>
+    <Description>This OptionSet defines flags indicating the commands a ConnectionManager may use in its call to the EstablishConnections Method.</Description>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.21</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1225</Reference>
+    </References>
+    <Definition Name="1:FxCommandMask" IsOptionSet="true">
+      <Field Name="VerifyAssetCmd" Value="0">
+        <Description>The addressed Server shall verify compatibility and/or identity for all requested Assets</Description>
+      </Field>
+      <Field Name="VerifyFunctionalEntityCmd" Value="1">
+        <Description>The addressed Server shall verify compatibility for all requested functional entities.</Description>
+      </Field>
+      <Field Name="CreateConnectionEndpointCmd" Value="2">
+        <Description>The addressed Server shall create or modify ConnectionEndpoints. </Description>
+      </Field>
+      <Field Name="EstablishControlCmd" Value="3">
+        <Description>The addressed Server shall establish control over the requested ControlGroups.</Description>
+      </Field>
+      <Field Name="SetConfigurationDataCmd" Value="4">
+        <Description>The addressed Server shall apply the supplied application configuration.</Description>
+      </Field>
+      <Field Name="ReassignControlCmd" Value="5">
+        <Description>The addressed Server shall reassign the requested ControlGroups</Description>
+      </Field>
+      <Field Name="ReserveCommunicationIdsCmd" Value="6">
+        <Description>The addressed Server shall reserve identifiers for the communication model configuration.</Description>
+      </Field>
+      <Field Name="SetCommunicationConfigurationCmd" Value="7">
+        <Description>The addressed Server shall apply the supplied communication model configuration.</Description>
+      </Field>
+      <Field Name="EnableCommunicationCmd" Value="8">
+        <Description>The addressed Server shall enable the communication configuration.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=1225" BrowseName="OptionSetValues" ParentNodeId="ns=1;i=1024" DataType="LocalizedText" ValueRank="1" ArrayDimensions="9">
+    <DisplayName>OptionSetValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1024</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Text>VerifyAssetCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>VerifyFunctionalEntityCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CreateConnectionEndpointCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>EstablishControlCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>SetConfigurationDataCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ReassignControlCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ReserveCommunicationIdsCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>SetCommunicationConfigurationCmd</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>EnableCommunicationCmd</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1048" BrowseName="1:AssetVerificationDataType">
+    <DisplayName>AssetVerificationDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.5</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1153</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1155</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1154</Reference>
+    </References>
+    <Definition Name="1:AssetVerificationDataType">
+      <Field Name="AssetToVerify" DataType="NodeId" />
+      <Field Name="VerificationMode" DataType="AssetVerificationModeEnum" />
+      <Field Name="ExpectedVerificationResult" DataType="AssetVerificationResultEnum" />
+      <Field Name="ExpectedVerificationVariables" DataType="KeyValuePair" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ExpectedAdditionalVerificationVariables" DataType="NodeIdValuePair" ValueRank="1" ArrayDimensions="1" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6028" BrowseName="1:AssetVerificationDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>AssetVerificationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1153</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">AssetVerificationDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6029" BrowseName="1:AssetVerificationDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>AssetVerificationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1154</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='AssetVerificationDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1038" BrowseName="1:AssetVerificationResultDataType">
+    <DisplayName>AssetVerificationResultDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.6</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1205</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1207</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1206</Reference>
+    </References>
+    <Definition Name="1:AssetVerificationResultDataType">
+      <Field Name="VerificationStatus" DataType="StatusCode" />
+      <Field Name="VerificationResult" DataType="AssetVerificationResultEnum" />
+      <Field Name="VerificationVariablesErrors" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="VerificationAdditionalVariablesErrors" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6161" BrowseName="1:AssetVerificationResultDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>AssetVerificationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1205</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">AssetVerificationResultDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6162" BrowseName="1:AssetVerificationResultDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>AssetVerificationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1206</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='AssetVerificationResultDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1046" BrowseName="1:CommunicationConfigurationDataType" IsAbstract="true">
+    <DisplayName>CommunicationConfigurationDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.10.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1147</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1149</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1148</Reference>
+    </References>
+    <Definition Name="1:CommunicationConfigurationDataType" />
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6163" BrowseName="1:CommunicationConfigurationDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>CommunicationConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1147</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">CommunicationConfigurationDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6164" BrowseName="1:CommunicationConfigurationDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>CommunicationConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1148</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='CommunicationConfigurationDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1045" BrowseName="1:PubSubCommunicationConfigurationDataType">
+    <DisplayName>PubSubCommunicationConfigurationDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.10.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1144</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1146</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1145</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+    <Definition Name="1:PubSubCommunicationConfigurationDataType">
+      <Field Name="PubSubConfiguration" DataType="PubSubConfiguration2DataType" />
+      <Field Name="RequireCompleteUpdate" DataType="Boolean" />
+      <Field Name="ConfigurationReferences" DataType="PubSubConfigurationRefDataType" ValueRank="1" ArrayDimensions="1" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6165" BrowseName="1:PubSubCommunicationConfigurationDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>PubSubCommunicationConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1144</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PubSubCommunicationConfigurationDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6166" BrowseName="1:PubSubCommunicationConfigurationDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>PubSubCommunicationConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1145</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='PubSubCommunicationConfigurationDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1033" BrowseName="1:CommunicationConfigurationResultDataType" IsAbstract="true">
+    <DisplayName>CommunicationConfigurationResultDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.11.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1108</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1110</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1109</Reference>
+    </References>
+    <Definition Name="1:CommunicationConfigurationResultDataType" />
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6167" BrowseName="1:CommunicationConfigurationResultDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>CommunicationConfigurationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1108</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">CommunicationConfigurationResultDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6168" BrowseName="1:CommunicationConfigurationResultDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>CommunicationConfigurationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1109</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='CommunicationConfigurationResultDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1039" BrowseName="1:PubSubCommunicationConfigurationResultDataType">
+    <DisplayName>PubSubCommunicationConfigurationResultDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.11.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1208</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1210</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1209</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1033</Reference>
+    </References>
+    <Definition Name="1:PubSubCommunicationConfigurationResultDataType">
+      <Field Name="Result" DataType="StatusCode" />
+      <Field Name="ChangesApplied" DataType="Boolean" />
+      <Field Name="ReferenceResults" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ConfigurationValues" DataType="PubSubConfigurationValueDataType" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ConfigurationObjects" DataType="NodeId" ValueRank="1" ArrayDimensions="1" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6171" BrowseName="1:PubSubCommunicationConfigurationResultDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>PubSubCommunicationConfigurationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1208</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PubSubCommunicationConfigurationResultDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6172" BrowseName="1:PubSubCommunicationConfigurationResultDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>PubSubCommunicationConfigurationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1209</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='PubSubCommunicationConfigurationResultDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3007" BrowseName="1:CommunicationLinkConfigurationDataType" IsAbstract="true">
+    <DisplayName>CommunicationLinkConfigurationDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.13.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5033</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5035</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5034</Reference>
+    </References>
+    <Definition Name="1:CommunicationLinkConfigurationDataType" />
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6173" BrowseName="1:CommunicationLinkConfigurationDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>CommunicationLinkConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5033</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">CommunicationLinkConfigurationDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6174" BrowseName="1:CommunicationLinkConfigurationDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>CommunicationLinkConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5034</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='CommunicationLinkConfigurationDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1031" BrowseName="1:PubSubCommunicationLinkConfigurationDataType">
+    <DisplayName>PubSubCommunicationLinkConfigurationDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.13.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1102</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1104</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1103</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3007</Reference>
+    </References>
+    <Definition Name="1:PubSubCommunicationLinkConfigurationDataType">
+      <Field Name="DataSetReaderRef" DataType="PubSubConfigurationRefDataType" />
+      <Field Name="ExpectedSubscribedDataSetVersion" DataType="ConfigurationVersionDataType" />
+      <Field Name="DataSetWriterRef" DataType="PubSubConfigurationRefDataType" />
+      <Field Name="ExpectedPublishedDataSetVersion" DataType="ConfigurationVersionDataType" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6177" BrowseName="1:PubSubCommunicationLinkConfigurationDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>PubSubCommunicationLinkConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1102</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PubSubCommunicationLinkConfigurationDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6178" BrowseName="1:PubSubCommunicationLinkConfigurationDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>PubSubCommunicationLinkConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1103</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='PubSubCommunicationLinkConfigurationDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1044" BrowseName="1:ConnectionEndpointConfigurationDataType">
+    <DisplayName>ConnectionEndpointConfigurationDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.14</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1141</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1143</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1142</Reference>
+    </References>
+    <Definition Name="1:ConnectionEndpointConfigurationDataType">
+      <Field Name="FunctionalEntityNode" DataType="NodeId" />
+      <Field Name="ConnectionEndpoint" DataType="ConnectionEndpointDefinitionDataType" />
+      <Field Name="ExpectedVerificationVariables" DataType="NodeIdValuePair" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ControlGroups" DataType="NodeId" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ConfigurationData" DataType="NodeIdValuePair" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="CommunicationLinks" DataType="CommunicationLinkConfigurationDataType" AllowSubTypes="true" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6179" BrowseName="1:ConnectionEndpointConfigurationDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>ConnectionEndpointConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1141</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">ConnectionEndpointConfigurationDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6180" BrowseName="1:ConnectionEndpointConfigurationDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>ConnectionEndpointConfigurationDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1142</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ConnectionEndpointConfigurationDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3008" BrowseName="1:ConnectionEndpointConfigurationResultDataType">
+    <DisplayName>ConnectionEndpointConfigurationResultDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.15</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5036</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5038</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5037</Reference>
+    </References>
+    <Definition Name="1:ConnectionEndpointConfigurationResultDataType">
+      <Field Name="ConnectionEndpointId" DataType="NodeId" />
+      <Field Name="FunctionalEntityNodeResult" DataType="StatusCode" />
+      <Field Name="ConnectionEndpointResult" DataType="StatusCode" />
+      <Field Name="VerificationResult" DataType="FunctionalEntityVerificationResultEnum" />
+      <Field Name="VerificationStatus" DataType="StatusCode" />
+      <Field Name="VerificationVariablesErrors" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="EstablishControlResult" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ConfigurationDataResult" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ReassignControlResult" DataType="StatusCode" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="CommunicationLinksResult" DataType="StatusCode" />
+      <Field Name="EnableCommunicationResult" DataType="StatusCode" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6181" BrowseName="1:ConnectionEndpointConfigurationResultDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>ConnectionEndpointConfigurationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5036</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">ConnectionEndpointConfigurationResultDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6182" BrowseName="1:ConnectionEndpointConfigurationResultDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>ConnectionEndpointConfigurationResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5037</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ConnectionEndpointConfigurationResultDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3009" BrowseName="1:ConnectionEndpointParameterDataType" IsAbstract="true">
+    <DisplayName>ConnectionEndpointParameterDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.18.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5039</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5041</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5040</Reference>
+    </References>
+    <Definition Name="1:ConnectionEndpointParameterDataType">
+      <Field Name="Name" DataType="String" />
+      <Field Name="ConnectionEndpointTypeId" DataType="NodeId" />
+      <Field Name="InputVariableIds" DataType="NodeId" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="OutputVariableIds" DataType="NodeId" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="IsPersistent" DataType="Boolean" />
+      <Field Name="CleanupTimeout" DataType="Duration" />
+      <Field Name="RelatedEndpoint" DataType="RelatedEndpointDataType" />
+      <Field Name="IsPreconfigured" DataType="Boolean" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6185" BrowseName="1:ConnectionEndpointParameterDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>ConnectionEndpointParameterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5039</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">ConnectionEndpointParameterDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6186" BrowseName="1:ConnectionEndpointParameterDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>ConnectionEndpointParameterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5040</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ConnectionEndpointParameterDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3006" BrowseName="1:PubSubConnectionEndpointParameterDataType">
+    <DisplayName>PubSubConnectionEndpointParameterDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.18.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5060</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5062</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5061</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3009</Reference>
+    </References>
+    <Definition Name="1:PubSubConnectionEndpointParameterDataType">
+      <Field Name="Mode" DataType="PubSubConnectionEndpointModeEnum" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6329" BrowseName="1:PubSubConnectionEndpointParameterDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>PubSubConnectionEndpointParameterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5060</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PubSubConnectionEndpointParameterDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6330" BrowseName="1:PubSubConnectionEndpointParameterDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>PubSubConnectionEndpointParameterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5061</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='PubSubConnectionEndpointParameterDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1034" BrowseName="1:NodeIdArray">
+    <DisplayName>NodeIdArray</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.27</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1111</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1113</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1112</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:NodeIdArray">
+      <Field Name="Node" DataType="NodeId" />
+      <Field Name="ArrayIndex" DataType="UInt32" ValueRank="1" ArrayDimensions="1" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6193" BrowseName="1:NodeIdArray" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>NodeIdArray</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1111</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">NodeIdArray</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6194" BrowseName="1:NodeIdArray" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>NodeIdArray</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1112</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='NodeIdArray']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1028" BrowseName="1:NodeIdValuePair">
+    <DisplayName>NodeIdValuePair</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.28</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1093</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1095</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=1094</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:NodeIdValuePair">
+      <Field Name="Key" DataType="NodeIdArray" />
+      <Field Name="Value" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6195" BrowseName="1:NodeIdValuePair" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>NodeIdValuePair</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1093</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">NodeIdValuePair</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6196" BrowseName="1:NodeIdValuePair" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>NodeIdValuePair</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=1094</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='NodeIdValuePair']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3003" BrowseName="1:RelatedEndpointDataType">
+    <DisplayName>RelatedEndpointDataType</DisplayName>
+    <Category>UAFX ConnectionEndpoint Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.38</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:RelatedEndpointDataType">
+      <Field Name="Address" DataType="UriString" />
+      <Field Name="ConnectionEndpointPath" DataType="PortableQualifiedName" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="ConnectionEndpointName" DataType="String" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6217" BrowseName="1:RelatedEndpointDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>RelatedEndpointDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5001</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">RelatedEndpointDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6218" BrowseName="1:RelatedEndpointDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>RelatedEndpointDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='RelatedEndpointDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3017" BrowseName="1:ReserveCommunicationIdsDataType" IsAbstract="true">
+    <DisplayName>ReserveCommunicationIdsDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.39.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5064</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5081</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5065</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:ReserveCommunicationIdsDataType" />
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6411" BrowseName="1:ReserveCommunicationIdsDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>ReserveCommunicationIdsDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5064</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">ReserveCommunicationIdsDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6412" BrowseName="1:ReserveCommunicationIdsDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>ReserveCommunicationIdsDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5065</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ReserveCommunicationIdsDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3018" BrowseName="1:PubSubReserveCommunicationIdsDataType">
+    <DisplayName>PubSubReserveCommunicationIdsDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.39.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5082</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5084</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5083</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3017</Reference>
+    </References>
+    <Definition Name="1:PubSubReserveCommunicationIdsDataType">
+      <Field Name="TransportProfileUri" DataType="String" />
+      <Field Name="NumReqWriterGroupIds" DataType="UInt16" />
+      <Field Name="NumReqDataSetWriterIds" DataType="UInt16" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6413" BrowseName="1:PubSubReserveCommunicationIdsDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>PubSubReserveCommunicationIdsDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5082</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PubSubReserveCommunicationIdsDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6414" BrowseName="1:PubSubReserveCommunicationIdsDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>PubSubReserveCommunicationIdsDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5083</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='PubSubReserveCommunicationIdsDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3019" BrowseName="1:ReserveCommunicationIdsResultDataType" IsAbstract="true">
+    <DisplayName>ReserveCommunicationIdsResultDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.40.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5085</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5087</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5086</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:ReserveCommunicationIdsResultDataType" />
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6415" BrowseName="1:ReserveCommunicationIdsResultDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>ReserveCommunicationIdsResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5085</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">ReserveCommunicationIdsResultDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6416" BrowseName="1:ReserveCommunicationIdsResultDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>ReserveCommunicationIdsResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5086</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ReserveCommunicationIdsResultDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3020" BrowseName="1:PubSubReserveCommunicationIdsResultDataType">
+    <DisplayName>PubSubReserveCommunicationIdsResultDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.40.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5088</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5090</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5089</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3019</Reference>
+    </References>
+    <Definition Name="1:PubSubReserveCommunicationIdsResultDataType">
+      <Field Name="Result" DataType="StatusCode" />
+      <Field Name="DefaultPublisherId" />
+      <Field Name="WriterGroupIds" DataType="UInt16" ValueRank="1" ArrayDimensions="1" />
+      <Field Name="DataSetWriterIds" DataType="UInt16" ValueRank="1" ArrayDimensions="1" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6417" BrowseName="1:PubSubReserveCommunicationIdsResultDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>PubSubReserveCommunicationIdsResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5088</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PubSubReserveCommunicationIdsResultDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6418" BrowseName="1:PubSubReserveCommunicationIdsResultDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>PubSubReserveCommunicationIdsResultDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5089</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='PubSubReserveCommunicationIdsResultDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3011" BrowseName="1:ConnectionEndpointDefinitionDataType">
+    <DisplayName>ConnectionEndpointDefinitionDataType</DisplayName>
+    <Category>UAFX AutomationComponent Base</Category>
+    <Category>UAFX ConnectionManager Base</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.16</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12756</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5054</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5056</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5055</Reference>
+    </References>
+    <Definition Name="1:ConnectionEndpointDefinitionDataType" IsUnion="true">
+      <Field Name="Parameter" DataType="ConnectionEndpointParameterDataType" AllowSubTypes="true" />
+      <Field Name="Node" DataType="NodeId" />
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6008" BrowseName="1:ConnectionEndpointDefinitionDataType" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>ConnectionEndpointDefinitionDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5054</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">ConnectionEndpointDefinitionDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6009" BrowseName="1:ConnectionEndpointDefinitionDataType" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>ConnectionEndpointDefinitionDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5055</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ConnectionEndpointDefinitionDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6022" BrowseName="1:Opc.Ua.Fx" SymbolicName="Opc_Ua_Fx_BinarySchema" DataType="ByteString">
+    <DisplayName>Opc.Ua.FX</DisplayName>
+    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/FX/Data/</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6161</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6163</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6167</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6173</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6179</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6181</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6185</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6193</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6195</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6165</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6171</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6177</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6329</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6413</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6417</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6217</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6411</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6415</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+    </References>
+    <Value>
+      <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9GW
+        C9EYXRhLyIgRGVmYXVsdEJ5dGVPcmRlcj0iTGl0dGxlRW5kaWFuIiB4bWxuczpvcGM9Imh0d
+        HA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hcnlTY2hlbWEvIiB4bWxuczp1YT0iaHR0cDovL
+        29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgVGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91b
+        mRhdGlvbi5vcmcvVUEvRlgvRGF0YS8iPgogPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwO
+        i8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIi8+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUe
+        XBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IkFzc2V0VmVyaWZpY2F0aW9uRGF0YVR5c
+        GUiPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOk5vZGVJZCIgTmFtZT0iQXNzZXRUb1Zlc
+        mlmeSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InRuczpBc3NldFZlcmlmaWNhdGlvbk1vZ
+        GVFbnVtIiBOYW1lPSJWZXJpZmljYXRpb25Nb2RlIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZ
+        T0idG5zOkFzc2V0VmVyaWZpY2F0aW9uUmVzdWx0RW51bSIgTmFtZT0iRXhwZWN0ZWRWZXJpZ
+        mljYXRpb25SZXN1bHQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hb
+        WU9Ik5vT2ZFeHBlY3RlZFZlcmlmaWNhdGlvblZhcmlhYmxlcyIvPgogIDxvcGM6RmllbGQgT
+        GVuZ3RoRmllbGQ9Ik5vT2ZFeHBlY3RlZFZlcmlmaWNhdGlvblZhcmlhYmxlcyIgVHlwZU5hb
+        WU9InVhOktleVZhbHVlUGFpciIgTmFtZT0iRXhwZWN0ZWRWZXJpZmljYXRpb25WYXJpYWJsZ
+        XMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZFeHBlY
+        3RlZEFkZGl0aW9uYWxWZXJpZmljYXRpb25WYXJpYWJsZXMiLz4KICA8b3BjOkZpZWxkIExlb
+        md0aEZpZWxkPSJOb09mRXhwZWN0ZWRBZGRpdGlvbmFsVmVyaWZpY2F0aW9uVmFyaWFibGVzI
+        iBUeXBlTmFtZT0idG5zOk5vZGVJZFZhbHVlUGFpciIgTmFtZT0iRXhwZWN0ZWRBZGRpdGlvb
+        mFsVmVyaWZpY2F0aW9uVmFyaWFibGVzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvc
+        GM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iQ
+        XNzZXRWZXJpZmljYXRpb25SZXN1bHREYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZ
+        T0idWE6U3RhdHVzQ29kZSIgTmFtZT0iVmVyaWZpY2F0aW9uU3RhdHVzIi8+CiAgPG9wYzpGa
+        WVsZCBUeXBlTmFtZT0idG5zOkFzc2V0VmVyaWZpY2F0aW9uUmVzdWx0RW51bSIgTmFtZT0iV
+        mVyaWZpY2F0aW9uUmVzdWx0Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyI
+        iBOYW1lPSJOb09mVmVyaWZpY2F0aW9uVmFyaWFibGVzRXJyb3JzIi8+CiAgPG9wYzpGaWVsZ
+        CBMZW5ndGhGaWVsZD0iTm9PZlZlcmlmaWNhdGlvblZhcmlhYmxlc0Vycm9ycyIgVHlwZU5hb
+        WU9InVhOlN0YXR1c0NvZGUiIE5hbWU9IlZlcmlmaWNhdGlvblZhcmlhYmxlc0Vycm9ycyIvP
+        gogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlZlcmlmaWNhd
+        GlvbkFkZGl0aW9uYWxWYXJpYWJsZXNFcnJvcnMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZ
+        WxkPSJOb09mVmVyaWZpY2F0aW9uQWRkaXRpb25hbFZhcmlhYmxlc0Vycm9ycyIgVHlwZU5hb
+        WU9InVhOlN0YXR1c0NvZGUiIE5hbWU9IlZlcmlmaWNhdGlvbkFkZGl0aW9uYWxWYXJpYWJsZ
+        XNFcnJvcnMiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZ
+        SBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJDb21tdW5pY2F0aW9uQ29uZ
+        mlndXJhdGlvbkRhdGFUeXBlIi8+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ0b
+        nM6Q29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25EYXRhVHlwZSIgTmFtZT0iUHViU3ViQ29tb
+        XVuaWNhdGlvbkNvbmZpZ3VyYXRpb25EYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZ
+        T0idWE6UHViU3ViQ29uZmlndXJhdGlvbjJEYXRhVHlwZSIgTmFtZT0iUHViU3ViQ29uZmlnd
+        XJhdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpCb29sZWFuIiBOYW1lPSJSZ
+        XF1aXJlQ29tcGxldGVVcGRhdGUiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50M
+        zIiIE5hbWU9Ik5vT2ZDb25maWd1cmF0aW9uUmVmZXJlbmNlcyIvPgogIDxvcGM6RmllbGQgT
+        GVuZ3RoRmllbGQ9Ik5vT2ZDb25maWd1cmF0aW9uUmVmZXJlbmNlcyIgVHlwZU5hbWU9InVhO
+        lB1YlN1YkNvbmZpZ3VyYXRpb25SZWZEYXRhVHlwZSIgTmFtZT0iQ29uZmlndXJhdGlvblJlZ
+        mVyZW5jZXMiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZ
+        SBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJDb21tdW5pY2F0aW9uQ29uZ
+        mlndXJhdGlvblJlc3VsdERhdGFUeXBlIi8+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUe
+        XBlPSJ0bnM6Q29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSIgTmFtZ
+        T0iUHViU3ViQ29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSI+CiAgP
+        G9wYzpGaWVsZCBUeXBlTmFtZT0idWE6U3RhdHVzQ29kZSIgTmFtZT0iUmVzdWx0Ii8+CiAgP
+        G9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkJvb2xlYW4iIE5hbWU9IkNoYW5nZXNBcHBsaWVkI
+        i8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mUmVmZXJlb
+        mNlUmVzdWx0cyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZSZWZlcmVuY2VSZ
+        XN1bHRzIiBUeXBlTmFtZT0idWE6U3RhdHVzQ29kZSIgTmFtZT0iUmVmZXJlbmNlUmVzdWx0c
+        yIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZkNvbmZpZ
+        3VyYXRpb25WYWx1ZXMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mQ29uZmlnd
+        XJhdGlvblZhbHVlcyIgVHlwZU5hbWU9InVhOlB1YlN1YkNvbmZpZ3VyYXRpb25WYWx1ZURhd
+        GFUeXBlIiBOYW1lPSJDb25maWd1cmF0aW9uVmFsdWVzIi8+CiAgPG9wYzpGaWVsZCBUeXBlT
+        mFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mQ29uZmlndXJhdGlvbk9iamVjdHMiLz4KICA8b
+        3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mQ29uZmlndXJhdGlvbk9iamVjdHMiIFR5cGVOY
+        W1lPSJ1YTpOb2RlSWQiIE5hbWU9IkNvbmZpZ3VyYXRpb25PYmplY3RzIi8+CiA8L29wYzpTd
+        HJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc
+        2lvbk9iamVjdCIgTmFtZT0iQ29tbXVuaWNhdGlvbkxpbmtDb25maWd1cmF0aW9uRGF0YVR5c
+        GUiLz4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InRuczpDb21tdW5pY2F0aW9uT
+        Glua0NvbmZpZ3VyYXRpb25EYXRhVHlwZSIgTmFtZT0iUHViU3ViQ29tbXVuaWNhdGlvbkxpb
+        mtDb25maWd1cmF0aW9uRGF0YVR5cGUiPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOlB1Y
+        lN1YkNvbmZpZ3VyYXRpb25SZWZEYXRhVHlwZSIgTmFtZT0iRGF0YVNldFJlYWRlclJlZiIvP
+        gogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOkNvbmZpZ3VyYXRpb25WZXJzaW9uRGF0YVR5c
+        GUiIE5hbWU9IkV4cGVjdGVkU3Vic2NyaWJlZERhdGFTZXRWZXJzaW9uIi8+CiAgPG9wYzpGa
+        WVsZCBUeXBlTmFtZT0idWE6UHViU3ViQ29uZmlndXJhdGlvblJlZkRhdGFUeXBlIiBOYW1lP
+        SJEYXRhU2V0V3JpdGVyUmVmIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6Q29uZmlnd
+        XJhdGlvblZlcnNpb25EYXRhVHlwZSIgTmFtZT0iRXhwZWN0ZWRQdWJsaXNoZWREYXRhU2V0V
+        mVyc2lvbiIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlI
+        EJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IkNvbm5lY3Rpb25FbmRwb2lud
+        ENvbmZpZ3VyYXRpb25EYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6Tm9kZ
+        UlkIiBOYW1lPSJGdW5jdGlvbmFsRW50aXR5Tm9kZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hb
+        WU9InRuczpDb25uZWN0aW9uRW5kcG9pbnREZWZpbml0aW9uRGF0YVR5cGUiIE5hbWU9IkNvb
+        m5lY3Rpb25FbmRwb2ludCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgT
+        mFtZT0iTm9PZkV4cGVjdGVkVmVyaWZpY2F0aW9uVmFyaWFibGVzIi8+CiAgPG9wYzpGaWVsZ
+        CBMZW5ndGhGaWVsZD0iTm9PZkV4cGVjdGVkVmVyaWZpY2F0aW9uVmFyaWFibGVzIiBUeXBlT
+        mFtZT0idG5zOk5vZGVJZFZhbHVlUGFpciIgTmFtZT0iRXhwZWN0ZWRWZXJpZmljYXRpb25WY
+        XJpYWJsZXMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT
+        2ZDb250cm9sR3JvdXBzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZkNvbnRyb
+        2xHcm91cHMiIFR5cGVOYW1lPSJ1YTpOb2RlSWQiIE5hbWU9IkNvbnRyb2xHcm91cHMiLz4KI
+        CA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZDb25maWd1cmF0a
+        W9uRGF0YSIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZDb25maWd1cmF0aW9uR
+        GF0YSIgVHlwZU5hbWU9InRuczpOb2RlSWRWYWx1ZVBhaXIiIE5hbWU9IkNvbmZpZ3VyYXRpb
+        25EYXRhIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOY
+        W1lPSJDb21tdW5pY2F0aW9uTGlua3MiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wY
+        zpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJDb
+        25uZWN0aW9uRW5kcG9pbnRDb25maWd1cmF0aW9uUmVzdWx0RGF0YVR5cGUiPgogIDxvcGM6R
+        mllbGQgVHlwZU5hbWU9InVhOk5vZGVJZCIgTmFtZT0iQ29ubmVjdGlvbkVuZHBvaW50SWQiL
+        z4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJ1YTpTdGF0dXNDb2RlIiBOYW1lPSJGdW5jdGlvb
+        mFsRW50aXR5Tm9kZVJlc3VsdCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOlN0YXR1c
+        0NvZGUiIE5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludFJlc3VsdCIvPgogIDxvcGM6RmllbGQgV
+        HlwZU5hbWU9InRuczpGdW5jdGlvbmFsRW50aXR5VmVyaWZpY2F0aW9uUmVzdWx0RW51bSIgT
+        mFtZT0iVmVyaWZpY2F0aW9uUmVzdWx0Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6U
+        3RhdHVzQ29kZSIgTmFtZT0iVmVyaWZpY2F0aW9uU3RhdHVzIi8+CiAgPG9wYzpGaWVsZCBUe
+        XBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mVmVyaWZpY2F0aW9uVmFyaWFibGVzRXJyb
+        3JzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZlZlcmlmaWNhdGlvblZhcmlhY
+        mxlc0Vycm9ycyIgVHlwZU5hbWU9InVhOlN0YXR1c0NvZGUiIE5hbWU9IlZlcmlmaWNhdGlvb
+        lZhcmlhYmxlc0Vycm9ycyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgT
+        mFtZT0iTm9PZkVzdGFibGlzaENvbnRyb2xSZXN1bHQiLz4KICA8b3BjOkZpZWxkIExlbmd0a
+        EZpZWxkPSJOb09mRXN0YWJsaXNoQ29udHJvbFJlc3VsdCIgVHlwZU5hbWU9InVhOlN0YXR1c
+        0NvZGUiIE5hbWU9IkVzdGFibGlzaENvbnRyb2xSZXN1bHQiLz4KICA8b3BjOkZpZWxkIFR5c
+        GVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZDb25maWd1cmF0aW9uRGF0YVJlc3VsdCIvP
+        gogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZDb25maWd1cmF0aW9uRGF0YVJlc3Vsd
+        CIgVHlwZU5hbWU9InVhOlN0YXR1c0NvZGUiIE5hbWU9IkNvbmZpZ3VyYXRpb25EYXRhUmVzd
+        Wx0Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mUmVhc
+        3NpZ25Db250cm9sUmVzdWx0Ii8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZlJlY
+        XNzaWduQ29udHJvbFJlc3VsdCIgVHlwZU5hbWU9InVhOlN0YXR1c0NvZGUiIE5hbWU9IlJlY
+        XNzaWduQ29udHJvbFJlc3VsdCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOlN0YXR1c
+        0NvZGUiIE5hbWU9IkNvbW11bmljYXRpb25MaW5rc1Jlc3VsdCIvPgogIDxvcGM6RmllbGQgV
+        HlwZU5hbWU9InVhOlN0YXR1c0NvZGUiIE5hbWU9IkVuYWJsZUNvbW11bmljYXRpb25SZXN1b
+        HQiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlV
+        HlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJDb25uZWN0aW9uRW5kcG9pbnRQYXJhb
+        WV0ZXJEYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgT
+        mFtZT0iTmFtZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOk5vZGVJZCIgTmFtZT0iQ
+        29ubmVjdGlvbkVuZHBvaW50VHlwZUlkIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjO
+        kludDMyIiBOYW1lPSJOb09mSW5wdXRWYXJpYWJsZUlkcyIvPgogIDxvcGM6RmllbGQgTGVuZ
+        3RoRmllbGQ9Ik5vT2ZJbnB1dFZhcmlhYmxlSWRzIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiBOY
+        W1lPSJJbnB1dFZhcmlhYmxlSWRzIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOklud
+        DMyIiBOYW1lPSJOb09mT3V0cHV0VmFyaWFibGVJZHMiLz4KICA8b3BjOkZpZWxkIExlbmd0a
+        EZpZWxkPSJOb09mT3V0cHV0VmFyaWFibGVJZHMiIFR5cGVOYW1lPSJ1YTpOb2RlSWQiIE5hb
+        WU9Ik91dHB1dFZhcmlhYmxlSWRzIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkJvb
+        2xlYW4iIE5hbWU9IklzUGVyc2lzdGVudCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wY
+        zpEb3VibGUiIE5hbWU9IkNsZWFudXBUaW1lb3V0Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZ
+        T0idG5zOlJlbGF0ZWRFbmRwb2ludERhdGFUeXBlIiBOYW1lPSJSZWxhdGVkRW5kcG9pbnQiL
+        z4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qm9vbGVhbiIgTmFtZT0iSXNQcmVjb25ma
+        Wd1cmVkIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQ
+        mFzZVR5cGU9InRuczpDb25uZWN0aW9uRW5kcG9pbnRQYXJhbWV0ZXJEYXRhVHlwZSIgTmFtZ
+        T0iUHViU3ViQ29ubmVjdGlvbkVuZHBvaW50UGFyYW1ldGVyRGF0YVR5cGUiPgogIDxvcGM6R
+        mllbGQgU291cmNlVHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhdGFUe
+        XBlIiBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iTmFtZSIvPgogIDxvcGM6Rmllb
+        GQgU291cmNlVHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhdGFUeXBlI
+        iBUeXBlTmFtZT0idWE6Tm9kZUlkIiBOYW1lPSJDb25uZWN0aW9uRW5kcG9pbnRUeXBlSWQiL
+        z4KICA8b3BjOkZpZWxkIFNvdXJjZVR5cGU9InRuczpDb25uZWN0aW9uRW5kcG9pbnRQYXJhb
+        WV0ZXJEYXRhVHlwZSIgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZklucHV0VmFya
+        WFibGVJZHMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mSW5wdXRWYXJpYWJsZ
+        UlkcyIgU291cmNlVHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhdGFUe
+        XBlIiBUeXBlTmFtZT0idWE6Tm9kZUlkIiBOYW1lPSJJbnB1dFZhcmlhYmxlSWRzIi8+CiAgP
+        G9wYzpGaWVsZCBTb3VyY2VUeXBlPSJ0bnM6Q29ubmVjdGlvbkVuZHBvaW50UGFyYW1ldGVyR
+        GF0YVR5cGUiIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZPdXRwdXRWYXJpYWJsZ
+        UlkcyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZPdXRwdXRWYXJpYWJsZUlkc
+        yIgU291cmNlVHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhdGFUeXBlI
+        iBUeXBlTmFtZT0idWE6Tm9kZUlkIiBOYW1lPSJPdXRwdXRWYXJpYWJsZUlkcyIvPgogIDxvc
+        GM6RmllbGQgU291cmNlVHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhd
+        GFUeXBlIiBUeXBlTmFtZT0ib3BjOkJvb2xlYW4iIE5hbWU9IklzUGVyc2lzdGVudCIvPgogI
+        DxvcGM6RmllbGQgU291cmNlVHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlc
+        kRhdGFUeXBlIiBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iQ2xlYW51cFRpbWVvdXQiL
+        z4KICA8b3BjOkZpZWxkIFNvdXJjZVR5cGU9InRuczpDb25uZWN0aW9uRW5kcG9pbnRQYXJhb
+        WV0ZXJEYXRhVHlwZSIgVHlwZU5hbWU9InRuczpSZWxhdGVkRW5kcG9pbnREYXRhVHlwZSIgT
+        mFtZT0iUmVsYXRlZEVuZHBvaW50Ii8+CiAgPG9wYzpGaWVsZCBTb3VyY2VUeXBlPSJ0bnM6Q
+        29ubmVjdGlvbkVuZHBvaW50UGFyYW1ldGVyRGF0YVR5cGUiIFR5cGVOYW1lPSJvcGM6Qm9vb
+        GVhbiIgTmFtZT0iSXNQcmVjb25maWd1cmVkIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0id
+        G5zOlB1YlN1YkNvbm5lY3Rpb25FbmRwb2ludE1vZGVFbnVtIiBOYW1lPSJNb2RlIi8+CiA8L
+        29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhO
+        kV4dGVuc2lvbk9iamVjdCIgTmFtZT0iTm9kZUlkQXJyYXkiPgogIDxvcGM6RmllbGQgVHlwZ
+        U5hbWU9InVhOk5vZGVJZCIgTmFtZT0iTm9kZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9I
+        m9wYzpJbnQzMiIgTmFtZT0iTm9PZkFycmF5SW5kZXgiLz4KICA8b3BjOkZpZWxkIExlbmd0a
+        EZpZWxkPSJOb09mQXJyYXlJbmRleCIgVHlwZU5hbWU9Im9wYzpVSW50MzIiIE5hbWU9IkFyc
+        mF5SW5kZXgiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZ
+        SBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJOb2RlSWRWYWx1ZVBhaXIiP
+        gogIDxvcGM6RmllbGQgVHlwZU5hbWU9InRuczpOb2RlSWRBcnJheSIgTmFtZT0iS2V5Ii8+C
+        iAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6VmFyaWFudCIgTmFtZT0iVmFsdWUiLz4KIDwvb
+        3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6R
+        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJSZWxhdGVkRW5kcG9pbnREYXRhVHlwZSI+CiAgPG9wY
+        zpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iQWRkcmVzcyIvPgogIDxvc
+        GM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZkNvbm5lY3Rpb25FbmRwb
+        2ludFBhdGgiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mQ29ubmVjdGlvbkVuZ
+        HBvaW50UGF0aCIgVHlwZU5hbWU9InVhOlBvcnRhYmxlUXVhbGlmaWVkTmFtZSIgTmFtZT0iQ
+        29ubmVjdGlvbkVuZHBvaW50UGF0aCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDa
+        GFyQXJyYXkiIE5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludE5hbWUiLz4KIDwvb3BjOlN0cnVjd
+        HVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT
+        2JqZWN0IiBOYW1lPSJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc0RhdGFUeXBlIi8+CiA8b3BjO
+        lN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ0bnM6UmVzZXJ2ZUNvbW11bmljYXRpb25JZHNEY
+        XRhVHlwZSIgTmFtZT0iUHViU3ViUmVzZXJ2ZUNvbW11bmljYXRpb25JZHNEYXRhVHlwZSI+C
+        iAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iVHJhbnNwb3J0U
+        HJvZmlsZVVyaSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpVSW50MTYiIE5hbWU9I
+        k51bVJlcVdyaXRlckdyb3VwSWRzIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOlVJb
+        nQxNiIgTmFtZT0iTnVtUmVxRGF0YVNldFdyaXRlcklkcyIvPgogPC9vcGM6U3RydWN0dXJlZ
+        FR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY
+        3QiIE5hbWU9IlJlc2VydmVDb21tdW5pY2F0aW9uSWRzUmVzdWx0RGF0YVR5cGUiLz4KIDxvc
+        GM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InRuczpSZXNlcnZlQ29tbXVuaWNhdGlvbklkc
+        1Jlc3VsdERhdGFUeXBlIiBOYW1lPSJQdWJTdWJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc1Jlc
+        3VsdERhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJ1YTpTdGF0dXNDb2RlIiBOY
+        W1lPSJSZXN1bHQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJ1YTpWYXJpYW50IiBOYW1lP
+        SJEZWZhdWx0UHVibGlzaGVySWQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50M
+        zIiIE5hbWU9Ik5vT2ZXcml0ZXJHcm91cElkcyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllb
+        GQ9Ik5vT2ZXcml0ZXJHcm91cElkcyIgVHlwZU5hbWU9Im9wYzpVSW50MTYiIE5hbWU9Ildya
+        XRlckdyb3VwSWRzIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lP
+        SJOb09mRGF0YVNldFdyaXRlcklkcyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT
+        2ZEYXRhU2V0V3JpdGVySWRzIiBUeXBlTmFtZT0ib3BjOlVJbnQxNiIgTmFtZT0iRGF0YVNld
+        FdyaXRlcklkcyIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUe
+        XBlIEJhc2VUeXBlPSJ1YTpVbmlvbiIgTmFtZT0iQ29ubmVjdGlvbkVuZHBvaW50RGVmaW5pd
+        GlvbkRhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6VUludDMyIiBOYW1lP
+        SJTd2l0Y2hGaWVsZCIvPgogIDxvcGM6RmllbGQgU3dpdGNoRmllbGQ9IlN3aXRjaEZpZWxkI
+        iBUeXBlTmFtZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBTd2l0Y2hWYWx1ZT0iMSIgTmFtZT0iU
+        GFyYW1ldGVyIi8+CiAgPG9wYzpGaWVsZCBTd2l0Y2hGaWVsZD0iU3dpdGNoRmllbGQiIFR5c
+        GVOYW1lPSJ1YTpOb2RlSWQiIFN3aXRjaFZhbHVlPSIyIiBOYW1lPSJOb2RlIi8+CiA8L29wY
+        zpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzM
+        iIgTmFtZT0iQXNzZXRWZXJpZmljYXRpb25Nb2RlRW51bSI+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iQXNzZXRDb21wYXRpYmlsaXR5IiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51b
+        WVyYXRlZFZhbHVlIE5hbWU9IkFzc2V0SWRlbnRpdHkiIFZhbHVlPSIxIi8+CiAgPG9wYzpFb
+        nVtZXJhdGVkVmFsdWUgTmFtZT0iQXNzZXRJZGVudGl0eUFuZENvbXBhdGliaWxpdHkiIFZhb
+        HVlPSIyIi8+CiA8L29wYzpFbnVtZXJhdGVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgT
+        GVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iQXNzZXRWZXJpZmljYXRpb25SZXN1bHRFbnVtIj4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJOb3RTZXQiIFZhbHVlPSIwIi8+CiAgPG9wY
+        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTWF0Y2giIFZhbHVlPSIxIi8+CiAgPG9wYzpFbnVtZ
+        XJhdGVkVmFsdWUgTmFtZT0iQ29tcGF0aWJsZSIgVmFsdWU9IjIiLz4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJNaXNtYXRjaCIgVmFsdWU9IjMiLz4KIDwvb3BjOkVudW1lcmF0Z
+        WRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJGd
+        W5jdGlvbmFsRW50aXR5VmVyaWZpY2F0aW9uUmVzdWx0RW51bSI+CiAgPG9wYzpFbnVtZXJhd
+        GVkVmFsdWUgTmFtZT0iTm90U2V0IiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhb
+        HVlIE5hbWU9Ik1hdGNoIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
+        WU9Ik1pc21hdGNoIiBWYWx1ZT0iMiIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjO
+        kVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlB1YlN1YkNvbm5lY3Rpb
+        25FbmRwb2ludE1vZGVFbnVtIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQdWJsa
+        XNoZXJTdWJzY3JpYmVyIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
+        WU9IlB1Ymxpc2hlciIgVmFsdWU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJTdWJzY3JpYmVyIiBWYWx1ZT0iMyIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjO
+        kVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IkZ4Q29tbWFuZE1hc2siI
+        ElzT3B0aW9uU2V0PSJ0cnVlIj4KICA8b3BjOkRvY3VtZW50YXRpb24+VGhpcyBPcHRpb25TZ
+        XQgZGVmaW5lcyBmbGFncyBpbmRpY2F0aW5nIHRoZSBjb21tYW5kcyBhIENvbm5lY3Rpb25NY
+        W5hZ2VyIG1heSB1c2UgaW4gaXRzIGNhbGwgdG8gdGhlIEVzdGFibGlzaENvbm5lY3Rpb25zI
+        E1ldGhvZC48L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
+        WU9IlZlcmlmeUFzc2V0Q21kIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9IlZlcmlmeUZ1bmN0aW9uYWxFbnRpdHlDbWQiIFZhbHVlPSIxIi8+CiAgPG9wYzpFb
+        nVtZXJhdGVkVmFsdWUgTmFtZT0iQ3JlYXRlQ29ubmVjdGlvbkVuZHBvaW50Q21kIiBWYWx1Z
+        T0iMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkVzdGFibGlzaENvbnRyb2xDb
+        WQiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU2V0Q29uZmlnd
+        XJhdGlvbkRhdGFDbWQiIFZhbHVlPSI0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZ
+        T0iUmVhc3NpZ25Db250cm9sQ21kIiBWYWx1ZT0iNSIvPgogIDxvcGM6RW51bWVyYXRlZFZhb
+        HVlIE5hbWU9IlJlc2VydmVDb21tdW5pY2F0aW9uSWRzQ21kIiBWYWx1ZT0iNiIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNldENvbW11bmljYXRpb25Db25maWd1cmF0aW9uQ
+        21kIiBWYWx1ZT0iNyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkVuYWJsZUNvb
+        W11bmljYXRpb25DbWQiIFZhbHVlPSI4Ii8+CiA8L29wYzpFbnVtZXJhdGVkVHlwZT4KPC9vc
+        GM6VHlwZURpY3Rpb25hcnk+Cg==</uax:ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6023" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6022" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6022</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/FX/Data/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6024" BrowseName="1:TypeDictionary" SymbolicName="TypeDictionary_XmlSchema" DataType="ByteString">
+    <DisplayName>TypeDictionary</DisplayName>
+    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/FX/Data/</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6162</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6164</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6168</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6174</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6180</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6182</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6186</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6025</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6194</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6196</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6166</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6172</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6178</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6330</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6414</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6418</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6218</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6412</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6416</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+    </References>
+    <Value>
+      <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvRlgvRGF0YS9UeXBlcy54c2QiIHhtbG5zOnRuc
+        z0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBL0ZYL0RhdGEvVHlwZXMueHNkIiB4bWxuc
+        zp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiB4b
+        Wxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPgogPHhzOmltcG9yd
+        CBuYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzL
+        nhzZCIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iQXNzZXRWZXJpZmljYXRpb25Nb2RlRW51b
+        SI+CiAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhd
+        GlvbiB2YWx1ZT0iQXNzZXRDb21wYXRpYmlsaXR5XzAiLz4KICAgPHhzOmVudW1lcmF0aW9uI
+        HZhbHVlPSJBc3NldElkZW50aXR5XzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJBc
+        3NldElkZW50aXR5QW5kQ29tcGF0aWJpbGl0eV8yIi8+CiAgPC94czpyZXN0cmljdGlvbj4KI
+        DwveHM6c2ltcGxlVHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpBc3NldFZlcmlmaWNhd
+        Glvbk1vZGVFbnVtIiBuYW1lPSJBc3NldFZlcmlmaWNhdGlvbk1vZGVFbnVtIi8+CiA8eHM6Y
+        29tcGxleFR5cGUgbmFtZT0iTGlzdE9mQXNzZXRWZXJpZmljYXRpb25Nb2RlRW51bSI+CiAgP
+        HhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0id
+        W5ib3VuZGVkIiB0eXBlPSJ0bnM6QXNzZXRWZXJpZmljYXRpb25Nb2RlRW51bSIgbmFtZT0iQ
+        XNzZXRWZXJpZmljYXRpb25Nb2RlRW51bSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlc
+        XVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T
+        2ZBc3NldFZlcmlmaWNhdGlvbk1vZGVFbnVtIiBuYW1lPSJMaXN0T2ZBc3NldFZlcmlmaWNhd
+        Glvbk1vZGVFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iQ
+        XNzZXRWZXJpZmljYXRpb25SZXN1bHRFbnVtIj4KICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ie
+        HM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJOb3RTZXRfMCIvPgogICA8e
+        HM6ZW51bWVyYXRpb24gdmFsdWU9Ik1hdGNoXzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhb
+        HVlPSJDb21wYXRpYmxlXzIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNaXNtYXRja
+        F8zIi8+CiAgPC94czpyZXN0cmljdGlvbj4KIDwveHM6c2ltcGxlVHlwZT4KIDx4czplbGVtZ
+        W50IHR5cGU9InRuczpBc3NldFZlcmlmaWNhdGlvblJlc3VsdEVudW0iIG5hbWU9IkFzc2V0V
+        mVyaWZpY2F0aW9uUmVzdWx0RW51bSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZ
+        kFzc2V0VmVyaWZpY2F0aW9uUmVzdWx0RW51bSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6Z
+        WxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6Q
+        XNzZXRWZXJpZmljYXRpb25SZXN1bHRFbnVtIiBuYW1lPSJBc3NldFZlcmlmaWNhdGlvblJlc
+        3VsdEVudW0iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tc
+        GxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mQXNzZXRWZXJpZmljYXRpb
+        25SZXN1bHRFbnVtIiBuYW1lPSJMaXN0T2ZBc3NldFZlcmlmaWNhdGlvblJlc3VsdEVudW0iI
+        G5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6c2ltcGxlVHlwZSBuYW1lPSJGdW5jdGlvbmFsRW50a
+        XR5VmVyaWZpY2F0aW9uUmVzdWx0RW51bSI+CiAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzO
+        nN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTm90U2V0XzAiLz4KICAgPHhzO
+        mVudW1lcmF0aW9uIHZhbHVlPSJNYXRjaF8xIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
+        T0iTWlzbWF0Y2hfMiIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+C
+        iA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6RnVuY3Rpb25hbEVudGl0eVZlcmlmaWNhdGlvblJlc
+        3VsdEVudW0iIG5hbWU9IkZ1bmN0aW9uYWxFbnRpdHlWZXJpZmljYXRpb25SZXN1bHRFbnVtI
+        i8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mRnVuY3Rpb25hbEVudGl0eVZlcmlma
+        WNhdGlvblJlc3VsdEVudW0iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT
+        2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOkZ1bmN0aW9uYWxFb
+        nRpdHlWZXJpZmljYXRpb25SZXN1bHRFbnVtIiBuYW1lPSJGdW5jdGlvbmFsRW50aXR5VmVya
+        WZpY2F0aW9uUmVzdWx0RW51bSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlP
+        gogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZGdW5jd
+        GlvbmFsRW50aXR5VmVyaWZpY2F0aW9uUmVzdWx0RW51bSIgbmFtZT0iTGlzdE9mRnVuY3Rpb
+        25hbEVudGl0eVZlcmlmaWNhdGlvblJlc3VsdEVudW0iIG5pbGxhYmxlPSJ0cnVlIi8+CiA8e
+        HM6c2ltcGxlVHlwZSBuYW1lPSJQdWJTdWJDb25uZWN0aW9uRW5kcG9pbnRNb2RlRW51bSI+C
+        iAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvb
+        iB2YWx1ZT0iUHVibGlzaGVyU3Vic2NyaWJlcl8xIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
+        Wx1ZT0iUHVibGlzaGVyXzIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTdWJzY3JpY
+        mVyXzMiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZ
+        W1lbnQgdHlwZT0idG5zOlB1YlN1YkNvbm5lY3Rpb25FbmRwb2ludE1vZGVFbnVtIiBuYW1lP
+        SJQdWJTdWJDb25uZWN0aW9uRW5kcG9pbnRNb2RlRW51bSIvPgogPHhzOmNvbXBsZXhUeXBlI
+        G5hbWU9Ikxpc3RPZlB1YlN1YkNvbm5lY3Rpb25FbmRwb2ludE1vZGVFbnVtIj4KICA8eHM6c
+        2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvd
+        W5kZWQiIHR5cGU9InRuczpQdWJTdWJDb25uZWN0aW9uRW5kcG9pbnRNb2RlRW51bSIgbmFtZ
+        T0iUHViU3ViQ29ubmVjdGlvbkVuZHBvaW50TW9kZUVudW0iIG5pbGxhYmxlPSJ0cnVlIi8+C
+        iAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlP
+        SJ0bnM6TGlzdE9mUHViU3ViQ29ubmVjdGlvbkVuZHBvaW50TW9kZUVudW0iIG5hbWU9Ikxpc
+        3RPZlB1YlN1YkNvbm5lY3Rpb25FbmRwb2ludE1vZGVFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvP
+        gogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkFzc2V0VmVyaWZpY2F0aW9uRGF0YVR5cGUiPgogI
+        Dx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9I
+        jEiIHR5cGU9InVhOk5vZGVJZCIgbmFtZT0iQXNzZXRUb1ZlcmlmeSIvPgogICA8eHM6ZWxlb
+        WVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkFzc2V0VmVyaWZpY
+        2F0aW9uTW9kZUVudW0iIG5hbWU9IlZlcmlmaWNhdGlvbk1vZGUiLz4KICAgPHhzOmVsZW1lb
+        nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InRuczpBc3NldFZlcmlmaWNhd
+        GlvblJlc3VsdEVudW0iIG5hbWU9IkV4cGVjdGVkVmVyaWZpY2F0aW9uUmVzdWx0Ii8+CiAgI
+        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpMaXN0T
+        2ZLZXlWYWx1ZVBhaXIiIG5hbWU9IkV4cGVjdGVkVmVyaWZpY2F0aW9uVmFyaWFibGVzIi8+C
+        iAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6T
+        GlzdE9mTm9kZUlkVmFsdWVQYWlyIiBuYW1lPSJFeHBlY3RlZEFkZGl0aW9uYWxWZXJpZmljY
+        XRpb25WYXJpYWJsZXMiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KI
+        Dx4czplbGVtZW50IHR5cGU9InRuczpBc3NldFZlcmlmaWNhdGlvbkRhdGFUeXBlIiBuYW1lP
+        SJBc3NldFZlcmlmaWNhdGlvbkRhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iT
+        GlzdE9mQXNzZXRWZXJpZmljYXRpb25EYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8e
+        HM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0b
+        nM6QXNzZXRWZXJpZmljYXRpb25EYXRhVHlwZSIgbmFtZT0iQXNzZXRWZXJpZmljYXRpb25EY
+        XRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wb
+        GV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZBc3NldFZlcmlmaWNhdGlvb
+        kRhdGFUeXBlIiBuYW1lPSJMaXN0T2ZBc3NldFZlcmlmaWNhdGlvbkRhdGFUeXBlIiBuaWxsY
+        WJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkFzc2V0VmVyaWZpY2F0aW9uU
+        mVzdWx0RGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2Njd
+        XJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOlN0YXR1c0NvZGUiIG5hbWU9IlZlcmlma
+        WNhdGlvblN0YXR1cyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vyc
+        z0iMSIgdHlwZT0idG5zOkFzc2V0VmVyaWZpY2F0aW9uUmVzdWx0RW51bSIgbmFtZT0iVmVya
+        WZpY2F0aW9uUmVzdWx0Ii8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2Njd
+        XJzPSIxIiB0eXBlPSJ1YTpMaXN0T2ZTdGF0dXNDb2RlIiBuYW1lPSJWZXJpZmljYXRpb25WY
+        XJpYWJsZXNFcnJvcnMiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9IjEiIHR5cGU9InVhOkxpc3RPZlN0YXR1c0NvZGUiIG5hbWU9IlZlcmlmaWNhdGlvbkFkZ
+        Gl0aW9uYWxWYXJpYWJsZXNFcnJvcnMiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wb
+        GV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpBc3NldFZlcmlmaWNhdGlvblJlc3Vsd
+        ERhdGFUeXBlIiBuYW1lPSJBc3NldFZlcmlmaWNhdGlvblJlc3VsdERhdGFUeXBlIi8+CiA8e
+        HM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mQXNzZXRWZXJpZmljYXRpb25SZXN1bHREYXRhV
+        HlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1he
+        E9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6QXNzZXRWZXJpZmljYXRpb25SZXN1bHREY
+        XRhVHlwZSIgbmFtZT0iQXNzZXRWZXJpZmljYXRpb25SZXN1bHREYXRhVHlwZSIgbmlsbGFib
+        GU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplb
+        GVtZW50IHR5cGU9InRuczpMaXN0T2ZBc3NldFZlcmlmaWNhdGlvblJlc3VsdERhdGFUeXBlI
+        iBuYW1lPSJMaXN0T2ZBc3NldFZlcmlmaWNhdGlvblJlc3VsdERhdGFUeXBlIiBuaWxsYWJsZ
+        T0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkNvbW11bmljYXRpb25Db25maWd1c
+        mF0aW9uRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZS8+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOkNvbW11bmljYXRpb25Db25maWd1cmF0aW9uRGF0YVR5c
+        GUiIG5hbWU9IkNvbW11bmljYXRpb25Db25maWd1cmF0aW9uRGF0YVR5cGUiLz4KIDx4czpjb
+        21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvbkRhdGFUe
+        XBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T
+        2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvb
+        kRhdGFUeXBlIiBuYW1lPSJDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvbkRhdGFUeXBlIiBua
+        WxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZkNvbW11bmljYXRpb25Db25maWd1cmF0aW9uR
+        GF0YVR5cGUiIG5hbWU9Ikxpc3RPZkNvbW11bmljYXRpb25Db25maWd1cmF0aW9uRGF0YVR5c
+        GUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUHViU3ViQ29tb
+        XVuaWNhdGlvbkNvbmZpZ3VyYXRpb25EYXRhVHlwZSI+CiAgPHhzOmNvbXBsZXhDb250ZW50I
+        G1peGVkPSJmYWxzZSI+CiAgIDx4czpleHRlbnNpb24gYmFzZT0idWE6RXh0ZW5zaW9uT2JqZ
+        WN0Ij4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiI
+        G1heE9jY3Vycz0iMSIgdHlwZT0idWE6UHViU3ViQ29uZmlndXJhdGlvbjJEYXRhVHlwZSIgb
+        mFtZT0iUHViU3ViQ29uZmlndXJhdGlvbiIvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vyc
+        z0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpib29sZWFuIiBuYW1lPSJSZXF1aXJlQ29tc
+        GxldGVVcGRhdGUiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vyc
+        z0iMSIgdHlwZT0idWE6TGlzdE9mUHViU3ViQ29uZmlndXJhdGlvblJlZkRhdGFUeXBlIiBuY
+        W1lPSJDb25maWd1cmF0aW9uUmVmZXJlbmNlcyIvPgogICAgPC94czpzZXF1ZW5jZT4KICAgP
+        C94czpleHRlbnNpb24+CiAgPC94czpjb21wbGV4Q29udGVudD4KIDwveHM6Y29tcGxleFR5c
+        GU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6UHViU3ViQ29tbXVuaWNhdGlvbkNvbmZpZ3VyY
+        XRpb25EYXRhVHlwZSIgbmFtZT0iUHViU3ViQ29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25EY
+        XRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlB1YlN1YkNvbW11bmljY
+        XRpb25Db25maWd1cmF0aW9uRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZ
+        W1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlB1Y
+        lN1YkNvbW11bmljYXRpb25Db25maWd1cmF0aW9uRGF0YVR5cGUiIG5hbWU9IlB1YlN1YkNvb
+        W11bmljYXRpb25Db25maWd1cmF0aW9uRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgP
+        C94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0b
+        nM6TGlzdE9mUHViU3ViQ29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25EYXRhVHlwZSIgbmFtZ
+        T0iTGlzdE9mUHViU3ViQ29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25EYXRhVHlwZSIgbmlsb
+        GFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJDb21tdW5pY2F0aW9uQ29uZ
+        mlndXJhdGlvblJlc3VsdERhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2UvPgogPC94czpjb21wb
+        GV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpDb21tdW5pY2F0aW9uQ29uZmlndXJhd
+        GlvblJlc3VsdERhdGFUeXBlIiBuYW1lPSJDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvblJlc
+        3VsdERhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mQ29tbXVuaWNhd
+        GlvbkNvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8e
+        HM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0b
+        nM6Q29tbXVuaWNhdGlvbkNvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSIgbmFtZT0iQ29tb
+        XVuaWNhdGlvbkNvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiL
+        z4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5c
+        GU9InRuczpMaXN0T2ZDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvblJlc3VsdERhdGFUeXBlI
+        iBuYW1lPSJMaXN0T2ZDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvblJlc3VsdERhdGFUeXBlI
+        iBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IlB1YlN1YkNvbW11b
+        mljYXRpb25Db25maWd1cmF0aW9uUmVzdWx0RGF0YVR5cGUiPgogIDx4czpjb21wbGV4Q29ud
+        GVudCBtaXhlZD0iZmFsc2UiPgogICA8eHM6ZXh0ZW5zaW9uIGJhc2U9InVhOkV4dGVuc2lvb
+        k9iamVjdCI+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzP
+        SIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOlN0YXR1c0NvZGUiIG5hbWU9IlJlc3VsdCIvP
+        gogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4c
+        zpib29sZWFuIiBuYW1lPSJDaGFuZ2VzQXBwbGllZCIvPgogICAgIDx4czplbGVtZW50IG1pb
+        k9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpMaXN0T2ZTdGF0dXNDb2RlIiBuY
+        W1lPSJSZWZlcmVuY2VSZXN1bHRzIi8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwI
+        iBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkxpc3RPZlB1YlN1YkNvbmZpZ3VyYXRpb25WYWx1Z
+        URhdGFUeXBlIiBuYW1lPSJDb25maWd1cmF0aW9uVmFsdWVzIi8+CiAgICAgPHhzOmVsZW1lb
+        nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkxpc3RPZk5vZGVJZCIgb
+        mFtZT0iQ29uZmlndXJhdGlvbk9iamVjdHMiLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwve
+        HM6ZXh0ZW5zaW9uPgogIDwveHM6Y29tcGxleENvbnRlbnQ+CiA8L3hzOmNvbXBsZXhUeXBlP
+        gogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlB1YlN1YkNvbW11bmljYXRpb25Db25maWd1cmF0a
+        W9uUmVzdWx0RGF0YVR5cGUiIG5hbWU9IlB1YlN1YkNvbW11bmljYXRpb25Db25maWd1cmF0a
+        W9uUmVzdWx0RGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZQdWJTd
+        WJDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvblJlc3VsdERhdGFUeXBlIj4KICA8eHM6c2Vxd
+        WVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZ
+        WQiIHR5cGU9InRuczpQdWJTdWJDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvblJlc3VsdERhd
+        GFUeXBlIiBuYW1lPSJQdWJTdWJDb21tdW5pY2F0aW9uQ29uZmlndXJhdGlvblJlc3VsdERhd
+        GFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZ
+        XhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlB1YlN1YkNvbW11bmljYXRpb
+        25Db25maWd1cmF0aW9uUmVzdWx0RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlB1YlN1YkNvbW11b
+        mljYXRpb25Db25maWd1cmF0aW9uUmVzdWx0RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+C
+        iA8eHM6Y29tcGxleFR5cGUgbmFtZT0iQ29tbXVuaWNhdGlvbkxpbmtDb25maWd1cmF0aW9uR
+        GF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZS8+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZ
+        W1lbnQgdHlwZT0idG5zOkNvbW11bmljYXRpb25MaW5rQ29uZmlndXJhdGlvbkRhdGFUeXBlI
+        iBuYW1lPSJDb21tdW5pY2F0aW9uTGlua0NvbmZpZ3VyYXRpb25EYXRhVHlwZSIvPgogPHhzO
+        mNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZkNvbW11bmljYXRpb25MaW5rQ29uZmlndXJhdGlvb
+        kRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iM
+        CIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpDb21tdW5pY2F0aW9uTGlua0Nvb
+        mZpZ3VyYXRpb25EYXRhVHlwZSIgbmFtZT0iQ29tbXVuaWNhdGlvbkxpbmtDb25maWd1cmF0a
+        W9uRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y
+        29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mQ29tbXVuaWNhdGlvb
+        kxpbmtDb25maWd1cmF0aW9uRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZkNvbW11bmljYXRpb25Ma
+        W5rQ29uZmlndXJhdGlvbkRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZ
+        XhUeXBlIG5hbWU9IlB1YlN1YkNvbW11bmljYXRpb25MaW5rQ29uZmlndXJhdGlvbkRhdGFUe
+        XBlIj4KICA8eHM6Y29tcGxleENvbnRlbnQgbWl4ZWQ9ImZhbHNlIj4KICAgPHhzOmV4dGVuc
+        2lvbiBiYXNlPSJ1YTpFeHRlbnNpb25PYmplY3QiPgogICAgPHhzOnNlcXVlbmNlPgogICAgI
+        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpQdWJTd
+        WJDb25maWd1cmF0aW9uUmVmRGF0YVR5cGUiIG5hbWU9IkRhdGFTZXRSZWFkZXJSZWYiLz4KI
+        CAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6Q
+        29uZmlndXJhdGlvblZlcnNpb25EYXRhVHlwZSIgbmFtZT0iRXhwZWN0ZWRTdWJzY3JpYmVkR
+        GF0YVNldFZlcnNpb24iLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY
+        3Vycz0iMSIgdHlwZT0idWE6UHViU3ViQ29uZmlndXJhdGlvblJlZkRhdGFUeXBlIiBuYW1lP
+        SJEYXRhU2V0V3JpdGVyUmVmIi8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtY
+        XhPY2N1cnM9IjEiIHR5cGU9InVhOkNvbmZpZ3VyYXRpb25WZXJzaW9uRGF0YVR5cGUiIG5hb
+        WU9IkV4cGVjdGVkUHVibGlzaGVkRGF0YVNldFZlcnNpb24iLz4KICAgIDwveHM6c2VxdWVuY
+        2U+CiAgIDwveHM6ZXh0ZW5zaW9uPgogIDwveHM6Y29tcGxleENvbnRlbnQ+CiA8L3hzOmNvb
+        XBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlB1YlN1YkNvbW11bmljYXRpb25Ma
+        W5rQ29uZmlndXJhdGlvbkRhdGFUeXBlIiBuYW1lPSJQdWJTdWJDb21tdW5pY2F0aW9uTGlua
+        0NvbmZpZ3VyYXRpb25EYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZ
+        lB1YlN1YkNvbW11bmljYXRpb25MaW5rQ29uZmlndXJhdGlvbkRhdGFUeXBlIj4KICA8eHM6c
+        2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvd
+        W5kZWQiIHR5cGU9InRuczpQdWJTdWJDb21tdW5pY2F0aW9uTGlua0NvbmZpZ3VyYXRpb25EY
+        XRhVHlwZSIgbmFtZT0iUHViU3ViQ29tbXVuaWNhdGlvbkxpbmtDb25maWd1cmF0aW9uRGF0Y
+        VR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxle
+        FR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUHViU3ViQ29tbXVuaWNhdGlvb
+        kxpbmtDb25maWd1cmF0aW9uRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlB1YlN1YkNvbW11bmljY
+        XRpb25MaW5rQ29uZmlndXJhdGlvbkRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzO
+        mNvbXBsZXhUeXBlIG5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludENvbmZpZ3VyYXRpb25EYXRhV
+        HlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1he
+        E9jY3Vycz0iMSIgdHlwZT0idWE6Tm9kZUlkIiBuYW1lPSJGdW5jdGlvbmFsRW50aXR5Tm9kZ
+        SIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0id
+        G5zOkNvbm5lY3Rpb25FbmRwb2ludERlZmluaXRpb25EYXRhVHlwZSIgbmFtZT0iQ29ubmVjd
+        GlvbkVuZHBvaW50Ii8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzP
+        SIxIiB0eXBlPSJ0bnM6TGlzdE9mTm9kZUlkVmFsdWVQYWlyIiBuYW1lPSJFeHBlY3RlZFZlc
+        mlmaWNhdGlvblZhcmlhYmxlcyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1he
+        E9jY3Vycz0iMSIgdHlwZT0idWE6TGlzdE9mTm9kZUlkIiBuYW1lPSJDb250cm9sR3JvdXBzI
+        i8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0b
+        nM6TGlzdE9mTm9kZUlkVmFsdWVQYWlyIiBuYW1lPSJDb25maWd1cmF0aW9uRGF0YSIvPgogI
+        CA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6RXh0Z
+        W5zaW9uT2JqZWN0IiBuYW1lPSJDb21tdW5pY2F0aW9uTGlua3MiLz4KICA8L3hzOnNlcXVlb
+        mNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpDb25uZWN0a
+        W9uRW5kcG9pbnRDb25maWd1cmF0aW9uRGF0YVR5cGUiIG5hbWU9IkNvbm5lY3Rpb25FbmRwb
+        2ludENvbmZpZ3VyYXRpb25EYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc
+        3RPZkNvbm5lY3Rpb25FbmRwb2ludENvbmZpZ3VyYXRpb25EYXRhVHlwZSI+CiAgPHhzOnNlc
+        XVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZ
+        GVkIiB0eXBlPSJ0bnM6Q29ubmVjdGlvbkVuZHBvaW50Q29uZmlndXJhdGlvbkRhdGFUeXBlI
+        iBuYW1lPSJDb25uZWN0aW9uRW5kcG9pbnRDb25maWd1cmF0aW9uRGF0YVR5cGUiIG5pbGxhY
+        mxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6Z
+        WxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mQ29ubmVjdGlvbkVuZHBvaW50Q29uZmlndXJhdGlvb
+        kRhdGFUeXBlIiBuYW1lPSJMaXN0T2ZDb25uZWN0aW9uRW5kcG9pbnRDb25maWd1cmF0aW9uR
+        GF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iQ29ub
+        mVjdGlvbkVuZHBvaW50Q29uZmlndXJhdGlvblJlc3VsdERhdGFUeXBlIj4KICA8eHM6c2Vxd
+        WVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlP
+        SJ1YTpOb2RlSWQiIG5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludElkIi8+CiAgIDx4czplbGVtZ
+        W50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpTdGF0dXNDb2RlIiBuY
+        W1lPSJGdW5jdGlvbmFsRW50aXR5Tm9kZVJlc3VsdCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY
+        2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6U3RhdHVzQ29kZSIgbmFtZT0iQ29ub
+        mVjdGlvbkVuZHBvaW50UmVzdWx0Ii8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
+        WF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6RnVuY3Rpb25hbEVudGl0eVZlcmlmaWNhdGlvblJlc
+        3VsdEVudW0iIG5hbWU9IlZlcmlmaWNhdGlvblJlc3VsdCIvPgogICA8eHM6ZWxlbWVudCBta
+        W5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6U3RhdHVzQ29kZSIgbmFtZT0iV
+        mVyaWZpY2F0aW9uU3RhdHVzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T
+        2NjdXJzPSIxIiB0eXBlPSJ1YTpMaXN0T2ZTdGF0dXNDb2RlIiBuYW1lPSJWZXJpZmljYXRpb
+        25WYXJpYWJsZXNFcnJvcnMiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY
+        2N1cnM9IjEiIHR5cGU9InVhOkxpc3RPZlN0YXR1c0NvZGUiIG5hbWU9IkVzdGFibGlzaENvb
+        nRyb2xSZXN1bHQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9I
+        jEiIHR5cGU9InVhOkxpc3RPZlN0YXR1c0NvZGUiIG5hbWU9IkNvbmZpZ3VyYXRpb25EYXRhU
+        mVzdWx0Ii8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
+        XBlPSJ1YTpMaXN0T2ZTdGF0dXNDb2RlIiBuYW1lPSJSZWFzc2lnbkNvbnRyb2xSZXN1bHQiL
+        z4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhO
+        lN0YXR1c0NvZGUiIG5hbWU9IkNvbW11bmljYXRpb25MaW5rc1Jlc3VsdCIvPgogICA8eHM6Z
+        WxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6U3RhdHVzQ29kZ
+        SIgbmFtZT0iRW5hYmxlQ29tbXVuaWNhdGlvblJlc3VsdCIvPgogIDwveHM6c2VxdWVuY2U+C
+        iA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkNvbm5lY3Rpb25Fb
+        mRwb2ludENvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSIgbmFtZT0iQ29ubmVjdGlvbkVuZ
+        HBvaW50Q29uZmlndXJhdGlvblJlc3VsdERhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgb
+        mFtZT0iTGlzdE9mQ29ubmVjdGlvbkVuZHBvaW50Q29uZmlndXJhdGlvblJlc3VsdERhdGFUe
+        XBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T
+        2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpDb25uZWN0aW9uRW5kcG9pbnRDb25maWd1c
+        mF0aW9uUmVzdWx0RGF0YVR5cGUiIG5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludENvbmZpZ3VyY
+        XRpb25SZXN1bHREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlP
+        gogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZDb25uZ
+        WN0aW9uRW5kcG9pbnRDb25maWd1cmF0aW9uUmVzdWx0RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZ
+        kNvbm5lY3Rpb25FbmRwb2ludENvbmZpZ3VyYXRpb25SZXN1bHREYXRhVHlwZSIgbmlsbGFib
+        GU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJDb25uZWN0aW9uRW5kcG9pbnRQY
+        XJhbWV0ZXJEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY
+        2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJOYW1lIi8+C
+        iAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpOb
+        2RlSWQiIG5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludFR5cGVJZCIvPgogICA8eHM6ZWxlbWVud
+        CBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6TGlzdE9mTm9kZUlkIiBuY
+        W1lPSJJbnB1dFZhcmlhYmxlSWRzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
+        WF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpMaXN0T2ZOb2RlSWQiIG5hbWU9Ik91dHB1dFZhcmlhY
+        mxlSWRzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
+        XBlPSJ4czpib29sZWFuIiBuYW1lPSJJc1BlcnNpc3RlbnQiLz4KICAgPHhzOmVsZW1lbnQgb
+        WluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRvdWJsZSIgbmFtZT0iQ2xlY
+        W51cFRpbWVvdXQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9I
+        jEiIHR5cGU9InRuczpSZWxhdGVkRW5kcG9pbnREYXRhVHlwZSIgbmFtZT0iUmVsYXRlZEVuZ
+        HBvaW50Ii8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
+        XBlPSJ4czpib29sZWFuIiBuYW1lPSJJc1ByZWNvbmZpZ3VyZWQiLz4KICA8L3hzOnNlcXVlb
+        mNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpDb25uZWN0a
+        W9uRW5kcG9pbnRQYXJhbWV0ZXJEYXRhVHlwZSIgbmFtZT0iQ29ubmVjdGlvbkVuZHBvaW50U
+        GFyYW1ldGVyRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZDb25uZ
+        WN0aW9uRW5kcG9pbnRQYXJhbWV0ZXJEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8e
+        HM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0b
+        nM6Q29ubmVjdGlvbkVuZHBvaW50UGFyYW1ldGVyRGF0YVR5cGUiIG5hbWU9IkNvbm5lY3Rpb
+        25FbmRwb2ludFBhcmFtZXRlckRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c
+        2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc
+        3RPZkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhdGFUeXBlIiBuYW1lPSJMaXN0T2ZDb
+        25uZWN0aW9uRW5kcG9pbnRQYXJhbWV0ZXJEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KI
+        Dx4czpjb21wbGV4VHlwZSBuYW1lPSJQdWJTdWJDb25uZWN0aW9uRW5kcG9pbnRQYXJhbWV0Z
+        XJEYXRhVHlwZSI+CiAgPHhzOmNvbXBsZXhDb250ZW50IG1peGVkPSJmYWxzZSI+CiAgIDx4c
+        zpleHRlbnNpb24gYmFzZT0idWE6RXh0ZW5zaW9uT2JqZWN0Ij4KICAgIDx4czpzZXF1ZW5jZ
+        T4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0id
+        G5zOlB1YlN1YkNvbm5lY3Rpb25FbmRwb2ludE1vZGVFbnVtIiBuYW1lPSJNb2RlIi8+CiAgI
+        CA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmV4dGVuc2lvbj4KICA8L3hzOmNvbXBsZXhDb250Z
+        W50PgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpQdWJTdWJDb
+        25uZWN0aW9uRW5kcG9pbnRQYXJhbWV0ZXJEYXRhVHlwZSIgbmFtZT0iUHViU3ViQ29ubmVjd
+        GlvbkVuZHBvaW50UGFyYW1ldGVyRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lP
+        SJMaXN0T2ZQdWJTdWJDb25uZWN0aW9uRW5kcG9pbnRQYXJhbWV0ZXJEYXRhVHlwZSI+CiAgP
+        HhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0id
+        W5ib3VuZGVkIiB0eXBlPSJ0bnM6UHViU3ViQ29ubmVjdGlvbkVuZHBvaW50UGFyYW1ldGVyR
+        GF0YVR5cGUiIG5hbWU9IlB1YlN1YkNvbm5lY3Rpb25FbmRwb2ludFBhcmFtZXRlckRhdGFUe
+        XBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUe
+        XBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlB1YlN1YkNvbm5lY3Rpb25FbmRwb
+        2ludFBhcmFtZXRlckRhdGFUeXBlIiBuYW1lPSJMaXN0T2ZQdWJTdWJDb25uZWN0aW9uRW5kc
+        G9pbnRQYXJhbWV0ZXJEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4V
+        HlwZSBuYW1lPSJOb2RlSWRBcnJheSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVud
+        CBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6Tm9kZUlkIiBuYW1lPSJOb
+        2RlIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlP
+        SJ1YTpMaXN0T2ZVSW50MzIiIG5hbWU9IkFycmF5SW5kZXgiLz4KICA8L3hzOnNlcXVlbmNlP
+        gogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpOb2RlSWRBcnJhe
+        SIgbmFtZT0iTm9kZUlkQXJyYXkiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZOb
+        2RlSWRBcnJheSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9I
+        jAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6Tm9kZUlkQXJyYXkiIG5hbWU9I
+        k5vZGVJZEFycmF5IiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzO
+        mNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZk5vZGVJZEFycmF5I
+        iBuYW1lPSJMaXN0T2ZOb2RlSWRBcnJheSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wb
+        GV4VHlwZSBuYW1lPSJOb2RlSWRWYWx1ZVBhaXIiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzO
+        mVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InRuczpOb2RlSWRBc
+        nJheSIgbmFtZT0iS2V5Ii8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2Njd
+        XJzPSIxIiB0eXBlPSJ1YTpWYXJpYW50IiBuYW1lPSJWYWx1ZSIvPgogIDwveHM6c2VxdWVuY
+        2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOk5vZGVJZFZhb
+        HVlUGFpciIgbmFtZT0iTm9kZUlkVmFsdWVQYWlyIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZ
+        T0iTGlzdE9mTm9kZUlkVmFsdWVQYWlyIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZ
+        W50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpOb2RlS
+        WRWYWx1ZVBhaXIiIG5hbWU9Ik5vZGVJZFZhbHVlUGFpciIgbmlsbGFibGU9InRydWUiLz4KI
+        CA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9I
+        nRuczpMaXN0T2ZOb2RlSWRWYWx1ZVBhaXIiIG5hbWU9Ikxpc3RPZk5vZGVJZFZhbHVlUGFpc
+        iIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJSZWxhdGVkRW5kc
+        G9pbnREYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1c
+        nM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJBZGRyZXNzIi8+C
+        iAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpMa
+        XN0T2ZQb3J0YWJsZVF1YWxpZmllZE5hbWUiIG5hbWU9IkNvbm5lY3Rpb25FbmRwb2ludFBhd
+        GgiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9I
+        nhzOnN0cmluZyIgbmFtZT0iQ29ubmVjdGlvbkVuZHBvaW50TmFtZSIvPgogIDwveHM6c2Vxd
+        WVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlJlbGF0Z
+        WRFbmRwb2ludERhdGFUeXBlIiBuYW1lPSJSZWxhdGVkRW5kcG9pbnREYXRhVHlwZSIvPgogP
+        HhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlJlbGF0ZWRFbmRwb2ludERhdGFUeXBlIj4KI
+        CA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzP
+        SJ1bmJvdW5kZWQiIHR5cGU9InRuczpSZWxhdGVkRW5kcG9pbnREYXRhVHlwZSIgbmFtZT0iU
+        mVsYXRlZEVuZHBvaW50RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1Z
+        W5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mU
+        mVsYXRlZEVuZHBvaW50RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlJlbGF0ZWRFbmRwb2ludERhd
+        GFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IlJlc2Vyd
+        mVDb21tdW5pY2F0aW9uSWRzRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZS8+CiA8L3hzOmNvb
+        XBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlJlc2VydmVDb21tdW5pY2F0aW9uS
+        WRzRGF0YVR5cGUiIG5hbWU9IlJlc2VydmVDb21tdW5pY2F0aW9uSWRzRGF0YVR5cGUiLz4KI
+        Dx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZSZXNlcnZlQ29tbXVuaWNhdGlvbklkc0Rhd
+        GFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
+        WF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpSZXNlcnZlQ29tbXVuaWNhdGlvbklkc
+        0RhdGFUeXBlIiBuYW1lPSJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc0RhdGFUeXBlIiBuaWxsY
+        WJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzO
+        mVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlJlc2VydmVDb21tdW5pY2F0aW9uSWRzRGF0YVR5c
+        GUiIG5hbWU9Ikxpc3RPZlJlc2VydmVDb21tdW5pY2F0aW9uSWRzRGF0YVR5cGUiIG5pbGxhY
+        mxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUHViU3ViUmVzZXJ2ZUNvbW11b
+        mljYXRpb25JZHNEYXRhVHlwZSI+CiAgPHhzOmNvbXBsZXhDb250ZW50IG1peGVkPSJmYWxzZ
+        SI+CiAgIDx4czpleHRlbnNpb24gYmFzZT0idWE6RXh0ZW5zaW9uT2JqZWN0Ij4KICAgIDx4c
+        zpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iM
+        SIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJUcmFuc3BvcnRQcm9maWxlVXJpIi8+CiAgICAgP
+        HhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnVuc2lnb
+        mVkU2hvcnQiIG5hbWU9Ik51bVJlcVdyaXRlckdyb3VwSWRzIi8+CiAgICAgPHhzOmVsZW1lb
+        nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnVuc2lnbmVkU2hvcnQiI
+        G5hbWU9Ik51bVJlcURhdGFTZXRXcml0ZXJJZHMiLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgI
+        DwveHM6ZXh0ZW5zaW9uPgogIDwveHM6Y29tcGxleENvbnRlbnQ+CiA8L3hzOmNvbXBsZXhUe
+        XBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlB1YlN1YlJlc2VydmVDb21tdW5pY2F0aW9uS
+        WRzRGF0YVR5cGUiIG5hbWU9IlB1YlN1YlJlc2VydmVDb21tdW5pY2F0aW9uSWRzRGF0YVR5c
+        GUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZQdWJTdWJSZXNlcnZlQ29tbXVua
+        WNhdGlvbklkc0RhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pb
+        k9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQdWJTdWJSZXNlc
+        nZlQ29tbXVuaWNhdGlvbklkc0RhdGFUeXBlIiBuYW1lPSJQdWJTdWJSZXNlcnZlQ29tbXVua
+        WNhdGlvbklkc0RhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+C
+        iA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlB1YlN1Y
+        lJlc2VydmVDb21tdW5pY2F0aW9uSWRzRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlB1YlN1YlJlc
+        2VydmVDb21tdW5pY2F0aW9uSWRzRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y
+        29tcGxleFR5cGUgbmFtZT0iUmVzZXJ2ZUNvbW11bmljYXRpb25JZHNSZXN1bHREYXRhVHlwZ
+        SI+CiAgPHhzOnNlcXVlbmNlLz4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0e
+        XBlPSJ0bnM6UmVzZXJ2ZUNvbW11bmljYXRpb25JZHNSZXN1bHREYXRhVHlwZSIgbmFtZT0iU
+        mVzZXJ2ZUNvbW11bmljYXRpb25JZHNSZXN1bHREYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUe
+        XBlIG5hbWU9Ikxpc3RPZlJlc2VydmVDb21tdW5pY2F0aW9uSWRzUmVzdWx0RGF0YVR5cGUiP
+        gogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9InVuYm91bmRlZCIgdHlwZT0idG5zOlJlc2VydmVDb21tdW5pY2F0aW9uSWRzUmVzdWx0R
+        GF0YVR5cGUiIG5hbWU9IlJlc2VydmVDb21tdW5pY2F0aW9uSWRzUmVzdWx0RGF0YVR5cGUiI
+        G5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+C
+        iA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUmVzZXJ2ZUNvbW11bmljYXRpb25JZHNSZ
+        XN1bHREYXRhVHlwZSIgbmFtZT0iTGlzdE9mUmVzZXJ2ZUNvbW11bmljYXRpb25JZHNSZXN1b
+        HREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJQd
+        WJTdWJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc1Jlc3VsdERhdGFUeXBlIj4KICA8eHM6Y29tc
+        GxleENvbnRlbnQgbWl4ZWQ9ImZhbHNlIj4KICAgPHhzOmV4dGVuc2lvbiBiYXNlPSJ1YTpFe
+        HRlbnNpb25PYmplY3QiPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pb
+        k9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpTdGF0dXNDb2RlIiBuYW1lPSJSZ
+        XN1bHQiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgd
+        HlwZT0idWE6VmFyaWFudCIgbmFtZT0iRGVmYXVsdFB1Ymxpc2hlcklkIi8+CiAgICAgPHhzO
+        mVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkxpc3RPZlVJb
+        nQxNiIgbmFtZT0iV3JpdGVyR3JvdXBJZHMiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1c
+        nM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6TGlzdE9mVUludDE2IiBuYW1lPSJEYXRhU
+        2V0V3JpdGVySWRzIi8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmV4dGVuc2lvbj4KI
+        CA8L3hzOmNvbXBsZXhDb250ZW50PgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50I
+        HR5cGU9InRuczpQdWJTdWJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc1Jlc3VsdERhdGFUeXBlI
+        iBuYW1lPSJQdWJTdWJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc1Jlc3VsdERhdGFUeXBlIi8+C
+        iA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mUHViU3ViUmVzZXJ2ZUNvbW11bmljYXRpb
+        25JZHNSZXN1bHREYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBta
+        W5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6UHViU3ViUmVzZ
+        XJ2ZUNvbW11bmljYXRpb25JZHNSZXN1bHREYXRhVHlwZSIgbmFtZT0iUHViU3ViUmVzZXJ2Z
+        UNvbW11bmljYXRpb25JZHNSZXN1bHREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L
+        3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuc
+        zpMaXN0T2ZQdWJTdWJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc1Jlc3VsdERhdGFUeXBlIiBuY
+        W1lPSJMaXN0T2ZQdWJTdWJSZXNlcnZlQ29tbXVuaWNhdGlvbklkc1Jlc3VsdERhdGFUeXBlI
+        iBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkNvbm5lY3Rpb25Fb
+        mRwb2ludERlZmluaXRpb25EYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlb
+        WVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6dW5zaWduZWRJbnQiI
+        G5hbWU9IlN3aXRjaEZpZWxkIi8+CiAgIDx4czpjaG9pY2U+CiAgICA8eHM6ZWxlbWVudCBta
+        W5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBuY
+        W1lPSJQYXJhbWV0ZXIiLz4KICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2Njd
+        XJzPSIxIiB0eXBlPSJ1YTpOb2RlSWQiIG5hbWU9Ik5vZGUiLz4KICAgPC94czpjaG9pY2U+C
+        iAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlP
+        SJ0bnM6Q29ubmVjdGlvbkVuZHBvaW50RGVmaW5pdGlvbkRhdGFUeXBlIiBuYW1lPSJDb25uZ
+        WN0aW9uRW5kcG9pbnREZWZpbml0aW9uRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuY
+        W1lPSJMaXN0T2ZDb25uZWN0aW9uRW5kcG9pbnREZWZpbml0aW9uRGF0YVR5cGUiPgogIDx4c
+        zpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuY
+        m91bmRlZCIgdHlwZT0idG5zOkNvbm5lY3Rpb25FbmRwb2ludERlZmluaXRpb25EYXRhVHlwZ
+        SIgbmFtZT0iQ29ubmVjdGlvbkVuZHBvaW50RGVmaW5pdGlvbkRhdGFUeXBlIiBuaWxsYWJsZ
+        T0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZ
+        W1lbnQgdHlwZT0idG5zOkxpc3RPZkNvbm5lY3Rpb25FbmRwb2ludERlZmluaXRpb25EYXRhV
+        HlwZSIgbmFtZT0iTGlzdE9mQ29ubmVjdGlvbkVuZHBvaW50RGVmaW5pdGlvbkRhdGFUeXBlI
+        iBuaWxsYWJsZT0idHJ1ZSIvPgo8L3hzOnNjaGVtYT4K</uax:ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6025" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6024" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6024</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/FX/Data/Types.xsd</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1025" BrowseName="1:AuditUpdateMethodResultEventType">
+    <DisplayName>AuditUpdateMethodResultEventType</DisplayName>
+    <Category>UAFX Auditing Connection Management</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/8.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6325</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6324</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=6325" BrowseName="1:OutputArguments" ParentNodeId="ns=1;i=1025" DataType="Argument" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1025</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6324" BrowseName="1:StatusCodeId" ParentNodeId="ns=1;i=1025" DataType="StatusCode" AccessLevel="3">
+    <DisplayName>StatusCodeId</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1025</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=71" BrowseName="1:FxRoot">
+    <DisplayName>FxRoot</DisplayName>
+    <Category>UAFX FxRoot</Category>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/12.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=81" BrowseName="1:http://opcfoundation.org/UA/FX/Data/" SymbolicName="http___opcfoundation_org_UA_FX_Data_">
+    <DisplayName>http://opcfoundation.org/UA/FX/Data/</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/14.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=177</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=178</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=179</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=180</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=181</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=182</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=183</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=177" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=81" DataType="Boolean">
+    <DisplayName>IsNamespaceSubset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+    <Value>
+      <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=178" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=81" DataType="DateTime">
+    <DisplayName>NamespacePublicationDate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+    <Value>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-10-15T00:00:00Z</uax:DateTime>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=179" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=81" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/FX/Data/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=180" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=81" DataType="String">
+    <DisplayName>NamespaceVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00.00</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=181" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=81" DataType="IdType" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>StaticNodeIdTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+    <Value>
+      <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=182" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=81" DataType="NumericRange" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>StaticNumericNodeIdRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+    <Value>
+      <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:String>0:15000</uax:String>
+            </uax:ListOfString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=183" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=81" DataType="String">
+    <DisplayName>StaticStringNodeIdPattern</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5019" BrowseName="1:ConnectionAdmin">
+    <DisplayName>ConnectionAdmin</DisplayName>
+    <Description>The Role is allowed to establish, close, and modify connections between FunctionalEntities. 
+This includes reading and writing connection configuration settings, reading endpoint and connection capabilities, and executing methods related to management of connections.
+It is intended to be a non-human Role.
+</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=15620</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7027</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7028</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7029</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6400</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6402</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15606</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6403</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6404</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6405</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7030</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7031</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7032</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="ns=1;i=7027" BrowseName="AddApplication" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=16176">
+    <DisplayName>AddApplication</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6170</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6170" BrowseName="InputArguments" ParentNodeId="ns=1;i=7027" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7027</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ApplicationUri</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7028" BrowseName="AddEndpoint" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=16180">
+    <DisplayName>AddEndpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6331</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6331" BrowseName="InputArguments" ParentNodeId="ns=1;i=7028" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7028</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Endpoint</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=15528</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7029" BrowseName="AddIdentity" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=15624">
+    <DisplayName>AddIdentity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6332</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6332" BrowseName="InputArguments" ParentNodeId="ns=1;i=7029" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7029</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Rule</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=15634</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6400" BrowseName="Applications" ParentNodeId="ns=1;i=5019" DataType="String" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>Applications</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6402" BrowseName="ApplicationsExclude" ParentNodeId="ns=1;i=5019" DataType="Boolean">
+    <DisplayName>ApplicationsExclude</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6403" BrowseName="Endpoints" ParentNodeId="ns=1;i=5019" DataType="EndpointType" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>Endpoints</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6404" BrowseName="EndpointsExclude" ParentNodeId="ns=1;i=5019" DataType="Boolean">
+    <DisplayName>EndpointsExclude</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6405" BrowseName="Identities" ParentNodeId="ns=1;i=5019" DataType="IdentityMappingRuleType" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>Identities</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7030" BrowseName="RemoveApplication" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=16178">
+    <DisplayName>RemoveApplication</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6406</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6406" BrowseName="InputArguments" ParentNodeId="ns=1;i=7030" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7030</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ApplicationUri</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7031" BrowseName="RemoveEndpoint" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=16182">
+    <DisplayName>RemoveEndpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6407</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6407" BrowseName="InputArguments" ParentNodeId="ns=1;i=7031" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7031</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Endpoint</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=15528</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7032" BrowseName="RemoveIdentity" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=15626">
+    <DisplayName>RemoveIdentity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6408</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6408" BrowseName="InputArguments" ParentNodeId="ns=1;i=7032" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7032</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Rule</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=15634</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=1093" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1028</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6195</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1094" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1028</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6196</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1095" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1102" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1031</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6177</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1103" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1031</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6178</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1104" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1031</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1108" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6167</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1033</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1109" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6168</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1033</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1110" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1033</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1111" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1034</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6193</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1112" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1034</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6194</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1113" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1034</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1141" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6179</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1044</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1142" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6180</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1044</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1143" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1044</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1144" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1045</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6165</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1145" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1045</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6166</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1146" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1045</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1147" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6163</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1148" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6164</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1149" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1153" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6028</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1048</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1154" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6029</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1048</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1155" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1048</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1205" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6161</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1038</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1206" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6162</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1038</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1207" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1038</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1208" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1039</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6171</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1209" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1039</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6172</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=1210" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=1039</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5001" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3003</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6217</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5002" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3003</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6218</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5003" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3003</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5033" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6173</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3007</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5034" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6174</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3007</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5035" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3007</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5036" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6181</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5037" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6182</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5038" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5039" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6185</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3009</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5040" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6186</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3009</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5041" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3009</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5054" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6008</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3011</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5055" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6009</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3011</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5056" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3011</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5060" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6329</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5061" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6330</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5062" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5064" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3017</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6411</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5065" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3017</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6412</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5081" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3017</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5082" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3018</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6413</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5083" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3018</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6414</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5084" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3018</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5085" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3019</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6415</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5086" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3019</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6416</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5087" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3019</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5088" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3020</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6417</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5089" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3020</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6418</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5090" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3020</Reference>
+    </References>
+  </UAObject>
+</UANodeSet>

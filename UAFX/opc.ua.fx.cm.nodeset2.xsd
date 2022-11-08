@@ -1,0 +1,162 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/FX/CM/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/FX/CM/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="FxEditEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="StartEditing_0"/>
+            <xs:enumeration value="CommitUpdates_1"/>
+            <xs:enumeration value="DiscardUpdates_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FxEditEnum" name="FxEditEnum"/>
+    <xs:complexType name="ListOfFxEditEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FxEditEnum" name="FxEditEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFxEditEnum" name="ListOfFxEditEnum" nillable="true"/>
+    <xs:simpleType name="FxProcessEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ActionEstablishConnectionsEnabled_0"/>
+            <xs:enumeration value="ActionEstablishConnectionsDisabled_1"/>
+            <xs:enumeration value="ActionEstablishConnections_2"/>
+            <xs:enumeration value="ActionRemoveConnections_3"/>
+            <xs:enumeration value="ActionEnableConnections_4"/>
+            <xs:enumeration value="ActionDisableConnections_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FxProcessEnum" name="FxProcessEnum"/>
+    <xs:complexType name="ListOfFxProcessEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FxProcessEnum" name="FxProcessEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFxProcessEnum" name="ListOfFxProcessEnum" nillable="true"/>
+    <xs:complexType name="CommunicationFlowQosDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="QosCategory"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="TransmitQos"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ReceiveQos"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:CommunicationFlowQosDataType" name="CommunicationFlowQosDataType"/>
+    <xs:complexType name="ListOfCommunicationFlowQosDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CommunicationFlowQosDataType" name="CommunicationFlowQosDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCommunicationFlowQosDataType" name="ListOfCommunicationFlowQosDataType" nillable="true"/>
+    <xs:complexType name="NodeIdTranslationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:NodeId" name="NodePlaceholder"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:PortableNodeIdentifier" name="PortableNode"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:NodeIdTranslationDataType" name="NodeIdTranslationDataType"/>
+    <xs:complexType name="ListOfNodeIdTranslationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:NodeIdTranslationDataType" name="NodeIdTranslationDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfNodeIdTranslationDataType" name="ListOfNodeIdTranslationDataType" nillable="true"/>
+    <xs:complexType name="PortableKeyValuePair">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:PortableQualifiedName" name="Key"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="Value"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PortableKeyValuePair" name="PortableKeyValuePair"/>
+    <xs:complexType name="ListOfPortableKeyValuePair">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PortableKeyValuePair" name="PortableKeyValuePair" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPortableKeyValuePair" name="ListOfPortableKeyValuePair" nillable="true"/>
+    <xs:complexType name="PortableNodeIdentifierValuePair">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:PortableNodeIdentifier" name="Key"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfUInt32" name="ArrayIndex"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="Value"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PortableNodeIdentifierValuePair" name="PortableNodeIdentifierValuePair"/>
+    <xs:complexType name="ListOfPortableNodeIdentifierValuePair">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PortableNodeIdentifierValuePair" name="PortableNodeIdentifierValuePair" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPortableNodeIdentifierValuePair" name="ListOfPortableNodeIdentifierValuePair" nillable="true"/>
+    <xs:complexType name="PortableRelativePath">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfPortableRelativePathElement" name="Elements"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PortableRelativePath" name="PortableRelativePath"/>
+    <xs:complexType name="ListOfPortableRelativePath">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PortableRelativePath" name="PortableRelativePath" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPortableRelativePath" name="ListOfPortableRelativePath" nillable="true"/>
+    <xs:complexType name="PortableRelativePathElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:PortableNodeId" name="ReferenceTypeId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="IsInverse"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="IncludeSubtypes"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:PortableQualifiedName" name="TargetName"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PortableRelativePathElement" name="PortableRelativePathElement"/>
+    <xs:complexType name="ListOfPortableRelativePathElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PortableRelativePathElement" name="PortableRelativePathElement" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPortableRelativePathElement" name="ListOfPortableRelativePathElement" nillable="true"/>
+    <xs:complexType name="SecurityKeyServerAddressDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Address"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SecurityPolicyUri"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ServerUri"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="UsePushModel"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:SecurityKeyServerAddressDataType" name="SecurityKeyServerAddressDataType"/>
+    <xs:complexType name="ListOfSecurityKeyServerAddressDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SecurityKeyServerAddressDataType" name="SecurityKeyServerAddressDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSecurityKeyServerAddressDataType" name="ListOfSecurityKeyServerAddressDataType" nillable="true"/>
+    <xs:complexType name="ServerAddressDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Address"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:MessageSecurityMode" name="SecurityMode"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SecurityPolicyUri"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ServerUri"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ServerAddressDataType" name="ServerAddressDataType"/>
+    <xs:complexType name="ListOfServerAddressDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ServerAddressDataType" name="ServerAddressDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfServerAddressDataType" name="ListOfServerAddressDataType" nillable="true"/>
+    <xs:complexType name="PortableNodeIdentifier">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:PortableNodeId" name="Node"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Alias"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="tns:PortableRelativePath" name="IdentifierBrowsePath"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PortableNodeIdentifier" name="PortableNodeIdentifier"/>
+    <xs:complexType name="ListOfPortableNodeIdentifier">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PortableNodeIdentifier" name="PortableNodeIdentifier" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPortableNodeIdentifier" name="ListOfPortableNodeIdentifier" nillable="true"/>
+</xs:schema>

@@ -1,0 +1,35 @@
+###########################
+# UaModeler Project File  #
+# Generated at 07.11.2022 #
+###########################
+
+PROJECTNAME = opc_ua_fx_nodeset3
+
+TEMPLATESET = ($TEMPLATES)/modeling/v1_0/t0/modeling.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    ($MODELS)/Opc.Ua.Di.NodeSet2.ua \
+    opc.ua.fx.data.nodeset2.ua \
+    opc.ua.fx.ac.nodeset2.ua \
+    opc.ua.fx.cm.nodeset2.ua
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    ($MODELS)/Opc.Ua.Di.NodeSet2.ua: #0000ff\
+    opc.ua.fx.data.nodeset2.ua: #0000ff\
+    opc.ua.fx.ac.nodeset2.ua: #0000ff\
+    opc.ua.fx.cm.nodeset2.ua: #0000ff
+
+OUTPUTPATH = 
+
+GENERATE += opc.ua.fx.data.nodeset2.ua \
+    opc.ua.fx.ac.nodeset2.ua \
+    opc.ua.fx.cm.nodeset2.ua
+
+LOCKEDMODELS += ($MODELS)/Opc.Ua.Di.NodeSet2.ua
+
+NODEACCESSINFOROLES += Administrator \
+    SecurityAdmin \
+    ConfigurationAdmin \
+    Operator \
+    Observer
+

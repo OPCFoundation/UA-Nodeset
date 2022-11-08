@@ -1,0 +1,167 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/FX/AC/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/FX/AC/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="ClampKindEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Screw_0"/>
+            <xs:enumeration value="Thumb_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ClampKindEnum" name="ClampKindEnum"/>
+    <xs:complexType name="ListOfClampKindEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ClampKindEnum" name="ClampKindEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfClampKindEnum" name="ListOfClampKindEnum" nillable="true"/>
+    <xs:simpleType name="ConnectionEndpointStatusEnum">
+        <xs:annotation>
+            <xs:documentation>This enumeration defines the values of the FlcConnectionStatus of an FlcConnectionEndpointType. </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Initial_0"/>
+            <xs:enumeration value="Ready_1"/>
+            <xs:enumeration value="PreOperational_2"/>
+            <xs:enumeration value="Operational_3"/>
+            <xs:enumeration value="Error_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ConnectionEndpointStatusEnum" name="ConnectionEndpointStatusEnum"/>
+    <xs:complexType name="ListOfConnectionEndpointStatusEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ConnectionEndpointStatusEnum" name="ConnectionEndpointStatusEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConnectionEndpointStatusEnum" name="ListOfConnectionEndpointStatusEnum" nillable="true"/>
+    <xs:simpleType name="FxTimeUnitsEnum">
+        <xs:annotation>
+            <xs:documentation>This enumeration describes the support units of time</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Nanosecond_0"/>
+            <xs:enumeration value="Microsecond_1"/>
+            <xs:enumeration value="Millisecond_2"/>
+            <xs:enumeration value="Second_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FxTimeUnitsEnum" name="FxTimeUnitsEnum"/>
+    <xs:complexType name="ListOfFxTimeUnitsEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FxTimeUnitsEnum" name="FxTimeUnitsEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFxTimeUnitsEnum" name="ListOfFxTimeUnitsEnum" nillable="true"/>
+    <xs:simpleType name="SocketKindEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="RJ45_0"/>
+            <xs:enumeration value="M12_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:SocketKindEnum" name="SocketKindEnum"/>
+    <xs:complexType name="ListOfSocketKindEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SocketKindEnum" name="SocketKindEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSocketKindEnum" name="ListOfSocketKindEnum" nillable="true"/>
+    <xs:complexType name="AggregatedHealthDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="AggregatedDeviceHealth"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="AggregatedOperationalHealth"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:AggregatedHealthDataType" name="AggregatedHealthDataType"/>
+    <xs:complexType name="ListOfAggregatedHealthDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:AggregatedHealthDataType" name="AggregatedHealthDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAggregatedHealthDataType" name="ListOfAggregatedHealthDataType" nillable="true"/>
+    <xs:complexType name="ApplicationIdentifierDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ApplicationId" name="UniqueIdentifier"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ApplicationIdentifierDataType" name="ApplicationIdentifierDataType"/>
+    <xs:complexType name="ListOfApplicationIdentifierDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ApplicationIdentifierDataType" name="ApplicationIdentifierDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfApplicationIdentifierDataType" name="ListOfApplicationIdentifierDataType" nillable="true"/>
+    <xs:complexType name="FxVersion">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Major"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Minor"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Build"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="SubBuild"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:FxVersion" name="FxVersion"/>
+    <xs:complexType name="ListOfFxVersion">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FxVersion" name="FxVersion" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFxVersion" name="ListOfFxVersion" nillable="true"/>
+    <xs:complexType name="IntervalRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Min"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Max"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Increment"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Multiplier"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:FxTimeUnitsEnum" name="Unit"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:IntervalRange" name="IntervalRange"/>
+    <xs:complexType name="ListOfIntervalRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:IntervalRange" name="IntervalRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfIntervalRange" name="ListOfIntervalRange" nillable="true"/>
+    <xs:complexType name="PublisherQosDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="QosCategory"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="DatagramQos"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PublisherQosDataType" name="PublisherQosDataType"/>
+    <xs:complexType name="ListOfPublisherQosDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PublisherQosDataType" name="PublisherQosDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPublisherQosDataType" name="ListOfPublisherQosDataType" nillable="true"/>
+    <xs:complexType name="SubscriberQosDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="QosCategory"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="DatagramQos"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:SubscriberQosDataType" name="SubscriberQosDataType"/>
+    <xs:complexType name="ListOfSubscriberQosDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SubscriberQosDataType" name="SubscriberQosDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSubscriberQosDataType" name="ListOfSubscriberQosDataType" nillable="true"/>
+    <xs:complexType name="ApplicationId">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="IdNumeric"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="IdString"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="ua:Guid" name="IdGuid"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:base64Binary" name="IdByteString"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ApplicationId" name="ApplicationId"/>
+    <xs:complexType name="ListOfApplicationId">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ApplicationId" name="ApplicationId" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfApplicationId" name="ListOfApplicationId" nillable="true"/>
+</xs:schema>
