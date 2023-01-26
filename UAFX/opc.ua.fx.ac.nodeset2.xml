@@ -35,7 +35,7 @@
     <Uri>http://opcfoundation.org/UA/FX/Data/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/FX/AC/" Version="1.00.00" PublicationDate="2022-10-15T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/FX/AC/" Version="1.00.01" PublicationDate="2022-12-02T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2022-01-24T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.03.1" PublicationDate="2021-09-07T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/FX/Data/" Version="1.00.00" PublicationDate="2022-10-15T00:00:00Z" />
@@ -3063,7 +3063,7 @@
             </uax:ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:ConnectionEndpointType">
+  <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:ConnectionEndpointType" IsAbstract="true">
     <DisplayName>ConnectionEndpointType</DisplayName>
     <Category>UAFX ConnectionEndpoint Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/6.6.2</Documentation>
@@ -6343,7 +6343,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-10-15T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-12-02T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5001" DataType="String">
@@ -6363,7 +6363,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00.00</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00.01</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6005" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5001" DataType="IdType" ValueRank="1" ArrayDimensions="0">
