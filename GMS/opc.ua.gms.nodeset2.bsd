@@ -1,0 +1,40 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/GMS/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/GMS/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="WorkspaceType">
+        <opc:Field TypeName="opc:Double" Name="EngineeringUnits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:WorkspaceType" Name="CartesianWorkspaceType">
+        <opc:Field SourceType="tns:WorkspaceType" TypeName="opc:Double" Name="EngineeringUnits"/>
+        <opc:Field TypeName="opc:Double" Name="Length"/>
+        <opc:Field TypeName="opc:Double" Name="Width"/>
+        <opc:Field TypeName="opc:Double" Name="Height"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:WorkspaceType" Name="CylindricalWorkspaceType">
+        <opc:Field SourceType="tns:WorkspaceType" TypeName="opc:Double" Name="EngineeringUnits"/>
+        <opc:Field TypeName="opc:Double" Name="Length"/>
+        <opc:Field TypeName="opc:Double" Name="Radius"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="MeasurementReasonEnum">
+        <opc:EnumeratedValue Name="ContinuousMeasurements" Value="0"/>
+        <opc:EnumeratedValue Name="SpecialMeasurement" Value="1"/>
+        <opc:EnumeratedValue Name="AuditMeasurement" Value="2"/>
+        <opc:EnumeratedValue Name="MinMastering" Value="3"/>
+        <opc:EnumeratedValue Name="MedMastering" Value="4"/>
+        <opc:EnumeratedValue Name="MaxMastering" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ToleranceLimitEnum">
+        <opc:EnumeratedValue Name="NoLimit" Value="0"/>
+        <opc:EnumeratedValue Name="LimitValue" Value="1"/>
+        <opc:EnumeratedValue Name="NaturalLimit" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ToolAlignmentState">
+        <opc:EnumeratedValue Name="Fixed" Value="0"/>
+        <opc:EnumeratedValue Name="Indexed" Value="1"/>
+        <opc:EnumeratedValue Name="Continuous" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ToolIsQualifiedStatus">
+        <opc:EnumeratedValue Name="Qualified" Value="0"/>
+        <opc:EnumeratedValue Name="Imprecise" Value="1"/>
+        <opc:EnumeratedValue Name="NotQualified" Value="2"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

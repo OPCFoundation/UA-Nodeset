@@ -1,0 +1,109 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/GMS/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/GMS/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="MeasurementReasonEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ContinuousMeasurements_0"/>
+            <xs:enumeration value="SpecialMeasurement_1"/>
+            <xs:enumeration value="AuditMeasurement_2"/>
+            <xs:enumeration value="MinMastering_3"/>
+            <xs:enumeration value="MedMastering_4"/>
+            <xs:enumeration value="MaxMastering_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MeasurementReasonEnum" name="MeasurementReasonEnum"/>
+    <xs:complexType name="ListOfMeasurementReasonEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MeasurementReasonEnum" name="MeasurementReasonEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMeasurementReasonEnum" name="ListOfMeasurementReasonEnum" nillable="true"/>
+    <xs:simpleType name="ToleranceLimitEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NoLimit_0"/>
+            <xs:enumeration value="LimitValue_1"/>
+            <xs:enumeration value="NaturalLimit_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ToleranceLimitEnum" name="ToleranceLimitEnum"/>
+    <xs:complexType name="ListOfToleranceLimitEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ToleranceLimitEnum" name="ToleranceLimitEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfToleranceLimitEnum" name="ListOfToleranceLimitEnum" nillable="true"/>
+    <xs:simpleType name="ToolAlignmentState">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Fixed_0"/>
+            <xs:enumeration value="Indexed_1"/>
+            <xs:enumeration value="Continuous_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ToolAlignmentState" name="ToolAlignmentState"/>
+    <xs:complexType name="ListOfToolAlignmentState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ToolAlignmentState" name="ToolAlignmentState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfToolAlignmentState" name="ListOfToolAlignmentState" nillable="true"/>
+    <xs:simpleType name="ToolIsQualifiedStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Qualified_0"/>
+            <xs:enumeration value="Imprecise_1"/>
+            <xs:enumeration value="NotQualified_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ToolIsQualifiedStatus" name="ToolIsQualifiedStatus"/>
+    <xs:complexType name="ListOfToolIsQualifiedStatus">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ToolIsQualifiedStatus" name="ToolIsQualifiedStatus" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfToolIsQualifiedStatus" name="ListOfToolIsQualifiedStatus" nillable="true"/>
+    <xs:complexType name="WorkspaceType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="EngineeringUnits"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:WorkspaceType" name="WorkspaceType"/>
+    <xs:complexType name="ListOfWorkspaceType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WorkspaceType" name="WorkspaceType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWorkspaceType" name="ListOfWorkspaceType" nillable="true"/>
+    <xs:complexType name="CartesianWorkspaceType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Length"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Width"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Height"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CartesianWorkspaceType" name="CartesianWorkspaceType"/>
+    <xs:complexType name="ListOfCartesianWorkspaceType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CartesianWorkspaceType" name="CartesianWorkspaceType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCartesianWorkspaceType" name="ListOfCartesianWorkspaceType" nillable="true"/>
+    <xs:complexType name="CylindricalWorkspaceType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Length"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Radius"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CylindricalWorkspaceType" name="CylindricalWorkspaceType"/>
+    <xs:complexType name="ListOfCylindricalWorkspaceType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CylindricalWorkspaceType" name="CylindricalWorkspaceType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCylindricalWorkspaceType" name="ListOfCylindricalWorkspaceType" nillable="true"/>
+</xs:schema>
