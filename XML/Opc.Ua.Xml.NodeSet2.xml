@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/XML/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/UA/XML/" Version="1.0.0" PublicationDate="2023-01-14T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.03" PublicationDate="2013-12-02T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="IdType">i=256</Alias>
+    <Alias Alias="NumericRange">i=291</Alias>
+  </Aliases>
+  <Extensions>
+    <Extension>
+      <ua:ModelInfo Tool="UaModeler" Hash="RYKlsL4c3NWKXSmy6CLMCw==" Version="1.6.7" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+    </Extension>
+  </Extensions>
+  <UADataType NodeId="ns=1;i=3042" BrowseName="1:XmlHexBinary">
+    <DisplayName>XmlHexBinary</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.15</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=15</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3027" BrowseName="1:XmlInteger">
+    <DisplayName>XmlInteger</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.10</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=8</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3033" BrowseName="1:XmlNegativeInteger">
+    <DisplayName>XmlNegativeInteger</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.12</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3030" BrowseName="1:XmlNonPositiveInteger">
+    <DisplayName>XmlNonPositiveInteger</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.11</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3036" BrowseName="1:XmlNonNegativeInteger">
+    <DisplayName>XmlNonNegativeInteger</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.13</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=9</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3039" BrowseName="1:XmlPositiveInteger">
+    <DisplayName>XmlPositiveInteger</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.14</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3006" BrowseName="1:XmlToken">
+    <DisplayName>XmlToken</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12877</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3012" BrowseName="1:XmlName">
+    <DisplayName>XmlName</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.5</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3006</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3015" BrowseName="1:XmlNcName">
+    <DisplayName>XmlNcName</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.6</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3012</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3024" BrowseName="1:XmlEntity">
+    <DisplayName>XmlEntity</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.9</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3015</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3018" BrowseName="1:XmlId">
+    <DisplayName>XmlId</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.7</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3015</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3021" BrowseName="1:XmlIdRef">
+    <DisplayName>XmlIdRef</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.8</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3015</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3009" BrowseName="1:XmlNmToken">
+    <DisplayName>XmlNmToken</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3006</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3069" BrowseName="1:XmlDate">
+    <DisplayName>XmlDate</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.24</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3051" BrowseName="1:XmlDayTimeDuration">
+    <DisplayName>XmlDayTimeDuration</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.18</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3060" BrowseName="1:XmlGDay">
+    <DisplayName>XmlGDay</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.21</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3057" BrowseName="1:XmlGMonth">
+    <DisplayName>XmlGMonth</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.20</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3063" BrowseName="1:XmlGMonthDay">
+    <DisplayName>XmlGMonthDay</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.22</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3054" BrowseName="1:XmlGYear">
+    <DisplayName>XmlGYear</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.19</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3003" BrowseName="1:XmlQName">
+    <DisplayName>XmlQName</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3066" BrowseName="1:XmlTime">
+    <DisplayName>XmlTime</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.23</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3048" BrowseName="1:XmlGYearMonth">
+    <DisplayName>XmlGYearMonth</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.17</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=3045" BrowseName="1:XmlYearMonthDuration">
+    <DisplayName>XmlYearMonthDuration</DisplayName>
+    <Category>XML Data Types</Category>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/6.16</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+    </References>
+  </UADataType>
+  <UAObject NodeId="ns=1;i=5001" BrowseName="1:http://opcfoundation.org/UA/XML/" SymbolicName="http___opcfoundation_org_UA_XML_">
+    <DisplayName>http://opcfoundation.org/UA/XML/</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/XML/v100/docs/8.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5001" DataType="Boolean">
+    <DisplayName>IsNamespaceSubset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+    <Value>
+      <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=5001" DataType="DateTime">
+    <DisplayName>NamespacePublicationDate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+    <Value>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2023-01-14T00:00:00Z</uax:DateTime>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5001" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/XML/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6004" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=5001" DataType="String">
+    <DisplayName>NamespaceVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6005" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5001" DataType="IdType" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>StaticNodeIdTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+    <Value>
+      <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6006" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5001" DataType="NumericRange" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>StaticNumericNodeIdRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=5001" DataType="String">
+    <DisplayName>StaticStringNodeIdPattern</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+    </References>
+  </UAVariable>
+</UANodeSet>
