@@ -1,0 +1,6 @@
+Id,Name,Link,ConformanceUnits
+1002,ZeroPointAdjustmentEventType,"https://reference.opcfoundation.org/Machinery/ProcessValues/v100/docs/8.1","Machinery Process Values Base EventTypes;"
+1003,ProcessValueType,"https://reference.opcfoundation.org/Machinery/ProcessValues/v100/docs/7.1","Machinery Process Values Base Types;"
+2002,ProcessValueVariableType,"",""
+2003,ProcessValueSetpointVariableType,"https://reference.opcfoundation.org/Machinery/ProcessValues/v100/docs/9.1","Machinery Process Values Base Types;Machinery Process Values Base SetpointType;"
+5001,http://opcfoundation.org/UA/Machinery/ProcessValues/,"https://reference.opcfoundation.org/Machinery/ProcessValues/v100/docs/11.1",""
