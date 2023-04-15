@@ -1,0 +1,93 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/PNENC/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/PNENC/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="LogEntryDataType">
+        <opc:Field TypeName="opc:Byte" Name="FaultSituationNumber"/>
+        <opc:Field TypeName="opc:UInt32" Name="EventNumber"/>
+        <opc:Field TypeName="tns:EventTypeEnumeration" Name="EventType"/>
+        <opc:Field TypeName="opc:Int32" Name="EventCode"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="EventText"/>
+        <opc:Field TypeName="opc:DateTime" Name="EventComing"/>
+        <opc:Field TypeName="opc:DateTime" Name="EventGoing"/>
+        <opc:Field TypeName="opc:DateTime" Name="EventAcknowledged"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderAlarmChannelControlEnumeration">
+        <opc:EnumeratedValue Name="ALARM_CHANNEL_DISABLED" Value="0"/>
+        <opc:EnumeratedValue Name="ALARM_CHANNEL_ENABLED" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderAxisTypeEnumeration">
+        <opc:EnumeratedValue Name="ROTARY" Value="0"/>
+        <opc:EnumeratedValue Name="LINEAR" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderChannelStateEnumeration">
+        <opc:EnumeratedValue Name="NORMAL_OPERATION" Value="0"/>
+        <opc:EnumeratedValue Name="ERROR_ACKNOWLEDGEMENT" Value="1"/>
+        <opc:EnumeratedValue Name="ERROR" Value="2"/>
+        <opc:EnumeratedValue Name="REFERENCE_VALUE_Gx_XIST2" Value="3"/>
+        <opc:EnumeratedValue Name="WAIT_FOR_REFERENCE_MARKS" Value="4"/>
+        <opc:EnumeratedValue Name="SET_SHIFT_HOME_POSITION" Value="5"/>
+        <opc:EnumeratedValue Name="WAIT_FOR_MEASURED_VALUE" Value="6"/>
+        <opc:EnumeratedValue Name="MEASURED_VALUE_IN_XIST2" Value="7"/>
+        <opc:EnumeratedValue Name="PARKING" Value="8"/>
+        <opc:EnumeratedValue Name="PARKING_ERROR" Value="9"/>
+        <opc:EnumeratedValue Name="PARKING_ERROR_ACK" Value="10"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderCodeSequenceEnumeration">
+        <opc:EnumeratedValue Name="INCREASING_CLOCKWISE" Value="0"/>
+        <opc:EnumeratedValue Name="INCREASING_COUNTERCLOCKWISE" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderConfigParameterResultEnumeration">
+        <opc:EnumeratedValue Name="INVALID" Value="0"/>
+        <opc:EnumeratedValue Name="NOT_SUPPORTED" Value="1"/>
+        <opc:EnumeratedValue Name="READ_ONLY" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderConfigTypeEnumeration">
+        <opc:EnumeratedValue Name="STATIC" Value="0"/>
+        <opc:EnumeratedValue Name="DYNAMIC" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderDiagnosisReasonEnumeration">
+        <opc:EnumeratedValue Name="ALL_DISAPPEARS" Value="0"/>
+        <opc:EnumeratedValue Name="APPEARS" Value="1"/>
+        <opc:EnumeratedValue Name="DISAPPEARS" Value="2"/>
+        <opc:EnumeratedValue Name="DISAPPEARS_OTHER_REMAIN" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderPresetControlEnumeration">
+        <opc:EnumeratedValue Name="ENABLE_PRESET_CONTROL" Value="0"/>
+        <opc:EnumeratedValue Name="DISABLE_PRESET_CONTROL" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderSensorAbsoluteTypeEnumeration">
+        <opc:EnumeratedValue Name="SINGLETURN" Value="0"/>
+        <opc:EnumeratedValue Name="MULTITURN" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderSignalTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="BISS_C" Value="1"/>
+        <opc:EnumeratedValue Name="ENDAT2.1" Value="2"/>
+        <opc:EnumeratedValue Name="ENDAT2.2" Value="3"/>
+        <opc:EnumeratedValue Name="HIPERFACE" Value="4"/>
+        <opc:EnumeratedValue Name="HIPERFACE_DSL" Value="5"/>
+        <opc:EnumeratedValue Name="SSI_BINARY" Value="6"/>
+        <opc:EnumeratedValue Name="SSI_GRAY_CODE" Value="7"/>
+        <opc:EnumeratedValue Name="SINCOS_1VSS" Value="8"/>
+        <opc:EnumeratedValue Name="SCS_OPEN_LINK" Value="9"/>
+        <opc:EnumeratedValue Name="DRIVEClIQ" Value="10"/>
+        <opc:EnumeratedValue Name="BISS_LINE" Value="11"/>
+        <opc:EnumeratedValue Name="FANUC_37BIT_SERIAL_COMM" Value="12"/>
+        <opc:EnumeratedValue Name="MITSUBISHI_40BIT_SERIAL_COMM" Value="13"/>
+        <opc:EnumeratedValue Name="OMRON/PANASONIC_48BIT_SERIAL_COMM" Value="14"/>
+        <opc:EnumeratedValue Name="YASKAWA_36BIT_SERIAL_COMM" Value="15"/>
+        <opc:EnumeratedValue Name="RS422_5V_TTL" Value="16"/>
+        <opc:EnumeratedValue Name="RS422_5..30V" Value="17"/>
+        <opc:EnumeratedValue Name="SINCOS_1VPP" Value="18"/>
+        <opc:EnumeratedValue Name="RESOLVER" Value="19"/>
+        <opc:EnumeratedValue Name="HTL_PUSH-PULL" Value="20"/>
+        <opc:EnumeratedValue Name="RS485" Value="21"/>
+        <opc:EnumeratedValue Name="RS485_SINCOS" Value="22"/>
+        <opc:EnumeratedValue Name="RS485_HTL" Value="23"/>
+        <opc:EnumeratedValue Name="RS485_TTL" Value="24"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EventTypeEnumeration">
+        <opc:EnumeratedValue Name="FAULT" Value="0"/>
+        <opc:EnumeratedValue Name="WARNING" Value="1"/>
+        <opc:EnumeratedValue Name="UNSPECIFIED" Value="255"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

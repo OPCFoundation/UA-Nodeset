@@ -1,0 +1,201 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/PNENC/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PNENC/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="EncoderAlarmChannelControlEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ALARM_CHANNEL_DISABLED_0"/>
+            <xs:enumeration value="ALARM_CHANNEL_ENABLED_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderAlarmChannelControlEnumeration" name="EncoderAlarmChannelControlEnumeration"/>
+    <xs:complexType name="ListOfEncoderAlarmChannelControlEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderAlarmChannelControlEnumeration" name="EncoderAlarmChannelControlEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderAlarmChannelControlEnumeration" name="ListOfEncoderAlarmChannelControlEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderAxisTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ROTARY_0"/>
+            <xs:enumeration value="LINEAR_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderAxisTypeEnumeration" name="EncoderAxisTypeEnumeration"/>
+    <xs:complexType name="ListOfEncoderAxisTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderAxisTypeEnumeration" name="EncoderAxisTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderAxisTypeEnumeration" name="ListOfEncoderAxisTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderChannelStateEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NORMAL_OPERATION_0"/>
+            <xs:enumeration value="ERROR_ACKNOWLEDGEMENT_1"/>
+            <xs:enumeration value="ERROR_2"/>
+            <xs:enumeration value="REFERENCE_VALUE_Gx_XIST2_3"/>
+            <xs:enumeration value="WAIT_FOR_REFERENCE_MARKS_4"/>
+            <xs:enumeration value="SET_SHIFT_HOME_POSITION_5"/>
+            <xs:enumeration value="WAIT_FOR_MEASURED_VALUE_6"/>
+            <xs:enumeration value="MEASURED_VALUE_IN_XIST2_7"/>
+            <xs:enumeration value="PARKING_8"/>
+            <xs:enumeration value="PARKING_ERROR_9"/>
+            <xs:enumeration value="PARKING_ERROR_ACK_10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderChannelStateEnumeration" name="EncoderChannelStateEnumeration"/>
+    <xs:complexType name="ListOfEncoderChannelStateEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderChannelStateEnumeration" name="EncoderChannelStateEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderChannelStateEnumeration" name="ListOfEncoderChannelStateEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderCodeSequenceEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INCREASING_CLOCKWISE_0"/>
+            <xs:enumeration value="INCREASING_COUNTERCLOCKWISE_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderCodeSequenceEnumeration" name="EncoderCodeSequenceEnumeration"/>
+    <xs:complexType name="ListOfEncoderCodeSequenceEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderCodeSequenceEnumeration" name="EncoderCodeSequenceEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderCodeSequenceEnumeration" name="ListOfEncoderCodeSequenceEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderConfigParameterResultEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INVALID_0"/>
+            <xs:enumeration value="NOT_SUPPORTED_1"/>
+            <xs:enumeration value="READ_ONLY_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderConfigParameterResultEnumeration" name="EncoderConfigParameterResultEnumeration"/>
+    <xs:complexType name="ListOfEncoderConfigParameterResultEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderConfigParameterResultEnumeration" name="EncoderConfigParameterResultEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderConfigParameterResultEnumeration" name="ListOfEncoderConfigParameterResultEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderConfigTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="STATIC_0"/>
+            <xs:enumeration value="DYNAMIC_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderConfigTypeEnumeration" name="EncoderConfigTypeEnumeration"/>
+    <xs:complexType name="ListOfEncoderConfigTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderConfigTypeEnumeration" name="EncoderConfigTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderConfigTypeEnumeration" name="ListOfEncoderConfigTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderDiagnosisReasonEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ALL_DISAPPEARS_0"/>
+            <xs:enumeration value="APPEARS_1"/>
+            <xs:enumeration value="DISAPPEARS_2"/>
+            <xs:enumeration value="DISAPPEARS_OTHER_REMAIN_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderDiagnosisReasonEnumeration" name="EncoderDiagnosisReasonEnumeration"/>
+    <xs:complexType name="ListOfEncoderDiagnosisReasonEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderDiagnosisReasonEnumeration" name="EncoderDiagnosisReasonEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderDiagnosisReasonEnumeration" name="ListOfEncoderDiagnosisReasonEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderPresetControlEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ENABLE_PRESET_CONTROL_0"/>
+            <xs:enumeration value="DISABLE_PRESET_CONTROL_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderPresetControlEnumeration" name="EncoderPresetControlEnumeration"/>
+    <xs:complexType name="ListOfEncoderPresetControlEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderPresetControlEnumeration" name="EncoderPresetControlEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderPresetControlEnumeration" name="ListOfEncoderPresetControlEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderSensorAbsoluteTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SINGLETURN_0"/>
+            <xs:enumeration value="MULTITURN_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderSensorAbsoluteTypeEnumeration" name="EncoderSensorAbsoluteTypeEnumeration"/>
+    <xs:complexType name="ListOfEncoderSensorAbsoluteTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderSensorAbsoluteTypeEnumeration" name="EncoderSensorAbsoluteTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderSensorAbsoluteTypeEnumeration" name="ListOfEncoderSensorAbsoluteTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderSignalTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="BISS_C_1"/>
+            <xs:enumeration value="ENDAT2.1_2"/>
+            <xs:enumeration value="ENDAT2.2_3"/>
+            <xs:enumeration value="HIPERFACE_4"/>
+            <xs:enumeration value="HIPERFACE_DSL_5"/>
+            <xs:enumeration value="SSI_BINARY_6"/>
+            <xs:enumeration value="SSI_GRAY_CODE_7"/>
+            <xs:enumeration value="SINCOS_1VSS_8"/>
+            <xs:enumeration value="SCS_OPEN_LINK_9"/>
+            <xs:enumeration value="DRIVEClIQ_10"/>
+            <xs:enumeration value="BISS_LINE_11"/>
+            <xs:enumeration value="FANUC_37BIT_SERIAL_COMM_12"/>
+            <xs:enumeration value="MITSUBISHI_40BIT_SERIAL_COMM_13"/>
+            <xs:enumeration value="OMRON/PANASONIC_48BIT_SERIAL_COMM_14"/>
+            <xs:enumeration value="YASKAWA_36BIT_SERIAL_COMM_15"/>
+            <xs:enumeration value="RS422_5V_TTL_16"/>
+            <xs:enumeration value="RS422_5..30V_17"/>
+            <xs:enumeration value="SINCOS_1VPP_18"/>
+            <xs:enumeration value="RESOLVER_19"/>
+            <xs:enumeration value="HTL_PUSH-PULL_20"/>
+            <xs:enumeration value="RS485_21"/>
+            <xs:enumeration value="RS485_SINCOS_22"/>
+            <xs:enumeration value="RS485_HTL_23"/>
+            <xs:enumeration value="RS485_TTL_24"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderSignalTypeEnumeration" name="EncoderSignalTypeEnumeration"/>
+    <xs:complexType name="ListOfEncoderSignalTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderSignalTypeEnumeration" name="EncoderSignalTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderSignalTypeEnumeration" name="ListOfEncoderSignalTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="EventTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FAULT_0"/>
+            <xs:enumeration value="WARNING_1"/>
+            <xs:enumeration value="UNSPECIFIED_255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EventTypeEnumeration" name="EventTypeEnumeration"/>
+    <xs:complexType name="ListOfEventTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EventTypeEnumeration" name="EventTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEventTypeEnumeration" name="ListOfEventTypeEnumeration" nillable="true"/>
+    <xs:complexType name="LogEntryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="FaultSituationNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="EventNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:EventTypeEnumeration" name="EventType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="EventCode"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="EventText"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EventComing"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EventGoing"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EventAcknowledged"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:LogEntryDataType" name="LogEntryDataType"/>
+    <xs:complexType name="ListOfLogEntryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LogEntryDataType" name="LogEntryDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLogEntryDataType" name="ListOfLogEntryDataType" nillable="true"/>
+</xs:schema>
