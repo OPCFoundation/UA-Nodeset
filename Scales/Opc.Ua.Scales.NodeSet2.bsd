@@ -1,0 +1,63 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/Scales" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/Scales">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="AbstractWeightType"/>
+    <opc:StructuredType BaseType="tns:AbstractWeightType" Name="PrintableWeightType">
+        <opc:Field TypeName="opc:CharArray" Name="Gross"/>
+        <opc:Field TypeName="opc:CharArray" Name="Net"/>
+        <opc:Field TypeName="opc:CharArray" Name="Tare"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:AbstractWeightType" Name="WeightType">
+        <opc:Field TypeName="opc:Double" Name="Gross"/>
+        <opc:Field TypeName="opc:Double" Name="Net"/>
+        <opc:Field TypeName="opc:Double" Name="Tare"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RecipeReportElementType">
+        <opc:Field TypeName="ua:LocalizedText" Name="ReportMessage"/>
+        <opc:Field TypeName="opc:DateTime" Name="Timestamp"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RecipeTargetValueType">
+        <opc:Field TypeName="opc:Bit" Name="TargetValueNodeIdSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:UInt32" Name="TargetValueId"/>
+        <opc:Field SwitchField="TargetValueNodeIdSpecified" TypeName="ua:NodeId" Name="TargetValueNodeId"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="TargetValueName"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RecipeThresholdType">
+        <opc:Field TypeName="opc:Bit" Name="ThresholdNodeIdSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:UInt32" Name="ThresholdId"/>
+        <opc:Field SwitchField="ThresholdNodeIdSpecified" TypeName="ua:NodeId" Name="ThresholdNodeId"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="ThresholdName"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="DraftShieldType">
+        <opc:EnumeratedValue Name="Right_0" Value="0"/>
+        <opc:EnumeratedValue Name="Left_1" Value="1"/>
+        <opc:EnumeratedValue Name="Top_2" Value="2"/>
+        <opc:EnumeratedValue Name="All_3" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EdgeOperator">
+        <opc:EnumeratedValue Name="Rising_0" Value="0"/>
+        <opc:EnumeratedValue Name="Falling_1" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EqualityAndRelationalOperator">
+        <opc:Documentation>This enumeration describes the different condition modes for an analog condition.</opc:Documentation>
+        <opc:EnumeratedValue Name="Equal_0" Value="0"/>
+        <opc:EnumeratedValue Name="NotEqual_1" Value="1"/>
+        <opc:EnumeratedValue Name="LessOrEqualThan_2" Value="2"/>
+        <opc:EnumeratedValue Name="GreaterOrEqualThan_3" Value="3"/>
+        <opc:EnumeratedValue Name="LessThan_4" Value="4"/>
+        <opc:EnumeratedValue Name="GreaterThan_5" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TareMode">
+        <opc:EnumeratedValue Name="None_0" Value="0"/>
+        <opc:EnumeratedValue Name="MeasuredTare_1" Value="1"/>
+        <opc:EnumeratedValue Name="PresetTare_2" Value="2"/>
+        <opc:EnumeratedValue Name="ProportionalTare_3" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ToleranceState">
+        <opc:EnumeratedValue Name="In_0" Value="0"/>
+        <opc:EnumeratedValue Name="Under_1" Value="1"/>
+        <opc:EnumeratedValue Name="Over_2" Value="2"/>
+        <opc:EnumeratedValue Name="UnderOrOver_3" Value="3"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

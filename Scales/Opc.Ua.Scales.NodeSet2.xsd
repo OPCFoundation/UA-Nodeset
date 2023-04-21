@@ -1,0 +1,170 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Scales/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Scales/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="DraftShieldType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Right_0_0"/>
+            <xs:enumeration value="Left_1_1"/>
+            <xs:enumeration value="Top_2_2"/>
+            <xs:enumeration value="All_3_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DraftShieldType" name="DraftShieldType"/>
+    <xs:complexType name="ListOfDraftShieldType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DraftShieldType" name="DraftShieldType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDraftShieldType" name="ListOfDraftShieldType" nillable="true"/>
+    <xs:simpleType name="EdgeOperator">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Rising_0_0"/>
+            <xs:enumeration value="Falling_1_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EdgeOperator" name="EdgeOperator"/>
+    <xs:complexType name="ListOfEdgeOperator">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EdgeOperator" name="EdgeOperator" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEdgeOperator" name="ListOfEdgeOperator" nillable="true"/>
+    <xs:simpleType name="EqualityAndRelationalOperator">
+        <xs:annotation>
+            <xs:documentation>This enumeration describes the different condition modes for an analog condition.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Equal_0_0"/>
+            <xs:enumeration value="NotEqual_1_1"/>
+            <xs:enumeration value="LessOrEqualThan_2_2"/>
+            <xs:enumeration value="GreaterOrEqualThan_3_3"/>
+            <xs:enumeration value="LessThan_4_4"/>
+            <xs:enumeration value="GreaterThan_5_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EqualityAndRelationalOperator" name="EqualityAndRelationalOperator"/>
+    <xs:complexType name="ListOfEqualityAndRelationalOperator">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EqualityAndRelationalOperator" name="EqualityAndRelationalOperator" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEqualityAndRelationalOperator" name="ListOfEqualityAndRelationalOperator" nillable="true"/>
+    <xs:simpleType name="TareMode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0_0"/>
+            <xs:enumeration value="MeasuredTare_1_1"/>
+            <xs:enumeration value="PresetTare_2_2"/>
+            <xs:enumeration value="ProportionalTare_3_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:TareMode" name="TareMode"/>
+    <xs:complexType name="ListOfTareMode">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TareMode" name="TareMode" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTareMode" name="ListOfTareMode" nillable="true"/>
+    <xs:simpleType name="ToleranceState">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="In_0_0"/>
+            <xs:enumeration value="Under_1_1"/>
+            <xs:enumeration value="Over_2_2"/>
+            <xs:enumeration value="UnderOrOver_3_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ToleranceState" name="ToleranceState"/>
+    <xs:complexType name="ListOfToleranceState">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ToleranceState" name="ToleranceState" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfToleranceState" name="ListOfToleranceState" nillable="true"/>
+    <xs:complexType name="AbstractWeightType">
+        <xs:sequence/>
+    </xs:complexType>
+    <xs:element type="tns:AbstractWeightType" name="AbstractWeightType"/>
+    <xs:complexType name="ListOfAbstractWeightType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:AbstractWeightType" name="AbstractWeightType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAbstractWeightType" name="ListOfAbstractWeightType" nillable="true"/>
+    <xs:complexType name="PrintableWeightType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Gross"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Net"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Tare"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PrintableWeightType" name="PrintableWeightType"/>
+    <xs:complexType name="ListOfPrintableWeightType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PrintableWeightType" name="PrintableWeightType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPrintableWeightType" name="ListOfPrintableWeightType" nillable="true"/>
+    <xs:complexType name="WeightType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Gross"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Net"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Tare"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WeightType" name="WeightType"/>
+    <xs:complexType name="ListOfWeightType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WeightType" name="WeightType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWeightType" name="ListOfWeightType" nillable="true"/>
+    <xs:complexType name="RecipeReportElementType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="ReportMessage"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="Timestamp"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:RecipeReportElementType" name="RecipeReportElementType"/>
+    <xs:complexType name="ListOfRecipeReportElementType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RecipeReportElementType" name="RecipeReportElementType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRecipeReportElementType" name="ListOfRecipeReportElementType" nillable="true"/>
+    <xs:complexType name="RecipeTargetValueType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="TargetValueId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:NodeId" name="TargetValueNodeId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="TargetValueName"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:RecipeTargetValueType" name="RecipeTargetValueType"/>
+    <xs:complexType name="ListOfRecipeTargetValueType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RecipeTargetValueType" name="RecipeTargetValueType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRecipeTargetValueType" name="ListOfRecipeTargetValueType" nillable="true"/>
+    <xs:complexType name="RecipeThresholdType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ThresholdId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:NodeId" name="ThresholdNodeId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="ThresholdName"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:RecipeThresholdType" name="RecipeThresholdType"/>
+    <xs:complexType name="ListOfRecipeThresholdType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RecipeThresholdType" name="RecipeThresholdType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRecipeThresholdType" name="ListOfRecipeThresholdType" nillable="true"/>
+</xs:schema>
