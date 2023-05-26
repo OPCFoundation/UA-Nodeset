@@ -60,9 +60,7 @@
     </xs:complexType>
     <xs:element type="tns:ListOfToolIsQualifiedStatus" name="ListOfToolIsQualifiedStatus" nillable="true"/>
     <xs:complexType name="WorkspaceType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="EngineeringUnits"/>
-        </xs:sequence>
+        <xs:sequence/>
     </xs:complexType>
     <xs:element type="tns:WorkspaceType" name="WorkspaceType"/>
     <xs:complexType name="ListOfWorkspaceType">

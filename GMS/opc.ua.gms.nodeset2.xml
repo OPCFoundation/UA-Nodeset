@@ -37,9 +37,9 @@
     <Uri>http://opcfoundation.org/UA/Machinery/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/GMS/" Version="1.0.0" PublicationDate="2023-02-07T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2022-01-24T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.03.1" PublicationDate="2021-09-07T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/GMS/" Version="1.0.0" PublicationDate="2023-07-01T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/IA/" Version="1.01.0" PublicationDate="2021-07-31T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.02.0" PublicationDate="2021-12-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/MachineTool/" Version="1.01.1" PublicationDate="2022-07-04T12:00:00Z" />
@@ -92,7 +92,7 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="kPlfEva6zDjp74KbLA3U8w==" Version="1.6.7" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="BZ4ATZg82T7BAhkVMcb76w==" Version="1.6.8" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3009" BrowseName="1:MeasurementReasonEnum">
@@ -248,37 +248,10 @@
     <Category>GMS GMSIdentificationType</Category>
     <Documentation>https://reference.opcfoundation.org/GMS/v100/docs/11.1</Documentation>
     <References>
-      <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
-      <Reference ReferenceType="HasEncoding">ns=1;i=5004</Reference>
-      <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
-    <Definition Name="1:WorkspaceType">
-      <Field Name="EngineeringUnits" DataType="Double" />
-    </Definition>
+    <Definition Name="1:WorkspaceType" />
   </UADataType>
-  <UAVariable NodeId="ns=1;i=6061" BrowseName="1:WorkspaceType" ParentNodeId="ns=1;i=6023" DataType="String">
-    <DisplayName>WorkspaceType</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
-    </References>
-    <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">WorkspaceType</uax:String>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6062" BrowseName="1:WorkspaceType" ParentNodeId="ns=1;i=6025" DataType="String">
-    <DisplayName>WorkspaceType</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5003</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
-    </References>
-    <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='WorkspaceType']</uax:String>
-    </Value>
-  </UAVariable>
   <UADataType NodeId="ns=1;i=3007" BrowseName="1:CartesianWorkspaceType">
     <DisplayName>CartesianWorkspaceType</DisplayName>
     <Category>GMS GMSIdentificationType</Category>
@@ -363,7 +336,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6069</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6024</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6061</Reference>
     </References>
     <Value>
       <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
@@ -373,43 +345,38 @@
         m91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0a
         W9uLm9yZy9VQS9HTVMvIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2Zvd
         W5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6R
-        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJXb3Jrc3BhY2VUeXBlIj4KICA8b3BjOkZpZWxkIFR5c
-        GVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJFbmdpbmVlcmluZ1VuaXRzIi8+CiA8L29wYzpTd
-        HJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InRuczpXb3Jrc
-        3BhY2VUeXBlIiBOYW1lPSJDYXJ0ZXNpYW5Xb3Jrc3BhY2VUeXBlIj4KICA8b3BjOkZpZWxkI
-        FNvdXJjZVR5cGU9InRuczpXb3Jrc3BhY2VUeXBlIiBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgT
-        mFtZT0iRW5naW5lZXJpbmdVbml0cyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb
-        3VibGUiIE5hbWU9Ikxlbmd0aCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb3Vib
-        GUiIE5hbWU9IldpZHRoIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgT
-        mFtZT0iSGVpZ2h0Ii8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZ
-        FR5cGUgQmFzZVR5cGU9InRuczpXb3Jrc3BhY2VUeXBlIiBOYW1lPSJDeWxpbmRyaWNhbFdvc
-        mtzcGFjZVR5cGUiPgogIDxvcGM6RmllbGQgU291cmNlVHlwZT0idG5zOldvcmtzcGFjZVR5c
-        GUiIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJFbmdpbmVlcmluZ1VuaXRzIi8+CiAgP
-        G9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iTGVuZ3RoIi8+CiAgPG9wY
-        zpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iUmFkaXVzIi8+CiA8L29wYzpTd
-        HJ1Y3R1cmVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgT
-        mFtZT0iTWVhc3VyZW1lbnRSZWFzb25FbnVtIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
-        W1lPSJDb250aW51b3VzTWVhc3VyZW1lbnRzIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IlNwZWNpYWxNZWFzdXJlbWVudCIgVmFsdWU9IjEiLz4KICA8b3BjO
-        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBdWRpdE1lYXN1cmVtZW50IiBWYWx1ZT0iMiIvPgogI
-        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1pbk1hc3RlcmluZyIgVmFsdWU9IjMiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNZWRNYXN0ZXJpbmciIFZhbHVlPSI0Ii8+C
-        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTWF4TWFzdGVyaW5nIiBWYWx1ZT0iNSIvP
-        gogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQ
-        ml0cz0iMzIiIE5hbWU9IlRvbGVyYW5jZUxpbWl0RW51bSI+CiAgPG9wYzpFbnVtZXJhdGVkV
-        mFsdWUgTmFtZT0iTm9MaW1pdCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1Z
-        SBOYW1lPSJMaW1pdFZhbHVlIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
-        E5hbWU9Ik5hdHVyYWxMaW1pdCIgVmFsdWU9IjIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlP
-        gogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJUb29sQWxpZ
-        25tZW50U3RhdGUiPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkZpeGVkIiBWYWx1Z
-        T0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkluZGV4ZWQiIFZhbHVlPSIxI
-        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ29udGludW91cyIgVmFsdWU9IjIiL
-        z4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJb
-        kJpdHM9IjMyIiBOYW1lPSJUb29sSXNRdWFsaWZpZWRTdGF0dXMiPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IlF1YWxpZmllZCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0Z
-        WRWYWx1ZSBOYW1lPSJJbXByZWNpc2UiIFZhbHVlPSIxIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
-        mFsdWUgTmFtZT0iTm90UXVhbGlmaWVkIiBWYWx1ZT0iMiIvPgogPC9vcGM6RW51bWVyYXRlZ
-        FR5cGU+Cjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pgo=</uax:ByteString>
+        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJXb3Jrc3BhY2VUeXBlIi8+CiA8b3BjOlN0cnVjdHVyZ
+        WRUeXBlIEJhc2VUeXBlPSJ0bnM6V29ya3NwYWNlVHlwZSIgTmFtZT0iQ2FydGVzaWFuV29ya
+        3NwYWNlVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iT
+        GVuZ3RoIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iV2lkd
+        GgiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJIZWlnaHQiL
+        z4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZ
+        T0idG5zOldvcmtzcGFjZVR5cGUiIE5hbWU9IkN5bGluZHJpY2FsV29ya3NwYWNlVHlwZSI+C
+        iAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iTGVuZ3RoIi8+CiAgP
+        G9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iUmFkaXVzIi8+CiA8L29wY
+        zpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzM
+        iIgTmFtZT0iTWVhc3VyZW1lbnRSZWFzb25FbnVtIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1Z
+        SBOYW1lPSJDb250aW51b3VzTWVhc3VyZW1lbnRzIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51b
+        WVyYXRlZFZhbHVlIE5hbWU9IlNwZWNpYWxNZWFzdXJlbWVudCIgVmFsdWU9IjEiLz4KICA8b
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBdWRpdE1lYXN1cmVtZW50IiBWYWx1ZT0iMiIvP
+        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1pbk1hc3RlcmluZyIgVmFsdWU9IjMiL
+        z4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNZWRNYXN0ZXJpbmciIFZhbHVlPSI0I
+        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTWF4TWFzdGVyaW5nIiBWYWx1ZT0iN
+        SIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0a
+        EluQml0cz0iMzIiIE5hbWU9IlRvbGVyYW5jZUxpbWl0RW51bSI+CiAgPG9wYzpFbnVtZXJhd
+        GVkVmFsdWUgTmFtZT0iTm9MaW1pdCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJMaW1pdFZhbHVlIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhb
+        HVlIE5hbWU9Ik5hdHVyYWxMaW1pdCIgVmFsdWU9IjIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUe
+        XBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJUb29sQ
+        WxpZ25tZW50U3RhdGUiPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkZpeGVkIiBWY
+        Wx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkluZGV4ZWQiIFZhbHVlP
+        SIxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ29udGludW91cyIgVmFsdWU9I
+        jIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5nd
+        GhJbkJpdHM9IjMyIiBOYW1lPSJUb29sSXNRdWFsaWZpZWRTdGF0dXMiPgogIDxvcGM6RW51b
+        WVyYXRlZFZhbHVlIE5hbWU9IlF1YWxpZmllZCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJJbXByZWNpc2UiIFZhbHVlPSIxIi8+CiAgPG9wYzpFbnVtZXJhd
+        GVkVmFsdWUgTmFtZT0iTm90UXVhbGlmaWVkIiBWYWx1ZT0iMiIvPgogPC9vcGM6RW51bWVyY
+        XRlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pgo=</uax:ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6024" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6023" DataType="String">
@@ -431,7 +398,6 @@
       <Reference ReferenceType="HasComponent">ns=1;i=6071</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6026</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6062</Reference>
     </References>
     <Value>
       <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
@@ -492,47 +458,45 @@
         HlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZUb29sSXNRdWFsaWZpZWRTdGF0d
         XMiIG5hbWU9Ikxpc3RPZlRvb2xJc1F1YWxpZmllZFN0YXR1cyIgbmlsbGFibGU9InRydWUiL
         z4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJXb3Jrc3BhY2VUeXBlIj4KICA8eHM6c2VxdWVuY
-        2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4c
-        zpkb3VibGUiIG5hbWU9IkVuZ2luZWVyaW5nVW5pdHMiLz4KICA8L3hzOnNlcXVlbmNlPgogP
-        C94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpXb3Jrc3BhY2VUeXBlI
-        iBuYW1lPSJXb3Jrc3BhY2VUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mV
-        29ya3NwYWNlVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1c
-        nM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6V29ya3NwYWNlVHlwZSIgb
-        mFtZT0iV29ya3NwYWNlVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlP
-        gogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZXb3Jrc
-        3BhY2VUeXBlIiBuYW1lPSJMaXN0T2ZXb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvP
-        gogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkNhcnRlc2lhbldvcmtzcGFjZVR5cGUiPgogIDx4c
-        zpjb21wbGV4Q29udGVudCBtaXhlZD0iZmFsc2UiPgogICA8eHM6ZXh0ZW5zaW9uIGJhc2U9I
-        nVhOkV4dGVuc2lvbk9iamVjdCI+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lb
-        nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRvdWJsZSIgbmFtZT0iT
-        GVuZ3RoIi8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiI
-        HR5cGU9InhzOmRvdWJsZSIgbmFtZT0iV2lkdGgiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY
-        2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZG91YmxlIiBuYW1lPSJIZWlnaHQiL
-        z4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6ZXh0ZW5zaW9uPgogIDwveHM6Y29tcGxle
-        ENvbnRlbnQ+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkNhc
-        nRlc2lhbldvcmtzcGFjZVR5cGUiIG5hbWU9IkNhcnRlc2lhbldvcmtzcGFjZVR5cGUiLz4KI
-        Dx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZDYXJ0ZXNpYW5Xb3Jrc3BhY2VUeXBlIj4KI
-        CA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzP
-        SJ1bmJvdW5kZWQiIHR5cGU9InRuczpDYXJ0ZXNpYW5Xb3Jrc3BhY2VUeXBlIiBuYW1lPSJDY
-        XJ0ZXNpYW5Xb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY
-        2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZkNhc
-        nRlc2lhbldvcmtzcGFjZVR5cGUiIG5hbWU9Ikxpc3RPZkNhcnRlc2lhbldvcmtzcGFjZVR5c
-        GUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iQ3lsaW5kcmljY
-        WxXb3Jrc3BhY2VUeXBlIj4KICA8eHM6Y29tcGxleENvbnRlbnQgbWl4ZWQ9ImZhbHNlIj4KI
-        CAgPHhzOmV4dGVuc2lvbiBiYXNlPSJ1YTpFeHRlbnNpb25PYmplY3QiPgogICAgPHhzOnNlc
-        XVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
-        XBlPSJ4czpkb3VibGUiIG5hbWU9Ikxlbmd0aCIvPgogICAgIDx4czplbGVtZW50IG1pbk9jY
-        3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpkb3VibGUiIG5hbWU9IlJhZGl1cyIvP
-        gogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpleHRlbnNpb24+CiAgPC94czpjb21wbGV4Q
-        29udGVudD4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6Q3lsa
-        W5kcmljYWxXb3Jrc3BhY2VUeXBlIiBuYW1lPSJDeWxpbmRyaWNhbFdvcmtzcGFjZVR5cGUiL
-        z4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZDeWxpbmRyaWNhbFdvcmtzcGFjZVR5c
-        GUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY
-        2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOkN5bGluZHJpY2FsV29ya3NwYWNlVHlwZSIgb
-        mFtZT0iQ3lsaW5kcmljYWxXb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwve
-        HM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zO
-        kxpc3RPZkN5bGluZHJpY2FsV29ya3NwYWNlVHlwZSIgbmFtZT0iTGlzdE9mQ3lsaW5kcmljY
-        WxXb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgo8L3hzOnNjaGVtYT4K</uax:ByteString>
+        2UvPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpXb3Jrc3BhY
+        2VUeXBlIiBuYW1lPSJXb3Jrc3BhY2VUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iT
+        GlzdE9mV29ya3NwYWNlVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBta
+        W5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6V29ya3NwYWNlV
+        HlwZSIgbmFtZT0iV29ya3NwYWNlVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlc
+        XVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T
+        2ZXb3Jrc3BhY2VUeXBlIiBuYW1lPSJMaXN0T2ZXb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0id
+        HJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkNhcnRlc2lhbldvcmtzcGFjZVR5cGUiP
+        gogIDx4czpjb21wbGV4Q29udGVudCBtaXhlZD0iZmFsc2UiPgogICA8eHM6ZXh0ZW5zaW9uI
+        GJhc2U9InVhOkV4dGVuc2lvbk9iamVjdCI+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzO
+        mVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRvdWJsZSIgb
+        mFtZT0iTGVuZ3RoIi8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9IjEiIHR5cGU9InhzOmRvdWJsZSIgbmFtZT0iV2lkdGgiLz4KICAgICA8eHM6ZWxlbWVud
+        CBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZG91YmxlIiBuYW1lPSJIZ
+        WlnaHQiLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6ZXh0ZW5zaW9uPgogIDwveHM6Y
+        29tcGxleENvbnRlbnQ+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0id
+        G5zOkNhcnRlc2lhbldvcmtzcGFjZVR5cGUiIG5hbWU9IkNhcnRlc2lhbldvcmtzcGFjZVR5c
+        GUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZDYXJ0ZXNpYW5Xb3Jrc3BhY2VUe
+        XBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T
+        2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpDYXJ0ZXNpYW5Xb3Jrc3BhY2VUeXBlIiBuY
+        W1lPSJDYXJ0ZXNpYW5Xb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c
+        2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc
+        3RPZkNhcnRlc2lhbldvcmtzcGFjZVR5cGUiIG5hbWU9Ikxpc3RPZkNhcnRlc2lhbldvcmtzc
+        GFjZVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iQ3lsa
+        W5kcmljYWxXb3Jrc3BhY2VUeXBlIj4KICA8eHM6Y29tcGxleENvbnRlbnQgbWl4ZWQ9ImZhb
+        HNlIj4KICAgPHhzOmV4dGVuc2lvbiBiYXNlPSJ1YTpFeHRlbnNpb25PYmplY3QiPgogICAgP
+        HhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzP
+        SIxIiB0eXBlPSJ4czpkb3VibGUiIG5hbWU9Ikxlbmd0aCIvPgogICAgIDx4czplbGVtZW50I
+        G1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpkb3VibGUiIG5hbWU9IlJhZ
+        Gl1cyIvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpleHRlbnNpb24+CiAgPC94czpjb
+        21wbGV4Q29udGVudD4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0b
+        nM6Q3lsaW5kcmljYWxXb3Jrc3BhY2VUeXBlIiBuYW1lPSJDeWxpbmRyaWNhbFdvcmtzcGFjZ
+        VR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZDeWxpbmRyaWNhbFdvcmtzc
+        GFjZVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwI
+        iBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOkN5bGluZHJpY2FsV29ya3NwYWNlV
+        HlwZSIgbmFtZT0iQ3lsaW5kcmljYWxXb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvP
+        gogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZ
+        T0idG5zOkxpc3RPZkN5bGluZHJpY2FsV29ya3NwYWNlVHlwZSIgbmFtZT0iTGlzdE9mQ3lsa
+        W5kcmljYWxXb3Jrc3BhY2VUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgo8L3hzOnNjaGVtYT4K</uax:ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6026" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6025" DataType="String">
@@ -1714,18 +1678,6 @@
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1011</Reference>
     </References>
-    <Value>
-      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-                <uax:TypeId>
-                    <uax:Identifier>ns=1;i=5003</uax:Identifier>
-                </uax:TypeId>
-                <uax:Body>
-                    <WorkspaceType xmlns="http://opcfoundation.org/UA/GMS/Types.xsd">
-                        <EngineeringUnits>0</EngineeringUnits>
-                    </WorkspaceType>
-                </uax:Body>
-            </uax:ExtensionObject>
-    </Value>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:GMSType">
     <DisplayName>GMSType</DisplayName>
@@ -3303,19 +3255,10 @@ If a FileTransferStateMachineType object NodeId is returned, the Read Method of 
       <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5016</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6035</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6118</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6036</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6035" BrowseName="1:CharacteristicIdentfier" ParentNodeId="ns=1;i=5018" DataType="String" AccessLevel="3">
-    <DisplayName>CharacteristicIdentfier</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
-    </References>
-  </UAVariable>
   <UAVariable NodeId="ns=1;i=6118" BrowseName="1:CharacteristicIdentifier" ParentNodeId="ns=1;i=5018" DataType="String" AccessLevel="3">
     <DisplayName>CharacteristicIdentifier</DisplayName>
     <References>
@@ -3519,7 +3462,7 @@ If a FileTransferStateMachineType object NodeId is returned, the Read Method of 
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5057</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2023-02-07T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2023-07-01T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6295" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5057" DataType="String">
@@ -3568,29 +3511,6 @@ If a FileTransferStateMachineType object NodeId is returned, the Read Method of 
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5057</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5002" BrowseName="Default Binary" SymbolicName="DefaultBinary">
-    <DisplayName>Default Binary</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
-      <Reference ReferenceType="HasDescription">ns=1;i=6061</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=5003" BrowseName="Default XML" SymbolicName="DefaultXml">
-    <DisplayName>Default XML</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
-      <Reference ReferenceType="HasDescription">ns=1;i=6062</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=5004" BrowseName="Default JSON" SymbolicName="DefaultJson">
-    <DisplayName>Default JSON</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
-      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
-    </References>
-  </UAObject>
   <UAObject NodeId="ns=1;i=5007" BrowseName="Default Binary" SymbolicName="DefaultBinary">
     <DisplayName>Default Binary</DisplayName>
     <References>
@@ -3612,18 +3532,6 @@ If a FileTransferStateMachineType object NodeId is returned, the Read Method of 
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
       <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3007</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=1;i=5011" BrowseName="4:Identification" ParentNodeId="ns=1;i=1002">
-    <DisplayName>Identification</DisplayName>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1011</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6078</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6079</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
     </References>
   </UAObject>
   <UAObject NodeId="ns=1;i=5013" BrowseName="Default Binary" SymbolicName="DefaultBinary">
@@ -3649,76 +3557,4 @@ If a FileTransferStateMachineType object NodeId is returned, the Read Method of 
       <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5066" BrowseName="1:Identification" ParentNodeId="ns=1;i=1018">
-    <DisplayName>Identification</DisplayName>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1004</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6348</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6349</Reference>
-    </References>
-  </UAObject>
-  <UAVariable NodeId="ns=1;i=6063" BrowseName="4:ProductInstanceUri" ParentNodeId="ns=1;i=5011" DataType="String">
-    <DisplayName Locale="en">ProductInstanceUri</DisplayName>
-    <Description Locale="en">A globally unique resource identifier provided by the manufacturer of the machine</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6064" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5011" DataType="LocalizedText">
-    <DisplayName>Manufacturer</DisplayName>
-    <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6065" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5011" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6078" BrowseName="4:DeviceClass" ParentNodeId="ns=1;i=5011" DataType="String">
-    <DisplayName>DeviceClass</DisplayName>
-    <Description Locale="en">Indicates in which domain or for what purpose the MachineryItem is used.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6079" BrowseName="4:Model" ParentNodeId="ns=1;i=5011" DataType="LocalizedText">
-    <DisplayName>Model</DisplayName>
-    <Description Locale="en">A human-readable, localized name of the model of the MachineryItem.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6348" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5066" DataType="LocalizedText">
-    <DisplayName>Manufacturer</DisplayName>
-    <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5066</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6349" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5066" DataType="String">
-    <DisplayName>SerialNumber</DisplayName>
-    <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5066</Reference>
-    </References>
-  </UAVariable>
 </UANodeSet>

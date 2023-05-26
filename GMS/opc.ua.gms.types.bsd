@@ -1,16 +1,12 @@
 <opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/GMS/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/GMS/">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="WorkspaceType">
-        <opc:Field TypeName="opc:Double" Name="EngineeringUnits"/>
-    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="WorkspaceType"/>
     <opc:StructuredType BaseType="tns:WorkspaceType" Name="CartesianWorkspaceType">
-        <opc:Field SourceType="tns:WorkspaceType" TypeName="opc:Double" Name="EngineeringUnits"/>
         <opc:Field TypeName="opc:Double" Name="Length"/>
         <opc:Field TypeName="opc:Double" Name="Width"/>
         <opc:Field TypeName="opc:Double" Name="Height"/>
     </opc:StructuredType>
     <opc:StructuredType BaseType="tns:WorkspaceType" Name="CylindricalWorkspaceType">
-        <opc:Field SourceType="tns:WorkspaceType" TypeName="opc:Double" Name="EngineeringUnits"/>
         <opc:Field TypeName="opc:Double" Name="Length"/>
         <opc:Field TypeName="opc:Double" Name="Radius"/>
     </opc:StructuredType>
