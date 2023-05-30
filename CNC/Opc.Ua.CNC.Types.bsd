@@ -1,0 +1,49 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/CNC" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/CNC">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CncPositionDataType">
+        <opc:Documentation>Structure of position elements.</opc:Documentation>
+        <opc:Field TypeName="opc:Double" Name="ActPos"/>
+        <opc:Field TypeName="opc:Double" Name="CmdPos"/>
+        <opc:Field TypeName="opc:Double" Name="RemDist"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="CncAxisStatus">
+        <opc:Documentation>Status of a CNC axis.</opc:Documentation>
+        <opc:EnumeratedValue Name="InPosition" Value="0"/>
+        <opc:EnumeratedValue Name="Moving" Value="1"/>
+        <opc:EnumeratedValue Name="Parked" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CncChannelProgramStatus">
+        <opc:Documentation>Status of program execution within a channel.</opc:Documentation>
+        <opc:EnumeratedValue Name="Stopped" Value="0"/>
+        <opc:EnumeratedValue Name="Running" Value="1"/>
+        <opc:EnumeratedValue Name="Waiting" Value="2"/>
+        <opc:EnumeratedValue Name="Interrupted" Value="3"/>
+        <opc:EnumeratedValue Name="Canceled" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CncChannelStatus">
+        <opc:Documentation>Status of a CNC channel.</opc:Documentation>
+        <opc:EnumeratedValue Name="Active" Value="0"/>
+        <opc:EnumeratedValue Name="Interrupted" Value="1"/>
+        <opc:EnumeratedValue Name="Reset" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CncOperationMode">
+        <opc:Documentation>Modes of operation.</opc:Documentation>
+        <opc:EnumeratedValue Name="Manual" Value="0"/>
+        <opc:EnumeratedValue Name="MDA" Value="1"/>
+        <opc:EnumeratedValue Name="Automatic" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CncSpindleStatus">
+        <opc:Documentation>Status of a CNC spindle.</opc:Documentation>
+        <opc:EnumeratedValue Name="Stopped" Value="0"/>
+        <opc:EnumeratedValue Name="InTargetArea" Value="1"/>
+        <opc:EnumeratedValue Name="Accelerating" Value="2"/>
+        <opc:EnumeratedValue Name="Decelerating" Value="3"/>
+        <opc:EnumeratedValue Name="Parked" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CncSpindleTurnDirection">
+        <opc:Documentation>Turn direction of a CNC spindle.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="CW" Value="1"/>
+        <opc:EnumeratedValue Name="CCW" Value="2"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
