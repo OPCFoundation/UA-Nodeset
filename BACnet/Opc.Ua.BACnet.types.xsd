@@ -430,9 +430,9 @@
             <xs:enumeration value="multi-state-input_13"/>
             <xs:enumeration value="multi-state-output_14"/>
             <xs:enumeration value="notification-class_15"/>
-            <xs:enumeration value="programm_16"/>
+            <xs:enumeration value="program_16"/>
             <xs:enumeration value="schedule_17"/>
-            <xs:enumeration value="averaring_18"/>
+            <xs:enumeration value="averaging_18"/>
             <xs:enumeration value="multi-state-value_19"/>
             <xs:enumeration value="trend-log_20"/>
             <xs:enumeration value="life-safety-point_21"/>
@@ -445,7 +445,7 @@
             <xs:enumeration value="load-control_28"/>
             <xs:enumeration value="structured-view_29"/>
             <xs:enumeration value="access-door_30"/>
-            <xs:enumeration value="unasigned_31"/>
+            <xs:enumeration value="unassigned_31"/>
             <xs:enumeration value="access-credential_32"/>
             <xs:enumeration value="access-point_33"/>
             <xs:enumeration value="access-rights_34"/>
@@ -466,7 +466,7 @@
             <xs:enumeration value="time-pattern-value_49"/>
             <xs:enumeration value="time-value_50"/>
             <xs:enumeration value="notification-forwarder_51"/>
-            <xs:enumeration value="altert-enrollment_52"/>
+            <xs:enumeration value="alert-enrollment_52"/>
             <xs:enumeration value="channel_53"/>
             <xs:enumeration value="lighting-output_54"/>
         </xs:restriction>

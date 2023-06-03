@@ -552,9 +552,9 @@
         <opc:EnumeratedValue Name="multi-state-input" Value="13"/>
         <opc:EnumeratedValue Name="multi-state-output" Value="14"/>
         <opc:EnumeratedValue Name="notification-class" Value="15"/>
-        <opc:EnumeratedValue Name="programm" Value="16"/>
+        <opc:EnumeratedValue Name="program" Value="16"/>
         <opc:EnumeratedValue Name="schedule" Value="17"/>
-        <opc:EnumeratedValue Name="averaring" Value="18"/>
+        <opc:EnumeratedValue Name="averaging" Value="18"/>
         <opc:EnumeratedValue Name="multi-state-value" Value="19"/>
         <opc:EnumeratedValue Name="trend-log" Value="20"/>
         <opc:EnumeratedValue Name="life-safety-point" Value="21"/>
@@ -567,7 +567,7 @@
         <opc:EnumeratedValue Name="load-control" Value="28"/>
         <opc:EnumeratedValue Name="structured-view" Value="29"/>
         <opc:EnumeratedValue Name="access-door" Value="30"/>
-        <opc:EnumeratedValue Name="unasigned" Value="31"/>
+        <opc:EnumeratedValue Name="unassigned" Value="31"/>
         <opc:EnumeratedValue Name="access-credential" Value="32"/>
         <opc:EnumeratedValue Name="access-point" Value="33"/>
         <opc:EnumeratedValue Name="access-rights" Value="34"/>
@@ -588,7 +588,7 @@
         <opc:EnumeratedValue Name="time-pattern-value" Value="49"/>
         <opc:EnumeratedValue Name="time-value" Value="50"/>
         <opc:EnumeratedValue Name="notification-forwarder" Value="51"/>
-        <opc:EnumeratedValue Name="altert-enrollment" Value="52"/>
+        <opc:EnumeratedValue Name="alert-enrollment" Value="52"/>
         <opc:EnumeratedValue Name="channel" Value="53"/>
         <opc:EnumeratedValue Name="lighting-output" Value="54"/>
     </opc:EnumeratedType>
