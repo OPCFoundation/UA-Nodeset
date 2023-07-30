@@ -1,0 +1,53 @@
+{ 
+    "title": "Trend and profile data", 
+    "required": ["Valve", "Instrument"], 
+    "type": "object", 
+    "properties": { 
+        "Valve": { 
+            "required": [ "BrowsePath", "Description", "Command"], 
+            "type": "object", 
+            "properties": { 
+                "BrowsePath": { "type": "string" }, 
+                "TagId": {"type":"string"}, 
+                "Description": { "type": "string" }, 
+                "Command": { 
+                    "description": "Device move command", 
+                    "enum": ["open", "close", "partial-stroke"], 
+                    "TriggerTimer": { 
+                        "type":"number", 
+                        "description": "Time stamp in OPC-UA DateTime" 
+                    } 
+                } 
+            } 
+        },
+        "Instrument": { 
+            "required": ["InstrumentId", "InstrumentDescription", "EngineeringUnits", "Samples"], 
+            "type": "object", 
+            "properties": { 
+                "InstrumentDescription": { "type": "string" }, 
+                "InstrumentId": { "type": "string" }, 
+                "EURangeHigh": {"type" : "number"}, 
+                "EURangeLow": {"type" : "number"}, 
+                "EngineeringUnits": { "type": "string" }, 
+                "Samples": { 
+                    "type": "array", 
+                    "required": ["T", "V"], 
+                    "properties": { 
+                        "T": { 
+                            "description":" Time stamp in OPC-UA DateTime ", 
+                            "type":"number", "minimum": 0.0 
+                        }, 
+                        "V": { 
+                            "description":"Value", 
+                            "type":"number" 
+                        }, 
+                        "F": { 
+                            "description":"Fault code, fault identifier", 
+                            "type": "number" 
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    }
+} 
