@@ -1,0 +1,28 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/PAEFS/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/PAEFS/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:EnumeratedType LengthInBits="32" Name="AirConnectionOpenEnum">
+        <opc:Documentation>Describes whether the air connection is open, i.e., it is in a state in which air can be passed through</opc:Documentation>
+        <opc:EnumeratedValue Name="Open" Value="0"/>
+        <opc:EnumeratedValue Name="Closed" Value="1"/>
+        <opc:EnumeratedValue Name="Opening" Value="2"/>
+        <opc:EnumeratedValue Name="Closing" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="AnalogDigitalEnum">
+        <opc:Documentation>Specifies the type of a sensor</opc:Documentation>
+        <opc:EnumeratedValue Name="Analog" Value="0"/>
+        <opc:EnumeratedValue Name="Digital" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ControlModeEnum">
+        <opc:Documentation>Describes the possibility of controlling the system externally</opc:Documentation>
+        <opc:EnumeratedValue Name="Automatic" Value="0"/>
+        <opc:EnumeratedValue Name="Manual" Value="1"/>
+        <opc:EnumeratedValue Name="Other" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FilterAidDeviceStatusEnum">
+        <opc:Documentation>Describes the action performed by the device for filter aid</opc:Documentation>
+        <opc:EnumeratedValue Name="DeviceActive" Value="0"/>
+        <opc:EnumeratedValue Name="DeviceInactive" Value="1"/>
+        <opc:EnumeratedValue Name="FillingActive" Value="2"/>
+        <opc:EnumeratedValue Name="DischargeActive" Value="3"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

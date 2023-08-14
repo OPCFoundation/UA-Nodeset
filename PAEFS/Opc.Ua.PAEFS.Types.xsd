@@ -1,0 +1,72 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/PAEFS/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PAEFS/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="AirConnectionOpenEnum">
+        <xs:annotation>
+            <xs:documentation>Describes whether the air connection is open, i.e., it is in a state in which air can be passed through</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Open_0"/>
+            <xs:enumeration value="Closed_1"/>
+            <xs:enumeration value="Opening_2"/>
+            <xs:enumeration value="Closing_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:AirConnectionOpenEnum" name="AirConnectionOpenEnum"/>
+    <xs:complexType name="ListOfAirConnectionOpenEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:AirConnectionOpenEnum" name="AirConnectionOpenEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAirConnectionOpenEnum" name="ListOfAirConnectionOpenEnum" nillable="true"/>
+    <xs:simpleType name="AnalogDigitalEnum">
+        <xs:annotation>
+            <xs:documentation>Specifies the type of a sensor</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Analog_0"/>
+            <xs:enumeration value="Digital_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:AnalogDigitalEnum" name="AnalogDigitalEnum"/>
+    <xs:complexType name="ListOfAnalogDigitalEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:AnalogDigitalEnum" name="AnalogDigitalEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAnalogDigitalEnum" name="ListOfAnalogDigitalEnum" nillable="true"/>
+    <xs:simpleType name="ControlModeEnum">
+        <xs:annotation>
+            <xs:documentation>Describes the possibility of controlling the system externally</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Automatic_0"/>
+            <xs:enumeration value="Manual_1"/>
+            <xs:enumeration value="Other_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ControlModeEnum" name="ControlModeEnum"/>
+    <xs:complexType name="ListOfControlModeEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ControlModeEnum" name="ControlModeEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfControlModeEnum" name="ListOfControlModeEnum" nillable="true"/>
+    <xs:simpleType name="FilterAidDeviceStatusEnum">
+        <xs:annotation>
+            <xs:documentation>Describes the action performed by the device for filter aid</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DeviceActive_0"/>
+            <xs:enumeration value="DeviceInactive_1"/>
+            <xs:enumeration value="FillingActive_2"/>
+            <xs:enumeration value="DischargeActive_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FilterAidDeviceStatusEnum" name="FilterAidDeviceStatusEnum"/>
+    <xs:complexType name="ListOfFilterAidDeviceStatusEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FilterAidDeviceStatusEnum" name="FilterAidDeviceStatusEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFilterAidDeviceStatusEnum" name="ListOfFilterAidDeviceStatusEnum" nillable="true"/>
+</xs:schema>
