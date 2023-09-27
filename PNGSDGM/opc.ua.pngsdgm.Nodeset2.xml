@@ -1,0 +1,2330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/PNGSDGM/</Uri>
+    <Uri>http://opcfoundation.org/UA/DI/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/UA/PNGSDGM/" Version="1.0.0" PublicationDate="2023-06-30T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Enumeration">i=29</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="GeneratesEvent">i=41</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="IdType">i=256</Alias>
+    <Alias Alias="Duration">i=290</Alias>
+    <Alias Alias="NumericRange">i=291</Alias>
+    <Alias Alias="Argument">i=296</Alias>
+    <Alias Alias="Range">i=884</Alias>
+    <Alias Alias="EUInformation">i=887</Alias>
+    <Alias Alias="EnumValueType">i=7594</Alias>
+    <Alias Alias="GsdGenIoConsistencyEnumeration">ns=1;i=3002</Alias>
+    <Alias Alias="GsdGenIoQualityFormatEnumeration">ns=1;i=3003</Alias>
+    <Alias Alias="GsdGenChannelAccumulativeEnumeration">ns=1;i=3004</Alias>
+    <Alias Alias="GsdGenChannelMaintenanceEnumeration">ns=1;i=3005</Alias>
+    <Alias Alias="GsdGenChannelSpecifierEnumeration">ns=1;i=3006</Alias>
+    <Alias Alias="GsdGenChannelDirectionEnumeration">ns=1;i=3007</Alias>
+    <Alias Alias="GsdGenIoCommunicationStatusEnumeration">ns=1;i=3012</Alias>
+    <Alias Alias="GsdGenIoConfigurationStatusEnumeration">ns=1;i=3015</Alias>
+  </Aliases>
+  <Extensions>
+    <Extension>
+      <ua:ModelInfo Tool="UaModeler" Hash="v1vsnGNFTHxQT/GzArsclw==" Version="1.6.10" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+    </Extension>
+  </Extensions>
+  <UADataType NodeId="ns=1;i=3004" BrowseName="1:GsdGenChannelAccumulativeEnumeration">
+    <DisplayName>GsdGenChannelAccumulativeEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.7</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6066</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenChannelAccumulativeEnumeration">
+      <Field Name="SINGLE" Value="0">
+        <Description>Single channel. Diagnosis only for the reported channel</Description>
+      </Field>
+      <Field Name="ACCUMULATIVE" Value="256">
+        <Description>Multiple channels. Accumulative diagnosis from more than one channel</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6066" BrowseName="EnumValues" ParentNodeId="ns=1;i=3004" DataType="EnumValueType" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3004</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SINGLE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Single channel. Diagnosis only for the reported channel</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>256</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ACCUMULATIVE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Multiple channels. Accumulative diagnosis from more than one channel</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3007" BrowseName="1:GsdGenChannelDirectionEnumeration">
+    <DisplayName>GsdGenChannelDirectionEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.10</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenChannelDirectionEnumeration">
+      <Field Name="MANUFACTURER_SPECIFIC" Value="0">
+        <Description>Manufacturer specific</Description>
+      </Field>
+      <Field Name="INPUT_CHANNEL" Value="8192">
+        <Description>Input</Description>
+      </Field>
+      <Field Name="OUTPUT_CHANNEL" Value="16384">
+        <Description>Output</Description>
+      </Field>
+      <Field Name="BIDIRECTIONAL_CHANNEL" Value="24576">
+        <Description>Input/Output</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6009" BrowseName="EnumValues" ParentNodeId="ns=1;i=3007" DataType="EnumValueType" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3007</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MANUFACTURER_SPECIFIC</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Manufacturer specific</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>8192</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>INPUT_CHANNEL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Input</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>16384</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OUTPUT_CHANNEL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Output</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>24576</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>BIDIRECTIONAL_CHANNEL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Input/Output</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3005" BrowseName="1:GsdGenChannelMaintenanceEnumeration">
+    <DisplayName>GsdGenChannelMaintenanceEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.8</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenChannelMaintenanceEnumeration">
+      <Field Name="FAULT" Value="0">
+        <Description>Fault</Description>
+      </Field>
+      <Field Name="MAINTENANCE_REQUIRED" Value="512">
+        <Description>Maintenance required</Description>
+      </Field>
+      <Field Name="MAINTENANCE_DEMANDED" Value="1024">
+        <Description>Maintenance demanded</Description>
+      </Field>
+      <Field Name="USE_QUALIFIED_CHANNEL_QUALIFIER" Value="1536">
+        <Description>Use QualifiedChannelQualifier variable</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6007" BrowseName="EnumValues" ParentNodeId="ns=1;i=3005" DataType="EnumValueType" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3005</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>FAULT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Fault</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>512</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MAINTENANCE_REQUIRED</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Maintenance required</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1024</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MAINTENANCE_DEMANDED</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Maintenance demanded</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1536</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>USE_QUALIFIED_CHANNEL_QUALIFIER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Use QualifiedChannelQualifier variable</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3006" BrowseName="1:GsdGenChannelSpecifierEnumeration">
+    <DisplayName>GsdGenChannelSpecifierEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.9</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenChannelSpecifierEnumeration">
+      <Field Name="ALL_DISAPPEARS" Value="0">
+        <Description>The Diagnosis ASE contains no longer any entries (of any severity) for this channel</Description>
+      </Field>
+      <Field Name="APPEARS" Value="2048">
+        <Description>An event appears and/or exists further. The Diagnosis ASE contains this and possible other entries for this channel</Description>
+      </Field>
+      <Field Name="DISAPPEARS" Value="4096">
+        <Description>An event disappears and/or exists no longer. The Diagnosis ASE contains no longer any entries of the same severity for this channel</Description>
+      </Field>
+      <Field Name="DISAPPEARS_OTHER_REMAIN" Value="6144">
+        <Description>An event disappears. The Diagnosis ASE still contains other entries of the same severity for this channel</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6008" BrowseName="EnumValues" ParentNodeId="ns=1;i=3006" DataType="EnumValueType" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3006</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ALL_DISAPPEARS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The Diagnosis ASE contains no longer any entries (of any severity) for this channel</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2048</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>APPEARS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>An event appears and/or exists further. The Diagnosis ASE contains this and possible other entries for this channel</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4096</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DISAPPEARS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>An event disappears and/or exists no longer. The Diagnosis ASE contains no longer any entries of the same severity for this channel</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>6144</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DISAPPEARS_OTHER_REMAIN</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>An event disappears. The Diagnosis ASE still contains other entries of the same severity for this channel</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3012" BrowseName="1:GsdGenIoCommunicationStatusEnumeration">
+    <DisplayName>GsdGenIoCommunicationStatusEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6102</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenIoCommunicationStatusEnumeration">
+      <Field Name="INDATA" Value="0">
+        <Description>The Submodule is part of an active AR and exchanging IO Data with a Controller</Description>
+      </Field>
+      <Field Name="OFFLINE" Value="1">
+        <Description>The Submodule is not part of an active AR but may allow reading data values</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6102" BrowseName="EnumValues" ParentNodeId="ns=1;i=3012" DataType="EnumValueType" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3012</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>INDATA</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The Submodule is part of an active AR and exchanging IO Data with a Controller</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OFFLINE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The Submodule is not part of an active AR but may allow reading data values</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3015" BrowseName="1:GsdGenIoConfigurationStatusEnumeration">
+    <DisplayName>GsdGenIoConfigurationStatusEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.5</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6103</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenIoConfigurationStatusEnumeration">
+      <Field Name="OK" Value="0">
+        <Description>Proper Submodule which works as configured</Description>
+      </Field>
+      <Field Name="SUBSTITUTE" Value="1">
+        <Description>Substitute Submodule which works</Description>
+      </Field>
+      <Field Name="WRONG" Value="2">
+        <Description>Wrong Submodule which does not work</Description>
+      </Field>
+      <Field Name="UNKNOWN" Value="3">
+        <Description>Unknown Submodule which is plugged at Subslot not found in expected configuration</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6103" BrowseName="EnumValues" ParentNodeId="ns=1;i=3015" DataType="EnumValueType" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3015</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OK</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Proper Submodule which works as configured</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SUBSTITUTE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Substitute Submodule which works</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>WRONG</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Wrong Submodule which does not work</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>UNKNOWN</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Unknown Submodule which is plugged at Subslot not found in expected configuration</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3002" BrowseName="1:GsdGenIoConsistencyEnumeration">
+    <DisplayName>GsdGenIoConsistencyEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6073</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenIoConsistencyEnumeration">
+      <Field Name="ITEM_CONSISTENCY" Value="0">
+        <Description>Each data type is handled consistently.</Description>
+      </Field>
+      <Field Name="ALL_ITEMS_CONSISTENCY" Value="1">
+        <Description>The Submodule requires consistency over the whole Input/Output Data.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6073" BrowseName="EnumValues" ParentNodeId="ns=1;i=3002" DataType="EnumValueType" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3002</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ITEM_CONSISTENCY</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Each data type is handled consistently.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ALL_ITEMS_CONSISTENCY</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The Submodule requires consistency over the whole Input/Output Data.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3003" BrowseName="1:GsdGenIoQualityFormatEnumeration">
+    <DisplayName>GsdGenIoQualityFormatEnumeration</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.6</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:GsdGenIoQualityFormatEnumeration">
+      <Field Name="QUALIFIER" Value="0">
+        <Description>Bit length is 1.</Description>
+      </Field>
+      <Field Name="EMBEDDED_STATUS" Value="1">
+        <Description>Bit length is 2.</Description>
+      </Field>
+      <Field Name="STATUS" Value="2">
+        <Description>Bit length is 8.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6001" BrowseName="EnumValues" ParentNodeId="ns=1;i=3003" DataType="EnumValueType" ValueRank="1" ArrayDimensions="3">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3003</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>QUALIFIER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Bit length is 1.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>EMBEDDED_STATUS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Bit length is 2.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>STATUS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Bit length is 8.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3009" BrowseName="1:GsdGenIoTimeDataType">
+    <DisplayName>GsdGenIoTimeDataType</DisplayName>
+    <Category>PNGSDGM BMP Access</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5004</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5006</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5005</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:GsdGenIoTimeDataType">
+      <Field Name="NumberOfMilliseconds" DataType="UInt32">
+        <Description>Used for TimeOfDay: Number of milliseconds since midnight. Used for TimeDifference: Number of milliseconds.</Description>
+      </Field>
+      <Field Name="NumberOfDays" DataType="UInt16">
+        <Description>Used for TimeOfDay: Number of days since 1984-01-01 T 00:00 Z. Used for TimeDifference: Number of days. </Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6013" BrowseName="1:GsdGenIoTimeDataType" ParentNodeId="ns=1;i=6002" DataType="String">
+    <DisplayName>GsdGenIoTimeDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5004</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6002</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">GsdGenIoTimeDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6014" BrowseName="1:GsdGenIoTimeDataType" ParentNodeId="ns=1;i=6004" DataType="String">
+    <DisplayName>GsdGenIoTimeDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5005</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6004</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='GsdGenIoTimeDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=3008" BrowseName="1:GsdGenIoTimeStampDataType">
+    <DisplayName>GsdGenIoTimeStampDataType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Category>PNGSDGM Data Objects</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/10.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="1:GsdGenIoTimeStampDataType">
+      <Field Name="Status" DataType="UInt16">
+        <Description>Time source</Description>
+      </Field>
+      <Field Name="Seconds" DataType="UInt64">
+        <Description>Number of seconds</Description>
+      </Field>
+      <Field Name="Nanoseconds" DataType="UInt32">
+        <Description>Number of nanoseconds</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=6011" BrowseName="1:GsdGenIoTimeStampDataType" ParentNodeId="ns=1;i=6002" DataType="String">
+    <DisplayName>GsdGenIoTimeStampDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5001</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6002</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">GsdGenIoTimeStampDataType</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6012" BrowseName="1:GsdGenIoTimeStampDataType" ParentNodeId="ns=1;i=6004" DataType="String">
+    <DisplayName>GsdGenIoTimeStampDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6004</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='GsdGenIoTimeStampDataType']</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6002" BrowseName="1:PNGSDG" SymbolicName="PNGSDG_BinarySchema" DataType="ByteString">
+    <DisplayName>PNGSDG</DisplayName>
+    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/PNGSDGM/</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6013</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+    </References>
+    <Value>
+      <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9QT
+        kdTREdNLyIgRGVmYXVsdEJ5dGVPcmRlcj0iTGl0dGxlRW5kaWFuIiB4bWxuczpvcGM9Imh0d
+        HA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hcnlTY2hlbWEvIiB4bWxuczp1YT0iaHR0cDovL
+        29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgVGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91b
+        mRhdGlvbi5vcmcvVUEvUE5HU0RHTS8iPgogPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwO
+        i8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIi8+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUe
+        XBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IkdzZEdlbklvVGltZURhdGFUeXBlIj4KI
+        CA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6VUludDMyIiBOYW1lPSJOdW1iZXJPZk1pbGxpc
+        2Vjb25kcyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpVSW50MTYiIE5hbWU9Ik51b
+        WJlck9mRGF5cyIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUe
+        XBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IkdzZEdlbklvVGltZVN0Y
+        W1wRGF0YVR5cGUiPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpVSW50MTYiIE5hbWU9I
+        lN0YXR1cyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpVSW50NjQiIE5hbWU9IlNlY
+        29uZHMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6VUludDMyIiBOYW1lPSJOYW5vc
+        2Vjb25kcyIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlI
+        Exlbmd0aEluQml0cz0iMzIiIE5hbWU9IkdzZEdlbkNoYW5uZWxBY2N1bXVsYXRpdmVFbnVtZ
+        XJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0lOR0xFIiBWYWx1ZT0iM
+        CIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFDQ1VNVUxBVElWRSIgVmFsdWU9I
+        jI1NiIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlb
+        md0aEluQml0cz0iMzIiIE5hbWU9IkdzZEdlbkNoYW5uZWxEaXJlY3Rpb25FbnVtZXJhdGlvb
+        iI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUFOVUZBQ1RVUkVSX1NQRUNJRklDI
+        iBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklOUFVUX0NIQU5OR
+        UwiIFZhbHVlPSI4MTkyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT1VUUFVUX
+        0NIQU5ORUwiIFZhbHVlPSIxNjM4NCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        kJJRElSRUNUSU9OQUxfQ0hBTk5FTCIgVmFsdWU9IjI0NTc2Ii8+CiA8L29wYzpFbnVtZXJhd
+        GVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iR
+        3NkR2VuQ2hhbm5lbE1haW50ZW5hbmNlRW51bWVyYXRpb24iPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IkZBVUxUIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9Ik1BSU5URU5BTkNFX1JFUVVJUkVEIiBWYWx1ZT0iNTEyIi8+CiAgPG9wYzpFbnVtZ
+        XJhdGVkVmFsdWUgTmFtZT0iTUFJTlRFTkFOQ0VfREVNQU5ERUQiIFZhbHVlPSIxMDI0Ii8+C
+        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVVNFX1FVQUxJRklFRF9DSEFOTkVMX1FVQ
+        UxJRklFUiIgVmFsdWU9IjE1MzYiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFb
+        nVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJHc2RHZW5DaGFubmVsU3BlY
+        2lmaWVyRW51bWVyYXRpb24iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFMTF9ES
+        VNBUFBFQVJTIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFQU
+        EVBUlMiIFZhbHVlPSIyMDQ4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRElTQ
+        VBQRUFSUyIgVmFsdWU9IjQwOTYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJES
+        VNBUFBFQVJTX09USEVSX1JFTUFJTiIgVmFsdWU9IjYxNDQiLz4KIDwvb3BjOkVudW1lcmF0Z
+        WRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJHc
+        2RHZW5Jb0NvbW11bmljYXRpb25TdGF0dXNFbnVtZXJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhd
+        GVkVmFsdWUgTmFtZT0iSU5EQVRBIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhb
+        HVlIE5hbWU9Ik9GRkxJTkUiIFZhbHVlPSIxIi8+CiA8L29wYzpFbnVtZXJhdGVkVHlwZT4KI
+        DxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iR3NkR2VuSW9Db
+        25maWd1cmF0aW9uU3RhdHVzRW51bWVyYXRpb24iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9Ik9LIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNVQ
+        lNUSVRVVEUiIFZhbHVlPSIxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iV1JPT
+        kciIFZhbHVlPSIyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVU5LTk9XTiIgV
+        mFsdWU9IjMiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZ
+        SBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJHc2RHZW5Jb0NvbnNpc3RlbmN5RW51bWVyYXRpb
+        24iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklURU1fQ09OU0lTVEVOQ1kiIFZhb
+        HVlPSIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUxMX0lURU1TX0NPTlNJU
+        1RFTkNZIiBWYWx1ZT0iMSIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lc
+        mF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IkdzZEdlbklvUXVhbGl0eUZvcm1hd
+        EVudW1lcmF0aW9uIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJRVUFMSUZJRVIiI
+        FZhbHVlPSIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRU1CRURERURfU1RBV
+        FVTIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNUQVRVUyIgV
+        mFsdWU9IjIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgo8L29wYzpUeXBlRGljdGlvbmFye
+        T4K</uax:ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6002" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6002</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PNGSDGM/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6004" BrowseName="1:PNGSDG" SymbolicName="PNGSDG_XmlSchema" DataType="ByteString">
+    <DisplayName>PNGSDG</DisplayName>
+    <Description>Collects the data type descriptions of http://opcfoundation.org/UA/PNGSDGM/</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6014</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6012</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+    </References>
+    <Value>
+      <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUE5HU0RHTS9UeXBlcy54c2QiIHhtbG5zOnRuc
+        z0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBL1BOR1NER00vVHlwZXMueHNkIiB4bWxuc
+        zp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiB4b
+        Wxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPgogPHhzOmltcG9yd
+        CBuYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzL
+        nhzZCIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iR3NkR2VuQ2hhbm5lbEFjY3VtdWxhdGl2Z
+        UVudW1lcmF0aW9uIj4KICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgP
+        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJTSU5HTEVfMCIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9IkFDQ1VNVUxBVElWRV8yNTYiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogPC94czpza
+        W1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkdzZEdlbkNoYW5uZWxBY2N1bXVsY
+        XRpdmVFbnVtZXJhdGlvbiIgbmFtZT0iR3NkR2VuQ2hhbm5lbEFjY3VtdWxhdGl2ZUVudW1lc
+        mF0aW9uIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mR3NkR2VuQ2hhbm5lbEFjY
+        3VtdWxhdGl2ZUVudW1lcmF0aW9uIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50I
+        G1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpHc2RHZW5Da
+        GFubmVsQWNjdW11bGF0aXZlRW51bWVyYXRpb24iIG5hbWU9IkdzZEdlbkNoYW5uZWxBY2N1b
+        XVsYXRpdmVFbnVtZXJhdGlvbiIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlP
+        gogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZHc2RHZ
+        W5DaGFubmVsQWNjdW11bGF0aXZlRW51bWVyYXRpb24iIG5hbWU9Ikxpc3RPZkdzZEdlbkNoY
+        W5uZWxBY2N1bXVsYXRpdmVFbnVtZXJhdGlvbiIgbmlsbGFibGU9InRydWUiLz4KIDx4czpza
+        W1wbGVUeXBlIG5hbWU9IkdzZEdlbkNoYW5uZWxEaXJlY3Rpb25FbnVtZXJhdGlvbiI+CiAgP
+        HhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
+        Wx1ZT0iTUFOVUZBQ1RVUkVSX1NQRUNJRklDXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhb
+        HVlPSJJTlBVVF9DSEFOTkVMXzgxOTIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJPV
+        VRQVVRfQ0hBTk5FTF8xNjM4NCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkJJRElSR
+        UNUSU9OQUxfQ0hBTk5FTF8yNDU3NiIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpb
+        XBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6R3NkR2VuQ2hhbm5lbERpcmVjdGlvb
+        kVudW1lcmF0aW9uIiBuYW1lPSJHc2RHZW5DaGFubmVsRGlyZWN0aW9uRW51bWVyYXRpb24iL
+        z4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZHc2RHZW5DaGFubmVsRGlyZWN0aW9uR
+        W51bWVyYXRpb24iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzP
+        SIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOkdzZEdlbkNoYW5uZWxEaXJlY
+        3Rpb25FbnVtZXJhdGlvbiIgbmFtZT0iR3NkR2VuQ2hhbm5lbERpcmVjdGlvbkVudW1lcmF0a
+        W9uIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUe
+        XBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZkdzZEdlbkNoYW5uZWxEaXJlY3Rpb
+        25FbnVtZXJhdGlvbiIgbmFtZT0iTGlzdE9mR3NkR2VuQ2hhbm5lbERpcmVjdGlvbkVudW1lc
+        mF0aW9uIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iR3NkR2VuQ
+        2hhbm5lbE1haW50ZW5hbmNlRW51bWVyYXRpb24iPgogIDx4czpyZXN0cmljdGlvbiBiYXNlP
+        SJ4czpzdHJpbmciPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkZBVUxUXzAiLz4KICAgP
+        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJNQUlOVEVOQU5DRV9SRVFVSVJFRF81MTIiLz4KICAgP
+        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJNQUlOVEVOQU5DRV9ERU1BTkRFRF8xMDI0Ii8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVVNFX1FVQUxJRklFRF9DSEFOTkVMX1FVQUxJRklFU
+        l8xNTM2Ii8+CiAgPC94czpyZXN0cmljdGlvbj4KIDwveHM6c2ltcGxlVHlwZT4KIDx4czplb
+        GVtZW50IHR5cGU9InRuczpHc2RHZW5DaGFubmVsTWFpbnRlbmFuY2VFbnVtZXJhdGlvbiIgb
+        mFtZT0iR3NkR2VuQ2hhbm5lbE1haW50ZW5hbmNlRW51bWVyYXRpb24iLz4KIDx4czpjb21wb
+        GV4VHlwZSBuYW1lPSJMaXN0T2ZHc2RHZW5DaGFubmVsTWFpbnRlbmFuY2VFbnVtZXJhdGlvb
+        iI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY
+        3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6R3NkR2VuQ2hhbm5lbE1haW50ZW5hbmNlRW51b
+        WVyYXRpb24iIG5hbWU9IkdzZEdlbkNoYW5uZWxNYWludGVuYW5jZUVudW1lcmF0aW9uIiBua
+        WxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZkdzZEdlbkNoYW5uZWxNYWludGVuYW5jZUVud
+        W1lcmF0aW9uIiBuYW1lPSJMaXN0T2ZHc2RHZW5DaGFubmVsTWFpbnRlbmFuY2VFbnVtZXJhd
+        GlvbiIgbmlsbGFibGU9InRydWUiLz4KIDx4czpzaW1wbGVUeXBlIG5hbWU9IkdzZEdlbkNoY
+        W5uZWxTcGVjaWZpZXJFbnVtZXJhdGlvbiI+CiAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzO
+        nN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQUxMX0RJU0FQUEVBUlNfMCIvP
+        gogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFQUEVBUlNfMjA0OCIvPgogICA8eHM6ZW51b
+        WVyYXRpb24gdmFsdWU9IkRJU0FQUEVBUlNfNDA5NiIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9IkRJU0FQUEVBUlNfT1RIRVJfUkVNQUlOXzYxNDQiLz4KICA8L3hzOnJlc3RyaWN0a
+        W9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkdzZEdlbkNoY
+        W5uZWxTcGVjaWZpZXJFbnVtZXJhdGlvbiIgbmFtZT0iR3NkR2VuQ2hhbm5lbFNwZWNpZmllc
+        kVudW1lcmF0aW9uIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mR3NkR2VuQ2hhb
+        m5lbFNwZWNpZmllckVudW1lcmF0aW9uIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZ
+        W50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpHc2RHZ
+        W5DaGFubmVsU3BlY2lmaWVyRW51bWVyYXRpb24iIG5hbWU9IkdzZEdlbkNoYW5uZWxTcGVja
+        WZpZXJFbnVtZXJhdGlvbiIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogP
+        C94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZHc2RHZW5Da
+        GFubmVsU3BlY2lmaWVyRW51bWVyYXRpb24iIG5hbWU9Ikxpc3RPZkdzZEdlbkNoYW5uZWxTc
+        GVjaWZpZXJFbnVtZXJhdGlvbiIgbmlsbGFibGU9InRydWUiLz4KIDx4czpzaW1wbGVUeXBlI
+        G5hbWU9IkdzZEdlbklvQ29tbXVuaWNhdGlvblN0YXR1c0VudW1lcmF0aW9uIj4KICA8eHM6c
+        mVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlP
+        SJJTkRBVEFfMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik9GRkxJTkVfMSIvPgogI
+        DwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlP
+        SJ0bnM6R3NkR2VuSW9Db21tdW5pY2F0aW9uU3RhdHVzRW51bWVyYXRpb24iIG5hbWU9IkdzZ
+        EdlbklvQ29tbXVuaWNhdGlvblN0YXR1c0VudW1lcmF0aW9uIi8+CiA8eHM6Y29tcGxleFR5c
+        GUgbmFtZT0iTGlzdE9mR3NkR2VuSW9Db21tdW5pY2F0aW9uU3RhdHVzRW51bWVyYXRpb24iP
+        gogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9InVuYm91bmRlZCIgdHlwZT0idG5zOkdzZEdlbklvQ29tbXVuaWNhdGlvblN0YXR1c0Vud
+        W1lcmF0aW9uIiBuYW1lPSJHc2RHZW5Jb0NvbW11bmljYXRpb25TdGF0dXNFbnVtZXJhdGlvb
+        iIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZ
+        T4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZHc2RHZW5Jb0NvbW11bmljYXRpb25Td
+        GF0dXNFbnVtZXJhdGlvbiIgbmFtZT0iTGlzdE9mR3NkR2VuSW9Db21tdW5pY2F0aW9uU3Rhd
+        HVzRW51bWVyYXRpb24iIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6c2ltcGxlVHlwZSBuYW1lP
+        SJHc2RHZW5Jb0NvbmZpZ3VyYXRpb25TdGF0dXNFbnVtZXJhdGlvbiI+CiAgPHhzOnJlc3Rya
+        WN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iT0tfM
+        CIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlNVQlNUSVRVVEVfMSIvPgogICA8eHM6Z
+        W51bWVyYXRpb24gdmFsdWU9IldST05HXzIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlP
+        SJVTktOT1dOXzMiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOkdzZEdlbklvQ29uZmlndXJhdGlvblN0YXR1c0VudW1lc
+        mF0aW9uIiBuYW1lPSJHc2RHZW5Jb0NvbmZpZ3VyYXRpb25TdGF0dXNFbnVtZXJhdGlvbiIvP
+        gogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZkdzZEdlbklvQ29uZmlndXJhdGlvblN0Y
+        XR1c0VudW1lcmF0aW9uIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY
+        3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpHc2RHZW5Jb0NvbmZpZ
+        3VyYXRpb25TdGF0dXNFbnVtZXJhdGlvbiIgbmFtZT0iR3NkR2VuSW9Db25maWd1cmF0aW9uU
+        3RhdHVzRW51bWVyYXRpb24iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KI
+        DwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mR3NkR2VuS
+        W9Db25maWd1cmF0aW9uU3RhdHVzRW51bWVyYXRpb24iIG5hbWU9Ikxpc3RPZkdzZEdlbklvQ
+        29uZmlndXJhdGlvblN0YXR1c0VudW1lcmF0aW9uIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzO
+        nNpbXBsZVR5cGUgbmFtZT0iR3NkR2VuSW9Db25zaXN0ZW5jeUVudW1lcmF0aW9uIj4KICA8e
+        HM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhb
+        HVlPSJJVEVNX0NPTlNJU1RFTkNZXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJBT
+        ExfSVRFTVNfQ09OU0lTVEVOQ1lfMSIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpb
+        XBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6R3NkR2VuSW9Db25zaXN0ZW5jeUVud
+        W1lcmF0aW9uIiBuYW1lPSJHc2RHZW5Jb0NvbnNpc3RlbmN5RW51bWVyYXRpb24iLz4KIDx4c
+        zpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZHc2RHZW5Jb0NvbnNpc3RlbmN5RW51bWVyYXRpb
+        24iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY
+        2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOkdzZEdlbklvQ29uc2lzdGVuY3lFbnVtZXJhd
+        GlvbiIgbmFtZT0iR3NkR2VuSW9Db25zaXN0ZW5jeUVudW1lcmF0aW9uIiBuaWxsYWJsZT0id
+        HJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lb
+        nQgdHlwZT0idG5zOkxpc3RPZkdzZEdlbklvQ29uc2lzdGVuY3lFbnVtZXJhdGlvbiIgbmFtZ
+        T0iTGlzdE9mR3NkR2VuSW9Db25zaXN0ZW5jeUVudW1lcmF0aW9uIiBuaWxsYWJsZT0idHJ1Z
+        SIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iR3NkR2VuSW9RdWFsaXR5Rm9ybWF0RW51bWVyY
+        XRpb24iPgogIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51b
+        WVyYXRpb24gdmFsdWU9IlFVQUxJRklFUl8wIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
+        T0iRU1CRURERURfU1RBVFVTXzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTVEFUV
+        VNfMiIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlb
+        WVudCB0eXBlPSJ0bnM6R3NkR2VuSW9RdWFsaXR5Rm9ybWF0RW51bWVyYXRpb24iIG5hbWU9I
+        kdzZEdlbklvUXVhbGl0eUZvcm1hdEVudW1lcmF0aW9uIi8+CiA8eHM6Y29tcGxleFR5cGUgb
+        mFtZT0iTGlzdE9mR3NkR2VuSW9RdWFsaXR5Rm9ybWF0RW51bWVyYXRpb24iPgogIDx4czpzZ
+        XF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91b
+        mRlZCIgdHlwZT0idG5zOkdzZEdlbklvUXVhbGl0eUZvcm1hdEVudW1lcmF0aW9uIiBuYW1lP
+        SJHc2RHZW5Jb1F1YWxpdHlGb3JtYXRFbnVtZXJhdGlvbiIgbmlsbGFibGU9InRydWUiLz4KI
+        CA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9I
+        nRuczpMaXN0T2ZHc2RHZW5Jb1F1YWxpdHlGb3JtYXRFbnVtZXJhdGlvbiIgbmFtZT0iTGlzd
+        E9mR3NkR2VuSW9RdWFsaXR5Rm9ybWF0RW51bWVyYXRpb24iIG5pbGxhYmxlPSJ0cnVlIi8+C
+        iA8eHM6Y29tcGxleFR5cGUgbmFtZT0iR3NkR2VuSW9UaW1lRGF0YVR5cGUiPgogIDx4czpzZ
+        XF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5c
+        GU9InhzOnVuc2lnbmVkSW50IiBuYW1lPSJOdW1iZXJPZk1pbGxpc2Vjb25kcyIvPgogICA8e
+        HM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6dW5zaWduZ
+        WRTaG9ydCIgbmFtZT0iTnVtYmVyT2ZEYXlzIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y
+        29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6R3NkR2VuSW9UaW1lRGF0YVR5c
+        GUiIG5hbWU9IkdzZEdlbklvVGltZURhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZ
+        T0iTGlzdE9mR3NkR2VuSW9UaW1lRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzO
+        mVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zO
+        kdzZEdlbklvVGltZURhdGFUeXBlIiBuYW1lPSJHc2RHZW5Jb1RpbWVEYXRhVHlwZSIgbmlsb
+        GFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4c
+        zplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZHc2RHZW5Jb1RpbWVEYXRhVHlwZSIgbmFtZT0iT
+        GlzdE9mR3NkR2VuSW9UaW1lRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tc
+        GxleFR5cGUgbmFtZT0iR3NkR2VuSW9UaW1lU3RhbXBEYXRhVHlwZSI+CiAgPHhzOnNlcXVlb
+        mNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ie
+        HM6dW5zaWduZWRTaG9ydCIgbmFtZT0iU3RhdHVzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY
+        3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czp1bnNpZ25lZExvbmciIG5hbWU9IlNlY
+        29uZHMiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5c
+        GU9InhzOnVuc2lnbmVkSW50IiBuYW1lPSJOYW5vc2Vjb25kcyIvPgogIDwveHM6c2VxdWVuY
+        2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkdzZEdlbklvV
+        GltZVN0YW1wRGF0YVR5cGUiIG5hbWU9IkdzZEdlbklvVGltZVN0YW1wRGF0YVR5cGUiLz4KI
+        Dx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZHc2RHZW5Jb1RpbWVTdGFtcERhdGFUeXBlI
+        j4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2Njd
+        XJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpHc2RHZW5Jb1RpbWVTdGFtcERhdGFUeXBlIiBuY
+        W1lPSJHc2RHZW5Jb1RpbWVTdGFtcERhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwve
+        HM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zO
+        kxpc3RPZkdzZEdlbklvVGltZVN0YW1wRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZkdzZEdlbklvV
+        GltZVN0YW1wRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6005" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6004" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6004</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PNGSDGM/Types.xsd</uax:String>
+    </Value>
+  </UAVariable>
+  <UAReferenceType NodeId="ns=1;i=4002" BrowseName="1:HasInputData">
+    <DisplayName>HasInputData</DisplayName>
+    <Documentation />
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
+    </References>
+    <InverseName>HasInputApplication</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=4003" BrowseName="1:HasOutputData">
+    <DisplayName>HasOutputData</DisplayName>
+    <Documentation />
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
+    </References>
+    <InverseName>HasOutputApplication</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;i=2003" BrowseName="1:GsdGenIoBitDataItemVariableType" DataType="Byte">
+    <DisplayName>GsdGenIoBitDataItemVariableType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/9.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Byte xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Byte>
+    </Value>
+  </UAVariableType>
+  <UAVariableType NodeId="ns=1;i=2004" BrowseName="1:GsdGenIoDataItemVariableType">
+    <DisplayName>GsdGenIoDataItemVariableType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/9.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;i=6021" BrowseName="1:&lt;BitDataItem&gt;" SymbolicName="BitDataItem" ParentNodeId="ns=1;i=2004" DataType="Byte">
+    <DisplayName>&lt;BitDataItem&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2004</Reference>
+    </References>
+    <Value>
+      <uax:Byte xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Byte>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6020" BrowseName="1:UseAsBits" ParentNodeId="ns=1;i=2004" DataType="Boolean">
+    <DisplayName>UseAsBits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2004</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;i=2002" BrowseName="1:GsdGenParameterVariableType">
+    <DisplayName>GsdGenParameterVariableType</DisplayName>
+    <Category>PNGSDGM Parameter</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/9.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6017</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6016</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;i=6019" BrowseName="1:BitLength" ParentNodeId="ns=1;i=2002" DataType="UInt16">
+    <DisplayName>BitLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6018" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=2002" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6017" BrowseName="1:ByteOffset" ParentNodeId="ns=1;i=2002" DataType="UInt32">
+    <DisplayName>ByteOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6015" BrowseName="1:DefaultValue" ParentNodeId="ns=1;i=2002">
+    <DisplayName>DefaultValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6016" BrowseName="1:Index" ParentNodeId="ns=1;i=2002" DataType="UInt16">
+    <DisplayName>Index</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2002</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:GsdGenAlarmEventType">
+    <DisplayName>GsdGenAlarmEventType</DisplayName>
+    <Category>PNGSDGM Alarm Event</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/8.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6026</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6025</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6033</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6036</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6027</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6035</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6028</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6024</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
+      <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=6026" BrowseName="1:Accumulative" ParentNodeId="ns=1;i=1002" DataType="GsdGenChannelAccumulativeEnumeration">
+    <DisplayName>Accumulative</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6022" BrowseName="1:API" ParentNodeId="ns=1;i=1002" DataType="UInt32">
+    <DisplayName>API</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6031" BrowseName="1:ChannelErrorType" ParentNodeId="ns=1;i=1002" DataType="UInt16">
+    <DisplayName>ChannelErrorType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6025" BrowseName="1:ChannelNumber" ParentNodeId="ns=1;i=1002" DataType="UInt16">
+    <DisplayName>ChannelNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6029" BrowseName="1:Direction" ParentNodeId="ns=1;i=1002" DataType="GsdGenChannelDirectionEnumeration">
+    <DisplayName>Direction</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6033" BrowseName="1:ExtChannelAddValue" ParentNodeId="ns=1;i=1002" DataType="UInt32">
+    <DisplayName>ExtChannelAddValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6032" BrowseName="1:ExtChannelErrorType" ParentNodeId="ns=1;i=1002" DataType="UInt16">
+    <DisplayName>ExtChannelErrorType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6036" BrowseName="1:HelpText" ParentNodeId="ns=1;i=1002" DataType="LocalizedText">
+    <DisplayName>HelpText</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6027" BrowseName="1:Maintenance" ParentNodeId="ns=1;i=1002" DataType="GsdGenChannelMaintenanceEnumeration">
+    <DisplayName>Maintenance</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6035" BrowseName="1:ManufacturerData" ParentNodeId="ns=1;i=1002" DataType="ByteString">
+    <DisplayName>ManufacturerData</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6034" BrowseName="1:QualifiedChannelQualifier" ParentNodeId="ns=1;i=1002" DataType="UInt32">
+    <DisplayName>QualifiedChannelQualifier</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6023" BrowseName="1:Slot" ParentNodeId="ns=1;i=1002" DataType="UInt16">
+    <DisplayName>Slot</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6028" BrowseName="1:Specifier" ParentNodeId="ns=1;i=1002" DataType="GsdGenChannelSpecifierEnumeration">
+    <DisplayName>Specifier</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6024" BrowseName="1:Subslot" ParentNodeId="ns=1;i=1002" DataType="UInt16">
+    <DisplayName>Subslot</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6030" BrowseName="1:UserStructureIdentifier" ParentNodeId="ns=1;i=1002" DataType="UInt16">
+    <DisplayName>UserStructureIdentifier</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:GsdGenIoChannelDataType">
+    <DisplayName>GsdGenIoChannelDataType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/7.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6040</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6039</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=6040" BrowseName="1:BitLength" ParentNodeId="ns=1;i=1004" DataType="UInt16">
+    <DisplayName>BitLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6039" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=1004" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:GsdGenIoChannelQualityType">
+    <DisplayName>GsdGenIoChannelQualityType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/7.5</Documentation>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6037</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=6037" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=1003" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6038" BrowseName="1:Format" ParentNodeId="ns=1;i=1003" DataType="GsdGenIoQualityFormatEnumeration">
+    <DisplayName>Format</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:GsdGenIoChannelType">
+    <DisplayName>GsdGenIoChannelType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/7.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=5007</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6041</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;i=5007" BrowseName="1:Data" ParentNodeId="ns=1;i=1005">
+    <DisplayName>Data</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6043</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6042" BrowseName="1:BitLength" ParentNodeId="ns=1;i=5007" DataType="UInt16">
+    <DisplayName>BitLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6043" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=5007" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6041" BrowseName="1:Number" ParentNodeId="ns=1;i=1005" DataType="UInt16">
+    <DisplayName>Number</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1005</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5008" BrowseName="1:Quality" ParentNodeId="ns=1;i=1005">
+    <DisplayName>Quality</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6044</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6045</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6044" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=5008" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5008</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6045" BrowseName="1:Format" ParentNodeId="ns=1;i=5008" DataType="GsdGenIoQualityFormatEnumeration">
+    <DisplayName>Format</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5008</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:GsdGenIoDataType">
+    <DisplayName>GsdGenIoDataType</DisplayName>
+    <Category>PNGSDGM IO Data</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/7.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6047</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5009</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6046</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=6047" BrowseName="1:&lt;DataItemx&gt;" SymbolicName="DataItemx" ParentNodeId="ns=1;i=1006">
+    <DisplayName>&lt;DataItemx&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2004</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6048</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6048" BrowseName="1:UseAsBits" ParentNodeId="ns=1;i=6047" DataType="Boolean">
+    <DisplayName>UseAsBits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6047</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5009" BrowseName="1:&lt;InputChannelx&gt;" SymbolicName="InputChannelx" ParentNodeId="ns=1;i=1006">
+    <DisplayName>&lt;InputChannelx&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5010</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6051</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5010" BrowseName="1:Data" ParentNodeId="ns=1;i=5009">
+    <DisplayName>Data</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6049</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6050</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5009</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6049" BrowseName="1:BitLength" ParentNodeId="ns=1;i=5010" DataType="UInt16">
+    <DisplayName>BitLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6050" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=5010" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6051" BrowseName="1:Number" ParentNodeId="ns=1;i=5009" DataType="UInt16">
+    <DisplayName>Number</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5009</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5011" BrowseName="1:&lt;OutputChannelx&gt;" SymbolicName="OutputChannelx" ParentNodeId="ns=1;i=1006">
+    <DisplayName>&lt;OutputChannelx&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5012</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6054</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5012" BrowseName="1:Data" ParentNodeId="ns=1;i=5011">
+    <DisplayName>Data</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6052</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5011</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6052" BrowseName="1:BitLength" ParentNodeId="ns=1;i=5012" DataType="UInt16">
+    <DisplayName>BitLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6053" BrowseName="1:BitOffset" ParentNodeId="ns=1;i=5012" DataType="UInt16">
+    <DisplayName>BitOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6054" BrowseName="1:Number" ParentNodeId="ns=1;i=5011" DataType="UInt16">
+    <DisplayName>Number</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6046" BrowseName="1:Consistency" ParentNodeId="ns=1;i=1006" DataType="GsdGenIoConsistencyEnumeration">
+    <DisplayName>Consistency</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1006</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:GsdGenSubmoduleApplicationType">
+    <DisplayName>GsdGenSubmoduleApplicationType</DisplayName>
+    <Category>PNGSDGM Device</Category>
+    <Category>PNGSDGM Parameter</Category>
+    <Category>PNGSDGM IO Data</Category>
+    <Category>PNGSDGM Data Objects</Category>
+    <Category>PNGSDGM BMP Access</Category>
+    <Category>PNGSDGM Alarm Event</Category>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/7.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=5019</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6089</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5016</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6090</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6086</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6084</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6058</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6057</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6106</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6104</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5015</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6105</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6107</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=1;i=1002</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5013</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5018</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5014</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;i=5019" BrowseName="1:&lt;ArrayFolder&gt;" SymbolicName="ArrayFolder" ParentNodeId="ns=1;i=1007">
+    <DisplayName>&lt;ArrayFolder&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6095</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6100</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6098</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6099</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6095" BrowseName="1:BMPNumber" ParentNodeId="ns=1;i=5019" DataType="UInt16">
+    <DisplayName>BMPNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6100" BrowseName="1:Element" ParentNodeId="ns=1;i=5019">
+    <DisplayName>Element</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6098" BrowseName="1:EngineeringUnits" ParentNodeId="ns=1;i=5019" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6099" BrowseName="1:EURange" ParentNodeId="ns=1;i=5019" DataType="Range">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6089" BrowseName="1:&lt;EnumerationVariable&gt;" SymbolicName="EnumerationVariable" ParentNodeId="ns=1;i=1007" DataType="Enumeration">
+    <DisplayName>&lt;EnumerationVariable&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6093</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6096</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6097</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6093" BrowseName="1:BMPNumber" ParentNodeId="ns=1;i=6089" DataType="UInt16">
+    <DisplayName>BMPNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6089</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6096" BrowseName="1:EngineeringUnits" ParentNodeId="ns=1;i=6089" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6089</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6097" BrowseName="1:EURange" ParentNodeId="ns=1;i=6089" DataType="Range">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6089</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5016" BrowseName="1:&lt;FolderName&gt;" SymbolicName="FolderName" ParentNodeId="ns=1;i=1007">
+    <DisplayName>&lt;FolderName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6090" BrowseName="1:&lt;OptionSetVariable&gt;" SymbolicName="OptionSetVariable" ParentNodeId="ns=1;i=1007">
+    <DisplayName>&lt;OptionSetVariable&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=11487</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6101</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6094</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6091</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6101" BrowseName="1:BitMask" ParentNodeId="ns=1;i=6090" DataType="Boolean" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>BitMask</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6090</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6094" BrowseName="1:BMPNumber" ParentNodeId="ns=1;i=6090" DataType="UInt16">
+    <DisplayName>BMPNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6090</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6091" BrowseName="OptionSetValues" ParentNodeId="ns=1;i=6090" DataType="LocalizedText" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>OptionSetValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6090</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6086" BrowseName="1:&lt;UnitRangeVariable&gt;" SymbolicName="UnitRangeVariable" ParentNodeId="ns=1;i=1007" DataType="Number" ValueRank="-3">
+    <DisplayName>&lt;UnitRangeVariable&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17570</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6092</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6087</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6088</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6092" BrowseName="1:BMPNumber" ParentNodeId="ns=1;i=6086" DataType="UInt16">
+    <DisplayName>BMPNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6086</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6087" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6086" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6086</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6088" BrowseName="EURange" ParentNodeId="ns=1;i=6086" DataType="Range">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6086</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6084" BrowseName="1:&lt;UnitVariable&gt;" SymbolicName="UnitVariable" ParentNodeId="ns=1;i=1007" DataType="Number" ValueRank="-3">
+    <DisplayName>&lt;UnitVariable&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6070</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6085</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6070" BrowseName="1:BMPNumber" ParentNodeId="ns=1;i=6084" DataType="UInt16">
+    <DisplayName>BMPNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6084</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6085" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6084" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6084</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6058" BrowseName="1:&lt;ValueProperty&gt;" SymbolicName="ValueProperty" ParentNodeId="ns=1;i=1007" ValueRank="-3">
+    <DisplayName>&lt;ValueProperty&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6057" BrowseName="1:&lt;ValueVariable&gt;" SymbolicName="ValueVariable" ParentNodeId="ns=1;i=1007" ValueRank="-3">
+    <DisplayName>&lt;ValueVariable&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6071</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6072</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6010" BrowseName="1:BMPNumber" ParentNodeId="ns=1;i=6057" DataType="UInt16">
+    <DisplayName>BMPNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6069" BrowseName="1:Dimension" ParentNodeId="ns=1;i=6057" DataType="UInt16">
+    <DisplayName>Dimension</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6067" BrowseName="1:EngineeringUnit" ParentNodeId="ns=1;i=6057" DataType="EUInformation">
+    <DisplayName>EngineeringUnit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6068" BrowseName="1:EURange" ParentNodeId="ns=1;i=6057" DataType="Range">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6071" BrowseName="1:Text" ParentNodeId="ns=1;i=6057" DataType="String">
+    <DisplayName>Text</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6072" BrowseName="1:TextArray" ParentNodeId="ns=1;i=6057" DataType="String" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>TextArray</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6057</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6006" BrowseName="1:ApplicationTag" ParentNodeId="ns=1;i=1007" DataType="String">
+    <DisplayName>ApplicationTag</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6106" BrowseName="1:ARIdentifier" ParentNodeId="ns=1;i=1007" DataType="Guid">
+    <DisplayName>ARIdentifier</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6104" BrowseName="1:CommunicationStatus" ParentNodeId="ns=1;i=1007" DataType="GsdGenIoCommunicationStatusEnumeration">
+    <DisplayName>CommunicationStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5015" BrowseName="1:Configuration" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Configuration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1005</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6105" BrowseName="1:ConfigurationStatus" ParentNodeId="ns=1;i=1007" DataType="GsdGenIoConfigurationStatusEnumeration">
+    <DisplayName>ConfigurationStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6107" BrowseName="1:ControllerName" ParentNodeId="ns=1;i=1007" DataType="String">
+    <DisplayName>ControllerName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5013" BrowseName="1:Input" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Input</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6055</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6055" BrowseName="1:Consistency" ParentNodeId="ns=1;i=5013" DataType="GsdGenIoConsistencyEnumeration">
+    <DisplayName>Consistency</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5018" BrowseName="1:Lock" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Lock</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=6388</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7003</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7004</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6079</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6080</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6081</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6082</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7005</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="ns=1;i=7002" BrowseName="2:BreakLock" ParentNodeId="ns=1;i=5018" MethodDeclarationId="ns=2;i=6400">
+    <DisplayName>BreakLock</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6075</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6075" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7002" DataType="Argument" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7002</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>BreakLockStatus</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=6</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7003" BrowseName="2:ExitLock" ParentNodeId="ns=1;i=5018" MethodDeclarationId="ns=2;i=6398">
+    <DisplayName>ExitLock</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6076</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6076" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7003" DataType="Argument" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7003</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ExitLockStatus</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=6</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7004" BrowseName="2:InitLock" ParentNodeId="ns=1;i=5018" MethodDeclarationId="ns=2;i=6393">
+    <DisplayName>InitLock</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6077</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6078</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6077" BrowseName="InputArguments" ParentNodeId="ns=1;i=7004" DataType="Argument" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7004</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Context</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6078" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7004" DataType="Argument" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7004</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>InitLockStatus</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=6</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6079" BrowseName="2:Locked" ParentNodeId="ns=1;i=5018" DataType="Boolean">
+    <DisplayName>Locked</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6080" BrowseName="2:LockingClient" ParentNodeId="ns=1;i=5018" DataType="String">
+    <DisplayName>LockingClient</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6081" BrowseName="2:LockingUser" ParentNodeId="ns=1;i=5018" DataType="String">
+    <DisplayName>LockingUser</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6082" BrowseName="2:RemainingLockTime" ParentNodeId="ns=1;i=5018" DataType="Duration">
+    <DisplayName>RemainingLockTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7005" BrowseName="2:RenewLock" ParentNodeId="ns=1;i=5018" MethodDeclarationId="ns=2;i=6396">
+    <DisplayName>RenewLock</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6083</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6083" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7005" DataType="Argument" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7005</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>RenewLockStatus</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=6</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5014" BrowseName="1:Output" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Output</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6056</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6056" BrowseName="1:Consistency" ParentNodeId="ns=1;i=5014" DataType="GsdGenIoConsistencyEnumeration">
+    <DisplayName>Consistency</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5014</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7001" BrowseName="1:SetApplicationTag" ParentNodeId="ns=1;i=1007">
+    <DisplayName>SetApplicationTag</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/7.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6074</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6074" BrowseName="InputArguments" ParentNodeId="ns=1;i=7001" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7001</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ApplicationTag</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5017" BrowseName="1:http://opcfoundation.org/UA/PNGSDGM/" SymbolicName="http___opcfoundation_org_UA_PNGSDGM_">
+    <DisplayName>http://opcfoundation.org/UA/PNGSDGM/</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/PNGSDGM/v100/docs/12.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6060</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6062</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=6059" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5017" DataType="Boolean">
+    <DisplayName>IsNamespaceSubset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+    <Value>
+      <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6060" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=5017" DataType="DateTime">
+    <DisplayName>NamespacePublicationDate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+    <Value>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2023-06-30T00:00:00Z</uax:DateTime>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6061" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5017" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PNGSDGM/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6062" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=5017" DataType="String">
+    <DisplayName>NamespaceVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6063" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5017" DataType="IdType" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>StaticNodeIdTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+    <Value>
+      <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6064" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5017" DataType="NumericRange" ValueRank="1" ArrayDimensions="0">
+    <DisplayName>StaticNumericNodeIdRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6065" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=5017" DataType="String">
+    <DisplayName>StaticStringNodeIdPattern</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=5001" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6011</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5002" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6012</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5003" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5004" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3009</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6013</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5005" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3009</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=6014</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5006" BrowseName="Default JSON" SymbolicName="DefaultJson">
+    <DisplayName>Default JSON</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3009</Reference>
+    </References>
+  </UAObject>
+</UANodeSet>

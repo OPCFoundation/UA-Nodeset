@@ -1,0 +1,143 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/PNGSDGM/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PNGSDGM/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="GsdGenChannelAccumulativeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SINGLE_0"/>
+            <xs:enumeration value="ACCUMULATIVE_256"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenChannelAccumulativeEnumeration" name="GsdGenChannelAccumulativeEnumeration"/>
+    <xs:complexType name="ListOfGsdGenChannelAccumulativeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenChannelAccumulativeEnumeration" name="GsdGenChannelAccumulativeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenChannelAccumulativeEnumeration" name="ListOfGsdGenChannelAccumulativeEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenChannelDirectionEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MANUFACTURER_SPECIFIC_0"/>
+            <xs:enumeration value="INPUT_CHANNEL_8192"/>
+            <xs:enumeration value="OUTPUT_CHANNEL_16384"/>
+            <xs:enumeration value="BIDIRECTIONAL_CHANNEL_24576"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenChannelDirectionEnumeration" name="GsdGenChannelDirectionEnumeration"/>
+    <xs:complexType name="ListOfGsdGenChannelDirectionEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenChannelDirectionEnumeration" name="GsdGenChannelDirectionEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenChannelDirectionEnumeration" name="ListOfGsdGenChannelDirectionEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenChannelMaintenanceEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FAULT_0"/>
+            <xs:enumeration value="MAINTENANCE_REQUIRED_512"/>
+            <xs:enumeration value="MAINTENANCE_DEMANDED_1024"/>
+            <xs:enumeration value="USE_QUALIFIED_CHANNEL_QUALIFIER_1536"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenChannelMaintenanceEnumeration" name="GsdGenChannelMaintenanceEnumeration"/>
+    <xs:complexType name="ListOfGsdGenChannelMaintenanceEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenChannelMaintenanceEnumeration" name="GsdGenChannelMaintenanceEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenChannelMaintenanceEnumeration" name="ListOfGsdGenChannelMaintenanceEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenChannelSpecifierEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ALL_DISAPPEARS_0"/>
+            <xs:enumeration value="APPEARS_2048"/>
+            <xs:enumeration value="DISAPPEARS_4096"/>
+            <xs:enumeration value="DISAPPEARS_OTHER_REMAIN_6144"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenChannelSpecifierEnumeration" name="GsdGenChannelSpecifierEnumeration"/>
+    <xs:complexType name="ListOfGsdGenChannelSpecifierEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenChannelSpecifierEnumeration" name="GsdGenChannelSpecifierEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenChannelSpecifierEnumeration" name="ListOfGsdGenChannelSpecifierEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenIoCommunicationStatusEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INDATA_0"/>
+            <xs:enumeration value="OFFLINE_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenIoCommunicationStatusEnumeration" name="GsdGenIoCommunicationStatusEnumeration"/>
+    <xs:complexType name="ListOfGsdGenIoCommunicationStatusEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenIoCommunicationStatusEnumeration" name="GsdGenIoCommunicationStatusEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenIoCommunicationStatusEnumeration" name="ListOfGsdGenIoCommunicationStatusEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenIoConfigurationStatusEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OK_0"/>
+            <xs:enumeration value="SUBSTITUTE_1"/>
+            <xs:enumeration value="WRONG_2"/>
+            <xs:enumeration value="UNKNOWN_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenIoConfigurationStatusEnumeration" name="GsdGenIoConfigurationStatusEnumeration"/>
+    <xs:complexType name="ListOfGsdGenIoConfigurationStatusEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenIoConfigurationStatusEnumeration" name="GsdGenIoConfigurationStatusEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenIoConfigurationStatusEnumeration" name="ListOfGsdGenIoConfigurationStatusEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenIoConsistencyEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ITEM_CONSISTENCY_0"/>
+            <xs:enumeration value="ALL_ITEMS_CONSISTENCY_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenIoConsistencyEnumeration" name="GsdGenIoConsistencyEnumeration"/>
+    <xs:complexType name="ListOfGsdGenIoConsistencyEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenIoConsistencyEnumeration" name="GsdGenIoConsistencyEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenIoConsistencyEnumeration" name="ListOfGsdGenIoConsistencyEnumeration" nillable="true"/>
+    <xs:simpleType name="GsdGenIoQualityFormatEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="QUALIFIER_0"/>
+            <xs:enumeration value="EMBEDDED_STATUS_1"/>
+            <xs:enumeration value="STATUS_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GsdGenIoQualityFormatEnumeration" name="GsdGenIoQualityFormatEnumeration"/>
+    <xs:complexType name="ListOfGsdGenIoQualityFormatEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenIoQualityFormatEnumeration" name="GsdGenIoQualityFormatEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenIoQualityFormatEnumeration" name="ListOfGsdGenIoQualityFormatEnumeration" nillable="true"/>
+    <xs:complexType name="GsdGenIoTimeDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="NumberOfMilliseconds"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="NumberOfDays"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:GsdGenIoTimeDataType" name="GsdGenIoTimeDataType"/>
+    <xs:complexType name="ListOfGsdGenIoTimeDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenIoTimeDataType" name="GsdGenIoTimeDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenIoTimeDataType" name="ListOfGsdGenIoTimeDataType" nillable="true"/>
+    <xs:complexType name="GsdGenIoTimeStampDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedShort" name="Status"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedLong" name="Seconds"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Nanoseconds"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:GsdGenIoTimeStampDataType" name="GsdGenIoTimeStampDataType"/>
+    <xs:complexType name="ListOfGsdGenIoTimeStampDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GsdGenIoTimeStampDataType" name="GsdGenIoTimeStampDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGsdGenIoTimeStampDataType" name="ListOfGsdGenIoTimeStampDataType" nillable="true"/>
+</xs:schema>

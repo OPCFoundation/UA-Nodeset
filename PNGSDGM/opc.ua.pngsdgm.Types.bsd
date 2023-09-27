@@ -1,0 +1,53 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/PNGSDGM/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/PNGSDGM/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="GsdGenIoTimeDataType">
+        <opc:Field TypeName="opc:UInt32" Name="NumberOfMilliseconds"/>
+        <opc:Field TypeName="opc:UInt16" Name="NumberOfDays"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="GsdGenIoTimeStampDataType">
+        <opc:Field TypeName="opc:UInt16" Name="Status"/>
+        <opc:Field TypeName="opc:UInt64" Name="Seconds"/>
+        <opc:Field TypeName="opc:UInt32" Name="Nanoseconds"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenChannelAccumulativeEnumeration">
+        <opc:EnumeratedValue Name="SINGLE" Value="0"/>
+        <opc:EnumeratedValue Name="ACCUMULATIVE" Value="256"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenChannelDirectionEnumeration">
+        <opc:EnumeratedValue Name="MANUFACTURER_SPECIFIC" Value="0"/>
+        <opc:EnumeratedValue Name="INPUT_CHANNEL" Value="8192"/>
+        <opc:EnumeratedValue Name="OUTPUT_CHANNEL" Value="16384"/>
+        <opc:EnumeratedValue Name="BIDIRECTIONAL_CHANNEL" Value="24576"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenChannelMaintenanceEnumeration">
+        <opc:EnumeratedValue Name="FAULT" Value="0"/>
+        <opc:EnumeratedValue Name="MAINTENANCE_REQUIRED" Value="512"/>
+        <opc:EnumeratedValue Name="MAINTENANCE_DEMANDED" Value="1024"/>
+        <opc:EnumeratedValue Name="USE_QUALIFIED_CHANNEL_QUALIFIER" Value="1536"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenChannelSpecifierEnumeration">
+        <opc:EnumeratedValue Name="ALL_DISAPPEARS" Value="0"/>
+        <opc:EnumeratedValue Name="APPEARS" Value="2048"/>
+        <opc:EnumeratedValue Name="DISAPPEARS" Value="4096"/>
+        <opc:EnumeratedValue Name="DISAPPEARS_OTHER_REMAIN" Value="6144"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenIoCommunicationStatusEnumeration">
+        <opc:EnumeratedValue Name="INDATA" Value="0"/>
+        <opc:EnumeratedValue Name="OFFLINE" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenIoConfigurationStatusEnumeration">
+        <opc:EnumeratedValue Name="OK" Value="0"/>
+        <opc:EnumeratedValue Name="SUBSTITUTE" Value="1"/>
+        <opc:EnumeratedValue Name="WRONG" Value="2"/>
+        <opc:EnumeratedValue Name="UNKNOWN" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenIoConsistencyEnumeration">
+        <opc:EnumeratedValue Name="ITEM_CONSISTENCY" Value="0"/>
+        <opc:EnumeratedValue Name="ALL_ITEMS_CONSISTENCY" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GsdGenIoQualityFormatEnumeration">
+        <opc:EnumeratedValue Name="QUALIFIER" Value="0"/>
+        <opc:EnumeratedValue Name="EMBEDDED_STATUS" Value="1"/>
+        <opc:EnumeratedValue Name="STATUS" Value="2"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
