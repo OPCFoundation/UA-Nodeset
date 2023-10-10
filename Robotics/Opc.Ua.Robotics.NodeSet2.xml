@@ -111,7 +111,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15011</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01.2</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15091" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=15011" DataType="DateTime">
@@ -121,7 +121,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=15011</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2020-05-20T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2021-05-20T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=15114" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=15011" DataType="Boolean">
