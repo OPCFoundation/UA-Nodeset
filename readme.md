@@ -27,7 +27,7 @@ In addition, the following non-normative support files may be published:
 
 If a companion specification working group uses the ModelCompiler to create the UANodeSet then the following files are published:
 
-* .Model.xml - The Nodes defined by the specification using the [schema](https://github.com/OPCFoundation/UA-ModelCompiler/blob/master/ModelCompiler/UA%20Model%20Design.xsd) needed by the [ModelCompiler](https://github.com/OPCFoundation/UA-ModelCompiler);
+* .Model.xml - The Nodes defined by the specification using the [schema](https://github.com/OPCFoundation/UA-ModelCompiler/blob/master/Opc.Ua.ModelCompiler/UA%20Model%20Design.xsd) needed by the [ModelCompiler](https://github.com/OPCFoundation/UA-ModelCompiler);
 * .Model.csv - The NodeIds assigned to the Nodes defined by the specification;
 
 For the core OPC UA specifications the following additional files are published:
