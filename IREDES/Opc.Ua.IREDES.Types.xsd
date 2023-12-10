@@ -1,0 +1,109 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Mining/ExternalStandards/IREDES/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Mining/ExternalStandards/IREDES/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="Answer">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Accepted_0"/>
+            <xs:enumeration value="Delayed_1"/>
+            <xs:enumeration value="AcceptedWithCondition_2"/>
+            <xs:enumeration value="Denied_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:Answer" name="Answer"/>
+    <xs:complexType name="ListOfAnswer">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Answer" name="Answer" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAnswer" name="ListOfAnswer" nillable="true"/>
+    <xs:simpleType name="DispFlag">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MachStart_0"/>
+            <xs:enumeration value="FileLoad_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DispFlag" name="DispFlag"/>
+    <xs:complexType name="ListOfDispFlag">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DispFlag" name="DispFlag" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDispFlag" name="ListOfDispFlag" nillable="true"/>
+    <xs:simpleType name="LTPPMaction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Load_0"/>
+            <xs:enumeration value="Dump_1"/>
+            <xs:enumeration value="Parking_2"/>
+            <xs:enumeration value="Workshop_3"/>
+            <xs:enumeration value="Other_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LTPPMaction" name="LTPPMaction"/>
+    <xs:complexType name="ListOfLTPPMaction">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LTPPMaction" name="LTPPMaction" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLTPPMaction" name="ListOfLTPPMaction" nillable="true"/>
+    <xs:simpleType name="LTPPMptFromType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LoadPt_0"/>
+            <xs:enumeration value="DumpPt_1"/>
+            <xs:enumeration value="Parking_2"/>
+            <xs:enumeration value="Workshop_3"/>
+            <xs:enumeration value="Others_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LTPPMptFromType" name="LTPPMptFromType"/>
+    <xs:complexType name="ListOfLTPPMptFromType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LTPPMptFromType" name="LTPPMptFromType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLTPPMptFromType" name="ListOfLTPPMptFromType" nillable="true"/>
+    <xs:simpleType name="LTPPMptToType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LoadPt_0"/>
+            <xs:enumeration value="DumpPt_1"/>
+            <xs:enumeration value="Parking_2"/>
+            <xs:enumeration value="Boulder_3"/>
+            <xs:enumeration value="Workshop_4"/>
+            <xs:enumeration value="Others_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LTPPMptToType" name="LTPPMptToType"/>
+    <xs:complexType name="ListOfLTPPMptToType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LTPPMptToType" name="LTPPMptToType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLTPPMptToType" name="ListOfLTPPMptToType" nillable="true"/>
+    <xs:complexType name="IRLengthDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Value"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="Unit"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:IRLengthDataType" name="IRLengthDataType"/>
+    <xs:complexType name="ListOfIRLengthDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:IRLengthDataType" name="IRLengthDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfIRLengthDataType" name="ListOfIRLengthDataType" nillable="true"/>
+    <xs:complexType name="JobAssignmentTimeDatatype">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="SwitchField"/>
+            <xs:choice>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="ExpectedFinishTime"/>
+                <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="ExpectedDuration"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:JobAssignmentTimeDatatype" name="JobAssignmentTimeDatatype"/>
+    <xs:complexType name="ListOfJobAssignmentTimeDatatype">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobAssignmentTimeDatatype" name="JobAssignmentTimeDatatype" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfJobAssignmentTimeDatatype" name="ListOfJobAssignmentTimeDatatype" nillable="true"/>
+</xs:schema>

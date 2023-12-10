@@ -1,0 +1,44 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/Mining/ExternalStandards/IREDES" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/Mining/ExternalStandards/IREDES">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="IRLengthDataType">
+        <opc:Field TypeName="opc:Double" Name="Value"/>
+        <opc:Field TypeName="ua:EUInformation" Name="Unit"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="JobAssignmentTimeDatatype">
+        <opc:Field TypeName="opc:UInt32" Name="SwitchField"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:DateTime" SwitchValue="1" Name="ExpectedFinishTime"/>
+        <opc:Field SwitchField="SwitchField" TypeName="opc:Double" SwitchValue="2" Name="ExpectedDuration"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="Answer">
+        <opc:EnumeratedValue Name="Accepted" Value="0"/>
+        <opc:EnumeratedValue Name="Delayed" Value="1"/>
+        <opc:EnumeratedValue Name="AcceptedWithCondition" Value="2"/>
+        <opc:EnumeratedValue Name="Denied" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="DispFlag">
+        <opc:EnumeratedValue Name="MachStart" Value="0"/>
+        <opc:EnumeratedValue Name="FileLoad" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LTPPMaction">
+        <opc:EnumeratedValue Name="Load" Value="0"/>
+        <opc:EnumeratedValue Name="Dump" Value="1"/>
+        <opc:EnumeratedValue Name="Parking" Value="2"/>
+        <opc:EnumeratedValue Name="Workshop" Value="3"/>
+        <opc:EnumeratedValue Name="Other" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LTPPMptFromType">
+        <opc:EnumeratedValue Name="LoadPt" Value="0"/>
+        <opc:EnumeratedValue Name="DumpPt" Value="1"/>
+        <opc:EnumeratedValue Name="Parking" Value="2"/>
+        <opc:EnumeratedValue Name="Workshop" Value="3"/>
+        <opc:EnumeratedValue Name="Others" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LTPPMptToType">
+        <opc:EnumeratedValue Name="LoadPt" Value="0"/>
+        <opc:EnumeratedValue Name="DumpPt" Value="1"/>
+        <opc:EnumeratedValue Name="Parking" Value="2"/>
+        <opc:EnumeratedValue Name="Boulder" Value="3"/>
+        <opc:EnumeratedValue Name="Workshop" Value="4"/>
+        <opc:EnumeratedValue Name="Others" Value="5"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
