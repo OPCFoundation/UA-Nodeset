@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -4175,6 +4175,33 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetails_Decode(OpcUa_ReadEventDetai
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ReadEventDetails_EncodeableType;
 #endif
 
+#ifndef OPCUA_EXCLUDE_ReadEventDetails2
+/*============================================================================
+ * The ReadEventDetails2 structure.
+ *===========================================================================*/
+typedef struct _OpcUa_ReadEventDetails2
+{
+    OpcUa_UInt32      NumValuesPerNode;
+    OpcUa_DateTime    StartTime;
+    OpcUa_DateTime    EndTime;
+    OpcUa_EventFilter Filter;
+    OpcUa_Boolean     ReadModified;
+}
+OpcUa_ReadEventDetails2;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ReadEventDetails2_Initialize(OpcUa_ReadEventDetails2* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ReadEventDetails2_Clear(OpcUa_ReadEventDetails2* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetails2_GetSize(OpcUa_ReadEventDetails2* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetails2_Encode(OpcUa_ReadEventDetails2* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetails2_Decode(OpcUa_ReadEventDetails2* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ReadEventDetails2_EncodeableType;
+#endif
+
 #ifndef OPCUA_EXCLUDE_ReadRawModifiedDetails
 /*============================================================================
  * The ReadRawModifiedDetails structure.
@@ -4452,6 +4479,32 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryEvent_Decode(OpcUa_HistoryEvent* pVal
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_HistoryEvent_EncodeableType;
 #endif
 
+#ifndef OPCUA_EXCLUDE_HistoryModifiedEvent
+/*============================================================================
+ * The HistoryModifiedEvent structure.
+ *===========================================================================*/
+typedef struct _OpcUa_HistoryModifiedEvent
+{
+    OpcUa_Int32                  NoOfEvents;
+    OpcUa_HistoryEventFieldList* Events;
+    OpcUa_Int32                  NoOfModificationInfos;
+    OpcUa_ModificationInfo*      ModificationInfos;
+}
+OpcUa_HistoryModifiedEvent;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_HistoryModifiedEvent_Initialize(OpcUa_HistoryModifiedEvent* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_HistoryModifiedEvent_Clear(OpcUa_HistoryModifiedEvent* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryModifiedEvent_GetSize(OpcUa_HistoryModifiedEvent* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryModifiedEvent_Encode(OpcUa_HistoryModifiedEvent* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryModifiedEvent_Decode(OpcUa_HistoryModifiedEvent* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_HistoryModifiedEvent_EncodeableType;
+#endif
+
 #ifndef OPCUA_EXCLUDE_HistoryRead
 #ifndef OPCUA_EXCLUDE_HistoryReadRequest
 /*============================================================================
@@ -4587,29 +4640,6 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_WriteResponse_Decode(OpcUa_WriteResponse* pV
 
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_WriteResponse_EncodeableType;
 #endif
-#endif
-
-#ifndef OPCUA_EXCLUDE_HistoryUpdateDetails
-/*============================================================================
- * The HistoryUpdateDetails structure.
- *===========================================================================*/
-typedef struct _OpcUa_HistoryUpdateDetails
-{
-    OpcUa_NodeId NodeId;
-}
-OpcUa_HistoryUpdateDetails;
-
-OPCUA_EXPORT OpcUa_Void OpcUa_HistoryUpdateDetails_Initialize(OpcUa_HistoryUpdateDetails* pValue);
-
-OPCUA_EXPORT OpcUa_Void OpcUa_HistoryUpdateDetails_Clear(OpcUa_HistoryUpdateDetails* pValue);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryUpdateDetails_GetSize(OpcUa_HistoryUpdateDetails* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryUpdateDetails_Encode(OpcUa_HistoryUpdateDetails* pValue, struct _OpcUa_Encoder* pEncoder);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryUpdateDetails_Decode(OpcUa_HistoryUpdateDetails* pValue, struct _OpcUa_Decoder* pDecoder);
-
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_HistoryUpdateDetails_EncodeableType;
 #endif
 
 #ifndef OPCUA_EXCLUDE_PerformUpdateType

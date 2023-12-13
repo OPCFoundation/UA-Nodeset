@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -17171,6 +17171,137 @@ struct _OpcUa_EncodeableType OpcUa_ReadEventDetails_EncodeableType =
 };
 #endif
 
+#ifndef OPCUA_EXCLUDE_ReadEventDetails2
+/*============================================================================
+ * OpcUa_ReadEventDetails2_Initialize
+ *===========================================================================*/
+OpcUa_Void OpcUa_ReadEventDetails2_Initialize(OpcUa_ReadEventDetails2* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_Initialize(UInt32, NumValuesPerNode);
+        OpcUa_Field_Initialize(DateTime, StartTime);
+        OpcUa_Field_Initialize(DateTime, EndTime);
+        OpcUa_Field_InitializeEncodeable(OpcUa_EventFilter, Filter);
+        OpcUa_Field_Initialize(Boolean, ReadModified);
+    }
+}
+
+/*============================================================================
+ * OpcUa_ReadEventDetails2_Clear
+ *===========================================================================*/
+OpcUa_Void OpcUa_ReadEventDetails2_Clear(OpcUa_ReadEventDetails2* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_Clear(UInt32, NumValuesPerNode);
+        OpcUa_Field_Clear(DateTime, StartTime);
+        OpcUa_Field_Clear(DateTime, EndTime);
+        OpcUa_Field_ClearEncodeable(OpcUa_EventFilter, Filter);
+        OpcUa_Field_Clear(Boolean, ReadModified);
+    }
+}
+
+/*============================================================================
+ * OpcUa_ReadEventDetails2_GetSize
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ReadEventDetails2_GetSize(OpcUa_ReadEventDetails2* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+{
+    OpcUa_Int32 iSize = 0;
+
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ReadEventDetails2_GetSize");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
+
+    *a_pSize = -1;
+
+    OpcUa_Field_GetSize(UInt32, NumValuesPerNode);
+    OpcUa_Field_GetSize(DateTime, StartTime);
+    OpcUa_Field_GetSize(DateTime, EndTime);
+    OpcUa_Field_GetSizeEncodeable(OpcUa_EventFilter, Filter);
+    OpcUa_Field_GetSize(Boolean, ReadModified);
+
+    *a_pSize = iSize;
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    *a_pSize = -1;
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ReadEventDetails2_Encode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ReadEventDetails2_Encode(OpcUa_ReadEventDetails2* a_pValue, OpcUa_Encoder* a_pEncoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ReadEventDetails2_Encode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+
+    OpcUa_Field_Write(UInt32, NumValuesPerNode);
+    OpcUa_Field_Write(DateTime, StartTime);
+    OpcUa_Field_Write(DateTime, EndTime);
+    OpcUa_Field_WriteEncodeable(OpcUa_EventFilter, Filter);
+    OpcUa_Field_Write(Boolean, ReadModified);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    /* nothing to do */
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ReadEventDetails2_Decode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_ReadEventDetails2_Decode(OpcUa_ReadEventDetails2* a_pValue, OpcUa_Decoder* a_pDecoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "ReadEventDetails2_Decode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
+
+    OpcUa_ReadEventDetails2_Initialize(a_pValue);
+
+    OpcUa_Field_Read(UInt32, NumValuesPerNode);
+    OpcUa_Field_Read(DateTime, StartTime);
+    OpcUa_Field_Read(DateTime, EndTime);
+    OpcUa_Field_ReadEncodeable(OpcUa_EventFilter, Filter);
+    OpcUa_Field_Read(Boolean, ReadModified);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    OpcUa_ReadEventDetails2_Clear(a_pValue);
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_ReadEventDetails2_EncodeableType
+ *===========================================================================*/
+struct _OpcUa_EncodeableType OpcUa_ReadEventDetails2_EncodeableType =
+{
+    "ReadEventDetails2",
+    OpcUaId_ReadEventDetails2,
+    OpcUaId_ReadEventDetails2_Encoding_DefaultBinary,
+    OpcUaId_ReadEventDetails2_Encoding_DefaultXml,
+    OpcUa_Null,
+    sizeof(OpcUa_ReadEventDetails2),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_ReadEventDetails2_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_ReadEventDetails2_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_ReadEventDetails2_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_ReadEventDetails2_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_ReadEventDetails2_Decode
+};
+#endif
+
 #ifndef OPCUA_EXCLUDE_ReadRawModifiedDetails
 /*============================================================================
  * OpcUa_ReadRawModifiedDetails_Initialize
@@ -18119,6 +18250,122 @@ struct _OpcUa_EncodeableType OpcUa_HistoryEvent_EncodeableType =
 };
 #endif
 
+#ifndef OPCUA_EXCLUDE_HistoryModifiedEvent
+/*============================================================================
+ * OpcUa_HistoryModifiedEvent_Initialize
+ *===========================================================================*/
+OpcUa_Void OpcUa_HistoryModifiedEvent_Initialize(OpcUa_HistoryModifiedEvent* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_InitializeEncodeableArray(OpcUa_HistoryEventFieldList, Events);
+        OpcUa_Field_InitializeEncodeableArray(OpcUa_ModificationInfo, ModificationInfos);
+    }
+}
+
+/*============================================================================
+ * OpcUa_HistoryModifiedEvent_Clear
+ *===========================================================================*/
+OpcUa_Void OpcUa_HistoryModifiedEvent_Clear(OpcUa_HistoryModifiedEvent* a_pValue)
+{
+    if (a_pValue != OpcUa_Null)
+    {
+        OpcUa_Field_ClearEncodeableArray(OpcUa_HistoryEventFieldList, Events);
+        OpcUa_Field_ClearEncodeableArray(OpcUa_ModificationInfo, ModificationInfos);
+    }
+}
+
+/*============================================================================
+ * OpcUa_HistoryModifiedEvent_GetSize
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_HistoryModifiedEvent_GetSize(OpcUa_HistoryModifiedEvent* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
+{
+    OpcUa_Int32 iSize = 0;
+
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "HistoryModifiedEvent_GetSize");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
+
+    *a_pSize = -1;
+
+    OpcUa_Field_GetSizeEncodeableArray(OpcUa_HistoryEventFieldList, Events);
+    OpcUa_Field_GetSizeEncodeableArray(OpcUa_ModificationInfo, ModificationInfos);
+
+    *a_pSize = iSize;
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    *a_pSize = -1;
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_HistoryModifiedEvent_Encode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_HistoryModifiedEvent_Encode(OpcUa_HistoryModifiedEvent* a_pValue, OpcUa_Encoder* a_pEncoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "HistoryModifiedEvent_Encode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
+
+    OpcUa_Field_WriteEncodeableArray(OpcUa_HistoryEventFieldList, Events);
+    OpcUa_Field_WriteEncodeableArray(OpcUa_ModificationInfo, ModificationInfos);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    /* nothing to do */
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_HistoryModifiedEvent_Decode
+ *===========================================================================*/
+OpcUa_StatusCode OpcUa_HistoryModifiedEvent_Decode(OpcUa_HistoryModifiedEvent* a_pValue, OpcUa_Decoder* a_pDecoder)
+{
+    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "HistoryModifiedEvent_Decode");
+
+    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
+    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
+
+    OpcUa_HistoryModifiedEvent_Initialize(a_pValue);
+
+    OpcUa_Field_ReadEncodeableArray(OpcUa_HistoryEventFieldList, Events);
+    OpcUa_Field_ReadEncodeableArray(OpcUa_ModificationInfo, ModificationInfos);
+
+    OpcUa_ReturnStatusCode;
+    OpcUa_BeginErrorHandling;
+
+    OpcUa_HistoryModifiedEvent_Clear(a_pValue);
+
+    OpcUa_FinishErrorHandling;
+}
+
+/*============================================================================
+ * OpcUa_HistoryModifiedEvent_EncodeableType
+ *===========================================================================*/
+struct _OpcUa_EncodeableType OpcUa_HistoryModifiedEvent_EncodeableType =
+{
+    "HistoryModifiedEvent",
+    OpcUaId_HistoryModifiedEvent,
+    OpcUaId_HistoryModifiedEvent_Encoding_DefaultBinary,
+    OpcUaId_HistoryModifiedEvent_Encoding_DefaultXml,
+    OpcUa_Null,
+    sizeof(OpcUa_HistoryModifiedEvent),
+    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_HistoryModifiedEvent_Initialize,
+    (OpcUa_EncodeableObject_PfnClear*)OpcUa_HistoryModifiedEvent_Clear,
+    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_HistoryModifiedEvent_GetSize,
+    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_HistoryModifiedEvent_Encode,
+    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_HistoryModifiedEvent_Decode
+};
+#endif
+
 #ifndef OPCUA_EXCLUDE_HistoryRead
 #ifndef OPCUA_EXCLUDE_HistoryReadRequest
 /*============================================================================
@@ -18736,117 +18983,6 @@ struct _OpcUa_EncodeableType OpcUa_WriteResponse_EncodeableType =
     (OpcUa_EncodeableObject_PfnDecode*)OpcUa_WriteResponse_Decode
 };
 #endif
-#endif
-
-#ifndef OPCUA_EXCLUDE_HistoryUpdateDetails
-/*============================================================================
- * OpcUa_HistoryUpdateDetails_Initialize
- *===========================================================================*/
-OpcUa_Void OpcUa_HistoryUpdateDetails_Initialize(OpcUa_HistoryUpdateDetails* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Initialize(NodeId, NodeId);
-    }
-}
-
-/*============================================================================
- * OpcUa_HistoryUpdateDetails_Clear
- *===========================================================================*/
-OpcUa_Void OpcUa_HistoryUpdateDetails_Clear(OpcUa_HistoryUpdateDetails* a_pValue)
-{
-    if (a_pValue != OpcUa_Null)
-    {
-        OpcUa_Field_Clear(NodeId, NodeId);
-    }
-}
-
-/*============================================================================
- * OpcUa_HistoryUpdateDetails_GetSize
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_HistoryUpdateDetails_GetSize(OpcUa_HistoryUpdateDetails* a_pValue, OpcUa_Encoder* a_pEncoder, OpcUa_Int32* a_pSize)
-{
-    OpcUa_Int32 iSize = 0;
-
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "HistoryUpdateDetails_GetSize");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-    OpcUa_ReturnErrorIfArgumentNull(a_pSize);
-
-    *a_pSize = -1;
-
-    OpcUa_Field_GetSize(NodeId, NodeId);
-
-    *a_pSize = iSize;
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    *a_pSize = -1;
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_HistoryUpdateDetails_Encode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_HistoryUpdateDetails_Encode(OpcUa_HistoryUpdateDetails* a_pValue, OpcUa_Encoder* a_pEncoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "HistoryUpdateDetails_Encode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pEncoder);
-
-    OpcUa_Field_Write(NodeId, NodeId);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    /* nothing to do */
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_HistoryUpdateDetails_Decode
- *===========================================================================*/
-OpcUa_StatusCode OpcUa_HistoryUpdateDetails_Decode(OpcUa_HistoryUpdateDetails* a_pValue, OpcUa_Decoder* a_pDecoder)
-{
-    OpcUa_InitializeStatus(OpcUa_Module_Serializer, "HistoryUpdateDetails_Decode");
-
-    OpcUa_ReturnErrorIfArgumentNull(a_pValue);
-    OpcUa_ReturnErrorIfArgumentNull(a_pDecoder);
-
-    OpcUa_HistoryUpdateDetails_Initialize(a_pValue);
-
-    OpcUa_Field_Read(NodeId, NodeId);
-
-    OpcUa_ReturnStatusCode;
-    OpcUa_BeginErrorHandling;
-
-    OpcUa_HistoryUpdateDetails_Clear(a_pValue);
-
-    OpcUa_FinishErrorHandling;
-}
-
-/*============================================================================
- * OpcUa_HistoryUpdateDetails_EncodeableType
- *===========================================================================*/
-struct _OpcUa_EncodeableType OpcUa_HistoryUpdateDetails_EncodeableType =
-{
-    "HistoryUpdateDetails",
-    OpcUaId_HistoryUpdateDetails,
-    OpcUaId_HistoryUpdateDetails_Encoding_DefaultBinary,
-    OpcUaId_HistoryUpdateDetails_Encoding_DefaultXml,
-    OpcUa_Null,
-    sizeof(OpcUa_HistoryUpdateDetails),
-    (OpcUa_EncodeableObject_PfnInitialize*)OpcUa_HistoryUpdateDetails_Initialize,
-    (OpcUa_EncodeableObject_PfnClear*)OpcUa_HistoryUpdateDetails_Clear,
-    (OpcUa_EncodeableObject_PfnGetSize*)OpcUa_HistoryUpdateDetails_GetSize,
-    (OpcUa_EncodeableObject_PfnEncode*)OpcUa_HistoryUpdateDetails_Encode,
-    (OpcUa_EncodeableObject_PfnDecode*)OpcUa_HistoryUpdateDetails_Decode
-};
 #endif
 
 #ifndef OPCUA_EXCLUDE_HistoryUpdateType
@@ -29672,6 +29808,9 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #ifndef OPCUA_EXCLUDE_ReadEventDetails
     &OpcUa_ReadEventDetails_EncodeableType,
     #endif
+    #ifndef OPCUA_EXCLUDE_ReadEventDetails2
+    &OpcUa_ReadEventDetails2_EncodeableType,
+    #endif
     #ifndef OPCUA_EXCLUDE_ReadRawModifiedDetails
     &OpcUa_ReadRawModifiedDetails_EncodeableType,
     #endif
@@ -29696,6 +29835,9 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #ifndef OPCUA_EXCLUDE_HistoryEvent
     &OpcUa_HistoryEvent_EncodeableType,
     #endif
+    #ifndef OPCUA_EXCLUDE_HistoryModifiedEvent
+    &OpcUa_HistoryModifiedEvent_EncodeableType,
+    #endif
     #ifndef OPCUA_EXCLUDE_HistoryRead
     &OpcUa_HistoryReadRequest_EncodeableType,
     &OpcUa_HistoryReadResponse_EncodeableType,
@@ -29706,9 +29848,6 @@ static OpcUa_EncodeableType* g_OpcUa_KnownEncodeableTypes[] =
     #ifndef OPCUA_EXCLUDE_Write
     &OpcUa_WriteRequest_EncodeableType,
     &OpcUa_WriteResponse_EncodeableType,
-    #endif
-    #ifndef OPCUA_EXCLUDE_HistoryUpdateDetails
-    &OpcUa_HistoryUpdateDetails_EncodeableType,
     #endif
     #ifndef OPCUA_EXCLUDE_UpdateDataDetails
     &OpcUa_UpdateDataDetails_EncodeableType,

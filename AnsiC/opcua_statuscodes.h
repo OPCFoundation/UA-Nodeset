@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -78,7 +78,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadRequestTooLarge 0x80B80000
 
 /*============================================================================
- * The response message size exceeds limits set by the client.
+ * The response message size exceeds limits set by the client or server.
  *===========================================================================*/
 #define OpcUa_BadResponseTooLarge 0x80B90000
 
@@ -293,6 +293,16 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadLicenseNotAvailable 0x81100000
 
 /*============================================================================
+ * The Server does not have the resources to process the request at this time.
+ *===========================================================================*/
+#define OpcUa_BadServerTooBusy 0x80EE0000
+
+/*============================================================================
+ * The log-on for the user succeeded but the user is required to change the password.
+ *===========================================================================*/
+#define OpcUa_GoodPasswordChangeRequired 0x00EF0000
+
+/*============================================================================
  * The subscription was transferred to another session.
  *===========================================================================*/
 #define OpcUa_GoodSubscriptionTransferred 0x002D0000
@@ -323,7 +333,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadWaitingForInitialData 0x80320000
 
 /*============================================================================
- * The syntax of the node id is not valid.
+ * The syntax the node id is not valid or refers to a node that is not valid for the operation.
  *===========================================================================*/
 #define OpcUa_BadNodeIdInvalid 0x80330000
 
@@ -346,6 +356,11 @@ OPCUA_BEGIN_EXTERN_C
  * No data exists within the range of indexes specified.
  *===========================================================================*/
 #define OpcUa_BadIndexRangeNoData 0x80370000
+
+/*============================================================================
+ * The written data does not match the IndexRange specified.
+ *===========================================================================*/
+#define OpcUa_BadIndexRangeDataMismatch 0x80EA0000
 
 /*============================================================================
  * The data encoding is invalid.
@@ -491,6 +506,16 @@ OPCUA_BEGIN_EXTERN_C
  * The number was not accepted because of a numeric overflow.
  *===========================================================================*/
 #define OpcUa_BadNumericOverflow 0x81120000
+
+/*============================================================================
+ * The locale in the requested write operation is not supported.
+ *===========================================================================*/
+#define OpcUa_BadLocaleNotSupported 0x80ED0000
+
+/*============================================================================
+ * The variable has no default value and no initial value.
+ *===========================================================================*/
+#define OpcUa_BadNoValue 0x80F00000
 
 /*============================================================================
  * The ServerUri is not a valid URI.
@@ -918,7 +943,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_UncertainEngineeringUnitsExceeded 0x40940000
 
 /*============================================================================
- * The value is derived from multiple sources and has less than the required number of Good sources.
+ * The data value is derived from multiple sources and has less than the required number of Good sources.
  *===========================================================================*/
 #define OpcUa_UncertainSubNormal 0x40950000
 
@@ -926,6 +951,11 @@ OPCUA_BEGIN_EXTERN_C
  * The value has been overridden.
  *===========================================================================*/
 #define OpcUa_GoodLocalOverride 0x00960000
+
+/*============================================================================
+ * The value is derived from multiple sources and has the required number of Good sources, but less than the full number of Good sources.
+ *===========================================================================*/
+#define OpcUa_GoodSubNormal 0x00EB0000
 
 /*============================================================================
  * This Condition refresh failed, a Condition refresh operation is already in progress.
@@ -1028,7 +1058,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadNoEntryExists 0x80A00000
 
 /*============================================================================
- * The client requested history using a timestamp format the server does not support (i.e requested ServerTimestamp when server only supports SourceTimestamp).
+ * The Client requested history using a TimestampsToReturn the Server does not support.
  *===========================================================================*/
 #define OpcUa_BadTimestampNotSupported 0x80A10000
 
@@ -1043,7 +1073,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_GoodEntryReplaced 0x00A30000
 
 /*============================================================================
- * The value is derived from multiple values and has less than the required number of Good values.
+ * The aggregate value is derived from multiple values and has less than the required number of Good values.
  *===========================================================================*/
 #define OpcUa_UncertainDataSubNormal 0x40A40000
 
@@ -1111,6 +1141,11 @@ OPCUA_BEGIN_EXTERN_C
  * The requested operation is not allowed, because the Node is locked by a different application.
  *===========================================================================*/
 #define OpcUa_BadLocked 0x80E90000
+
+/*============================================================================
+ * The requested operation is not allowed, because the Node is not locked by the application.
+ *===========================================================================*/
+#define OpcUa_BadRequiresLock 0x80EC0000
 
 /*============================================================================
  * The value does not come from the real source and has been edited by the server.

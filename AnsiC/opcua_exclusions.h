@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -82,6 +82,7 @@
 /* #define OPCUA_EXCLUDE_AdditionalParametersType */
 /* #define OPCUA_EXCLUDE_EphemeralKeyType */
 /* #define OPCUA_EXCLUDE_EndpointType */
+/* #define OPCUA_EXCLUDE_BitFieldDefinition */
 /* #define OPCUA_EXCLUDE_RationalNumber */
 /* #define OPCUA_EXCLUDE_Vector */
 /* #define OPCUA_EXCLUDE_ThreeDVector */
@@ -93,6 +94,9 @@
 /* #define OPCUA_EXCLUDE_ThreeDFrame */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_CurrencyUnitType */
+/* #define OPCUA_EXCLUDE_AnnotationDataType */
+/* #define OPCUA_EXCLUDE_LinearConversionDataType */
+/* #define OPCUA_EXCLUDE_QuantityDimension */
 /* #define OPCUA_EXCLUDE_TrustListDataType */
 /* #define OPCUA_EXCLUDE_TransactionErrorType */
 /* #define OPCUA_EXCLUDE_DecimalDataType */
@@ -255,6 +259,7 @@
 /* #define OPCUA_EXCLUDE_HistoryReadResult */
 /* #define OPCUA_EXCLUDE_HistoryReadDetails */
 /* #define OPCUA_EXCLUDE_ReadEventDetails */
+/* #define OPCUA_EXCLUDE_ReadEventDetails2 */
 /* #define OPCUA_EXCLUDE_ReadRawModifiedDetails */
 /* #define OPCUA_EXCLUDE_ReadProcessedDetails */
 /* #define OPCUA_EXCLUDE_ReadAtTimeDetails */
@@ -263,6 +268,7 @@
 /* #define OPCUA_EXCLUDE_ModificationInfo */
 /* #define OPCUA_EXCLUDE_HistoryModifiedData */
 /* #define OPCUA_EXCLUDE_HistoryEvent */
+/* #define OPCUA_EXCLUDE_HistoryModifiedEvent */
 /* #define OPCUA_EXCLUDE_WriteValue */
 /* #define OPCUA_EXCLUDE_HistoryUpdateDetails */
 /* #define OPCUA_EXCLUDE_UpdateDataDetails */
