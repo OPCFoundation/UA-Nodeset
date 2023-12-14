@@ -1,0 +1,45 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/LADS/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/LADS/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="MaintenanceTaskResultEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Success_0"/>
+            <xs:enumeration value="Failure_1"/>
+            <xs:enumeration value="Undetermined_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MaintenanceTaskResultEnum" name="MaintenanceTaskResultEnum"/>
+    <xs:complexType name="ListOfMaintenanceTaskResultEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MaintenanceTaskResultEnum" name="MaintenanceTaskResultEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMaintenanceTaskResultEnum" name="ListOfMaintenanceTaskResultEnum" nillable="true"/>
+    <xs:complexType name="KeyValueType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Key"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Value"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:KeyValueType" name="KeyValueType"/>
+    <xs:complexType name="ListOfKeyValueType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:KeyValueType" name="KeyValueType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfKeyValueType" name="ListOfKeyValueType" nillable="true"/>
+    <xs:complexType name="SampleInfoType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ContainerId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SampleId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Position"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CustomData"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:SampleInfoType" name="SampleInfoType"/>
+    <xs:complexType name="ListOfSampleInfoType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SampleInfoType" name="SampleInfoType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSampleInfoType" name="ListOfSampleInfoType" nillable="true"/>
+</xs:schema>
