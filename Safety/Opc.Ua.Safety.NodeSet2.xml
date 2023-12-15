@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -33,7 +33,7 @@
     <Uri>http://opcfoundation.org/UA/Safety</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/Safety" XmlSchemaUri="http://opcfoundation.org/UA/Safety/Types.xsd" Version="1.05.02" PublicationDate="2022-06-28T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/Safety" XmlSchemaUri="http://opcfoundation.org/UA/Safety/Types.xsd" Version="1.05.03" PublicationDate="2023-12-15T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2021-10-26T00:00:00Z" />
     </Model>
   </Models>
@@ -61,19 +61,11 @@
     <Alias Alias="InFlagsType">ns=1;i=3005</Alias>
     <Alias Alias="OutFlagsType">ns=1;i=3006</Alias>
   </Aliases>
-  <Extensions>
-    <Extension>
-      <si:Generator Product="SiOME" Edition="Standard" Version="2.3.20-beta" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" />
-    </Extension>
-    <Extension>
-      <si:GeneratorExtension Hash="385882a565318961a55754863143e56c" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" />
-    </Extension>
-  </Extensions>
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:InFlagsType">
     <DisplayName>InFlagsType</DisplayName>
     <Description>Byte with Non safety Flags from SafetyConsumer</Description>
     <Category>SafetySupport</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3/#6.2.3.1</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
@@ -114,7 +106,7 @@
     <DisplayName>OutFlagsType</DisplayName>
     <Description>Byte with Safety Flags from SafetyProvider</Description>
     <Category>SafetySupport</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3/#6.2.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
     </References>
@@ -153,7 +145,7 @@
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:NonSafetyDataPlaceholderDataType">
     <DisplayName>NonSafetyDataPlaceholderDataType</DisplayName>
     <Description>Dummy structure to be used when no non-safety data are used</Description>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3/#6.2.3.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
@@ -169,7 +161,7 @@
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:RequestSPDUDataType">
     <DisplayName>RequestSPDUDataType</DisplayName>
     <Category>SafetyPDUs</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3/#6.2.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5010</Reference>
@@ -185,7 +177,7 @@
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:ResponseSPDUDataType" IsAbstract="true">
     <DisplayName>ResponseSPDUDataType</DisplayName>
     <Category>SafetyPDUs</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.3/#6.2.3.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
@@ -203,7 +195,7 @@
     <DisplayName>SafetyConsumerParametersType</DisplayName>
     <Description>Safety parameters for the SafetyProvider</Description>
     <Category>SafetyConsumerParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -292,7 +284,7 @@
     <DisplayName>SafetyObjectsType</DisplayName>
     <Description>Base type of all safety objects</Description>
     <Category>SafetySupport</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -300,7 +292,7 @@
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:SafetyConsumerType">
     <DisplayName>SafetyConsumerType</DisplayName>
     <Category>SafetyConsumerParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
     </References>
@@ -316,7 +308,7 @@
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:SafetyProviderType">
     <DisplayName>SafetyProviderType</DisplayName>
     <Category>SafetyProviderParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
     </References>
@@ -333,7 +325,7 @@
   <UAMethod NodeId="ns=1;i=7001" BrowseName="1:ReadSafetyData" ParentNodeId="ns=1;i=1003">
     <DisplayName>ReadSafetyData</DisplayName>
     <Category>ReadSafetyData</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -582,7 +574,7 @@
   <UAMethod NodeId="ns=1;i=7002" BrowseName="1:ReadSafetyDiagnostics" ParentNodeId="ns=1;i=1003">
     <DisplayName>ReadSafetyDiagnostics</DisplayName>
     <Category>ReadSafetyDiagnostics</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.4</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -819,7 +811,7 @@
   <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:SafetyPDUsType">
     <DisplayName>SafetyPDUsType</DisplayName>
     <Category>SafetyPDUs</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -858,7 +850,7 @@
     <DisplayName>SafetyProviderParametersType</DisplayName>
     <Description>Safety parameters for the SafetyProvider</Description>
     <Category>SafetyProviderParameters</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
@@ -929,7 +921,7 @@
     <DisplayName>SafetyACSet</DisplayName>
     <Description>Contains all instances of safety objects (SafetyProvider or SafetyConsumer)</Description>
     <Category>SafetyACSet</Category>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.1.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/6.2.2/#6.2.2.1</Documentation>
     <References>
       <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
@@ -938,7 +930,7 @@
   <UAObject NodeId="ns=1;i=5006" BrowseName="1:http://opcfoundation.org/UA/Safety" SymbolicName="http___opcfoundation_org_UA_Safety" ParentNodeId="i=11715">
     <DisplayName>http://opcfoundation.org/UA/Safety</DisplayName>
     <Description>Provides the metadata for a namespace used by the server.</Description>
-    <Documentation>https://reference.opcfoundation.org/Safety/docs/14.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/Safety/docs/12.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -1365,6 +1357,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6030</Reference>
     </References>
   </UAObject>
   <UAObject NodeId="ns=1;i=5007" BrowseName="1:SafetyPDUs" ParentNodeId="ns=1;i=1005">
@@ -1373,6 +1367,8 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6030</Reference>
     </References>
   </UAObject>
 </UANodeSet>
