@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -35,7 +35,13 @@
   targetNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd"
   elementFormDefault="qualified"
 >
-  <xs:element name="Boolean" nillable="true" type="xs:boolean" />
+  <xs:annotation>
+    <xs:appinfo>
+      <ua:Model ModelUri="http://opcfoundation.org/UA/" Version="1.04.12" PublicationDate="2024-01-05T00:00:00Z" />
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:element name="Boolean" type="xs:boolean" />
 
   <xs:complexType name="ListOfBoolean">
     <xs:sequence>
@@ -44,7 +50,7 @@
   </xs:complexType>
   <xs:element name="ListOfBoolean" type="tns:ListOfBoolean" nillable="true"></xs:element>
 
-  <xs:element name="SByte" nillable="true" type="xs:byte" />
+  <xs:element name="SByte" type="xs:byte" />
 
   <xs:complexType name="ListOfSByte">
     <xs:sequence>
@@ -53,7 +59,7 @@
   </xs:complexType>
   <xs:element name="ListOfSByte" type="tns:ListOfSByte" nillable="true"></xs:element>
 
-  <xs:element name="Byte" nillable="true" type="xs:unsignedByte" />
+  <xs:element name="Byte" type="xs:unsignedByte" />
 
   <xs:complexType name="ListOfByte">
     <xs:sequence>
@@ -62,7 +68,7 @@
   </xs:complexType>
   <xs:element name="ListOfByte" type="tns:ListOfByte" nillable="true"></xs:element>
 
-  <xs:element name="Int16" nillable="true" type="xs:short" />
+  <xs:element name="Int16" type="xs:short" />
 
   <xs:complexType name="ListOfInt16">
     <xs:sequence>
@@ -71,7 +77,7 @@
   </xs:complexType>
   <xs:element name="ListOfInt16" type="tns:ListOfInt16" nillable="true"></xs:element>
 
-  <xs:element name="UInt16" nillable="true" type="xs:unsignedShort" />
+  <xs:element name="UInt16" type="xs:unsignedShort" />
 
   <xs:complexType name="ListOfUInt16">
     <xs:sequence>
@@ -80,7 +86,7 @@
   </xs:complexType>
   <xs:element name="ListOfUInt16" type="tns:ListOfUInt16" nillable="true"></xs:element>
 
-  <xs:element name="Int32" nillable="true" type="xs:int" />
+  <xs:element name="Int32" type="xs:int" />
 
   <xs:complexType name="ListOfInt32">
     <xs:sequence>
@@ -89,7 +95,7 @@
   </xs:complexType>
   <xs:element name="ListOfInt32" type="tns:ListOfInt32" nillable="true"></xs:element>
 
-  <xs:element name="UInt32" nillable="true" type="xs:unsignedInt" />
+  <xs:element name="UInt32" type="xs:unsignedInt" />
 
   <xs:complexType name="ListOfUInt32">
     <xs:sequence>
@@ -98,7 +104,7 @@
   </xs:complexType>
   <xs:element name="ListOfUInt32" type="tns:ListOfUInt32" nillable="true"></xs:element>
 
-  <xs:element name="Int64" nillable="true" type="xs:long" />
+  <xs:element name="Int64" type="xs:long" />
 
   <xs:complexType name="ListOfInt64">
     <xs:sequence>
@@ -107,7 +113,7 @@
   </xs:complexType>
   <xs:element name="ListOfInt64" type="tns:ListOfInt64" nillable="true"></xs:element>
 
-  <xs:element name="UInt64" nillable="true" type="xs:unsignedLong" />
+  <xs:element name="UInt64" type="xs:unsignedLong" />
 
   <xs:complexType name="ListOfUInt64">
     <xs:sequence>
@@ -116,7 +122,7 @@
   </xs:complexType>
   <xs:element name="ListOfUInt64" type="tns:ListOfUInt64" nillable="true"></xs:element>
 
-  <xs:element name="Float" nillable="true" type="xs:float" />
+  <xs:element name="Float" type="xs:float" />
 
   <xs:complexType name="ListOfFloat">
     <xs:sequence>
@@ -125,7 +131,7 @@
   </xs:complexType>
   <xs:element name="ListOfFloat" type="tns:ListOfFloat" nillable="true"></xs:element>
 
-  <xs:element name="Double" nillable="true" type="xs:double" />
+  <xs:element name="Double" type="xs:double" />
 
   <xs:complexType name="ListOfDouble">
     <xs:sequence>
@@ -231,7 +237,7 @@
       <xs:element name="Code" type="xs:unsignedInt" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="StatusCode" type="tns:StatusCode" nillable="true"></xs:element>
+  <xs:element name="StatusCode" type="tns:StatusCode"></xs:element>
 
   <xs:complexType name="ListOfStatusCode">
     <xs:sequence>
@@ -345,7 +351,21 @@
   </xs:complexType>
   <xs:element name="ListOfExtensionObject" type="tns:ListOfExtensionObject" nillable="true"></xs:element>
 
-  <!--
+  <xs:complexType name="Decimal">
+    <xs:sequence>
+      <xs:element name="TypeId" type="tns:NodeId" minOccurs="0" />
+      <xs:element name="Body" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Scale" type="xs:short" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+    <!--
     Some WSDL/XML compilers have issues with the xs:choice construct. For that reason
     the default declaration of a Variant uses xs:any construct. The schema acutually
     defined by the specification is provided by the Matrix and VariantValue complex types
@@ -4137,7 +4157,6 @@
 
   <xs:complexType name="HistoryUpdateDetails">
     <xs:sequence>
-      <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="HistoryUpdateDetails" type="tns:HistoryUpdateDetails" />
@@ -4166,6 +4185,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:HistoryUpdateDetails">
         <xs:sequence>
+          <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="PerformInsertReplace" type="tns:PerformUpdateType" minOccurs="0" />
           <xs:element name="UpdateValues" type="ua:ListOfDataValue" minOccurs="0" nillable="true" />
         </xs:sequence>
@@ -4178,6 +4198,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:HistoryUpdateDetails">
         <xs:sequence>
+          <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="PerformInsertReplace" type="tns:PerformUpdateType" minOccurs="0" />
           <xs:element name="UpdateValues" type="ua:ListOfDataValue" minOccurs="0" nillable="true" />
         </xs:sequence>
@@ -4190,6 +4211,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:HistoryUpdateDetails">
         <xs:sequence>
+          <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="PerformInsertReplace" type="tns:PerformUpdateType" minOccurs="0" />
           <xs:element name="Filter" type="tns:EventFilter" minOccurs="0" nillable="true" />
           <xs:element name="EventData" type="tns:ListOfHistoryEventFieldList" minOccurs="0" nillable="true" />
@@ -4203,6 +4225,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:HistoryUpdateDetails">
         <xs:sequence>
+          <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="IsDeleteModified" type="xs:boolean" minOccurs="0" />
           <xs:element name="StartTime" type="xs:dateTime" minOccurs="0" />
           <xs:element name="EndTime" type="xs:dateTime" minOccurs="0" />
@@ -4216,6 +4239,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:HistoryUpdateDetails">
         <xs:sequence>
+          <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="ReqTimes" type="ua:ListOfDateTime" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>
@@ -4227,6 +4251,7 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:HistoryUpdateDetails">
         <xs:sequence>
+          <xs:element name="NodeId" type="ua:NodeId" minOccurs="0" nillable="true" />
           <xs:element name="EventIds" type="ua:ListOfByteString" minOccurs="0" nillable="true" />
         </xs:sequence>
       </xs:extension>

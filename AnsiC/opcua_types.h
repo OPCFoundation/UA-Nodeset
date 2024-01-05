@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -4585,29 +4585,6 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_WriteResponse_Decode(OpcUa_WriteResponse* pV
 
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_WriteResponse_EncodeableType;
 #endif
-#endif
-
-#ifndef OPCUA_EXCLUDE_HistoryUpdateDetails
-/*============================================================================
- * The HistoryUpdateDetails structure.
- *===========================================================================*/
-typedef struct _OpcUa_HistoryUpdateDetails
-{
-    OpcUa_NodeId NodeId;
-}
-OpcUa_HistoryUpdateDetails;
-
-OPCUA_EXPORT OpcUa_Void OpcUa_HistoryUpdateDetails_Initialize(OpcUa_HistoryUpdateDetails* pValue);
-
-OPCUA_EXPORT OpcUa_Void OpcUa_HistoryUpdateDetails_Clear(OpcUa_HistoryUpdateDetails* pValue);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryUpdateDetails_GetSize(OpcUa_HistoryUpdateDetails* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryUpdateDetails_Encode(OpcUa_HistoryUpdateDetails* pValue, struct _OpcUa_Encoder* pEncoder);
-
-OPCUA_EXPORT OpcUa_StatusCode OpcUa_HistoryUpdateDetails_Decode(OpcUa_HistoryUpdateDetails* pValue, struct _OpcUa_Decoder* pDecoder);
-
-OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_HistoryUpdateDetails_EncodeableType;
 #endif
 
 #ifndef OPCUA_EXCLUDE_PerformUpdateType
