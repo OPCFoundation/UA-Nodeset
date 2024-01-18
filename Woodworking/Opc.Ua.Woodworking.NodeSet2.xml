@@ -35,7 +35,7 @@
     <Uri>http://opcfoundation.org/UA/Machinery/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/Woodworking/" Version="1.01.0" PublicationDate="2024-01-31T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/Woodworking/" Version="1.01.0" PublicationDate="2023-01-31T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.02.0" PublicationDate="2022-05-01T00:00:00Z" />
