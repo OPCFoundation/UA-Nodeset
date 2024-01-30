@@ -1450,8 +1450,7 @@
         </uax:TypeId>
         <uax:Body>
           <uax:EUInformation>
-            <uax:NamespaceUri>
-            </uax:NamespaceUri>
+            <uax:NamespaceUri></uax:NamespaceUri>
             <uax:UnitId>-1</uax:UnitId>
             <uax:DisplayName />
             <uax:Description />
