@@ -73,22 +73,6 @@
         <opc:EnumeratedValue Name="DeviceOffSpec" Value="3"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="OperationalHealthOptionSet" IsOptionSet="true">
-        <opc:EnumeratedValue Name="reserved0" Value="0"/>
-        <opc:EnumeratedValue Name="reserved1" Value="1"/>
-        <opc:EnumeratedValue Name="Reserved3" Value="2"/>
-        <opc:EnumeratedValue Name="Reserved4" Value="3"/>
-        <opc:EnumeratedValue Name="Reserved5" Value="4"/>
-        <opc:EnumeratedValue Name="Reserved6" Value="5"/>
-        <opc:EnumeratedValue Name="Reserved7" Value="6"/>
-        <opc:EnumeratedValue Name="Reserved8" Value="7"/>
-        <opc:EnumeratedValue Name="Reserved9" Value="8"/>
-        <opc:EnumeratedValue Name="Reserved10" Value="9"/>
-        <opc:EnumeratedValue Name="Reserved11" Value="10"/>
-        <opc:EnumeratedValue Name="Reserved12" Value="11"/>
-        <opc:EnumeratedValue Name="Reserved13" Value="12"/>
-        <opc:EnumeratedValue Name="Reserved14" Value="13"/>
-        <opc:EnumeratedValue Name="Reserved15" Value="14"/>
-        <opc:EnumeratedValue Name="Reserved16" Value="15"/>
         <opc:EnumeratedValue Name="OperationalWarning" Value="16"/>
         <opc:EnumeratedValue Name="OperationalError" Value="17"/>
         <opc:EnumeratedValue Name="SubOperationalWarning" Value="18"/>

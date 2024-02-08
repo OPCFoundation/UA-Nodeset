@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -33,8 +33,8 @@
     <Uri>http://opcfoundation.org/UA/FX/Data/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/FX/Data/" Version="1.00.00" PublicationDate="2022-10-15T00:00:00Z">
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2022-01-24T00:00:00Z" />
+    <Model ModelUri="http://opcfoundation.org/UA/FX/Data/" Version="1.00.02" PublicationDate="2024-02-02T12:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -80,19 +80,14 @@
     <Alias Alias="ConnectionEndpointParameterDataType">ns=1;i=3009</Alias>
     <Alias Alias="ConnectionEndpointDefinitionDataType">ns=1;i=3011</Alias>
   </Aliases>
-  <Extensions>
-    <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="u7IxAXzJNFlrxFT+UZyCyg==" Version="1.6.7" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
-    </Extension>
-  </Extensions>
   <UADataType NodeId="ns=1;i=1029" BrowseName="1:AssetVerificationModeEnum">
     <DisplayName>AssetVerificationModeEnum</DisplayName>
     <Category>UAFX AutomationComponent Base</Category>
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.4</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6327</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="1:AssetVerificationModeEnum">
       <Field Name="AssetCompatibility" Value="0">
@@ -171,8 +166,8 @@
     <Category>UAFX AutomationComponent Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.7</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6326</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
     <Definition Name="1:AssetVerificationResultEnum">
       <Field Name="NotSet" Value="0">
@@ -431,12 +426,12 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.21</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=1225</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
     </References>
     <Definition Name="1:FxCommandMask" IsOptionSet="true">
       <Field Name="VerifyAssetCmd" Value="0">
-        <Description>The addressed Server shall verify compatibility and/or identity for all requested Assets</Description>
+        <Description>The addressed Server shall verify compatibility and/or identity for all requested Assets.</Description>
       </Field>
       <Field Name="VerifyFunctionalEntityCmd" Value="1">
         <Description>The addressed Server shall verify compatibility for all requested functional entities.</Description>
@@ -451,7 +446,7 @@
         <Description>The addressed Server shall apply the supplied application configuration.</Description>
       </Field>
       <Field Name="ReassignControlCmd" Value="5">
-        <Description>The addressed Server shall reassign the requested ControlGroups</Description>
+        <Description>The addressed Server shall reassign the requested ControlGroups.</Description>
       </Field>
       <Field Name="ReserveCommunicationIdsCmd" Value="6">
         <Description>The addressed Server shall reserve identifiers for the communication model configuration.</Description>
@@ -508,10 +503,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.5</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1153</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1155</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1154</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:AssetVerificationDataType">
       <Field Name="AssetToVerify" DataType="NodeId" />
@@ -549,10 +544,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.6</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1205</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1207</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1206</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:AssetVerificationResultDataType">
       <Field Name="VerificationStatus" DataType="StatusCode" />
@@ -589,10 +584,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.10.2</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1147</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1149</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1148</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:CommunicationConfigurationDataType" />
   </UADataType>
@@ -663,10 +658,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.11.2</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1108</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1110</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1109</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:CommunicationConfigurationResultDataType" />
   </UADataType>
@@ -739,10 +734,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.13.2</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5033</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5035</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5034</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:CommunicationLinkConfigurationDataType" />
   </UADataType>
@@ -814,10 +809,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.14</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1141</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1143</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=1142</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:ConnectionEndpointConfigurationDataType">
       <Field Name="FunctionalEntityNode" DataType="NodeId" />
@@ -856,10 +851,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.15</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5036</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5038</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5037</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:ConnectionEndpointConfigurationResultDataType">
       <Field Name="ConnectionEndpointId" DataType="NodeId" />
@@ -903,10 +898,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.18.2</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5039</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5041</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5040</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:ConnectionEndpointParameterDataType">
       <Field Name="Name" DataType="String" />
@@ -1248,10 +1243,10 @@
     <Category>UAFX ConnectionManager Base</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/10.16</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=12756</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5054</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5056</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5055</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=12756</Reference>
     </References>
     <Definition Name="1:ConnectionEndpointDefinitionDataType" IsUnion="true">
       <Field Name="Parameter" DataType="ConnectionEndpointParameterDataType" AllowSubTypes="true" />
@@ -1559,8 +1554,8 @@
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/FX/Data/</uax:String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6024" BrowseName="1:TypeDictionary" SymbolicName="TypeDictionary_XmlSchema" DataType="ByteString">
-    <DisplayName>TypeDictionary</DisplayName>
+  <UAVariable NodeId="ns=1;i=6024" BrowseName="1:Opc.Ua.FX" SymbolicName="Opc_Ua_Fx_XmlSchema" DataType="ByteString">
+    <DisplayName>Opc.Ua.FX</DisplayName>
     <Description>Collects the data type descriptions of http://opcfoundation.org/UA/FX/Data/</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
@@ -2029,9 +2024,9 @@
     <Category>UAFX Auditing Connection Management</Category>
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/8.4</Documentation>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6325</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6324</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2127</Reference>
     </References>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6325" BrowseName="1:OutputArguments" ParentNodeId="ns=1;i=1025" DataType="Argument" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
@@ -2064,7 +2059,6 @@
     <Documentation>https://reference.opcfoundation.org/UAFX/Part81/v100/docs/14.1</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=177</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=178</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=179</Reference>
@@ -2072,6 +2066,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=181</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=182</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=183</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=177" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=81" DataType="Boolean">
@@ -2091,7 +2086,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-10-15T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-02-02T12:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=179" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=81" DataType="String">
@@ -2111,7 +2106,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=81</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00.00</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.00.02</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=181" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=81" DataType="IdType" ValueRank="1" ArrayDimensions="0">
@@ -2158,13 +2153,13 @@ It is intended to be a non-human Role.
       <Reference ReferenceType="HasComponent">ns=1;i=7029</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6400</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6402</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">i=15606</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6403</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6404</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6405</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7030</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7031</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7032</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=15606</Reference>
     </References>
   </UAObject>
   <UAMethod NodeId="ns=1;i=7027" BrowseName="AddApplication" ParentNodeId="ns=1;i=5019" MethodDeclarationId="i=16176">
