@@ -35,10 +35,10 @@
     <Uri>http://opcfoundation.org/UA/FX/Data/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/FX/AC/" Version="1.00.02" PublicationDate="2024-02-02T12:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/FX/AC/" Version="1.00.02" PublicationDate="2024-02-02T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/FX/Data/" Version="1.00.02" PublicationDate="2024-02-02T12:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/FX/Data/" Version="1.00.02" PublicationDate="2024-02-02T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
