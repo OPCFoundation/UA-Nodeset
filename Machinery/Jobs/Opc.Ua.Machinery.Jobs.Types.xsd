@@ -1,0 +1,107 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Machinery/Jobs/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Machinery/Jobs/Types.xsd" xmlns:ns1="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:import namespace="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/Types.xsd"/>
+    <xs:simpleType name="JobExecutionMode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SimulationMode_0"/>
+            <xs:enumeration value="TestMode_1"/>
+            <xs:enumeration value="ProductionMode_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:JobExecutionMode" name="JobExecutionMode"/>
+    <xs:complexType name="ListOfJobExecutionMode">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobExecutionMode" name="JobExecutionMode" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfJobExecutionMode" name="ListOfJobExecutionMode" nillable="true"/>
+    <xs:simpleType name="JobResult">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Unknown_0"/>
+            <xs:enumeration value="Successful_1"/>
+            <xs:enumeration value="Unsuccessful_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:JobResult" name="JobResult"/>
+    <xs:complexType name="ListOfJobResult">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobResult" name="JobResult" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfJobResult" name="ListOfJobResult" nillable="true"/>
+    <xs:simpleType name="ProcessIrregularity">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CapabilityUnavailable_0"/>
+            <xs:enumeration value="Detected_1"/>
+            <xs:enumeration value="NotDetected_2"/>
+            <xs:enumeration value="NotYetDetermined_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ProcessIrregularity" name="ProcessIrregularity"/>
+    <xs:complexType name="ListOfProcessIrregularity">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProcessIrregularity" name="ProcessIrregularity" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProcessIrregularity" name="ListOfProcessIrregularity" nillable="true"/>
+    <xs:complexType name="BOMComponentInformationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:OutputInformationDataType" name="Identification"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Quantity"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="EngineeringUnits"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BOMComponentInformationDataType" name="BOMComponentInformationDataType"/>
+    <xs:complexType name="ListOfBOMComponentInformationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BOMComponentInformationDataType" name="BOMComponentInformationDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBOMComponentInformationDataType" name="ListOfBOMComponentInformationDataType" nillable="true"/>
+    <xs:complexType name="BOMInformationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:OutputInformationDataType" name="Identification"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfBOMComponentInformationDataType" name="ComponentInformation"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:BOMInformationDataType" name="BOMInformationDataType"/>
+    <xs:complexType name="ListOfBOMInformationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BOMInformationDataType" name="BOMInformationDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBOMInformationDataType" name="ListOfBOMInformationDataType" nillable="true"/>
+    <xs:complexType name="OutputInformationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ItemNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="OutputInfo"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="OrderNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="LotNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SerialNumber"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:OutputInformationDataType" name="OutputInformationDataType"/>
+    <xs:complexType name="ListOfOutputInformationDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OutputInformationDataType" name="OutputInformationDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOutputInformationDataType" name="ListOfOutputInformationDataType" nillable="true"/>
+    <xs:complexType name="OutputPerformanceInfoDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:OutputInformationDataType" name="Identification"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="StartTime"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EndTime"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ns1:ListOfISA95ParameterDataType" name="Parameters"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:OutputPerformanceInfoDataType" name="OutputPerformanceInfoDataType"/>
+    <xs:complexType name="ListOfOutputPerformanceInfoDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OutputPerformanceInfoDataType" name="OutputPerformanceInfoDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOutputPerformanceInfoDataType" name="ListOfOutputPerformanceInfoDataType" nillable="true"/>
+</xs:schema>

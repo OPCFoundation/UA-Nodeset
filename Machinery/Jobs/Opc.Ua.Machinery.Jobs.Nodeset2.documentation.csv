@@ -1,0 +1,11 @@
+Id,Name,Link,ConformanceUnits
+1003,JobManagementType,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/8.1","Machinery Job Management Base;"
+3003,JobExecutionMode,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.1","Machinery Job Management Planned ExecutionMode;Machinery Job Management Result ExecutionMode;"
+3004,ProcessIrregularity,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.8","Machinery Job Management Result ProcessIrregularity;"
+3006,JobResult,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.2","Machinery Job Management Result JobResult;"
+3009,OutputInfoType,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.4","Machinery Job Management Planned Base;Machinery Job Management Result Base;"
+3012,OutputInformationDataType,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.3","Machinery Job Management Planned Base;Machinery Job Management Result Base;"
+3015,BOMComponentInformationDataType,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.5","Machinery Job Management Result BOM;"
+3018,BOMInformationDataType,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.6","Machinery Job Management Result BOM;"
+3021,OutputPerformanceInfoDataType,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/9.7","Machinery Job Management Result PerformanceInfo;"
+5011,http://opcfoundation.org/UA/Machinery/Jobs/,"https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/11.1",""
