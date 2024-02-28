@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -33,7 +33,7 @@
     <Uri>http://opcfoundation.org/UA/AMB/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/AMB/" Version="1.01.0" PublicationDate="2022-11-01T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/AMB/" Version="1.01.1" PublicationDate="2024-02-27T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
     </Model>
   </Models>
@@ -69,13 +69,13 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="wwrQd1lHkBqrFyoDO8896A==" Version="1.6.7" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="8HJwRw5LGUCJZ6y0XvYSmA==" Version="1.6.11" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3004" BrowseName="1:MaintenanceMethodEnum">
     <DisplayName>MaintenanceMethodEnum</DisplayName>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.6</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
@@ -134,8 +134,9 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:NameNodeIdDataType">
     <DisplayName>NameNodeIdDataType</DisplayName>
+    <Description>A human-readable name of something plus optionally the NodeId in case the something is represented in the AddressSpace</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.5</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5012</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5013</Reference>
@@ -174,8 +175,9 @@
   </UAVariable>
   <UADataType NodeId="ns=1;i=3002" BrowseName="1:RootCauseDataType">
     <DisplayName>RootCauseDataType</DisplayName>
+    <Description>Root cause of an alarm</Description>
     <Category>AMB Asset Health Status Root Causes</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasEncoding">ns=1;i=5005</Reference>
@@ -230,18 +232,22 @@
         m91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0a
         W9uLm9yZy9VQS9BTUIvIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2Zvd
         W5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6R
-        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJOYW1lTm9kZUlkRGF0YVR5cGUiPgogIDxvcGM6Rmllb
-        GQgVHlwZU5hbWU9InVhOkxvY2FsaXplZFRleHQiIE5hbWU9Ik5hbWUiLz4KICA8b3BjOkZpZ
-        WxkIFR5cGVOYW1lPSJ1YTpOb2RlSWQiIE5hbWU9Ik5vZGVJZCIvPgogPC9vcGM6U3RydWN0d
-        XJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PY
-        mplY3QiIE5hbWU9IlJvb3RDYXVzZURhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lP
-        SJ1YTpOb2RlSWQiIE5hbWU9IlJvb3RDYXVzZUlkIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZ
-        T0idWE6TG9jYWxpemVkVGV4dCIgTmFtZT0iUm9vdENhdXNlIi8+CiA8L29wYzpTdHJ1Y3R1c
-        mVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iT
-        WFpbnRlbmFuY2VNZXRob2RFbnVtIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJMb
-        2NhbCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSZW1vdGUiI
-        FZhbHVlPSIxIi8+CiA8L29wYzpFbnVtZXJhdGVkVHlwZT4KPC9vcGM6VHlwZURpY3Rpb25hc
-        nk+Cg==</uax:ByteString>
+        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJOYW1lTm9kZUlkRGF0YVR5cGUiPgogIDxvcGM6RG9jd
+        W1lbnRhdGlvbj5BIGh1bWFuLXJlYWRhYmxlIG5hbWUgb2Ygc29tZXRoaW5nIHBsdXMgb3B0a
+        W9uYWxseSB0aGUgTm9kZUlkIGluIGNhc2UgdGhlIHNvbWV0aGluZyBpcyByZXByZXNlbnRlZ
+        CBpbiB0aGUgQWRkcmVzc1NwYWNlPC9vcGM6RG9jdW1lbnRhdGlvbj4KICA8b3BjOkZpZWxkI
+        FR5cGVOYW1lPSJ1YTpMb2NhbGl6ZWRUZXh0IiBOYW1lPSJOYW1lIi8+CiAgPG9wYzpGaWVsZ
+        CBUeXBlTmFtZT0idWE6Tm9kZUlkIiBOYW1lPSJOb2RlSWQiLz4KIDwvb3BjOlN0cnVjdHVyZ
+        WRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZ
+        WN0IiBOYW1lPSJSb290Q2F1c2VEYXRhVHlwZSI+CiAgPG9wYzpEb2N1bWVudGF0aW9uPlJvb
+        3QgY2F1c2Ugb2YgYW4gYWxhcm08L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RmllbGQgV
+        HlwZU5hbWU9InVhOk5vZGVJZCIgTmFtZT0iUm9vdENhdXNlSWQiLz4KICA8b3BjOkZpZWxkI
+        FR5cGVOYW1lPSJ1YTpMb2NhbGl6ZWRUZXh0IiBOYW1lPSJSb290Q2F1c2UiLz4KIDwvb3BjO
+        lN0cnVjdHVyZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyI
+        iBOYW1lPSJNYWludGVuYW5jZU1ldGhvZEVudW0iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9IkxvY2FsIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        lJlbW90ZSIgVmFsdWU9IjEiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgo8L29wYzpUeXBlR
+        GljdGlvbmFyeT4K</uax:ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6010" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6009" DataType="String">
@@ -283,30 +289,36 @@
         T4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mTWFpb
         nRlbmFuY2VNZXRob2RFbnVtIiBuYW1lPSJMaXN0T2ZNYWludGVuYW5jZU1ldGhvZEVudW0iI
         G5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTmFtZU5vZGVJZERhd
-        GFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
-        WF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpMb2NhbGl6ZWRUZXh0IiBuYW1lPSJOYW1lIi8+CiAgI
-        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpOb2RlS
-        WQiIG5hbWU9Ik5vZGVJZCIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlP
-        gogPHhzOmVsZW1lbnQgdHlwZT0idG5zOk5hbWVOb2RlSWREYXRhVHlwZSIgbmFtZT0iTmFtZ
-        U5vZGVJZERhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mTmFtZU5vZ
-        GVJZERhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vyc
-        z0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpOYW1lTm9kZUlkRGF0YVR5c
-        GUiIG5hbWU9Ik5hbWVOb2RlSWREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzO
-        nNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMa
-        XN0T2ZOYW1lTm9kZUlkRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZk5hbWVOb2RlSWREYXRhVHlwZ
-        SIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJSb290Q2F1c2VEY
-        XRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiI
-        G1heE9jY3Vycz0iMSIgdHlwZT0idWE6Tm9kZUlkIiBuYW1lPSJSb290Q2F1c2VJZCIvPgogI
-        CA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6TG9jY
-        WxpemVkVGV4dCIgbmFtZT0iUm9vdENhdXNlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y
-        29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6Um9vdENhdXNlRGF0YVR5cGUiI
-        G5hbWU9IlJvb3RDYXVzZURhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzd
-        E9mUm9vdENhdXNlRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgb
-        WluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlJvb3RDYXVzZ
-        URhdGFUeXBlIiBuYW1lPSJSb290Q2F1c2VEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KI
+        GFUeXBlIj4KICA8eHM6YW5ub3RhdGlvbj4KICAgPHhzOmRvY3VtZW50YXRpb24+QSBodW1hb
+        i1yZWFkYWJsZSBuYW1lIG9mIHNvbWV0aGluZyBwbHVzIG9wdGlvbmFsbHkgdGhlIE5vZGVJZ
+        CBpbiBjYXNlIHRoZSBzb21ldGhpbmcgaXMgcmVwcmVzZW50ZWQgaW4gdGhlIEFkZHJlc3NTc
+        GFjZTwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnNlcXVlb
+        mNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0id
+        WE6TG9jYWxpemVkVGV4dCIgbmFtZT0iTmFtZSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1c
+        nM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6Tm9kZUlkIiBuYW1lPSJOb2RlSWQiLz4KI
         CA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9I
-        nRuczpMaXN0T2ZSb290Q2F1c2VEYXRhVHlwZSIgbmFtZT0iTGlzdE9mUm9vdENhdXNlRGF0Y
-        VR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
+        nRuczpOYW1lTm9kZUlkRGF0YVR5cGUiIG5hbWU9Ik5hbWVOb2RlSWREYXRhVHlwZSIvPgogP
+        HhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZk5hbWVOb2RlSWREYXRhVHlwZSI+CiAgPHhzO
+        nNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib
+        3VuZGVkIiB0eXBlPSJ0bnM6TmFtZU5vZGVJZERhdGFUeXBlIiBuYW1lPSJOYW1lTm9kZUlkR
+        GF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tc
+        GxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mTmFtZU5vZGVJZERhdGFUe
+        XBlIiBuYW1lPSJMaXN0T2ZOYW1lTm9kZUlkRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+C
+        iA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUm9vdENhdXNlRGF0YVR5cGUiPgogIDx4czphbm5vd
+        GF0aW9uPgogICA8eHM6ZG9jdW1lbnRhdGlvbj5Sb290IGNhdXNlIG9mIGFuIGFsYXJtPC94c
+        zpkb2N1bWVudGF0aW9uPgogIDwveHM6YW5ub3RhdGlvbj4KICA8eHM6c2VxdWVuY2U+CiAgI
+        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpOb2RlS
+        WQiIG5hbWU9IlJvb3RDYXVzZUlkIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
+        WF4T2NjdXJzPSIxIiB0eXBlPSJ1YTpMb2NhbGl6ZWRUZXh0IiBuYW1lPSJSb290Q2F1c2UiL
+        z4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5c
+        GU9InRuczpSb290Q2F1c2VEYXRhVHlwZSIgbmFtZT0iUm9vdENhdXNlRGF0YVR5cGUiLz4KI
+        Dx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZSb290Q2F1c2VEYXRhVHlwZSI+CiAgPHhzO
+        nNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib
+        3VuZGVkIiB0eXBlPSJ0bnM6Um9vdENhdXNlRGF0YVR5cGUiIG5hbWU9IlJvb3RDYXVzZURhd
+        GFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZ
+        XhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlJvb3RDYXVzZURhdGFUeXBlI
+        iBuYW1lPSJMaXN0T2ZSb290Q2F1c2VEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KPC94c
+        zpzY2hlbWE+Cg==</uax:ByteString>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6012" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=6011" DataType="String">
@@ -324,7 +336,7 @@
     <Description>Links an Object representing some type of location to Objects (like assets) located in that location</Description>
     <Category>AMB Hierarchical Location Objects</Category>
     <Category>AMB Operational Location Objects</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/13.1.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/13.1.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
     </References>
@@ -334,7 +346,7 @@
     <DisplayName>HierarchicalContains</DisplayName>
     <Description>Links an Object representing part in a hierarchical location to Objects (like assets) located in that hierarchical location</Description>
     <Category>AMB Hierarchical Location Objects</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/13.3.3/#13.3.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/13.3.3/#13.3.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4002</Reference>
     </References>
@@ -344,7 +356,7 @@
     <DisplayName>OperationalContains</DisplayName>
     <Description>Links an Object representing an operational location to Objects (like assets) located in that operational location</Description>
     <Category>AMB Operational Location Objects</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/13.4.3/#13.4.3.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/13.4.3/#13.4.3.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=4002</Reference>
     </References>
@@ -354,7 +366,7 @@
     <DisplayName>CalibrationDueConditionClassType</DisplayName>
     <Description>Calibration is due</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -363,7 +375,7 @@
     <DisplayName>ExternalCheckConditionClassType</DisplayName>
     <Description>An external check maintenance activity</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.4.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.4.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -372,7 +384,7 @@
     <DisplayName>FlashUpdateInProgressConditionClassType</DisplayName>
     <Description>Flash update in progress</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -381,7 +393,7 @@
     <DisplayName>ImprovementConditionClassType</DisplayName>
     <Description>An improvement maintenance activity</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.4.6</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.4.6</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -390,7 +402,7 @@
     <DisplayName>InspectionConditionClassType</DisplayName>
     <Description>An inspection maintenance activity</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -399,7 +411,7 @@
     <DisplayName>RepairConditionClassType</DisplayName>
     <Description>A repair maintenance activity</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.4.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.4.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -408,7 +420,7 @@
     <DisplayName>ServicingConditionClassType</DisplayName>
     <Description>A servicing maintenance activity</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.4.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.4.4</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11165</Reference>
     </References>
@@ -417,7 +429,7 @@
     <DisplayName>BadConfigurationConditionClassType</DisplayName>
     <Description>Configuration is bad</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.8</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.8</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11166</Reference>
     </References>
@@ -426,7 +438,7 @@
     <DisplayName>ConnectionFailureConditionClassType</DisplayName>
     <Description>One or more connections have failed</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11166</Reference>
     </References>
@@ -435,7 +447,7 @@
     <DisplayName>FlashUpdateFailedConditionClassType</DisplayName>
     <Description>Flash update has failed</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.7</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.7</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11166</Reference>
     </References>
@@ -444,7 +456,7 @@
     <DisplayName>OutOfResourcesConditionClassType</DisplayName>
     <Description>Out of resources issues</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.9</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.9</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11166</Reference>
     </References>
@@ -453,7 +465,7 @@
     <DisplayName>OutOfMemoryConditionClassType</DisplayName>
     <Description>Out of memory issues</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.10</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
     </References>
@@ -462,7 +474,7 @@
     <DisplayName>OverTemperatureConditionClassType</DisplayName>
     <Description>Over temperature</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11166</Reference>
     </References>
@@ -471,15 +483,16 @@
     <DisplayName>SelfTestFailureConditionClassType</DisplayName>
     <Description>Self-Test failure</Description>
     <Category>AMB Asset Health Status Alarm Categories</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.5.5</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.5.5</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11166</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:IMaintenanceEventType" IsAbstract="true">
     <DisplayName>IMaintenanceEventType</DisplayName>
+    <Description>Information on maintenance activities, should by applied to conditions (ConditionType or subtypes)</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6036</Reference>
@@ -495,33 +508,37 @@
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6042" BrowseName="1:ConfigurationChanged" ParentNodeId="ns=1;i=1012" DataType="Boolean" AccessLevel="3">
     <DisplayName>ConfigurationChanged</DisplayName>
+    <Description>Information if the configuration of the asset is planned to be changed or has changed during the maintenance activity. FALSE indicates no change, and TRUE indicates a change. The content may change during the different MaintenanceStates. By accessing the history of Events a Client can distinguish between the planned and actual configuration changes during the maintenance activity.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6036" BrowseName="1:EstimatedDowntime" ParentNodeId="ns=1;i=1012" DataType="Duration" AccessLevel="3">
     <DisplayName>EstimatedDowntime</DisplayName>
+    <Description>The estimated time the execution of the maintenance activity will take. In case of replanning, it is allowed to change the EstimatedDowntime. If during the execution of the maintenance activity the EstimatedDowntime can be adjusted (e.g., the asset needs to be repaired because an inspection found some issues) this should be done. Clients can access the history of Events to receive the information on the original estimates when the maintenance activity started.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6041" BrowseName="1:MaintenanceMethod" ParentNodeId="ns=1;i=1012" DataType="MaintenanceMethodEnum" AccessLevel="3">
     <DisplayName>MaintenanceMethod</DisplayName>
+    <Description>Information about the planned or used maintenance method. The content may change during the different MaintenanceStates. By accessing the history of Events a Client can distinguish between the planned and actual used maintenance method during the maintenance activity.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5014" BrowseName="1:MaintenanceState" ParentNodeId="ns=1;i=1012">
     <DisplayName>MaintenanceState</DisplayName>
+    <Description>Information if the maintenance activity is still planned, currently in execution, or has already been executed.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1013</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1013</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6033</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
     </References>
@@ -529,8 +546,8 @@
   <UAVariable NodeId="ns=1;i=6033" BrowseName="CurrentState" ParentNodeId="ns=1;i=5014" DataType="LocalizedText">
     <DisplayName>CurrentState</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5014</Reference>
     </References>
@@ -538,55 +555,61 @@
   <UAVariable NodeId="ns=1;i=6034" BrowseName="Id" ParentNodeId="ns=1;i=6033" DataType="NodeId">
     <DisplayName>Id</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6033</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6037" BrowseName="1:MaintenanceSupplier" ParentNodeId="ns=1;i=1012" DataType="NameNodeIdDataType" AccessLevel="3">
     <DisplayName>MaintenanceSupplier</DisplayName>
+    <Description>Information on the supplier that is planned to execute, currently executing or has executed the maintenance activity. The content may change during the different MaintenanceStates. By accessing the history of Events a Client can distinguish between the planned and actual supplier that executed the maintenance activity. The value contains always a human-readable name of the supplier and optionally references a Node representing the supplier in the AddressSpace.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6039" BrowseName="1:PartsOfAssetReplaced" ParentNodeId="ns=1;i=1012" DataType="NameNodeIdDataType" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
     <DisplayName>PartsOfAssetReplaced</DisplayName>
+    <Description>Information on the parts of the assets that are planned to be serviced during the maintenance activity, currently serviced or have been serviced, depending on the different MaintenanceStates. The content may change during the different MaintenanceStates. By accessing the history of Events a Client can distinguish between the planned and actual parts of the assets serviced during the maintenance activity. The value contains always an array of a human-readable name of the qualification of the parts of the asset to be serviced and optionally references a Node representing the part of the asset in the AddressSpace.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6040" BrowseName="1:PartsOfAssetServiced" ParentNodeId="ns=1;i=1012" DataType="NameNodeIdDataType" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
     <DisplayName>PartsOfAssetServiced</DisplayName>
+    <Description>Information on the parts of the assets that are planned to be serviced during the maintenance activity, currently serviced or have been serviced, depending on the different MaintenanceStates. The content may change during the different MaintenanceStates. By accessing the history of Events a Client can distinguish between the planned and actual parts of the assets serviced during the maintenance activity. The value contains always an array of a human-readable name of the qualification of the parts of the asset to be serviced and optionally references a Node representing the part of the asset in the AddressSpace.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6035" BrowseName="1:PlannedDate" ParentNodeId="ns=1;i=1012" DataType="UtcTime" AccessLevel="3">
     <DisplayName>PlannedDate</DisplayName>
+    <Description>Date for which the maintenance activity has been scheduled. In case of replanning, it is allowed to change the PlannedDate. However, it is not the intention that the PlannedDate is modified because the maintenance activity starts to get executed. If the PlannedDate depends for example on the operation hours of the asset, it might get adapted depending on the passed operation hours.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6038" BrowseName="1:QualificationOfPersonnel" ParentNodeId="ns=1;i=1012" DataType="NameNodeIdDataType" AccessLevel="3">
     <DisplayName>QualificationOfPersonnel</DisplayName>
+    <Description>Information on the qualification of the personnel that is planned to execute, currently executing or has executed the maintenance activity. The content may change during the different MaintenanceStates. By accessing the history of Events a Client can distinguish between the planned and actual qualification of the personnel that executed the maintenance activity. The value contains always a human-readable name of the qualification of the personnel and optionally references a Node representing the qualification of the personnel in the AddressSpace.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:IRootCauseIndicationType" IsAbstract="true">
     <DisplayName>IRootCauseIndicationType</DisplayName>
+    <Description>Information on the root cause of conditions, should be applied to alarms (AlarmType or subtypes)</Description>
     <Category>AMB Asset Health Status Root Causes</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/9.4.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/9.4.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=17602</Reference>
@@ -594,9 +617,10 @@
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6015" BrowseName="1:PotentialRootCauses" ParentNodeId="ns=1;i=1002" DataType="RootCauseDataType" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
     <DisplayName>PotentialRootCauses</DisplayName>
+    <Description>An array of potential root causes of the alarm. This is intended to be a hint to the client and might be a local view on the potential root causes of the alarm. The list might not contain all potential root causes, that is, other potential root causes might exist as well. If the alarm itself is considered to be the root cause, the array shall be empty. If no potential root causes have been identified, there shall be at least one entry in the array indicating that the root cause is unknown.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
@@ -604,7 +628,7 @@
     <DisplayName>DocumentationLinksType</DisplayName>
     <Description>AddIn to link documentation provided by the manufacturer and / or end-user.</Description>
     <Category>AMB DocumentationLinks Base</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/10.5.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/10.5.2</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7004</Reference>
@@ -617,8 +641,8 @@
     <DisplayName>&lt;Link&gt;</DisplayName>
     <Description>Represents links to externally managed documentation, typically URLs.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1011</Reference>
     </References>
   </UAVariable>
@@ -626,7 +650,7 @@
     <DisplayName>AddLink</DisplayName>
     <Description>Method to add an end-user specific link that is stored persistently in the server.</Description>
     <Category>AMB DocumentationLinks Base</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/10.5.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/10.5.3</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
@@ -637,8 +661,8 @@
   <UAVariable NodeId="ns=1;i=6018" BrowseName="InputArguments" ParentNodeId="ns=1;i=7004" DataType="Argument" ValueRank="1" ArrayDimensions="4">
     <DisplayName>InputArguments</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7004</Reference>
     </References>
     <Value>
@@ -721,8 +745,8 @@
   <UAVariable NodeId="ns=1;i=6019" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7004" DataType="Argument" ValueRank="1" ArrayDimensions="1">
     <DisplayName>OutputArguments</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7004</Reference>
     </References>
     <Value>
@@ -765,7 +789,7 @@
     <DisplayName>RemoveLink</DisplayName>
     <Description>Method to remove an end-user specific link that is managed in the server.</Description>
     <Category>AMB DocumentationLinks Base</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/10.5.4</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/10.5.4</Documentation>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
@@ -775,8 +799,8 @@
   <UAVariable NodeId="ns=1;i=6020" BrowseName="InputArguments" ParentNodeId="ns=1;i=7005" DataType="Argument" ValueRank="1" ArrayDimensions="1">
     <DisplayName>InputArguments</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7005</Reference>
     </References>
     <Value>
@@ -804,8 +828,9 @@
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:MaintenanceEventStateMachineType">
     <DisplayName>MaintenanceEventStateMachineType</DisplayName>
+    <Description>Information, whether a maintenance activity is planned, currently in execution, or has been executed</Description>
     <Category>AMB Current and Future Maintenance Activities</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/12.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/12.3</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=5007</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5008</Reference>
@@ -829,8 +854,8 @@
   <UAVariable NodeId="ns=1;i=6022" BrowseName="StateNumber" ParentNodeId="ns=1;i=5007" DataType="UInt32">
     <DisplayName>StateNumber</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
     </References>
     <Value>
@@ -850,8 +875,8 @@
   <UAVariable NodeId="ns=1;i=6023" BrowseName="StateNumber" ParentNodeId="ns=1;i=5008" DataType="UInt32">
     <DisplayName>StateNumber</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5008</Reference>
     </References>
     <Value>
@@ -871,8 +896,8 @@
   <UAVariable NodeId="ns=1;i=6025" BrowseName="TransitionNumber" ParentNodeId="ns=1;i=5010" DataType="UInt32">
     <DisplayName>TransitionNumber</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
     </References>
     <Value>
@@ -892,8 +917,8 @@
   <UAVariable NodeId="ns=1;i=6026" BrowseName="TransitionNumber" ParentNodeId="ns=1;i=5011" DataType="UInt32">
     <DisplayName>TransitionNumber</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
     </References>
     <Value>
@@ -913,8 +938,8 @@
   <UAVariable NodeId="ns=1;i=6024" BrowseName="TransitionNumber" ParentNodeId="ns=1;i=5009" DataType="UInt32">
     <DisplayName>TransitionNumber</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5009</Reference>
     </References>
     <Value>
@@ -934,8 +959,8 @@
   <UAVariable NodeId="ns=1;i=6021" BrowseName="StateNumber" ParentNodeId="ns=1;i=5006" DataType="UInt32">
     <DisplayName>StateNumber</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
     </References>
     <Value>
@@ -944,9 +969,10 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=5002" BrowseName="1:Assets">
     <DisplayName>Assets</DisplayName>
+    <Description>Entry point to discover assets</Description>
     <Category>AMB Asset Discovery by ProductInstanceUri</Category>
     <Category>AMB Asset Discovery by AssetId</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/8.2.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/8.2.1</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
       <Reference ReferenceType="Organizes">ns=1;i=5004</Reference>
@@ -957,8 +983,9 @@
   </UAObject>
   <UAObject NodeId="ns=1;i=5004" BrowseName="1:AssetsByAssetId">
     <DisplayName>AssetsByAssetId</DisplayName>
+    <Description>Entry point to discover assets by AssetId</Description>
     <Category>AMB Asset Discovery by AssetId</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/8.2.3</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/8.2.3</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7003</Reference>
@@ -1055,8 +1082,9 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=5003" BrowseName="1:AssetsByProductInstanceUri">
     <DisplayName>AssetsByProductInstanceUri</DisplayName>
+    <Description>Entry point to discover assets by ProductInstanceUri</Description>
     <Category>AMB Asset Discovery by ProductInstanceUri</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/8.2.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/8.2.2</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=23456</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
@@ -1233,8 +1261,9 @@
   </UAVariable>
   <UAObject NodeId="ns=1;i=5021" BrowseName="1:HierarchicalLocations">
     <DisplayName>HierarchicalLocations</DisplayName>
+    <Description>Entry point for objects representing the root of a location hierarchy</Description>
     <Category>AMB Hierarchical Location Objects</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/13.3.3/#13.3.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/13.3.3/#13.3.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=31915</Reference>
@@ -1242,8 +1271,9 @@
   </UAObject>
   <UAObject NodeId="ns=1;i=5022" BrowseName="1:OperationalLocations">
     <DisplayName>OperationalLocations</DisplayName>
+    <Description>Entry point for objects representing the root of a hierarchy of operational locations</Description>
     <Category>AMB Operational Location Objects</Category>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/13.4.3/#13.4.3.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/13.4.3/#13.4.3.2</Documentation>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">i=31915</Reference>
@@ -1251,7 +1281,7 @@
   </UAObject>
   <UAObject NodeId="ns=1;i=5018" BrowseName="1:http://opcfoundation.org/UA/AMB/" SymbolicName="http___opcfoundation_org_UA_AMB_">
     <DisplayName>http://opcfoundation.org/UA/AMB/</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/AMB/v100/docs/16.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/AMB/v101/docs/16.1</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6043</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -1281,7 +1311,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2022-11-01T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-02-27T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6045" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5018" DataType="String">
@@ -1301,7 +1331,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01.0</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01.1</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6047" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5018" DataType="IdType" ValueRank="1" ArrayDimensions="0">

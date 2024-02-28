@@ -14,6 +14,9 @@
     </xs:complexType>
     <xs:element type="tns:ListOfMaintenanceMethodEnum" name="ListOfMaintenanceMethodEnum" nillable="true"/>
     <xs:complexType name="NameNodeIdDataType">
+        <xs:annotation>
+            <xs:documentation>A human-readable name of something plus optionally the NodeId in case the something is represented in the AddressSpace</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Name"/>
             <xs:element minOccurs="0" maxOccurs="1" type="ua:NodeId" name="NodeId"/>
@@ -27,6 +30,9 @@
     </xs:complexType>
     <xs:element type="tns:ListOfNameNodeIdDataType" name="ListOfNameNodeIdDataType" nillable="true"/>
     <xs:complexType name="RootCauseDataType">
+        <xs:annotation>
+            <xs:documentation>Root cause of an alarm</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="ua:NodeId" name="RootCauseId"/>
             <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="RootCause"/>
