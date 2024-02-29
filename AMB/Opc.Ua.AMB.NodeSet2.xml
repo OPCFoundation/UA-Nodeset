@@ -33,7 +33,7 @@
     <Uri>http://opcfoundation.org/UA/AMB/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/AMB/" Version="1.01.1" PublicationDate="2024-02-27T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/AMB/" Version="1.01.1" PublicationDate="2024-02-27T00:00:00Z" ModelVersion="1.1.1">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
     </Model>
   </Models>
