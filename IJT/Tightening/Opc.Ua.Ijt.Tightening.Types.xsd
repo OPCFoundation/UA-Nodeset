@@ -1,0 +1,3 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/IJT/Tightening/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/IJT/Tightening/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+</xs:schema>

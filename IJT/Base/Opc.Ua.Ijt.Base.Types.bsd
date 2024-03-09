@@ -1,0 +1,383 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/IJT/Base/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="http://opcfoundation.org/UA/Machinery/Result/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/IJT/Base/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/Machinery/Result/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CalibrationDataType">
+        <opc:Documentation>This structure contains the Calibration information. It is used as an input argument in SetCalibration method.
+Note: The input data sent in SetCalibration shall be updated in the respective parameters of the asset under Maintenance/Calibration.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="CalibrationPlaceSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NextCalibrationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CalibrationValueSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="SensorScaleSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CertificateUriSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="EngineeringUnitsSpecified"/>
+        <opc:Field Length="26" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:DateTime" Name="LastCalibration"/>
+        <opc:Field SwitchField="CalibrationPlaceSpecified" TypeName="opc:CharArray" Name="CalibrationPlace"/>
+        <opc:Field SwitchField="NextCalibrationSpecified" TypeName="opc:DateTime" Name="NextCalibration"/>
+        <opc:Field SwitchField="CalibrationValueSpecified" TypeName="opc:Double" Name="CalibrationValue"/>
+        <opc:Field SwitchField="SensorScaleSpecified" TypeName="opc:Double" Name="SensorScale"/>
+        <opc:Field SwitchField="CertificateUriSpecified" TypeName="opc:CharArray" Name="CertificateUri"/>
+        <opc:Field SwitchField="EngineeringUnitsSpecified" TypeName="ua:EUInformation" Name="EngineeringUnits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="DesignValueDataType">
+        <opc:Documentation>This structure provides the design value for a given physical quantity. It is used in JointDesignDataType.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="PhysicalQuantitySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DesignValueSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="EngineeringUnitsSpecified"/>
+        <opc:Field Length="28" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="PhysicalQuantitySpecified" TypeName="opc:Byte" Name="PhysicalQuantity"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DesignValueSpecified" TypeName="ua:Variant" Name="DesignValue"/>
+        <opc:Field SwitchField="EngineeringUnitsSpecified" TypeName="ua:EUInformation" Name="EngineeringUnits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EntityDataType">
+        <opc:Documentation>This structure provides the identification data for a given entity in the system.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="EntityOriginIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsExternalSpecified"/>
+        <opc:Field Length="28" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field TypeName="opc:CharArray" Name="EntityId"/>
+        <opc:Field SwitchField="EntityOriginIdSpecified" TypeName="opc:CharArray" Name="EntityOriginId"/>
+        <opc:Field SwitchField="IsExternalSpecified" TypeName="opc:Boolean" Name="IsExternal"/>
+        <opc:Field TypeName="opc:Int16" Name="EntityType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ErrorInformationDataType">
+        <opc:Documentation>This structure represents the errors occurred in the system which are outside the boundaries of the given program.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="ErrorIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="LegacyErrorSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ErrorMessageSpecified"/>
+        <opc:Field Length="29" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:Byte" Name="ErrorType"/>
+        <opc:Field SwitchField="ErrorIdSpecified" TypeName="opc:CharArray" Name="ErrorId"/>
+        <opc:Field SwitchField="LegacyErrorSpecified" TypeName="opc:CharArray" Name="LegacyError"/>
+        <opc:Field SwitchField="ErrorMessageSpecified" TypeName="ua:LocalizedText" Name="ErrorMessage"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JoiningProcessDataType">
+        <opc:Documentation>This structure provides the base container for any joining process in a joining system. 
+Note: This specification defines the meta data of a JoiningProcess, and the actual content of the Joining Process is application specific.</opc:Documentation>
+        <opc:Field TypeName="ua:ExtensionObject" Name="JoiningProcessMetaData"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfJoiningProcessContent"/>
+        <opc:Field LengthField="NoOfJoiningProcessContent" TypeName="ua:Variant" Name="JoiningProcessContent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JoiningProcessIdentificationDataType">
+        <opc:Documentation>This structure contains the identification information of a Joining Process. It is used in set of methods defined in JoiningProcessManagementType.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="JoiningProcessIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JoiningProcessOriginIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="SelectionNameSpecified"/>
+        <opc:Field Length="29" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="JoiningProcessIdSpecified" TypeName="opc:CharArray" Name="JoiningProcessId"/>
+        <opc:Field SwitchField="JoiningProcessOriginIdSpecified" TypeName="opc:CharArray" Name="JoiningProcessOriginId"/>
+        <opc:Field SwitchField="SelectionNameSpecified" TypeName="opc:CharArray" Name="SelectionName"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JoiningProcessMetaDataType">
+        <opc:Documentation>This structure provides the meta data which describes the joining process.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="JoiningProcessOriginIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CreationTimeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="LastUpdatedTimeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JoiningTechnologySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ClassificationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="AssociatedEntitiesSpecified"/>
+        <opc:Field Length="24" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="JoiningProcessId"/>
+        <opc:Field SwitchField="JoiningProcessOriginIdSpecified" TypeName="opc:CharArray" Name="JoiningProcessOriginId"/>
+        <opc:Field SwitchField="CreationTimeSpecified" TypeName="opc:DateTime" Name="CreationTime"/>
+        <opc:Field SwitchField="LastUpdatedTimeSpecified" TypeName="opc:DateTime" Name="LastUpdatedTime"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field SwitchField="JoiningTechnologySpecified" TypeName="ua:LocalizedText" Name="JoiningTechnology"/>
+        <opc:Field SwitchField="ClassificationSpecified" TypeName="opc:Int16" Name="Classification"/>
+        <opc:Field SwitchField="AssociatedEntitiesSpecified" TypeName="opc:Int32" Name="NoOfAssociatedEntities"/>
+        <opc:Field LengthField="NoOfAssociatedEntities" SwitchField="AssociatedEntitiesSpecified" TypeName="tns:EntityDataType" Name="AssociatedEntities"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JoiningResultDataType">
+        <opc:Documentation>This structure represents the data associated with Joining Result and the corresponding measurement values.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="FailureReasonSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StepResultsSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ErrorsSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="FailingStepResultIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="TraceSpecified"/>
+        <opc:Field Length="27" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="FailureReasonSpecified" TypeName="opc:Byte" Name="FailureReason"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfOverallResultValues"/>
+        <opc:Field LengthField="NoOfOverallResultValues" TypeName="tns:ResultValueDataType" Name="OverallResultValues"/>
+        <opc:Field SwitchField="StepResultsSpecified" TypeName="opc:Int32" Name="NoOfStepResults"/>
+        <opc:Field LengthField="NoOfStepResults" SwitchField="StepResultsSpecified" TypeName="tns:StepResultDataType" Name="StepResults"/>
+        <opc:Field SwitchField="ErrorsSpecified" TypeName="opc:Int32" Name="NoOfErrors"/>
+        <opc:Field LengthField="NoOfErrors" SwitchField="ErrorsSpecified" TypeName="tns:ErrorInformationDataType" Name="Errors"/>
+        <opc:Field SwitchField="FailingStepResultIdSpecified" TypeName="opc:CharArray" Name="FailingStepResultId"/>
+        <opc:Field SwitchField="TraceSpecified" TypeName="tns:JoiningTraceDataType" Name="Trace"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JointComponentDataType">
+        <opc:Documentation>This structure is the base container for any joint component such as Bolt, Rivet, Gasket, Glue string, etc. 
+Note: The concrete definition of joint component is not defined in this version of the specification.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ManufacturerSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ManufacturerUriSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JointComponentContentSpecified"/>
+        <opc:Field Length="27" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="JointComponentId"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field SwitchField="ManufacturerSpecified" TypeName="ua:LocalizedText" Name="Manufacturer"/>
+        <opc:Field SwitchField="ManufacturerUriSpecified" TypeName="opc:CharArray" Name="ManufacturerUri"/>
+        <opc:Field SwitchField="JointComponentContentSpecified" TypeName="ua:Variant" Name="JointComponentContent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JointDataType">
+        <opc:Documentation>This structure provides the joint information. Joint is the physical outcome of the joining operation which determines the properties of the point where multiple parts are assembled.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="JointOriginIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JointDesignIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CreationTimeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="LastUpdatedTimeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ClassificationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ClassificationDetailsSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JointStatusSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="AssociatedEntitiesSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JoiningTechnologySpecified"/>
+        <opc:Field Length="21" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="JointId"/>
+        <opc:Field SwitchField="JointOriginIdSpecified" TypeName="opc:CharArray" Name="JointOriginId"/>
+        <opc:Field SwitchField="JointDesignIdSpecified" TypeName="opc:CharArray" Name="JointDesignId"/>
+        <opc:Field SwitchField="CreationTimeSpecified" TypeName="opc:DateTime" Name="CreationTime"/>
+        <opc:Field SwitchField="LastUpdatedTimeSpecified" TypeName="opc:DateTime" Name="LastUpdatedTime"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field SwitchField="ClassificationSpecified" TypeName="opc:Int16" Name="Classification"/>
+        <opc:Field SwitchField="ClassificationDetailsSpecified" TypeName="ua:LocalizedText" Name="ClassificationDetails"/>
+        <opc:Field SwitchField="JointStatusSpecified" TypeName="opc:CharArray" Name="JointStatus"/>
+        <opc:Field SwitchField="AssociatedEntitiesSpecified" TypeName="opc:Int32" Name="NoOfAssociatedEntities"/>
+        <opc:Field LengthField="NoOfAssociatedEntities" SwitchField="AssociatedEntitiesSpecified" TypeName="tns:EntityDataType" Name="AssociatedEntities"/>
+        <opc:Field SwitchField="JoiningTechnologySpecified" TypeName="ua:LocalizedText" Name="JoiningTechnology"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JointDesignDataType">
+        <opc:Documentation>This structure provides the design information of a given joint.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JointDesignContentSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JointComponentIdListSpecified"/>
+        <opc:Field Length="28" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="JointDesignId"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field SwitchField="JointDesignContentSpecified" TypeName="opc:Int32" Name="NoOfJointDesignContent"/>
+        <opc:Field LengthField="NoOfJointDesignContent" SwitchField="JointDesignContentSpecified" TypeName="tns:DesignValueDataType" Name="JointDesignContent"/>
+        <opc:Field SwitchField="JointComponentIdListSpecified" TypeName="opc:Int32" Name="NoOfJointComponentIdList"/>
+        <opc:Field LengthField="NoOfJointComponentIdList" SwitchField="JointComponentIdListSpecified" TypeName="opc:CharArray" Name="JointComponentIdList"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="KeyValueDataType">
+        <opc:Documentation>This structure is similar to 0:KeyValuePair which uses 0:TrimmedString instead of 0:QualifiedName.</opc:Documentation>
+        <opc:Field TypeName="opc:CharArray" Name="Key"/>
+        <opc:Field TypeName="ua:Variant" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ReportedValueDataType">
+        <opc:Documentation>This structure provides the given value and corresponding limits for a given physical quantity (if applicable).</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="PhysicalQuantitySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PreviousValueSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="LowLimitSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="HighLimitSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="EngineeringUnitsSpecified"/>
+        <opc:Field Length="26" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="PhysicalQuantitySpecified" TypeName="opc:Byte" Name="PhysicalQuantity"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="ua:Variant" Name="CurrentValue"/>
+        <opc:Field SwitchField="PreviousValueSpecified" TypeName="ua:Variant" Name="PreviousValue"/>
+        <opc:Field SwitchField="LowLimitSpecified" TypeName="opc:Double" Name="LowLimit"/>
+        <opc:Field SwitchField="HighLimitSpecified" TypeName="opc:Double" Name="HighLimit"/>
+        <opc:Field SwitchField="EngineeringUnitsSpecified" TypeName="ua:EUInformation" Name="EngineeringUnits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ResultCounterDataType">
+        <opc:Documentation>This structure is used to provide various types of counters associated to a Result. These counters are related to a joining process with sub-processes.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:UInt32" Name="CounterValue"/>
+        <opc:Field TypeName="opc:Int16" Name="CounterType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:ResultMetaDataType" Name="JoiningResultMetaDataType">
+        <opc:Documentation>This structure is a subtype of ResultMetaDataType. It is used to define additional meta data of a Result in a joining system.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="HasTransferableDataOnFileSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsPartialSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsSimulatedSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultStateSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StepIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PartIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ExternalRecipeIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="InternalRecipeIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ProductIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ExternalConfigurationIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="InternalConfigurationIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JobIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CreationTimeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ProcessingTimesSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultUriSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationCodeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationDetailsSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="FileFormatSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JoiningTechnologySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="SequenceNumberSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ClassificationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="OperationModeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="AssemblyTypeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="AssociatedEntitiesSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultCountersSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="InterventionTypeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsGeneratedOfflineSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ExtendedMetaDataSpecified"/>
+        <opc:Field Length="1" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ResultId"/>
+        <opc:Field SwitchField="HasTransferableDataOnFileSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Boolean" Name="HasTransferableDataOnFile"/>
+        <opc:Field SwitchField="IsPartialSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Boolean" Name="IsPartial"/>
+        <opc:Field SwitchField="IsSimulatedSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Boolean" Name="IsSimulated"/>
+        <opc:Field SwitchField="ResultStateSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int32" Name="ResultState"/>
+        <opc:Field SwitchField="StepIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="StepId"/>
+        <opc:Field SwitchField="PartIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="PartId"/>
+        <opc:Field SwitchField="ExternalRecipeIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ExternalRecipeId"/>
+        <opc:Field SwitchField="InternalRecipeIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="InternalRecipeId"/>
+        <opc:Field SwitchField="ProductIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ProductId"/>
+        <opc:Field SwitchField="ExternalConfigurationIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ExternalConfigurationId"/>
+        <opc:Field SwitchField="InternalConfigurationIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="InternalConfigurationId"/>
+        <opc:Field SwitchField="JobIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="JobId"/>
+        <opc:Field SwitchField="CreationTimeSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:DateTime" Name="CreationTime"/>
+        <opc:Field SwitchField="ProcessingTimesSpecified" SourceType="ns1:ResultMetaDataType" TypeName="ns1:ProcessingTimesDataType" Name="ProcessingTimes"/>
+        <opc:Field SwitchField="ResultUriSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int32" Name="NoOfResultUri"/>
+        <opc:Field LengthField="NoOfResultUri" SwitchField="ResultUriSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ResultUri"/>
+        <opc:Field SwitchField="ResultEvaluationSpecified" SourceType="ns1:ResultMetaDataType" TypeName="ns1:ResultEvaluationEnum" Name="ResultEvaluation"/>
+        <opc:Field SwitchField="ResultEvaluationCodeSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int64" Name="ResultEvaluationCode"/>
+        <opc:Field SwitchField="ResultEvaluationDetailsSpecified" SourceType="ns1:ResultMetaDataType" TypeName="ua:LocalizedText" Name="ResultEvaluationDetails"/>
+        <opc:Field SwitchField="FileFormatSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int32" Name="NoOfFileFormat"/>
+        <opc:Field LengthField="NoOfFileFormat" SwitchField="FileFormatSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="FileFormat"/>
+        <opc:Field SwitchField="JoiningTechnologySpecified" TypeName="ua:LocalizedText" Name="JoiningTechnology"/>
+        <opc:Field SwitchField="SequenceNumberSpecified" TypeName="opc:UInt64" Name="SequenceNumber"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field SwitchField="ClassificationSpecified" TypeName="opc:Byte" Name="Classification"/>
+        <opc:Field SwitchField="OperationModeSpecified" TypeName="opc:Byte" Name="OperationMode"/>
+        <opc:Field SwitchField="AssemblyTypeSpecified" TypeName="opc:Byte" Name="AssemblyType"/>
+        <opc:Field SwitchField="AssociatedEntitiesSpecified" TypeName="opc:Int32" Name="NoOfAssociatedEntities"/>
+        <opc:Field LengthField="NoOfAssociatedEntities" SwitchField="AssociatedEntitiesSpecified" TypeName="tns:EntityDataType" Name="AssociatedEntities"/>
+        <opc:Field SwitchField="ResultCountersSpecified" TypeName="opc:Int32" Name="NoOfResultCounters"/>
+        <opc:Field LengthField="NoOfResultCounters" SwitchField="ResultCountersSpecified" TypeName="tns:ResultCounterDataType" Name="ResultCounters"/>
+        <opc:Field SwitchField="InterventionTypeSpecified" TypeName="opc:Byte" Name="InterventionType"/>
+        <opc:Field SwitchField="IsGeneratedOfflineSpecified" TypeName="opc:Boolean" Name="IsGeneratedOffline"/>
+        <opc:Field SwitchField="ExtendedMetaDataSpecified" TypeName="opc:Int32" Name="NoOfExtendedMetaData"/>
+        <opc:Field LengthField="NoOfExtendedMetaData" SwitchField="ExtendedMetaDataSpecified" TypeName="tns:KeyValueDataType" Name="ExtendedMetaData"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ResultValueDataType">
+        <opc:Documentation>It is used to report measurement values of the joining operation. Those are meant to characterize the quality of the process. It is used in JoiningResultDataType and StepResultDataType.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ValueIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ValueTagSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="TracePointIndexSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="TracePointTimeOffsetSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ParameterIdListSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ViolationTypeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ViolationConsequenceSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="SensorIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="LowLimitSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="HighLimitSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="TargetValueSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultStepSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PhysicalQuantitySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="EngineeringUnitsSpecified"/>
+        <opc:Field Length="16" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:Double" Name="MeasuredValue"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="ResultEvaluationSpecified" TypeName="ns1:ResultEvaluationEnum" Name="ResultEvaluation"/>
+        <opc:Field SwitchField="ValueIdSpecified" TypeName="opc:CharArray" Name="ValueId"/>
+        <opc:Field SwitchField="ValueTagSpecified" TypeName="opc:Int16" Name="ValueTag"/>
+        <opc:Field SwitchField="TracePointIndexSpecified" TypeName="opc:Int32" Name="TracePointIndex"/>
+        <opc:Field SwitchField="TracePointTimeOffsetSpecified" TypeName="opc:Double" Name="TracePointTimeOffset"/>
+        <opc:Field SwitchField="ParameterIdListSpecified" TypeName="opc:Int32" Name="NoOfParameterIdList"/>
+        <opc:Field LengthField="NoOfParameterIdList" SwitchField="ParameterIdListSpecified" TypeName="opc:CharArray" Name="ParameterIdList"/>
+        <opc:Field SwitchField="ViolationTypeSpecified" TypeName="opc:Byte" Name="ViolationType"/>
+        <opc:Field SwitchField="ViolationConsequenceSpecified" TypeName="opc:Byte" Name="ViolationConsequence"/>
+        <opc:Field SwitchField="SensorIdSpecified" TypeName="opc:CharArray" Name="SensorId"/>
+        <opc:Field SwitchField="LowLimitSpecified" TypeName="opc:Double" Name="LowLimit"/>
+        <opc:Field SwitchField="HighLimitSpecified" TypeName="opc:Double" Name="HighLimit"/>
+        <opc:Field SwitchField="TargetValueSpecified" TypeName="opc:Double" Name="TargetValue"/>
+        <opc:Field SwitchField="ResultStepSpecified" TypeName="opc:CharArray" Name="ResultStep"/>
+        <opc:Field SwitchField="PhysicalQuantitySpecified" TypeName="opc:Byte" Name="PhysicalQuantity"/>
+        <opc:Field SwitchField="EngineeringUnitsSpecified" TypeName="ua:EUInformation" Name="EngineeringUnits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SignalDataType">
+        <opc:Documentation>This structure contains the signal information which is used in SetIOSignals and GetIOSignals methods.</opc:Documentation>
+        <opc:Field TypeName="opc:CharArray" Name="SignalId"/>
+        <opc:Field TypeName="ua:Variant" Name="SignalValue"/>
+        <opc:Field TypeName="opc:CharArray" Name="SignalDescription"/>
+        <opc:Field TypeName="opc:Int16" Name="SignalType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="StepResultDataType">
+        <opc:Documentation>This structure represents the measurement values corresponding to a given step in the program. It is used in JoiningResultDataType.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="ProgramStepIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ProgramStepSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StartTimeOffsetSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StepTraceIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StepResultValuesSpecified"/>
+        <opc:Field Length="25" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="StepResultId"/>
+        <opc:Field SwitchField="ProgramStepIdSpecified" TypeName="opc:CharArray" Name="ProgramStepId"/>
+        <opc:Field SwitchField="ProgramStepSpecified" TypeName="opc:CharArray" Name="ProgramStep"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="ResultEvaluationSpecified" TypeName="ns1:ResultEvaluationEnum" Name="ResultEvaluation"/>
+        <opc:Field SwitchField="StartTimeOffsetSpecified" TypeName="opc:Double" Name="StartTimeOffset"/>
+        <opc:Field SwitchField="StepTraceIdSpecified" TypeName="opc:CharArray" Name="StepTraceId"/>
+        <opc:Field SwitchField="StepResultValuesSpecified" TypeName="opc:Int32" Name="NoOfStepResultValues"/>
+        <opc:Field LengthField="NoOfStepResultValues" SwitchField="StepResultValuesSpecified" TypeName="tns:ResultValueDataType" Name="StepResultValues"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="StepTraceDataType">
+        <opc:Documentation>It is to describe of the trace for a given program step. It is used in JoiningTraceDataType.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="SamplingIntervalSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StartTimeOffsetSpecified"/>
+        <opc:Field Length="30" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="StepTraceId"/>
+        <opc:Field TypeName="opc:CharArray" Name="StepResultId"/>
+        <opc:Field TypeName="opc:UInt32" Name="NumberOfTracePoints"/>
+        <opc:Field SwitchField="SamplingIntervalSpecified" TypeName="opc:Double" Name="SamplingInterval"/>
+        <opc:Field SwitchField="StartTimeOffsetSpecified" TypeName="opc:Double" Name="StartTimeOffset"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfStepTraceContent"/>
+        <opc:Field LengthField="NoOfStepTraceContent" TypeName="tns:TraceContentDataType" Name="StepTraceContent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="TraceContentDataType">
+        <opc:Documentation>It is to describe of the trace samples for a given program step. It is used in StepTraceDataType.</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="SensorIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PhysicalQuantitySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="EngineeringUnitsSpecified"/>
+        <opc:Field Length="27" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfValues"/>
+        <opc:Field LengthField="NoOfValues" TypeName="opc:Double" Name="Values"/>
+        <opc:Field SwitchField="SensorIdSpecified" TypeName="opc:CharArray" Name="SensorId"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field SwitchField="PhysicalQuantitySpecified" TypeName="opc:Byte" Name="PhysicalQuantity"/>
+        <opc:Field SwitchField="EngineeringUnitsSpecified" TypeName="ua:EUInformation" Name="EngineeringUnits"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="TraceDataType">
+        <opc:Documentation>It is a base type to encapsulate common data for a Trace.</opc:Documentation>
+        <opc:Field TypeName="opc:CharArray" Name="TraceId"/>
+        <opc:Field TypeName="opc:CharArray" Name="ResultId"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:TraceDataType" Name="JoiningTraceDataType">
+        <opc:Documentation>This structure is to describe the content of traces for all the steps in the given program. It is used in JoiningResultDataType.</opc:Documentation>
+        <opc:Field SourceType="tns:TraceDataType" TypeName="opc:CharArray" Name="TraceId"/>
+        <opc:Field SourceType="tns:TraceDataType" TypeName="opc:CharArray" Name="ResultId"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfStepTraces"/>
+        <opc:Field LengthField="NoOfStepTraces" TypeName="tns:StepTraceDataType" Name="StepTraces"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>
