@@ -34,7 +34,7 @@
     <Uri>http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/Machinery/Jobs/" Version="1.0.0" PublicationDate="2024-04-01T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/Machinery/Jobs/" Version="1.0.1" PublicationDate="2024-05-01T00:00:00Z" ModelVersion="1.0.1">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.11" PublicationDate="2022-03-29T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/" Version="2.0.0" PublicationDate="2024-01-31T00:00:00Z" />
     </Model>
@@ -70,7 +70,7 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="1yCTmnxZDga6aWfYDubSzA==" Version="1.6.11" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="eQty9nui6pS5LrcfloOi1A==" Version="1.6.11" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3003" BrowseName="1:JobExecutionMode">
@@ -396,8 +396,8 @@
     <DisplayName>BOMComponentInformationDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5005</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">BOMComponentInformationDataType</uax:String>
@@ -407,8 +407,8 @@
     <DisplayName>BOMComponentInformationDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5006</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='BOMComponentInformationDataType']</uax:String>
@@ -436,8 +436,8 @@
     <DisplayName>BOMInformationDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5007</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">BOMInformationDataType</uax:String>
@@ -447,8 +447,8 @@
     <DisplayName>BOMInformationDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5008</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='BOMInformationDataType']</uax:String>
@@ -486,8 +486,8 @@
     <DisplayName>OutputInformationDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5003</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">OutputInformationDataType</uax:String>
@@ -497,8 +497,8 @@
     <DisplayName>OutputInformationDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5004</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='OutputInformationDataType']</uax:String>
@@ -532,8 +532,8 @@
     <DisplayName>OutputPerformanceInfoDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5009</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6015</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">OutputPerformanceInfoDataType</uax:String>
@@ -543,8 +543,8 @@
     <DisplayName>OutputPerformanceInfoDataType</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
       <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5010</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
     </References>
     <Value>
       <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='OutputPerformanceInfoDataType']</uax:String>
@@ -811,34 +811,34 @@
   <UAObject NodeId="ns=1;i=5001" BrowseName="1:JobOrderControl" ParentNodeId="ns=1;i=1003">
     <DisplayName>JobOrderControl</DisplayName>
     <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6001</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6002</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6003</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6006</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6009" BrowseName="CurrentState" ParentNodeId="ns=1;i=5001" DataType="LocalizedText">
     <DisplayName>CurrentState</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2760</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6010" BrowseName="Id" ParentNodeId="ns=1;i=6009" DataType="NodeId">
     <DisplayName>Id</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6009</Reference>
     </References>
   </UAVariable>
@@ -846,8 +846,8 @@
     <DisplayName>EquipmentID</DisplayName>
     <Description>Defines a read-only set of Equipment Class IDs and Equipment IDs that may be specified in a job order.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -855,8 +855,8 @@
     <DisplayName>JobOrderList</DisplayName>
     <Description>Defines a read-only list of job order information available from the server.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -864,8 +864,8 @@
     <DisplayName>MaterialClassID</DisplayName>
     <Description>Defines a read-only set of Material Classes IDs that may be specified in a job order.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -873,16 +873,16 @@
     <DisplayName>MaterialDefinitionID</DisplayName>
     <Description>Defines a read-only set of Material Classes IDs that may be specified in a job order.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6005" BrowseName="2:MaxDownloadableJobOrders" ParentNodeId="ns=1;i=5001" DataType="UInt16">
     <DisplayName>MaxDownloadableJobOrders</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -890,8 +890,8 @@
     <DisplayName>PersonnelID</DisplayName>
     <Description>Defines a read-only set of Personnel IDs and Person IDs that may be specified in a job order.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -899,8 +899,8 @@
     <DisplayName>PhysicalAssetID</DisplayName>
     <Description>Defines a read-only set of Physical Asset Class IDs and Physical Asset IDs that may be specified in a job order.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -908,8 +908,8 @@
     <DisplayName>WorkMaster</DisplayName>
     <Description>Defines a read-only set of work master IDs that may be specified in a job order, and the read-only set of parameters that may be specified for a specific work master.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAVariable>
@@ -918,12 +918,13 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="ns=1;i=7001" BrowseName="2:RequestJobResponse" ParentNodeId="ns=1;i=5002">
-    <DisplayName>RequestJobResponse</DisplayName>
+  <UAMethod NodeId="ns=1;i=7001" BrowseName="2:RequestJobResponseByJobOrderID" ParentNodeId="ns=1;i=5002" MethodDeclarationId="ns=2;i=7002">
+    <DisplayName>RequestJobResponseByJobOrderID</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
@@ -931,7 +932,7 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
     </References>
   </UAMethod>
-  <UAVariable NodeId="ns=1;i=6011" BrowseName="InputArguments" ParentNodeId="ns=1;i=7001" DataType="Argument" ValueRank="1" ArrayDimensions="2">
+  <UAVariable NodeId="ns=1;i=6011" BrowseName="InputArguments" ParentNodeId="ns=1;i=7001" DataType="Argument" ValueRank="1" ArrayDimensions="1">
     <DisplayName>InputArguments</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -952,26 +953,6 @@
                             </uax:DataType>
                             <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions />
-                            <uax:Description>
-                                <uax:Text>Contains an ID of the job order, as specified by the method caller.</uax:Text>
-                            </uax:Description>
-                        </uax:Argument>
-                    </uax:Body>
-                </uax:ExtensionObject>
-                <uax:ExtensionObject>
-                    <uax:TypeId>
-                        <uax:Identifier>i=297</uax:Identifier>
-                    </uax:TypeId>
-                    <uax:Body>
-                        <uax:Argument>
-                            <uax:Name>JobOrderState</uax:Name>
-                            <uax:DataType>
-                                <uax:Identifier>ns=2;i=3006</uax:Identifier>
-                            </uax:DataType>
-                            <uax:ValueRank>1</uax:ValueRank>
-                            <uax:ArrayDimensions>
-                                <uax:UInt32>0</uax:UInt32>
-                            </uax:ArrayDimensions>
                             <uax:Description>
                                 <uax:Text>Contains an ID of the job order, as specified by the method caller.</uax:Text>
                             </uax:Description>
@@ -1000,12 +981,101 @@
                             <uax:DataType>
                                 <uax:Identifier>ns=2;i=3013</uax:Identifier>
                             </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Contains information about the execution of a job order, such as the current status of the job, actual material consumed, actual material produced, actual equipment used, and job specific data.</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ReturnStatus</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=9</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Returns the status of the method execution.</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=7002" BrowseName="2:RequestJobResponseByJobOrderState" ParentNodeId="ns=1;i=5002" MethodDeclarationId="ns=2;i=7014">
+    <DisplayName>RequestJobResponseByJobOrderState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6037</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=6037" BrowseName="InputArguments" ParentNodeId="ns=1;i=7002" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7002</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>JobOrderState</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=2;i=3006</uax:Identifier>
+                            </uax:DataType>
                             <uax:ValueRank>1</uax:ValueRank>
                             <uax:ArrayDimensions>
                                 <uax:UInt32>0</uax:UInt32>
                             </uax:ArrayDimensions>
                             <uax:Description>
-                                <uax:Text>Contains information about the execution of a job order, such as the current status of the job, actual material consumed, actual material produced, actual equipment used, and job specific data.</uax:Text>
+                                <uax:Text>Contains a job status of the JobResponse to be returned. The array shall provide at least one entry representing the top level state and potentially additional entries representing substates. The first entry shall be the top level entry, having the BrowsePath set to null. The order of the substates is not defined.</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6038" BrowseName="OutputArguments" ParentNodeId="ns=1;i=7002" DataType="Argument" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7002</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>JobResponses</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=2;i=3013</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ArrayDimensions>
+                                <uax:UInt32>0</uax:UInt32>
+                            </uax:ArrayDimensions>
+                            <uax:Description>
+                                <uax:Text>Contains a list of information about the execution of a job order, such as the current status of the job, actual material consumed, actual material produced, actual equipment used, and job specific data. </uax:Text>
                             </uax:Description>
                         </uax:Argument>
                     </uax:Body>
@@ -1035,8 +1105,8 @@
     <DisplayName>http://opcfoundation.org/UA/Machinery/Jobs/</DisplayName>
     <Documentation>https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/11.1</Documentation>
     <References>
-      <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
@@ -1063,7 +1133,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-04-01T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-05-01T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6031" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5011" DataType="String">
@@ -1083,7 +1153,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.1</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6033" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5011" DataType="IdType" ValueRank="1" ArrayDimensions="0">
