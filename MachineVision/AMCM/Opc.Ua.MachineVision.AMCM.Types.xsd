@@ -1,0 +1,32 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/MachineVision/AMCM/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/MachineVision/AMCM/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:complexType name="SEMI_E10SystemStateDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Id"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Priority"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:SEMI_E10SystemStateDataType" name="SEMI_E10SystemStateDataType"/>
+    <xs:complexType name="ListOfSEMI_E10SystemStateDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SEMI_E10SystemStateDataType" name="SEMI_E10SystemStateDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSEMI_E10SystemStateDataType" name="ListOfSEMI_E10SystemStateDataType" nillable="true"/>
+    <xs:complexType name="SEMI_E10SystemStateInfoDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Id"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ParentStateId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Description"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:SEMI_E10SystemStateInfoDataType" name="SEMI_E10SystemStateInfoDataType"/>
+    <xs:complexType name="ListOfSEMI_E10SystemStateInfoDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SEMI_E10SystemStateInfoDataType" name="SEMI_E10SystemStateInfoDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSEMI_E10SystemStateInfoDataType" name="ListOfSEMI_E10SystemStateInfoDataType" nillable="true"/>
+</xs:schema>

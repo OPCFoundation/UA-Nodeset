@@ -1,0 +1,15 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/MachineVision/AMCM/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/MachineVision/AMCM/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SEMI_E10SystemStateDataType">
+        <opc:Field TypeName="opc:Bit" Name="PrioritySpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:UInt32" Name="Id"/>
+        <opc:Field SwitchField="PrioritySpecified" TypeName="opc:UInt32" Name="Priority"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SEMI_E10SystemStateInfoDataType">
+        <opc:Field TypeName="opc:UInt32" Name="Id"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="Name"/>
+        <opc:Field TypeName="opc:UInt32" Name="ParentStateId"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="Description"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>
