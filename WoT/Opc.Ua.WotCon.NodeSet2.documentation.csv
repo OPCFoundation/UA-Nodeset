@@ -1,0 +1,11 @@
+Id,Name,Link,ConformanceUnits
+1,WoTAssetConnectionManagementType,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.1/#6.3.1.1","WoT Connectivity Base Functionality;"
+26,CreateAsset,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.1/#6.3.1.2",""
+29,DeleteAsset,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.1/#6.3.1.3",""
+31,WoTAssetConnectionManagement,"https://reference.opcfoundation.org/WoT/v100/docs/6.2","WoT Connectivity Base Functionality;"
+42,IWoTAssetType,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.2","WoT Connectivity Base Functionality;"
+67,http://opcfoundation.org/UA/WoT-Con/,"https://reference.opcfoundation.org/WoT/v100/docs/8.1",""
+110,WoTAssetFileType,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.3/#6.3.3.1","WoT Connectivity Base Functionality;"
+111,CloseAndUpdate,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.3/#6.3.3.2",""
+115,WoTAssetType,"","WoT Connectivity Base Functionality;"
+142,HasWoTComponent,"https://reference.opcfoundation.org/WoT/v100/docs/6.3.4","WoT Connectivity Base Functionality;"
