@@ -12292,7 +12292,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-05-17</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-05-17T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6018" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5005" DataType="String">
