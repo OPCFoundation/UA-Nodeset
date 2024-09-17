@@ -1,0 +1,17 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/CuttingTool/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/CuttingTool/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:complexType name="FileFormatDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="FileExtension"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:FileFormatDataType" name="FileFormatDataType"/>
+    <xs:complexType name="ListOfFileFormatDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FileFormatDataType" name="FileFormatDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFileFormatDataType" name="ListOfFileFormatDataType" nillable="true"/>
+</xs:schema>

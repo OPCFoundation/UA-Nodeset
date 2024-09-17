@@ -1,0 +1,6 @@
+Id,Name,Link,ConformanceUnits
+1003,CuttingToolFileType,"https://reference.opcfoundation.org/CuttingTool/v100/docs/7.3","CuttingTool CuttingToolFileType;"
+1021,ToolMeasuringMachineType,"https://reference.opcfoundation.org/CuttingTool/v100/docs/7.2","CuttingTool ToolMeasuringMachineType;CuttingTool FileSystem ToolMeasuringMachine;"
+1025,ToolManufacturingMachineType,"https://reference.opcfoundation.org/CuttingTool/v100/docs/7.1","CuttingTool ToolManufacturingMachineType;CuttingTool FileSystem ToolManufacturingMachine;"
+3003,FileFormatDataType,"https://reference.opcfoundation.org/CuttingTool/v100/docs/9.1","CuttingTool CuttingToolFileType;"
+5016,http://opcfoundation.org/UA/CuttingTool/,"https://reference.opcfoundation.org/CuttingTool/v100/docs/11.1",""
