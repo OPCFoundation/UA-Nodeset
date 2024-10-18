@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet LastModified="2024-07-19T12:15:08.281Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://opcfoundation.org/UA/FX/Data/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:s2="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:s3="http://opcfoundation.org/UA/FX/Data/Types.xsd" xmlns:s4="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:s5="http://opcfoundation.org/UA/FX/Data/Types.xsd">
+    <NamespaceUris>
+        <Uri>http://opcfoundation.org/UA/Dictionary/IRDI</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://opcfoundation.org/UA/Dictionary/IRDI" PublicationDate="2024-07-11T15:02:44Z" Version="1.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2023-12-15T00:00:00Z" Version="1.05.03"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="IdType">i=256</Alias>
+        <Alias Alias="NumericRange">i=291</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <si:Generator Product="SiOME" Edition="Standard" Version="2.8.0"/>
+        </Extension>
+        <Extension>
+            <si:GeneratorExtension Hash="d1e5d13737f9ea3560012c0661f9e907"/>
+        </Extension>
+    </Extensions>
+    <UAObject SymbolicName="S0112_2___62683_ACE205" NodeId="ns=1;s=0112/2///62683#ACE205" BrowseName="1:0112/2///62683#ACE205" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE205</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE205?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE211" NodeId="ns=1;s=0112/2///62683#ACE211" BrowseName="1:0112/2///62683#ACE211" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE211</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/31e92f162b155bacc12584ec006dc0c7?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE212" NodeId="ns=1;s=0112/2///62683#ACE212" BrowseName="1:0112/2///62683#ACE212" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE212</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/a02d64bb3c486fc5c12584ec0072daa1?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE213" NodeId="ns=1;s=0112/2///62683#ACE213" BrowseName="1:0112/2///62683#ACE213" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE213</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/64d71f60dd183864c12584ec006dc0c9?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE220" NodeId="ns=1;s=0112/2///62683#ACE220" BrowseName="1:0112/2///62683#ACE220" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE220</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE220?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE221" NodeId="ns=1;s=0112/2///62683#ACE221" BrowseName="1:0112/2///62683#ACE221" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE221</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE221?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE222" NodeId="ns=1;s=0112/2///62683#ACE222" BrowseName="1:0112/2///62683#ACE222" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE222</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE222?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE223" NodeId="ns=1;s=0112/2///62683#ACE223" BrowseName="1:0112/2///62683#ACE223" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE223</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE223?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE224" NodeId="ns=1;s=0112/2///62683#ACE224" BrowseName="1:0112/2///62683#ACE224" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE224</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE224?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE225" NodeId="ns=1;s=0112/2///62683#ACE225" BrowseName="1:0112/2///62683#ACE225" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE225</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE225?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE227" NodeId="ns=1;s=0112/2///62683#ACE227" BrowseName="1:0112/2///62683#ACE227" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE227</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE227?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE301" NodeId="ns=1;s=0112/2///62683#ACE301" BrowseName="1:0112/2///62683#ACE301" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE301</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE301?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE302" NodeId="ns=1;s=0112/2///62683#ACE302" BrowseName="1:0112/2///62683#ACE302" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE302</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE302?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE303" NodeId="ns=1;s=0112/2///62683#ACE303" BrowseName="1:0112/2///62683#ACE303" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE303</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE303?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE331" NodeId="ns=1;s=0112/2///62683#ACE331" BrowseName="1:0112/2///62683#ACE331" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE331</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE331?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE332" NodeId="ns=1;s=0112/2///62683#ACE332" BrowseName="1:0112/2///62683#ACE332" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE332</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE332?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE333" NodeId="ns=1;s=0112/2///62683#ACE333" BrowseName="1:0112/2///62683#ACE333" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE333</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE333?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE334" NodeId="ns=1;s=0112/2///62683#ACE334" BrowseName="1:0112/2///62683#ACE334" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE334</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE334?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE362" NodeId="ns=1;s=0112/2///62683#ACE362" BrowseName="1:0112/2///62683#ACE362" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE362</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE362?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE404" NodeId="ns=1;s=0112/2///62683#ACE404" BrowseName="1:0112/2///62683#ACE404" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE404</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/573866ad1fb87b53c12584ec006dc0f8?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE430" NodeId="ns=1;s=0112/2///62683#ACE430" BrowseName="1:0112/2///62683#ACE430" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE430</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/4eaf142fe1208e35c12584ec0072daaf?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE434" NodeId="ns=1;s=0112/2///62683#ACE434" BrowseName="1:0112/2///62683#ACE434" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE434</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/f83b32bbc23f405ec12584ec006dc10d?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE455" NodeId="ns=1;s=0112/2///62683#ACE455" BrowseName="1:0112/2///62683#ACE455" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE455</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/5f95718807050104c12586620036ddbb?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE457" NodeId="ns=1;s=0112/2///62683#ACE457" BrowseName="1:0112/2///62683#ACE457" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE457</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/34c337e8a6765f5ec12584ec006dc117?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE508" NodeId="ns=1;s=0112/2///62683#ACE508" BrowseName="1:0112/2///62683#ACE508" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE508</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/9a5d7519b8581692c12584ec006dc133?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE511" NodeId="ns=1;s=0112/2///62683#ACE511" BrowseName="1:0112/2///62683#ACE511" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE511</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/1949a3267486007fc12584ec006dc136?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE602" NodeId="ns=1;s=0112/2///62683#ACE602" BrowseName="1:0112/2///62683#ACE602" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE602</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/157e328f0a7c0012c12584ec006dc147?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE741" NodeId="ns=1;s=0112/2///62683#ACE741" BrowseName="1:0112/2///62683#ACE741" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE741</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/e0e56d2682a34311c12575560058dc1c/73958e454b83bc10c12584ec006dc177?OpenDocument&amp;Highlight=0,0112%2F2%2F%2F%2F62683</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACE749" NodeId="ns=1;s=0112/2///62683#ACE749" BrowseName="1:0112/2///62683#ACE749" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACE749</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/PropertiesAllVersions/0112-2---62683%23ACE749?OpenDocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH005" NodeId="ns=1;s=0112/2///62683#ACH005" BrowseName="1:0112/2///62683#ACH005" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH005</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH005?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH006" NodeId="ns=1;s=0112/2///62683#ACH006" BrowseName="1:0112/2///62683#ACH006" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH006</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH006?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH020" NodeId="ns=1;s=0112/2///62683#ACH020" BrowseName="1:0112/2///62683#ACH020" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH020</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH020?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH021" NodeId="ns=1;s=0112/2///62683#ACH021" BrowseName="1:0112/2///62683#ACH021" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH021</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH021?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH022" NodeId="ns=1;s=0112/2///62683#ACH022" BrowseName="1:0112/2///62683#ACH022" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH022</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH022?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH023" NodeId="ns=1;s=0112/2///62683#ACH023" BrowseName="1:0112/2///62683#ACH023" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH023</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH023?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH024" NodeId="ns=1;s=0112/2///62683#ACH024" BrowseName="1:0112/2///62683#ACH024" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH024</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH024?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH025" NodeId="ns=1;s=0112/2///62683#ACH025" BrowseName="1:0112/2///62683#ACH025" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH025</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH025?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH026" NodeId="ns=1;s=0112/2///62683#ACH026" BrowseName="1:0112/2///62683#ACH026" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH026</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH026?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH027" NodeId="ns=1;s=0112/2///62683#ACH027" BrowseName="1:0112/2///62683#ACH027" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH027</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH027?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH028" NodeId="ns=1;s=0112/2///62683#ACH028" BrowseName="1:0112/2///62683#ACH028" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH028</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH028?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH029" NodeId="ns=1;s=0112/2///62683#ACH029" BrowseName="1:0112/2///62683#ACH029" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH029</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH029?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH030" NodeId="ns=1;s=0112/2///62683#ACH030" BrowseName="1:0112/2///62683#ACH030" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH030</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH030?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH031" NodeId="ns=1;s=0112/2///62683#ACH031" BrowseName="1:0112/2///62683#ACH031" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH031</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH031?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH318" NodeId="ns=1;s=0112/2///62683#ACH318" BrowseName="1:0112/2///62683#ACH318" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH318</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/0/961E73D111CFD740C12584EC0073A5FB</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH319" NodeId="ns=1;s=0112/2///62683#ACH319" BrowseName="1:0112/2///62683#ACH319" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH319</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/0/AB888833FF601A5DC12584EC00740670</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH471_001" NodeId="ns=1;s=0112/2///62683#ACH471#001" BrowseName="1:0112/2///62683#ACH471#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH471#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH471?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH472_001" NodeId="ns=1;s=0112/2///62683#ACH472#001" BrowseName="1:0112/2///62683#ACH472#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH472#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH472?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH473_001" NodeId="ns=1;s=0112/2///62683#ACH473#001" BrowseName="1:0112/2///62683#ACH473#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH473#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH473?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH474_001" NodeId="ns=1;s=0112/2///62683#ACH474#001" BrowseName="1:0112/2///62683#ACH474#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH474#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH474?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH505_001" NodeId="ns=1;s=0112/2///62683#ACH505#001" BrowseName="1:0112/2///62683#ACH505#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH505#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH505?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH506_001" NodeId="ns=1;s=0112/2///62683#ACH506#001" BrowseName="1:0112/2///62683#ACH506#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH506#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH506?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH507_001" NodeId="ns=1;s=0112/2///62683#ACH507#001" BrowseName="1:0112/2///62683#ACH507#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH507#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH507?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH508_001" NodeId="ns=1;s=0112/2///62683#ACH508#001" BrowseName="1:0112/2///62683#ACH508#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH508#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH508?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH569_001" NodeId="ns=1;s=0112/2///62683#ACH569#001" BrowseName="1:0112/2///62683#ACH569#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH569#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH569?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH649_001" NodeId="ns=1;s=0112/2///62683#ACH649#001" BrowseName="1:0112/2///62683#ACH649#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH649#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH649?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH652_001" NodeId="ns=1;s=0112/2///62683#ACH652#001" BrowseName="1:0112/2///62683#ACH652#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH652#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/TerminologiesAllVersions/0112-2---62683%23ACH652?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH653_001" NodeId="ns=1;s=0112/2///62683#ACH653#001" BrowseName="1:0112/2///62683#ACH653#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH653#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH653?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH654_001" NodeId="ns=1;s=0112/2///62683#ACH654#001" BrowseName="1:0112/2///62683#ACH654#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH654#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/TerminologiesAllVersions/0112-2---62683%23ACH654?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH657_001" NodeId="ns=1;s=0112/2///62683#ACH657#001" BrowseName="1:0112/2///62683#ACH657#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH657#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH657?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH661_001" NodeId="ns=1;s=0112/2///62683#ACH661#001" BrowseName="1:0112/2///62683#ACH661#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH661#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH661?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH662_001" NodeId="ns=1;s=0112/2///62683#ACH662#001" BrowseName="1:0112/2///62683#ACH662#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH662#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH662?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH663_001" NodeId="ns=1;s=0112/2///62683#ACH663#001" BrowseName="1:0112/2///62683#ACH663#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH663#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH663?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH666_001" NodeId="ns=1;s=0112/2///62683#ACH666#001" BrowseName="1:0112/2///62683#ACH666#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH666#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH666?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="S0112_2___62683_ACH669_001" NodeId="ns=1;s=0112/2///62683#ACH669#001" BrowseName="1:0112/2///62683#ACH669#001" ParentNodeId="i=17594">
+        <DisplayName>0112/2///62683#ACH669#001</DisplayName>
+        <Description>https://cdd.iec.ch/cdd/iec62683/iec62683.nsf/Terminologies/0112-2---62683%23ACH669?opendocument</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=17594</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="http___yourorganisation_org_PowerTrainDictionary_NodeSet2_" NodeId="ns=1;i=5001" BrowseName="1:http://opcfoundation.org/UA/Dictionary/IRDI" ParentNodeId="i=11715">
+        <DisplayName>http://opcfoundation.org/UA/Dictionary/IRDI</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=6001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5001">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=6002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=5001">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-07-11T15:02:44Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5001">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://opcfoundation.org/UA/Dictionary/IRDI</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6004" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=5001">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.0.0</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ValueRank="1" NodeId="ns=1;i=6005" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5001">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ValueRank="1" NodeId="ns=1;i=6006" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5001">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=5001">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>

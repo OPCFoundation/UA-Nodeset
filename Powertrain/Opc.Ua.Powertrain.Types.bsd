@@ -1,0 +1,320 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/Powertrain/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/Powertrain/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:EnumeratedType LengthInBits="32" Name="AnalogInterfaceTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="VOLTAGE_0_10V" Value="1"/>
+        <opc:EnumeratedValue Name="CURRENT_0_20MA" Value="2"/>
+        <opc:EnumeratedValue Name="TEMPERATURE_PT1000" Value="3"/>
+        <opc:EnumeratedValue Name="CONFIGURABLE" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BrakeTurnOffTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="AC" Value="1"/>
+        <opc:EnumeratedValue Name="DC" Value="2"/>
+        <opc:EnumeratedValue Name="AC_DC" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="BrakeTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="MAGNETIC" Value="1"/>
+        <opc:EnumeratedValue Name="SPRING" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ContactorTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="ELECTROMECHANICAL_CONTACTOR" Value="1"/>
+        <opc:EnumeratedValue Name="SEMICONDUCTOR_CONTACTOR" Value="2"/>
+        <opc:EnumeratedValue Name="VACUUM_CONTACTOR" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CoolingMethodEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="AIR_COOLED_STATIC" Value="1"/>
+        <opc:EnumeratedValue Name="AIR_COOLED_FORCED" Value="2"/>
+        <opc:EnumeratedValue Name="LIQUID_COOLED" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="DigitalInterfaceTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="TTL" Value="1"/>
+        <opc:EnumeratedValue Name="HTL" Value="2"/>
+        <opc:EnumeratedValue Name="PNP" Value="3"/>
+        <opc:EnumeratedValue Name="NPN" Value="4"/>
+        <opc:EnumeratedValue Name="CONFIGURABLE" Value="5"/>
+        <opc:EnumeratedValue Name="PULSE TRAIN" Value="6"/>
+        <opc:EnumeratedValue Name="RELAY" Value="7"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="DutyTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="S1" Value="1"/>
+        <opc:EnumeratedValue Name="S2" Value="2"/>
+        <opc:EnumeratedValue Name="S3" Value="3"/>
+        <opc:EnumeratedValue Name="S4" Value="4"/>
+        <opc:EnumeratedValue Name="S5" Value="5"/>
+        <opc:EnumeratedValue Name="S6" Value="6"/>
+        <opc:EnumeratedValue Name="S7" Value="7"/>
+        <opc:EnumeratedValue Name="S8" Value="8"/>
+        <opc:EnumeratedValue Name="S9" Value="9"/>
+        <opc:EnumeratedValue Name="S10" Value="10"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EfficiencyClassEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="IE0" Value="1"/>
+        <opc:EnumeratedValue Name="IE1" Value="2"/>
+        <opc:EnumeratedValue Name="IE2" Value="3"/>
+        <opc:EnumeratedValue Name="IES0" Value="4"/>
+        <opc:EnumeratedValue Name="IES1" Value="5"/>
+        <opc:EnumeratedValue Name="IES2" Value="6"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderFlangeTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="CONTACTLESS" Value="1"/>
+        <opc:EnumeratedValue Name="SYNCHRO" Value="2"/>
+        <opc:EnumeratedValue Name="CLAMPING" Value="3"/>
+        <opc:EnumeratedValue Name="HOLLOW_SHAFT" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderProtocolEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="BISS_C" Value="1"/>
+        <opc:EnumeratedValue Name="ENDAT2.1" Value="2"/>
+        <opc:EnumeratedValue Name="ENDAT2.2" Value="3"/>
+        <opc:EnumeratedValue Name="HIPERFACE" Value="4"/>
+        <opc:EnumeratedValue Name="HIPERFACE_DSL" Value="5"/>
+        <opc:EnumeratedValue Name="SSI_BINARY" Value="6"/>
+        <opc:EnumeratedValue Name="SSI_GRAY_CODE" Value="7"/>
+        <opc:EnumeratedValue Name="SINCOS_1VSS" Value="8"/>
+        <opc:EnumeratedValue Name="SCS_OPEN_LINK" Value="9"/>
+        <opc:EnumeratedValue Name="DRIVECLIQ" Value="10"/>
+        <opc:EnumeratedValue Name="BISS_LINE" Value="11"/>
+        <opc:EnumeratedValue Name="FANUC_37BIT_SERIAL_COMM" Value="12"/>
+        <opc:EnumeratedValue Name="MITSUBISHI_40BIT_SERIAL_COMM" Value="13"/>
+        <opc:EnumeratedValue Name="OMRON/PANASONIC_48BIT_SERIAL_COMM" Value="14"/>
+        <opc:EnumeratedValue Name="YASKAWA_36BIT_SERIAL_COMM" Value="15"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderSignalEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="RS422_5V_TTL" Value="1"/>
+        <opc:EnumeratedValue Name="RS422_5..30V" Value="2"/>
+        <opc:EnumeratedValue Name="SINCOS_1VPP" Value="3"/>
+        <opc:EnumeratedValue Name="RESOLVER" Value="4"/>
+        <opc:EnumeratedValue Name="HTL_PUSH-PULL" Value="5"/>
+        <opc:EnumeratedValue Name="RS485" Value="6"/>
+        <opc:EnumeratedValue Name="RS485_SINCOS" Value="7"/>
+        <opc:EnumeratedValue Name="RS485_HTL" Value="8"/>
+        <opc:EnumeratedValue Name="RS485_TTL" Value="9"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="EncoderTechnologyEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="OPTICAL" Value="1"/>
+        <opc:EnumeratedValue Name="MAGNETIC" Value="2"/>
+        <opc:EnumeratedValue Name="INDUCTIVE" Value="3"/>
+        <opc:EnumeratedValue Name="CAPACITIVE" Value="4"/>
+        <opc:EnumeratedValue Name="LINEAR" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FieldbusProtocolCategoryEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="ETHERCAT" Value="1"/>
+        <opc:EnumeratedValue Name="PROFINET" Value="2"/>
+        <opc:EnumeratedValue Name="ETHERNET_IP" Value="3"/>
+        <opc:EnumeratedValue Name="PROFIBUS" Value="4"/>
+        <opc:EnumeratedValue Name="SERCOS" Value="5"/>
+        <opc:EnumeratedValue Name="CC_LINK" Value="6"/>
+        <opc:EnumeratedValue Name="CANOPEN" Value="7"/>
+        <opc:EnumeratedValue Name="IO_LINK" Value="8"/>
+        <opc:EnumeratedValue Name="MODBUS" Value="9"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FieldbusProtocolSubCategoryEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="PROFIBUS_DP" Value="1"/>
+        <opc:EnumeratedValue Name="PROFIBUS_PA" Value="2"/>
+        <opc:EnumeratedValue Name="MODBUS_TCP" Value="3"/>
+        <opc:EnumeratedValue Name="MODBUS_RTU" Value="4"/>
+        <opc:EnumeratedValue Name="FOUNDATION_FIELDBUS_HSE" Value="5"/>
+        <opc:EnumeratedValue Name="SERCOS_III_SERCOS_II" Value="6"/>
+        <opc:EnumeratedValue Name="PROFINET_RT" Value="7"/>
+        <opc:EnumeratedValue Name="PROFINET_IRT" Value="8"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FunctionalSafetyCategoryEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="CAT_B" Value="1"/>
+        <opc:EnumeratedValue Name="CAT_1" Value="2"/>
+        <opc:EnumeratedValue Name="CAT_2" Value="3"/>
+        <opc:EnumeratedValue Name="CAT_3" Value="4"/>
+        <opc:EnumeratedValue Name="CAT_4" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FunctionalSafetyPerformanceLevelEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="PLA" Value="1"/>
+        <opc:EnumeratedValue Name="PLB" Value="2"/>
+        <opc:EnumeratedValue Name="PLC" Value="3"/>
+        <opc:EnumeratedValue Name="PLD" Value="4"/>
+        <opc:EnumeratedValue Name="PLE" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FunctionalSafetySilLevelEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="SIL1" Value="1"/>
+        <opc:EnumeratedValue Name="SIL2" Value="2"/>
+        <opc:EnumeratedValue Name="SIL3" Value="3"/>
+        <opc:EnumeratedValue Name="SIL4" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FuseElementSpeedMarkingEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="FF" Value="1"/>
+        <opc:EnumeratedValue Name="F" Value="2"/>
+        <opc:EnumeratedValue Name="M" Value="3"/>
+        <opc:EnumeratedValue Name="T" Value="4"/>
+        <opc:EnumeratedValue Name="TT" Value="5"/>
+        <opc:EnumeratedValue Name="AR" Value="6"/>
+        <opc:EnumeratedValue Name="GR" Value="7"/>
+        <opc:EnumeratedValue Name="GS" Value="8"/>
+        <opc:EnumeratedValue Name="GRL" Value="9"/>
+        <opc:EnumeratedValue Name="GG" Value="10"/>
+        <opc:EnumeratedValue Name="GL" Value="11"/>
+        <opc:EnumeratedValue Name="GF" Value="12"/>
+        <opc:EnumeratedValue Name="AM" Value="13"/>
+        <opc:EnumeratedValue Name="GM" Value="14"/>
+        <opc:EnumeratedValue Name="GPV" Value="15"/>
+        <opc:EnumeratedValue Name="GB" Value="16"/>
+        <opc:EnumeratedValue Name="GTr" Value="17"/>
+        <opc:EnumeratedValue Name="GN" Value="18"/>
+        <opc:EnumeratedValue Name="GD" Value="19"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GearRatioEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="FIXED" Value="1"/>
+        <opc:EnumeratedValue Name="MANUAL_VARIABLE" Value="2"/>
+        <opc:EnumeratedValue Name="AUTOMATIC_VARIABLE" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GearTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="PLANETARY_GEAR" Value="1"/>
+        <opc:EnumeratedValue Name="WORM_GEAR" Value="2"/>
+        <opc:EnumeratedValue Name="SPUR_GEAR" Value="3"/>
+        <opc:EnumeratedValue Name="HARMONIC_DRIVE_GEAR" Value="4"/>
+        <opc:EnumeratedValue Name="SYNCHRONOUS_BELT" Value="5"/>
+        <opc:EnumeratedValue Name="V_BELT" Value="6"/>
+        <opc:EnumeratedValue Name="RACK_AND_PINION" Value="7"/>
+        <opc:EnumeratedValue Name="SPINDLE_BALLSCREW" Value="8"/>
+        <opc:EnumeratedValue Name="SPINDLE_THREAD" Value="9"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="InputConverterEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="AC/DC_PASSIVE" Value="1"/>
+        <opc:EnumeratedValue Name="AC/DC_ACTIVE" Value="2"/>
+        <opc:EnumeratedValue Name="DC/DC" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LineFilterEmcCategoryEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="CATEGORY_C1" Value="1"/>
+        <opc:EnumeratedValue Name="CATEGORY_C2" Value="2"/>
+        <opc:EnumeratedValue Name="CATEGORY_C3" Value="3"/>
+        <opc:EnumeratedValue Name="CATEGORY_C4" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LineFilterEmcClassEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="CLASS_A" Value="1"/>
+        <opc:EnumeratedValue Name="CLASS_B" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LineFilterEmcGroupEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="GROUP_1" Value="1"/>
+        <opc:EnumeratedValue Name="GROUP_2" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LubricantTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="ISO_VG_2" Value="1"/>
+        <opc:EnumeratedValue Name="ISO_VG_3" Value="2"/>
+        <opc:EnumeratedValue Name="ISO_VG_5" Value="3"/>
+        <opc:EnumeratedValue Name="ISO_VG_7" Value="4"/>
+        <opc:EnumeratedValue Name="ISO_VG_10" Value="5"/>
+        <opc:EnumeratedValue Name="ISO_VG_15" Value="6"/>
+        <opc:EnumeratedValue Name="ISO_VG_22" Value="7"/>
+        <opc:EnumeratedValue Name="ISO_VG_32" Value="8"/>
+        <opc:EnumeratedValue Name="ISO_VG_46" Value="9"/>
+        <opc:EnumeratedValue Name="ISO_VG_68" Value="10"/>
+        <opc:EnumeratedValue Name="ISO_VG_100" Value="11"/>
+        <opc:EnumeratedValue Name="ISO_VG_150" Value="12"/>
+        <opc:EnumeratedValue Name="ISO_VG_220" Value="13"/>
+        <opc:EnumeratedValue Name="ISO_VG_320" Value="14"/>
+        <opc:EnumeratedValue Name="ISO_VG_460" Value="15"/>
+        <opc:EnumeratedValue Name="ISO_VG_680" Value="16"/>
+        <opc:EnumeratedValue Name="ISO_VG_1000" Value="17"/>
+        <opc:EnumeratedValue Name="ISO_VG_1500" Value="18"/>
+        <opc:EnumeratedValue Name="NLGI_000" Value="19"/>
+        <opc:EnumeratedValue Name="NLGI_00" Value="20"/>
+        <opc:EnumeratedValue Name="NLGI_0" Value="21"/>
+        <opc:EnumeratedValue Name="NLGI_1" Value="22"/>
+        <opc:EnumeratedValue Name="NLGI_2" Value="23"/>
+        <opc:EnumeratedValue Name="NLGI_3" Value="24"/>
+        <opc:EnumeratedValue Name="NLGI_4" Value="25"/>
+        <opc:EnumeratedValue Name="NLGI_5" Value="26"/>
+        <opc:EnumeratedValue Name="NLGI_6" Value="27"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MotorProtectionTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="OVERLOAD_PROTECTION" Value="1"/>
+        <opc:EnumeratedValue Name="UNDERVOLTAGE_PROTECTION" Value="2"/>
+        <opc:EnumeratedValue Name="OVERVOLTAGE_PROTECTION" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MotorStarterSwitchingTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="MECHANICAL_SWITCHING" Value="1"/>
+        <opc:EnumeratedValue Name="ELECTRONIC_SWITCHING" Value="2"/>
+        <opc:EnumeratedValue Name="HYBRID_SWITCHING" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MotorStarterTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="DIRECT_ONLINE_STARTER" Value="1"/>
+        <opc:EnumeratedValue Name="STAR_DELTA_STARTER" Value="2"/>
+        <opc:EnumeratedValue Name="REVERSING_STARTER" Value="3"/>
+        <opc:EnumeratedValue Name="TWO_STEP_STARTER" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MotorTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="ASYNCHRONOUS" Value="1"/>
+        <opc:EnumeratedValue Name="PM_AC_SYNCHRONOUS" Value="2"/>
+        <opc:EnumeratedValue Name="DC_BRUSHLESS" Value="3"/>
+        <opc:EnumeratedValue Name="DC_BRUSHED" Value="4"/>
+        <opc:EnumeratedValue Name="PM_STEPPER" Value="5"/>
+        <opc:EnumeratedValue Name="HYBRID_STEPPER" Value="6"/>
+        <opc:EnumeratedValue Name="SYNC_RELUCTANCE" Value="7"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MotorWindingTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="STAR" Value="1"/>
+        <opc:EnumeratedValue Name="DOUBLE_STAR" Value="2"/>
+        <opc:EnumeratedValue Name="DELTA" Value="3"/>
+        <opc:EnumeratedValue Name="DOUBLE_DELTA" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="OutputFilterTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="SINE_WAVE_FILTER" Value="1"/>
+        <opc:EnumeratedValue Name="DV_DT_FILTER" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="OutputFunctionEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="ACTIVE_OPEN" Value="1"/>
+        <opc:EnumeratedValue Name="ACTIVE_CLOSED" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SafetyFunctionsEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="STO" Value="1"/>
+        <opc:EnumeratedValue Name="SS1" Value="2"/>
+        <opc:EnumeratedValue Name="SS2" Value="3"/>
+        <opc:EnumeratedValue Name="SOS" Value="4"/>
+        <opc:EnumeratedValue Name="SLS" Value="5"/>
+        <opc:EnumeratedValue Name="SSM" Value="6"/>
+        <opc:EnumeratedValue Name="SSR" Value="7"/>
+        <opc:EnumeratedValue Name="SLP" Value="8"/>
+        <opc:EnumeratedValue Name="SP" Value="9"/>
+        <opc:EnumeratedValue Name="SDI" Value="10"/>
+        <opc:EnumeratedValue Name="SBC" Value="11"/>
+        <opc:EnumeratedValue Name="SBT" Value="12"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TemperatureSensorTypeEnumeration">
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="THERMOCOUPLE_K" Value="1"/>
+        <opc:EnumeratedValue Name="THERMOCOUPLE_J" Value="2"/>
+        <opc:EnumeratedValue Name="THERMOCOUPLE_T" Value="3"/>
+        <opc:EnumeratedValue Name="THERMOCOUPLE_E" Value="4"/>
+        <opc:EnumeratedValue Name="THERMOCOUPLE_N" Value="5"/>
+        <opc:EnumeratedValue Name="PT100" Value="6"/>
+        <opc:EnumeratedValue Name="PT1000" Value="7"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

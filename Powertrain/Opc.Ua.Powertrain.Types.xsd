@@ -1,0 +1,626 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Powertrain/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Powertrain/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="AnalogInterfaceTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="VOLTAGE_0_10V_1"/>
+            <xs:enumeration value="CURRENT_0_20MA_2"/>
+            <xs:enumeration value="TEMPERATURE_PT1000_3"/>
+            <xs:enumeration value="CONFIGURABLE_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:AnalogInterfaceTypeEnumeration" name="AnalogInterfaceTypeEnumeration"/>
+    <xs:complexType name="ListOfAnalogInterfaceTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:AnalogInterfaceTypeEnumeration" name="AnalogInterfaceTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAnalogInterfaceTypeEnumeration" name="ListOfAnalogInterfaceTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="BrakeTurnOffTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="AC_1"/>
+            <xs:enumeration value="DC_2"/>
+            <xs:enumeration value="AC_DC_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BrakeTurnOffTypeEnumeration" name="BrakeTurnOffTypeEnumeration"/>
+    <xs:complexType name="ListOfBrakeTurnOffTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BrakeTurnOffTypeEnumeration" name="BrakeTurnOffTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBrakeTurnOffTypeEnumeration" name="ListOfBrakeTurnOffTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="BrakeTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="MAGNETIC_1"/>
+            <xs:enumeration value="SPRING_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BrakeTypeEnumeration" name="BrakeTypeEnumeration"/>
+    <xs:complexType name="ListOfBrakeTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BrakeTypeEnumeration" name="BrakeTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBrakeTypeEnumeration" name="ListOfBrakeTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="ContactorTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="ELECTROMECHANICAL_CONTACTOR_1"/>
+            <xs:enumeration value="SEMICONDUCTOR_CONTACTOR_2"/>
+            <xs:enumeration value="VACUUM_CONTACTOR_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ContactorTypeEnumeration" name="ContactorTypeEnumeration"/>
+    <xs:complexType name="ListOfContactorTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ContactorTypeEnumeration" name="ContactorTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfContactorTypeEnumeration" name="ListOfContactorTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="CoolingMethodEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="AIR_COOLED_STATIC_1"/>
+            <xs:enumeration value="AIR_COOLED_FORCED_2"/>
+            <xs:enumeration value="LIQUID_COOLED_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CoolingMethodEnumeration" name="CoolingMethodEnumeration"/>
+    <xs:complexType name="ListOfCoolingMethodEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoolingMethodEnumeration" name="CoolingMethodEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoolingMethodEnumeration" name="ListOfCoolingMethodEnumeration" nillable="true"/>
+    <xs:simpleType name="DigitalInterfaceTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="TTL_1"/>
+            <xs:enumeration value="HTL_2"/>
+            <xs:enumeration value="PNP_3"/>
+            <xs:enumeration value="NPN_4"/>
+            <xs:enumeration value="CONFIGURABLE_5"/>
+            <xs:enumeration value="PULSE TRAIN_6"/>
+            <xs:enumeration value="RELAY_7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DigitalInterfaceTypeEnumeration" name="DigitalInterfaceTypeEnumeration"/>
+    <xs:complexType name="ListOfDigitalInterfaceTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DigitalInterfaceTypeEnumeration" name="DigitalInterfaceTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDigitalInterfaceTypeEnumeration" name="ListOfDigitalInterfaceTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="DutyTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="S1_1"/>
+            <xs:enumeration value="S2_2"/>
+            <xs:enumeration value="S3_3"/>
+            <xs:enumeration value="S4_4"/>
+            <xs:enumeration value="S5_5"/>
+            <xs:enumeration value="S6_6"/>
+            <xs:enumeration value="S7_7"/>
+            <xs:enumeration value="S8_8"/>
+            <xs:enumeration value="S9_9"/>
+            <xs:enumeration value="S10_10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DutyTypeEnumeration" name="DutyTypeEnumeration"/>
+    <xs:complexType name="ListOfDutyTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DutyTypeEnumeration" name="DutyTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDutyTypeEnumeration" name="ListOfDutyTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="EfficiencyClassEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="IE0_1"/>
+            <xs:enumeration value="IE1_2"/>
+            <xs:enumeration value="IE2_3"/>
+            <xs:enumeration value="IES0_4"/>
+            <xs:enumeration value="IES1_5"/>
+            <xs:enumeration value="IES2_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EfficiencyClassEnumeration" name="EfficiencyClassEnumeration"/>
+    <xs:complexType name="ListOfEfficiencyClassEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EfficiencyClassEnumeration" name="EfficiencyClassEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEfficiencyClassEnumeration" name="ListOfEfficiencyClassEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderFlangeTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="CONTACTLESS_1"/>
+            <xs:enumeration value="SYNCHRO_2"/>
+            <xs:enumeration value="CLAMPING_3"/>
+            <xs:enumeration value="HOLLOW_SHAFT_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderFlangeTypeEnumeration" name="EncoderFlangeTypeEnumeration"/>
+    <xs:complexType name="ListOfEncoderFlangeTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderFlangeTypeEnumeration" name="EncoderFlangeTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderFlangeTypeEnumeration" name="ListOfEncoderFlangeTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderProtocolEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="BISS_C_1"/>
+            <xs:enumeration value="ENDAT2.1_2"/>
+            <xs:enumeration value="ENDAT2.2_3"/>
+            <xs:enumeration value="HIPERFACE_4"/>
+            <xs:enumeration value="HIPERFACE_DSL_5"/>
+            <xs:enumeration value="SSI_BINARY_6"/>
+            <xs:enumeration value="SSI_GRAY_CODE_7"/>
+            <xs:enumeration value="SINCOS_1VSS_8"/>
+            <xs:enumeration value="SCS_OPEN_LINK_9"/>
+            <xs:enumeration value="DRIVECLIQ_10"/>
+            <xs:enumeration value="BISS_LINE_11"/>
+            <xs:enumeration value="FANUC_37BIT_SERIAL_COMM_12"/>
+            <xs:enumeration value="MITSUBISHI_40BIT_SERIAL_COMM_13"/>
+            <xs:enumeration value="OMRON/PANASONIC_48BIT_SERIAL_COMM_14"/>
+            <xs:enumeration value="YASKAWA_36BIT_SERIAL_COMM_15"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderProtocolEnumeration" name="EncoderProtocolEnumeration"/>
+    <xs:complexType name="ListOfEncoderProtocolEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderProtocolEnumeration" name="EncoderProtocolEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderProtocolEnumeration" name="ListOfEncoderProtocolEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderSignalEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="RS422_5V_TTL_1"/>
+            <xs:enumeration value="RS422_5..30V_2"/>
+            <xs:enumeration value="SINCOS_1VPP_3"/>
+            <xs:enumeration value="RESOLVER_4"/>
+            <xs:enumeration value="HTL_PUSH-PULL_5"/>
+            <xs:enumeration value="RS485_6"/>
+            <xs:enumeration value="RS485_SINCOS_7"/>
+            <xs:enumeration value="RS485_HTL_8"/>
+            <xs:enumeration value="RS485_TTL_9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderSignalEnumeration" name="EncoderSignalEnumeration"/>
+    <xs:complexType name="ListOfEncoderSignalEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderSignalEnumeration" name="EncoderSignalEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderSignalEnumeration" name="ListOfEncoderSignalEnumeration" nillable="true"/>
+    <xs:simpleType name="EncoderTechnologyEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="OPTICAL_1"/>
+            <xs:enumeration value="MAGNETIC_2"/>
+            <xs:enumeration value="INDUCTIVE_3"/>
+            <xs:enumeration value="CAPACITIVE_4"/>
+            <xs:enumeration value="LINEAR_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:EncoderTechnologyEnumeration" name="EncoderTechnologyEnumeration"/>
+    <xs:complexType name="ListOfEncoderTechnologyEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EncoderTechnologyEnumeration" name="EncoderTechnologyEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEncoderTechnologyEnumeration" name="ListOfEncoderTechnologyEnumeration" nillable="true"/>
+    <xs:simpleType name="FieldbusProtocolCategoryEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="ETHERCAT_1"/>
+            <xs:enumeration value="PROFINET_2"/>
+            <xs:enumeration value="ETHERNET_IP_3"/>
+            <xs:enumeration value="PROFIBUS_4"/>
+            <xs:enumeration value="SERCOS_5"/>
+            <xs:enumeration value="CC_LINK_6"/>
+            <xs:enumeration value="CANOPEN_7"/>
+            <xs:enumeration value="IO_LINK_8"/>
+            <xs:enumeration value="MODBUS_9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FieldbusProtocolCategoryEnumeration" name="FieldbusProtocolCategoryEnumeration"/>
+    <xs:complexType name="ListOfFieldbusProtocolCategoryEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FieldbusProtocolCategoryEnumeration" name="FieldbusProtocolCategoryEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFieldbusProtocolCategoryEnumeration" name="ListOfFieldbusProtocolCategoryEnumeration" nillable="true"/>
+    <xs:simpleType name="FieldbusProtocolSubCategoryEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="PROFIBUS_DP_1"/>
+            <xs:enumeration value="PROFIBUS_PA_2"/>
+            <xs:enumeration value="MODBUS_TCP_3"/>
+            <xs:enumeration value="MODBUS_RTU_4"/>
+            <xs:enumeration value="FOUNDATION_FIELDBUS_HSE_5"/>
+            <xs:enumeration value="SERCOS_III_SERCOS_II_6"/>
+            <xs:enumeration value="PROFINET_RT_7"/>
+            <xs:enumeration value="PROFINET_IRT_8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FieldbusProtocolSubCategoryEnumeration" name="FieldbusProtocolSubCategoryEnumeration"/>
+    <xs:complexType name="ListOfFieldbusProtocolSubCategoryEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FieldbusProtocolSubCategoryEnumeration" name="FieldbusProtocolSubCategoryEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFieldbusProtocolSubCategoryEnumeration" name="ListOfFieldbusProtocolSubCategoryEnumeration" nillable="true"/>
+    <xs:simpleType name="FunctionalSafetyCategoryEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="CAT_B_1"/>
+            <xs:enumeration value="CAT_1_2"/>
+            <xs:enumeration value="CAT_2_3"/>
+            <xs:enumeration value="CAT_3_4"/>
+            <xs:enumeration value="CAT_4_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FunctionalSafetyCategoryEnumeration" name="FunctionalSafetyCategoryEnumeration"/>
+    <xs:complexType name="ListOfFunctionalSafetyCategoryEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FunctionalSafetyCategoryEnumeration" name="FunctionalSafetyCategoryEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFunctionalSafetyCategoryEnumeration" name="ListOfFunctionalSafetyCategoryEnumeration" nillable="true"/>
+    <xs:simpleType name="FunctionalSafetyPerformanceLevelEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="PLA_1"/>
+            <xs:enumeration value="PLB_2"/>
+            <xs:enumeration value="PLC_3"/>
+            <xs:enumeration value="PLD_4"/>
+            <xs:enumeration value="PLE_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FunctionalSafetyPerformanceLevelEnumeration" name="FunctionalSafetyPerformanceLevelEnumeration"/>
+    <xs:complexType name="ListOfFunctionalSafetyPerformanceLevelEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FunctionalSafetyPerformanceLevelEnumeration" name="FunctionalSafetyPerformanceLevelEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFunctionalSafetyPerformanceLevelEnumeration" name="ListOfFunctionalSafetyPerformanceLevelEnumeration" nillable="true"/>
+    <xs:simpleType name="FunctionalSafetySilLevelEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="SIL1_1"/>
+            <xs:enumeration value="SIL2_2"/>
+            <xs:enumeration value="SIL3_3"/>
+            <xs:enumeration value="SIL4_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FunctionalSafetySilLevelEnumeration" name="FunctionalSafetySilLevelEnumeration"/>
+    <xs:complexType name="ListOfFunctionalSafetySilLevelEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FunctionalSafetySilLevelEnumeration" name="FunctionalSafetySilLevelEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFunctionalSafetySilLevelEnumeration" name="ListOfFunctionalSafetySilLevelEnumeration" nillable="true"/>
+    <xs:simpleType name="FuseElementSpeedMarkingEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="FF_1"/>
+            <xs:enumeration value="F_2"/>
+            <xs:enumeration value="M_3"/>
+            <xs:enumeration value="T_4"/>
+            <xs:enumeration value="TT_5"/>
+            <xs:enumeration value="AR_6"/>
+            <xs:enumeration value="GR_7"/>
+            <xs:enumeration value="GS_8"/>
+            <xs:enumeration value="GRL_9"/>
+            <xs:enumeration value="GG_10"/>
+            <xs:enumeration value="GL_11"/>
+            <xs:enumeration value="GF_12"/>
+            <xs:enumeration value="AM_13"/>
+            <xs:enumeration value="GM_14"/>
+            <xs:enumeration value="GPV_15"/>
+            <xs:enumeration value="GB_16"/>
+            <xs:enumeration value="GTr_17"/>
+            <xs:enumeration value="GN_18"/>
+            <xs:enumeration value="GD_19"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FuseElementSpeedMarkingEnumeration" name="FuseElementSpeedMarkingEnumeration"/>
+    <xs:complexType name="ListOfFuseElementSpeedMarkingEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FuseElementSpeedMarkingEnumeration" name="FuseElementSpeedMarkingEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFuseElementSpeedMarkingEnumeration" name="ListOfFuseElementSpeedMarkingEnumeration" nillable="true"/>
+    <xs:simpleType name="GearRatioEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="FIXED_1"/>
+            <xs:enumeration value="MANUAL_VARIABLE_2"/>
+            <xs:enumeration value="AUTOMATIC_VARIABLE_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GearRatioEnumeration" name="GearRatioEnumeration"/>
+    <xs:complexType name="ListOfGearRatioEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GearRatioEnumeration" name="GearRatioEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGearRatioEnumeration" name="ListOfGearRatioEnumeration" nillable="true"/>
+    <xs:simpleType name="GearTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="PLANETARY_GEAR_1"/>
+            <xs:enumeration value="WORM_GEAR_2"/>
+            <xs:enumeration value="SPUR_GEAR_3"/>
+            <xs:enumeration value="HARMONIC_DRIVE_GEAR_4"/>
+            <xs:enumeration value="SYNCHRONOUS_BELT_5"/>
+            <xs:enumeration value="V_BELT_6"/>
+            <xs:enumeration value="RACK_AND_PINION_7"/>
+            <xs:enumeration value="SPINDLE_BALLSCREW_8"/>
+            <xs:enumeration value="SPINDLE_THREAD_9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GearTypeEnumeration" name="GearTypeEnumeration"/>
+    <xs:complexType name="ListOfGearTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GearTypeEnumeration" name="GearTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGearTypeEnumeration" name="ListOfGearTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="InputConverterEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="AC/DC_PASSIVE_1"/>
+            <xs:enumeration value="AC/DC_ACTIVE_2"/>
+            <xs:enumeration value="DC/DC_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:InputConverterEnumeration" name="InputConverterEnumeration"/>
+    <xs:complexType name="ListOfInputConverterEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:InputConverterEnumeration" name="InputConverterEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfInputConverterEnumeration" name="ListOfInputConverterEnumeration" nillable="true"/>
+    <xs:simpleType name="LineFilterEmcCategoryEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="CATEGORY_C1_1"/>
+            <xs:enumeration value="CATEGORY_C2_2"/>
+            <xs:enumeration value="CATEGORY_C3_3"/>
+            <xs:enumeration value="CATEGORY_C4_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LineFilterEmcCategoryEnumeration" name="LineFilterEmcCategoryEnumeration"/>
+    <xs:complexType name="ListOfLineFilterEmcCategoryEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LineFilterEmcCategoryEnumeration" name="LineFilterEmcCategoryEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLineFilterEmcCategoryEnumeration" name="ListOfLineFilterEmcCategoryEnumeration" nillable="true"/>
+    <xs:simpleType name="LineFilterEmcClassEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="CLASS_A_1"/>
+            <xs:enumeration value="CLASS_B_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LineFilterEmcClassEnumeration" name="LineFilterEmcClassEnumeration"/>
+    <xs:complexType name="ListOfLineFilterEmcClassEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LineFilterEmcClassEnumeration" name="LineFilterEmcClassEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLineFilterEmcClassEnumeration" name="ListOfLineFilterEmcClassEnumeration" nillable="true"/>
+    <xs:simpleType name="LineFilterEmcGroupEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="GROUP_1_1"/>
+            <xs:enumeration value="GROUP_2_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LineFilterEmcGroupEnumeration" name="LineFilterEmcGroupEnumeration"/>
+    <xs:complexType name="ListOfLineFilterEmcGroupEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LineFilterEmcGroupEnumeration" name="LineFilterEmcGroupEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLineFilterEmcGroupEnumeration" name="ListOfLineFilterEmcGroupEnumeration" nillable="true"/>
+    <xs:simpleType name="LubricantTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="ISO_VG_2_1"/>
+            <xs:enumeration value="ISO_VG_3_2"/>
+            <xs:enumeration value="ISO_VG_5_3"/>
+            <xs:enumeration value="ISO_VG_7_4"/>
+            <xs:enumeration value="ISO_VG_10_5"/>
+            <xs:enumeration value="ISO_VG_15_6"/>
+            <xs:enumeration value="ISO_VG_22_7"/>
+            <xs:enumeration value="ISO_VG_32_8"/>
+            <xs:enumeration value="ISO_VG_46_9"/>
+            <xs:enumeration value="ISO_VG_68_10"/>
+            <xs:enumeration value="ISO_VG_100_11"/>
+            <xs:enumeration value="ISO_VG_150_12"/>
+            <xs:enumeration value="ISO_VG_220_13"/>
+            <xs:enumeration value="ISO_VG_320_14"/>
+            <xs:enumeration value="ISO_VG_460_15"/>
+            <xs:enumeration value="ISO_VG_680_16"/>
+            <xs:enumeration value="ISO_VG_1000_17"/>
+            <xs:enumeration value="ISO_VG_1500_18"/>
+            <xs:enumeration value="NLGI_000_19"/>
+            <xs:enumeration value="NLGI_00_20"/>
+            <xs:enumeration value="NLGI_0_21"/>
+            <xs:enumeration value="NLGI_1_22"/>
+            <xs:enumeration value="NLGI_2_23"/>
+            <xs:enumeration value="NLGI_3_24"/>
+            <xs:enumeration value="NLGI_4_25"/>
+            <xs:enumeration value="NLGI_5_26"/>
+            <xs:enumeration value="NLGI_6_27"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LubricantTypeEnumeration" name="LubricantTypeEnumeration"/>
+    <xs:complexType name="ListOfLubricantTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LubricantTypeEnumeration" name="LubricantTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLubricantTypeEnumeration" name="ListOfLubricantTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="MotorProtectionTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="OVERLOAD_PROTECTION_1"/>
+            <xs:enumeration value="UNDERVOLTAGE_PROTECTION_2"/>
+            <xs:enumeration value="OVERVOLTAGE_PROTECTION_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MotorProtectionTypeEnumeration" name="MotorProtectionTypeEnumeration"/>
+    <xs:complexType name="ListOfMotorProtectionTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorProtectionTypeEnumeration" name="MotorProtectionTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMotorProtectionTypeEnumeration" name="ListOfMotorProtectionTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="MotorStarterSwitchingTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="MECHANICAL_SWITCHING_1"/>
+            <xs:enumeration value="ELECTRONIC_SWITCHING_2"/>
+            <xs:enumeration value="HYBRID_SWITCHING_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MotorStarterSwitchingTypeEnumeration" name="MotorStarterSwitchingTypeEnumeration"/>
+    <xs:complexType name="ListOfMotorStarterSwitchingTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorStarterSwitchingTypeEnumeration" name="MotorStarterSwitchingTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMotorStarterSwitchingTypeEnumeration" name="ListOfMotorStarterSwitchingTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="MotorStarterTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="DIRECT_ONLINE_STARTER_1"/>
+            <xs:enumeration value="STAR_DELTA_STARTER_2"/>
+            <xs:enumeration value="REVERSING_STARTER_3"/>
+            <xs:enumeration value="TWO_STEP_STARTER_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MotorStarterTypeEnumeration" name="MotorStarterTypeEnumeration"/>
+    <xs:complexType name="ListOfMotorStarterTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorStarterTypeEnumeration" name="MotorStarterTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMotorStarterTypeEnumeration" name="ListOfMotorStarterTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="MotorTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="ASYNCHRONOUS_1"/>
+            <xs:enumeration value="PM_AC_SYNCHRONOUS_2"/>
+            <xs:enumeration value="DC_BRUSHLESS_3"/>
+            <xs:enumeration value="DC_BRUSHED_4"/>
+            <xs:enumeration value="PM_STEPPER_5"/>
+            <xs:enumeration value="HYBRID_STEPPER_6"/>
+            <xs:enumeration value="SYNC_RELUCTANCE_7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MotorTypeEnumeration" name="MotorTypeEnumeration"/>
+    <xs:complexType name="ListOfMotorTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorTypeEnumeration" name="MotorTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMotorTypeEnumeration" name="ListOfMotorTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="MotorWindingTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="STAR_1"/>
+            <xs:enumeration value="DOUBLE_STAR_2"/>
+            <xs:enumeration value="DELTA_3"/>
+            <xs:enumeration value="DOUBLE_DELTA_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MotorWindingTypeEnumeration" name="MotorWindingTypeEnumeration"/>
+    <xs:complexType name="ListOfMotorWindingTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorWindingTypeEnumeration" name="MotorWindingTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMotorWindingTypeEnumeration" name="ListOfMotorWindingTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="OutputFilterTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="SINE_WAVE_FILTER_1"/>
+            <xs:enumeration value="DV_DT_FILTER_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:OutputFilterTypeEnumeration" name="OutputFilterTypeEnumeration"/>
+    <xs:complexType name="ListOfOutputFilterTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OutputFilterTypeEnumeration" name="OutputFilterTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOutputFilterTypeEnumeration" name="ListOfOutputFilterTypeEnumeration" nillable="true"/>
+    <xs:simpleType name="OutputFunctionEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="ACTIVE_OPEN_1"/>
+            <xs:enumeration value="ACTIVE_CLOSED_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:OutputFunctionEnumeration" name="OutputFunctionEnumeration"/>
+    <xs:complexType name="ListOfOutputFunctionEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OutputFunctionEnumeration" name="OutputFunctionEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOutputFunctionEnumeration" name="ListOfOutputFunctionEnumeration" nillable="true"/>
+    <xs:simpleType name="SafetyFunctionsEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="STO_1"/>
+            <xs:enumeration value="SS1_2"/>
+            <xs:enumeration value="SS2_3"/>
+            <xs:enumeration value="SOS_4"/>
+            <xs:enumeration value="SLS_5"/>
+            <xs:enumeration value="SSM_6"/>
+            <xs:enumeration value="SSR_7"/>
+            <xs:enumeration value="SLP_8"/>
+            <xs:enumeration value="SP_9"/>
+            <xs:enumeration value="SDI_10"/>
+            <xs:enumeration value="SBC_11"/>
+            <xs:enumeration value="SBT_12"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:SafetyFunctionsEnumeration" name="SafetyFunctionsEnumeration"/>
+    <xs:complexType name="ListOfSafetyFunctionsEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SafetyFunctionsEnumeration" name="SafetyFunctionsEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSafetyFunctionsEnumeration" name="ListOfSafetyFunctionsEnumeration" nillable="true"/>
+    <xs:simpleType name="TemperatureSensorTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="THERMOCOUPLE_K_1"/>
+            <xs:enumeration value="THERMOCOUPLE_J_2"/>
+            <xs:enumeration value="THERMOCOUPLE_T_3"/>
+            <xs:enumeration value="THERMOCOUPLE_E_4"/>
+            <xs:enumeration value="THERMOCOUPLE_N_5"/>
+            <xs:enumeration value="PT100_6"/>
+            <xs:enumeration value="PT1000_7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:TemperatureSensorTypeEnumeration" name="TemperatureSensorTypeEnumeration"/>
+    <xs:complexType name="ListOfTemperatureSensorTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TemperatureSensorTypeEnumeration" name="TemperatureSensorTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTemperatureSensorTypeEnumeration" name="ListOfTemperatureSensorTypeEnumeration" nillable="true"/>
+</xs:schema>
