@@ -1,4 +1,4 @@
-<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Scales/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Scales/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Scales/V2/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Scales/V2/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
     <xs:simpleType name="DraftShieldType">
         <xs:restriction base="xs:string">
@@ -48,6 +48,19 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfEqualityAndRelationalOperator" name="ListOfEqualityAndRelationalOperator" nillable="true"/>
+    <xs:simpleType name="RateControlMode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Gravimetric_0_0"/>
+            <xs:enumeration value="Volumetric_1_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:RateControlMode" name="RateControlMode"/>
+    <xs:complexType name="ListOfRateControlMode">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RateControlMode" name="RateControlMode" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRateControlMode" name="ListOfRateControlMode" nillable="true"/>
     <xs:simpleType name="TareMode">
         <xs:restriction base="xs:string">
             <xs:enumeration value="None_0_0"/>
