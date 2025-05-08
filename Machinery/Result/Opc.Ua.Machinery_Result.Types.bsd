@@ -1,0 +1,79 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultByteOrder="LittleEndian" xmlns:tns="http://opcfoundation.org/UA/Machinery/Result/" TargetNamespace="http://opcfoundation.org/UA/Machinery/Result/" xmlns:ua="http://opcfoundation.org/UA/" xmlns:opc="http://opcfoundation.org/BinarySchema/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="BaseResultTransferOptionsDataType">
+        <opc:Documentation>Abstract type containing information which file should be provided.</opc:Documentation>
+        <opc:Field Name="ResultId" TypeName="opc:CharArray"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseResultTransferOptionsDataType" Name="ResultTransferOptionsDataType">
+        <opc:Documentation>Contains information which file should be provided.</opc:Documentation>
+        <opc:Field Name="ResultId" TypeName="opc:CharArray" SourceType="tns:BaseResultTransferOptionsDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProcessingTimesDataType">
+        <opc:Documentation>Contains measured times that were generated during the execution of a recipe.</opc:Documentation>
+        <opc:Field Name="AcquisitionDurationSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ProcessingDurationSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="30"/>
+        <opc:Field Name="StartTime" TypeName="opc:DateTime"/>
+        <opc:Field Name="EndTime" TypeName="opc:DateTime"/>
+        <opc:Field SwitchField="AcquisitionDurationSpecified" Name="AcquisitionDuration" TypeName="opc:Double"/>
+        <opc:Field SwitchField="ProcessingDurationSpecified" Name="ProcessingDuration" TypeName="opc:Double"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ResultDataType">
+        <opc:Documentation>Contains fields that were created during the execution of a recipe.</opc:Documentation>
+        <opc:Field Name="ResultMetaData" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="NoOfResultContent" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfResultContent" Name="ResultContent" TypeName="ua:Variant"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ResultMetaDataType">
+        <opc:Documentation>Meta data of a result, describing the result.</opc:Documentation>
+        <opc:Field Name="HasTransferableDataOnFileSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="IsPartialSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="IsSimulatedSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ResultStateSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="StepIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PartIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ExternalRecipeIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="InternalRecipeIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ProductIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ExternalConfigurationIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="InternalConfigurationIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="JobIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="CreationTimeSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ProcessingTimesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ResultUriSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ResultEvaluationSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ResultEvaluationCodeSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ResultEvaluationDetailsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="FileFormatSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="13"/>
+        <opc:Field Name="ResultId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="HasTransferableDataOnFileSpecified" Name="HasTransferableDataOnFile" TypeName="opc:Boolean"/>
+        <opc:Field SwitchField="IsPartialSpecified" Name="IsPartial" TypeName="opc:Boolean"/>
+        <opc:Field SwitchField="IsSimulatedSpecified" Name="IsSimulated" TypeName="opc:Boolean"/>
+        <opc:Field SwitchField="ResultStateSpecified" Name="ResultState" TypeName="opc:Int32"/>
+        <opc:Field SwitchField="StepIdSpecified" Name="StepId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="PartIdSpecified" Name="PartId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="ExternalRecipeIdSpecified" Name="ExternalRecipeId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="InternalRecipeIdSpecified" Name="InternalRecipeId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="ProductIdSpecified" Name="ProductId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="ExternalConfigurationIdSpecified" Name="ExternalConfigurationId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="InternalConfigurationIdSpecified" Name="InternalConfigurationId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="JobIdSpecified" Name="JobId" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="CreationTimeSpecified" Name="CreationTime" TypeName="opc:DateTime"/>
+        <opc:Field SwitchField="ProcessingTimesSpecified" Name="ProcessingTimes" TypeName="tns:ProcessingTimesDataType"/>
+        <opc:Field SwitchField="ResultUriSpecified" Name="NoOfResultUri" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfResultUri" SwitchField="ResultUriSpecified" Name="ResultUri" TypeName="opc:CharArray"/>
+        <opc:Field SwitchField="ResultEvaluationSpecified" Name="ResultEvaluation" TypeName="tns:ResultEvaluationEnum"/>
+        <opc:Field SwitchField="ResultEvaluationCodeSpecified" Name="ResultEvaluationCode" TypeName="opc:Int64"/>
+        <opc:Field SwitchField="ResultEvaluationDetailsSpecified" Name="ResultEvaluationDetails" TypeName="ua:LocalizedText"/>
+        <opc:Field SwitchField="FileFormatSpecified" Name="NoOfFileFormat" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfFileFormat" SwitchField="FileFormatSpecified" Name="FileFormat" TypeName="opc:CharArray"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType Name="ResultEvaluationEnum" LengthInBits="32">
+        <opc:Documentation>Indicates whether a result was in tolerance</opc:Documentation>
+        <opc:EnumeratedValue Name="Undefined" Value="0"/>
+        <opc:EnumeratedValue Name="OK" Value="1"/>
+        <opc:EnumeratedValue Name="NotOK" Value="2"/>
+        <opc:EnumeratedValue Name="NotDecidable" Value="3"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
