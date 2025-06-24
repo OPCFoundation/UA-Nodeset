@@ -23,6 +23,7 @@ Id,Name,Link,ConformanceUnits
 3003,LevelDisplayMode,"https://reference.opcfoundation.org/IA/v101/docs/5.3.2",""
 3004,SignalColor,"https://reference.opcfoundation.org/IA/v101/docs/5.3.3",""
 3005,SignalModeLight,"https://reference.opcfoundation.org/IA/v101/docs/5.3.4",""
+3007,RGBWDataType,"https://reference.opcfoundation.org/IA/v101/docs/5.3.5",""
 4002,HasStatisticComponent,"https://reference.opcfoundation.org/IA/v101/docs/6.3.1",""
 4003,HasReferenceMeasurementInstrument,"https://reference.opcfoundation.org/IA/v101/docs/7.6.1",""
 5008,http://opcfoundation.org/UA/IA/,"https://reference.opcfoundation.org/IA/v101/docs/9.1",""
