@@ -223,6 +223,7 @@ class StatusCodes(Enum):
     BadRequestNotAllowed = 0x80E40000
     BadRequestNotComplete = 0x81130000
     BadTransactionPending = 0x80E80000
+    BadTransactionFailed = 0x80F10000
     BadTicketRequired = 0x811F0000
     BadTicketInvalid = 0x81200000
     BadLocked = 0x80E90000

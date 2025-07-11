@@ -323,11 +323,17 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationCertificateType = "ApplicationCertificateType";
         /// <remarks />
+        public const string ApplicationConfigurationDataType = "ApplicationConfigurationDataType";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType = "ApplicationConfigurationFileType";
+        /// <remarks />
         public const string ApplicationConfigurationFolderType = "ApplicationConfigurationFolderType";
         /// <remarks />
         public const string ApplicationConfigurationType = "ApplicationConfigurationType";
         /// <remarks />
         public const string ApplicationDescription = "ApplicationDescription";
+        /// <remarks />
+        public const string ApplicationIdentityDataType = "ApplicationIdentityDataType";
         /// <remarks />
         public const string ApplicationInstanceCertificate = "ApplicationInstanceCertificate";
         /// <remarks />
@@ -475,6 +481,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string AuthenticationProfileUri = "AuthenticationProfileUri";
         /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType = "AuthorizationServiceConfigurationDataType";
+        /// <remarks />
         public const string AuthorizationServiceConfigurationType = "AuthorizationServiceConfigurationType";
         /// <remarks />
         public const string AuthorizationServices = "AuthorizationServices";
@@ -482,6 +490,10 @@ namespace Opc.Ua.WebApi
         public const string AuthorizationServicesConfigurationFolderType = "AuthorizationServicesConfigurationFolderType";
         /// <remarks />
         public const string AutoDelete = "AutoDelete";
+        /// <remarks />
+        public const string AvailableNetworks = "AvailableNetworks";
+        /// <remarks />
+        public const string AvailablePorts = "AvailablePorts";
         /// <remarks />
         public const string AvailableStates = "AvailableStates";
         /// <remarks />
@@ -503,6 +515,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string BaseConditionClassType = "BaseConditionClassType";
         /// <remarks />
+        public const string BaseConfigurationDataType = "BaseConfigurationDataType";
+        /// <remarks />
+        public const string BaseConfigurationRecordDataType = "BaseConfigurationRecordDataType";
+        /// <remarks />
         public const string BaseDataType = "BaseDataType";
         /// <remarks />
         public const string BaseDataVariableType = "BaseDataVariableType";
@@ -516,6 +532,8 @@ namespace Opc.Ua.WebApi
         public const string BaseHighLimit = "BaseHighLimit";
         /// <remarks />
         public const string BaseInterfaceType = "BaseInterfaceType";
+        /// <remarks />
+        public const string BaseLogEventType = "BaseLogEventType";
         /// <remarks />
         public const string BaseLowLimit = "BaseLowLimit";
         /// <remarks />
@@ -631,7 +649,11 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroup = "CertificateGroup";
         /// <remarks />
+        public const string CertificateGroupDataType = "CertificateGroupDataType";
+        /// <remarks />
         public const string CertificateGroupFolderType = "CertificateGroupFolderType";
+        /// <remarks />
+        public const string CertificateGroupPurposes = "CertificateGroupPurposes";
         /// <remarks />
         public const string CertificateGroups = "CertificateGroups";
         /// <remarks />
@@ -727,7 +749,17 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ConditionVariableType = "ConditionVariableType";
         /// <remarks />
+        public const string ConfigurationFile = "ConfigurationFile";
+        /// <remarks />
+        public const string ConfigurationFileType = "ConfigurationFileType";
+        /// <remarks />
         public const string ConfigurationProperties = "ConfigurationProperties";
+        /// <remarks />
+        public const string ConfigurationUpdatedAuditEventType = "ConfigurationUpdatedAuditEventType";
+        /// <remarks />
+        public const string ConfigurationUpdateTargetType = "ConfigurationUpdateTargetType";
+        /// <remarks />
+        public const string ConfigurationUpdateType = "ConfigurationUpdateType";
         /// <remarks />
         public const string ConfigurationVersion = "ConfigurationVersion";
         /// <remarks />
@@ -738,6 +770,8 @@ namespace Opc.Ua.WebApi
         public const string Confirm = "Confirm";
         /// <remarks />
         public const string ConfirmedState = "ConfirmedState";
+        /// <remarks />
+        public const string ConfirmUpdate = "ConfirmUpdate";
         /// <remarks />
         public const string ConformanceUnits = "ConformanceUnits";
         /// <remarks />
@@ -797,6 +831,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CreateMonitoredItemsResponse = "CreateMonitoredItemsResponse";
         /// <remarks />
+        public const string CreateSelfSignedCertificate = "CreateSelfSignedCertificate";
+        /// <remarks />
         public const string CreateSessionId = "CreateSessionId";
         /// <remarks />
         public const string CreateSessionRequest = "CreateSessionRequest";
@@ -848,6 +884,8 @@ namespace Opc.Ua.WebApi
         public const string CurrentSubscriptionsCount = "CurrentSubscriptionsCount";
         /// <remarks />
         public const string CurrentTime = "CurrentTime";
+        /// <remarks />
+        public const string CurrentVersion = "CurrentVersion";
         /// <remarks />
         public const string CustomConfiguration = "CustomConfiguration";
         /// <remarks />
@@ -1017,6 +1055,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string DeleteAtTimeDetails = "DeleteAtTimeDetails";
         /// <remarks />
+        public const string DeleteCertificate = "DeleteCertificate";
+        /// <remarks />
         public const string DeleteCredential = "DeleteCredential";
         /// <remarks />
         public const string DeleteEventCapability = "DeleteEventCapability";
@@ -1175,6 +1215,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string EndpointConfiguration = "EndpointConfiguration";
         /// <remarks />
+        public const string EndpointDataType = "EndpointDataType";
+        /// <remarks />
         public const string EndpointDescription = "EndpointDescription";
         /// <remarks />
         public const string Endpoints = "Endpoints";
@@ -1212,6 +1254,10 @@ namespace Opc.Ua.WebApi
         public const string EphemeralKeyType = "EphemeralKeyType";
         /// <remarks />
         public const string Error = "Error";
+        /// <remarks />
+        public const string ErrorCode = "ErrorCode";
+        /// <remarks />
+        public const string ErrorCodeNode = "ErrorCodeNode";
         /// <remarks />
         public const string Errors = "Errors";
         /// <remarks />
@@ -1377,6 +1423,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string GetPosition = "GetPosition";
         /// <remarks />
+        public const string GetRecords = "GetRecords";
+        /// <remarks />
         public const string GetRejectedList = "GetRejectedList";
         /// <remarks />
         public const string GetSecurityGroup = "GetSecurityGroup";
@@ -1458,6 +1506,8 @@ namespace Opc.Ua.WebApi
         public const string HasInterface = "HasInterface";
         /// <remarks />
         public const string HasKeyValueDescription = "HasKeyValueDescription";
+        /// <remarks />
+        public const string HasLogHierarchy = "HasLogHierarchy";
         /// <remarks />
         public const string HasLowerLayerInterface = "HasLowerLayerInterface";
         /// <remarks />
@@ -1777,6 +1827,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string KeyCredentialDeletedAuditEventType = "KeyCredentialDeletedAuditEventType";
         /// <remarks />
+        public const string KeyCredentials = "KeyCredentials";
+        /// <remarks />
         public const string KeyCredentialUpdatedAuditEventType = "KeyCredentialUpdatedAuditEventType";
         /// <remarks />
         public const string KeyFrameCount = "KeyFrameCount";
@@ -1881,6 +1933,20 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string Locations = "Locations";
         /// <remarks />
+        public const string LogEntryConditionClassType = "LogEntryConditionClassType";
+        /// <remarks />
+        public const string LogObjectType = "LogObjectType";
+        /// <remarks />
+        public const string LogOverflowEventType = "LogOverflowEventType";
+        /// <remarks />
+        public const string LogRecord = "LogRecord";
+        /// <remarks />
+        public const string LogRecordMask = "LogRecordMask";
+        /// <remarks />
+        public const string LogRecordsDataType = "LogRecordsDataType";
+        /// <remarks />
+        public const string Logs = "Logs";
+        /// <remarks />
         public const string Low = "Low";
         /// <remarks />
         public const string LowDeadband = "LowDeadband";
@@ -1929,6 +1995,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string MaxByteStringLength = "MaxByteStringLength";
         /// <remarks />
+        public const string MaxCertificateGroups = "MaxCertificateGroups";
+        /// <remarks />
         public const string MaxCharacters = "MaxCharacters";
         /// <remarks />
         public const string MaxCountStoredValues = "MaxCountStoredValues";
@@ -1938,6 +2006,8 @@ namespace Opc.Ua.WebApi
         public const string MaxDataSetWriters = "MaxDataSetWriters";
         /// <remarks />
         public const string MaxDataSetWritersPerGroup = "MaxDataSetWritersPerGroup";
+        /// <remarks />
+        public const string MaxEndpoints = "MaxEndpoints";
         /// <remarks />
         public const string MaxFieldsPerDataSet = "MaxFieldsPerDataSet";
         /// <remarks />
@@ -1966,6 +2036,8 @@ namespace Opc.Ua.WebApi
         public const string MaxKeepAliveCount = "MaxKeepAliveCount";
         /// <remarks />
         public const string MaxLifetimeCount = "MaxLifetimeCount";
+        /// <remarks />
+        public const string MaxLogObjectContinuationPoints = "MaxLogObjectContinuationPoints";
         /// <remarks />
         public const string MaxMonitoredItems = "MaxMonitoredItems";
         /// <remarks />
@@ -2017,6 +2089,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string MaxReaderGroups = "MaxReaderGroups";
         /// <remarks />
+        public const string MaxRecords = "MaxRecords";
+        /// <remarks />
         public const string MaxRecycleCount = "MaxRecycleCount";
         /// <remarks />
         public const string MaxResponseMessageSize = "MaxResponseMessageSize";
@@ -2034,6 +2108,8 @@ namespace Opc.Ua.WebApi
         public const string MaxSessions = "MaxSessions";
         /// <remarks />
         public const string MaxStandaloneSubscribedDataSets = "MaxStandaloneSubscribedDataSets";
+        /// <remarks />
+        public const string MaxStorageDuration = "MaxStorageDuration";
         /// <remarks />
         public const string MaxStringLength = "MaxStringLength";
         /// <remarks />
@@ -2078,6 +2154,8 @@ namespace Opc.Ua.WebApi
         public const string MethodNode = "MethodNode";
         /// <remarks />
         public const string MimeType = "MimeType";
+        /// <remarks />
+        public const string MinimumSeverity = "MinimumSeverity";
         /// <remarks />
         public const string MinSupportedSampleRate = "MinSupportedSampleRate";
         /// <remarks />
@@ -2179,6 +2257,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string NamespaceVersion = "NamespaceVersion";
         /// <remarks />
+        public const string NameValuePair = "NameValuePair";
+        /// <remarks />
         public const string NamingRuleType = "NamingRuleType";
         /// <remarks />
         public const string NDimensionArrayItemType = "NDimensionArrayItemType";
@@ -2208,6 +2288,8 @@ namespace Opc.Ua.WebApi
         public const string NewValue = "NewValue";
         /// <remarks />
         public const string NewValues = "NewValues";
+        /// <remarks />
+        public const string NewVersion = "NewVersion";
         /// <remarks />
         public const string NextSequenceNumber = "NextSequenceNumber";
         /// <remarks />
@@ -2290,6 +2372,8 @@ namespace Opc.Ua.WebApi
         public const string OldValue = "OldValue";
         /// <remarks />
         public const string OldValues = "OldValues";
+        /// <remarks />
+        public const string OldVersion = "OldVersion";
         /// <remarks />
         public const string OnDelay = "OnDelay";
         /// <remarks />
@@ -2562,6 +2646,8 @@ namespace Opc.Ua.WebApi
         public const string PubSubStatusType = "PubSubStatusType";
         /// <remarks />
         public const string PubSubTransportLimitsExceedEventType = "PubSubTransportLimitsExceedEventType";
+        /// <remarks />
+        public const string Purpose = "Purpose";
         /// <remarks />
         public const string PushTargetFolderName_Placeholder = "<PushTargetFolderName>";
         /// <remarks />
@@ -2955,9 +3041,13 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string SecurityPolicyUri = "SecurityPolicyUri";
         /// <remarks />
+        public const string SecurityPolicyUris = "SecurityPolicyUris";
+        /// <remarks />
         public const string SecurityRejectedRequestsCount = "SecurityRejectedRequestsCount";
         /// <remarks />
         public const string SecurityRejectedSessionCount = "SecurityRejectedSessionCount";
+        /// <remarks />
+        public const string SecuritySettingsDataType = "SecuritySettingsDataType";
         /// <remarks />
         public const string SecurityTokenRequestType = "SecurityTokenRequestType";
         /// <remarks />
@@ -3005,7 +3095,11 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerDiagnosticsType = "ServerDiagnosticsType";
         /// <remarks />
+        public const string ServerEndpointDataType = "ServerEndpointDataType";
+        /// <remarks />
         public const string ServerId = "ServerId";
+        /// <remarks />
+        public const string ServerLog = "ServerLog";
         /// <remarks />
         public const string ServerNetworkGroups = "ServerNetworkGroups";
         /// <remarks />
@@ -3173,6 +3267,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string SourceTimestamp = "SourceTimestamp";
         /// <remarks />
+        public const string SpanContextDataType = "SpanContextDataType";
+        /// <remarks />
         public const string Speed = "Speed";
         /// <remarks />
         public const string SrClassId = "SrClassId";
@@ -3274,6 +3370,8 @@ namespace Opc.Ua.WebApi
         public const string SubscriptionDiagnosticsType = "SubscriptionDiagnosticsType";
         /// <remarks />
         public const string SubscriptionId = "SubscriptionId";
+        /// <remarks />
+        public const string SupportedDataType = "SupportedDataType";
         /// <remarks />
         public const string SupportedPrivateKeyFormats = "SupportedPrivateKeyFormats";
         /// <remarks />
@@ -3393,6 +3491,12 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string Title = "Title";
         /// <remarks />
+        public const string TlsCertificateType = "TlsCertificateType";
+        /// <remarks />
+        public const string TlsClientCertificateType = "TlsClientCertificateType";
+        /// <remarks />
+        public const string TlsServerCertificateType = "TlsServerCertificateType";
+        /// <remarks />
         public const string Tolerance = "Tolerance";
         /// <remarks />
         public const string Topic = "Topic";
@@ -3406,6 +3510,8 @@ namespace Opc.Ua.WebApi
         public const string TotalInformation = "TotalInformation";
         /// <remarks />
         public const string TotalRequestCount = "TotalRequestCount";
+        /// <remarks />
+        public const string TraceContextDataType = "TraceContextDataType";
         /// <remarks />
         public const string TrainingConditionClassType = "TrainingConditionClassType";
         /// <remarks />
@@ -3597,6 +3703,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string Url = "Url";
         /// <remarks />
+        public const string UserCertificateType = "UserCertificateType";
+        /// <remarks />
         public const string UserConfigurationMask = "UserConfigurationMask";
         /// <remarks />
         public const string UserCredentialCertificateType = "UserCredentialCertificateType";
@@ -3615,7 +3723,11 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserTokenPolicy = "UserTokenPolicy";
         /// <remarks />
+        public const string UserTokenSettingsDataType = "UserTokenSettingsDataType";
+        /// <remarks />
         public const string UserTokenType = "UserTokenType";
+        /// <remarks />
+        public const string UserTokenTypes = "UserTokenTypes";
         /// <remarks />
         public const string UserWritable = "UserWritable";
         /// <remarks />
@@ -3897,7 +4009,31 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TrustListDataType = "i=12554";
         /// <remarks />
+        public const string BaseConfigurationDataType = "i=15434";
+        /// <remarks />
+        public const string BaseConfigurationRecordDataType = "i=15435";
+        /// <remarks />
+        public const string CertificateGroupDataType = "i=15436";
+        /// <remarks />
+        public const string ConfigurationUpdateTargetType = "i=15538";
+        /// <remarks />
+        public const string ConfigurationUpdateType = "i=15539";
+        /// <remarks />
         public const string TransactionErrorType = "i=32285";
+        /// <remarks />
+        public const string ApplicationConfigurationDataType = "i=15549";
+        /// <remarks />
+        public const string ApplicationIdentityDataType = "i=15556";
+        /// <remarks />
+        public const string EndpointDataType = "i=15557";
+        /// <remarks />
+        public const string ServerEndpointDataType = "i=15558";
+        /// <remarks />
+        public const string SecuritySettingsDataType = "i=15559";
+        /// <remarks />
+        public const string UserTokenSettingsDataType = "i=15560";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType = "i=19445";
         /// <remarks />
         public const string DecimalDataType = "i=17861";
         /// <remarks />
@@ -4142,6 +4278,18 @@ namespace Opc.Ua.WebApi
         public const string ReferenceDescriptionDataType = "i=32659";
         /// <remarks />
         public const string ReferenceListEntryDataType = "i=32660";
+        /// <remarks />
+        public const string LogRecord = "i=19361";
+        /// <remarks />
+        public const string LogRecordsDataType = "i=19745";
+        /// <remarks />
+        public const string SpanContextDataType = "i=19746";
+        /// <remarks />
+        public const string TraceContextDataType = "i=19747";
+        /// <remarks />
+        public const string NameValuePair = "i=19748";
+        /// <remarks />
+        public const string LogRecordMask = "i=19749";
         /// <remarks />
         public const string IdType = "i=256";
         /// <remarks />
@@ -5091,8 +5239,6 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupType_TrustList_RemoveCertificate = "i=13629";
         /// <remarks />
-        public const string CertificateGroupType_GetRejectedList = "i=23526";
-        /// <remarks />
         public const string CertificateGroupType_CertificateExpired_Disable = "i=19483";
         /// <remarks />
         public const string CertificateGroupType_CertificateExpired_Enable = "i=19484";
@@ -5120,6 +5266,8 @@ namespace Opc.Ua.WebApi
         public const string CertificateGroupType_TrustListOutOfDate_ShelvingState_Unshelve = "i=20247";
         /// <remarks />
         public const string CertificateGroupType_TrustListOutOfDate_ShelvingState_OneShotShelve = "i=20248";
+        /// <remarks />
+        public const string CertificateGroupType_GetRejectedList = "i=23526";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultApplicationGroup_TrustList_Open = "i=13821";
         /// <remarks />
@@ -5313,6 +5461,18 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_TrustListOutOfDate_ShelvingState_OneShotShelve = "i=21637";
         /// <remarks />
+        public const string ConfigurationFileType_ConfirmUpdate = "i=15508";
+        /// <remarks />
+        public const string ConfigurationFileType_CloseAndUpdate = "i=15505";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_UpdateCertificate = "i=18533";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ApplyChanges = "i=18539";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSigningRequest = "i=18541";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetRejectedList = "i=18544";
+        /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_Open = "i=16717";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_Close = "i=16724";
@@ -5457,13 +5617,39 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ShelvingState_OneShotShelve = "i=18468";
         /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_UpdateCertificate = "i=18533";
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Open = "i=18562";
         /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ApplyChanges = "i=18539";
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Close = "i=18565";
         /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSigningRequest = "i=18541";
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Read = "i=18567";
         /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetRejectedList = "i=18544";
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Write = "i=18570";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_GetPosition = "i=18572";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_SetPosition = "i=18575";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_ConfirmUpdate = "i=18584";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_CloseAndUpdate = "i=18581";
+        /// <remarks />
+        public const string ServerConfigurationType_UpdateCertificate = "i=12616";
+        /// <remarks />
+        public const string ServerConfigurationType_CreateSelfSignedCertificate = "i=19337";
+        /// <remarks />
+        public const string ServerConfigurationType_DeleteCertificate = "i=19340";
+        /// <remarks />
+        public const string ServerConfigurationType_GetCertificates = "i=32296";
+        /// <remarks />
+        public const string ServerConfigurationType_ApplyChanges = "i=12734";
+        /// <remarks />
+        public const string ServerConfigurationType_CancelChanges = "i=25698";
+        /// <remarks />
+        public const string ServerConfigurationType_CreateSigningRequest = "i=12731";
+        /// <remarks />
+        public const string ServerConfigurationType_GetRejectedList = "i=12775";
+        /// <remarks />
+        public const string ServerConfigurationType_ResetToServerDefaults = "i=25699";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_TrustList_Open = "i=13958";
         /// <remarks />
@@ -5609,19 +5795,33 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ShelvingState_OneShotShelve = "i=22525";
         /// <remarks />
-        public const string ServerConfigurationType_UpdateCertificate = "i=12616";
+        public const string ServerConfigurationType_ConfigurationFile_Open = "i=15572";
         /// <remarks />
-        public const string ServerConfigurationType_GetCertificates = "i=32296";
+        public const string ServerConfigurationType_ConfigurationFile_Close = "i=15575";
         /// <remarks />
-        public const string ServerConfigurationType_ApplyChanges = "i=12734";
+        public const string ServerConfigurationType_ConfigurationFile_Read = "i=15791";
         /// <remarks />
-        public const string ServerConfigurationType_CancelChanges = "i=25698";
+        public const string ServerConfigurationType_ConfigurationFile_Write = "i=15805";
         /// <remarks />
-        public const string ServerConfigurationType_CreateSigningRequest = "i=12731";
+        public const string ServerConfigurationType_ConfigurationFile_GetPosition = "i=15807";
         /// <remarks />
-        public const string ServerConfigurationType_GetRejectedList = "i=12775";
+        public const string ServerConfigurationType_ConfigurationFile_SetPosition = "i=15810";
         /// <remarks />
-        public const string ServerConfigurationType_ResetToServerDefaults = "i=25699";
+        public const string ServerConfigurationType_ConfigurationFile_ConfirmUpdate = "i=15863";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_CloseAndUpdate = "i=15849";
+        /// <remarks />
+        public const string ServerConfiguration_UpdateCertificate = "i=13737";
+        /// <remarks />
+        public const string ServerConfiguration_ApplyChanges = "i=12740";
+        /// <remarks />
+        public const string ServerConfiguration_CancelChanges = "i=25708";
+        /// <remarks />
+        public const string ServerConfiguration_CreateSigningRequest = "i=12737";
+        /// <remarks />
+        public const string ServerConfiguration_GetRejectedList = "i=12777";
+        /// <remarks />
+        public const string ServerConfiguration_ResetToServerDefaults = "i=25709";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_TrustList_Open = "i=12647";
         /// <remarks />
@@ -5767,17 +5967,21 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ShelvingState_OneShotShelve = "i=23413";
         /// <remarks />
-        public const string ServerConfiguration_UpdateCertificate = "i=13737";
+        public const string ServerConfiguration_ConfigurationFile_Open = "i=16013";
         /// <remarks />
-        public const string ServerConfiguration_ApplyChanges = "i=12740";
+        public const string ServerConfiguration_ConfigurationFile_Close = "i=16060";
         /// <remarks />
-        public const string ServerConfiguration_CancelChanges = "i=25708";
+        public const string ServerConfiguration_ConfigurationFile_Read = "i=16074";
         /// <remarks />
-        public const string ServerConfiguration_CreateSigningRequest = "i=12737";
+        public const string ServerConfiguration_ConfigurationFile_Write = "i=16101";
         /// <remarks />
-        public const string ServerConfiguration_GetRejectedList = "i=12777";
+        public const string ServerConfiguration_ConfigurationFile_GetPosition = "i=16103";
         /// <remarks />
-        public const string ServerConfiguration_ResetToServerDefaults = "i=25709";
+        public const string ServerConfiguration_ConfigurationFile_SetPosition = "i=16124";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_ConfirmUpdate = "i=16320";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_CloseAndUpdate = "i=16317";
         /// <remarks />
         public const string KeyCredentialConfigurationFolderType_CreateCredential = "i=17522";
         /// <remarks />
@@ -6055,6 +6259,14 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ProvisionableDeviceType_SetRegistrarEndpoints = "i=26875";
         /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_UpdateCertificate = "i=28005";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ApplyChanges = "i=28008";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSigningRequest = "i=28010";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetRejectedList = "i=28013";
+        /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_Open = "i=26889";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_Close = "i=26892";
@@ -6199,19 +6411,31 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ShelvingState_OneShotShelve = "i=27940";
         /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_UpdateCertificate = "i=28005";
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Open = "i=16332";
         /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ApplyChanges = "i=28008";
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Close = "i=16335";
         /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSigningRequest = "i=28010";
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Read = "i=16337";
         /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetRejectedList = "i=28013";
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Write = "i=16340";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_GetPosition = "i=16342";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_SetPosition = "i=16345";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_ConfirmUpdate = "i=16523";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_CloseAndUpdate = "i=16368";
         /// <remarks />
         public const string ProvisionableDevice_RequestTickets = "i=29880";
         /// <remarks />
         public const string PriorityMappingTableType_AddPriorityMappingEntry = "i=25229";
         /// <remarks />
         public const string PriorityMappingTableType_DeletePriorityMappingEntry = "i=25231";
+        /// <remarks />
+        public const string LogObjectType_GetRecords = "i=19353";
+        /// <remarks />
+        public const string ServerLog_GetRecords = "i=19373";
 
         /// <summary>
         /// Converts a value to a name for display.
@@ -6565,6 +6789,12 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfigurationType_TransactionDiagnostics = "i=32299";
         /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile = "i=15564";
+        /// <remarks />
+        public const string ApplicationConfigurationType_KeyCredentials = "i=19423";
+        /// <remarks />
+        public const string ApplicationConfigurationType_AuthorizationServices = "i=19427";
+        /// <remarks />
         public const string ServerConfiguration = "i=12637";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups = "i=14053";
@@ -6582,6 +6812,8 @@ namespace Opc.Ua.WebApi
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList = "i=14123";
         /// <remarks />
         public const string ServerConfiguration_TransactionDiagnostics = "i=32336";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile = "i=15892";
         /// <remarks />
         public const string KeyCredentialConfigurationFolderType_ServiceName_Placeholder = "i=17511";
         /// <remarks />
@@ -6937,6 +7169,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string LldpPortInformationType_RemoteSystemsData_LldpRemoteSystem_Placeholder = "i=19017";
         /// <remarks />
+        public const string ServerLog = "i=19372";
+        /// <remarks />
+        public const string Logs = "i=19378";
+        /// <remarks />
         public const string Union_Encoding_DefaultBinary = "i=12766";
         /// <remarks />
         public const string KeyValuePair_Encoding_DefaultBinary = "i=14846";
@@ -6979,7 +7215,29 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TrustListDataType_Encoding_DefaultBinary = "i=12680";
         /// <remarks />
+        public const string BaseConfigurationDataType_Encoding_DefaultBinary = "i=16538";
+        /// <remarks />
+        public const string BaseConfigurationRecordDataType_Encoding_DefaultBinary = "i=16539";
+        /// <remarks />
+        public const string CertificateGroupDataType_Encoding_DefaultBinary = "i=16540";
+        /// <remarks />
+        public const string ConfigurationUpdateTargetType_Encoding_DefaultBinary = "i=16541";
+        /// <remarks />
         public const string TransactionErrorType_Encoding_DefaultBinary = "i=32382";
+        /// <remarks />
+        public const string ApplicationConfigurationDataType_Encoding_DefaultBinary = "i=16542";
+        /// <remarks />
+        public const string ApplicationIdentityDataType_Encoding_DefaultBinary = "i=16543";
+        /// <remarks />
+        public const string EndpointDataType_Encoding_DefaultBinary = "i=16544";
+        /// <remarks />
+        public const string ServerEndpointDataType_Encoding_DefaultBinary = "i=16545";
+        /// <remarks />
+        public const string SecuritySettingsDataType_Encoding_DefaultBinary = "i=16546";
+        /// <remarks />
+        public const string UserTokenSettingsDataType_Encoding_DefaultBinary = "i=16547";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultBinary = "i=19752";
         /// <remarks />
         public const string DecimalDataType_Encoding_DefaultBinary = "i=17863";
         /// <remarks />
@@ -7142,6 +7400,16 @@ namespace Opc.Ua.WebApi
         public const string ReferenceDescriptionDataType_Encoding_DefaultBinary = "i=32661";
         /// <remarks />
         public const string ReferenceListEntryDataType_Encoding_DefaultBinary = "i=32662";
+        /// <remarks />
+        public const string LogRecord_Encoding_DefaultBinary = "i=19379";
+        /// <remarks />
+        public const string LogRecordsDataType_Encoding_DefaultBinary = "i=19753";
+        /// <remarks />
+        public const string SpanContextDataType_Encoding_DefaultBinary = "i=19754";
+        /// <remarks />
+        public const string TraceContextDataType_Encoding_DefaultBinary = "i=19755";
+        /// <remarks />
+        public const string NameValuePair_Encoding_DefaultBinary = "i=19756";
         /// <remarks />
         public const string RolePermissionType_Encoding_DefaultBinary = "i=128";
         /// <remarks />
@@ -7653,7 +7921,29 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TrustListDataType_Encoding_DefaultXml = "i=12676";
         /// <remarks />
+        public const string BaseConfigurationDataType_Encoding_DefaultXml = "i=16587";
+        /// <remarks />
+        public const string BaseConfigurationRecordDataType_Encoding_DefaultXml = "i=16588";
+        /// <remarks />
+        public const string CertificateGroupDataType_Encoding_DefaultXml = "i=16589";
+        /// <remarks />
+        public const string ConfigurationUpdateTargetType_Encoding_DefaultXml = "i=16590";
+        /// <remarks />
         public const string TransactionErrorType_Encoding_DefaultXml = "i=32386";
+        /// <remarks />
+        public const string ApplicationConfigurationDataType_Encoding_DefaultXml = "i=16591";
+        /// <remarks />
+        public const string ApplicationIdentityDataType_Encoding_DefaultXml = "i=16592";
+        /// <remarks />
+        public const string EndpointDataType_Encoding_DefaultXml = "i=16593";
+        /// <remarks />
+        public const string ServerEndpointDataType_Encoding_DefaultXml = "i=16594";
+        /// <remarks />
+        public const string SecuritySettingsDataType_Encoding_DefaultXml = "i=16595";
+        /// <remarks />
+        public const string UserTokenSettingsDataType_Encoding_DefaultXml = "i=16596";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultXml = "i=19772";
         /// <remarks />
         public const string DecimalDataType_Encoding_DefaultXml = "i=17862";
         /// <remarks />
@@ -7816,6 +8106,16 @@ namespace Opc.Ua.WebApi
         public const string ReferenceDescriptionDataType_Encoding_DefaultXml = "i=32669";
         /// <remarks />
         public const string ReferenceListEntryDataType_Encoding_DefaultXml = "i=32670";
+        /// <remarks />
+        public const string LogRecord_Encoding_DefaultXml = "i=19383";
+        /// <remarks />
+        public const string LogRecordsDataType_Encoding_DefaultXml = "i=19773";
+        /// <remarks />
+        public const string SpanContextDataType_Encoding_DefaultXml = "i=19774";
+        /// <remarks />
+        public const string TraceContextDataType_Encoding_DefaultXml = "i=19775";
+        /// <remarks />
+        public const string NameValuePair_Encoding_DefaultXml = "i=19776";
         /// <remarks />
         public const string RolePermissionType_Encoding_DefaultXml = "i=16126";
         /// <remarks />
@@ -8327,7 +8627,29 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TrustListDataType_Encoding_DefaultJson = "i=15044";
         /// <remarks />
+        public const string BaseConfigurationDataType_Encoding_DefaultJson = "i=16632";
+        /// <remarks />
+        public const string BaseConfigurationRecordDataType_Encoding_DefaultJson = "i=16633";
+        /// <remarks />
+        public const string CertificateGroupDataType_Encoding_DefaultJson = "i=16634";
+        /// <remarks />
+        public const string ConfigurationUpdateTargetType_Encoding_DefaultJson = "i=16635";
+        /// <remarks />
         public const string TransactionErrorType_Encoding_DefaultJson = "i=32390";
+        /// <remarks />
+        public const string ApplicationConfigurationDataType_Encoding_DefaultJson = "i=16636";
+        /// <remarks />
+        public const string ApplicationIdentityDataType_Encoding_DefaultJson = "i=16637";
+        /// <remarks />
+        public const string EndpointDataType_Encoding_DefaultJson = "i=16642";
+        /// <remarks />
+        public const string ServerEndpointDataType_Encoding_DefaultJson = "i=16643";
+        /// <remarks />
+        public const string SecuritySettingsDataType_Encoding_DefaultJson = "i=16644";
+        /// <remarks />
+        public const string UserTokenSettingsDataType_Encoding_DefaultJson = "i=16645";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultJson = "i=19802";
         /// <remarks />
         public const string DecimalDataType_Encoding_DefaultJson = "i=15045";
         /// <remarks />
@@ -8490,6 +8812,16 @@ namespace Opc.Ua.WebApi
         public const string ReferenceDescriptionDataType_Encoding_DefaultJson = "i=32677";
         /// <remarks />
         public const string ReferenceListEntryDataType_Encoding_DefaultJson = "i=32678";
+        /// <remarks />
+        public const string LogRecord_Encoding_DefaultJson = "i=19387";
+        /// <remarks />
+        public const string LogRecordsDataType_Encoding_DefaultJson = "i=19803";
+        /// <remarks />
+        public const string SpanContextDataType_Encoding_DefaultJson = "i=19804";
+        /// <remarks />
+        public const string TraceContextDataType_Encoding_DefaultJson = "i=19805";
+        /// <remarks />
+        public const string NameValuePair_Encoding_DefaultJson = "i=19806";
         /// <remarks />
         public const string RolePermissionType_Encoding_DefaultJson = "i=15062";
         /// <remarks />
@@ -9297,6 +9629,14 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string HttpsCertificateType = "i=12558";
         /// <remarks />
+        public const string UserCertificateType = "i=19323";
+        /// <remarks />
+        public const string TlsCertificateType = "i=19324";
+        /// <remarks />
+        public const string TlsServerCertificateType = "i=19325";
+        /// <remarks />
+        public const string TlsClientCertificateType = "i=19326";
+        /// <remarks />
         public const string UserCredentialCertificateType = "i=15181";
         /// <remarks />
         public const string RsaMinApplicationCertificateType = "i=12559";
@@ -9317,6 +9657,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string EccCurve448ApplicationCertificateType = "i=23543";
         /// <remarks />
+        public const string ConfigurationFileType = "i=15437";
+        /// <remarks />
+        public const string ConfigurationUpdatedAuditEventType = "i=15541";
+        /// <remarks />
         public const string TrustListUpdateRequestedAuditEventType = "i=32260";
         /// <remarks />
         public const string TrustListUpdatedAuditEventType = "i=12561";
@@ -9325,7 +9669,11 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationConfigurationFolderType = "i=16662";
         /// <remarks />
+        public const string ApplicationConfigurationFileType = "i=15550";
+        /// <remarks />
         public const string ServerConfigurationType = "i=12581";
+        /// <remarks />
+        public const string ApplicationConfigurationType = "i=25731";
         /// <remarks />
         public const string CertificateUpdateRequestedAuditEventType = "i=32306";
         /// <remarks />
@@ -9471,8 +9819,6 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserManagementType = "i=24264";
         /// <remarks />
-        public const string ApplicationConfigurationType = "i=25731";
-        /// <remarks />
         public const string ProvisionableDeviceType = "i=26871";
         /// <remarks />
         public const string IIetfBaseNetworkInterfaceType = "i=24148";
@@ -9518,6 +9864,14 @@ namespace Opc.Ua.WebApi
         public const string LldpPortInformationType = "i=19009";
         /// <remarks />
         public const string LldpRemoteSystemType = "i=19033";
+        /// <remarks />
+        public const string LogObjectType = "i=19352";
+        /// <remarks />
+        public const string BaseLogEventType = "i=19362";
+        /// <remarks />
+        public const string LogOverflowEventType = "i=19369";
+        /// <remarks />
+        public const string LogEntryConditionClassType = "i=19370";
 
         /// <summary>
         /// Converts a value to a name for display.
@@ -9684,6 +10038,8 @@ namespace Opc.Ua.WebApi
         public const string HasAttachedComponent = "i=25264";
         /// <remarks />
         public const string HasReferenceDescription = "i=32679";
+        /// <remarks />
+        public const string HasLogHierarchy = "i=19371";
 
         /// <summary>
         /// Converts a value to a name for display.
@@ -9920,6 +10276,8 @@ namespace Opc.Ua.WebApi
         public const string ServerCapabilitiesType_MaxQueryContinuationPoints = "i=2733";
         /// <remarks />
         public const string ServerCapabilitiesType_MaxHistoryContinuationPoints = "i=2734";
+        /// <remarks />
+        public const string ServerCapabilitiesType_MaxLogObjectContinuationPoints = "i=19809";
         /// <remarks />
         public const string ServerCapabilitiesType_SoftwareCertificates = "i=3049";
         /// <remarks />
@@ -12719,7 +13077,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupType_CertificateTypes = "i=13631";
         /// <remarks />
-        public const string CertificateGroupType_GetRejectedList_OutputArguments = "i=23527";
+        public const string CertificateGroupType_Purpose = "i=19398";
         /// <remarks />
         public const string CertificateGroupType_CertificateExpired_EventId = "i=19451";
         /// <remarks />
@@ -12937,6 +13295,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupType_TrustListOutOfDate_UpdateFrequency = "i=20289";
         /// <remarks />
+        public const string CertificateGroupType_GetRejectedList_OutputArguments = "i=23527";
+        /// <remarks />
         public const string CertificateGroupFolderType_DefaultApplicationGroup_TrustList_Size = "i=13816";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultApplicationGroup_TrustList_Writable = "i=13817";
@@ -12978,8 +13338,6 @@ namespace Opc.Ua.WebApi
         public const string CertificateGroupFolderType_DefaultApplicationGroup_TrustList_RemoveCertificate_InputArguments = "i=13846";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultApplicationGroup_CertificateTypes = "i=13847";
-        /// <remarks />
-        public const string CertificateGroupFolderType_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=23530";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultApplicationGroup_CertificateExpired_EventId = "i=20292";
         /// <remarks />
@@ -13197,6 +13555,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "i=20587";
         /// <remarks />
+        public const string CertificateGroupFolderType_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=23530";
+        /// <remarks />
         public const string CertificateGroupFolderType_DefaultHttpsGroup_TrustList_Size = "i=13850";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultHttpsGroup_TrustList_Writable = "i=13851";
@@ -13238,8 +13598,6 @@ namespace Opc.Ua.WebApi
         public const string CertificateGroupFolderType_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "i=13880";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultHttpsGroup_CertificateTypes = "i=13881";
-        /// <remarks />
-        public const string CertificateGroupFolderType_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=23532";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultHttpsGroup_CertificateExpired_EventId = "i=20590";
         /// <remarks />
@@ -13457,6 +13815,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "i=20883";
         /// <remarks />
+        public const string CertificateGroupFolderType_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=23532";
+        /// <remarks />
         public const string CertificateGroupFolderType_DefaultUserTokenGroup_TrustList_Size = "i=13884";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultUserTokenGroup_TrustList_Writable = "i=13885";
@@ -13498,8 +13858,6 @@ namespace Opc.Ua.WebApi
         public const string CertificateGroupFolderType_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "i=13914";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultUserTokenGroup_CertificateTypes = "i=13915";
-        /// <remarks />
-        public const string CertificateGroupFolderType_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=23534";
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultUserTokenGroup_CertificateExpired_EventId = "i=20886";
         /// <remarks />
@@ -13717,6 +14075,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupFolderType_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "i=21382";
         /// <remarks />
+        public const string CertificateGroupFolderType_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=23534";
+        /// <remarks />
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_TrustList_Size = "i=13918";
         /// <remarks />
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_TrustList_Writable = "i=13919";
@@ -13758,8 +14118,6 @@ namespace Opc.Ua.WebApi
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_TrustList_RemoveCertificate_InputArguments = "i=13948";
         /// <remarks />
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_CertificateTypes = "i=13949";
-        /// <remarks />
-        public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_GetRejectedList_OutputArguments = "i=23536";
         /// <remarks />
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_CertificateExpired_EventId = "i=21385";
         /// <remarks />
@@ -13977,6 +14335,28 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_TrustListOutOfDate_UpdateFrequency = "i=21678";
         /// <remarks />
+        public const string CertificateGroupFolderType_AdditionalGroup_Placeholder_GetRejectedList_OutputArguments = "i=23536";
+        /// <remarks />
+        public const string ConfigurationFileType_LastUpdateTime = "i=15438";
+        /// <remarks />
+        public const string ConfigurationFileType_CurrentVersion = "i=15439";
+        /// <remarks />
+        public const string ConfigurationFileType_ActivityTimeout = "i=15503";
+        /// <remarks />
+        public const string ConfigurationFileType_SupportedDataType = "i=15504";
+        /// <remarks />
+        public const string ConfigurationFileType_ConfirmUpdate_InputArguments = "i=15511";
+        /// <remarks />
+        public const string ConfigurationFileType_CloseAndUpdate_InputArguments = "i=15506";
+        /// <remarks />
+        public const string ConfigurationFileType_CloseAndUpdate_OutputArguments = "i=15507";
+        /// <remarks />
+        public const string ConfigurationUpdateType_EnumValues = "i=15540";
+        /// <remarks />
+        public const string ConfigurationUpdatedAuditEventType_OldVersion = "i=15542";
+        /// <remarks />
+        public const string ConfigurationUpdatedAuditEventType_NewVersion = "i=15543";
+        /// <remarks />
         public const string TrustListUpdatedAuditEventType_TrustListId = "i=32281";
         /// <remarks />
         public const string TransactionDiagnosticsType_StartTime = "i=32287";
@@ -13990,6 +14370,40 @@ namespace Opc.Ua.WebApi
         public const string TransactionDiagnosticsType_AffectedCertificateGroups = "i=32291";
         /// <remarks />
         public const string TransactionDiagnosticsType_Errors = "i=32292";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ApplicationUri = "i=18525";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ProductUri = "i=18526";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ApplicationType = "i=18527";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ServerCapabilities = "i=18528";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_SupportedPrivateKeyFormats = "i=18529";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_MaxTrustListSize = "i=18530";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_MulticastDnsEnabled = "i=18531";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_UpdateCertificate_InputArguments = "i=18534";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_UpdateCertificate_OutputArguments = "i=18535";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSelfSignedCertificate_InputArguments = "i=19333";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSelfSignedCertificate_OutputArguments = "i=19334";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_DeleteCertificate_InputArguments = "i=19336";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetCertificates_InputArguments = "i=18537";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetCertificates_OutputArguments = "i=18538";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSigningRequest_InputArguments = "i=18542";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSigningRequest_OutputArguments = "i=18543";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetRejectedList_OutputArguments = "i=18545";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_Size = "i=16710";
         /// <remarks />
@@ -14032,8 +14446,6 @@ namespace Opc.Ua.WebApi
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_RemoveCertificate_InputArguments = "i=16750";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_CertificateTypes = "i=16751";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=16753";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventId = "i=16755";
         /// <remarks />
@@ -14251,6 +14663,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "i=17124";
         /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=16753";
+        /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustList_Size = "i=17127";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustList_Writable = "i=17128";
@@ -14292,8 +14706,6 @@ namespace Opc.Ua.WebApi
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "i=17162";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_CertificateTypes = "i=17163";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=17165";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_CertificateExpired_EventId = "i=17167";
         /// <remarks />
@@ -14511,6 +14923,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "i=18014";
         /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=17165";
+        /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustList_Size = "i=18017";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustList_Writable = "i=18018";
@@ -14552,8 +14966,6 @@ namespace Opc.Ua.WebApi
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "i=18055";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_CertificateTypes = "i=18056";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=18058";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_EventId = "i=18060";
         /// <remarks />
@@ -14771,33 +15183,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "i=18524";
         /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ApplicationUri = "i=18525";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ProductUri = "i=18526";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ApplicationType = "i=18527";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ServerCapabilities = "i=18528";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_SupportedPrivateKeyFormats = "i=18529";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_MaxTrustListSize = "i=18530";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_MulticastDnsEnabled = "i=18531";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_UpdateCertificate_InputArguments = "i=18534";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_UpdateCertificate_OutputArguments = "i=18535";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetCertificates_InputArguments = "i=18537";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetCertificates_OutputArguments = "i=18538";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSigningRequest_InputArguments = "i=18542";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CreateSigningRequest_OutputArguments = "i=18543";
-        /// <remarks />
-        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_GetRejectedList_OutputArguments = "i=18545";
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=18058";
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_TransactionDiagnostics_StartTime = "i=18548";
         /// <remarks />
@@ -14811,7 +15197,125 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_TransactionDiagnostics_Errors = "i=18553";
         /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Size = "i=18555";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Writable = "i=18556";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_UserWritable = "i=18557";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_OpenCount = "i=18558";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Open_InputArguments = "i=18563";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Open_OutputArguments = "i=18564";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Close_InputArguments = "i=18566";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Read_InputArguments = "i=18568";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Read_OutputArguments = "i=18569";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_Write_InputArguments = "i=18571";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_GetPosition_InputArguments = "i=18573";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_GetPosition_OutputArguments = "i=18574";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_SetPosition_InputArguments = "i=18576";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_LastUpdateTime = "i=18577";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_CurrentVersion = "i=18578";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_ActivityTimeout = "i=18579";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_SupportedDataType = "i=18580";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_ConfirmUpdate_InputArguments = "i=18585";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_CloseAndUpdate_InputArguments = "i=18582";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_CloseAndUpdate_OutputArguments = "i=18583";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_AvailableNetworks = "i=18587";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_AvailablePorts = "i=18588";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_MaxEndpoints = "i=19406";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_MaxCertificateGroups = "i=19407";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_SecurityPolicyUris = "i=18589";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_UserTokenTypes = "i=18590";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_CertificateTypes = "i=18591";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_ConfigurationFile_CertificateGroupPurposes = "i=19408";
+        /// <remarks />
         public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_Enabled = "i=18592";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_KeyCredentials_CreateCredential_InputArguments = "i=19411";
+        /// <remarks />
+        public const string ApplicationConfigurationFolderType_ApplicationName_Placeholder_KeyCredentials_CreateCredential_OutputArguments = "i=19412";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_AvailableNetworks = "i=15551";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_AvailablePorts = "i=15552";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_MaxEndpoints = "i=19414";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_MaxCertificateGroups = "i=19415";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_SecurityPolicyUris = "i=15553";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_UserTokenTypes = "i=15554";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_CertificateTypes = "i=15555";
+        /// <remarks />
+        public const string ApplicationConfigurationFileType_CertificateGroupPurposes = "i=19416";
+        /// <remarks />
+        public const string ServerConfigurationType_ApplicationUri = "i=25696";
+        /// <remarks />
+        public const string ServerConfigurationType_ProductUri = "i=25724";
+        /// <remarks />
+        public const string ServerConfigurationType_ApplicationType = "i=25697";
+        /// <remarks />
+        public const string ServerConfigurationType_ApplicationNames = "i=18660";
+        /// <remarks />
+        public const string ServerConfigurationType_ServerCapabilities = "i=12708";
+        /// <remarks />
+        public const string ServerConfigurationType_SupportedPrivateKeyFormats = "i=12583";
+        /// <remarks />
+        public const string ServerConfigurationType_MaxTrustListSize = "i=12584";
+        /// <remarks />
+        public const string ServerConfigurationType_MulticastDnsEnabled = "i=12585";
+        /// <remarks />
+        public const string ServerConfigurationType_HasSecureElement = "i=23593";
+        /// <remarks />
+        public const string ServerConfigurationType_SupportsTransactions = "i=18661";
+        /// <remarks />
+        public const string ServerConfigurationType_InApplicationSetup = "i=19308";
+        /// <remarks />
+        public const string ServerConfigurationType_UpdateCertificate_InputArguments = "i=12617";
+        /// <remarks />
+        public const string ServerConfigurationType_UpdateCertificate_OutputArguments = "i=12618";
+        /// <remarks />
+        public const string ServerConfigurationType_CreateSelfSignedCertificate_InputArguments = "i=19338";
+        /// <remarks />
+        public const string ServerConfigurationType_CreateSelfSignedCertificate_OutputArguments = "i=19339";
+        /// <remarks />
+        public const string ServerConfigurationType_DeleteCertificate_InputArguments = "i=19341";
+        /// <remarks />
+        public const string ServerConfigurationType_GetCertificates_InputArguments = "i=32297";
+        /// <remarks />
+        public const string ServerConfigurationType_GetCertificates_OutputArguments = "i=32298";
+        /// <remarks />
+        public const string ServerConfigurationType_CreateSigningRequest_InputArguments = "i=12732";
+        /// <remarks />
+        public const string ServerConfigurationType_CreateSigningRequest_OutputArguments = "i=12733";
+        /// <remarks />
+        public const string ServerConfigurationType_GetRejectedList_OutputArguments = "i=12776";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_TrustList_Size = "i=13953";
         /// <remarks />
@@ -14854,8 +15358,6 @@ namespace Opc.Ua.WebApi
         public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_TrustList_RemoveCertificate_InputArguments = "i=13983";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_CertificateTypes = "i=13984";
-        /// <remarks />
-        public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=23545";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventId = "i=21681";
         /// <remarks />
@@ -15073,6 +15575,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "i=21974";
         /// <remarks />
+        public const string ServerConfigurationType_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=23545";
+        /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_TrustList_Size = "i=13987";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_TrustList_Writable = "i=13988";
@@ -15114,8 +15618,6 @@ namespace Opc.Ua.WebApi
         public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "i=14017";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_CertificateTypes = "i=14018";
-        /// <remarks />
-        public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=23547";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_EventId = "i=21977";
         /// <remarks />
@@ -15333,6 +15835,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "i=22270";
         /// <remarks />
+        public const string ServerConfigurationType_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=23547";
+        /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_TrustList_Size = "i=14021";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_TrustList_Writable = "i=14022";
@@ -15374,8 +15878,6 @@ namespace Opc.Ua.WebApi
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "i=14051";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_CertificateTypes = "i=14052";
-        /// <remarks />
-        public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=23549";
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_EventId = "i=22273";
         /// <remarks />
@@ -15593,41 +16095,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "i=22566";
         /// <remarks />
-        public const string ServerConfigurationType_ApplicationUri = "i=25696";
-        /// <remarks />
-        public const string ServerConfigurationType_ProductUri = "i=25724";
-        /// <remarks />
-        public const string ServerConfigurationType_ApplicationType = "i=25697";
-        /// <remarks />
-        public const string ServerConfigurationType_ApplicationNames = "i=18660";
-        /// <remarks />
-        public const string ServerConfigurationType_ServerCapabilities = "i=12708";
-        /// <remarks />
-        public const string ServerConfigurationType_SupportedPrivateKeyFormats = "i=12583";
-        /// <remarks />
-        public const string ServerConfigurationType_MaxTrustListSize = "i=12584";
-        /// <remarks />
-        public const string ServerConfigurationType_MulticastDnsEnabled = "i=12585";
-        /// <remarks />
-        public const string ServerConfigurationType_HasSecureElement = "i=23593";
-        /// <remarks />
-        public const string ServerConfigurationType_SupportsTransactions = "i=18661";
-        /// <remarks />
-        public const string ServerConfigurationType_InApplicationSetup = "i=19308";
-        /// <remarks />
-        public const string ServerConfigurationType_UpdateCertificate_InputArguments = "i=12617";
-        /// <remarks />
-        public const string ServerConfigurationType_UpdateCertificate_OutputArguments = "i=12618";
-        /// <remarks />
-        public const string ServerConfigurationType_GetCertificates_InputArguments = "i=32297";
-        /// <remarks />
-        public const string ServerConfigurationType_GetCertificates_OutputArguments = "i=32298";
-        /// <remarks />
-        public const string ServerConfigurationType_CreateSigningRequest_InputArguments = "i=12732";
-        /// <remarks />
-        public const string ServerConfigurationType_CreateSigningRequest_OutputArguments = "i=12733";
-        /// <remarks />
-        public const string ServerConfigurationType_GetRejectedList_OutputArguments = "i=12776";
+        public const string ServerConfigurationType_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=23549";
         /// <remarks />
         public const string ServerConfigurationType_TransactionDiagnostics_StartTime = "i=32300";
         /// <remarks />
@@ -15641,9 +16109,113 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfigurationType_TransactionDiagnostics_Errors = "i=32305";
         /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Size = "i=15565";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Writable = "i=15566";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_UserWritable = "i=15567";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_OpenCount = "i=15568";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Open_InputArguments = "i=15573";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Open_OutputArguments = "i=15574";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Close_InputArguments = "i=15790";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Read_InputArguments = "i=15792";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Read_OutputArguments = "i=15804";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_Write_InputArguments = "i=15806";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_GetPosition_InputArguments = "i=15808";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_GetPosition_OutputArguments = "i=15809";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_SetPosition_InputArguments = "i=15811";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_LastUpdateTime = "i=15812";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_CurrentVersion = "i=15813";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_ActivityTimeout = "i=15814";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_SupportedDataType = "i=15848";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_ConfirmUpdate_InputArguments = "i=15864";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_CloseAndUpdate_InputArguments = "i=15850";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_CloseAndUpdate_OutputArguments = "i=15851";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_AvailableNetworks = "i=16646";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_AvailablePorts = "i=16647";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_MaxEndpoints = "i=19420";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_MaxCertificateGroups = "i=19421";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_SecurityPolicyUris = "i=16648";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_UserTokenTypes = "i=16649";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_CertificateTypes = "i=16650";
+        /// <remarks />
+        public const string ServerConfigurationType_ConfigurationFile_CertificateGroupPurposes = "i=19422";
+        /// <remarks />
+        public const string ApplicationConfigurationType_ApplicationUri = "i=26850";
+        /// <remarks />
+        public const string ApplicationConfigurationType_ProductUri = "i=26851";
+        /// <remarks />
+        public const string ApplicationConfigurationType_ApplicationType = "i=26852";
+        /// <remarks />
+        public const string ApplicationConfigurationType_Enabled = "i=26849";
+        /// <remarks />
+        public const string ApplicationConfigurationType_KeyCredentials_CreateCredential_InputArguments = "i=19425";
+        /// <remarks />
+        public const string ApplicationConfigurationType_KeyCredentials_CreateCredential_OutputArguments = "i=19426";
+        /// <remarks />
         public const string CertificateUpdatedAuditEventType_CertificateGroup = "i=13735";
         /// <remarks />
         public const string CertificateUpdatedAuditEventType_CertificateType = "i=13736";
+        /// <remarks />
+        public const string ServerConfiguration_ApplicationUri = "i=25706";
+        /// <remarks />
+        public const string ServerConfiguration_ProductUri = "i=25725";
+        /// <remarks />
+        public const string ServerConfiguration_ApplicationType = "i=25707";
+        /// <remarks />
+        public const string ServerConfiguration_ServerCapabilities = "i=12710";
+        /// <remarks />
+        public const string ServerConfiguration_SupportedPrivateKeyFormats = "i=12639";
+        /// <remarks />
+        public const string ServerConfiguration_MaxTrustListSize = "i=12640";
+        /// <remarks />
+        public const string ServerConfiguration_MulticastDnsEnabled = "i=12641";
+        /// <remarks />
+        public const string ServerConfiguration_HasSecureElement = "i=23597";
+        /// <remarks />
+        public const string ServerConfiguration_UpdateCertificate_InputArguments = "i=13738";
+        /// <remarks />
+        public const string ServerConfiguration_UpdateCertificate_OutputArguments = "i=13739";
+        /// <remarks />
+        public const string ServerConfiguration_CreateSelfSignedCertificate_InputArguments = "i=19343";
+        /// <remarks />
+        public const string ServerConfiguration_CreateSelfSignedCertificate_OutputArguments = "i=19344";
+        /// <remarks />
+        public const string ServerConfiguration_DeleteCertificate_InputArguments = "i=19346";
+        /// <remarks />
+        public const string ServerConfiguration_GetCertificates_InputArguments = "i=32334";
+        /// <remarks />
+        public const string ServerConfiguration_GetCertificates_OutputArguments = "i=32335";
+        /// <remarks />
+        public const string ServerConfiguration_CreateSigningRequest_InputArguments = "i=12738";
+        /// <remarks />
+        public const string ServerConfiguration_CreateSigningRequest_OutputArguments = "i=12739";
+        /// <remarks />
+        public const string ServerConfiguration_GetRejectedList_OutputArguments = "i=12778";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_TrustList_Size = "i=12643";
         /// <remarks />
@@ -15686,8 +16258,6 @@ namespace Opc.Ua.WebApi
         public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_TrustList_RemoveCertificate_InputArguments = "i=12671";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_CertificateTypes = "i=14161";
-        /// <remarks />
-        public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=23551";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventId = "i=22569";
         /// <remarks />
@@ -15905,6 +16475,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "i=22862";
         /// <remarks />
+        public const string ServerConfiguration_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=23551";
+        /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_TrustList_Size = "i=14090";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_TrustList_Writable = "i=14091";
@@ -15946,8 +16518,6 @@ namespace Opc.Ua.WebApi
         public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "i=14120";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_CertificateTypes = "i=14121";
-        /// <remarks />
-        public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=23553";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_CertificateExpired_EventId = "i=22865";
         /// <remarks />
@@ -16165,6 +16735,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "i=23158";
         /// <remarks />
+        public const string ServerConfiguration_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=23553";
+        /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList_Size = "i=14124";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList_Writable = "i=14125";
@@ -16206,8 +16778,6 @@ namespace Opc.Ua.WebApi
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "i=14154";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_CertificateTypes = "i=14155";
-        /// <remarks />
-        public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=23555";
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_EventId = "i=23161";
         /// <remarks />
@@ -16425,35 +16995,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "i=23454";
         /// <remarks />
-        public const string ServerConfiguration_ApplicationUri = "i=25706";
-        /// <remarks />
-        public const string ServerConfiguration_ProductUri = "i=25725";
-        /// <remarks />
-        public const string ServerConfiguration_ApplicationType = "i=25707";
-        /// <remarks />
-        public const string ServerConfiguration_ServerCapabilities = "i=12710";
-        /// <remarks />
-        public const string ServerConfiguration_SupportedPrivateKeyFormats = "i=12639";
-        /// <remarks />
-        public const string ServerConfiguration_MaxTrustListSize = "i=12640";
-        /// <remarks />
-        public const string ServerConfiguration_MulticastDnsEnabled = "i=12641";
-        /// <remarks />
-        public const string ServerConfiguration_HasSecureElement = "i=23597";
-        /// <remarks />
-        public const string ServerConfiguration_UpdateCertificate_InputArguments = "i=13738";
-        /// <remarks />
-        public const string ServerConfiguration_UpdateCertificate_OutputArguments = "i=13739";
-        /// <remarks />
-        public const string ServerConfiguration_GetCertificates_InputArguments = "i=32334";
-        /// <remarks />
-        public const string ServerConfiguration_GetCertificates_OutputArguments = "i=32335";
-        /// <remarks />
-        public const string ServerConfiguration_CreateSigningRequest_InputArguments = "i=12738";
-        /// <remarks />
-        public const string ServerConfiguration_CreateSigningRequest_OutputArguments = "i=12739";
-        /// <remarks />
-        public const string ServerConfiguration_GetRejectedList_OutputArguments = "i=12778";
+        public const string ServerConfiguration_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=23555";
         /// <remarks />
         public const string ServerConfiguration_TransactionDiagnostics_StartTime = "i=32337";
         /// <remarks />
@@ -16466,6 +17008,62 @@ namespace Opc.Ua.WebApi
         public const string ServerConfiguration_TransactionDiagnostics_AffectedCertificateGroups = "i=32341";
         /// <remarks />
         public const string ServerConfiguration_TransactionDiagnostics_Errors = "i=32342";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Size = "i=15893";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Writable = "i=15894";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_UserWritable = "i=15937";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_OpenCount = "i=15938";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Open_InputArguments = "i=16020";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Open_OutputArguments = "i=16059";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Close_InputArguments = "i=16061";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Read_InputArguments = "i=16075";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Read_OutputArguments = "i=16076";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_Write_InputArguments = "i=16102";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_GetPosition_InputArguments = "i=16122";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_GetPosition_OutputArguments = "i=16123";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_SetPosition_InputArguments = "i=16160";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_LastUpdateTime = "i=16283";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_CurrentVersion = "i=16306";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_ActivityTimeout = "i=16315";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_SupportedDataType = "i=16316";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_ConfirmUpdate_InputArguments = "i=16321";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_CloseAndUpdate_InputArguments = "i=16318";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_CloseAndUpdate_OutputArguments = "i=16319";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_AvailableNetworks = "i=16652";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_AvailablePorts = "i=16653";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_MaxEndpoints = "i=19442";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_MaxCertificateGroups = "i=19443";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_SecurityPolicyUris = "i=16654";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_UserTokenTypes = "i=16655";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_CertificateTypes = "i=16656";
+        /// <remarks />
+        public const string ServerConfiguration_ConfigurationFile_CertificateGroupPurposes = "i=19444";
         /// <remarks />
         public const string KeyCredentialConfigurationFolderType_ServiceName_Placeholder_ResourceUri = "i=17512";
         /// <remarks />
@@ -19147,19 +19745,45 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string MultiStateDictionaryEntryDiscreteType_ValueAsDictionaryEntries = "i=19090";
         /// <remarks />
-        public const string ApplicationConfigurationType_ApplicationUri = "i=26850";
-        /// <remarks />
-        public const string ApplicationConfigurationType_ProductUri = "i=26851";
-        /// <remarks />
-        public const string ApplicationConfigurationType_ApplicationType = "i=26852";
-        /// <remarks />
-        public const string ApplicationConfigurationType_Enabled = "i=26849";
-        /// <remarks />
         public const string ProvisionableDeviceType_IsSingleton = "i=26872";
         /// <remarks />
         public const string ProvisionableDeviceType_RequestTickets_OutputArguments = "i=26874";
         /// <remarks />
         public const string ProvisionableDeviceType_SetRegistrarEndpoints_InputArguments = "i=26876";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ApplicationUri = "i=27997";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ProductUri = "i=27998";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ApplicationType = "i=27999";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ServerCapabilities = "i=28000";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_SupportedPrivateKeyFormats = "i=28001";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_MaxTrustListSize = "i=28002";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_MulticastDnsEnabled = "i=28003";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_UpdateCertificate_InputArguments = "i=28006";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_UpdateCertificate_OutputArguments = "i=28007";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSelfSignedCertificate_InputArguments = "i=19348";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSelfSignedCertificate_OutputArguments = "i=19349";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_DeleteCertificate_InputArguments = "i=19351";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetCertificates_InputArguments = "i=32360";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetCertificates_OutputArguments = "i=32361";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSigningRequest_InputArguments = "i=28011";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSigningRequest_OutputArguments = "i=28012";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetRejectedList_OutputArguments = "i=28014";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_Size = "i=26882";
         /// <remarks />
@@ -19202,8 +19826,6 @@ namespace Opc.Ua.WebApi
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustList_RemoveCertificate_InputArguments = "i=26916";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_CertificateTypes = "i=26917";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=26920";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventId = "i=26922";
         /// <remarks />
@@ -19421,6 +20043,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "i=27251";
         /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "i=26920";
+        /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustList_Size = "i=27254";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustList_Writable = "i=27255";
@@ -19462,8 +20086,6 @@ namespace Opc.Ua.WebApi
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "i=27288";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_CertificateTypes = "i=27289";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=27292";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_CertificateExpired_EventId = "i=27294";
         /// <remarks />
@@ -19681,6 +20303,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "i=27623";
         /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "i=27292";
+        /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustList_Size = "i=27626";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustList_Writable = "i=27627";
@@ -19722,8 +20346,6 @@ namespace Opc.Ua.WebApi
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "i=27660";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_CertificateTypes = "i=27661";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=27664";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_EventId = "i=27666";
         /// <remarks />
@@ -19941,33 +20563,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "i=27995";
         /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ApplicationUri = "i=27997";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ProductUri = "i=27998";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ApplicationType = "i=27999";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ServerCapabilities = "i=28000";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_SupportedPrivateKeyFormats = "i=28001";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_MaxTrustListSize = "i=28002";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_MulticastDnsEnabled = "i=28003";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_UpdateCertificate_InputArguments = "i=28006";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_UpdateCertificate_OutputArguments = "i=28007";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetCertificates_InputArguments = "i=32360";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetCertificates_OutputArguments = "i=32361";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSigningRequest_InputArguments = "i=28011";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CreateSigningRequest_OutputArguments = "i=28012";
-        /// <remarks />
-        public const string ProvisionableDeviceType_ApplicationName_Placeholder_GetRejectedList_OutputArguments = "i=28014";
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "i=27664";
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_TransactionDiagnostics_StartTime = "i=32363";
         /// <remarks />
@@ -19981,7 +20577,67 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_TransactionDiagnostics_Errors = "i=32368";
         /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Size = "i=16325";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Writable = "i=16326";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_UserWritable = "i=16327";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_OpenCount = "i=16328";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Open_InputArguments = "i=16333";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Open_OutputArguments = "i=16334";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Close_InputArguments = "i=16336";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Read_InputArguments = "i=16338";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Read_OutputArguments = "i=16339";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_Write_InputArguments = "i=16341";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_GetPosition_InputArguments = "i=16343";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_GetPosition_OutputArguments = "i=16344";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_SetPosition_InputArguments = "i=16346";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_LastUpdateTime = "i=16347";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_CurrentVersion = "i=16365";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_ActivityTimeout = "i=16366";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_SupportedDataType = "i=16367";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_ConfirmUpdate_InputArguments = "i=16536";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_CloseAndUpdate_InputArguments = "i=16369";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_CloseAndUpdate_OutputArguments = "i=16370";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_AvailableNetworks = "i=16657";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_AvailablePorts = "i=16658";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_MaxEndpoints = "i=19736";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_MaxCertificateGroups = "i=19737";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_SecurityPolicyUris = "i=16659";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_UserTokenTypes = "i=16660";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_CertificateTypes = "i=16661";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_ConfigurationFile_CertificateGroupPurposes = "i=19738";
+        /// <remarks />
         public const string ProvisionableDeviceType_ApplicationName_Placeholder_Enabled = "i=27996";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_KeyCredentials_CreateCredential_InputArguments = "i=19741";
+        /// <remarks />
+        public const string ProvisionableDeviceType_ApplicationName_Placeholder_KeyCredentials_CreateCredential_OutputArguments = "i=19742";
         /// <remarks />
         public const string ProvisionableDevice_IsSingleton = "i=29879";
         /// <remarks />
@@ -20229,6 +20885,34 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ReferenceDescriptionVariableType_ReferenceRefinement = "i=32658";
         /// <remarks />
+        public const string LogObjectType_GetRecords_InputArguments = "i=19354";
+        /// <remarks />
+        public const string LogObjectType_GetRecords_OutputArguments = "i=19355";
+        /// <remarks />
+        public const string LogObjectType_MaxRecords = "i=19356";
+        /// <remarks />
+        public const string LogObjectType_MaxStorageDuration = "i=19357";
+        /// <remarks />
+        public const string LogObjectType_MinimumSeverity = "i=19744";
+        /// <remarks />
+        public const string LogRecordMask_OptionSetValues = "i=19750";
+        /// <remarks />
+        public const string BaseLogEventType_ConditionClassId = "i=19363";
+        /// <remarks />
+        public const string BaseLogEventType_ConditionClassName = "i=19364";
+        /// <remarks />
+        public const string BaseLogEventType_ErrorCode = "i=19365";
+        /// <remarks />
+        public const string BaseLogEventType_ErrorCodeNode = "i=19366";
+        /// <remarks />
+        public const string ServerLog_GetRecords_InputArguments = "i=19374";
+        /// <remarks />
+        public const string ServerLog_GetRecords_OutputArguments = "i=19375";
+        /// <remarks />
+        public const string ServerLog_MaxRecords = "i=19376";
+        /// <remarks />
+        public const string ServerLog_MaxStorageDuration = "i=19377";
+        /// <remarks />
         public const string IdType_EnumStrings = "i=7591";
         /// <remarks />
         public const string NodeClass_EnumValues = "i=11878";
@@ -20335,7 +21019,29 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string OpcUa_BinarySchema_TrustListDataType = "i=12681";
         /// <remarks />
+        public const string OpcUa_BinarySchema_BaseConfigurationDataType = "i=16548";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_BaseConfigurationRecordDataType = "i=16551";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_CertificateGroupDataType = "i=16554";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_ConfigurationUpdateTargetType = "i=16557";
+        /// <remarks />
         public const string OpcUa_BinarySchema_TransactionErrorType = "i=32383";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_ApplicationConfigurationDataType = "i=16564";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_ApplicationIdentityDataType = "i=16567";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_EndpointDataType = "i=16570";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_ServerEndpointDataType = "i=16578";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_SecuritySettingsDataType = "i=16581";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_UserTokenSettingsDataType = "i=16584";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_AuthorizationServiceConfigurationDataType = "i=19757";
         /// <remarks />
         public const string OpcUa_BinarySchema_DataTypeSchemaHeader = "i=15741";
         /// <remarks />
@@ -20496,6 +21202,16 @@ namespace Opc.Ua.WebApi
         public const string OpcUa_BinarySchema_ReferenceDescriptionDataType = "i=32663";
         /// <remarks />
         public const string OpcUa_BinarySchema_ReferenceListEntryDataType = "i=32666";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_LogRecord = "i=19380";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_LogRecordsDataType = "i=19760";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_SpanContextDataType = "i=19763";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_TraceContextDataType = "i=19766";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_NameValuePair = "i=19769";
         /// <remarks />
         public const string OpcUa_BinarySchema_RolePermissionType = "i=16131";
         /// <remarks />
@@ -20679,7 +21395,29 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string OpcUa_XmlSchema_TrustListDataType = "i=12677";
         /// <remarks />
+        public const string OpcUa_XmlSchema_BaseConfigurationDataType = "i=16597";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_BaseConfigurationRecordDataType = "i=16604";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_CertificateGroupDataType = "i=16607";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_ConfigurationUpdateTargetType = "i=16610";
+        /// <remarks />
         public const string OpcUa_XmlSchema_TransactionErrorType = "i=32387";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_ApplicationConfigurationDataType = "i=16614";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_ApplicationIdentityDataType = "i=16617";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_EndpointDataType = "i=16620";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_ServerEndpointDataType = "i=16623";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_SecuritySettingsDataType = "i=16626";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_UserTokenSettingsDataType = "i=16629";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_AuthorizationServiceConfigurationDataType = "i=19787";
         /// <remarks />
         public const string OpcUa_XmlSchema_DataTypeSchemaHeader = "i=16027";
         /// <remarks />
@@ -20840,6 +21578,16 @@ namespace Opc.Ua.WebApi
         public const string OpcUa_XmlSchema_ReferenceDescriptionDataType = "i=32671";
         /// <remarks />
         public const string OpcUa_XmlSchema_ReferenceListEntryDataType = "i=32674";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_LogRecord = "i=19384";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_LogRecordsDataType = "i=19790";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_SpanContextDataType = "i=19793";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_TraceContextDataType = "i=19796";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_NameValuePair = "i=19799";
         /// <remarks />
         public const string OpcUa_XmlSchema_RolePermissionType = "i=16127";
         /// <remarks />

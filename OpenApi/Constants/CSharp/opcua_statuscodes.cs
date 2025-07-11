@@ -478,6 +478,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const long BadTransactionPending = 0x80E80000;
         /// <remarks />
+        public const long BadTransactionFailed = 0x80F10000;
+        /// <remarks />
         public const long BadTicketRequired = 0x811F0000;
         /// <remarks />
         public const long BadTicketInvalid = 0x81200000;

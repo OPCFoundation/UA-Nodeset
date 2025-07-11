@@ -67,6 +67,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateRequestedAuditEventType = "CertificateRequestedAuditEventType";
         /// <remarks />
+        public const string CertificateRevokedAuditEventType = "CertificateRevokedAuditEventType";
+        /// <remarks />
         public const string CertificateType = "CertificateType";
         /// <remarks />
         public const string CheckRevocationStatus = "CheckRevocationStatus";
@@ -731,6 +733,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDeliveredAuditEventType = "nsu=" + Namespaces.Uri + ";i=109";
         /// <remarks />
+        public const string CertificateRevokedAuditEventType = "nsu=" + Namespaces.Uri + ";i=27";
+        /// <remarks />
         public const string KeyCredentialManagementFolderType = "nsu=" + Namespaces.Uri + ";i=55";
         /// <remarks />
         public const string KeyCredentialServiceType = "nsu=" + Namespaces.Uri + ";i=1020";
@@ -991,8 +995,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateTypes = "nsu=" + Namespaces.Uri + ";i=545";
         /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=60";
-        /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventId = "nsu=" + Namespaces.Uri + ";i=15009";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventType = "nsu=" + Namespaces.Uri + ";i=15010";
@@ -1209,6 +1211,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "nsu=" + Namespaces.Uri + ";i=15302";
         /// <remarks />
+        public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=60";
+        /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustList_Size = "nsu=" + Namespaces.Uri + ";i=548";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustList_Writable = "nsu=" + Namespaces.Uri + ";i=549";
@@ -1250,8 +1254,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "nsu=" + Namespaces.Uri + ";i=578";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateTypes = "nsu=" + Namespaces.Uri + ";i=579";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=82";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_EventId = "nsu=" + Namespaces.Uri + ";i=15305";
         /// <remarks />
@@ -1469,6 +1471,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "nsu=" + Namespaces.Uri + ";i=15598";
         /// <remarks />
+        public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=82";
+        /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustList_Size = "nsu=" + Namespaces.Uri + ";i=582";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustList_Writable = "nsu=" + Namespaces.Uri + ";i=583";
@@ -1510,8 +1514,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "nsu=" + Namespaces.Uri + ";i=612";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateTypes = "nsu=" + Namespaces.Uri + ";i=613";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=88";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_EventId = "nsu=" + Namespaces.Uri + ";i=15601";
         /// <remarks />
@@ -1729,6 +1731,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "nsu=" + Namespaces.Uri + ";i=15894";
         /// <remarks />
+        public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=88";
+        /// <remarks />
         public const string CertificateDirectoryType_StartSigningRequest_InputArguments = "nsu=" + Namespaces.Uri + ";i=80";
         /// <remarks />
         public const string CertificateDirectoryType_StartSigningRequest_OutputArguments = "nsu=" + Namespaces.Uri + ";i=81";
@@ -1888,8 +1892,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustList_RemoveCertificate_InputArguments = "nsu=" + Namespaces.Uri + ";i=647";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateTypes = "nsu=" + Namespaces.Uri + ";i=648";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=167";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_EventId = "nsu=" + Namespaces.Uri + ";i=15914";
         /// <remarks />
@@ -2107,6 +2109,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_UpdateFrequency = "nsu=" + Namespaces.Uri + ";i=16207";
         /// <remarks />
+        public const string Directory_CertificateGroups_DefaultApplicationGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=167";
+        /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustList_Size = "nsu=" + Namespaces.Uri + ";i=651";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustList_Writable = "nsu=" + Namespaces.Uri + ";i=652";
@@ -2148,8 +2152,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustList_RemoveCertificate_InputArguments = "nsu=" + Namespaces.Uri + ";i=681";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateTypes = "nsu=" + Namespaces.Uri + ";i=682";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=170";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_EventId = "nsu=" + Namespaces.Uri + ";i=16210";
         /// <remarks />
@@ -2367,6 +2369,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_UpdateFrequency = "nsu=" + Namespaces.Uri + ";i=16503";
         /// <remarks />
+        public const string Directory_CertificateGroups_DefaultHttpsGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=170";
+        /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustList_Size = "nsu=" + Namespaces.Uri + ";i=685";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustList_Writable = "nsu=" + Namespaces.Uri + ";i=686";
@@ -2408,8 +2412,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustList_RemoveCertificate_InputArguments = "nsu=" + Namespaces.Uri + ";i=715";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateTypes = "nsu=" + Namespaces.Uri + ";i=716";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=173";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_EventId = "nsu=" + Namespaces.Uri + ";i=16506";
         /// <remarks />
@@ -2626,6 +2628,8 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_LastUpdateTime = "nsu=" + Namespaces.Uri + ";i=16798";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_UpdateFrequency = "nsu=" + Namespaces.Uri + ";i=16799";
+        /// <remarks />
+        public const string Directory_CertificateGroups_DefaultUserTokenGroup_GetRejectedList_OutputArguments = "nsu=" + Namespaces.Uri + ";i=173";
         /// <remarks />
         public const string Directory_StartSigningRequest_InputArguments = "nsu=" + Namespaces.Uri + ";i=158";
         /// <remarks />

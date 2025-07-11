@@ -37,17 +37,17 @@
   xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
   xmlns:uasc="http://opcfoundation.org/UA/PushConfiguration/"
   TargetNamespace="http://opcfoundation.org/UA/GDS/"
-  TargetVersion="1.05.04"
-  TargetPublicationDate="2025-01-08T00:00:00Z"
+  TargetVersion="1.05.05"
+  TargetPublicationDate="2025-06-30T00:00:00Z"
 >
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaGds" Prefix="Opc.Ua.Gds" XmlNamespace="http://opcfoundation.org/UA/GDS/Types.xsd" XmlPrefix="GDS">http://opcfoundation.org/UA/GDS/</opc:Namespace>
-    <opc:Namespace Name="OpcUa" Version="1.05.04" PublicationDate="2025-01-08T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.05.05" PublicationDate="2025-04-25T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
 
   <opc:PermissionSets>
     <opc:PermissionSet Name="DiscoveryAdmin">
-      <opc:RolePermission Role="ua:WellKnownRole_AuthenticatedUser">
+      <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
         <opc:Permission>Call</opc:Permission>
       </opc:RolePermission>
@@ -57,7 +57,7 @@
       </opc:RolePermission>
     </opc:PermissionSet>
     <opc:PermissionSet Name="CertificateAuthorityAdmin">
-      <opc:RolePermission Role="ua:WellKnownRole_AuthenticatedUser">
+      <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
       </opc:RolePermission>
       <opc:RolePermission Role="WellKnownRole_CertificateAuthorityAdmin">
@@ -66,7 +66,7 @@
       </opc:RolePermission>
     </opc:PermissionSet>
     <opc:PermissionSet Name="KeyCredentialAdmin">
-      <opc:RolePermission Role="ua:WellKnownRole_AuthenticatedUser">
+      <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
       </opc:RolePermission>
       <opc:RolePermission Role="WellKnownRole_KeyCredentialAdmin">
@@ -86,17 +86,17 @@
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <opc:DefaultValue>
-          <uax:String>1.05.04</uax:String>
+          <uax:String>1.05.05</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ModelVersion" DataType="ua:SemanticVersionString">
         <opc:DefaultValue>
-          <uax:String>1.5.4</uax:String>
+          <uax:String>1.5.5</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <opc:DefaultValue>
-          <uax:DateTime>2025-01-08T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2025-06-30T00:00:00Z</uax:DateTime>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
@@ -345,6 +345,12 @@
       </opc:Object>
       <opc:Method SymbolicName="FindApplications" TypeDefinition="FindApplicationsMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="RegisterApplication" TypeDefinition="RegisterApplicationMethodType" ModellingRule="Mandatory">
+        <opc:References>
+          <opc:Reference>
+            <opc:ReferenceType>ua:GeneratesEvent</opc:ReferenceType>
+            <opc:TargetId>ApplicationRegistrationChangedAuditEventType</opc:TargetId>
+          </opc:Reference>
+        </opc:References>
         <opc:DefaultRolePermissions Name="DiscoveryAdmin" />
         <opc:DefaultAccessRestrictions>SigningRequired</opc:DefaultAccessRestrictions>
       </opc:Method>
@@ -362,9 +368,8 @@
     </opc:Children>
   </opc:ObjectType>
 
-  <opc:ObjectType SymbolicName="ApplicationRegistrationChangedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true">
-  </opc:ObjectType>
-
+  <opc:ObjectType SymbolicName="ApplicationRegistrationChangedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" />
+  
   <opc:Method SymbolicName="StartSigningRequestMethodType">
     <opc:InputArguments>
       <opc:Argument Name="ApplicationId" DataType="ua:NodeId" />
@@ -516,6 +521,8 @@
       <opc:Property SymbolicName="CertificateType" DataType="ua:NodeId" ModellingRule="Mandatory" />
     </opc:Children>
   </opc:ObjectType>
+  
+  <opc:ObjectType SymbolicName="CertificateRevokedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" />
 
   <opc:ObjectType SymbolicName="KeyCredentialManagementFolderType" BaseType="ua:FolderType">
     <opc:Children>
@@ -616,6 +623,8 @@
       <opc:Property SymbolicName="UserTokenPolicies"  DataType="ua:UserTokenPolicy" ValueRank="Array" ModellingRule="Optional" />
       <opc:Method SymbolicName="GetServiceDescription" TypeDefinition="GetServiceDescriptionMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="RequestAccessToken" TypeDefinition="RequestAccessTokenMethodType" ModellingRule="Optional" />
+      <opc:Method SymbolicName="RequestAccessToken2" TypeDefinition="RequestAccessToken2MethodType" ModellingRule="Optional"  ReleaseStatus="Draft" />
+      <opc:Method SymbolicName="RefreshToken" TypeDefinition="RefreshTokenMethodType" ModellingRule="Optional" ReleaseStatus="Draft" />
     </opc:Children>
   </opc:ObjectType>
 
@@ -634,6 +643,28 @@
     </opc:InputArguments>
     <opc:OutputArguments>
       <opc:Argument Name="AccessToken" DataType="ua:String"></opc:Argument>
+    </opc:OutputArguments>
+  </opc:Method>
+
+  <opc:Method SymbolicName="RequestAccessToken2MethodType" ReleaseStatus="Draft">
+    <opc:InputArguments>
+      <opc:Argument Name="IdentityToken" DataType="ua:UserIdentityToken"></opc:Argument>
+      <opc:Argument Name="ResourceId" DataType="ua:String"></opc:Argument>
+    </opc:InputArguments>
+    <opc:OutputArguments>
+      <opc:Argument Name="AccessToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="RefreshToken" DataType="ua:String"></opc:Argument>
+    </opc:OutputArguments>
+  </opc:Method>
+
+  <opc:Method SymbolicName="RefreshTokenMethodType" ReleaseStatus="Draft">
+    <opc:InputArguments>
+      <opc:Argument Name="RefreshToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="ResourceId" DataType="ua:String"></opc:Argument>
+    </opc:InputArguments>
+    <opc:OutputArguments>
+      <opc:Argument Name="AccessToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="NewRefreshToken" DataType="ua:String"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
 

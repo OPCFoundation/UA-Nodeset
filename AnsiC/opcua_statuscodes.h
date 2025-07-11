@@ -1128,6 +1128,11 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_BadTransactionPending 0x80E80000
 
 /*============================================================================
+ * The operation failed and all changes which were part of the transaction are rolled back.
+ *===========================================================================*/
+#define OpcUa_BadTransactionFailed 0x80F10000
+
+/*============================================================================
  * The device identity needs a ticket before it can be accepted.
  *===========================================================================*/
 #define OpcUa_BadTicketRequired 0x811F0000

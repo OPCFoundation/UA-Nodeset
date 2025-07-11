@@ -221,6 +221,7 @@ export enum StatusCodes {
    BadRequestNotAllowed = 0x80E40000,
    BadRequestNotComplete = 0x81130000,
    BadTransactionPending = 0x80E80000,
+   BadTransactionFailed = 0x80F10000,
    BadTicketRequired = 0x811F0000,
    BadTicketInvalid = 0x81200000,
    BadLocked = 0x80E90000,
@@ -272,13 +273,24 @@ export enum StatusCodes {
    BadDataSetIdInvalid = 0x80E70000,
 }
 
+interface IUtilsStatusCodeObject {
+   code: number
+}
+
 export class StatusUtils {
-   public static toCode(value: number | object | undefined): number {
+   public static toCode(value: number | IUtilsStatusCodeObject | undefined): number {
       if (!value) return 0;
-      let code: number | undefined = typeof value === 'number' ? value : undefined;
-      if (code === undefined) {
-         const field = value["code"];
-         code = typeof field === 'number' ? field : undefined;
+      let code: number | undefined
+      switch (typeof value) {
+         case 'number':
+            code = value
+            break;
+         case 'object':
+            code = value["code"]
+            break;
+         default:
+            code = undefined
+            break;
       }
       return code ?? 0;
    }
@@ -289,23 +301,23 @@ export class StatusUtils {
       }
       return '0x' + text;
    }
-   public static isGood(value: number | object | undefined): boolean {
+   public static isGood(value: number | IUtilsStatusCodeObject | undefined): boolean {
       return (StatusUtils.toCode(value) & 0xD0000000) === 0;
    }
-   public static isUncertain(value: number | object | undefined): boolean {
+   public static isUncertain(value: number | IUtilsStatusCodeObject | undefined): boolean {
       return (StatusUtils.toCode(value) & 0x40000000) !== 0;
    }
-   public static isBad(value: number | object | undefined): boolean {
+   public static isBad(value: number | IUtilsStatusCodeObject | undefined): boolean {
       return (StatusUtils.toCode(value) & 0x80000000) !== 0;
    }
-   public static codeBits(value: number | object | undefined): number {
+   public static codeBits(value: number | IUtilsStatusCodeObject | undefined): number {
       return (StatusUtils.toCode(value) ?? 0 & 0xFFFF0000);
    }
-   public static infoBits(value: number | object | undefined): number {
+   public static infoBits(value: number | IUtilsStatusCodeObject | undefined): number {
       return (StatusUtils.toCode(value) ?? 0 & 0x0000FFFF);
    }
-   public static toText(value: number | object | undefined): string {
+   public static toText(value: number | IUtilsStatusCodeObject | undefined): string {
       const code = StatusUtils.toCode(value);
-      return Object.keys(StatusCodes).find(key => StatusCodes[key] === code) ?? StatusUtils.toHex(code);
+      return Object.keys(StatusCodes).find((key: string) => StatusCodes[key as keyof typeof StatusCodes] === code) ?? StatusUtils.toHex(code);
    }
 }
