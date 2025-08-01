@@ -5,3 +5,4 @@ Id,Name,Link,ConformanceUnits
 2003,LongwallShieldOffsetArrayItemType,"https://reference.opcfoundation.org/Mining/General/v100/docs/8.3",""
 3002,LongwallShieldOffsetDataType,"https://reference.opcfoundation.org/Mining/General/v100/docs/9.1",""
 5004,http://opcfoundation.org/UA/Mining/General/,"https://reference.opcfoundation.org/Mining/General/v100/docs/11.1",""
+5011,Monitoring,"https://reference.opcfoundation.org/Mining/General/v100/docs/11.1",""
