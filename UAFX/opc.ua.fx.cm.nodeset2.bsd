@@ -1,0 +1,411 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="http://opcfoundation.org/UA/FX/Data/" xmlns:ua="http://opcfoundation.org/UA/" xmlns:tns="http://opcfoundation.org/UA/FX/CM/" TargetNamespace="http://opcfoundation.org/UA/FX/CM/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/FX/Data/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="AddressSelectionDataType">
+        <opc:Field Name="Address" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="NoOfAddressSelection" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfAddressSelection" Name="AddressSelection" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="AddressModify" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="AssetVerificationConfDataType">
+        <opc:Field Name="AssetPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="31"/>
+        <opc:Field Name="AssetToVerify" TypeName="tns:NodeIdentifier"/>
+        <opc:Field Name="VerificationMode" TypeName="ns1:AssetVerificationModeEnum"/>
+        <opc:Field Name="ExpectedVerificationResult" TypeName="ns1:AssetVerificationResultEnum"/>
+        <opc:Field Name="NoOfExpectedVerificationVariables" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfExpectedVerificationVariables" Name="ExpectedVerificationVariables" TypeName="tns:NodeIdentifierValuePair"/>
+        <opc:Field Name="NoOfExpectedAdditionalVerificationVariables" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfExpectedAdditionalVerificationVariables" Name="ExpectedAdditionalVerificationVariables" TypeName="tns:NodeIdentifierValuePair"/>
+        <opc:Field Name="NoOfAssetProperties" TypeName="opc:Int32" SwitchField="AssetPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfAssetProperties" Name="AssetProperties" TypeName="ua:KeyValuePair" SwitchField="AssetPropertiesSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="AutomationComponentConfigurationConfDataType">
+        <opc:Field Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field Name="AutomationComponentNode" TypeName="tns:NodeIdentifier"/>
+        <opc:Field Name="NoOfAutomationComponentNodeSelection" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfAutomationComponentNodeSelection" Name="AutomationComponentNodeSelection" TypeName="tns:NodeIdentifier"/>
+        <opc:Field Name="AutomationComponentNodeModify" TypeName="opc:Boolean"/>
+        <opc:Field Name="CommandBundleRequired" TypeName="opc:Boolean"/>
+        <opc:Field Name="NoOfAssetVerification" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfAssetVerification" Name="AssetVerification" TypeName="tns:AssetVerificationConfDataType"/>
+        <opc:Field Name="CommunicationModelConfig" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="NoOfAutomationComponentProperties" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfAutomationComponentProperties" Name="AutomationComponentProperties" TypeName="ua:KeyValuePair"/>
+        <opc:Field Name="ServerAddressIndex" TypeName="opc:Int32"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationFlowConfigurationConfDataType">
+        <opc:Field Name="FlowPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="31"/>
+        <opc:Field Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfFlowProperties" TypeName="opc:Int32" SwitchField="FlowPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfFlowProperties" Name="FlowProperties" TypeName="ua:KeyValuePair" SwitchField="FlowPropertiesSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:CommunicationFlowConfigurationConfDataType" Name="PubSubCommunicationFlowConfigurationConfDataType">
+        <opc:Field Name="FlowPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="AddressSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="TransportProfileUriSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="TransportProfileUriSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="TransportProfileUriModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="HeaderLayoutUriSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="HeaderLayoutUriSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="HeaderLayoutUriModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PublishingIntervalSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PublishingIntervalSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PublishingIntervalModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="QosSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="QosSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="QosModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityModeSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityModeSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityModeModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityGroupIdSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityGroupIdSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityGroupIdModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SubscriberConfigurationsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="11"/>
+        <opc:Field SourceType="tns:CommunicationFlowConfigurationConfDataType" Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field SourceType="tns:CommunicationFlowConfigurationConfDataType" Name="NoOfFlowProperties" TypeName="opc:Int32" SwitchField="FlowPropertiesSpecified"/>
+        <opc:Field SourceType="tns:CommunicationFlowConfigurationConfDataType" LengthField="NoOfFlowProperties" Name="FlowProperties" TypeName="ua:KeyValuePair" SwitchField="FlowPropertiesSpecified"/>
+        <opc:Field Name="Address" TypeName="tns:AddressSelectionDataType" SwitchField="AddressSpecified"/>
+        <opc:Field Name="TransportProfileUri" TypeName="opc:CharArray" SwitchField="TransportProfileUriSpecified"/>
+        <opc:Field Name="NoOfTransportProfileUriSelection" TypeName="opc:Int32" SwitchField="TransportProfileUriSelectionSpecified"/>
+        <opc:Field LengthField="NoOfTransportProfileUriSelection" Name="TransportProfileUriSelection" TypeName="opc:CharArray" SwitchField="TransportProfileUriSelectionSpecified"/>
+        <opc:Field Name="TransportProfileUriModify" TypeName="opc:Boolean" SwitchField="TransportProfileUriModifySpecified"/>
+        <opc:Field Name="HeaderLayoutUri" TypeName="opc:CharArray" SwitchField="HeaderLayoutUriSpecified"/>
+        <opc:Field Name="NoOfHeaderLayoutUriSelection" TypeName="opc:Int32" SwitchField="HeaderLayoutUriSelectionSpecified"/>
+        <opc:Field LengthField="NoOfHeaderLayoutUriSelection" Name="HeaderLayoutUriSelection" TypeName="opc:CharArray" SwitchField="HeaderLayoutUriSelectionSpecified"/>
+        <opc:Field Name="HeaderLayoutUriModify" TypeName="opc:Boolean" SwitchField="HeaderLayoutUriModifySpecified"/>
+        <opc:Field Name="PublishingInterval" TypeName="opc:Double" SwitchField="PublishingIntervalSpecified"/>
+        <opc:Field Name="NoOfPublishingIntervalSelection" TypeName="opc:Int32" SwitchField="PublishingIntervalSelectionSpecified"/>
+        <opc:Field LengthField="NoOfPublishingIntervalSelection" Name="PublishingIntervalSelection" TypeName="opc:Double" SwitchField="PublishingIntervalSelectionSpecified"/>
+        <opc:Field Name="PublishingIntervalModify" TypeName="opc:Boolean" SwitchField="PublishingIntervalModifySpecified"/>
+        <opc:Field Name="Qos" TypeName="tns:CommunicationFlowQosDataType" SwitchField="QosSpecified"/>
+        <opc:Field Name="NoOfQosSelection" TypeName="opc:Int32" SwitchField="QosSelectionSpecified"/>
+        <opc:Field LengthField="NoOfQosSelection" Name="QosSelection" TypeName="tns:CommunicationFlowQosDataType" SwitchField="QosSelectionSpecified"/>
+        <opc:Field Name="QosModify" TypeName="opc:Boolean" SwitchField="QosModifySpecified"/>
+        <opc:Field Name="SecurityMode" TypeName="ua:MessageSecurityMode" SwitchField="SecurityModeSpecified"/>
+        <opc:Field Name="NoOfSecurityModeSelection" TypeName="opc:Int32" SwitchField="SecurityModeSelectionSpecified"/>
+        <opc:Field LengthField="NoOfSecurityModeSelection" Name="SecurityModeSelection" TypeName="ua:MessageSecurityMode" SwitchField="SecurityModeSelectionSpecified"/>
+        <opc:Field Name="SecurityModeModify" TypeName="opc:Boolean" SwitchField="SecurityModeModifySpecified"/>
+        <opc:Field Name="SecurityGroupId" TypeName="opc:CharArray" SwitchField="SecurityGroupIdSpecified"/>
+        <opc:Field Name="NoOfSecurityGroupIdSelection" TypeName="opc:Int32" SwitchField="SecurityGroupIdSelectionSpecified"/>
+        <opc:Field LengthField="NoOfSecurityGroupIdSelection" Name="SecurityGroupIdSelection" TypeName="opc:CharArray" SwitchField="SecurityGroupIdSelectionSpecified"/>
+        <opc:Field Name="SecurityGroupIdModify" TypeName="opc:Boolean" SwitchField="SecurityGroupIdModifySpecified"/>
+        <opc:Field Name="NoOfSubscriberConfigurations" TypeName="opc:Int32" SwitchField="SubscriberConfigurationsSpecified"/>
+        <opc:Field LengthField="NoOfSubscriberConfigurations" Name="SubscriberConfigurations" TypeName="tns:SubscriberConfigurationConfDataType" SwitchField="SubscriberConfigurationsSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationFlowQosDataType">
+        <opc:Field Name="QosCategory" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfTransmitQos" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfTransmitQos" Name="TransmitQos" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="NoOfReceiveQos" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfReceiveQos" Name="ReceiveQos" TypeName="ua:ExtensionObject"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationModelConfigurationDataType"/>
+    <opc:StructuredType BaseType="tns:CommunicationModelConfigurationDataType" Name="PubSubCommunicationModelConfigurationDataType">
+        <opc:Field Name="PubSubConfiguration" TypeName="ua:PubSubConfiguration2DataType"/>
+        <opc:Field Name="NoOfTranslationTable" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfTranslationTable" Name="TranslationTable" TypeName="tns:NodeIdTranslationDataType"/>
+        <opc:Field Name="NoOfConfigurationReferences" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConfigurationReferences" Name="ConfigurationReferences" TypeName="ua:PubSubConfigurationRefDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionConfigurationConfDataType">
+        <opc:Field Name="Endpoint2Specified" TypeName="opc:Bit"/>
+        <opc:Field Name="ConnectionPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="30"/>
+        <opc:Field Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field Name="Endpoint1" TypeName="tns:ConnectionEndpointConfigurationConfDataType"/>
+        <opc:Field Name="Endpoint2" TypeName="tns:ConnectionEndpointConfigurationConfDataType" SwitchField="Endpoint2Specified"/>
+        <opc:Field Name="NoOfConnectionProperties" TypeName="opc:Int32" SwitchField="ConnectionPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfConnectionProperties" Name="ConnectionProperties" TypeName="ua:KeyValuePair" SwitchField="ConnectionPropertiesSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionConfigurationSetConfDataType">
+        <opc:Field Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfConnectionConfigurationSetFolder" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConnectionConfigurationSetFolder" Name="ConnectionConfigurationSetFolder" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfConnections" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConnections" Name="Connections" TypeName="tns:ConnectionConfigurationConfDataType"/>
+        <opc:Field Name="NoOfCommunicationFlows" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfCommunicationFlows" Name="CommunicationFlows" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="NoOfServerAddresses" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfServerAddresses" Name="ServerAddresses" TypeName="tns:ServerAddressConfDataType"/>
+        <opc:Field Name="NoOfAutomationComponentConfigurations" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfAutomationComponentConfigurations" Name="AutomationComponentConfigurations" TypeName="tns:AutomationComponentConfigurationConfDataType"/>
+        <opc:Field Name="RollbackOnError" TypeName="opc:Boolean"/>
+        <opc:Field Name="SecurityKeyServer" TypeName="tns:SecurityKeyServerAddressConfDataType"/>
+        <opc:Field Name="Version" TypeName="opc:UInt32"/>
+        <opc:Field Name="NoOfConnectionConfigurationSetProperties" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConnectionConfigurationSetProperties" Name="ConnectionConfigurationSetProperties" TypeName="ua:KeyValuePair"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionDiagnosticsDataType">
+        <opc:Field Name="Name" TypeName="ua:QualifiedName"/>
+        <opc:Field Name="LastActivity" TypeName="tns:LastActivityMask"/>
+        <opc:Field Name="ConnectionState" TypeName="tns:ConnectionStateEnum"/>
+        <opc:Field Name="ErrorEndpoint1" TypeName="tns:FxErrorEnum"/>
+        <opc:Field Name="Endpoint1Status" TypeName="ua:StatusCode"/>
+        <opc:Field Name="ErrorEndpoint2" TypeName="tns:FxErrorEnum"/>
+        <opc:Field Name="Endpoint2Status" TypeName="ua:StatusCode"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionEndpointConfigurationConfDataType">
+        <opc:Field Name="FunctionalEntityNodeSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="FunctionalEntityNodeModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="NameSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="NameModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="InputVariableIdsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="OutputVariableIdsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="CommunicationLinksSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PreconfiguredPublishedDataSetSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PublishedDataSetDataSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PreconfiguredSubscribedDataSetSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SubscribedDataSetDataSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ExpectedVerificationVariablesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ControlGroupsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ConfigurationDataSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="EndpointPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="OutboundFlowIndexSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="InboundFlowIndexSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="15"/>
+        <opc:Field Name="FunctionalEntityNode" TypeName="tns:NodeIdentifier"/>
+        <opc:Field Name="NoOfFunctionalEntityNodeSelection" TypeName="opc:Int32" SwitchField="FunctionalEntityNodeSelectionSpecified"/>
+        <opc:Field LengthField="NoOfFunctionalEntityNodeSelection" Name="FunctionalEntityNodeSelection" TypeName="tns:NodeIdentifier" SwitchField="FunctionalEntityNodeSelectionSpecified"/>
+        <opc:Field Name="FunctionalEntityNodeModify" TypeName="opc:Boolean" SwitchField="FunctionalEntityNodeModifySpecified"/>
+        <opc:Field Name="Name" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfNameSelection" TypeName="opc:Int32" SwitchField="NameSelectionSpecified"/>
+        <opc:Field LengthField="NoOfNameSelection" Name="NameSelection" TypeName="opc:CharArray" SwitchField="NameSelectionSpecified"/>
+        <opc:Field Name="NameModify" TypeName="opc:Boolean" SwitchField="NameModifySpecified"/>
+        <opc:Field Name="ConnectionEndpointTypeId" TypeName="ua:NodeId"/>
+        <opc:Field Name="NoOfInputVariableIds" TypeName="opc:Int32" SwitchField="InputVariableIdsSpecified"/>
+        <opc:Field LengthField="NoOfInputVariableIds" Name="InputVariableIds" TypeName="tns:NodeIdentifier" SwitchField="InputVariableIdsSpecified"/>
+        <opc:Field Name="NoOfOutputVariableIds" TypeName="opc:Int32" SwitchField="OutputVariableIdsSpecified"/>
+        <opc:Field LengthField="NoOfOutputVariableIds" Name="OutputVariableIds" TypeName="tns:NodeIdentifier" SwitchField="OutputVariableIdsSpecified"/>
+        <opc:Field Name="IsPersistent" TypeName="opc:Boolean"/>
+        <opc:Field Name="CleanupTimeout" TypeName="opc:Double"/>
+        <opc:Field Name="IsPreconfigured" TypeName="opc:Boolean"/>
+        <opc:Field Name="CommunicationLinks" TypeName="ua:ExtensionObject" SwitchField="CommunicationLinksSpecified"/>
+        <opc:Field Name="PreconfiguredPublishedDataSet" TypeName="opc:CharArray" SwitchField="PreconfiguredPublishedDataSetSpecified"/>
+        <opc:Field Name="PublishedDataSetData" TypeName="ua:PublishedDataSetDataType" SwitchField="PublishedDataSetDataSpecified"/>
+        <opc:Field Name="PreconfiguredSubscribedDataSet" TypeName="opc:CharArray" SwitchField="PreconfiguredSubscribedDataSetSpecified"/>
+        <opc:Field Name="SubscribedDataSetData" TypeName="ua:StandaloneSubscribedDataSetDataType" SwitchField="SubscribedDataSetDataSpecified"/>
+        <opc:Field Name="NoOfExpectedVerificationVariables" TypeName="opc:Int32" SwitchField="ExpectedVerificationVariablesSpecified"/>
+        <opc:Field LengthField="NoOfExpectedVerificationVariables" Name="ExpectedVerificationVariables" TypeName="tns:NodeIdentifierValuePair" SwitchField="ExpectedVerificationVariablesSpecified"/>
+        <opc:Field Name="NoOfControlGroups" TypeName="opc:Int32" SwitchField="ControlGroupsSpecified"/>
+        <opc:Field LengthField="NoOfControlGroups" Name="ControlGroups" TypeName="tns:NodeIdentifier" SwitchField="ControlGroupsSpecified"/>
+        <opc:Field Name="NoOfConfigurationData" TypeName="opc:Int32" SwitchField="ConfigurationDataSpecified"/>
+        <opc:Field LengthField="NoOfConfigurationData" Name="ConfigurationData" TypeName="tns:NodeIdentifierValuePair" SwitchField="ConfigurationDataSpecified"/>
+        <opc:Field Name="NoOfEndpointProperties" TypeName="opc:Int32" SwitchField="EndpointPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfEndpointProperties" Name="EndpointProperties" TypeName="ua:KeyValuePair" SwitchField="EndpointPropertiesSpecified"/>
+        <opc:Field Name="AutomationComponentIndex" TypeName="opc:Int32"/>
+        <opc:Field Name="OutboundFlowIndex" TypeName="opc:Int32" SwitchField="OutboundFlowIndexSpecified"/>
+        <opc:Field Name="NoOfInboundFlowIndex" TypeName="opc:Int32" SwitchField="InboundFlowIndexSpecified"/>
+        <opc:Field LengthField="NoOfInboundFlowIndex" Name="InboundFlowIndex" TypeName="opc:Int32" SwitchField="InboundFlowIndexSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NodeIdentifierValuePair">
+        <opc:Field Name="Key" TypeName="tns:NodeIdentifier"/>
+        <opc:Field Name="NoOfArrayIndex" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfArrayIndex" Name="ArrayIndex" TypeName="opc:UInt32"/>
+        <opc:Field Name="Value" TypeName="ua:Variant"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NodeIdTranslationConfDataType">
+        <opc:Field Name="NodePlaceholder" TypeName="ua:NodeId"/>
+        <opc:Field Name="Node" TypeName="tns:NodeIdentifier"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NodeIdTranslationDataType">
+        <opc:Field Name="NodePlaceholder" TypeName="ua:NodeId"/>
+        <opc:Field Name="PortableNode" TypeName="tns:PortableNodeIdentifier"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableKeyValuePair">
+        <opc:Field Name="Key" TypeName="ua:PortableQualifiedName"/>
+        <opc:Field Name="Value" TypeName="ua:Variant"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableNodeIdentifierValuePair">
+        <opc:Field Name="Key" TypeName="tns:PortableNodeIdentifier"/>
+        <opc:Field Name="NoOfArrayIndex" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfArrayIndex" Name="ArrayIndex" TypeName="opc:UInt32"/>
+        <opc:Field Name="Value" TypeName="ua:Variant"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableRelativePath">
+        <opc:Field Name="NoOfElements" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfElements" Name="Elements" TypeName="tns:PortableRelativePathElement"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PortableRelativePathElement">
+        <opc:Field Name="ReferenceTypeId" TypeName="ua:PortableNodeId"/>
+        <opc:Field Name="IsInverse" TypeName="opc:Boolean"/>
+        <opc:Field Name="IncludeSubtypes" TypeName="opc:Boolean"/>
+        <opc:Field Name="TargetName" TypeName="ua:PortableQualifiedName"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ReceiveQosSelectionDataType">
+        <opc:Field Name="NoOfReceiveQos" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfReceiveQos" Name="ReceiveQos" TypeName="ua:ExtensionObject"/>
+        <opc:Field Name="ReceiveQosSelection" TypeName="ua:Variant"/>
+        <opc:Field Name="ReceiveQosModify" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SecurityKeyServerAddressConfDataType">
+        <opc:Field Name="AddressSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="AddressModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityPolicyUriSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityPolicyUriModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ServerUriSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ServerUriModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityGroupsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="PubSubKeyPushTargetsSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SksPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="23"/>
+        <opc:Field Name="Address" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfAddressSelection" TypeName="opc:Int32" SwitchField="AddressSelectionSpecified"/>
+        <opc:Field LengthField="NoOfAddressSelection" Name="AddressSelection" TypeName="opc:CharArray" SwitchField="AddressSelectionSpecified"/>
+        <opc:Field Name="AddressModify" TypeName="opc:Boolean" SwitchField="AddressModifySpecified"/>
+        <opc:Field Name="SecurityPolicyUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfSecurityPolicyUriSelection" TypeName="opc:Int32" SwitchField="SecurityPolicyUriSelectionSpecified"/>
+        <opc:Field LengthField="NoOfSecurityPolicyUriSelection" Name="SecurityPolicyUriSelection" TypeName="opc:CharArray" SwitchField="SecurityPolicyUriSelectionSpecified"/>
+        <opc:Field Name="SecurityPolicyUriModify" TypeName="opc:Boolean" SwitchField="SecurityPolicyUriModifySpecified"/>
+        <opc:Field Name="ServerUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfServerUriSelection" TypeName="opc:Int32" SwitchField="ServerUriSelectionSpecified"/>
+        <opc:Field LengthField="NoOfServerUriSelection" Name="ServerUriSelection" TypeName="opc:CharArray" SwitchField="ServerUriSelectionSpecified"/>
+        <opc:Field Name="ServerUriModify" TypeName="opc:Boolean" SwitchField="ServerUriModifySpecified"/>
+        <opc:Field Name="UsePushModel" TypeName="opc:Boolean"/>
+        <opc:Field Name="NoOfSecurityGroups" TypeName="opc:Int32" SwitchField="SecurityGroupsSpecified"/>
+        <opc:Field LengthField="NoOfSecurityGroups" Name="SecurityGroups" TypeName="ua:SecurityGroupDataType" SwitchField="SecurityGroupsSpecified"/>
+        <opc:Field Name="NoOfPubSubKeyPushTargets" TypeName="opc:Int32" SwitchField="PubSubKeyPushTargetsSpecified"/>
+        <opc:Field LengthField="NoOfPubSubKeyPushTargets" Name="PubSubKeyPushTargets" TypeName="ua:PubSubKeyPushTargetDataType" SwitchField="PubSubKeyPushTargetsSpecified"/>
+        <opc:Field Name="NoOfSksProperties" TypeName="opc:Int32" SwitchField="SksPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfSksProperties" Name="SksProperties" TypeName="ua:KeyValuePair" SwitchField="SksPropertiesSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SecurityKeyServerAddressDataType">
+        <opc:Field Name="Address" TypeName="opc:CharArray"/>
+        <opc:Field Name="SecurityPolicyUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="ServerUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="UsePushModel" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ServerAddressConfDataType">
+        <opc:Field Name="AddressSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="AddressModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityModeSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityModeModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityPolicyUriSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SecurityPolicyUriModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ServerUriSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ServerUriModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ServerPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="23"/>
+        <opc:Field Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field Name="Address" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfAddressSelection" TypeName="opc:Int32" SwitchField="AddressSelectionSpecified"/>
+        <opc:Field LengthField="NoOfAddressSelection" Name="AddressSelection" TypeName="opc:CharArray" SwitchField="AddressSelectionSpecified"/>
+        <opc:Field Name="AddressModify" TypeName="opc:Boolean" SwitchField="AddressModifySpecified"/>
+        <opc:Field Name="SecurityMode" TypeName="ua:MessageSecurityMode"/>
+        <opc:Field Name="NoOfSecurityModeSelection" TypeName="opc:Int32" SwitchField="SecurityModeSelectionSpecified"/>
+        <opc:Field LengthField="NoOfSecurityModeSelection" Name="SecurityModeSelection" TypeName="ua:MessageSecurityMode" SwitchField="SecurityModeSelectionSpecified"/>
+        <opc:Field Name="SecurityModeModify" TypeName="opc:Boolean" SwitchField="SecurityModeModifySpecified"/>
+        <opc:Field Name="SecurityPolicyUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfSecurityPolicyUriSelection" TypeName="opc:Int32" SwitchField="SecurityPolicyUriSelectionSpecified"/>
+        <opc:Field LengthField="NoOfSecurityPolicyUriSelection" Name="SecurityPolicyUriSelection" TypeName="opc:CharArray" SwitchField="SecurityPolicyUriSelectionSpecified"/>
+        <opc:Field Name="SecurityPolicyUriModify" TypeName="opc:Boolean" SwitchField="SecurityPolicyUriModifySpecified"/>
+        <opc:Field Name="ServerUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfServerUriSelection" TypeName="opc:Int32" SwitchField="ServerUriSelectionSpecified"/>
+        <opc:Field LengthField="NoOfServerUriSelection" Name="ServerUriSelection" TypeName="opc:CharArray" SwitchField="ServerUriSelectionSpecified"/>
+        <opc:Field Name="ServerUriModify" TypeName="opc:Boolean" SwitchField="ServerUriModifySpecified"/>
+        <opc:Field Name="NoOfServerProperties" TypeName="opc:Int32" SwitchField="ServerPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfServerProperties" Name="ServerProperties" TypeName="ua:KeyValuePair" SwitchField="ServerPropertiesSpecified"/>
+        <opc:Field Name="NoOfNamespaces" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfNamespaces" Name="Namespaces" TypeName="opc:CharArray"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ServerAddressDataType">
+        <opc:Field Name="Address" TypeName="opc:CharArray"/>
+        <opc:Field Name="SecurityMode" TypeName="ua:MessageSecurityMode"/>
+        <opc:Field Name="SecurityPolicyUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="ServerUri" TypeName="opc:CharArray"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SubscriberConfigurationConfDataType">
+        <opc:Field Name="AddressSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="MessageReceiveTimeoutSelectionSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="MessageReceiveTimeoutModifySpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="ReceiveQosSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="SubscriberPropertiesSpecified" TypeName="opc:Bit"/>
+        <opc:Field Name="Reserved1" TypeName="opc:Bit" Length="27"/>
+        <opc:Field Name="BrowseName" TypeName="opc:CharArray"/>
+        <opc:Field Name="Address" TypeName="tns:AddressSelectionDataType" SwitchField="AddressSpecified"/>
+        <opc:Field Name="MessageReceiveTimeout" TypeName="opc:Double"/>
+        <opc:Field Name="NoOfMessageReceiveTimeoutSelection" TypeName="opc:Int32" SwitchField="MessageReceiveTimeoutSelectionSpecified"/>
+        <opc:Field LengthField="NoOfMessageReceiveTimeoutSelection" Name="MessageReceiveTimeoutSelection" TypeName="opc:Double" SwitchField="MessageReceiveTimeoutSelectionSpecified"/>
+        <opc:Field Name="MessageReceiveTimeoutModify" TypeName="opc:Boolean" SwitchField="MessageReceiveTimeoutModifySpecified"/>
+        <opc:Field Name="ReceiveQos" TypeName="tns:ReceiveQosSelectionDataType" SwitchField="ReceiveQosSpecified"/>
+        <opc:Field Name="NoOfSubscriberProperties" TypeName="opc:Int32" SwitchField="SubscriberPropertiesSpecified"/>
+        <opc:Field LengthField="NoOfSubscriberProperties" Name="SubscriberProperties" TypeName="ua:KeyValuePair" SwitchField="SubscriberPropertiesSpecified"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="NodeIdentifier">
+        <opc:Field Name="SwitchField" TypeName="opc:UInt32"/>
+        <opc:Field SwitchValue="1" Name="Node" TypeName="ua:NodeId" SwitchField="SwitchField"/>
+        <opc:Field SwitchValue="2" Name="Alias" TypeName="opc:CharArray" SwitchField="SwitchField"/>
+        <opc:Field SwitchValue="3" Name="IdentifierBrowsePath" TypeName="ua:RelativePath" SwitchField="SwitchField"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="PortableNodeIdentifier">
+        <opc:Field Name="SwitchField" TypeName="opc:UInt32"/>
+        <opc:Field SwitchValue="1" Name="Node" TypeName="ua:PortableNodeId" SwitchField="SwitchField"/>
+        <opc:Field SwitchValue="2" Name="Alias" TypeName="opc:CharArray" SwitchField="SwitchField"/>
+        <opc:Field SwitchValue="3" Name="IdentifierBrowsePath" TypeName="tns:PortableRelativePath" SwitchField="SwitchField"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="ConnectionStateEnum">
+        <opc:EnumeratedValue Value="0" Name="ConnectionNotMonitored"/>
+        <opc:EnumeratedValue Value="1" Name="ConnectionNotEstablished"/>
+        <opc:EnumeratedValue Value="2" Name="ConnectionInitial"/>
+        <opc:EnumeratedValue Value="3" Name="ConnectionReady"/>
+        <opc:EnumeratedValue Value="4" Name="ConnectionPreOperational"/>
+        <opc:EnumeratedValue Value="5" Name="ConnectionOperational"/>
+        <opc:EnumeratedValue Value="6" Name="ConnectionError"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FxEditEnum">
+        <opc:EnumeratedValue Value="0" Name="StartEditing"/>
+        <opc:EnumeratedValue Value="1" Name="CommitUpdates"/>
+        <opc:EnumeratedValue Value="2" Name="DiscardUpdates"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FxErrorEnum">
+        <opc:EnumeratedValue Value="0" Name="NoError"/>
+        <opc:EnumeratedValue Value="1" Name="UnknownStatus"/>
+        <opc:EnumeratedValue Value="2" Name="Rollback"/>
+        <opc:EnumeratedValue Value="3" Name="ProcessingStopped"/>
+        <opc:EnumeratedValue Value="4" Name="ConnectionConfigurationSetInvalid"/>
+        <opc:EnumeratedValue Value="5" Name="GdsConnectionError"/>
+        <opc:EnumeratedValue Value="6" Name="GdsProcessingError"/>
+        <opc:EnumeratedValue Value="7" Name="AliasNameProcessingError"/>
+        <opc:EnumeratedValue Value="8" Name="ExternalSksConnectionError"/>
+        <opc:EnumeratedValue Value="9" Name="ExternalSksProcessingError"/>
+        <opc:EnumeratedValue Value="10" Name="TargetServerConnectionError"/>
+        <opc:EnumeratedValue Value="11" Name="ResolvingNamespacesError"/>
+        <opc:EnumeratedValue Value="12" Name="ResolvingPathsError"/>
+        <opc:EnumeratedValue Value="13" Name="VerifyAssetError"/>
+        <opc:EnumeratedValue Value="14" Name="VerifyFunctionalEntityError"/>
+        <opc:EnumeratedValue Value="15" Name="CreateConnectionEndpointError"/>
+        <opc:EnumeratedValue Value="16" Name="EstablishControlError"/>
+        <opc:EnumeratedValue Value="17" Name="SetConfigurationDataError"/>
+        <opc:EnumeratedValue Value="18" Name="ReassignControlError"/>
+        <opc:EnumeratedValue Value="19" Name="ReserveCommunicationIdsError"/>
+        <opc:EnumeratedValue Value="20" Name="SetCommunicationConfigurationError"/>
+        <opc:EnumeratedValue Value="21" Name="EnableCommunicationError"/>
+        <opc:EnumeratedValue Value="22" Name="CloseConnectionError"/>
+        <opc:EnumeratedValue Value="23" Name="LocalSksKeyPushError"/>
+        <opc:EnumeratedValue Value="24" Name="RuntimeError"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FxProcessEnum">
+        <opc:EnumeratedValue Value="0" Name="ActionEstablishConnectionsEnabled"/>
+        <opc:EnumeratedValue Value="1" Name="ActionEstablishConnectionsDisabled"/>
+        <opc:EnumeratedValue Value="2" Name="ActionEstablishConnections"/>
+        <opc:EnumeratedValue Value="3" Name="ActionRemoveConnections"/>
+        <opc:EnumeratedValue Value="4" Name="ActionEnableConnections"/>
+        <opc:EnumeratedValue Value="5" Name="ActionDisableConnections"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="8" IsOptionSet="true" Name="ConnectionConfigurationSetOperation">
+        <opc:EnumeratedValue Value="0" Name="ElementAdd"/>
+        <opc:EnumeratedValue Value="1" Name="ElementRemove"/>
+        <opc:EnumeratedValue Value="2" Name="ElementReplace"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="16" IsOptionSet="true" Name="LastActivityMask">
+        <opc:EnumeratedValue Value="0" Name="EstablishEnabled"/>
+        <opc:EnumeratedValue Value="1" Name="EstablishDisabled"/>
+        <opc:EnumeratedValue Value="2" Name="Establish"/>
+        <opc:EnumeratedValue Value="3" Name="Remove"/>
+        <opc:EnumeratedValue Value="4" Name="Enable"/>
+        <opc:EnumeratedValue Value="5" Name="Disable"/>
+        <opc:EnumeratedValue Value="15" Name="Error"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

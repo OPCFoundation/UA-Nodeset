@@ -1,0 +1,181 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" xmlns:tns="http://opcfoundation.org/UA/FX/Data/" TargetNamespace="http://opcfoundation.org/UA/FX/Data/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="AssetVerificationDataType">
+        <opc:Field Name="AssetToVerify" TypeName="ua:NodeId"/>
+        <opc:Field Name="VerificationMode" TypeName="tns:AssetVerificationModeEnum"/>
+        <opc:Field Name="ExpectedVerificationResult" TypeName="tns:AssetVerificationResultEnum"/>
+        <opc:Field Name="NoOfExpectedVerificationVariables" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfExpectedVerificationVariables" Name="ExpectedVerificationVariables" TypeName="ua:KeyValuePair"/>
+        <opc:Field Name="NoOfExpectedAdditionalVerificationVariables" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfExpectedAdditionalVerificationVariables" Name="ExpectedAdditionalVerificationVariables" TypeName="tns:NodeIdValuePair"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="AssetVerificationResultDataType">
+        <opc:Field Name="VerificationStatus" TypeName="ua:StatusCode"/>
+        <opc:Field Name="VerificationResult" TypeName="tns:AssetVerificationResultEnum"/>
+        <opc:Field Name="NoOfVerificationVariablesErrors" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfVerificationVariablesErrors" Name="VerificationVariablesErrors" TypeName="ua:StatusCode"/>
+        <opc:Field Name="NoOfVerificationAdditionalVariablesErrors" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfVerificationAdditionalVariablesErrors" Name="VerificationAdditionalVariablesErrors" TypeName="ua:StatusCode"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationConfigurationDataType"/>
+    <opc:StructuredType BaseType="tns:CommunicationConfigurationDataType" Name="PubSubCommunicationConfigurationDataType">
+        <opc:Field Name="PubSubConfiguration" TypeName="ua:PubSubConfiguration2DataType"/>
+        <opc:Field Name="RequireCompleteUpdate" TypeName="opc:Boolean"/>
+        <opc:Field Name="NoOfConfigurationReferences" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConfigurationReferences" Name="ConfigurationReferences" TypeName="ua:PubSubConfigurationRefDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationConfigurationResultDataType"/>
+    <opc:StructuredType BaseType="tns:CommunicationConfigurationResultDataType" Name="PubSubCommunicationConfigurationResultDataType">
+        <opc:Field Name="Result" TypeName="ua:StatusCode"/>
+        <opc:Field Name="ChangesApplied" TypeName="opc:Boolean"/>
+        <opc:Field Name="NoOfReferenceResults" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfReferenceResults" Name="ReferenceResults" TypeName="ua:StatusCode"/>
+        <opc:Field Name="NoOfConfigurationValues" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConfigurationValues" Name="ConfigurationValues" TypeName="ua:PubSubConfigurationValueDataType"/>
+        <opc:Field Name="NoOfConfigurationObjects" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConfigurationObjects" Name="ConfigurationObjects" TypeName="ua:NodeId"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="CommunicationLinkConfigurationDataType"/>
+    <opc:StructuredType BaseType="tns:CommunicationLinkConfigurationDataType" Name="PubSubCommunicationLinkConfigurationDataType">
+        <opc:Field Name="DataSetReaderRef" TypeName="ua:PubSubConfigurationRefDataType"/>
+        <opc:Field Name="ExpectedSubscribedDataSetVersion" TypeName="ua:ConfigurationVersionDataType"/>
+        <opc:Field Name="DataSetWriterRef" TypeName="ua:PubSubConfigurationRefDataType"/>
+        <opc:Field Name="ExpectedPublishedDataSetVersion" TypeName="ua:ConfigurationVersionDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionEndpointConfigurationDataType">
+        <opc:Field Name="FunctionalEntityNode" TypeName="ua:NodeId"/>
+        <opc:Field Name="ConnectionEndpoint" TypeName="tns:ConnectionEndpointDefinitionDataType"/>
+        <opc:Field Name="NoOfExpectedVerificationVariables" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfExpectedVerificationVariables" Name="ExpectedVerificationVariables" TypeName="tns:NodeIdValuePair"/>
+        <opc:Field Name="NoOfControlGroups" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfControlGroups" Name="ControlGroups" TypeName="ua:NodeId"/>
+        <opc:Field Name="NoOfConfigurationData" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConfigurationData" Name="ConfigurationData" TypeName="tns:NodeIdValuePair"/>
+        <opc:Field Name="CommunicationLinks" TypeName="ua:ExtensionObject"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionEndpointConfigurationResultDataType">
+        <opc:Field Name="ConnectionEndpointId" TypeName="ua:NodeId"/>
+        <opc:Field Name="FunctionalEntityNodeResult" TypeName="ua:StatusCode"/>
+        <opc:Field Name="ConnectionEndpointResult" TypeName="ua:StatusCode"/>
+        <opc:Field Name="VerificationResult" TypeName="tns:FunctionalEntityVerificationResultEnum"/>
+        <opc:Field Name="VerificationStatus" TypeName="ua:StatusCode"/>
+        <opc:Field Name="NoOfVerificationVariablesErrors" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfVerificationVariablesErrors" Name="VerificationVariablesErrors" TypeName="ua:StatusCode"/>
+        <opc:Field Name="NoOfEstablishControlResult" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfEstablishControlResult" Name="EstablishControlResult" TypeName="ua:StatusCode"/>
+        <opc:Field Name="NoOfConfigurationDataResult" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConfigurationDataResult" Name="ConfigurationDataResult" TypeName="ua:StatusCode"/>
+        <opc:Field Name="NoOfReassignControlResult" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfReassignControlResult" Name="ReassignControlResult" TypeName="ua:StatusCode"/>
+        <opc:Field Name="CommunicationLinksResult" TypeName="ua:StatusCode"/>
+        <opc:Field Name="EnableCommunicationResult" TypeName="ua:StatusCode"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ConnectionEndpointParameterDataType">
+        <opc:Field Name="Name" TypeName="opc:CharArray"/>
+        <opc:Field Name="ConnectionEndpointTypeId" TypeName="ua:NodeId"/>
+        <opc:Field Name="NoOfInputVariableIds" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfInputVariableIds" Name="InputVariableIds" TypeName="ua:NodeId"/>
+        <opc:Field Name="NoOfOutputVariableIds" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfOutputVariableIds" Name="OutputVariableIds" TypeName="ua:NodeId"/>
+        <opc:Field Name="IsPersistent" TypeName="opc:Boolean"/>
+        <opc:Field Name="CleanupTimeout" TypeName="opc:Double"/>
+        <opc:Field Name="RelatedEndpoint" TypeName="tns:RelatedEndpointDataType"/>
+        <opc:Field Name="IsPreconfigured" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ConnectionEndpointParameterDataType" Name="PubSubConnectionEndpointParameterDataType">
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="Name" TypeName="opc:CharArray"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="ConnectionEndpointTypeId" TypeName="ua:NodeId"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="NoOfInputVariableIds" TypeName="opc:Int32"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" LengthField="NoOfInputVariableIds" Name="InputVariableIds" TypeName="ua:NodeId"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="NoOfOutputVariableIds" TypeName="opc:Int32"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" LengthField="NoOfOutputVariableIds" Name="OutputVariableIds" TypeName="ua:NodeId"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="IsPersistent" TypeName="opc:Boolean"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="CleanupTimeout" TypeName="opc:Double"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="RelatedEndpoint" TypeName="tns:RelatedEndpointDataType"/>
+        <opc:Field SourceType="tns:ConnectionEndpointParameterDataType" Name="IsPreconfigured" TypeName="opc:Boolean"/>
+        <opc:Field Name="Mode" TypeName="tns:PubSubConnectionEndpointModeEnum"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NodeIdArray">
+        <opc:Field Name="Node" TypeName="ua:NodeId"/>
+        <opc:Field Name="NoOfArrayIndex" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfArrayIndex" Name="ArrayIndex" TypeName="opc:UInt32"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="NodeIdValuePair">
+        <opc:Field Name="Key" TypeName="tns:NodeIdArray"/>
+        <opc:Field Name="Value" TypeName="ua:Variant"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RelatedEndpointDataType">
+        <opc:Field Name="Address" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfConnectionEndpointPath" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfConnectionEndpointPath" Name="ConnectionEndpointPath" TypeName="ua:PortableQualifiedName"/>
+        <opc:Field Name="ConnectionEndpointName" TypeName="opc:CharArray"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ReserveCommunicationIdsDataType"/>
+    <opc:StructuredType BaseType="tns:ReserveCommunicationIdsDataType" Name="PubSubReserveCommunicationIdsDataType">
+        <opc:Field Name="TransportProfileUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="NumReqWriterGroupIds" TypeName="opc:UInt16"/>
+        <opc:Field Name="NumReqDataSetWriterIds" TypeName="opc:UInt16"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:PubSubReserveCommunicationIdsDataType" Name="PubSubReserveCommunicationIds2DataType">
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsDataType" Name="TransportProfileUri" TypeName="opc:CharArray"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsDataType" Name="NumReqWriterGroupIds" TypeName="opc:UInt16"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsDataType" Name="NumReqDataSetWriterIds" TypeName="opc:UInt16"/>
+        <opc:Field Name="RequestTransportSpecificInfo" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ReserveCommunicationIdsResultDataType"/>
+    <opc:StructuredType BaseType="tns:ReserveCommunicationIdsResultDataType" Name="PubSubReserveCommunicationIdsResultDataType">
+        <opc:Field Name="Result" TypeName="ua:StatusCode"/>
+        <opc:Field Name="DefaultPublisherId" TypeName="ua:Variant"/>
+        <opc:Field Name="NoOfWriterGroupIds" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfWriterGroupIds" Name="WriterGroupIds" TypeName="opc:UInt16"/>
+        <opc:Field Name="NoOfDataSetWriterIds" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfDataSetWriterIds" Name="DataSetWriterIds" TypeName="opc:UInt16"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:PubSubReserveCommunicationIdsResultDataType" Name="PubSubReserveCommunicationIdsResult2DataType">
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsResultDataType" Name="Result" TypeName="ua:StatusCode"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsResultDataType" Name="DefaultPublisherId" TypeName="ua:Variant"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsResultDataType" Name="NoOfWriterGroupIds" TypeName="opc:Int32"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsResultDataType" LengthField="NoOfWriterGroupIds" Name="WriterGroupIds" TypeName="opc:UInt16"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsResultDataType" Name="NoOfDataSetWriterIds" TypeName="opc:Int32"/>
+        <opc:Field SourceType="tns:PubSubReserveCommunicationIdsResultDataType" LengthField="NoOfDataSetWriterIds" Name="DataSetWriterIds" TypeName="opc:UInt16"/>
+        <opc:Field Name="TransportSpecificInfo" TypeName="ua:Variant"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:Union" Name="ConnectionEndpointDefinitionDataType">
+        <opc:Field Name="SwitchField" TypeName="opc:UInt32"/>
+        <opc:Field SwitchValue="1" Name="Parameter" TypeName="ua:ExtensionObject" SwitchField="SwitchField"/>
+        <opc:Field SwitchValue="2" Name="Node" TypeName="ua:NodeId" SwitchField="SwitchField"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="AssetVerificationModeEnum">
+        <opc:EnumeratedValue Value="0" Name="AssetCompatibility"/>
+        <opc:EnumeratedValue Value="1" Name="AssetIdentity"/>
+        <opc:EnumeratedValue Value="2" Name="AssetIdentityAndCompatibility"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="AssetVerificationResultEnum">
+        <opc:EnumeratedValue Value="0" Name="NotSet"/>
+        <opc:EnumeratedValue Value="1" Name="Match"/>
+        <opc:EnumeratedValue Value="2" Name="Compatible"/>
+        <opc:EnumeratedValue Value="3" Name="Mismatch"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FunctionalEntityVerificationResultEnum">
+        <opc:EnumeratedValue Value="0" Name="NotSet"/>
+        <opc:EnumeratedValue Value="1" Name="Match"/>
+        <opc:EnumeratedValue Value="2" Name="Mismatch"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PubSubConnectionEndpointModeEnum">
+        <opc:EnumeratedValue Value="1" Name="PublisherSubscriber"/>
+        <opc:EnumeratedValue Value="2" Name="Publisher"/>
+        <opc:EnumeratedValue Value="3" Name="Subscriber"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" IsOptionSet="true" Name="FxCommandMask">
+        <opc:Documentation>This OptionSet defines flags indicating the commands a ConnectionManager may use in its call to the EstablishConnections Method.</opc:Documentation>
+        <opc:EnumeratedValue Value="0" Name="VerifyAssetCmd"/>
+        <opc:EnumeratedValue Value="1" Name="VerifyFunctionalEntityCmd"/>
+        <opc:EnumeratedValue Value="2" Name="CreateConnectionEndpointCmd"/>
+        <opc:EnumeratedValue Value="3" Name="EstablishControlCmd"/>
+        <opc:EnumeratedValue Value="4" Name="SetConfigurationDataCmd"/>
+        <opc:EnumeratedValue Value="5" Name="ReassignControlCmd"/>
+        <opc:EnumeratedValue Value="6" Name="ReserveCommunicationIdsCmd"/>
+        <opc:EnumeratedValue Value="7" Name="SetCommunicationConfigurationCmd"/>
+        <opc:EnumeratedValue Value="8" Name="EnableCommunicationCmd"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
