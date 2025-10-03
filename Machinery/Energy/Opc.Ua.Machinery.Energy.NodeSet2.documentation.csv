@@ -1,0 +1,7 @@
+Id,Name,Link,ConformanceUnits
+1003,INonElectricalEnergyType,"https://reference.opcfoundation.org/Machinery/Energy/v100/docs/7.1","Machinery Energy Non Electrical Base;"
+1004,IVolumeFlowType,"https://reference.opcfoundation.org/Machinery/Energy/v100/docs/7.3","Machinery Energy Non Electrical Volume Flow;"
+1006,IBaseFlowType,"https://reference.opcfoundation.org/Machinery/Energy/v100/docs/7.2","Machinery Energy Non Electrical Mass Flow;Machinery Energy Non Electrical Volume Flow;"
+1008,IMassFlowType,"https://reference.opcfoundation.org/Machinery/Energy/v100/docs/7.4","Machinery Energy Non Electrical Mass Flow;"
+4003,Contains,"https://reference.opcfoundation.org/Machinery/Energy/v100/docs/8.1","Machinery Energy Contains;"
+5001,http://opcfoundation.org/UA/Machinery/Energy/,"https://reference.opcfoundation.org/Machinery/Energy/v100/docs/11.1",""
