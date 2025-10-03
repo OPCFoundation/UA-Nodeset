@@ -1,0 +1,29 @@
+<xs:schema elementFormDefault="qualified" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://opcfoundation.org/UA/WMTP/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/WMTP/Types.xsd">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:complexType name="WMTPOutputDataType">
+        <xs:sequence>
+            <xs:element maxOccurs="1" name="EngineeringUnits" type="ua:EUInformation" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ActualValue" type="xs:double" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="TypeOfMeasurement" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="TypeOfSample" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="InstrumentRange" type="ua:Range" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="EURange" type="ua:Range" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ValuePrecision" type="xs:double" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Definition" type="xs:string" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="SignalTag" type="xs:string" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="RelativeUncertainty" type="xs:double" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="AbsoluteUncertainty" type="xs:double" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Timestamp" type="xs:dateTime" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Index" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="MeasurementPeriod" type="xs:double" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="InternalUpdateInterval" type="xs:double" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WMTPOutputDataType" type="tns:WMTPOutputDataType"/>
+    <xs:complexType name="ListOfWMTPOutputDataType">
+        <xs:sequence>
+            <xs:element nillable="true" maxOccurs="unbounded" name="WMTPOutputDataType" type="tns:WMTPOutputDataType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" name="ListOfWMTPOutputDataType" type="tns:ListOfWMTPOutputDataType"/>
+</xs:schema>
