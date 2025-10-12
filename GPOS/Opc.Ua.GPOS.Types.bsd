@@ -1,0 +1,35 @@
+<opc:TypeDictionary xmlns:ua="http://opcfoundation.org/UA/" DefaultByteOrder="LittleEndian" xmlns:tns="http://opcfoundation.org/UA/GPOS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TargetNamespace="http://opcfoundation.org/UA/GPOS/" xmlns:opc="http://opcfoundation.org/BinarySchema/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="3DGeographicCoordinateDataType">
+        <opc:Documentation>Represents a geographic coordinate</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="ElevationSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:Double" Name="Longitude"/>
+        <opc:Field TypeName="opc:Double" Name="Latitude"/>
+        <opc:Field SwitchField="ElevationSpecified" TypeName="opc:Double" Name="Elevation"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:3DGeographicCoordinateDataType" Name="GlobalPositionDataType">
+        <opc:Documentation>Represents a global position</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="ElevationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="AccuracySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="FloorSpecified"/>
+        <opc:Field Length="29" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:Double" SourceType="tns:3DGeographicCoordinateDataType" Name="Longitude"/>
+        <opc:Field TypeName="opc:Double" SourceType="tns:3DGeographicCoordinateDataType" Name="Latitude"/>
+        <opc:Field SwitchField="ElevationSpecified" TypeName="opc:Double" SourceType="tns:3DGeographicCoordinateDataType" Name="Elevation"/>
+        <opc:Field SwitchField="AccuracySpecified" TypeName="opc:Double" Name="Accuracy"/>
+        <opc:Field SwitchField="FloorSpecified" TypeName="opc:Float" Name="Floor"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="GlobalLocationDataType">
+        <opc:Documentation>Represents a global location</opc:Documentation>
+        <opc:Field TypeName="opc:Bit" Name="OrientationSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="tns:GlobalPositionDataType" Name="Position"/>
+        <opc:Field SwitchField="OrientationSpecified" TypeName="ua:3DOrientation" Name="Orientation"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="GroundControlPointDataType">
+        <opc:Documentation>Defines a pair of coordinates - local and global - to allow geo-references from local coordinate to a global coordinate system</opc:Documentation>
+        <opc:Field TypeName="tns:3DGeographicCoordinateDataType" Name="GlobalPosition"/>
+        <opc:Field TypeName="ua:3DCartesianCoordinates" Name="LocalPosition"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>

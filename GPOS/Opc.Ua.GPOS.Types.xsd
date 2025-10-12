@@ -1,0 +1,74 @@
+<xs:schema xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/GPOS/Types.xsd" targetNamespace="http://opcfoundation.org/UA/GPOS/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:complexType name="3DGeographicCoordinateDataType">
+        <xs:annotation>
+            <xs:documentation>Represents a geographic coordinate</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="xs:unsignedInt" minOccurs="0" name="EncodingMask"/>
+            <xs:element type="xs:double" minOccurs="0" maxOccurs="1" name="Longitude"/>
+            <xs:element type="xs:double" minOccurs="0" maxOccurs="1" name="Latitude"/>
+            <xs:element type="xs:double" minOccurs="0" maxOccurs="1" name="Elevation"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:3DGeographicCoordinateDataType" name="3DGeographicCoordinateDataType"/>
+    <xs:complexType name="ListOf3DGeographicCoordinateDataType">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:3DGeographicCoordinateDataType" minOccurs="0" maxOccurs="unbounded" name="3DGeographicCoordinateDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOf3DGeographicCoordinateDataType" name="ListOf3DGeographicCoordinateDataType"/>
+    <xs:complexType name="GlobalPositionDataType">
+        <xs:annotation>
+            <xs:documentation>Represents a global position</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:3DGeographicCoordinateDataType">
+                <xs:sequence>
+                    <xs:element type="xs:double" minOccurs="0" maxOccurs="1" name="Accuracy"/>
+                    <xs:element type="xs:float" minOccurs="0" maxOccurs="1" name="Floor"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:GlobalPositionDataType" name="GlobalPositionDataType"/>
+    <xs:complexType name="ListOfGlobalPositionDataType">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:GlobalPositionDataType" minOccurs="0" maxOccurs="unbounded" name="GlobalPositionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfGlobalPositionDataType" name="ListOfGlobalPositionDataType"/>
+    <xs:complexType name="GlobalLocationDataType">
+        <xs:annotation>
+            <xs:documentation>Represents a global location</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="xs:unsignedInt" minOccurs="0" name="EncodingMask"/>
+            <xs:element type="tns:GlobalPositionDataType" minOccurs="0" maxOccurs="1" name="Position"/>
+            <xs:element type="ua:3DOrientation" minOccurs="0" maxOccurs="1" name="Orientation"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:GlobalLocationDataType" name="GlobalLocationDataType"/>
+    <xs:complexType name="ListOfGlobalLocationDataType">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:GlobalLocationDataType" minOccurs="0" maxOccurs="unbounded" name="GlobalLocationDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfGlobalLocationDataType" name="ListOfGlobalLocationDataType"/>
+    <xs:complexType name="GroundControlPointDataType">
+        <xs:annotation>
+            <xs:documentation>Defines a pair of coordinates - local and global - to allow geo-references from local coordinate to a global coordinate system</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="tns:3DGeographicCoordinateDataType" minOccurs="0" maxOccurs="1" name="GlobalPosition"/>
+            <xs:element type="ua:3DCartesianCoordinates" minOccurs="0" maxOccurs="1" name="LocalPosition"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:GroundControlPointDataType" name="GroundControlPointDataType"/>
+    <xs:complexType name="ListOfGroundControlPointDataType">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:GroundControlPointDataType" minOccurs="0" maxOccurs="unbounded" name="GroundControlPointDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfGroundControlPointDataType" name="ListOfGroundControlPointDataType"/>
+</xs:schema>

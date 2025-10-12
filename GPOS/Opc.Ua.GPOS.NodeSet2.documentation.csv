@@ -1,0 +1,10 @@
+Id,Name,Link,ConformanceUnits
+1005,ZoneType,"https://reference.opcfoundation.org/GPOS/v100/docs/7.1.2","GPOS Zones;"
+2003,GlobalLocationType,"https://reference.opcfoundation.org/GPOS/v100/docs/8.2","GPOS GlobalLocation;"
+2006,GlobalPositionType,"https://reference.opcfoundation.org/GPOS/v100/docs/8.1","GPOS GlobalPosition;"
+3003,3DGeographicCoordinateDataType,"https://reference.opcfoundation.org/GPOS/v100/docs/9.1","GPOS GlobalPosition;"
+3004,GlobalLocationDataType,"https://reference.opcfoundation.org/GPOS/v100/docs/9.3","GPOS GlobalLocation;"
+3005,GroundControlPointDataType,"https://reference.opcfoundation.org/GPOS/v100/docs/9.4","GPOS Zones;"
+3006,GlobalPositionDataType,"https://reference.opcfoundation.org/GPOS/v100/docs/9.2","GPOS GlobalPosition;"
+5007,http://opcfoundation.org/UA/GPOS/,"https://reference.opcfoundation.org/GPOS/v100/docs/12.1",""
+5013,GlobalLocations,"https://reference.opcfoundation.org/GPOS/v100/docs/10.1","GPOS Zones;"
