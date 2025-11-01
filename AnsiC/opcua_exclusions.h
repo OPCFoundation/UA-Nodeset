@@ -109,6 +109,7 @@
 /* #define OPCUA_EXCLUDE_ServerEndpointDataType */
 /* #define OPCUA_EXCLUDE_SecuritySettingsDataType */
 /* #define OPCUA_EXCLUDE_UserTokenSettingsDataType */
+/* #define OPCUA_EXCLUDE_ServiceCertificateDataType */
 /* #define OPCUA_EXCLUDE_AuthorizationServiceConfigurationDataType */
 /* #define OPCUA_EXCLUDE_DecimalDataType */
 /* #define OPCUA_EXCLUDE_DataTypeSchemaHeader */

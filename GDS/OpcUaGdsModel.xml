@@ -37,12 +37,12 @@
   xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
   xmlns:uasc="http://opcfoundation.org/UA/PushConfiguration/"
   TargetNamespace="http://opcfoundation.org/UA/GDS/"
-  TargetVersion="1.05.05"
-  TargetPublicationDate="2025-06-30T00:00:00Z"
+  TargetVersion="1.05.06"
+  TargetPublicationDate="2025-10-31T00:00:00Z"
 >
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaGds" Prefix="Opc.Ua.Gds" XmlNamespace="http://opcfoundation.org/UA/GDS/Types.xsd" XmlPrefix="GDS">http://opcfoundation.org/UA/GDS/</opc:Namespace>
-    <opc:Namespace Name="OpcUa" Version="1.05.05" PublicationDate="2025-04-25T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.05.06" PublicationDate="2025-10-31T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
 
   <opc:PermissionSets>
@@ -56,6 +56,7 @@
         <opc:Permission>Call</opc:Permission>
       </opc:RolePermission>
     </opc:PermissionSet>
+
     <opc:PermissionSet Name="CertificateAuthorityAdmin">
       <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
@@ -65,6 +66,7 @@
         <opc:Permission>Call</opc:Permission>
       </opc:RolePermission>
     </opc:PermissionSet>
+    
     <opc:PermissionSet Name="KeyCredentialAdmin">
       <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
@@ -74,8 +76,20 @@
         <opc:Permission>Call</opc:Permission>
       </opc:RolePermission>
     </opc:PermissionSet>
+    
+    <opc:PermissionSet Name="AuditEventDefaultPermissions">
+      <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
+        <opc:Permission>Browse</opc:Permission>
+        <opc:Permission>Read</opc:Permission>
+      </opc:RolePermission>
+      <opc:RolePermission Role="ua:WellKnownRole_SecurityAdmin">
+        <opc:Permission>Browse</opc:Permission>
+        <opc:Permission>Read</opc:Permission>
+        <opc:Permission>ReceiveEvents</opc:Permission>
+      </opc:RolePermission>
+    </opc:PermissionSet>
   </opc:PermissionSets>
-  
+
   <opc:Object SymbolicName="OPCUAGDSNamespaceMetadata" TypeDefinition="ua:NamespaceMetadataType" PartNo="12">
     <opc:BrowseName>http://opcfoundation.org/UA/GDS/</opc:BrowseName>
     <opc:Children>
@@ -86,17 +100,17 @@
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <opc:DefaultValue>
-          <uax:String>1.05.05</uax:String>
+          <uax:String>1.05.06</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ModelVersion" DataType="ua:SemanticVersionString">
         <opc:DefaultValue>
-          <uax:String>1.5.5</uax:String>
+          <uax:String>1.5.6</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <opc:DefaultValue>
-          <uax:DateTime>2025-06-30T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2025-10-31T00:00:00Z</uax:DateTime>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
@@ -134,7 +148,7 @@
       </opc:Reference>
     </opc:References>
   </opc:Object>
-  
+
   <opc:Object SymbolicName="WellKnownRole_DiscoveryAdmin" TypeDefinition="ua:RoleType">
     <opc:BrowseName>DiscoveryAdmin</opc:BrowseName>
     <opc:DisplayName>DiscoveryAdmin</opc:DisplayName>
@@ -158,7 +172,7 @@
       </opc:Reference>
     </opc:References>
   </opc:Object>
-  
+
   <opc:Object SymbolicName="WellKnownRole_CertificateAuthorityAdmin" TypeDefinition="ua:RoleType">
     <opc:BrowseName>CertificateAuthorityAdmin</opc:BrowseName>
     <opc:DisplayName>CertificateAuthorityAdmin</opc:DisplayName>
@@ -182,7 +196,7 @@
       </opc:Reference>
     </opc:References>
   </opc:Object>
-  
+
   <opc:Object SymbolicName="WellKnownRole_RegistrationAuthorityAdmin" TypeDefinition="ua:RoleType">
     <opc:BrowseName>RegistrationAuthorityAdmin</opc:BrowseName>
     <opc:DisplayName>RegistrationAuthorityAdmin</opc:DisplayName>
@@ -322,7 +336,7 @@
       <opc:Argument Name="Applications" DataType="ua:ApplicationDescription" ValueRank="Array"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
-  
+
   <opc:Method SymbolicName="QueryServersMethodType">
     <opc:InputArguments>
       <opc:Argument Name="StartingRecordId" DataType="ua:UInt32"></opc:Argument>
@@ -368,8 +382,10 @@
     </opc:Children>
   </opc:ObjectType>
 
-  <opc:ObjectType SymbolicName="ApplicationRegistrationChangedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" />
-  
+  <opc:ObjectType SymbolicName="ApplicationRegistrationChangedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
+
   <opc:Method SymbolicName="StartSigningRequestMethodType">
     <opc:InputArguments>
       <opc:Argument Name="ApplicationId" DataType="ua:NodeId" />
@@ -396,7 +412,7 @@
       <opc:Argument Name="RequestId" DataType="ua:NodeId"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
-  
+
   <opc:Method SymbolicName="FinishRequestMethodType">
     <opc:InputArguments>
       <opc:Argument Name="ApplicationId" DataType="ua:NodeId"></opc:Argument>
@@ -513,6 +529,7 @@
       <opc:Property SymbolicName="CertificateGroup" DataType="ua:NodeId" ModellingRule="Mandatory" />
       <opc:Property SymbolicName="CertificateType" DataType="ua:NodeId" ModellingRule="Mandatory" />
     </opc:Children>
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
   </opc:ObjectType>
 
   <opc:ObjectType SymbolicName="CertificateDeliveredAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true">
@@ -520,9 +537,12 @@
       <opc:Property SymbolicName="CertificateGroup" DataType="ua:NodeId" ModellingRule="Mandatory" />
       <opc:Property SymbolicName="CertificateType" DataType="ua:NodeId" ModellingRule="Mandatory" />
     </opc:Children>
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
   </opc:ObjectType>
-  
-  <opc:ObjectType SymbolicName="CertificateRevokedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" />
+
+  <opc:ObjectType SymbolicName="CertificateRevokedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
 
   <opc:ObjectType SymbolicName="KeyCredentialManagementFolderType" BaseType="ua:FolderType">
     <opc:Children>
@@ -532,7 +552,7 @@
       </opc:Object>
     </opc:Children>
   </opc:ObjectType>
-  
+
   <opc:Object SymbolicName="KeyCredentialManagement" TypeDefinition="KeyCredentialManagementFolderType">
     <opc:References>
       <opc:Reference IsInverse="true">
@@ -594,9 +614,17 @@
     </opc:InputArguments>
   </opc:Method>
 
-  <opc:ObjectType SymbolicName="KeyCredentialRequestedAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false" />
-  <opc:ObjectType SymbolicName="KeyCredentialDeliveredAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false" />
-  <opc:ObjectType SymbolicName="KeyCredentialRevokedAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false" />
+  <opc:ObjectType SymbolicName="KeyCredentialRequestedAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
+
+  <opc:ObjectType SymbolicName="KeyCredentialDeliveredAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
+
+  <opc:ObjectType SymbolicName="KeyCredentialRevokedAuditEventType" BaseType="ua:KeyCredentialAuditEventType" IsAbstract="false">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
 
   <opc:ObjectType SymbolicName="AuthorizationServicesFolderType" BaseType="ua:FolderType">
     <opc:Children>
@@ -606,7 +634,7 @@
       </opc:Object>
     </opc:Children>
   </opc:ObjectType>
-  
+
   <opc:Object SymbolicName="AuthorizationServices" TypeDefinition="AuthorizationServicesFolderType">
     <opc:References>
       <opc:Reference IsInverse="true">
@@ -668,13 +696,14 @@
     </opc:OutputArguments>
   </opc:Method>
 
-  <opc:ObjectType SymbolicName="AccessTokenIssuedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" PartNo="12" />
+  <opc:ObjectType SymbolicName="AccessTokenIssuedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" PartNo="12">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
 
   <opc:Object SymbolicName="Directory" TypeDefinition="CertificateDirectoryType">
-    
+
     <opc:Children>
       <opc:Object SymbolicName="CertificateGroups" ModellingRule="Mandatory">
-        <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
         <opc:Children>
           <opc:Object SymbolicName="ua:DefaultApplicationGroup" ModellingRule="Mandatory">
             <opc:Children>
@@ -715,9 +744,10 @@
             </opc:Children>
           </opc:Object>
         </opc:Children>
+        <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
       </opc:Object>
     </opc:Children>
-    
+
     <opc:References>
       <opc:Reference IsInverse="true">
         <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
@@ -725,5 +755,5 @@
       </opc:Reference>
     </opc:References>
   </opc:Object>
-  
+
 </opc:ModelDesign>

@@ -33,7 +33,7 @@ Id,Name,Link,ConformanceUnits
 975,AccessTokenIssuedAuditEventType,"https://reference.opcfoundation.org/GDS/docs/9.6.7","GDS Authorization Service Server;"
 1004,GetServiceDescription,"https://reference.opcfoundation.org/GDS/docs/9.6.6",""
 1008,KeyCredentialManagement,"https://reference.opcfoundation.org/GDS/docs/8.5.3","Pull Model for KeyCredential Service;"
-1020,KeyCredentialServiceType,"https://reference.opcfoundation.org/GDS/docs/8.5.4","Pull Model for KeyCredential Service;"
+1020,KeyCredentialServiceType,"https://reference.opcfoundation.org/GDS/docs/8.5.4","Pull Model for KeyCredential ServicePull Model for KeyCredential Service;"
 1023,StartRequest,"https://reference.opcfoundation.org/GDS/docs/8.5.5",""
 1026,FinishRequest,"https://reference.opcfoundation.org/GDS/docs/8.5.6",""
 1029,Revoke,"https://reference.opcfoundation.org/GDS/docs/8.5.7",""
@@ -41,3 +41,4 @@ Id,Name,Link,ConformanceUnits
 1057,KeyCredentialDeliveredAuditEventType,"https://reference.opcfoundation.org/GDS/docs/8.5.10","Pull Model for KeyCredential Service;"
 1075,KeyCredentialRevokedAuditEventType,"https://reference.opcfoundation.org/GDS/docs/8.5.11","Pull Model for KeyCredential Service;"
 15003,RevokeCertificate,"https://reference.opcfoundation.org/GDS/docs/7.9.6","GDS Certificate Manager RevokeCertificate;"
+23724,ServiceCertificateDataType,"https://reference.opcfoundation.org/GDS/docs/9.7.5",""
