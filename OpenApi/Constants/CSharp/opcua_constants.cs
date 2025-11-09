@@ -261,6 +261,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string Aggregates = "Aggregates";
         /// <remarks />
+        public const string AlarmCondition_Placeholder = "<AlarmCondition>";
+        /// <remarks />
         public const string AlarmConditionInstance_Placeholder = "<AlarmConditionInstance>";
         /// <remarks />
         public const string AlarmConditionType = "AlarmConditionType";
@@ -297,7 +299,11 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string AliasNameType = "AliasNameType";
         /// <remarks />
+        public const string AllowedSubtype = "AllowedSubtype";
+        /// <remarks />
         public const string AllowNulls = "AllowNulls";
+        /// <remarks />
+        public const string AlternativeUnit_Placeholder = "<AlternativeUnit>";
         /// <remarks />
         public const string AlternativeUnits = "AlternativeUnits";
         /// <remarks />
@@ -681,6 +687,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string Classification = "Classification";
         /// <remarks />
+        public const string ClientApplicationUri = "ClientApplicationUri";
+        /// <remarks />
         public const string ClientAuditEntryId = "ClientAuditEntryId";
         /// <remarks />
         public const string ClientCertificate = "ClientCertificate";
@@ -767,6 +775,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ConfiguredSize = "ConfiguredSize";
         /// <remarks />
+        public const string ConfigureSerialization = "ConfigureSerialization";
+        /// <remarks />
         public const string Confirm = "Confirm";
         /// <remarks />
         public const string ConfirmedState = "ConfirmedState";
@@ -786,6 +796,8 @@ namespace Opc.Ua.WebApi
         public const string ConnectionTransportType = "ConnectionTransportType";
         /// <remarks />
         public const string ConnectSecurityGroups = "ConnectSecurityGroups";
+        /// <remarks />
+        public const string ConsiderSubElementSerializationProperties = "ConsiderSubElementSerializationProperties";
         /// <remarks />
         public const string Constant = "Constant";
         /// <remarks />
@@ -889,6 +901,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string CustomConfiguration = "CustomConfiguration";
         /// <remarks />
+        public const string CustomMetaDataProperties = "CustomMetaDataProperties";
+        /// <remarks />
+        public const string CustomMetaDataRef = "CustomMetaDataRef";
+        /// <remarks />
         public const string CyclicDataSet = "CyclicDataSet";
         /// <remarks />
         public const string DataChangeFilter = "DataChangeFilter";
@@ -936,6 +952,8 @@ namespace Opc.Ua.WebApi
         public const string DataSetMetaData = "DataSetMetaData";
         /// <remarks />
         public const string DataSetMetaDataType = "DataSetMetaDataType";
+        /// <remarks />
+        public const string DataSetName_Placeholder = "<DataSetName>";
         /// <remarks />
         public const string DataSetOffset = "DataSetOffset";
         /// <remarks />
@@ -992,6 +1010,8 @@ namespace Opc.Ua.WebApi
         public const string DataTypeEncodingType = "DataTypeEncodingType";
         /// <remarks />
         public const string DataTypeNode = "DataTypeNode";
+        /// <remarks />
+        public const string DataTypeRefinementType = "DataTypeRefinementType";
         /// <remarks />
         public const string DataTypeSchemaHeader = "DataTypeSchemaHeader";
         /// <remarks />
@@ -1299,6 +1319,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ExceptionDeviationFormat = "ExceptionDeviationFormat";
         /// <remarks />
+        public const string ExcludeReferenceTypes = "ExcludeReferenceTypes";
+        /// <remarks />
         public const string ExclusiveDeviationAlarmType = "ExclusiveDeviationAlarmType";
         /// <remarks />
         public const string ExclusiveLevelAlarmType = "ExclusiveLevelAlarmType";
@@ -1336,6 +1358,8 @@ namespace Opc.Ua.WebApi
         public const string FailureSystemIdentifier = "FailureSystemIdentifier";
         /// <remarks />
         public const string FalseState = "FalseState";
+        /// <remarks />
+        public const string FieldDescription_Placeholder = "<FieldDescription>";
         /// <remarks />
         public const string FieldMetaData = "FieldMetaData";
         /// <remarks />
@@ -1477,6 +1501,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string HasDataSetWriter = "HasDataSetWriter";
         /// <remarks />
+        public const string HasDataTypeRefinement = "HasDataTypeRefinement";
+        /// <remarks />
         public const string HasDescription = "HasDescription";
         /// <remarks />
         public const string HasDictionaryEntry = "HasDictionaryEntry";
@@ -1499,6 +1525,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string HasFalseSubState = "HasFalseSubState";
         /// <remarks />
+        public const string HasFieldDescription = "HasFieldDescription";
+        /// <remarks />
+        public const string HasFieldDescriptionSetMandatory = "HasFieldDescriptionSetMandatory";
+        /// <remarks />
         public const string HasGuard = "HasGuard";
         /// <remarks />
         public const string HasHistoricalConfiguration = "HasHistoricalConfiguration";
@@ -1506,8 +1536,6 @@ namespace Opc.Ua.WebApi
         public const string HasInterface = "HasInterface";
         /// <remarks />
         public const string HasKeyValueDescription = "HasKeyValueDescription";
-        /// <remarks />
-        public const string HasLogHierarchy = "HasLogHierarchy";
         /// <remarks />
         public const string HasLowerLayerInterface = "HasLowerLayerInterface";
         /// <remarks />
@@ -1534,6 +1562,8 @@ namespace Opc.Ua.WebApi
         public const string HasReferenceDescription = "HasReferenceDescription";
         /// <remarks />
         public const string HasSecureElement = "HasSecureElement";
+        /// <remarks />
+        public const string HasSerializationEntity = "HasSerializationEntity";
         /// <remarks />
         public const string HasStructuredComponent = "HasStructuredComponent";
         /// <remarks />
@@ -1687,6 +1717,14 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string InApplicationSetup = "InApplicationSetup";
         /// <remarks />
+        public const string IncludeDictionaryReference = "IncludeDictionaryReference";
+        /// <remarks />
+        public const string IncludeReferenceTypes = "IncludeReferenceTypes";
+        /// <remarks />
+        public const string IncludeSourceTimestamp = "IncludeSourceTimestamp";
+        /// <remarks />
+        public const string IncludeStatus = "IncludeStatus";
+        /// <remarks />
         public const string Index = "Index";
         /// <remarks />
         public const string IndexRange = "IndexRange";
@@ -1755,6 +1793,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string IsDeprecated = "IsDeprecated";
         /// <remarks />
+        public const string IsDisabledOptionalField = "IsDisabledOptionalField";
+        /// <remarks />
         public const string IsExecutableOn = "IsExecutableOn";
         /// <remarks />
         public const string IsExecutingOn = "IsExecutingOn";
@@ -1762,6 +1802,8 @@ namespace Opc.Ua.WebApi
         public const string IsHostedBy = "IsHostedBy";
         /// <remarks />
         public const string IsNamespaceSubset = "IsNamespaceSubset";
+        /// <remarks />
+        public const string IsNonUaApplication = "IsNonUaApplication";
         /// <remarks />
         public const string IsPhysicallyConnectedTo = "IsPhysicallyConnectedTo";
         /// <remarks />
@@ -1909,9 +1951,13 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string LldpManagementAddressType = "LldpManagementAddressType";
         /// <remarks />
+        public const string LldpPortInformation_Placeholder = "<LldpPortInformation>";
+        /// <remarks />
         public const string LldpPortInformationType = "LldpPortInformationType";
         /// <remarks />
         public const string LldpRemoteStatisticsType = "LldpRemoteStatisticsType";
+        /// <remarks />
+        public const string LldpRemoteSystem_Placeholder = "<LldpRemoteSystem>";
         /// <remarks />
         public const string LldpRemoteSystemType = "LldpRemoteSystemType";
         /// <remarks />
@@ -2663,10 +2709,6 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string Quantities = "Quantities";
         /// <remarks />
-        public const string QuantitiesFolderType = "QuantitiesFolderType";
-        /// <remarks />
-        public const string Quantity_Placeholder = "<Quantity>";
-        /// <remarks />
         public const string QuantityDimension = "QuantityDimension";
         /// <remarks />
         public const string QuantityType = "QuantityType";
@@ -3067,6 +3109,12 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string SemanticVersionString = "SemanticVersionString";
         /// <remarks />
+        public const string SerializationDepth = "SerializationDepth";
+        /// <remarks />
+        public const string SerializationEntityType = "SerializationEntityType";
+        /// <remarks />
+        public const string SerializedData = "SerializedData";
+        /// <remarks />
         public const string Server = "Server";
         /// <remarks />
         public const string Server_ServerRedundancy_CurrentServerId = "CurrentServerId";
@@ -3123,6 +3171,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ServerType = "ServerType";
         /// <remarks />
+        public const string ServerUnit_Placeholder = "<ServerUnit>";
+        /// <remarks />
         public const string ServerUnits = "ServerUnits";
         /// <remarks />
         public const string ServerUnitType = "ServerUnitType";
@@ -3136,6 +3186,8 @@ namespace Opc.Ua.WebApi
         public const string ServerViewCount = "ServerViewCount";
         /// <remarks />
         public const string ServiceCertificate = "ServiceCertificate";
+        /// <remarks />
+        public const string ServiceCertificateDataType = "ServiceCertificateDataType";
         /// <remarks />
         public const string ServiceCounterDataType = "ServiceCounterDataType";
         /// <remarks />
@@ -3291,9 +3343,21 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string State = "State";
         /// <remarks />
+        public const string StateDisabledByMethod = "StateDisabledByMethod";
+        /// <remarks />
+        public const string StateError = "StateError";
+        /// <remarks />
         public const string StateMachineType = "StateMachineType";
         /// <remarks />
         public const string StateNumber = "StateNumber";
+        /// <remarks />
+        public const string StateOperationalByMethod = "StateOperationalByMethod";
+        /// <remarks />
+        public const string StateOperationalByParent = "StateOperationalByParent";
+        /// <remarks />
+        public const string StateOperationalFromError = "StateOperationalFromError";
+        /// <remarks />
+        public const string StatePausedByParent = "StatePausedByParent";
         /// <remarks />
         public const string StateType = "StateType";
         /// <remarks />
@@ -3370,6 +3434,8 @@ namespace Opc.Ua.WebApi
         public const string SubscriptionDiagnosticsType = "SubscriptionDiagnosticsType";
         /// <remarks />
         public const string SubscriptionId = "SubscriptionId";
+        /// <remarks />
+        public const string SubtypeRestrictionType = "SubtypeRestrictionType";
         /// <remarks />
         public const string SupportedDataType = "SupportedDataType";
         /// <remarks />
@@ -3707,8 +3773,6 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserConfigurationMask = "UserConfigurationMask";
         /// <remarks />
-        public const string UserCredentialCertificateType = "UserCredentialCertificateType";
-        /// <remarks />
         public const string UserIdentityToken = "UserIdentityToken";
         /// <remarks />
         public const string UserManagement = "UserManagement";
@@ -3731,9 +3795,13 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserWritable = "UserWritable";
         /// <remarks />
+        public const string UsesDataTypeRefinement = "UsesDataTypeRefinement";
+        /// <remarks />
         public const string UseSlopedExtrapolation = "UseSlopedExtrapolation";
         /// <remarks />
         public const string UsesPriorityMappingTable = "UsesPriorityMappingTable";
+        /// <remarks />
+        public const string UsesSubtypeRestriction = "UsesSubtypeRestriction";
         /// <remarks />
         public const string UtcTime = "UtcTime";
         /// <remarks />
@@ -4021,7 +4089,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TransactionErrorType = "i=32285";
         /// <remarks />
-        public const string ApplicationConfigurationDataType = "i=15549";
+        public const string ApplicationConfigurationDataType = "i=23743";
         /// <remarks />
         public const string ApplicationIdentityDataType = "i=15556";
         /// <remarks />
@@ -4033,7 +4101,9 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserTokenSettingsDataType = "i=15560";
         /// <remarks />
-        public const string AuthorizationServiceConfigurationDataType = "i=19445";
+        public const string ServiceCertificateDataType = "i=23724";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType = "i=23744";
         /// <remarks />
         public const string DecimalDataType = "i=17861";
         /// <remarks />
@@ -5186,6 +5256,20 @@ namespace Opc.Ua.WebApi
         public const string AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_Unshelve = "i=16515";
         /// <remarks />
         public const string AlarmGroupType_AlarmConditionInstance_Placeholder_ShelvingState_OneShotShelve = "i=16516";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Disable = "i=20034";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Enable = "i=20035";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_AddComment = "i=20036";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Acknowledge = "i=23493";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_TimedShelve = "i=23651";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_Unshelve = "i=23655";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_OneShotShelve = "i=23659";
         /// <remarks />
         public const string ShelvedStateMachineType_TimedShelve = "i=2949";
         /// <remarks />
@@ -6433,6 +6517,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string PriorityMappingTableType_DeletePriorityMappingEntry = "i=25231";
         /// <remarks />
+        public const string SerializationEntityType_ConfigureSerialization = "i=19839";
+        /// <remarks />
         public const string LogObjectType_GetRecords = "i=19353";
         /// <remarks />
         public const string ServerLog_GetRecords = "i=19373";
@@ -6641,10 +6727,6 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string QuantityType_ServerUnits_ServerUnit_Placeholder = "i=32482";
         /// <remarks />
-        public const string QuantitiesFolderType_Quantity_Placeholder = "i=32503";
-        /// <remarks />
-        public const string QuantitiesFolderType_Quantity_Placeholder_ServerUnits = "i=32509";
-        /// <remarks />
         public const string Quantities = "i=32530";
         /// <remarks />
         public const string AlarmConditionType_ShelvingState = "i=9178";
@@ -6654,6 +6736,8 @@ namespace Opc.Ua.WebApi
         public const string AlarmConditionType_AlarmGroup_Placeholder = "i=16399";
         /// <remarks />
         public const string AlarmGroupType_AlarmConditionInstance_Placeholder = "i=16406";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder = "i=19847";
         /// <remarks />
         public const string ShelvedStateMachineType_Unshelved = "i=2930";
         /// <remarks />
@@ -7225,7 +7309,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TransactionErrorType_Encoding_DefaultBinary = "i=32382";
         /// <remarks />
-        public const string ApplicationConfigurationDataType_Encoding_DefaultBinary = "i=16542";
+        public const string ApplicationConfigurationDataType_Encoding_DefaultBinary = "i=23754";
         /// <remarks />
         public const string ApplicationIdentityDataType_Encoding_DefaultBinary = "i=16543";
         /// <remarks />
@@ -7237,7 +7321,9 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserTokenSettingsDataType_Encoding_DefaultBinary = "i=16547";
         /// <remarks />
-        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultBinary = "i=19752";
+        public const string ServiceCertificateDataType_Encoding_DefaultBinary = "i=23725";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultBinary = "i=23755";
         /// <remarks />
         public const string DecimalDataType_Encoding_DefaultBinary = "i=17863";
         /// <remarks />
@@ -7931,7 +8017,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TransactionErrorType_Encoding_DefaultXml = "i=32386";
         /// <remarks />
-        public const string ApplicationConfigurationDataType_Encoding_DefaultXml = "i=16591";
+        public const string ApplicationConfigurationDataType_Encoding_DefaultXml = "i=23762";
         /// <remarks />
         public const string ApplicationIdentityDataType_Encoding_DefaultXml = "i=16592";
         /// <remarks />
@@ -7943,7 +8029,9 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserTokenSettingsDataType_Encoding_DefaultXml = "i=16596";
         /// <remarks />
-        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultXml = "i=19772";
+        public const string ServiceCertificateDataType_Encoding_DefaultXml = "i=23735";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultXml = "i=23763";
         /// <remarks />
         public const string DecimalDataType_Encoding_DefaultXml = "i=17862";
         /// <remarks />
@@ -8637,7 +8725,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string TransactionErrorType_Encoding_DefaultJson = "i=32390";
         /// <remarks />
-        public const string ApplicationConfigurationDataType_Encoding_DefaultJson = "i=16636";
+        public const string ApplicationConfigurationDataType_Encoding_DefaultJson = "i=23776";
         /// <remarks />
         public const string ApplicationIdentityDataType_Encoding_DefaultJson = "i=16637";
         /// <remarks />
@@ -8649,7 +8737,9 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string UserTokenSettingsDataType_Encoding_DefaultJson = "i=16645";
         /// <remarks />
-        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultJson = "i=19802";
+        public const string ServiceCertificateDataType_Encoding_DefaultJson = "i=23739";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultJson = "i=23777";
         /// <remarks />
         public const string DecimalDataType_Encoding_DefaultJson = "i=15045";
         /// <remarks />
@@ -9429,6 +9519,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string AggregateFunctionType = "i=2340";
         /// <remarks />
+        public const string DataTypeRefinementType = "i=19820";
+        /// <remarks />
+        public const string SubtypeRestrictionType = "i=19822";
+        /// <remarks />
         public const string StateMachineType = "i=2299";
         /// <remarks />
         public const string FiniteStateMachineType = "i=2771";
@@ -9480,8 +9574,6 @@ namespace Opc.Ua.WebApi
         public const string AlternativeUnitType = "i=32467";
         /// <remarks />
         public const string QuantityType = "i=32475";
-        /// <remarks />
-        public const string QuantitiesFolderType = "i=32502";
         /// <remarks />
         public const string ConditionType = "i=2782";
         /// <remarks />
@@ -9636,8 +9728,6 @@ namespace Opc.Ua.WebApi
         public const string TlsServerCertificateType = "i=19325";
         /// <remarks />
         public const string TlsClientCertificateType = "i=19326";
-        /// <remarks />
-        public const string UserCredentialCertificateType = "i=15181";
         /// <remarks />
         public const string RsaMinApplicationCertificateType = "i=12559";
         /// <remarks />
@@ -9865,6 +9955,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string LldpRemoteSystemType = "i=19033";
         /// <remarks />
+        public const string SerializationEntityType = "i=19824";
+        /// <remarks />
         public const string LogObjectType = "i=19352";
         /// <remarks />
         public const string BaseLogEventType = "i=19362";
@@ -9955,6 +10047,20 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string IsDeprecated = "i=23562";
         /// <remarks />
+        public const string UsesDataTypeRefinement = "i=19814";
+        /// <remarks />
+        public const string HasFieldDescription = "i=19815";
+        /// <remarks />
+        public const string HasFieldDescriptionSetMandatory = "i=19816";
+        /// <remarks />
+        public const string IsDisabledOptionalField = "i=19817";
+        /// <remarks />
+        public const string UsesSubtypeRestriction = "i=19818";
+        /// <remarks />
+        public const string AllowedSubtype = "i=19819";
+        /// <remarks />
+        public const string HasDataTypeRefinement = "i=19846";
+        /// <remarks />
         public const string HasGuard = "i=15112";
         /// <remarks />
         public const string HasDictionaryEntry = "i=17597";
@@ -10039,7 +10145,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string HasReferenceDescription = "i=32679";
         /// <remarks />
-        public const string HasLogHierarchy = "i=19371";
+        public const string HasSerializationEntity = "i=19845";
 
         /// <summary>
         /// Converts a value to a name for display.
@@ -10775,6 +10881,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string AuditEventType_ClientUserId = "i=2057";
         /// <remarks />
+        public const string AuditEventType_ClientApplicationUri = "i=19811";
+        /// <remarks />
         public const string AuditSecurityEventType_StatusCodeId = "i=17615";
         /// <remarks />
         public const string AuditChannelEventType_SecureChannelId = "i=2745";
@@ -11497,6 +11605,10 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string HistoryServerCapabilities_ServerTimestampSupported = "i=19091";
         /// <remarks />
+        public const string DataTypeRefinementType_FieldDescription_Placeholder = "i=19821";
+        /// <remarks />
+        public const string SubtypeRestrictionType_FieldDescription_Placeholder = "i=19823";
+        /// <remarks />
         public const string StateMachineType_CurrentState = "i=2769";
         /// <remarks />
         public const string StateMachineType_CurrentState_Id = "i=3720";
@@ -12147,8 +12259,6 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string QuantityType_ServerUnits_ServerUnit_Placeholder_CoherentUnit_UnitSystem = "i=32500";
         /// <remarks />
-        public const string QuantitiesFolderType_Quantity_Placeholder_Dimension = "i=32508";
-        /// <remarks />
         public const string TwoStateVariableType_Id = "i=8996";
         /// <remarks />
         public const string TwoStateVariableType_TransitionTime = "i=9000";
@@ -12480,6 +12590,106 @@ namespace Opc.Ua.WebApi
         public const string AlarmGroupType_AlarmConditionInstance_Placeholder_GetGroupMemberships_OutputArguments = "i=25156";
         /// <remarks />
         public const string AlarmSuppressionGroupType_DigitalVariable_Placeholder = "i=32226";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_EventId = "i=19904";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_EventType = "i=19905";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_SourceNode = "i=19906";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_SourceName = "i=19907";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Time = "i=19908";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ReceiveTime = "i=19909";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Message = "i=19911";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Severity = "i=19912";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ConditionClassId = "i=19913";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ConditionClassName = "i=19914";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ConditionName = "i=19969";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_BranchId = "i=19970";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Retain = "i=19971";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_EnabledState = "i=19972";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_EnabledState_Id = "i=19973";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Quality = "i=19981";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Quality_SourceTimestamp = "i=20028";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_LastSeverity = "i=20029";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_LastSeverity_SourceTimestamp = "i=20030";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Comment = "i=20031";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Comment_SourceTimestamp = "i=20032";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ClientUserId = "i=20033";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_AddComment_InputArguments = "i=20037";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_AckedState = "i=20038";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_AckedState_Id = "i=20039";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ConfirmedState_Id = "i=23481";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Acknowledge_InputArguments = "i=23561";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Confirm_InputArguments = "i=23578";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ActiveState = "i=23579";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ActiveState_Id = "i=23580";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_InputNode = "i=23588";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_SuppressedState_Id = "i=23590";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_OutOfServiceState_Id = "i=23611";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_CurrentState = "i=23624";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_CurrentState_Id = "i=23625";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_LastTransition_Id = "i=23630";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_UnshelveTime = "i=23650";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_TimedShelve_InputArguments = "i=23652";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_TimedShelve2_InputArguments = "i=23654";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_Unshelve2_InputArguments = "i=23657";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_ShelvingState_OneShotShelve2_InputArguments = "i=23661";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_SuppressedOrShelved = "i=23662";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_SilenceState_Id = "i=23670";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_LatchedState_Id = "i=23696";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Suppress2_InputArguments = "i=23709";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Unsuppress2_InputArguments = "i=23712";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_RemoveFromService2_InputArguments = "i=23715";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_PlaceInService2_InputArguments = "i=23718";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_Reset2_InputArguments = "i=23721";
+        /// <remarks />
+        public const string AlarmSuppressionGroupType_AlarmCondition_Placeholder_GetGroupMemberships_OutputArguments = "i=23723";
         /// <remarks />
         public const string ShelvedStateMachineType_UnshelveTime = "i=9115";
         /// <remarks />
@@ -16172,6 +16382,8 @@ namespace Opc.Ua.WebApi
         public const string ApplicationConfigurationType_ApplicationType = "i=26852";
         /// <remarks />
         public const string ApplicationConfigurationType_Enabled = "i=26849";
+        /// <remarks />
+        public const string ApplicationConfigurationType_IsNonUaApplication = "i=23741";
         /// <remarks />
         public const string ApplicationConfigurationType_KeyCredentials_CreateCredential_InputArguments = "i=19425";
         /// <remarks />
@@ -20885,6 +21097,30 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string ReferenceDescriptionVariableType_ReferenceRefinement = "i=32658";
         /// <remarks />
+        public const string SerializationEntityType_SerializedData = "i=19825";
+        /// <remarks />
+        public const string SerializationEntityType_IncludeReferenceTypes = "i=19826";
+        /// <remarks />
+        public const string SerializationEntityType_ExcludeReferenceTypes = "i=19827";
+        /// <remarks />
+        public const string SerializationEntityType_SerializationDepth = "i=19828";
+        /// <remarks />
+        public const string SerializationEntityType_ConsiderSubElementSerializationProperties = "i=19829";
+        /// <remarks />
+        public const string SerializationEntityType_CustomMetaDataProperties = "i=19830";
+        /// <remarks />
+        public const string SerializationEntityType_CustomMetaDataRef = "i=19835";
+        /// <remarks />
+        public const string SerializationEntityType_IncludeStatus = "i=19836";
+        /// <remarks />
+        public const string SerializationEntityType_IncludeSourceTimestamp = "i=19837";
+        /// <remarks />
+        public const string SerializationEntityType_IncludeDictionaryReference = "i=19838";
+        /// <remarks />
+        public const string SerializationEntityType_ConfigureSerialization_InputArguments = "i=19840";
+        /// <remarks />
+        public const string SerializationEntityType_ConfigureSerialization_OutputArguments = "i=19841";
+        /// <remarks />
         public const string LogObjectType_GetRecords_InputArguments = "i=19354";
         /// <remarks />
         public const string LogObjectType_GetRecords_OutputArguments = "i=19355";
@@ -20912,6 +21148,8 @@ namespace Opc.Ua.WebApi
         public const string ServerLog_MaxRecords = "i=19376";
         /// <remarks />
         public const string ServerLog_MaxStorageDuration = "i=19377";
+        /// <remarks />
+        public const string ServerLog_MinimumSeverity = "i=19751";
         /// <remarks />
         public const string IdType_EnumStrings = "i=7591";
         /// <remarks />
@@ -21029,7 +21267,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string OpcUa_BinarySchema_TransactionErrorType = "i=32383";
         /// <remarks />
-        public const string OpcUa_BinarySchema_ApplicationConfigurationDataType = "i=16564";
+        public const string OpcUa_BinarySchema_ApplicationConfigurationDataType = "i=23756";
         /// <remarks />
         public const string OpcUa_BinarySchema_ApplicationIdentityDataType = "i=16567";
         /// <remarks />
@@ -21041,7 +21279,9 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string OpcUa_BinarySchema_UserTokenSettingsDataType = "i=16584";
         /// <remarks />
-        public const string OpcUa_BinarySchema_AuthorizationServiceConfigurationDataType = "i=19757";
+        public const string OpcUa_BinarySchema_ServiceCertificateDataType = "i=23732";
+        /// <remarks />
+        public const string OpcUa_BinarySchema_AuthorizationServiceConfigurationDataType = "i=23759";
         /// <remarks />
         public const string OpcUa_BinarySchema_DataTypeSchemaHeader = "i=15741";
         /// <remarks />
@@ -21405,7 +21645,7 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string OpcUa_XmlSchema_TransactionErrorType = "i=32387";
         /// <remarks />
-        public const string OpcUa_XmlSchema_ApplicationConfigurationDataType = "i=16614";
+        public const string OpcUa_XmlSchema_ApplicationConfigurationDataType = "i=23764";
         /// <remarks />
         public const string OpcUa_XmlSchema_ApplicationIdentityDataType = "i=16617";
         /// <remarks />
@@ -21417,7 +21657,9 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string OpcUa_XmlSchema_UserTokenSettingsDataType = "i=16629";
         /// <remarks />
-        public const string OpcUa_XmlSchema_AuthorizationServiceConfigurationDataType = "i=19787";
+        public const string OpcUa_XmlSchema_ServiceCertificateDataType = "i=23736";
+        /// <remarks />
+        public const string OpcUa_XmlSchema_AuthorizationServiceConfigurationDataType = "i=23773";
         /// <remarks />
         public const string OpcUa_XmlSchema_DataTypeSchemaHeader = "i=16027";
         /// <remarks />

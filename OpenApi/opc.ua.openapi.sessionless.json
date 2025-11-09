@@ -10,7 +10,7 @@
       "name": "OPC Source Deliverable Agreement of Use",
       "url": "https://opcfoundation.org/license/source/1.11/"
     },
-    "version": "1.05.4"
+    "version": "1.5.6"
   },
   "servers": [
     {
@@ -428,86 +428,122 @@
         "type": "object",
         "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
-      "WriterGroupDataType": {
+      "BaseDataType": {
+        "$ref": "#/components/schemas/Variant"
+      },
+      "KeyValuePair": {
         "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/PubSubGroupDataType"
-          }
-        ],
         "properties": {
-          "WriterGroupId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
+          "Key": {
+            "type": "string",
+            "format": "UaQualifiedName"
           },
-          "PublishingInterval": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          },
-          "KeepAliveTime": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          },
-          "Priority": {
-            "maximum": 255,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "LocaleIds": {
+          "Value": {
+            "$ref": "#/components/schemas/Variant"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.21)."
+      },
+      "DataTypeSchemaHeader": {
+        "type": "object",
+        "properties": {
+          "Namespaces": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "HeaderLayoutUri": {
-            "type": "string"
-          },
-          "TransportSettings": {
-            "type": "object"
-          },
-          "MessageSettings": {
-            "type": "object"
-          },
-          "DataSetWriters": {
+          "StructureDataTypes": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/DataSetWriterDataType"
+              "$ref": "#/components/schemas/StructureDescription"
+            }
+          },
+          "EnumDataTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EnumDescription"
+            }
+          },
+          "SimpleDataTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SimpleTypeDescription"
             }
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.6/#6.2.6.7.1)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.31)."
       },
-      "BrowseRequest": {
+      "DataTypeDescription": {
         "type": "object",
         "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
+          "DataTypeId": {
+            "type": "string",
+            "format": "UaNodeId"
           },
-          "View": {
-            "$ref": "#/components/schemas/ViewDescription"
-          },
-          "RequestedMaxReferencesPerNode": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "NodesToBrowse": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BrowseDescription"
-            }
+          "Name": {
+            "type": "string",
+            "format": "UaQualifiedName"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.32)."
+      },
+      "StructureDescription": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataTypeDescription"
+          }
+        ],
+        "properties": {
+          "StructureDefinition": {
+            "$ref": "#/components/schemas/StructureDefinition"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.33)."
+      },
+      "EnumDescription": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataTypeDescription"
+          }
+        ],
+        "properties": {
+          "EnumDefinition": {
+            "$ref": "#/components/schemas/EnumDefinition"
+          },
+          "BuiltInType": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.34)."
+      },
+      "SimpleTypeDescription": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataTypeDescription"
+          }
+        ],
+        "properties": {
+          "BaseDataType": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "BuiltInType": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.35)."
       },
       "PubSubState": {
         "enum": [
@@ -528,286 +564,35 @@
           "PreOperational"
         ]
       },
-      "ReferenceDescription": {
-        "type": "object",
-        "properties": {
-          "ReferenceTypeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "IsForward": {
-            "type": "boolean",
-            "default": false
-          },
-          "NodeId": {
-            "type": "string",
-            "format": "UaExpandedNodeId"
-          },
-          "BrowseName": {
-            "type": "string",
-            "format": "UaQualifiedName"
-          },
-          "DisplayName": {
-            "$ref": "#/components/schemas/LocalizedText"
-          },
-          "NodeClass": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.2).",
-            "format": "NodeClass"
-          },
-          "TypeDefinition": {
-            "type": "string",
-            "format": "UaExpandedNodeId"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.29)."
-      },
-      "EnumValueType": {
-        "type": "object",
-        "properties": {
-          "Value": {
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "DisplayName": {
-            "$ref": "#/components/schemas/LocalizedText"
-          },
-          "Description": {
-            "$ref": "#/components/schemas/LocalizedText"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.6)."
-      },
-      "StructureDescription": {
+      "DataSetMetaDataType": {
         "type": "object",
         "allOf": [
           {
-            "$ref": "#/components/schemas/DataTypeDescription"
+            "$ref": "#/components/schemas/DataTypeSchemaHeader"
           }
         ],
         "properties": {
-          "StructureDefinition": {
-            "$ref": "#/components/schemas/StructureDefinition"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.33)."
-      },
-      "ConnectionTransportDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "ModificationInfo": {
-        "type": "object",
-        "properties": {
-          "ModificationTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "UpdateType": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.7).",
-            "format": "HistoryUpdateType"
-          },
-          "UserName": {
+          "Name": {
             "type": "string"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.5)."
-      },
-      "HistoryEventFieldList": {
-        "type": "object",
-        "properties": {
-          "EventFields": {
+          },
+          "Description": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "Fields": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Variant"
+              "$ref": "#/components/schemas/FieldMetaData"
             }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.4)."
-      },
-      "BrowseDirection": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.5).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Forward",
-          "Inverse",
-          "Both",
-          "Invalid"
-        ]
-      },
-      "JsonNetworkMessage": {
-        "type": "object",
-        "properties": {
-          "MessageId": {
-            "type": "string"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "PublisherId": {
-            "type": "string"
-          },
-          "WriterGroupName": {
-            "type": "string"
           },
           "DataSetClassId": {
-            "type": "string"
-          },
-          "Messages": { }
-        },
-        "description": "[Link to specification]()."
-      },
-      "EUInformation": {
-        "type": "object",
-        "properties": {
-          "NamespaceUri": {
-            "type": "string"
-          },
-          "UnitId": {
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "DisplayName": {
-            "$ref": "#/components/schemas/LocalizedText"
-          },
-          "Description": {
-            "$ref": "#/components/schemas/LocalizedText"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part8/5.6.3/#5.6.3.3)."
-      },
-      "HistoryUpdateRequest": {
-        "type": "object",
-        "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
-          },
-          "HistoryUpdateDetails": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ExtensionObject"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
-      },
-      "TimestampsToReturn": {
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.39).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Source",
-          "Server",
-          "Both",
-          "Neither",
-          "Invalid"
-        ]
-      },
-      "ActionMethodDataType": {
-        "type": "object",
-        "properties": {
-          "ObjectId": {
             "type": "string",
-            "format": "UaNodeId"
+            "format": "uuid"
           },
-          "MethodId": {
-            "type": "string",
-            "format": "UaNodeId"
+          "ConfigurationVersion": {
+            "$ref": "#/components/schemas/ConfigurationVersionDataType"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.10.5)."
-      },
-      "ReaderGroupTransportDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "ReadEventDetails2": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/ReadEventDetails"
-          }
-        ],
-        "properties": {
-          "ReadModified": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.2/#6.5.2.3)."
-      },
-      "UserTokenPolicy": {
-        "type": "object",
-        "properties": {
-          "PolicyId": {
-            "type": "string"
-          },
-          "TokenType": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.42).",
-            "format": "UserTokenType"
-          },
-          "IssuedTokenType": {
-            "type": "string"
-          },
-          "IssuerEndpointUrl": {
-            "type": "string"
-          },
-          "SecurityPolicyUri": {
-            "type": "string"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.41)."
-      },
-      "SimpleAttributeOperand": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/FilterOperand"
-          }
-        ],
-        "properties": {
-          "TypeDefinitionId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "BrowsePath": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "UaQualifiedName"
-            }
-          },
-          "AttributeId": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "IndexRange": {
-            "type": "string"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.4/#7.7.4.5)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.3)."
       },
       "FieldMetaData": {
         "type": "object",
@@ -871,7 +656,106 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.4)."
       },
-      "CallMethodRequest": {
+      "DataSetFieldFlagsBits": {
+        "enum": [
+          1
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.5).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "PromotedField"
+        ]
+      },
+      "DataSetFieldFlags": {
+        "maximum": 4294967295,
+        "minimum": 0,
+        "type": "integer",
+        "format": "int64",
+        "default": 0
+      },
+      "ConfigurationVersionDataType": {
+        "type": "object",
+        "properties": {
+          "MajorVersion": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "MinorVersion": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.6)."
+      },
+      "PublishedDataSetDataType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "DataSetFolder": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "DataSetMetaData": {
+            "$ref": "#/components/schemas/DataSetMetaDataType"
+          },
+          "ExtensionFields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/KeyValuePair"
+            }
+          },
+          "DataSetSource": {
+            "type": "object"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.5)."
+      },
+      "ActionTargetDataType": {
+        "type": "object",
+        "properties": {
+          "ActionTargetId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Description": {
+            "$ref": "#/components/schemas/LocalizedText"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.10.3)."
+      },
+      "ActionState": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Idle",
+          "Executing",
+          "Done"
+        ]
+      },
+      "ActionMethodDataType": {
         "type": "object",
         "properties": {
           "ObjectId": {
@@ -881,77 +765,9 @@
           "MethodId": {
             "type": "string",
             "format": "UaNodeId"
-          },
-          "InputArguments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Variant"
-            }
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
-      },
-      "ReaderGroupDataType": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/PubSubGroupDataType"
-          }
-        ],
-        "properties": {
-          "TransportSettings": {
-            "type": "object"
-          },
-          "MessageSettings": {
-            "type": "object"
-          },
-          "DataSetReaders": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataSetReaderDataType"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.8/#6.2.8.2.1)."
-      },
-      "ReadEventDetails": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryReadDetails"
-          }
-        ],
-        "properties": {
-          "NumValuesPerNode": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "StartTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "EndTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "Filter": {
-            "$ref": "#/components/schemas/EventFilter"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.2/#6.5.2.1)."
-      },
-      "Counter": {
-        "maximum": 4294967295,
-        "minimum": 0,
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
-        "format": "int64",
-        "default": 0
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.10.5)."
       },
       "DataSetFieldContentMaskBits": {
         "enum": [
@@ -980,287 +796,6 @@
         "type": "integer",
         "format": "int64",
         "default": 0
-      },
-      "TranslateBrowsePathsToNodeIdsResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BrowsePathResult"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
-      },
-      "BrowseNextResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BrowseResult"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2)."
-      },
-      "Argument": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string"
-          },
-          "DataType": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "ValueRank": {
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "ArrayDimensions": {
-            "type": "array",
-            "items": {
-              "maximum": 4294967295,
-              "minimum": 0,
-              "type": "integer",
-              "format": "int64",
-              "default": 0
-            }
-          },
-          "Description": {
-            "$ref": "#/components/schemas/LocalizedText"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.1)."
-      },
-      "UpdateStructureDataDetails": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryUpdateDetails"
-          }
-        ],
-        "properties": {
-          "NodeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "PerformInsertReplace": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
-            "format": "PerformUpdateType"
-          },
-          "UpdateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataValue"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.3/#6.9.3.1)."
-      },
-      "JsonActionResponseMessage": {
-        "type": "object",
-        "properties": {
-          "DataSetWriterId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "ActionTargetId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "DataSetWriterName": {
-            "type": "string"
-          },
-          "WriterGroupName": {
-            "type": "string"
-          },
-          "MetaDataVersion": {
-            "$ref": "#/components/schemas/ConfigurationVersionDataType"
-          },
-          "MinorVersion": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "Status": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "RequestId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "ActionState": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
-            "format": "ActionState"
-          },
-          "Payload": {
-            "type": "object"
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "HistoryData": {
-        "type": "object",
-        "properties": {
-          "DataValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataValue"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.2)."
-      },
-      "ApplicationDescription": {
-        "type": "object",
-        "properties": {
-          "ApplicationUri": {
-            "type": "string"
-          },
-          "ProductUri": {
-            "type": "string"
-          },
-          "ApplicationName": {
-            "$ref": "#/components/schemas/LocalizedText"
-          },
-          "ApplicationType": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.4).",
-            "format": "ApplicationType"
-          },
-          "GatewayServerUri": {
-            "type": "string"
-          },
-          "DiscoveryProfileUri": {
-            "type": "string"
-          },
-          "DiscoveryUrls": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.3)."
-      },
-      "WriteResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/StatusCode"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
-      },
-      "SubscribedDataSetDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "AggregateConfiguration": {
-        "type": "object",
-        "properties": {
-          "UseServerCapabilitiesDefaults": {
-            "type": "boolean",
-            "default": false
-          },
-          "TreatUncertainAsBad": {
-            "type": "boolean",
-            "default": false
-          },
-          "PercentDataBad": {
-            "maximum": 255,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "PercentDataGood": {
-            "maximum": 255,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "UseSlopedExtrapolation": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.4)."
-      },
-      "BrowsePathResult": {
-        "type": "object",
-        "properties": {
-          "StatusCode": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "Targets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BrowsePathTarget"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
-      },
-      "DataSetWriterTransportDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataSetWriterDataType": {
         "type": "object",
@@ -1311,832 +846,13 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.4/#6.2.4.5.1)."
       },
-      "EnumDefinition": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataTypeDefinition"
-          }
-        ],
-        "properties": {
-          "Fields": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EnumField"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.4)."
-      },
-      "ContentFilter": {
-        "type": "object",
-        "properties": {
-          "Elements": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ContentFilterElement"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.4)."
-      },
-      "HistoryUpdateResult": {
-        "type": "object",
-        "properties": {
-          "StatusCode": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "OperationResults": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/StatusCode"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
-      },
-      "BrowseResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BrowseResult"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
-      },
-      "WriteValue": {
-        "type": "object",
-        "properties": {
-          "NodeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "AttributeId": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "IndexRange": {
-            "type": "string"
-          },
-          "Value": {
-            "$ref": "#/components/schemas/DataValue"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
-      },
-      "ReadRawModifiedDetails": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryReadDetails"
-          }
-        ],
-        "properties": {
-          "IsReadModified": {
-            "type": "boolean",
-            "default": false
-          },
-          "StartTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "EndTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "NumValuesPerNode": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "ReturnBounds": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.3/#6.5.3.1)."
-      },
-      "JsonNetworkMessageContentMaskBits": {
-        "enum": [
-          1,
-          2,
-          4,
-          8,
-          16,
-          32,
-          64
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.1.1).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "NetworkMessageHeader",
-          "DataSetMessageHeader",
-          "SingleDataSetMessage",
-          "PublisherId",
-          "DataSetClassId",
-          "ReplyTo",
-          "WriterGroupName"
-        ]
-      },
-      "JsonNetworkMessageContentMask": {
-        "maximum": 4294967295,
-        "minimum": 0,
-        "type": "integer",
-        "format": "int64",
-        "default": 0
-      },
-      "UtcTime": {
-        "type": "string",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.11).",
-        "format": "date-time",
-        "default": "0001-01-01T00:00:00.0000000+00:00"
-      },
-      "JsonPubSubConnectionMessage": {
-        "type": "object",
-        "properties": {
-          "MessageId": {
-            "type": "string"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "PublisherId": {
-            "type": "string"
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "Connection": {
-            "$ref": "#/components/schemas/PubSubConnectionDataType"
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "JsonActionResponderMessage": {
-        "type": "object",
-        "properties": {
-          "MessageId": {
-            "type": "string"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "PublisherId": {
-            "type": "string"
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "Connection": {
-            "$ref": "#/components/schemas/PubSubConnectionDataType"
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "ContentFilterElement": {
-        "type": "object",
-        "properties": {
-          "FilterOperator": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.3).",
-            "format": "FilterOperator"
-          },
-          "FilterOperands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ExtensionObject"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.1)."
-      },
-      "ConfigurationVersionDataType": {
-        "type": "object",
-        "properties": {
-          "MajorVersion": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "MinorVersion": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.6)."
-      },
-      "JsonDataSetMessage": {
-        "type": "object",
-        "properties": {
-          "DataSetWriterId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "DataSetWriterName": {
-            "type": "string"
-          },
-          "PublisherId": {
-            "type": "string"
-          },
-          "WriterGroupName": {
-            "type": "string"
-          },
-          "SequenceNumber": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "MetaDataVersion": {
-            "$ref": "#/components/schemas/ConfigurationVersionDataType"
-          },
-          "MinorVersion": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "Status": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "Payload": {
-            "type": "object"
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "PublishedDataSetDataType": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string"
-          },
-          "DataSetFolder": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "DataSetMetaData": {
-            "$ref": "#/components/schemas/DataSetMetaDataType"
-          },
-          "ExtensionFields": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            }
-          },
-          "DataSetSource": {
-            "type": "object"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.5)."
-      },
-      "CallRequest": {
-        "type": "object",
-        "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
-          },
-          "MethodsToCall": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CallMethodRequest"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
-      },
-      "ReadResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataValue"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2)."
-      },
-      "WriteRequest": {
-        "type": "object",
-        "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
-          },
-          "NodesToWrite": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/WriteValue"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
-      },
-      "BrowseDescription": {
-        "type": "object",
-        "properties": {
-          "NodeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "BrowseDirection": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.5).",
-            "format": "BrowseDirection"
-          },
-          "ReferenceTypeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "IncludeSubtypes": {
-            "type": "boolean",
-            "default": false
-          },
-          "NodeClassMask": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "ResultMask": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
-      },
-      "HistoryEvent": {
-        "type": "object",
-        "properties": {
-          "Events": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HistoryEventFieldList"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.4)."
-      },
-      "KeyValuePair": {
-        "type": "object",
-        "properties": {
-          "Key": {
-            "type": "string",
-            "format": "UaQualifiedName"
-          },
-          "Value": {
-            "$ref": "#/components/schemas/Variant"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.21)."
-      },
-      "StructureDefinition": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataTypeDefinition"
-          }
-        ],
-        "properties": {
-          "DefaultEncodingId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "BaseDataType": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "StructureType": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.3).",
-            "format": "StructureType"
-          },
-          "Fields": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/StructureField"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.5)."
-      },
-      "JsonActionRequestMessage": {
-        "type": "object",
-        "properties": {
-          "DataSetWriterId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "ActionTargetId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "DataSetWriterName": {
-            "type": "string"
-          },
-          "WriterGroupName": {
-            "type": "string"
-          },
-          "MetaDataVersion": {
-            "$ref": "#/components/schemas/ConfigurationVersionDataType"
-          },
-          "MinorVersion": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "RequestId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "ActionState": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
-            "format": "ActionState"
-          },
-          "Payload": {
-            "type": "object"
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "BrokerConnectionTransportDataType": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/ConnectionTransportDataType"
-          }
-        ],
-        "properties": {
-          "ResourceUri": {
-            "type": "string"
-          },
-          "AuthenticationProfileUri": {
-            "type": "string"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.2.3)."
-      },
-      "BrowsePath": {
-        "type": "object",
-        "properties": {
-          "StartingNode": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "RelativePath": {
-            "$ref": "#/components/schemas/RelativePath"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part3/6.2.5)."
-      },
-      "RolePermissionType": {
-        "type": "object",
-        "properties": {
-          "RoleId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "Permissions": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.9)."
-      },
-      "JsonServerEndpointsMessage": {
-        "type": "object",
-        "properties": {
-          "MessageId": {
-            "type": "string"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "PublisherId": {
-            "type": "string"
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "Description": {
-            "$ref": "#/components/schemas/ApplicationDescription"
-          },
-          "Endpoints": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EndpointDescription"
-            }
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "EventFilter": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/MonitoringFilter"
-          }
-        ],
-        "properties": {
-          "SelectClauses": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SimpleAttributeOperand"
-            }
-          },
-          "WhereClause": {
-            "$ref": "#/components/schemas/ContentFilter"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.3)."
-      },
-      "WriterGroupMessageDataType": {
+      "DataSetWriterTransportDataType": {
         "type": "object",
         "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
-      "PerformUpdateType": {
-        "enum": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Insert",
-          "Replace",
-          "Update",
-          "Remove"
-        ]
-      },
-      "JsonDataSetMessageContentMaskBits": {
-        "enum": [
-          1,
-          2,
-          4,
-          8,
-          16,
-          32,
-          64,
-          128,
-          256,
-          512,
-          1024,
-          2048
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.3.1).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "DataSetWriterId",
-          "MetaDataVersion",
-          "SequenceNumber",
-          "Timestamp",
-          "Status",
-          "MessageType",
-          "DataSetWriterName",
-          "FieldEncoding1",
-          "PublisherId",
-          "WriterGroupName",
-          "MinorVersion",
-          "FieldEncoding2"
-        ]
-      },
-      "JsonDataSetMessageContentMask": {
-        "maximum": 4294967295,
-        "minimum": 0,
-        "type": "integer",
-        "format": "int64",
-        "default": 0
-      },
-      "ActionTargetDataType": {
-        "type": "object",
-        "properties": {
-          "ActionTargetId": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "Name": {
-            "type": "string"
-          },
-          "Description": {
-            "$ref": "#/components/schemas/LocalizedText"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.10.3)."
-      },
-      "DataTypeDescription": {
-        "type": "object",
-        "properties": {
-          "DataTypeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "Name": {
-            "type": "string",
-            "format": "UaQualifiedName"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.32)."
-      },
-      "BrowseResult": {
-        "type": "object",
-        "properties": {
-          "StatusCode": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "ContinuationPoint": {
-            "type": "string",
-            "format": "byte"
-          },
-          "References": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ReferenceDescription"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.6)."
-      },
-      "HistoryReadDetails": {
+      "DataSetWriterMessageDataType": {
         "type": "object",
         "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "PermissionTypeBits": {
-        "enum": [
-          1,
-          2,
-          4,
-          8,
-          16,
-          32,
-          64,
-          128,
-          256,
-          512,
-          1024,
-          2048,
-          4096,
-          8192,
-          16384,
-          32768,
-          65536
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part3/8.55).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Browse",
-          "ReadRolePermissions",
-          "WriteAttribute",
-          "WriteRolePermissions",
-          "WriteHistorizing",
-          "Read",
-          "Write",
-          "ReadHistory",
-          "InsertHistory",
-          "ModifyHistory",
-          "DeleteHistory",
-          "ReceiveEvents",
-          "Call",
-          "AddReference",
-          "RemoveReference",
-          "DeleteNode",
-          "AddNode"
-        ]
-      },
-      "PermissionType": {
-        "maximum": 4294967295,
-        "minimum": 0,
-        "type": "integer",
-        "format": "int64",
-        "default": 0
-      },
-      "BrokerDataSetWriterTransportDataType": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataSetWriterTransportDataType"
-          }
-        ],
-        "properties": {
-          "QueueName": {
-            "type": "string"
-          },
-          "ResourceUri": {
-            "type": "string"
-          },
-          "AuthenticationProfileUri": {
-            "type": "string"
-          },
-          "RequestedDeliveryGuarantee": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
-            "format": "BrokerTransportQualityOfService"
-          },
-          "MetaDataQueueName": {
-            "type": "string"
-          },
-          "MetaDataUpdateTime": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.5.7)."
       },
       "PubSubGroupDataType": {
         "type": "object",
@@ -2178,23 +894,156 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.5/#6.2.5.7)."
       },
-      "JsonWriterGroupMessageDataType": {
+      "WriterGroupDataType": {
         "type": "object",
         "allOf": [
           {
-            "$ref": "#/components/schemas/WriterGroupMessageDataType"
+            "$ref": "#/components/schemas/PubSubGroupDataType"
           }
         ],
         "properties": {
-          "NetworkMessageContentMask": {
-            "maximum": 4294967295,
+          "WriterGroupId": {
+            "maximum": 65535,
             "minimum": 0,
             "type": "integer",
-            "format": "int64",
+            "format": "int32",
             "default": 0
+          },
+          "PublishingInterval": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "KeepAliveTime": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "Priority": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "LocaleIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "HeaderLayoutUri": {
+            "type": "string"
+          },
+          "TransportSettings": {
+            "type": "object"
+          },
+          "MessageSettings": {
+            "type": "object"
+          },
+          "DataSetWriters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataSetWriterDataType"
+            }
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.1.2)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.6/#6.2.6.7.1)."
+      },
+      "WriterGroupTransportDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "WriterGroupMessageDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "PubSubConnectionDataType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "Enabled": {
+            "type": "boolean",
+            "default": false
+          },
+          "PublisherId": {
+            "$ref": "#/components/schemas/Variant"
+          },
+          "TransportProfileUri": {
+            "type": "string"
+          },
+          "Address": {
+            "type": "object"
+          },
+          "ConnectionProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/KeyValuePair"
+            }
+          },
+          "TransportSettings": {
+            "type": "object"
+          },
+          "WriterGroups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WriterGroupDataType"
+            }
+          },
+          "ReaderGroups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReaderGroupDataType"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.7/#6.2.7.5.1)."
+      },
+      "ConnectionTransportDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "NetworkAddressDataType": {
+        "type": "object",
+        "properties": {
+          "NetworkInterface": {
+            "type": "string"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.7/#6.2.7.5.3)."
+      },
+      "ReaderGroupDataType": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/PubSubGroupDataType"
+          }
+        ],
+        "properties": {
+          "TransportSettings": {
+            "type": "object"
+          },
+          "MessageSettings": {
+            "type": "object"
+          },
+          "DataSetReaders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataSetReaderDataType"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.8/#6.2.8.2.1)."
+      },
+      "ReaderGroupTransportDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "ReaderGroupMessageDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataSetReaderDataType": {
         "type": "object",
@@ -2280,63 +1129,165 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.9/#6.2.9.13.1)."
       },
-      "RelativePathElement": {
+      "DataSetReaderTransportDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "DataSetReaderMessageDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "SubscribedDataSetDataType": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "PubSubConfigurationDataType": {
         "type": "object",
         "properties": {
-          "ReferenceTypeId": {
-            "type": "string",
-            "format": "UaNodeId"
+          "PublishedDataSets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublishedDataSetDataType"
+            }
           },
-          "IsInverse": {
+          "Connections": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PubSubConnectionDataType"
+            }
+          },
+          "Enabled": {
             "type": "boolean",
             "default": false
-          },
-          "IncludeSubtypes": {
-            "type": "boolean",
-            "default": false
-          },
-          "TargetName": {
-            "type": "string",
-            "format": "UaQualifiedName"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.30)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.1)."
       },
-      "ReadProcessedDetails": {
+      "StandaloneSubscribedDataSetDataType": {
         "type": "object",
         "allOf": [
           {
-            "$ref": "#/components/schemas/HistoryReadDetails"
+            "$ref": "#/components/schemas/SubscribedDataSetDataType"
           }
         ],
         "properties": {
-          "StartTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
+          "Name": {
+            "type": "string"
           },
-          "EndTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
+          "DataSetFolder": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
-          "ProcessingInterval": {
+          "DataSetMetaData": {
+            "$ref": "#/components/schemas/DataSetMetaDataType"
+          },
+          "SubscribedDataSet": {
+            "type": "object"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.10/#6.2.10.5)."
+      },
+      "SecurityGroupDataType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "SecurityGroupFolder": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "KeyLifetime": {
             "type": "number",
             "format": "double",
             "default": 0
           },
-          "AggregateType": {
+          "SecurityPolicyUri": {
+            "type": "string"
+          },
+          "MaxFutureKeyCount": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "MaxPastKeyCount": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "SecurityGroupId": {
+            "type": "string"
+          },
+          "RolePermissions": {
             "type": "array",
             "items": {
-              "type": "string",
-              "format": "UaNodeId"
+              "$ref": "#/components/schemas/RolePermissionType"
             }
           },
-          "AggregateConfiguration": {
-            "$ref": "#/components/schemas/AggregateConfiguration"
+          "GroupProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/KeyValuePair"
+            }
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.4/#6.5.4.1)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.2)."
+      },
+      "PubSubKeyPushTargetDataType": {
+        "type": "object",
+        "properties": {
+          "ApplicationUri": {
+            "type": "string"
+          },
+          "PushTargetFolder": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "EndpointUrl": {
+            "type": "string"
+          },
+          "SecurityPolicyUri": {
+            "type": "string"
+          },
+          "UserTokenType": {
+            "$ref": "#/components/schemas/UserTokenPolicy"
+          },
+          "RequestedKeyCount": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "RetryInterval": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "PushTargetProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/KeyValuePair"
+            }
+          },
+          "SecurityGroups": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.3)."
       },
       "PubSubConfiguration2DataType": {
         "type": "object",
@@ -2392,280 +1343,153 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.4)."
       },
-      "ReaderGroupMessageDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      "JsonNetworkMessageContentMaskBits": {
+        "enum": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.1.1).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "NetworkMessageHeader",
+          "DataSetMessageHeader",
+          "SingleDataSetMessage",
+          "PublisherId",
+          "DataSetClassId",
+          "ReplyTo",
+          "WriterGroupName"
+        ]
       },
-      "DataTypeSchemaHeader": {
-        "type": "object",
-        "properties": {
-          "Namespaces": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "StructureDataTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/StructureDescription"
-            }
-          },
-          "EnumDataTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EnumDescription"
-            }
-          },
-          "SimpleDataTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SimpleTypeDescription"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.31)."
-      },
-      "IntegerId": {
+      "JsonNetworkMessageContentMask": {
         "maximum": 4294967295,
         "minimum": 0,
         "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
         "format": "int64",
         "default": 0
       },
-      "BrowseNextRequest": {
-        "type": "object",
-        "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
-          },
-          "ReleaseContinuationPoints": {
-            "type": "boolean",
-            "default": false
-          },
-          "ContinuationPoints": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "byte"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2)."
-      },
-      "StructureField": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string"
-          },
-          "Description": {
-            "$ref": "#/components/schemas/LocalizedText"
-          },
-          "DataType": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "ValueRank": {
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "ArrayDimensions": {
-            "type": "array",
-            "items": {
-              "maximum": 4294967295,
-              "minimum": 0,
-              "type": "integer",
-              "format": "int64",
-              "default": 0
-            }
-          },
-          "MaxStringLength": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "IsOptional": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.10)."
-      },
-      "JsonActionNetworkMessage": {
-        "type": "object",
-        "properties": {
-          "MessageId": {
-            "type": "string"
-          },
-          "MessageType": {
-            "type": "string"
-          },
-          "PublisherId": {
-            "type": "string"
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "ResponseAddress": {
-            "type": "string"
-          },
-          "CorrelationData": {
-            "type": "string",
-            "format": "byte"
-          },
-          "RequestorId": {
-            "type": "string"
-          },
-          "TimeoutHint": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          },
-          "Messages": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
-          }
-        },
-        "description": "[Link to specification]()."
-      },
-      "DataSetWriterMessageDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "CallResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CallMethodResult"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
-      },
-      "TranslateBrowsePathsToNodeIdsRequest": {
-        "type": "object",
-        "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
-          },
-          "BrowsePaths": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BrowsePath"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
-      },
-      "SessionAuthenticationToken": {
-        "type": "string",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.2).",
-        "format": "UaNodeId"
-      },
-      "DataTypeDefinition": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "DataSetReaderMessageDataType": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "RequestHeader": {
-        "type": "object",
-        "properties": {
-          "AuthenticationToken": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "Timestamp": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
-          },
-          "RequestHandle": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "ReturnDiagnostics": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "AuditEntryId": {
-            "type": "string"
-          },
-          "TimeoutHint": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "AdditionalHeader": {
-            "$ref": "#/components/schemas/ExtensionObject"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.32)."
-      },
-      "EnumField": {
+      "JsonWriterGroupMessageDataType": {
         "type": "object",
         "allOf": [
           {
-            "$ref": "#/components/schemas/EnumValueType"
+            "$ref": "#/components/schemas/WriterGroupMessageDataType"
           }
         ],
         "properties": {
-          "Name": {
+          "NetworkMessageContentMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.1.2)."
+      },
+      "JsonDataSetMessageContentMaskBits": {
+        "enum": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.3.1).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "DataSetWriterId",
+          "MetaDataVersion",
+          "SequenceNumber",
+          "Timestamp",
+          "Status",
+          "MessageType",
+          "DataSetWriterName",
+          "FieldEncoding1",
+          "PublisherId",
+          "WriterGroupName",
+          "MinorVersion",
+          "FieldEncoding2"
+        ]
+      },
+      "JsonDataSetMessageContentMask": {
+        "maximum": 4294967295,
+        "minimum": 0,
+        "type": "integer",
+        "format": "int64",
+        "default": 0
+      },
+      "JsonDataSetWriterMessageDataType": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataSetWriterMessageDataType"
+          }
+        ],
+        "properties": {
+          "DataSetMessageContentMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.3.2)."
+      },
+      "JsonDataSetReaderMessageDataType": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataSetReaderMessageDataType"
+          }
+        ],
+        "properties": {
+          "NetworkMessageContentMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "DataSetMessageContentMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.4.3)."
+      },
+      "BrokerConnectionTransportDataType": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ConnectionTransportDataType"
+          }
+        ],
+        "properties": {
+          "ResourceUri": {
+            "type": "string"
+          },
+          "AuthenticationProfileUri": {
             "type": "string"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.7)."
-      },
-      "HistoryReadResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HistoryReadResult"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.2.3)."
       },
       "BrokerTransportQualityOfService": {
         "enum": [
@@ -2686,195 +1510,63 @@
           "ExactlyOnce"
         ]
       },
-      "DataSetReaderTransportDataType": {
+      "BrokerWriterGroupTransportDataType": {
         "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "BrowsePathTarget": {
-        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/WriterGroupTransportDataType"
+          }
+        ],
         "properties": {
-          "TargetId": {
-            "type": "string",
-            "format": "UaExpandedNodeId"
+          "QueueName": {
+            "type": "string"
           },
-          "RemainingPathIndex": {
-            "maximum": 4294967295,
-            "minimum": 0,
+          "ResourceUri": {
+            "type": "string"
+          },
+          "AuthenticationProfileUri": {
+            "type": "string"
+          },
+          "RequestedDeliveryGuarantee": {
             "type": "integer",
-            "format": "int64",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
+            "format": "BrokerTransportQualityOfService"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.3.5)."
+      },
+      "BrokerDataSetWriterTransportDataType": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataSetWriterTransportDataType"
+          }
+        ],
+        "properties": {
+          "QueueName": {
+            "type": "string"
+          },
+          "ResourceUri": {
+            "type": "string"
+          },
+          "AuthenticationProfileUri": {
+            "type": "string"
+          },
+          "RequestedDeliveryGuarantee": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
+            "format": "BrokerTransportQualityOfService"
+          },
+          "MetaDataQueueName": {
+            "type": "string"
+          },
+          "MetaDataUpdateTime": {
+            "type": "number",
+            "format": "double",
             "default": 0
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
-      },
-      "RelativePath": {
-        "type": "object",
-        "properties": {
-          "Elements": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RelativePathElement"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.30)."
-      },
-      "HistoryReadResult": {
-        "type": "object",
-        "properties": {
-          "StatusCode": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "ContinuationPoint": {
-            "type": "string",
-            "format": "byte"
-          },
-          "HistoryData": {
-            "$ref": "#/components/schemas/ExtensionObject"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
-      },
-      "HistoryUpdateType": {
-        "enum": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.7).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Insert",
-          "Replace",
-          "Update",
-          "Delete"
-        ]
-      },
-      "HistoryUpdateDetails": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "DataSetMetaDataType": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataTypeSchemaHeader"
-          }
-        ],
-        "properties": {
-          "Name": {
-            "type": "string"
-          },
-          "Description": {
-            "$ref": "#/components/schemas/LocalizedText"
-          },
-          "Fields": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/FieldMetaData"
-            }
-          },
-          "DataSetClassId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "ConfigurationVersion": {
-            "$ref": "#/components/schemas/ConfigurationVersionDataType"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.3)."
-      },
-      "ApplicationInstanceCertificate": {
-        "type": "string",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.10).",
-        "format": "byte"
-      },
-      "MessageSecurityMode": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Invalid",
-          "None",
-          "Sign",
-          "SignAndEncrypt"
-        ]
-      },
-      "ReadAtTimeDetails": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryReadDetails"
-          }
-        ],
-        "properties": {
-          "ReqTimes": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "date-time",
-              "default": "0001-01-01T00:00:00.0000000+00:00"
-            }
-          },
-          "UseSimpleBounds": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.5/#6.5.5.1)."
-      },
-      "FilterOperator": {
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.3).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Equals",
-          "IsNull",
-          "GreaterThan",
-          "LessThan",
-          "GreaterThanOrEqual",
-          "LessThanOrEqual",
-          "Like",
-          "Not",
-          "Between",
-          "InList",
-          "And",
-          "Or",
-          "Cast",
-          "InView",
-          "OfType",
-          "RelatedTo",
-          "BitwiseAnd",
-          "BitwiseOr"
-        ]
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.5.7)."
       },
       "BrokerDataSetReaderTransportDataType": {
         "type": "object",
@@ -2904,160 +1596,7 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.6.6)."
       },
-      "HistoryUpdateResponse": {
-        "type": "object",
-        "properties": {
-          "ResponseHeader": {
-            "$ref": "#/components/schemas/ResponseHeader"
-          },
-          "Results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HistoryUpdateResult"
-            }
-          },
-          "DiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
-      },
-      "BaseDataType": {
-        "$ref": "#/components/schemas/Variant"
-      },
-      "PubSubConnectionDataType": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string"
-          },
-          "Enabled": {
-            "type": "boolean",
-            "default": false
-          },
-          "PublisherId": {
-            "$ref": "#/components/schemas/Variant"
-          },
-          "TransportProfileUri": {
-            "type": "string"
-          },
-          "Address": {
-            "type": "object"
-          },
-          "ConnectionProperties": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            }
-          },
-          "TransportSettings": {
-            "type": "object"
-          },
-          "WriterGroups": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/WriterGroupDataType"
-            }
-          },
-          "ReaderGroups": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ReaderGroupDataType"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.7/#6.2.7.5.1)."
-      },
-      "UserTokenType": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.42).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Anonymous",
-          "UserName",
-          "Certificate",
-          "IssuedToken"
-        ]
-      },
-      "ApplicationType": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.4).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Server",
-          "Client",
-          "ClientAndServer",
-          "DiscoveryServer"
-        ]
-      },
-      "SecurityGroupDataType": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string"
-          },
-          "SecurityGroupFolder": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "KeyLifetime": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          },
-          "SecurityPolicyUri": {
-            "type": "string"
-          },
-          "MaxFutureKeyCount": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "MaxPastKeyCount": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "SecurityGroupId": {
-            "type": "string"
-          },
-          "RolePermissions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RolePermissionType"
-            }
-          },
-          "GroupProperties": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.2)."
-      },
-      "JsonStatusMessage": {
+      "JsonNetworkMessage": {
         "type": "object",
         "properties": {
           "MessageId": {
@@ -3069,24 +1608,65 @@
           "PublisherId": {
             "type": "string"
           },
+          "WriterGroupName": {
+            "type": "string"
+          },
+          "DataSetClassId": {
+            "type": "string"
+          },
+          "Messages": { }
+        },
+        "description": "[Link to specification]()."
+      },
+      "JsonDataSetMessage": {
+        "type": "object",
+        "properties": {
+          "DataSetWriterId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "DataSetWriterName": {
+            "type": "string"
+          },
+          "PublisherId": {
+            "type": "string"
+          },
+          "WriterGroupName": {
+            "type": "string"
+          },
+          "SequenceNumber": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "MetaDataVersion": {
+            "$ref": "#/components/schemas/ConfigurationVersionDataType"
+          },
+          "MinorVersion": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
           "Timestamp": {
             "type": "string",
             "format": "date-time",
             "default": "0001-01-01T00:00:00.0000000+00:00"
           },
-          "IsCyclic": {
-            "type": "boolean",
-            "default": false
-          },
           "Status": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.1).",
-            "format": "PubSubState"
+            "$ref": "#/components/schemas/StatusCode"
           },
-          "NextReportTime": {
-            "type": "string",
-            "format": "date-time",
-            "default": "0001-01-01T00:00:00.0000000+00:00"
+          "MessageType": {
+            "type": "string"
+          },
+          "Payload": {
+            "type": "object"
           }
         },
         "description": "[Link to specification]()."
@@ -3127,101 +1707,6 @@
         },
         "description": "[Link to specification]()."
       },
-      "NumericRange": {
-        "type": "string",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.31)."
-      },
-      "HistoryReadRequest": {
-        "type": "object",
-        "properties": {
-          "RequestHeader": {
-            "$ref": "#/components/schemas/RequestHeader"
-          },
-          "HistoryReadDetails": {
-            "$ref": "#/components/schemas/ExtensionObject"
-          },
-          "TimestampsToReturn": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.39).",
-            "format": "TimestampsToReturn"
-          },
-          "ReleaseContinuationPoints": {
-            "type": "boolean",
-            "default": false
-          },
-          "NodesToRead": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HistoryReadValueId"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
-      },
-      "PubSubKeyPushTargetDataType": {
-        "type": "object",
-        "properties": {
-          "ApplicationUri": {
-            "type": "string"
-          },
-          "PushTargetFolder": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "EndpointUrl": {
-            "type": "string"
-          },
-          "SecurityPolicyUri": {
-            "type": "string"
-          },
-          "UserTokenType": {
-            "$ref": "#/components/schemas/UserTokenPolicy"
-          },
-          "RequestedKeyCount": {
-            "maximum": 65535,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          },
-          "RetryInterval": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          },
-          "PushTargetProperties": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/KeyValuePair"
-            }
-          },
-          "SecurityGroups": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.3)."
-      },
-      "Range": {
-        "type": "object",
-        "properties": {
-          "Low": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          },
-          "High": {
-            "type": "number",
-            "format": "double",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part8/5.6.2)."
-      },
       "JsonApplicationDescriptionMessage": {
         "type": "object",
         "properties": {
@@ -3251,409 +1736,91 @@
         },
         "description": "[Link to specification]()."
       },
-      "StandaloneSubscribedDataSetDataType": {
+      "JsonServerEndpointsMessage": {
         "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/SubscribedDataSetDataType"
-          }
-        ],
         "properties": {
-          "Name": {
+          "MessageId": {
             "type": "string"
           },
-          "DataSetFolder": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "DataSetMetaData": {
-            "$ref": "#/components/schemas/DataSetMetaDataType"
-          },
-          "SubscribedDataSet": {
-            "type": "object"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.10/#6.2.10.5)."
-      },
-      "ReadValueId": {
-        "type": "object",
-        "properties": {
-          "NodeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "AttributeId": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
-          },
-          "IndexRange": {
+          "MessageType": {
             "type": "string"
           },
-          "DataEncoding": {
-            "type": "string",
-            "format": "UaQualifiedName"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.28)."
-      },
-      "ContinuationPoint": {
-        "type": "string",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.10).",
-        "format": "byte"
-      },
-      "UpdateDataDetails": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryUpdateDetails"
-          }
-        ],
-        "properties": {
-          "NodeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "PerformInsertReplace": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
-            "format": "PerformUpdateType"
-          },
-          "UpdateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataValue"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.2/#6.9.2.1)."
-      },
-      "CallMethodResult": {
-        "type": "object",
-        "properties": {
-          "StatusCode": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "InputArgumentResults": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/StatusCode"
-            }
-          },
-          "InputArgumentDiagnosticInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DiagnosticInfo"
-            }
-          },
-          "OutputArguments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Variant"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
-      },
-      "EnumDescription": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataTypeDescription"
-          }
-        ],
-        "properties": {
-          "EnumDefinition": {
-            "$ref": "#/components/schemas/EnumDefinition"
-          },
-          "BuiltInType": {
-            "maximum": 255,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.34)."
-      },
-      "VersionTime": {
-        "maximum": 4294967295,
-        "minimum": 0,
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
-        "format": "int64",
-        "default": 0
-      },
-      "FilterOperand": {
-        "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "EndpointDescription": {
-        "type": "object",
-        "properties": {
-          "EndpointUrl": {
+          "PublisherId": {
             "type": "string"
           },
-          "Server": {
-            "$ref": "#/components/schemas/ApplicationDescription"
-          },
-          "ServerCertificate": {
-            "type": "string",
-            "format": "byte"
-          },
-          "SecurityMode": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
-            "format": "MessageSecurityMode"
-          },
-          "SecurityPolicyUri": {
-            "type": "string"
-          },
-          "UserIdentityTokens": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserTokenPolicy"
-            }
-          },
-          "TransportProfileUri": {
-            "type": "string"
-          },
-          "SecurityLevel": {
-            "maximum": 255,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.14)."
-      },
-      "BrokerWriterGroupTransportDataType": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/WriterGroupTransportDataType"
-          }
-        ],
-        "properties": {
-          "QueueName": {
-            "type": "string"
-          },
-          "ResourceUri": {
-            "type": "string"
-          },
-          "AuthenticationProfileUri": {
-            "type": "string"
-          },
-          "RequestedDeliveryGuarantee": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
-            "format": "BrokerTransportQualityOfService"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.3.5)."
-      },
-      "UpdateEventDetails": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryUpdateDetails"
-          }
-        ],
-        "properties": {
-          "NodeId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "PerformInsertReplace": {
-            "type": "integer",
-            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
-            "format": "PerformUpdateType"
-          },
-          "Filter": {
-            "$ref": "#/components/schemas/EventFilter"
-          },
-          "EventData": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HistoryEventFieldList"
-            }
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.4/#6.9.4.1)."
-      },
-      "ResponseHeader": {
-        "type": "object",
-        "properties": {
           "Timestamp": {
             "type": "string",
             "format": "date-time",
             "default": "0001-01-01T00:00:00.0000000+00:00"
           },
-          "RequestHandle": {
-            "maximum": 4294967295,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int64",
-            "default": 0
+          "Description": {
+            "$ref": "#/components/schemas/ApplicationDescription"
           },
-          "ServiceResult": {
-            "$ref": "#/components/schemas/StatusCode"
-          },
-          "ServiceDiagnostics": {
-            "$ref": "#/components/schemas/DiagnosticInfo"
-          },
-          "StringTable": {
+          "Endpoints": {
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/EndpointDescription"
             }
-          },
-          "AdditionalHeader": {
-            "$ref": "#/components/schemas/ExtensionObject"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.33)."
+        "description": "[Link to specification]()."
       },
-      "NetworkAddressDataType": {
+      "JsonStatusMessage": {
         "type": "object",
         "properties": {
-          "NetworkInterface": {
+          "MessageId": {
             "type": "string"
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.7/#6.2.7.5.3)."
-      },
-      "DataSetFieldFlagsBits": {
-        "enum": [
-          1
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.5).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "PromotedField"
-        ]
-      },
-      "DataSetFieldFlags": {
-        "maximum": 4294967295,
-        "minimum": 0,
-        "type": "integer",
-        "format": "int64",
-        "default": 0
-      },
-      "PubSubConfigurationDataType": {
-        "type": "object",
-        "properties": {
-          "PublishedDataSets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PublishedDataSetDataType"
-            }
           },
-          "Connections": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PubSubConnectionDataType"
-            }
+          "MessageType": {
+            "type": "string"
           },
-          "Enabled": {
+          "PublisherId": {
+            "type": "string"
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "IsCyclic": {
             "type": "boolean",
             "default": false
-          }
-        },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.1)."
-      },
-      "JsonDataSetWriterMessageDataType": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataSetWriterMessageDataType"
-          }
-        ],
-        "properties": {
-          "DataSetMessageContentMask": {
-            "maximum": 4294967295,
-            "minimum": 0,
+          },
+          "Status": {
             "type": "integer",
-            "format": "int64",
-            "default": 0
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.1).",
+            "format": "PubSubState"
+          },
+          "NextReportTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.3.2)."
+        "description": "[Link to specification]()."
       },
-      "ActionState": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Idle",
-          "Executing",
-          "Done"
-        ]
-      },
-      "WriterGroupTransportDataType": {
+      "JsonPubSubConnectionMessage": {
         "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
-      },
-      "HistoryModifiedData": {
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/HistoryData"
-          }
-        ],
         "properties": {
-          "ModificationInfos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ModificationInfo"
-            }
+          "MessageId": {
+            "type": "string"
+          },
+          "MessageType": {
+            "type": "string"
+          },
+          "PublisherId": {
+            "type": "string"
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "Connection": {
+            "$ref": "#/components/schemas/PubSubConnectionDataType"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.3)."
-      },
-      "Duration": {
-        "type": "number",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.12).",
-        "format": "double",
-        "default": 0
-      },
-      "NodeClass": {
-        "enum": [
-          0,
-          1,
-          2,
-          4,
-          8,
-          16,
-          32,
-          64,
-          128
-        ],
-        "type": "integer",
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.2).",
-        "format": "int32",
-        "x-enum-varnames": [
-          "Unspecified",
-          "Object",
-          "Variable",
-          "Method",
-          "ObjectType",
-          "VariableType",
-          "ReferenceType",
-          "DataType",
-          "View"
-        ]
+        "description": "[Link to specification]()."
       },
       "JsonActionMetaDataMessage": {
         "type": "object",
@@ -3703,6 +1870,289 @@
         },
         "description": "[Link to specification]()."
       },
+      "JsonActionResponderMessage": {
+        "type": "object",
+        "properties": {
+          "MessageId": {
+            "type": "string"
+          },
+          "MessageType": {
+            "type": "string"
+          },
+          "PublisherId": {
+            "type": "string"
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "Connection": {
+            "$ref": "#/components/schemas/PubSubConnectionDataType"
+          }
+        },
+        "description": "[Link to specification]()."
+      },
+      "JsonActionNetworkMessage": {
+        "type": "object",
+        "properties": {
+          "MessageId": {
+            "type": "string"
+          },
+          "MessageType": {
+            "type": "string"
+          },
+          "PublisherId": {
+            "type": "string"
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "ResponseAddress": {
+            "type": "string"
+          },
+          "CorrelationData": {
+            "type": "string",
+            "format": "byte"
+          },
+          "RequestorId": {
+            "type": "string"
+          },
+          "TimeoutHint": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "Messages": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "description": "[Link to specification]()."
+      },
+      "JsonActionRequestMessage": {
+        "type": "object",
+        "properties": {
+          "DataSetWriterId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ActionTargetId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "DataSetWriterName": {
+            "type": "string"
+          },
+          "WriterGroupName": {
+            "type": "string"
+          },
+          "MetaDataVersion": {
+            "$ref": "#/components/schemas/ConfigurationVersionDataType"
+          },
+          "MinorVersion": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "MessageType": {
+            "type": "string"
+          },
+          "RequestId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ActionState": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
+            "format": "ActionState"
+          },
+          "Payload": {
+            "type": "object"
+          }
+        },
+        "description": "[Link to specification]()."
+      },
+      "JsonActionResponseMessage": {
+        "type": "object",
+        "properties": {
+          "DataSetWriterId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ActionTargetId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "DataSetWriterName": {
+            "type": "string"
+          },
+          "WriterGroupName": {
+            "type": "string"
+          },
+          "MetaDataVersion": {
+            "$ref": "#/components/schemas/ConfigurationVersionDataType"
+          },
+          "MinorVersion": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "Status": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "MessageType": {
+            "type": "string"
+          },
+          "RequestId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ActionState": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
+            "format": "ActionState"
+          },
+          "Payload": {
+            "type": "object"
+          }
+        },
+        "description": "[Link to specification]()."
+      },
+      "NodeClass": {
+        "enum": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.2).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Unspecified",
+          "Object",
+          "Variable",
+          "Method",
+          "ObjectType",
+          "VariableType",
+          "ReferenceType",
+          "DataType",
+          "View"
+        ]
+      },
+      "PermissionTypeBits": {
+        "enum": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192,
+          16384,
+          32768,
+          65536
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part3/8.55).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Browse",
+          "ReadRolePermissions",
+          "WriteAttribute",
+          "WriteRolePermissions",
+          "WriteHistorizing",
+          "Read",
+          "Write",
+          "ReadHistory",
+          "InsertHistory",
+          "ModifyHistory",
+          "DeleteHistory",
+          "ReceiveEvents",
+          "Call",
+          "AddReference",
+          "RemoveReference",
+          "DeleteNode",
+          "AddNode"
+        ]
+      },
+      "PermissionType": {
+        "maximum": 4294967295,
+        "minimum": 0,
+        "type": "integer",
+        "format": "int64",
+        "default": 0
+      },
+      "RolePermissionType": {
+        "type": "object",
+        "properties": {
+          "RoleId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "Permissions": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.9)."
+      },
+      "DataTypeDefinition": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
       "StructureType": {
         "enum": [
           0,
@@ -3722,22 +2172,446 @@
           "UnionWithSubtypedValues"
         ]
       },
-      "JsonDataSetReaderMessageDataType": {
+      "StructureField": {
         "type": "object",
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/DataSetReaderMessageDataType"
-          }
-        ],
         "properties": {
-          "NetworkMessageContentMask": {
+          "Name": {
+            "type": "string"
+          },
+          "Description": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "DataType": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "ValueRank": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ArrayDimensions": {
+            "type": "array",
+            "items": {
+              "maximum": 4294967295,
+              "minimum": 0,
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          },
+          "MaxStringLength": {
             "maximum": 4294967295,
             "minimum": 0,
             "type": "integer",
             "format": "int64",
             "default": 0
           },
-          "DataSetMessageContentMask": {
+          "IsOptional": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.10)."
+      },
+      "StructureDefinition": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataTypeDefinition"
+          }
+        ],
+        "properties": {
+          "DefaultEncodingId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "BaseDataType": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "StructureType": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.3).",
+            "format": "StructureType"
+          },
+          "Fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StructureField"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.5)."
+      },
+      "EnumDefinition": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DataTypeDefinition"
+          }
+        ],
+        "properties": {
+          "Fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EnumField"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.4)."
+      },
+      "Argument": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "DataType": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "ValueRank": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ArrayDimensions": {
+            "type": "array",
+            "items": {
+              "maximum": 4294967295,
+              "minimum": 0,
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          },
+          "Description": {
+            "$ref": "#/components/schemas/LocalizedText"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.1)."
+      },
+      "EnumValueType": {
+        "type": "object",
+        "properties": {
+          "Value": {
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "DisplayName": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "Description": {
+            "$ref": "#/components/schemas/LocalizedText"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.6)."
+      },
+      "EnumField": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/EnumValueType"
+          }
+        ],
+        "properties": {
+          "Name": {
+            "type": "string"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.7)."
+      },
+      "Duration": {
+        "type": "number",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.12).",
+        "format": "double",
+        "default": 0
+      },
+      "UtcTime": {
+        "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.11).",
+        "format": "date-time",
+        "default": "0001-01-01T00:00:00.0000000+00:00"
+      },
+      "IntegerId": {
+        "maximum": 4294967295,
+        "minimum": 0,
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
+        "format": "int64",
+        "default": 0
+      },
+      "ApplicationType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.4).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Server",
+          "Client",
+          "ClientAndServer",
+          "DiscoveryServer"
+        ]
+      },
+      "ApplicationDescription": {
+        "type": "object",
+        "properties": {
+          "ApplicationUri": {
+            "type": "string"
+          },
+          "ProductUri": {
+            "type": "string"
+          },
+          "ApplicationName": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "ApplicationType": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.4).",
+            "format": "ApplicationType"
+          },
+          "GatewayServerUri": {
+            "type": "string"
+          },
+          "DiscoveryProfileUri": {
+            "type": "string"
+          },
+          "DiscoveryUrls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.3)."
+      },
+      "RequestHeader": {
+        "type": "object",
+        "properties": {
+          "AuthenticationToken": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "RequestHandle": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "ReturnDiagnostics": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "AuditEntryId": {
+            "type": "string"
+          },
+          "TimeoutHint": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "AdditionalHeader": {
+            "$ref": "#/components/schemas/ExtensionObject"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.32)."
+      },
+      "ResponseHeader": {
+        "type": "object",
+        "properties": {
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "RequestHandle": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "ServiceResult": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "ServiceDiagnostics": {
+            "$ref": "#/components/schemas/DiagnosticInfo"
+          },
+          "StringTable": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "AdditionalHeader": {
+            "$ref": "#/components/schemas/ExtensionObject"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.33)."
+      },
+      "VersionTime": {
+        "maximum": 4294967295,
+        "minimum": 0,
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
+        "format": "int64",
+        "default": 0
+      },
+      "ApplicationInstanceCertificate": {
+        "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.10).",
+        "format": "byte"
+      },
+      "MessageSecurityMode": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Invalid",
+          "None",
+          "Sign",
+          "SignAndEncrypt"
+        ]
+      },
+      "UserTokenType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.42).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Anonymous",
+          "UserName",
+          "Certificate",
+          "IssuedToken"
+        ]
+      },
+      "UserTokenPolicy": {
+        "type": "object",
+        "properties": {
+          "PolicyId": {
+            "type": "string"
+          },
+          "TokenType": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.42).",
+            "format": "UserTokenType"
+          },
+          "IssuedTokenType": {
+            "type": "string"
+          },
+          "IssuerEndpointUrl": {
+            "type": "string"
+          },
+          "SecurityPolicyUri": {
+            "type": "string"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.41)."
+      },
+      "EndpointDescription": {
+        "type": "object",
+        "properties": {
+          "EndpointUrl": {
+            "type": "string"
+          },
+          "Server": {
+            "$ref": "#/components/schemas/ApplicationDescription"
+          },
+          "ServerCertificate": {
+            "type": "string",
+            "format": "byte"
+          },
+          "SecurityMode": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
+            "format": "MessageSecurityMode"
+          },
+          "SecurityPolicyUri": {
+            "type": "string"
+          },
+          "UserIdentityTokens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserTokenPolicy"
+            }
+          },
+          "TransportProfileUri": {
+            "type": "string"
+          },
+          "SecurityLevel": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.14)."
+      },
+      "SessionAuthenticationToken": {
+        "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.2).",
+        "format": "UaNodeId"
+      },
+      "BrowseDirection": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.5).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Forward",
+          "Inverse",
+          "Both",
+          "Invalid"
+        ]
+      },
+      "ViewDescription": {
+        "type": "object",
+        "properties": {
+          "ViewId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "Timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "ViewVersion": {
             "maximum": 4294967295,
             "minimum": 0,
             "type": "integer",
@@ -3745,7 +2619,469 @@
             "default": 0
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.4.3)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.44)."
+      },
+      "BrowseDescription": {
+        "type": "object",
+        "properties": {
+          "NodeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "BrowseDirection": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.5).",
+            "format": "BrowseDirection"
+          },
+          "ReferenceTypeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "IncludeSubtypes": {
+            "type": "boolean",
+            "default": false
+          },
+          "NodeClassMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "ResultMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
+      },
+      "ReferenceDescription": {
+        "type": "object",
+        "properties": {
+          "ReferenceTypeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "IsForward": {
+            "type": "boolean",
+            "default": false
+          },
+          "NodeId": {
+            "type": "string",
+            "format": "UaExpandedNodeId"
+          },
+          "BrowseName": {
+            "type": "string",
+            "format": "UaQualifiedName"
+          },
+          "DisplayName": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "NodeClass": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.2).",
+            "format": "NodeClass"
+          },
+          "TypeDefinition": {
+            "type": "string",
+            "format": "UaExpandedNodeId"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.29)."
+      },
+      "ContinuationPoint": {
+        "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.10).",
+        "format": "byte"
+      },
+      "BrowseResult": {
+        "type": "object",
+        "properties": {
+          "StatusCode": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "ContinuationPoint": {
+            "type": "string",
+            "format": "byte"
+          },
+          "References": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReferenceDescription"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.6)."
+      },
+      "BrowseRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "View": {
+            "$ref": "#/components/schemas/ViewDescription"
+          },
+          "RequestedMaxReferencesPerNode": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "NodesToBrowse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrowseDescription"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
+      },
+      "BrowseResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrowseResult"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
+      },
+      "BrowseNextRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "ReleaseContinuationPoints": {
+            "type": "boolean",
+            "default": false
+          },
+          "ContinuationPoints": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "byte"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2)."
+      },
+      "BrowseNextResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrowseResult"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2)."
+      },
+      "RelativePathElement": {
+        "type": "object",
+        "properties": {
+          "ReferenceTypeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "IsInverse": {
+            "type": "boolean",
+            "default": false
+          },
+          "IncludeSubtypes": {
+            "type": "boolean",
+            "default": false
+          },
+          "TargetName": {
+            "type": "string",
+            "format": "UaQualifiedName"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.30)."
+      },
+      "RelativePath": {
+        "type": "object",
+        "properties": {
+          "Elements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelativePathElement"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.30)."
+      },
+      "BrowsePath": {
+        "type": "object",
+        "properties": {
+          "StartingNode": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "RelativePath": {
+            "$ref": "#/components/schemas/RelativePath"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part3/6.2.5)."
+      },
+      "BrowsePathTarget": {
+        "type": "object",
+        "properties": {
+          "TargetId": {
+            "type": "string",
+            "format": "UaExpandedNodeId"
+          },
+          "RemainingPathIndex": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
+      },
+      "BrowsePathResult": {
+        "type": "object",
+        "properties": {
+          "StatusCode": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "Targets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrowsePathTarget"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
+      },
+      "TranslateBrowsePathsToNodeIdsRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "BrowsePaths": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrowsePath"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
+      },
+      "TranslateBrowsePathsToNodeIdsResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrowsePathResult"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
+      },
+      "Counter": {
+        "maximum": 4294967295,
+        "minimum": 0,
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
+        "format": "int64",
+        "default": 0
+      },
+      "NumericRange": {
+        "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.31)."
+      },
+      "FilterOperator": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.3).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Equals",
+          "IsNull",
+          "GreaterThan",
+          "LessThan",
+          "GreaterThanOrEqual",
+          "LessThanOrEqual",
+          "Like",
+          "Not",
+          "Between",
+          "InList",
+          "And",
+          "Or",
+          "Cast",
+          "InView",
+          "OfType",
+          "RelatedTo",
+          "BitwiseAnd",
+          "BitwiseOr"
+        ]
+      },
+      "ContentFilterElement": {
+        "type": "object",
+        "properties": {
+          "FilterOperator": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.3).",
+            "format": "FilterOperator"
+          },
+          "FilterOperands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExtensionObject"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.1)."
+      },
+      "ContentFilter": {
+        "type": "object",
+        "properties": {
+          "Elements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ContentFilterElement"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.4)."
+      },
+      "FilterOperand": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "SimpleAttributeOperand": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/FilterOperand"
+          }
+        ],
+        "properties": {
+          "TypeDefinitionId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "BrowsePath": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "UaQualifiedName"
+            }
+          },
+          "AttributeId": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "IndexRange": {
+            "type": "string"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.4/#7.7.4.5)."
+      },
+      "TimestampsToReturn": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.39).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Source",
+          "Server",
+          "Both",
+          "Neither",
+          "Invalid"
+        ]
+      },
+      "ReadValueId": {
+        "type": "object",
+        "properties": {
+          "NodeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "AttributeId": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "IndexRange": {
+            "type": "string"
+          },
+          "DataEncoding": {
+            "type": "string",
+            "format": "UaQualifiedName"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.28)."
       },
       "ReadRequest": {
         "type": "object",
@@ -3772,6 +3108,27 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2)."
       },
+      "ReadResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataValue"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2)."
+      },
       "HistoryReadValueId": {
         "type": "object",
         "properties": {
@@ -3793,6 +3150,167 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
       },
+      "HistoryReadResult": {
+        "type": "object",
+        "properties": {
+          "StatusCode": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "ContinuationPoint": {
+            "type": "string",
+            "format": "byte"
+          },
+          "HistoryData": {
+            "$ref": "#/components/schemas/ExtensionObject"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
+      },
+      "HistoryReadDetails": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "ReadEventDetails": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryReadDetails"
+          }
+        ],
+        "properties": {
+          "NumValuesPerNode": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "StartTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "EndTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "Filter": {
+            "$ref": "#/components/schemas/EventFilter"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.2/#6.5.2.1)."
+      },
+      "ReadEventDetails2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ReadEventDetails"
+          }
+        ],
+        "properties": {
+          "ReadModified": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.2/#6.5.2.3)."
+      },
+      "ReadRawModifiedDetails": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryReadDetails"
+          }
+        ],
+        "properties": {
+          "IsReadModified": {
+            "type": "boolean",
+            "default": false
+          },
+          "StartTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "EndTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "NumValuesPerNode": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "ReturnBounds": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.3/#6.5.3.1)."
+      },
+      "ReadProcessedDetails": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryReadDetails"
+          }
+        ],
+        "properties": {
+          "StartTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "EndTime": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "ProcessingInterval": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "AggregateType": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "UaNodeId"
+            }
+          },
+          "AggregateConfiguration": {
+            "$ref": "#/components/schemas/AggregateConfiguration"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.4/#6.5.4.1)."
+      },
+      "ReadAtTimeDetails": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryReadDetails"
+          }
+        ],
+        "properties": {
+          "ReqTimes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "date-time",
+              "default": "0001-01-01T00:00:00.0000000+00:00"
+            }
+          },
+          "UseSimpleBounds": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.5/#6.5.5.1)."
+      },
       "ReadAnnotationDataDetails": {
         "type": "object",
         "allOf": [
@@ -3812,53 +3330,535 @@
         },
         "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.6/#6.5.6.1)."
       },
-      "ViewDescription": {
+      "HistoryData": {
         "type": "object",
         "properties": {
-          "ViewId": {
-            "type": "string",
-            "format": "UaNodeId"
-          },
-          "Timestamp": {
+          "DataValues": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataValue"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.2)."
+      },
+      "ModificationInfo": {
+        "type": "object",
+        "properties": {
+          "ModificationTime": {
             "type": "string",
             "format": "date-time",
             "default": "0001-01-01T00:00:00.0000000+00:00"
           },
-          "ViewVersion": {
+          "UpdateType": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.7).",
+            "format": "HistoryUpdateType"
+          },
+          "UserName": {
+            "type": "string"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.5)."
+      },
+      "HistoryModifiedData": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryData"
+          }
+        ],
+        "properties": {
+          "ModificationInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModificationInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.3)."
+      },
+      "HistoryEvent": {
+        "type": "object",
+        "properties": {
+          "Events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryEventFieldList"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.4)."
+      },
+      "HistoryReadRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "HistoryReadDetails": {
+            "$ref": "#/components/schemas/ExtensionObject"
+          },
+          "TimestampsToReturn": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.39).",
+            "format": "TimestampsToReturn"
+          },
+          "ReleaseContinuationPoints": {
+            "type": "boolean",
+            "default": false
+          },
+          "NodesToRead": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryReadValueId"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
+      },
+      "HistoryReadResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryReadResult"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
+      },
+      "WriteValue": {
+        "type": "object",
+        "properties": {
+          "NodeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "AttributeId": {
             "maximum": 4294967295,
             "minimum": 0,
             "type": "integer",
             "format": "int64",
             "default": 0
+          },
+          "IndexRange": {
+            "type": "string"
+          },
+          "Value": {
+            "$ref": "#/components/schemas/DataValue"
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.44)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
       },
-      "SimpleTypeDescription": {
+      "WriteRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "NodesToWrite": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WriteValue"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
+      },
+      "WriteResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StatusCode"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
+      },
+      "HistoryUpdateDetails": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "HistoryUpdateType": {
+        "enum": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.7).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Insert",
+          "Replace",
+          "Update",
+          "Delete"
+        ]
+      },
+      "PerformUpdateType": {
+        "enum": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Insert",
+          "Replace",
+          "Update",
+          "Remove"
+        ]
+      },
+      "UpdateDataDetails": {
         "type": "object",
         "allOf": [
           {
-            "$ref": "#/components/schemas/DataTypeDescription"
+            "$ref": "#/components/schemas/HistoryUpdateDetails"
           }
         ],
         "properties": {
-          "BaseDataType": {
+          "NodeId": {
             "type": "string",
             "format": "UaNodeId"
           },
-          "BuiltInType": {
+          "PerformInsertReplace": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
+            "format": "PerformUpdateType"
+          },
+          "UpdateValues": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataValue"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.2/#6.9.2.1)."
+      },
+      "UpdateStructureDataDetails": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryUpdateDetails"
+          }
+        ],
+        "properties": {
+          "NodeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "PerformInsertReplace": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
+            "format": "PerformUpdateType"
+          },
+          "UpdateValues": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataValue"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.3/#6.9.3.1)."
+      },
+      "UpdateEventDetails": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/HistoryUpdateDetails"
+          }
+        ],
+        "properties": {
+          "NodeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "PerformInsertReplace": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
+            "format": "PerformUpdateType"
+          },
+          "Filter": {
+            "$ref": "#/components/schemas/EventFilter"
+          },
+          "EventData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryEventFieldList"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.4/#6.9.4.1)."
+      },
+      "HistoryUpdateResult": {
+        "type": "object",
+        "properties": {
+          "StatusCode": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "OperationResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StatusCode"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
+      },
+      "HistoryUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "HistoryUpdateDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExtensionObject"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
+      },
+      "HistoryUpdateResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryUpdateResult"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
+      },
+      "CallMethodRequest": {
+        "type": "object",
+        "properties": {
+          "ObjectId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "MethodId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "InputArguments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Variant"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
+      },
+      "CallMethodResult": {
+        "type": "object",
+        "properties": {
+          "StatusCode": {
+            "$ref": "#/components/schemas/StatusCode"
+          },
+          "InputArgumentResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StatusCode"
+            }
+          },
+          "InputArgumentDiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          },
+          "OutputArguments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Variant"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
+      },
+      "CallRequest": {
+        "type": "object",
+        "properties": {
+          "RequestHeader": {
+            "$ref": "#/components/schemas/RequestHeader"
+          },
+          "MethodsToCall": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CallMethodRequest"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
+      },
+      "CallResponse": {
+        "type": "object",
+        "properties": {
+          "ResponseHeader": {
+            "$ref": "#/components/schemas/ResponseHeader"
+          },
+          "Results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CallMethodResult"
+            }
+          },
+          "DiagnosticInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiagnosticInfo"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
+      },
+      "MonitoringFilter": {
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+      },
+      "EventFilter": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/MonitoringFilter"
+          }
+        ],
+        "properties": {
+          "SelectClauses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SimpleAttributeOperand"
+            }
+          },
+          "WhereClause": {
+            "$ref": "#/components/schemas/ContentFilter"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.3)."
+      },
+      "AggregateConfiguration": {
+        "type": "object",
+        "properties": {
+          "UseServerCapabilitiesDefaults": {
+            "type": "boolean",
+            "default": false
+          },
+          "TreatUncertainAsBad": {
+            "type": "boolean",
+            "default": false
+          },
+          "PercentDataBad": {
             "maximum": 255,
             "minimum": 0,
             "type": "integer",
             "format": "int32",
             "default": 0
+          },
+          "PercentDataGood": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "UseSlopedExtrapolation": {
+            "type": "boolean",
+            "default": false
           }
         },
-        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.35)."
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.4)."
       },
-      "MonitoringFilter": {
+      "HistoryEventFieldList": {
         "type": "object",
-        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
+        "properties": {
+          "EventFields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Variant"
+            }
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.4)."
+      },
+      "Range": {
+        "type": "object",
+        "properties": {
+          "Low": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "High": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part8/5.6.2)."
+      },
+      "EUInformation": {
+        "type": "object",
+        "properties": {
+          "NamespaceUri": {
+            "type": "string"
+          },
+          "UnitId": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "DisplayName": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "Description": {
+            "$ref": "#/components/schemas/LocalizedText"
+          }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part8/5.6.3/#5.6.3.3)."
       },
       "JsonMessageType": {
         "enum": [
