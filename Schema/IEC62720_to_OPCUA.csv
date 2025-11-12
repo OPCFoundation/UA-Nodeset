@@ -1,0 +1,1759 @@
+IEC CDD Code;UnitId;DisplayName;Description
+0112/2///62720#UAA000;705741328;%;percent
+0112/2///62720#UAA001;705741329;%/?;percent per ohm
+0112/2///62720#UAA002;705741330;%/°;percent per degree
+0112/2///62720#UAA003;705741331;%/°C;percent per degree Celsius
+0112/2///62720#UAA004;705741332;%/10000;percent per ten thousand
+0112/2///62720#UAA005;705741333;%/100000;percent per one hundred thousand
+0112/2///62720#UAA006;705741334;%/100;percent per hundred
+0112/2///62720#UAA007;705741335;%/1000;percent per thousand
+0112/2///62720#UAA008;705741336;%/K;percent per kelvin
+0112/2///62720#UAA009;705741337;%/V;percent per volt
+0112/2///62720#UAA010;705741360;%/bar;percent per bar
+0112/2///62720#UAA012;705741362;%/in;percent per inch
+0112/2///62720#UAA013;705741363;%/m;percent per metre
+0112/2///62720#UAA014;705741364;%/mm;percent per millimetre
+0112/2///62720#UAA015;705741365;‰;part per thousand
+0112/2///62720#UAA016;705741366;‰/psi;per mille per psi
+0112/2///62720#UAA017;705741367;?;ohm
+0112/2///62720#UAA018;705741368;?·km;ohm kilometre
+0112/2///62720#UAA019;705741369;?/km;ohm per kilometre
+0112/2///62720#UAA020;705741392;?·m;ohm metre
+0112/2///62720#UAA021;705741393;?/m;ohm per metre
+0112/2///62720#UAA022;705741394;?/mi;ohm per mile
+0112/2///62720#UAA023;705741395;Å;angstrom
+0112/2///62720#UAA024;705741396;°;degree [unit of angle]
+0112/2///62720#UAA025;705741397;°/m;degree per metre
+0112/2///62720#UAA026;705741398;°/s;degree per second
+0112/2///62720#UAA027;705741399;°API;degree API
+0112/2///62720#UAA028;705741400;°Bé;degree Baume (origin scale)
+0112/2///62720#UAA029;705741401;°Bé (US heavy);degree Baume (US heavy)
+0112/2///62720#UAA030;705741424;°Bé (US light);degree Baume (US light)
+0112/2///62720#UAA031;705741425;°Balling;degree Balling
+0112/2///62720#UAA032;705741426;°Bx;degree Brix
+0112/2///62720#UAA033;705741427;°C;degree Celsius
+0112/2///62720#UAA034;705741428;°C/K;degree Celsius per kelvin
+0112/2///62720#UAA035;705741429;°C/bar;degree Celsius per bar
+0112/2///62720#UAA036;705741430;°C/h;degree Celsius per hour
+0112/2///62720#UAA037;705741431;°C/min;degree Celsius per minute
+0112/2///62720#UAA038;705741432;°C/s;degree Celsius per second
+0112/2///62720#UAA039;705741433;°F;degree Fahrenheit
+0112/2///62720#UAA040;705741456;°F·h·ft²/Btuth;degree Fahrenheit hour square foot per British thermal unit (thermochemical)
+0112/2///62720#UAA041;705741457;°F/K;degree Fahrenheit per kelvin
+0112/2///62720#UAA042;705741458;°F/bar;degree Fahrenheit per bar
+0112/2///62720#UAA043;705741459;°F·h·ft²/BtuIT;degree Fahrenheit hour square foot per British thermal unit (international table)
+0112/2///62720#UAA044;705741460;°F/h;degree Fahrenheit per hour
+0112/2///62720#UAA045;705741461;°F/min;degree Fahrenheit per minute
+0112/2///62720#UAA046;705741462;°F/s;degree Fahrenheit per second
+0112/2///62720#UAA047;705741463;°F?¹;reciprocal degree Fahrenheit
+0112/2///62720#UAA048;705741464;°Oechsle;degree Oechsle
+0112/2///62720#UAA049;705741465;°P;degree Plato
+0112/2///62720#UAA050;705741488;°R;degree Rankine
+0112/2///62720#UAA051;705741489;°R/h;degree Rankine per hour
+0112/2///62720#UAA052;705741490;°R/min;degree Rankine per minute
+0112/2///62720#UAA053;705741491;°R/s;degree Rankine per second
+0112/2///62720#UAA054;705741492;°Tw;degree Twaddell
+0112/2///62720#UAA055;705741493;µ?;microohm
+0112/2///62720#UAA056;705741494;µ?·m;microohm metre
+0112/2///62720#UAA057;705741495;µA;microampere
+0112/2///62720#UAA058;705741496;µBq;microbecquerel
+0112/2///62720#UAA059;705741497;µC;microcoulomb
+0112/2///62720#UAA060;705741520;µC/m²;microcoulomb per square metre
+0112/2///62720#UAA061;705741521;µC/m³;microcoulomb per cubic metre
+0112/2///62720#UAA062;705741522;µCi;microcurie
+0112/2///62720#UAA063;705741523;µF;microfarad
+0112/2///62720#UAA064;705741524;µF/km;microfarad per kilometre
+0112/2///62720#UAA065;705741525;µF/m;microfarad per metre
+0112/2///62720#UAA066;705741526;µH;microhenry
+0112/2///62720#UAA067;705741527;µH/?;microhenry per ohm
+0112/2///62720#UAA068;705741528;µH/k?;microhenry per kiloohm
+0112/2///62720#UAA069;705741529;µH/m;microhenry per metre
+0112/2///62720#UAA070;705741552;µN;micronewton
+0112/2///62720#UAA071;705741553;µN·m;micronewton metre
+0112/2///62720#UAA072;705741554;µP;micropoise
+0112/2///62720#UAA073;705741555;µPa;micropascal
+0112/2///62720#UAA074;705741556;µS;microsiemens
+0112/2///62720#UAA075;705741557;µS/cm;microsiemens per centimetre
+0112/2///62720#UAA076;705741558;µS/m;microsiemens per metre
+0112/2///62720#UAA077;705741559;µT;microtesla
+0112/2///62720#UAA078;705741560;µV;microvolt
+0112/2///62720#UAA079;705741561;µV/m;microvolt per metre
+0112/2///62720#UAA080;705741584;µW;microwatt
+0112/2///62720#UAA081;705741585;µW/m²;microwatt per square metre
+0112/2///62720#UAA082;705741586;µg;microgram
+0112/2///62720#UAA083;705741587;µg/kg;microgram per kilogram
+0112/2///62720#UAA084;705741588;µg/l;microgram per litre
+0112/2///62720#UAA085;705741589;µg/m³;microgram per cubic metre
+0112/2///62720#UAA086;705741590;µg/(m³·K);microgram per cubic metre kelvin
+0112/2///62720#UAA087;705741591;µg/(m³·bar);microgram per cubic metre bar
+0112/2///62720#UAA088;705741592;µl;microlitre
+0112/2///62720#UAA089;705741593;µl/l;microlitre per litre
+0112/2///62720#UAA090;705741616;µm;micrometre
+0112/2///62720#UAA091;705741617;µm/K;micrometre per kelvin
+0112/2///62720#UAA092;705741618;µm²;square micrometre
+0112/2///62720#UAA093;705741619;µmol;micromole
+0112/2///62720#UAA094;705741620;µrad;microradian
+0112/2///62720#UAA095;705741621;µs;microsecond
+0112/2///62720#UAA096;705741622;"""";second [unit of angle]
+0112/2///62720#UAA097;705741623;';minute [unit of angle]
+0112/2///62720#UAA098;705741624;1/kVAh;reciprocal kilovolt ampere hour
+0112/2///62720#UAA099;705741625;wk?¹;reciprocal week
+0112/2///62720#UAA101;705742353;A;ampere
+0112/2///62720#UAA102;705742354;A·h;ampere hour
+0112/2///62720#UAA104;705742356;A/m;ampere per metre
+0112/2///62720#UAA105;705742357;A/m²;ampere per square metre
+0112/2///62720#UAA106;705742358;A·m²;ampere square metre
+0112/2///62720#UAA107;705742359;A·s;ampere second
+0112/2///62720#UAA109;705742361;Bd;baud
+0112/2///62720#UAA110;705742384;Bft;Beaufort
+0112/2///62720#UAA111;705742385;Bq;becquerel
+0112/2///62720#UAA112;705742386;Bq/kg;becquerel per kilogram
+0112/2///62720#UAA113;705742387;Btu;British thermal unit (mean)
+0112/2///62720#UAA114;705742388;BtuIT;British thermal unit (international table)
+0112/2///62720#UAA115;705742389;BtuIT·ft/(h·ft²·°F);British thermal unit (international table) foot per hour square foot degree Fahrenheit
+0112/2///62720#UAA116;705742390;BtuIT/h;British thermal unit (international table) per hour
+0112/2///62720#UAA117;705742391;BtuIT·in/(h·ft²·°F);British thermal unit (international table) inch per hour square foot degree Fahrenheit
+0112/2///62720#UAA118;705742392;BtuIT·in/(s·ft²·°F);British thermal unit (international table) inch per second square foot degree Fahrenheit
+0112/2///62720#UAA119;705742393;BtuIT/(lb·°F);British thermal unit (international table) per pound degree Fahrenheit
+0112/2///62720#UAA120;705742416;BtuIT/min;British thermal unit (international table) per minute
+0112/2///62720#UAA121;705742417;BtuIT/s;British thermal unit (international table) per second
+0112/2///62720#UAA122;705742418;Btuth;British thermal unit (thermochemical)
+0112/2///62720#UAA123;705742419;Btuth·ft/(h·ft²·°F);British thermal unit (thermochemical) foot per hour foot squared degree Fahrenheit
+0112/2///62720#UAA124;705742420;Btuth/h;British thermal unit (thermochemical) per hour
+0112/2///62720#UAA125;705742421;Btuth·in/(h·ft²·°F);British thermal unit (thermochemical) inch per hour square foot degree Fahrenheit
+0112/2///62720#UAA126;705742422;Btuth·in/(s·ft²·°F);British thermal unit (thermochemical) inch per second square foot degree Fahrenheit
+0112/2///62720#UAA127;705742423;Btuth//(lb·°F);British thermal unit (thermochemical) per pound degree Fahrenheit
+0112/2///62720#UAA128;705742424;Btuth/min;British thermal unit (thermochemical) per minute
+0112/2///62720#UAA129;705742425;Btuth/s;British thermal unit (thermochemical) per second
+0112/2///62720#UAA130;705742448;C;coulomb
+0112/2///62720#UAA131;705742449;C/kg;coulomb per kilogram
+0112/2///62720#UAA132;705742450;C/(kg·s);coulomb per kilogram second
+0112/2///62720#UAA133;705742451;C·m;coulomb metre
+0112/2///62720#UAA134;705742452;C/m²;coulomb per square metre
+0112/2///62720#UAA135;705742453;C/m³;coulomb per cubic metre
+0112/2///62720#UAA138;705742456;Ci;curie
+0112/2///62720#UAA139;705742457;Ebit/s;exabit per second
+0112/2///62720#UAA140;705742480;Eibit/m;exbibit per metre
+0112/2///62720#UAA141;705742481;Eibit/m²;exbibit per square metre
+0112/2///62720#UAA142;705742482;Eibit/m³;exbibit per cubic metre
+0112/2///62720#UAA143;705742483;Eibyte;exbibyte
+0112/2///62720#UAA144;705742484;F;farad
+0112/2///62720#UAA145;705742485;F/km;farad per kilometre
+0112/2///62720#UAA146;705742486;F/m;farad per metre
+0112/2///62720#UAA147;705742487;G?;gigaohm
+0112/2///62720#UAA148;705742488;G?·m;gigaohm metre
+0112/2///62720#UAA149;705742489;GC/m³;gigacoulomb per cubic metre
+0112/2///62720#UAA150;705742512;GHz;gigahertz
+0112/2///62720#UAA151;705742513;GHz·m;gigahertz metre
+0112/2///62720#UAA152;705742514;GJ;gigajoule
+0112/2///62720#UAA153;705742515;GPa;gigapascal
+0112/2///62720#UAA154;705742516;GW;gigawatt
+0112/2///62720#UAA155;705742517;GW·h;gigawatt hour
+0112/2///62720#UAA156;705742518;Gbit/s;gigabit per second
+0112/2///62720#UAA157;705742519;Gbyte/s;gigabyte per second
+0112/2///62720#UAA158;705742520;GeV;gigaelectronvolt
+0112/2///62720#UAA159;705742521;Gibit/m;gibibit per metre
+0112/2///62720#UAA160;705742544;Gibit/m²;gibibit per square metre
+0112/2///62720#UAA161;705742545;Gibit/m³;gibibit per cubic metre
+0112/2///62720#UAA162;705742546;Gibyte;gibibyte
+0112/2///62720#UAA163;705742547;Gy;gray
+0112/2///62720#UAA164;705742548;Gy/s;gray per second
+0112/2///62720#UAA165;705742549;H;henry
+0112/2///62720#UAA166;705742550;H/?;henry per ohm
+0112/2///62720#UAA167;705742551;H/k?;henry per kiloohm
+0112/2///62720#UAA168;705742552;H/m;henry per metre
+0112/2///62720#UAA169;705742553;H?¹;reciprocal henry
+0112/2///62720#UAA170;705742576;Hz;hertz
+0112/2///62720#UAA171;705742577;Hz·m;hertz metre
+0112/2///62720#UAA172;705742578;J;joule
+0112/2///62720#UAA173;705742579;J/K;joule per kelvin
+0112/2///62720#UAA174;705742580;J/g;joule per gram
+0112/2///62720#UAA175;705742581;J/kg;joule per kilogram
+0112/2///62720#UAA176;705742582;J/(kg·K);joule per kilogram kelvin
+0112/2///62720#UAA177;705742583;J/m?;joule per metre to the fourth power
+0112/2///62720#UAA178;705742584;J/m;joule per metre
+0112/2///62720#UAA179;705742585;J/m²;joule per square metre
+0112/2///62720#UAA180;705742608;J/m³;joule per cubic metre
+0112/2///62720#UAA181;705742609;J·m²;joule square metre
+0112/2///62720#UAA183;705742611;J/mol;joule per mole
+0112/2///62720#UAA184;705742612;J/(mol·K);joule per mole kelvin
+0112/2///62720#UAA185;705742613;K;kelvin
+0112/2///62720#UAA186;705742614;K/K;kelvin per kelvin
+0112/2///62720#UAA187;705742615;K/W;kelvin per watt
+0112/2///62720#UAA188;705742616;K/bar;kelvin per bar
+0112/2///62720#UAA189;705742617;K/h;kelvin per hour
+0112/2///62720#UAA191;705742641;K/min;kelvin per minute
+0112/2///62720#UAA192;705742642;K/s;kelvin per second
+0112/2///62720#UAA193;705742643;K?¹;reciprocal kelvin
+0112/2///62720#UAA194;705742644;Kibit/m;kibibit per metre
+0112/2///62720#UAA195;705742645;Kibit/m²;kibibit per square metre
+0112/2///62720#UAA196;705742646;Kibit/m³;kibibit per cubic metre
+0112/2///62720#UAA197;705742647;Kibyte;kibibyte
+0112/2///62720#UAA198;705742648;M?;megaohm
+0112/2///62720#UAA199;705742649;M?/km;megaohm per kilometre
+0112/2///62720#UAA200;705743376;M?·m;megaohm metre
+0112/2///62720#UAA201;705743377;M?/m;megaohm per metre
+0112/2///62720#UAA202;705743378;MA;megaampere
+0112/2///62720#UAA203;705743379;MA/m²;megaampere per square metre
+0112/2///62720#UAA204;705743380;MBd;megabaud
+0112/2///62720#UAA205;705743381;MBq;megabecquerel
+0112/2///62720#UAA206;705743382;MC;megacoulomb
+0112/2///62720#UAA207;705743383;MC/m²;megacoulomb per square metre
+0112/2///62720#UAA208;705743384;MC/m³;megacoulomb per cubic metre
+0112/2///62720#UAA209;705743385;MHz;megahertz
+0112/2///62720#UAA210;705743408;MHz·m;megahertz metre
+0112/2///62720#UAA211;705743409;MJ;megajoule
+0112/2///62720#UAA212;705743410;MJ/m³;megajoule per cubic metre
+0112/2///62720#UAA213;705743411;MN;meganewton
+0112/2///62720#UAA214;705743412;MN·m;meganewton metre
+0112/2///62720#UAA215;705743413;MPa;megapascal
+0112/2///62720#UAA216;705743414;MPa/K;megapascal per kelvin
+0112/2///62720#UAA217;705743415;MPa/bar;megapascal per bar
+0112/2///62720#UAA218;705743416;MPa·l/s;megapascal litre per second
+0112/2///62720#UAA219;705743417;MPa·m³/s;megapascal cubic metre per second
+0112/2///62720#UAA220;705743440;MS/m;megasiemens per metre
+0112/2///62720#UAA221;705743441;MV;megavolt
+0112/2///62720#UAA222;705743442;MV·A;megavolt ampere
+0112/2///62720#UAA223;705743443;MV/m;megavolt per metre
+0112/2///62720#UAA224;705743444;MW;megawatt
+0112/2///62720#UAA225;705743445;MW·h;megawatt hour
+0112/2///62720#UAA226;705743446;Mbit/s;megabit per second
+0112/2///62720#UAA227;705743447;MeV;megaelectronvolt
+0112/2///62720#UAA228;705743448;Mg;megagram
+0112/2///62720#UAA229;705743449;Mg/m³;megagram per cubic metre
+0112/2///62720#UAA230;705743472;Mibit/m;mebibit per metre
+0112/2///62720#UAA231;705743473;Mibit/m²;mebibit per square metre
+0112/2///62720#UAA232;705743474;Mibit/m³;mebibit per cubic metre
+0112/2///62720#UAA233;705743475;Mibyte;mebibyte
+0112/2///62720#UAA235;705743477;N;newton
+0112/2///62720#UAA236;705743478;N/A;newton per ampere
+0112/2///62720#UAA237;705743479;N·cm;newton centimetre
+0112/2///62720#UAA238;705743480;N/cm;newton per centimetre
+0112/2///62720#UAA239;705743481;N·m;newton metre
+0112/2///62720#UAA241;705743505;N·m/A;newton metre per ampere
+0112/2///62720#UAA242;705743506;N·m/?W;newton metre watt to the power minus 0,5
+0112/2///62720#UAA244;705743508;N·m/m²;newton metre per square metre
+0112/2///62720#UAA246;705743510;N/m;newton per metre
+0112/2///62720#UAA247;705743511;N/m²;newton per square metre
+0112/2///62720#UAA249;705743513;N/mm;newton per millimetre
+0112/2///62720#UAA250;705743536;N/mm²;newton per square millimetre
+0112/2///62720#UAA251;705743537;N·s;newton second
+0112/2///62720#UAA252;705743538;N·s/m;newton second per metre
+0112/2///62720#UAA253;705743539;Np;neper
+0112/2///62720#UAA254;705743540;Np/s;neper per second
+0112/2///62720#UAA255;705743541;P;poise
+0112/2///62720#UAA256;705743542;P/K;poise per kelvin
+0112/2///62720#UAA257;705743543;P/bar;poise per bar
+0112/2///62720#UAA258;705743544;Pa;pascal
+0112/2///62720#UAA259;705743545;Pa/K;pascal per kelvin
+0112/2///62720#UAA260;705743568;Pa/bar;pascal per bar
+0112/2///62720#UAA261;705743569;Pa·l/s;pascal litre per second
+0112/2///62720#UAA262;705743570;Pa/m;pascal per metre
+0112/2///62720#UAA263;705743571;Pa·s/m³;pascal second per cubic metre
+0112/2///62720#UAA264;705743572;Pa·m³/s;pascal cubic metre per second
+0112/2///62720#UAA265;705743573;Pa·s;pascal second
+0112/2///62720#UAA266;705743574;Pa·s/K;pascal second per kelvin
+0112/2///62720#UAA267;705743575;Pa·s/bar;pascal second per bar
+0112/2///62720#UAA268;705743576;Pa·s/m;pascal second per metre
+0112/2///62720#UAA269;705743577;Pa?¹;reciprocal pascal
+0112/2///62720#UAA270;705743600;Pbit/s;petabit per second
+0112/2///62720#UAA271;705743601;Pibit/m;pebibit per metre
+0112/2///62720#UAA272;705743602;Pibit/m²;pebibit per square metre
+0112/2///62720#UAA273;705743603;Pibit/m³;pebibit per cubic metre
+0112/2///62720#UAA274;705743604;Pibyte;pebibyte
+0112/2///62720#UAA275;705743605;R;roentgen
+0112/2///62720#UAA276;705743606;R/s;roentgen per second
+0112/2///62720#UAA277;705743607;S;siemens
+0112/2///62720#UAA278;705743608;S/cm;siemens per centimetre
+0112/2///62720#UAA279;705743609;S/m;siemens per metre
+0112/2///62720#UAA280;705743632;S·m²/mol;siemens square metre per mole
+0112/2///62720#UAA281;705743633;St;stokes
+0112/2///62720#UAA282;705743634;St/K;stokes per kelvin
+0112/2///62720#UAA283;705743635;St/bar;stokes per bar
+0112/2///62720#UAA284;705743636;Sv;sievert
+0112/2///62720#UAA285;705743637;T;tesla
+0112/2///62720#UAA286;705743638;T?;teraohm
+0112/2///62720#UAA287;705743639;THz;terahertz
+0112/2///62720#UAA288;705743640;TJ;terajoule
+0112/2///62720#UAA289;705743641;TW;terawatt
+0112/2///62720#UAA290;705743664;TW·h;terawatt hour
+0112/2///62720#UAA291;705743665;Tbit/s;terabit per second
+0112/2///62720#UAA292;705743666;Tibit/m;tebibit per metre
+0112/2///62720#UAA293;705743667;Tibit/m²;tebibit per square metre
+0112/2///62720#UAA294;705743668;Tibit/m³;tebibit per cubic metre
+0112/2///62720#UAA295;705743669;Tibyte;tebibyte
+0112/2///62720#UAA296;705743670;V;volt
+0112/2///62720#UAA297;705743671;V/µs;volt per microsecond
+0112/2///62720#UAA298;705743672;V·A;volt ampere
+0112/2///62720#UAA299;705743673;V/bar;volt per bar
+0112/2///62720#UAA300;705744400;V/in;volt per inch
+0112/2///62720#UAA301;705744401;V/m;volt per metre
+0112/2///62720#UAA302;705744402;V/mm;volt per millimetre
+0112/2///62720#UAA303;705744403;V·s/m;volt second per metre
+0112/2///62720#UAA304;705744404;V/s;volt per second
+0112/2///62720#UAA305;705744405;V/psi;volt square inch per pound-force
+0112/2///62720#UAA306;705744406;W;watt
+0112/2///62720#UAA307;705744407;W/K;watt per kelvin
+0112/2///62720#UAA308;705744408;W·h;watt hour
+0112/2///62720#UAA309;705744409;W/(m·K);watt per metre kelvin
+0112/2///62720#UAA310;705744432;W/m²;watt per square metre
+0112/2///62720#UAA311;705744433;W/(m²·K);watt per square metre kelvin
+0112/2///62720#UAA312;705744434;W/m³;watt per cubic metre
+0112/2///62720#UAA313;705744435;W·s;watt second
+0112/2///62720#UAA314;705744436;W/sr;watt per steradian
+0112/2///62720#UAA315;705744437;W/(sr·m²);watt per steradian square metre
+0112/2///62720#UAA316;705744438;W/kg;watt per kilogram
+0112/2///62720#UAA317;705744439;Wb;weber
+0112/2///62720#UAA318;705744440;Wb/m;weber per metre
+0112/2///62720#UAA319;705744441;aF;attofarad
+0112/2///62720#UAA320;705744464;acre;acre (based on US survey foot)
+0112/2///62720#UAA321;705744465;at;technical atmosphere
+0112/2///62720#UAA322;705744466;atm;standard atmosphere
+0112/2///62720#UAA323;705744467;bar;bar
+0112/2///62720#UAA324;705744468;bar/K;bar per kelvin
+0112/2///62720#UAA325;705744469;bar/bar;bar per bar
+0112/2///62720#UAA326;705744470;bar·l/s;bar litre per second
+0112/2///62720#UAA327;705744471;mbar·m³/s;millibar cubic metre per second
+0112/2///62720#UAA328;705744472;bar?¹;reciprocal bar
+0112/2///62720#UAA329;705744473;bbl (UK liq.);barrel (UK petroleum)
+0112/2///62720#UAA330;705744496;bbl (UK liq.)/min;barrel (UK petroleum) per minute
+0112/2///62720#UAA331;705744497;bbl (UK liq.)/d;barrel (UK petroleum) per day
+0112/2///62720#UAA332;705744498;bbl (UK liq.)/h;barrel (UK petroleum) per hour
+0112/2///62720#UAA333;705744499;bbl (UK liq.)/s;barrel (UK petroleum) per second
+0112/2///62720#UAA334;705744500;bbl (US);barrel (US)
+0112/2///62720#UAA335;705744501;bbl (US)/d;barrel (US) per day
+0112/2///62720#UAA336;705744502;bbl (US)/h;barrel (US petroleum) per hour
+0112/2///62720#UAA337;705744503;bbl (US)/min;barrel (US) per minute
+0112/2///62720#UAA338;705744504;bbl (US)/s;barrel (US petroleum) per second
+0112/2///62720#UAA339;705744505;bit;bit
+0112/2///62720#UAA340;705744528;bit/m;bit per metre
+0112/2///62720#UAA342;705744530;bit/m³;bit per cubic metre
+0112/2///62720#UAA343;705744531;bit/s;bit per second
+0112/2///62720#UAA344;705744532;bu (UK);bushel (UK)
+0112/2///62720#UAA345;705744533;bu (UK)/d;bushel (UK) per day
+0112/2///62720#UAA346;705744534;bu (UK)/h;bushel (UK) per hour
+0112/2///62720#UAA347;705744535;bu (UK)/min;bushel (UK) per minute
+0112/2///62720#UAA348;705744536;bu (UK)/s;bushel (UK) per second
+0112/2///62720#UAA349;705744537;bu (US dry)/d;bushel (US dry) per day
+0112/2///62720#UAA350;705744560;bu (US dry)/h;bushel (US dry) per hour
+0112/2///62720#UAA351;705744561;bu (US dry)/min;bushel (US dry) per minute
+0112/2///62720#UAA352;705744562;bu (US dry)/s;bushel (US dry) per second
+0112/2///62720#UAA353;705744563;bu (US);bushel (US)
+0112/2///62720#UAA354;705744564;byte;byte
+0112/2///62720#UAA355;705744565;cN·m;centinewton metre
+0112/2///62720#UAA356;705744566;cP;centipoise
+0112/2///62720#UAA357;705744567;cP/K;centipoise per kelvin
+0112/2///62720#UAA358;705744568;cP/bar;centipoise per bar
+0112/2///62720#UAA359;705744569;cST;centistokes
+0112/2///62720#UAA360;705744592;cal;calorie (mean)
+0112/2///62720#UAA361;705744593;calIT;calorie (international table)
+0112/2///62720#UAA362;705744594;calIT/(g·°C);calorie (international table) per gram degree Celsius
+0112/2///62720#UAA363;705744595;calIT/(g·K);calorie (international table) per gram kelvin
+0112/2///62720#UAA364;705744596;calth;calorie (thermochemical)
+0112/2///62720#UAA365;705744597;calth/(cm·s·°C);calorie (thermochemical) per centimetre second degree Celsius
+0112/2///62720#UAA366;705744598;calth/(g·°C);calorie (thermochemical) per gram degree Celsius
+0112/2///62720#UAA367;705744599;calth/(g·K);calorie (thermochemical) per gram kelvin
+0112/2///62720#UAA368;705744600;calth/min;calorie (thermochemical) per minute
+0112/2///62720#UAA369;705744601;calth/s;calorie (thermochemical) per second
+0112/2///62720#UAA370;705744624;cd;candela
+0112/2///62720#UAA371;705744625;cd/m²;candela per square metre
+0112/2///62720#UAA372;705744626;ch (US survey);chain (based on U.S. survey foot)
+0112/2///62720#UAA373;705744627;cl;centilitre
+0112/2///62720#UAA374;705744628;clo;clo
+0112/2///62720#UAA375;705744629;cm;centimetre
+0112/2///62720#UAA376;705744630;cm/K;centimetre per kelvin
+0112/2///62720#UAA377;705744631;cm/bar;centimetre per bar
+0112/2///62720#UAA378;705744632;cm/h;centimetre per hour
+0112/2///62720#UAA379;705744633;cm/s;centimetre per second
+0112/2///62720#UAA380;705744656;cm/(s·K);centimetre per second kelvin
+0112/2///62720#UAA381;705744657;cm/(s·bar);centimetre per second bar
+0112/2///62720#UAA382;705744658;cm?¹;reciprocal centimetre
+0112/2///62720#UAA383;705744659;cm?³;reciprocal cubic centimetre
+0112/2///62720#UAA384;705744660;cm²;square centimetre
+0112/2///62720#UAA385;705744661;cm³;cubic centimetre
+0112/2///62720#UAA386;705744662;cm³/K;cubic centimetre per kelvin
+0112/2///62720#UAA387;705744663;cm³/bar;cubic centimetre per bar
+0112/2///62720#UAA388;705744664;cm³/d;cubic centimetre per day
+0112/2///62720#UAA389;705744665;cm³/(d·K);cubic centimetre per day kelvin
+0112/2///62720#UAA390;705744688;cm³/(d·bar);cubic centimetre per day bar
+0112/2///62720#UAA391;705744689;cm³/h;cubic centimetre per hour
+0112/2///62720#UAA392;705744690;cm³/(h·K);cubic centimetre per hour kelvin
+0112/2///62720#UAA393;705744691;cm³/(h·bar);cubic centimetre per hour bar
+0112/2///62720#UAA394;705744692;cm³/m³;cubic centimetre per cubic metre
+0112/2///62720#UAA395;705744693;cm³/min;cubic centimetre per minute
+0112/2///62720#UAA396;705744694;cm³/(min·K);cubic centimetre per minute kelvin
+0112/2///62720#UAA397;705744695;cm³/(min·bar);cubic centimetre per minute bar
+0112/2///62720#UAA398;705744696;cm³/mol;cubic centimetre per mole
+0112/2///62720#UAA399;705744697;cm³/s;cubic centimetre per second
+0112/2///62720#UAA400;705745424;cm³/(s·K);cubic centimetre per second kelvin
+0112/2///62720#UAA401;705745425;cm³/(s·bar);cubic centimetre per second bar
+0112/2///62720#UAA402;705745426;cmH?O;conventional centimetre of water
+0112/2///62720#UAA403;705745427;cmHg;centimetre of mercury
+0112/2///62720#UAA404;705745428;cup (US);cup (US)
+0112/2///62720#UAA405;705745429;cwt.l (UK);hundred weight (UK)
+0112/2///62720#UAA406;705745430;cwt (US);hundred pound (cwt) / hundred weight (US)
+0112/2///62720#UAA407;705745431;d;day
+0112/2///62720#UAA408;705745432;d?¹;reciprocal day
+0112/2///62720#UAA409;705745433;dB;decibel
+0112/2///62720#UAA410;705745456;dB/km;decibel per kilometre
+0112/2///62720#UAA411;705745457;dB/m;decibel per metre
+0112/2///62720#UAA412;705745458;dm;decimetre
+0112/2///62720#UAA413;705745459;dm²;square decimetre
+0112/2///62720#UAA414;705745460;dm³;cubic decimetre
+0112/2///62720#UAA415;705745461;dm³/d;cubic decimetre per day
+0112/2///62720#UAA416;705745462;dm³/h;cubic decimetre per hour
+0112/2///62720#UAA417;705745463;dm³/m³;cubic decimetre per cubic metre
+0112/2///62720#UAA418;705745464;dm³/min;cubic decimetre per minute
+0112/2///62720#UAA419;705745465;dm³/mol;cubic decimetre per mole
+0112/2///62720#UAA420;705745488;dm³/s;cubic decimetre per second
+0112/2///62720#UAA421;705745489;dpi;dots per inch
+0112/2///62720#UAA422;705745490;dyn;dyne
+0112/2///62720#UAA423;705745491;dyn·cm;dyne centimetre
+0112/2///62720#UAA424;705745492;dyn/cm²;dyne per square centimetre
+0112/2///62720#UAA425;705745493;eV;electronvolt
+0112/2///62720#UAA426;705745494;eV/m;electronvolt per metre
+0112/2///62720#UAA427;705745495;eV·m²;electronvolt square metre
+0112/2///62720#UAA428;705745496;eV·m²/kg;electronvolt square metre per kilogram
+0112/2///62720#UAA429;705745497;erg;erg
+0112/2///62720#UAA430;705745520;erg/s;erg per second
+0112/2///62720#UAA431;705745521;fl oz (UK);fluid ounce (UK)
+0112/2///62720#UAA432;705745522;fl oz (UK)/d;ounce (UK fluid) per day
+0112/2///62720#UAA433;705745523;fl oz (UK)/h;ounce (UK fluid) per hour
+0112/2///62720#UAA434;705745524;fl oz (UK)/min;ounce (UK fluid) per minute
+0112/2///62720#UAA435;705745525;fl oz (UK)/s;ounce (UK fluid) per second
+0112/2///62720#UAA436;705745526;fl oz (US)/d;ounce (US fluid) per day
+0112/2///62720#UAA437;705745527;fl oz (US)/h;ounce (US fluid) per hour
+0112/2///62720#UAA438;705745528;fl oz (US)/min;ounce (US fluid) per minute
+0112/2///62720#UAA439;705745529;fl oz (US)/s;ounce (US fluid) per second
+0112/2///62720#UAA440;705745552;ft;foot
+0112/2///62720#UAA441;705745553;ft/°F;foot per degree Fahrenheit
+0112/2///62720#UAA442;705745554;ft/h;foot per hour
+0112/2///62720#UAA443;705745555;ft·lbf;foot pound?force
+0112/2///62720#UAA444;705745556;ft·lbf/h;foot pound-force per hour
+0112/2///62720#UAA445;705745557;ft·lbf/min;foot pound-force per minute
+0112/2///62720#UAA446;705745558;ft·lbf/s;foot pound-force per second
+0112/2///62720#UAA447;705745559;ft/psi;foot per psi
+0112/2///62720#UAA448;705745560;ft/min;foot per minute
+0112/2///62720#UAA449;705745561;ft/s;foot per second
+0112/2///62720#UAA450;705745584;ft/(s·°F);foot per second degree Fahrenheit
+0112/2///62720#UAA451;705745585;ft/(s·psi);foot per second psi
+0112/2///62720#UAA452;705745586;ft/s²;foot per second squared
+0112/2///62720#UAA453;705745587;ft?³;reciprocal cubic foot
+0112/2///62720#UAA454;705745588;ft²;square foot
+0112/2///62720#UAA455;705745589;ft²/s;square foot per second
+0112/2///62720#UAA456;705745590;ft³;cubic foot
+0112/2///62720#UAA457;705745591;ft³/°F;cubic foot per degree Fahrenheit
+0112/2///62720#UAA458;705745592;ft³/d;cubic foot per day
+0112/2///62720#UAA459;705745593;ft³/h;cubic foot per hour
+0112/2///62720#UAA460;705745616;ft³/psi;cubic foot per psi
+0112/2///62720#UAA461;705745617;ft³/min;cubic foot per minute
+0112/2///62720#UAA462;705745618;ft³/s;cubic foot per second
+0112/2///62720#UAA463;705745619;ftH?O;foot of water
+0112/2///62720#UAA464;705745620;ftHg;foot of mercury
+0112/2///62720#UAA465;705745621;g;gram
+0112/2///62720#UAA467;705745623;g/K;gram per kelvin
+0112/2///62720#UAA468;705745624;g/bar;gram per bar
+0112/2///62720#UAA469;705745625;g/cm³;gram per cubic centimetre
+0112/2///62720#UAA470;705745648;g/(cm³·K);gram per cubic centimetre kelvin
+0112/2///62720#UAA471;705745649;g/(cm³·bar);gram per cubic centimetre bar
+0112/2///62720#UAA472;705745650;g/d;gram per day
+0112/2///62720#UAA473;705745651;g/(d·K);gram per day kelvin
+0112/2///62720#UAA474;705745652;g/(d·bar);gram per day bar
+0112/2///62720#UAA475;705745653;g/dm³;gram per cubic decimetre
+0112/2///62720#UAA476;705745654;g/(dm³·K);gram per cubic decimetre kelvin
+0112/2///62720#UAA477;705745655;g/(dm³·bar);gram per cubic decimetre bar
+0112/2///62720#UAA478;705745656;g/h;gram per hour
+0112/2///62720#UAA479;705745657;g/(h·K);gram per hour kelvin
+0112/2///62720#UAA480;705745680;g/(h·bar);gram per hour bar
+0112/2///62720#UAA481;705745681;g/kg;gram per kilogram
+0112/2///62720#UAA482;705745682;g/l;gram per litre
+0112/2///62720#UAA483;705745683;g/(l·K);gram per litre kelvin
+0112/2///62720#UAA484;705745684;g/(l·bar);gram per litre bar
+0112/2///62720#UAA485;705745685;g/m;gram per metre
+0112/2///62720#UAA486;705745686;g/m²;gram per square metre
+0112/2///62720#UAA487;705745687;g/m³;gram per cubic metre
+0112/2///62720#UAA488;705745688;g/(m³·K);gram per cubic metre kelvin
+0112/2///62720#UAA489;705745689;g/(m³·bar);gram per cubic metre bar
+0112/2///62720#UAA490;705745712;g/min;gram per minute
+0112/2///62720#UAA491;705745713;g/(min·K);gram per minute kelvin
+0112/2///62720#UAA492;705745714;g/(min·bar);gram per minute bar
+0112/2///62720#UAA493;705745715;g/ml;gram per millilitre
+0112/2///62720#UAA494;705745716;g/(ml·K);gram per millilitre kelvin
+0112/2///62720#UAA495;705745717;g/(ml·bar);gram per millilitre bar
+0112/2///62720#UAA496;705745718;g/mol;gram per mole
+0112/2///62720#UAA497;705745719;g/s;gram per second
+0112/2///62720#UAA498;705745720;g/(s·K);gram per second kelvin
+0112/2///62720#UAA499;705745721;g/(s·bar);gram per second bar
+0112/2///62720#UAA500;705746448;gal (UK);gallon (UK)
+0112/2///62720#UAA501;705746449;gal (UK)/d;gallon (UK) per day
+0112/2///62720#UAA502;705746450;gal (UK)/h;gallon (UK) per hour
+0112/2///62720#UAA503;705746451;gal (UK)/min;gallon (UK) per minute
+0112/2///62720#UAA504;705746452;gal (UK)/s;gallon (UK) per second
+0112/2///62720#UAA505;705746453;gal (US liq.);gallon (US)
+0112/2///62720#UAA506;705746454;gal (US liq.)/d;gallon (US) per day
+0112/2///62720#UAA507;705746455;gal (US liq.)/h;gallon (US) per hour
+0112/2///62720#UAA508;705746456;gal (US liq.)/min;gallon (US) per minute
+0112/2///62720#UAA509;705746457;gal (US liq.)/s;gallon (US liquid) per second
+0112/2///62720#UAA510;705746480;gf/cm²;gram-force per square centimetre
+0112/2///62720#UAA511;705746481;gi (UK);gill (UK)
+0112/2///62720#UAA512;705746482;gi (UK)/d;gill (UK) per day
+0112/2///62720#UAA513;705746483;gi (UK)/h;gill (UK) per hour
+0112/2///62720#UAA514;705746484;gi (UK)/min;gill (UK) per minute
+0112/2///62720#UAA515;705746485;gi (UK)/s;gill (UK) per second
+0112/2///62720#UAA516;705746486;gi (US liq.);gill (US)
+0112/2///62720#UAA517;705746487;gi (US)/d;gill (US) per day
+0112/2///62720#UAA518;705746488;gi (US)/h;gill (US) per hour
+0112/2///62720#UAA519;705746489;gi (US)/min;gill (US) per minute
+0112/2///62720#UAA520;705746512;gi (US)/s;gill (US) per second
+0112/2///62720#UAA521;705746513;gn;standard acceleration of free fall
+0112/2///62720#UAA522;705746514;gon;gon
+0112/2///62720#UAA523;705746515;gr;grain
+0112/2///62720#UAA524;705746516;gr/gal (US);grain per gallon (US)
+0112/2///62720#UAA525;705746517;h;hour
+0112/2///62720#UAA526;705746518;h?¹;reciprocal hour
+0112/2///62720#UAA527;705746519;hPa;hectopascal
+0112/2///62720#UAA528;705746520;hPa/K;hectopascal per kelvin
+0112/2///62720#UAA529;705746521;hPa/bar;hectopascal per bar
+0112/2///62720#UAA530;705746544;hPa·l/s;hectopascal litre per second
+0112/2///62720#UAA531;705746545;hPa·m³/s;hectopascal cubic metre per second
+0112/2///62720#UAA532;705746546;ha;hectare
+0112/2///62720#UAA533;705746547;hl;hectolitre
+0112/2///62720#UAA534;705746548;metric hp;horsepower (metric)
+0112/2///62720#UAA535;705746549;boiler hp;horsepower (boiler)
+0112/2///62720#UAA536;705746550;bhp;horsepower (brake)
+0112/2///62720#UAA537;705746551;electric hp;horsepower (electric)
+0112/2///62720#UAA538;705746552;water hp;horsepower (water)
+0112/2///62720#UAA539;705746553;in;inch
+0112/2///62720#UAA540;705746576;in/°F;inch per degree Fahrenheit
+0112/2///62720#UAA541;705746577;in/psi;inch per psi
+0112/2///62720#UAA542;705746578;in/s;inch per second
+0112/2///62720#UAA543;705746579;in/(s·°F);inch per second degree Fahrenheit
+0112/2///62720#UAA544;705746580;in/(s·psi);inch per second psi
+0112/2///62720#UAA545;705746581;in?;inch to the fourth power
+0112/2///62720#UAA546;705746582;in?³;reciprocal cubic inch
+0112/2///62720#UAA547;705746583;in²;square inch
+0112/2///62720#UAA548;705746584;in²/s;square inch per second
+0112/2///62720#UAA549;705746585;in³;cubic inch
+0112/2///62720#UAA550;705746608;in³/h;cubic inch per hour
+0112/2///62720#UAA551;705746609;in³/min;cubic inch per minute
+0112/2///62720#UAA552;705746610;in³/s;cubic inch per second
+0112/2///62720#UAA553;705746611;inH?O;inch of water
+0112/2///62720#UAA554;705746612;inHg;inch of mercury
+0112/2///62720#UAA555;705746613;k?;kiloohm
+0112/2///62720#UAA556;705746614;k?·m;kiloohm metre
+0112/2///62720#UAA557;705746615;kA;kiloampere
+0112/2///62720#UAA558;705746616;kA/m;kiloampere per metre
+0112/2///62720#UAA559;705746617;kA/m²;kiloampere per square metre
+0112/2///62720#UAA560;705746640;kBd;kilobaud
+0112/2///62720#UAA561;705746641;kBq;kilobecquerel
+0112/2///62720#UAA562;705746642;kBq/kg;kilobecquerel per kilogram
+0112/2///62720#UAA563;705746643;kC;kilocoulomb
+0112/2///62720#UAA564;705746644;kC/m²;kilocoulomb per square metre
+0112/2///62720#UAA565;705746645;kC/m³;kilocoulomb per cubic metre
+0112/2///62720#UAA566;705746646;kHz;kilohertz
+0112/2///62720#UAA567;705746647;kHz·m;kilohertz metre
+0112/2///62720#UAA568;705746648;kJ;kilojoule
+0112/2///62720#UAA569;705746649;kJ/K;kilojoule per kelvin
+0112/2///62720#UAA570;705746672;kJ/kg;kilojoule per kilogram
+0112/2///62720#UAA571;705746673;kJ/(kg·K);kilojoule per kilogram kelvin
+0112/2///62720#UAA572;705746674;kJ/mol;kilojoule per mole
+0112/2///62720#UAA573;705746675;kN;kilonewton
+0112/2///62720#UAA574;705746676;kN·m;kilonewton metre
+0112/2///62720#UAA575;705746677;kPa;kilopascal
+0112/2///62720#UAA576;705746678;kPa/K;kilopascal per kelvin
+0112/2///62720#UAA577;705746679;kPa/bar;kilopascal per bar
+0112/2///62720#UAA578;705746680;kS;kilosiemens
+0112/2///62720#UAA579;705746681;kS/m;kilosiemens per metre
+0112/2///62720#UAA580;705746704;kV;kilovolt
+0112/2///62720#UAA581;705746705;kV·A;kilovolt ampere
+0112/2///62720#UAA582;705746706;kV/m;kilovolt per metre
+0112/2///62720#UAA583;705746707;kW;kilowatt
+0112/2///62720#UAA584;705746708;kW·h;kilowatt hour
+0112/2///62720#UAA585;705746709;kWb/m;kiloweber per metre
+0112/2///62720#UAA586;705746710;kbit/s;kilobit per second
+0112/2///62720#UAA587;705746711;kcal;kilocalorie (mean)
+0112/2///62720#UAA588;705746712;kcalIT/(m·h·°C);kilocalorie (international table) per hour metre degree Celsius
+0112/2///62720#UAA589;705746713;kcalIT;kilocalorie (international table)
+0112/2///62720#UAA590;705746736;kcalth;kilocalorie (thermochemical)
+0112/2///62720#UAA591;705746737;kcalth/min;kilocalorie (thermochemical) per minute
+0112/2///62720#UAA592;705746738;kcalth/s;kilocalorie (thermochemical) per second
+0112/2///62720#UAA593;705746739;keV;kiloelectronvolt
+0112/2///62720#UAA594;705746740;kg;kilogram
+0112/2///62720#UAA595;705746741;kg/K;kilogram per kelvin
+0112/2///62720#UAA596;705746742;kg/bar;kilogram per bar
+0112/2///62720#UAA597;705746743;kg/cm³;kilogram per cubic centimetre
+0112/2///62720#UAA598;705746744;kg/(cm³·K);kilogram per cubic centimetre kelvin
+0112/2///62720#UAA599;705746745;kg/(cm³·bar);kilogram per cubic centimetre bar
+0112/2///62720#UAA600;705747472;kg·cm²;kilogram square centimetre
+0112/2///62720#UAA601;705747473;kg/d;kilogram per day
+0112/2///62720#UAA602;705747474;kg/(d·K);kilogram per day kelvin
+0112/2///62720#UAA603;705747475;kg/(d·bar);kilogram per day bar
+0112/2///62720#UAA604;705747476;kg/dm³;kilogram per cubic decimetre
+0112/2///62720#UAA605;705747477;kg/(dm³·K);kilogram per cubic decimetre kelvin
+0112/2///62720#UAA606;705747478;kg/(dm³·bar);kilogram per cubic decimetre bar
+0112/2///62720#UAA607;705747479;kg/h;kilogram per hour
+0112/2///62720#UAA608;705747480;kg/(h·K);kilogram per hour kelvin
+0112/2///62720#UAA609;705747481;kg/(h·bar);kilogram per hour bar
+0112/2///62720#UAA610;705747504;kg/kg;kilogram per kilogram
+0112/2///62720#UAA611;705747505;kg/kmol;kilogram per kilomol
+0112/2///62720#UAA612;705747506;kg/l;kilogram per litre
+0112/2///62720#UAA613;705747507;kg/(l·K);kilogram per litre kelvin
+0112/2///62720#UAA614;705747508;kg/(l·bar);kilogram per litre bar
+0112/2///62720#UAA615;705747509;kg·m/s;kilogram metre per second
+0112/2///62720#UAA616;705747510;kg/m;kilogram per metre
+0112/2///62720#UAA617;705747511;kg/m²;kilogram per square metre
+0112/2///62720#UAA618;705747512;kg/(m²·s);kilogram per square metre second
+0112/2///62720#UAA619;705747513;kg/m³;kilogram per cubic metre
+0112/2///62720#UAA620;705747536;kg/(m³·K);kilogram per cubic metre kelvin
+0112/2///62720#UAA621;705747537;kg/(m³·bar);kilogram per cubic metre bar
+0112/2///62720#UAA622;705747538;kg·m²;kilogram square metre
+0112/2///62720#UAA624;705747540;kg/min;kilogram per minute
+0112/2///62720#UAA625;705747541;kg/(min·K);kilogram per minute kelvin
+0112/2///62720#UAA626;705747542;kg/(min·bar);kilogram per minute bar
+0112/2///62720#UAA627;705747543;kg·mm²;kilogram square millimetre
+0112/2///62720#UAA628;705747544;kg/mol;kilogram per mole
+0112/2///62720#UAA629;705747545;kg/s;kilogram per second
+0112/2///62720#UAA630;705747568;kg/(s·K);kilogram per second kelvin
+0112/2///62720#UAA631;705747569;kg/(s·bar);kilogram per second bar
+0112/2///62720#UAA632;705747570;kgf;kilogram-force
+0112/2///62720#UAA633;705747571;kgf/cm²;kilogram-force per square centimetre
+0112/2///62720#UAA634;705747572;kgf·m;kilogram-force metre
+0112/2///62720#UAA635;705747573;kgf/m²;kilogram-force per square metre
+0112/2///62720#UAA636;705747574;kgf/mm²;kilogram-force per square millimetre
+0112/2///62720#UAA637;705747575;km;kilometre
+0112/2///62720#UAA638;705747576;km/h;kilometre per hour
+0112/2///62720#UAA639;705747577;km²;square kilometre
+0112/2///62720#UAA640;705747600;kmol;kilomole
+0112/2///62720#UAA641;705747601;kmol/h;kilomole per hour
+0112/2///62720#UAA642;705747602;kmol/m³;kilomole per cubic metre
+0112/2///62720#UAA643;705747603;kmol/(m³·K);kilomole per cubic metre kelvin
+0112/2///62720#UAA645;705747605;kmol/min;kilomole per minute
+0112/2///62720#UAA646;705747606;kmol/s;kilomole per second
+0112/2///62720#UAA647;705747607;ks;kilosecond
+0112/2///62720#UAA648;705747608;kvar;kilovolt ampere reactive
+0112/2///62720#UAA649;705747609;l;litre
+0112/2///62720#UAA650;705747632;l/K;litre per kelvin
+0112/2///62720#UAA651;705747633;l/bar;litre per bar
+0112/2///62720#UAA652;705747634;l/d;litre per day
+0112/2///62720#UAA653;705747635;l/(d·K);litre per day kelvin
+0112/2///62720#UAA654;705747636;l/(d·bar);litre per day bar
+0112/2///62720#UAA655;705747637;l/h;litre per hour
+0112/2///62720#UAA656;705747638;l/(h·K);litre per hour kelvin
+0112/2///62720#UAA657;705747639;l/(h·bar);litre per hour bar
+0112/2///62720#UAA658;705747640;l/l;litre per litre
+0112/2///62720#UAA659;705747641;l/min;litre per minute
+0112/2///62720#UAA660;705747664;l/(min·K);litre per minute kelvin
+0112/2///62720#UAA661;705747665;l/(min·bar);litre per minute bar
+0112/2///62720#UAA662;705747666;l/mol;litre per mole
+0112/2///62720#UAA664;705747668;l/s;litre per second
+0112/2///62720#UAA665;705747669;l/(s·K);litre per second kelvin
+0112/2///62720#UAA666;705747670;l/(s·bar);litre per second bar
+0112/2///62720#UAA667;705747671;l?¹;reciprocal litre
+0112/2///62720#UAA668;705747672;lb/°F;pound (avoirdupois) per degree Fahrenheit
+0112/2///62720#UAA669;705747673;lb (avoirdupois);pound (avoirdupois)
+0112/2///62720#UAA670;705747696;lb/ft;pound (avoirdupois) per foot
+0112/2///62720#UAA671;705747697;lb·ft²;pound (avoirdupois) square foot
+0112/2///62720#UAA672;705747698;lb·in²;pound (avoirdupois) square inch
+0112/2///62720#UAA673;705747699;lb/d;pound (avoirdupois) per day
+0112/2///62720#UAA674;705747700;lb/(ft·h);pound (avoirdupois) per foot hour
+0112/2///62720#UAA675;705747701;lb/(ft·s);pound (avoirdupois) per foot second
+0112/2///62720#UAA676;705747702;lb/ft³;pound (avoirdupois) per cubic foot
+0112/2///62720#UAA677;705747703;lb/(ft³·°F);pound (avoirdupois) per cubic foot degree Fahrenheit
+0112/2///62720#UAA678;705747704;lb/(ft³·psi);pound (avoirdupois) per cubic foot psi
+0112/2///62720#UAA679;705747705;lb/gal (UK);pound (avoirdupois) per gallon (UK)
+0112/2///62720#UAA680;705747728;lb/gal (US liq.);pound (avoirdupois) per gallon (US)
+0112/2///62720#UAA682;705747730;lb/h;pound (avoirdupois) per hour
+0112/2///62720#UAA683;705747731;lb/(h·°F);pound (avoirdupois) per hour degree Fahrenheit
+0112/2///62720#UAA684;705747732;lb/(h·psi);pound (avoirdupois) per hour psi
+0112/2///62720#UAA685;705747733;lb/in³;pound (avoirdupois) per cubic inch
+0112/2///62720#UAA686;705747734;lb/(in³·°F);pound (avoirdupois) per cubic inch degree Fahrenheit
+0112/2///62720#UAA687;705747735;lb/(in³·psi);pound (avoirdupois) per cubic inch psi
+0112/2///62720#UAA688;705747736;lb/psi;pound (avoirdupois) per psi
+0112/2///62720#UAA689;705747737;lb/min;pound (avoirdupois) per minute
+0112/2///62720#UAA690;705747760;lb/(min·°F);pound (avoirdupois) per minute degree Fahrenheit
+0112/2///62720#UAA691;705747761;lb/(min·psi);pound (avoirdupois) per minute psi
+0112/2///62720#UAA692;705747762;lb/s;pound (avoirdupois) per second
+0112/2///62720#UAA693;705747763;lb/(s·°F);pound (avoirdupois) per second degree Fahrenheit
+0112/2///62720#UAA694;705747764;lb/(s·psi);pound (avoirdupois) per second psi
+0112/2///62720#UAA695;705747765;lb/yd³;pound (avoirdupois) per cubic yard
+0112/2///62720#UAA696;705747766;lbf;pound-force
+0112/2///62720#UAA697;705747767;lbf·ft;pound-force foot
+0112/2///62720#UAA698;705747768;lbf/ft²;pound-force per square foot
+0112/2///62720#UAA699;705747769;lbf·in;pound-force inch
+0112/2///62720#UAA700;705748496;lbf/in;pound-force per inch
+0112/2///62720#UAA701;705748497;psi;pound-force per square inch
+0112/2///62720#UAA702;705748498;psi/°F;pound-force per square inch per degree Fahrenheit
+0112/2///62720#UAA703;705748499;psi·in³/s;psi cubic inch per second
+0112/2///62720#UAA704;705748500;psi·l/s;psi litre per second
+0112/2///62720#UAA705;705748501;psi·m³/s;psi cubic metre per second
+0112/2///62720#UAA706;705748502;psi·yd³/s;psi cubic yard per second
+0112/2///62720#UAA707;705748503;lbf·s/ft²;pound-force second per square foot
+0112/2///62720#UAA708;705748504;lbf·s/in²;pound-force second per square inch
+0112/2///62720#UAA709;705748505;psi?¹;reciprocal psi
+0112/2///62720#UAA710;705748528;qt (UK liq.)/d;quart (UK liquid) per day
+0112/2///62720#UAA711;705748529;qt (UK liq.)/h;quart (UK liquid) per hour
+0112/2///62720#UAA712;705748530;qt (UK liq.)/min;quart (UK liquid) per minute
+0112/2///62720#UAA713;705748531;qt (UK liq.)/s;quart (UK liquid) per second
+0112/2///62720#UAA714;705748532;qt (US liq.)/d;quart (US liquid) per day
+0112/2///62720#UAA715;705748533;qt (US liq.)/h;quart (US liquid) per hour
+0112/2///62720#UAA716;705748534;qt (US liq.)/min;quart (US liquid) per minute
+0112/2///62720#UAA717;705748535;qt (US liq.)/s;quart (US liquid) per second
+0112/2///62720#UAA718;705748536;lm;lumen
+0112/2///62720#UAA719;705748537;lm/W;lumen per watt
+0112/2///62720#UAA720;705748560;lm·h;lumen hour
+0112/2///62720#UAA721;705748561;lm/m²;lumen per square metre
+0112/2///62720#UAA722;705748562;lm·s;lumen second
+0112/2///62720#UAA723;705748563;lx;lux
+0112/2///62720#UAA724;705748564;lx·h;lux hour
+0112/2///62720#UAA725;705748565;lx·s;lux second
+0112/2///62720#UAA726;705748566;m;metre
+0112/2///62720#UAA727;705748567;in/revolution;inch per two pi radiant
+0112/2///62720#UAA728;705748568;m/K;metre per kelvin
+0112/2///62720#UAA731;705748593;m/bar;metre per bar
+0112/2///62720#UAA732;705748594;m/min;metre per minute
+0112/2///62720#UAA733;705748595;m/s;metre per second
+0112/2///62720#UAA734;705748596;m/(s·Pa);metre per second pascal
+0112/2///62720#UAA735;705748597;km/(s·bar);kilometre per second bar
+0112/2///62720#UAA736;705748598;m/s²;metre per second squared
+0112/2///62720#UAA737;705748599;m?;metre to the fourth power
+0112/2///62720#UAA738;705748600;m?¹;reciprocal metre
+0112/2///62720#UAA740;705748624;m?³;reciprocal cubic metre
+0112/2///62720#UAA741;705748625;m?;milliohm
+0112/2///62720#UAA742;705748626;m?·m;milliohm metre
+0112/2///62720#UAA743;705748627;m?/m;milliohm per metre
+0112/2///62720#UAA744;705748628;m²;square metre
+0112/2///62720#UAA745;705748629;m²/J;square metre per joule
+0112/2///62720#UAA746;705748630;m²·K/W;square metre kelvin per watt
+0112/2///62720#UAA748;705748632;m²/(V·s);square metre per volt second
+0112/2///62720#UAA749;705748633;m²·h·°C/kcalIT;square metre hour degree Celsius per kilocalorie (international table)
+0112/2///62720#UAA750;705748656;m²/kg;square metre per kilogram
+0112/2///62720#UAA751;705748657;m²/mol;square metre per mole
+0112/2///62720#UAA752;705748658;m²/s;square metre per second
+0112/2///62720#UAA753;705748659;m²/(s·K);square metre per second kelvin
+0112/2///62720#UAA755;705748661;m²/sr;square metre per steradian
+0112/2///62720#UAA756;705748662;m²/(sr·J);square metre per steradian joule
+0112/2///62720#UAA757;705748663;m³;cubic metre
+0112/2///62720#UAA758;705748664;m³/K;cubic metre per kelvin
+0112/2///62720#UAA759;705748665;m³/bar;cubic metre per bar
+0112/2///62720#UAA760;705748688;m³/d;cubic metre per day
+0112/2///62720#UAA761;705748689;m³/(d·K);cubic metre per day kelvin
+0112/2///62720#UAA762;705748690;m³/(d·bar);cubic metre per day bar
+0112/2///62720#UAA763;705748691;m³/h;cubic metre per hour
+0112/2///62720#UAA764;705748692;m³/(h·K);cubic metre per hour kelvin
+0112/2///62720#UAA765;705748693;m³/(h·bar);cubic metre per hour bar
+0112/2///62720#UAA766;705748694;m³/kg;cubic metre per kilogram
+0112/2///62720#UAA767;705748695;m³/m³;cubic metre per cubic metre
+0112/2///62720#UAA768;705748696;m³/min;cubic metre per minute
+0112/2///62720#UAA769;705748697;m³/(min·K);cubic metre per minute kelvin
+0112/2///62720#UAA770;705748720;m³/(min·bar);cubic metre per minute bar
+0112/2///62720#UAA771;705748721;m³/mol;cubic metre per mole
+0112/2///62720#UAA772;705748722;m³/s;cubic metre per second
+0112/2///62720#UAA773;705748723;m³/(s·K);cubic metre per second kelvin
+0112/2///62720#UAA774;705748724;m³/(s·bar);cubic metre per second bar
+0112/2///62720#UAA775;705748725;mA;milliampere
+0112/2///62720#UAA776;705748726;mA/bar;milliampere per bar
+0112/2///62720#UAA777;705748727;mA·h;milliampere hour
+0112/2///62720#UAA778;705748728;mA/in;milliampere per inch
+0112/2///62720#UAA781;705748753;mA/mm;milliampere per millimetre
+0112/2///62720#UAA782;705748754;mC;millicoulomb
+0112/2///62720#UAA783;705748755;mC/kg;millicoulomb per kilogram
+0112/2///62720#UAA784;705748756;mC/m²;millicoulomb per square metre
+0112/2///62720#UAA785;705748757;mC/m³;millicoulomb per cubic metre
+0112/2///62720#UAA786;705748758;mCi;millicurie
+0112/2///62720#UAA787;705748759;mF;millifarad
+0112/2///62720#UAA788;705748760;mGy;milligray
+0112/2///62720#UAA789;705748761;mH;millihenry
+0112/2///62720#UAA790;705748784;mH/?;millihenry per ohm
+0112/2///62720#UAA791;705748785;mH/k?;millihenry per kiloohm
+0112/2///62720#UAA792;705748786;mJ;millijoule
+0112/2///62720#UAA793;705748787;mN;millinewton
+0112/2///62720#UAA794;705748788;mN·m;millinewton metre
+0112/2///62720#UAA795;705748789;mN/m;millinewton per metre
+0112/2///62720#UAA796;705748790;mPa;millipascal
+0112/2///62720#UAA797;705748791;mPa·s;millipascal second
+0112/2///62720#UAA798;705748792;mPa·s/K;millipascal second per kelvin
+0112/2///62720#UAA799;705748793;mPa·s/bar;millipascal second per bar
+0112/2///62720#UAA800;705749520;mS;millisiemens
+0112/2///62720#UAA801;705749521;mS/cm;millisiemens per centimetre
+0112/2///62720#UAA802;705749522;mSv;millisievert
+0112/2///62720#UAA803;705749523;mT;millitesla
+0112/2///62720#UAA804;705749524;mV;millivolt
+0112/2///62720#UAA805;705749525;mV/m;millivolt per metre
+0112/2///62720#UAA806;705749526;mV/min;millivolt per minute
+0112/2///62720#UAA807;705749527;mW;milliwatt
+0112/2///62720#UAA808;705749528;mW/m²;milliwatt per square metre
+0112/2///62720#UAA809;705749529;mWb;milliweber
+0112/2///62720#UAA810;705749552;mbar;millibar
+0112/2///62720#UAA811;705749553;mbar/K;millibar per kelvin
+0112/2///62720#UAA812;705749554;mbar/bar;millibar per bar
+0112/2///62720#UAA813;705749555;mbar·l/s;millibar litre per second
+0112/2///62720#UAA814;705749556;bar·m³/s;bar cubic metre per second
+0112/2///62720#UAA815;705749557;mg;milligram
+0112/2///62720#UAA816;705749558;mg/K;milligram per kelvin
+0112/2///62720#UAA817;705749559;mg/bar;milligram per bar
+0112/2///62720#UAA818;705749560;mg/cm²;milligram per square centimetre
+0112/2///62720#UAA819;705749561;mg/d;milligram per day
+0112/2///62720#UAA820;705749584;mg/(d·K);milligram per day kelvin
+0112/2///62720#UAA821;705749585;mg/(d·bar);milligram per day bar
+0112/2///62720#UAA822;705749586;mg/g;milligram per gram
+0112/2///62720#UAA823;705749587;mg/h;milligram per hour
+0112/2///62720#UAA824;705749588;mg/(h·K);milligram per hour kelvin
+0112/2///62720#UAA825;705749589;mg/(h·bar);milligram per hour bar
+0112/2///62720#UAA826;705749590;mg/kg;milligram per kilogram
+0112/2///62720#UAA827;705749591;mg/l;milligram per litre
+0112/2///62720#UAA828;705749592;mg/m;milligram per metre
+0112/2///62720#UAA829;705749593;mg/m²;milligram per square metre
+0112/2///62720#UAA830;705749616;mg/m³;milligram per cubic metre
+0112/2///62720#UAA831;705749617;mg/(m³·K);milligram per cubic metre kelvin
+0112/2///62720#UAA832;705749618;mg/(m³·bar);milligram per cubic metre bar
+0112/2///62720#UAA833;705749619;mg/min;milligram per minute
+0112/2///62720#UAA834;705749620;mg/(min·K);milligram per minute kelvin
+0112/2///62720#UAA835;705749621;mg/(min·bar);milligram per minute bar
+0112/2///62720#UAA836;705749622;mg/s;milligram per second
+0112/2///62720#UAA837;705749623;mg/(s·K);milligram per second kelvin
+0112/2///62720#UAA838;705749624;mg/(s·bar);milligram per second bar
+0112/2///62720#UAA839;705749625;mi;mile (statute mile)
+0112/2///62720#UAA840;705749648;microinch;micro-inch
+0112/2///62720#UAA841;705749649;mil;milli-inch
+0112/2///62720#UAA842;705749650;min;minute
+0112/2///62720#UAA843;705749651;min?¹;reciprocal minute
+0112/2///62720#UAA844;705749652;ml;millilitre
+0112/2///62720#UAA845;705749653;ml/K;millilitre per kelvin
+0112/2///62720#UAA846;705749654;ml/bar;millilitre per bar
+0112/2///62720#UAA847;705749655;ml/d;millilitre per day
+0112/2///62720#UAA848;705749656;ml/(d·K);millilitre per day kelvin
+0112/2///62720#UAA849;705749657;ml/(d·bar);millilitre per day bar
+0112/2///62720#UAA850;705749680;ml/h;millilitre per hour
+0112/2///62720#UAA851;705749681;ml/(h·K);millilitre per hour kelvin
+0112/2///62720#UAA852;705749682;ml/(h·bar);millilitre per hour bar
+0112/2///62720#UAA853;705749683;ml/l;millilitre per litre
+0112/2///62720#UAA854;705749684;ml/m³;millilitre per cubic metre
+0112/2///62720#UAA855;705749685;ml/min;millilitre per minute
+0112/2///62720#UAA856;705749686;ml/(min·K);millilitre per minute kelvin
+0112/2///62720#UAA857;705749687;ml/(min·bar);millilitre per minute bar
+0112/2///62720#UAA858;705749688;ml/(cm²·min);millilitre per square centimetre minute
+0112/2///62720#UAA859;705749689;ml/s;millilitre per second
+0112/2///62720#UAA860;705749712;ml/(s·K);millilitre per second kelvin
+0112/2///62720#UAA861;705749713;ml/(s·bar);millilitre per second bar
+0112/2///62720#UAA862;705749714;mm;millimetre
+0112/2///62720#UAA863;705749715;mm/(°C·m);millimetre per degree Celsius metre
+0112/2///62720#UAA864;705749716;mm/K;millimetre per kelvin
+0112/2///62720#UAA865;705749717;mm/bar;millimetre per bar
+0112/2///62720#UAA866;705749718;mm/h;millimetre per hour
+0112/2///62720#UAA867;705749719;mm/s;millimetre per second
+0112/2///62720#UAA868;705749720;mm/y;millimetre per year
+0112/2///62720#UAA869;705749721;mm?;millimetre to the fourth power
+0112/2///62720#UAA870;705749744;mm?³;reciprocal cubic millimetre
+0112/2///62720#UAA871;705749745;mm²;square millimetre
+0112/2///62720#UAA872;705749746;mm²/s;square millimetre per second
+0112/2///62720#UAA873;705749747;mm³;cubic millimetre
+0112/2///62720#UAA874;705749748;mm³/m³;cubic millimetre per cubic metre
+0112/2///62720#UAA875;705749749;mmH?O;conventional millimetre of water
+0112/2///62720#UAA876;705749750;mmHg;conventional millimetre of mercury
+0112/2///62720#UAA877;705749751;mmol;millimole
+0112/2///62720#UAA878;705749752;mmol/g;millimole per gram
+0112/2///62720#UAA879;705749753;mmol/kg;millimole per kilogram
+0112/2///62720#UAA880;705749776;mo;month
+0112/2///62720#UAA881;705749777;mo?¹;reciprocal month
+0112/2///62720#UAA882;705749778;mol;mole
+0112/2///62720#UAA883;705749779;mol/dm³;mole per cubic decimetre
+0112/2///62720#UAA884;705749780;mol/h;mole per hour
+0112/2///62720#UAA885;705749781;mol/kg;mole per kilogram
+0112/2///62720#UAA886;705749782;mol/(kg·K);mole per kilogram kelvin
+0112/2///62720#UAA887;705749783;mol/(kg·bar);mole per kilogram bar
+0112/2///62720#UAA888;705749784;mol/l;mole per litre
+0112/2///62720#UAA889;705749785;mol/(l·K);mole per litre kelvin
+0112/2///62720#UAA891;705749809;mol/m³;mole per cubic metre
+0112/2///62720#UAA892;705749810;mol/(m³·K);mole per cubic metre kelvin
+0112/2///62720#UAA894;705749812;mol/min;mole per minute
+0112/2///62720#UAA895;705749813;mol/s;mole per second
+0112/2///62720#UAA897;705749815;mrad;milliradian
+0112/2///62720#UAA898;705749816;mrem;milliroentgen equivalent
+0112/2///62720#UAA899;705749817;ms;millisecond
+0112/2///62720#UAA900;705750544;n?·m;nanoohm metre
+0112/2///62720#UAA901;705750545;nA;nanoampere
+0112/2///62720#UAA902;705750546;nC;nanocoulomb
+0112/2///62720#UAA903;705750547;nF;nanofarad
+0112/2///62720#UAA904;705750548;nF/m;nanofarad per metre
+0112/2///62720#UAA905;705750549;nH;nanohenry
+0112/2///62720#UAA906;705750550;nH/m;nanohenry per metre
+0112/2///62720#UAA907;705750551;nS/cm;nanosiemens per centimetre
+0112/2///62720#UAA908;705750552;nS/m;nanosiemens per metre
+0112/2///62720#UAA909;705750553;nT;nanotesla
+0112/2///62720#UAA910;705750576;nW;nanowatt
+0112/2///62720#UAA911;705750577;ng/kg;nanogram per kilogram
+0112/2///62720#UAA912;705750578;nm;nanometre
+0112/2///62720#UAA913;705750579;ns;nanosecond
+0112/2///62720#UAA914;705750580;octave;octave
+0112/2///62720#UAA915;705750581;1;one
+0112/2///62720#UAA916;705750582;oz (US fluid);fluid ounce (US)
+0112/2///62720#UAA917;705750583;oz;ounce (avoirdupois)
+0112/2///62720#UAA918;705750584;oz/yd³;ounce (avoirdupois) per cubic yard
+0112/2///62720#UAA919;705750585;oz/d;ounce (avoirdupois) per day
+0112/2///62720#UAA920;705750608;oz/h;ounce (avoirdupois) per hour
+0112/2///62720#UAA921;705750609;oz/min;ounce (avoirdupois) per minute
+0112/2///62720#UAA922;705750610;oz/s;ounce (avoirdupois) per second
+0112/2///62720#UAA923;705750611;oz/gal (UK);ounce (avoirdupois) per gallon (UK)
+0112/2///62720#UAA924;705750612;oz/gal (US);ounce (avoirdupois) per gallon (US)
+0112/2///62720#UAA925;705750613;oz/in³;ounce (avoirdupois) per cubic inch
+0112/2///62720#UAA926;705750614;ozf;ounce (avoirdupois)-force
+0112/2///62720#UAA927;705750615;ozf·in;ounce (avoirdupois)-force inch
+0112/2///62720#UAA928;705750616;pA;picoampere
+0112/2///62720#UAA929;705750617;pC;picocoulomb
+0112/2///62720#UAA930;705750640;pF;picofarad
+0112/2///62720#UAA931;705750641;pF/m;picofarad per metre
+0112/2///62720#UAA932;705750642;pH;picohenry
+0112/2///62720#UAA933;705750643;pPa/km;picopascal per kilometre
+0112/2///62720#UAA934;705750644;pS/m;picosiemens per metre
+0112/2///62720#UAA935;705750645;pW;picowatt
+0112/2///62720#UAA936;705750646;pW/m²;picowatt per square metre
+0112/2///62720#UAA937;705750647;Phon;phon
+0112/2///62720#UAA938;705750648;pixel;pixel
+0112/2///62720#UAA939;705750649;pk (UK);peck (UK)
+0112/2///62720#UAA940;705750672;pk (UK)/d;peck (UK) per day
+0112/2///62720#UAA941;705750673;pk (UK)/h;peck (UK) per hour
+0112/2///62720#UAA942;705750674;pk (UK)/min;peck (UK) per minute
+0112/2///62720#UAA943;705750675;pk (UK)/s;peck (UK) per second
+0112/2///62720#UAA944;705750676;pk (US dry)/d;peck (US dry) per day
+0112/2///62720#UAA945;705750677;pk (US dry)/h;peck (US dry) per hour
+0112/2///62720#UAA946;705750678;pk (US dry)/min;peck (US dry) per minute
+0112/2///62720#UAA947;705750679;pk (US dry)/s;peck (US dry) per second
+0112/2///62720#UAA948;705750680;pk (US);peck (US)
+0112/2///62720#UAA949;705750681;pm;picometre
+0112/2///62720#UAA950;705750704;ps;picosecond
+0112/2///62720#UAA951;705750705;psi/psi;psi per psi
+0112/2///62720#UAA952;705750706;pt (UK);pint (UK)
+0112/2///62720#UAA953;705750707;pt (UK)/d;pint (UK) per day
+0112/2///62720#UAA954;705750708;pt (UK)/h;pint (UK) per hour
+0112/2///62720#UAA955;705750709;pt (UK)/min;pint (UK) per minute
+0112/2///62720#UAA956;705750710;pt (UK)/s;pint (UK) per second
+0112/2///62720#UAA957;705750711;pt (US liq.);pint (US liquid)
+0112/2///62720#UAA958;705750712;pt (US liq.)/d;pint (US liquid) per day
+0112/2///62720#UAA959;705750713;pt (US liq.)/h;pint (US liquid) per hour
+0112/2///62720#UAA960;705750736;pt (US liq.)/min;pint (US liquid) per minute
+0112/2///62720#UAA961;705750737;pt (US liq.)/s;pint (US liquid) per second
+0112/2///62720#UAA962;705750738;pt (US dry);pint (US dry)
+0112/2///62720#UAA963;705750739;qt (UK liq.);quart (UK)
+0112/2///62720#UAA964;705750740;qt (US liq.);quart (US liquid)
+0112/2///62720#UAA965;705750741;qt (US dry);quart (US dry)
+0112/2///62720#UAA966;705750742;rad;radian
+0112/2///62720#UAA967;705750743;rad/m;radian per metre
+0112/2///62720#UAA968;705750744;rad/s;radian per second
+0112/2///62720#UAA969;705750745;rad/s²;radian per second squared
+0112/2///62720#UAA970;705750768;rd (US);rod (based on US survey foot)
+0112/2///62720#UAA971;705750769;rem;roentgen equivalent
+0112/2///62720#UAA972;705750770;s;second
+0112/2///62720#UAA973;705750771;s?¹;reciprocal second
+0112/2///62720#UAA974;705750772;1/(s·m²);reciprocal second per square metre
+0112/2///62720#UAA975;705750773;1/(s·m³);reciprocal second per cubic metre
+0112/2///62720#UAA976;705750774;1/(s·sr);reciprocal second per steradian
+0112/2///62720#UAA977;705750775;1/(s·sr·m²);reciprocal second per steradian square metre
+0112/2///62720#UAA978;705750776;slug;slug
+0112/2///62720#UAA979;705750777;slug/d;slug per day
+0112/2///62720#UAA980;705750800;slug/(ft·s);slug per foot second
+0112/2///62720#UAA981;705750801;slug/ft³;slug per cubic foot
+0112/2///62720#UAA982;705750802;slug/h;slug per hour
+0112/2///62720#UAA983;705750803;slug/min;slug per minute
+0112/2///62720#UAA984;705750804;slug/s;slug per second
+0112/2///62720#UAA985;705750805;sone;sone
+0112/2///62720#UAA986;705750806;sr;steradian
+0112/2///62720#UAA987;705750807;st;stere
+0112/2///62720#UAA988;705750808;t;tonne (metric ton)
+0112/2///62720#UAA989;705750809;t/K;tonne per kelvin
+0112/2///62720#UAA990;705750832;t/bar;tonne per bar
+0112/2///62720#UAA991;705750833;t/d;tonne per day
+0112/2///62720#UAA992;705750834;t/(d·K);tonne per day kelvin
+0112/2///62720#UAA993;705750835;t/(d·bar);tonne per day bar
+0112/2///62720#UAA994;705750836;t/h;tonne per hour
+0112/2///62720#UAA995;705750837;t/(h·K);tonne per hour kelvin
+0112/2///62720#UAA996;705750838;t/(h·bar);tonne per hour bar
+0112/2///62720#UAA997;705750839;t/m³;tonne per cubic metre
+0112/2///62720#UAA998;705750840;t/(m³·K);tonne per cubic metre kelvin
+0112/2///62720#UAA999;705750841;t/(m³·bar);tonne per cubic metre bar
+0112/2///62720#UAB000;705774096;t/min;tonne per minute
+0112/2///62720#UAB001;705774097;t/(min·K);tonne per minute kelvin
+0112/2///62720#UAB002;705774098;t/(min·bar);tonne per minute bar
+0112/2///62720#UAB003;705774099;t/s;tonne per second
+0112/2///62720#UAB004;705774100;t/(s·K);tonne per second kelvin
+0112/2///62720#UAB005;705774101;t/(s·bar);tonne per second bar
+0112/2///62720#UAB006;705774102;tablespoon (US);tablespoon
+0112/2///62720#UAB007;705774103;teaspoon (US);teaspoon
+0112/2///62720#UAB008;705774104;British shipping ton;ton (UK shipping)
+0112/2///62720#UAB009;705774105;ton (UK);ton (UK) or long ton (US)
+0112/2///62720#UAB010;705774128;ton (UK)/d;ton long per day
+0112/2///62720#UAB011;705774129;US) shipping ton;ton (US shipping)
+0112/2///62720#UAB012;705774130;ton (US);ton (US) or short ton (UK/US)
+0112/2///62720#UAB013;705774131;ton (US)/°F;ton short per degree Fahrenheit
+0112/2///62720#UAB014;705774132;ton (US)/d;ton short per day
+0112/2///62720#UAB015;705774133;ton (US)/(h·°F);ton short per hour degree Fahrenheit
+0112/2///62720#UAB016;705774134;ton (US)/(h·psi);ton short per hour psi
+0112/2///62720#UAB017;705774135;ton (US)/psi;ton short per psi
+0112/2///62720#UAB018;705774136;ton.l/yd³ (UK);ton (UK long) per cubic yard
+0112/2///62720#UAB019;705774137;ton.s (US)/h;ton (US) per hour
+0112/2///62720#UAB020;705774160;ton.s/yd³ (US);ton (US short) per cubic yard
+0112/2///62720#UAB021;705774161;ton·sh-force;ton-force (US short)
+0112/2///62720#UAB022;705774162;Torr;torr
+0112/2///62720#UAB023;705774163;var;volt ampere reactive
+0112/2///62720#UAB024;705774164;wk;week
+0112/2///62720#UAB025;705774165;y (365 days);common year
+0112/2///62720#UAB026;705774166;y;year
+0112/2///62720#UAB027;705774167;y?¹;reciprocal year
+0112/2///62720#UAB028;705774168;y (sidereal);sidereal year
+0112/2///62720#UAB029;705774169;y (tropical);tropical year
+0112/2///62720#UAB030;705774192;yd;yard
+0112/2///62720#UAB031;705774193;yd/°F;yard per degree Fahrenheit
+0112/2///62720#UAB032;705774194;yd/psi;yard per psi
+0112/2///62720#UAB033;705774195;yd?³;reciprocal cubic yard
+0112/2///62720#UAB034;705774196;yd²;square yard
+0112/2///62720#UAB035;705774197;yd³;cubic yard
+0112/2///62720#UAB036;705774198;yd³/°F;cubic yard per degree Fahrenheit
+0112/2///62720#UAB037;705774199;yd³/d;cubic yard per day
+0112/2///62720#UAB038;705774200;yd³/h;cubic yard per hour
+0112/2///62720#UAB039;705774201;yd³/psi;cubic yard per psi
+0112/2///62720#UAB040;705774224;yd³/min;cubic yard per minute
+0112/2///62720#UAB041;705774225;yd³/s;cubic yard per second
+0112/2///62720#UAB042;705774226;Gal;Galileo
+0112/2///62720#UAB043;705774227;mGal;milligal
+0112/2///62720#UAB044;705774228;in/s²;inch per second squared
+0112/2///62720#UAB045;705774229;dyn·s/cm?;dyne second per centimetre to the fifth power
+0112/2///62720#UAB046;705774230;kCi;kilocurie
+0112/2///62720#UAB047;705774231;GBq;gigabecquerel
+0112/2///62720#UAB048;705774232;a;are
+0112/2///62720#UAB049;705774233;daa;decare
+0112/2///62720#UAB050;705774256;mi²;square mile
+0112/2///62720#UAB051;705774257;A/mm²;ampere per square millimetre
+0112/2///62720#UAB052;705774258;A/cm²;ampere per square centimetre
+0112/2///62720#UAB053;705774259;kA·h;kiloampere hour
+0112/2///62720#UAB054;705774260;V/cm;volt per centimetre
+0112/2///62720#UAB055;705774261;erg/(cm²·s);erg per square centimetre second
+0112/2///62720#UAB056;705774262;mR;milliroentgen
+0112/2///62720#UAB057;705774263;kR;kiloroentgen
+0112/2///62720#UAB058;705774264;Å?¹;reciprocal ångström
+0112/2///62720#UAB059;705774265;kp;kilopond
+0112/2///62720#UAB060;705774288;kPa/mm;kilopascal per millimetre
+0112/2///62720#UAB061;705774289;erg/g;erg per gram
+0112/2///62720#UAB062;705774290;hm;hectometre
+0112/2///62720#UAB063;705774291;fm;femtometre
+0112/2///62720#UAB064;705774292;dam;decametre
+0112/2///62720#UAB065;705774293;NM;nautical mile
+0112/2///62720#UAB066;705774294;ua;astronomical unit
+0112/2///62720#UAB067;705774295;pc;parsec
+0112/2///62720#UAB068;705774296;fth;fathom (based on US survey foot)
+0112/2///62720#UAB069;705774297;ly;light year
+0112/2///62720#UAB070;705774320;kg/mm;kilogram per millimetre
+0112/2///62720#UAB071;705774321;lb/in;pound (avoirdupois) per inch
+0112/2///62720#UAB072;705774322;A/mm;ampere per millimetre
+0112/2///62720#UAB073;705774323;A/cm;ampere per centimetre
+0112/2///62720#UAB074;705774324;Wb/mm;weber per millimetre
+0112/2///62720#UAB075;705774325;dag;decagram
+0112/2///62720#UAB076;705774326;dg;decigram
+0112/2///62720#UAB077;705774327;cg;centigram
+0112/2///62720#UAB078;705774328;dt;decitonne
+0112/2///62720#UAB079;705774329;hg;hectogram
+0112/2///62720#UAB080;705774352;kt;kilotonne
+0112/2///62720#UAB081;705774353;st;stone (UK)
+0112/2///62720#UAB082;705774354;tr oz;troy ounce
+0112/2///62720#UAB083;705774355;u;unified atomic mass unit
+0112/2///62720#UAB084;705774356;dN·m;decinewton metre
+0112/2///62720#UAB085;705774357;ml/(cm²·s);millilitre per square centimetre second
+0112/2///62720#UAB086;705774358;ft³/(min/ft²);cubic foot per minute per square foot
+0112/2///62720#UAB087;705774359;hbar;hectobar
+0112/2///62720#UAB088;705774360;kbar;kilobar
+0112/2///62720#UAB089;705774361;µbar;microbar
+0112/2///62720#UAB090;705774384;?·cm;ohm centimetre
+0112/2///62720#UAB091;705774385;Ci/kg;curie per kilogram
+0112/2///62720#UAB092;705774386;MBq/kg;megabecquerel per kilogram
+0112/2///62720#UAB093;705774387;MJ/kg;megajoule per kilogram
+0112/2///62720#UAB094;705774388;dl/g;decilitre per gram
+0112/2///62720#UAB095;705774389;ml/kg;millilitre per kilogram
+0112/2///62720#UAB096;705774390;calIT/(s·cm²·K);calorie (international table) per second square centimetre kelvin
+0112/2///62720#UAB097;705774391;calth/(s·cm²·K);calorie (thermochemical) per second square centimetre kelvin
+0112/2///62720#UAB098;705774392;BtuIT/(s·ft²·°R);British thermal unit (international table) per second square foot degree Rankine
+0112/2///62720#UAB099;705774393;BtuIT/(h·ft²·°R);British thermal unit (international table) per hour square foot degree Rankine
+0112/2///62720#UAB100;705775120;C/mm²;coulomb per square millimetre
+0112/2///62720#UAB101;705775121;C/cm²;coulomb per square centimetre
+0112/2///62720#UAB102;705775122;dyn·s/cm³;dyne second per cubic centimetre
+0112/2///62720#UAB103;705775123;g/cm²;gram per square centimetre
+0112/2///62720#UAB104;705775124;oz/yd²;ounce (avoirdupois) per square yard
+0112/2///62720#UAB105;705775125;oz/ft²;ounce (avoirdupois) per square foot
+0112/2///62720#UAB106;705775126;dyn/cm;dyne per centimetre
+0112/2///62720#UAB107;705775127;BtuIT/(s·ft·°R);British thermal unit (international table) per second foot degree Rankine
+0112/2///62720#UAB108;705775128;calIT/(s·cm·K);calorie (international table) per second centimetre kelvin
+0112/2///62720#UAB109;705775129;calth/(s·cm·K);calorie (thermochemical) per second centimetre kelvin
+0112/2///62720#UAB110;705775152;kn;knot
+0112/2///62720#UAB111;705775153;mph;mile per hour
+0112/2///62720#UAB112;705775154;Ml;megalitre
+0112/2///62720#UAB113;705775155;dl;decilitre
+0112/2///62720#UAB114;705775156;kl;kilolitre
+0112/2///62720#UAB115;705775157;dal;decalitre
+0112/2///62720#UAB116;705775158;std;standard
+0112/2///62720#UAB117;705775159;bbl (US dry);dry barrel (US)
+0112/2///62720#UAB118;705775160;gal (US dry);dry gallon (US)
+0112/2///62720#UAB119;705775161;C/mm³;coulomb per cubic millimetre
+0112/2///62720#UAB120;705775184;C/cm³;coulomb per cubic centimetre
+0112/2///62720#UAB121;705775185;kl/h;kilolitre per hour
+0112/2///62720#UAB122;705775186;EJ;exajoule
+0112/2///62720#UAB123;705775187;PJ;petajoule
+0112/2///62720#UAB124;705775188;fJ;femtojoule
+0112/2///62720#UAB125;705775189;aJ;attojoule
+0112/2///62720#UAB126;705775190;Bq/m³;becquerel per cubic metre
+0112/2///62720#UAB127;705775191;b/eV;barn per electronvolt
+0112/2///62720#UAB128;705775192;b/sr;barn per steradian
+0112/2///62720#UAB129;705775193;kbyte;kilobyte
+0112/2///62720#UAB130;705775216;kPa·m²/g;kilopascal square metre per gram
+0112/2///62720#UAB131;705775217;Mbyte;megabyte
+0112/2///62720#UAB132;705775218;oz·in;ounce (avoirdupois) inch
+0112/2///62720#UAB133;705775219;oz·ft;ounce (avoirdupois) foot
+0112/2///62720#UAB134;705775220;Oe;oersted
+0112/2///62720#UAB135;705775221;Gs;gauss
+0112/2///62720#UAB136;705775222;kGs;kilogauss
+0112/2///62720#UAB137;705775223;lb/in²;pound (avoirdupois) per square inch
+0112/2///62720#UAB138;705775224;klbf/in²;kilopound-force per square inch
+0112/2///62720#UAB139;705775225;cal??;calorie (15 °C)
+0112/2///62720#UAB140;705775248;b/(sr·eV);barn per steradian electronvolt
+0112/2///62720#UAB141;705775249;BtuIT/(lb·°R);British thermal unit (international table) per pound degree Rankine
+0112/2///62720#UAB142;705775250;C/mol;coulomb per mole
+0112/2///62720#UAB143;705775251;m³/C;cubic metre per coulomb
+0112/2///62720#UAB144;705775252;dyn·s/cm;dyne second per centimetre
+0112/2///62720#UAB145;705775253;erg/cm;erg per centimetre
+0112/2///62720#UAB146;705775254;erg/cm³;erg per cubic centimetre
+0112/2///62720#UAB147;705775255;erg/(g·s);erg per gram second
+0112/2///62720#UAB149;705775257;erg·cm²/g;erg square centimetre per gram
+0112/2///62720#UAB150;705775280;BtuIT/lb;British thermal unit (international table) per pound
+0112/2///62720#UAB151;705775281;J·s;joule second
+0112/2///62720#UAB152;705775282;Gibit;gibibit
+0112/2///62720#UAB153;705775283;calth/g;calorie (thermochemical) per gram
+0112/2///62720#UAB154;705775284;kgf·m/s;kilogram-force metre per second
+0112/2///62720#UAB155;705775285;Mx;maxwell
+0112/2///62720#UAB156;705775286;Gbit;gigabit
+0112/2///62720#UAB157;705775287;m?²/s;reciprocal square metre reciprocal second
+0112/2///62720#UAB158;705775288;Kibit;kibibit
+0112/2///62720#UAB159;705775289;kbit;kilobit
+0112/2///62720#UAB160;705775312;kV·A·h;kilovolt ampere hour
+0112/2///62720#UAB161;705775313;rad·m²/mol;radian square metre per mole
+0112/2///62720#UAB162;705775314;rad·m²/kg;radian square metre per kilogram
+0112/2///62720#UAB163;705775315;m?³/s;reciprocal cubic metre per second
+0112/2///62720#UAB164;705775316;1/(eV·m³);reciprocal electron volt per cubic metre
+0112/2///62720#UAB165;705775317;1/(J·m³);reciprocal joule per cubic metre
+0112/2///62720#UAB166;705775318;Kt;metric carat
+0112/2///62720#UAB167;705775319;Mibit;mebibit
+0112/2///62720#UAB168;705775320;cm²/erg;square centimetre per erg
+0112/2///62720#UAB169;705775321;cm²/(sr·erg);square centimetre per steradian erg
+0112/2///62720#UAB170;705775344;m·K;metre kelvin
+0112/2///62720#UAB171;705775345;Mbit;megabit
+0112/2///62720#UAB172;705775346;V²/K²;volt squared per kelvin squared
+0112/2///62720#UAB173;705775347;V/K;volt per kelvin
+0112/2///62720#UAB174;705775348;kg/cm²;kilogram per square centimetre
+0112/2///62720#UAB175;705775349;W/(m²·K?);watt per square metre kelvin to the fourth power
+0112/2///62720#UAB176;705775350;calIT/g;calorie (international table) per gram
+0112/2///62720#UAB177;705775351;MJ/s;megajoule per second
+0112/2///62720#UAB178;705775352;s/(m³·rad);second per cubic metre radian
+0112/2///62720#UAB179;705775353;dam³;cubic decametre
+0112/2///62720#UAB180;705775376;dram (av.);dram (US)
+0112/2///62720#UAB181;705775377;dr (troy);dram (UK)
+0112/2///62720#UAB182;705775378;pwt;pennyweight
+0112/2///62720#UAB183;705775379;N/cm²;newton per square centimetre
+0112/2///62720#UAB184;705775380;kcalth/h;kilocalorie (thermochemical) per hour
+0112/2///62720#UAB185;705775381;Gbyte;gigabyte
+0112/2///62720#UAB186;705775382;Tbyte;terabyte
+0112/2///62720#UAB187;705775383;Pbyte;petabyte
+0112/2///62720#UAB188;705775384;J/cm²;joule per square centimetre
+0112/2///62720#UAB189;705775385;kgf·m/cm²;kilogram-force metre per square centimetre
+0112/2///62720#UAB190;705775408;Pbit;petabit
+0112/2///62720#UAB191;705775409;Tbit;terabit
+0112/2///62720#UAB192;705775410;lbf/ft;pound-force per foot
+0112/2///62720#UAB193;705775411;cm²/g;square centimetre per gram
+0112/2///62720#UAB194;705775412;lb·in;pound (avoirdupois) inch
+0112/2///62720#UAB195;705775413;kvar·h;kilovolt ampere reactive hour
+0112/2///62720#UAB196;705775414;kat;katal
+0112/2///62720#UAB197;705775415;lb (US);troy pound (US)
+0112/2///62720#UAB198;705775416;Mvar·h;megavolt ampere reactive hour
+0112/2///62720#UAB199;705775417;Mvar;megavolt ampere reactive
+0112/2///62720#UAB200;705776144;mho;mho
+0112/2///62720#UAB201;705776145;µmho;micromho
+0112/2///62720#UAB202;705776146;qr. l.;quarter (UK)
+0112/2///62720#UAB203;705776147;ch (UK);Gunter's chain
+0112/2///62720#UAB204;705776148;fur;furlong
+0112/2///62720#UAB205;705776149;mil (angle);mil
+0112/2///62720#UAB206;705776150;rev;revolution
+0112/2///62720#UAB207;705776151;cmil;circular mil
+0112/2///62720#UAB208;705776152;mi² (US survey);square mile (based on U.S. survey foot)
+0112/2///62720#UAB209;705776153;ft?;foot to the fourth power
+0112/2///62720#UAB210;705776176;Bi;biot
+0112/2///62720#UAB211;705776177;Gi;gilbert
+0112/2///62720#UAB212;705776178;Fr;franklin
+0112/2///62720#UAB213;705776179;?;gamma
+0112/2///62720#UAB214;705776180;unit pole;unit pole
+0112/2///62720#UAB215;705776181;?·cmil/ft;ohm circular mil per foot
+0112/2///62720#UAB216;705776182;Btu (39 ºF);British thermal unit (39 ºF)
+0112/2///62720#UAB217;705776183;Btu (59 ºF);British thermal unit (59 ºF)
+0112/2///62720#UAB218;705776184;Btu (60 ºF);British thermal unit (60 ºF)
+0112/2///62720#UAB219;705776185;cal??;calorie (20 ºC)
+0112/2///62720#UAB220;705776208;ft·pdl;foot poundal
+0112/2///62720#UAB221;705776209;quad;quad (10¹? BtuIT)
+0112/2///62720#UAB222;705776210;thm (EC);therm (EC)
+0112/2///62720#UAB223;705776211;thm (US);therm (U.S.)
+0112/2///62720#UAB224;705776212;W/cm²;watt per square centimetre
+0112/2///62720#UAB225;705776213;W/in²;watt per square inch
+0112/2///62720#UAB226;705776214;shake;shake
+0112/2///62720#UAB227;705776215;pdl/ft²)·s;poundal second per square foot
+0112/2///62720#UAB228;705776216;rhe;rhe
+0112/2///62720#UAB229;705776217;mi/min;mile per minute
+0112/2///62720#UAB230;705776240;mi/s;mile per second
+0112/2///62720#UAB231;705776241;r/min;revolution per minute
+0112/2///62720#UAB232;705776242;kip;kilopound-force
+0112/2///62720#UAB233;705776243;pdl;poundal
+0112/2///62720#UAB234;705776244;AT;ton, assay
+0112/2///62720#UAB235;705776245;cmHg (0 ºC);centimetre of mercury (0 ºC)
+0112/2///62720#UAB236;705776246;cmH?O (4 °C);centimetre of water (4 ºC)
+0112/2///62720#UAB237;705776247;ftH?O (39,2 ºF);foot of water (39.2 ºF)
+0112/2///62720#UAB238;705776248;inHg (32 ºF);inch of mercury (32 ºF)
+0112/2///62720#UAB239;705776249;inHg (60 ºF);inch of mercury (60 ºF)
+0112/2///62720#UAB240;705776272;inH?O (39,2 ºF);inch of water (39.2 ºF)
+0112/2///62720#UAB241;705776273;inH?O (60 ºF);inch of water (60 ºF)
+0112/2///62720#UAB242;705776274;ksi;kip per square inch
+0112/2///62720#UAB243;705776275;pdl/ft²;poundal per square foot
+0112/2///62720#UAB244;705776276;den;denier
+0112/2///62720#UAB245;705776277;lb/yd;pound (avoirdupois) per yard
+0112/2///62720#UAB246;705776278;tex;tex
+0112/2///62720#UAB247;705776279;ft²/h;square foot per hour
+0112/2///62720#UAB248;705776280;ºF/(BtuIT/h);degree Fahrenheit hour per British thermal unit (international table)
+0112/2///62720#UAB249;705776281;ºF/(Btuth/h);degree Fahrenheit hour per British thermal unit (thermochemical)
+0112/2///62720#UAB250;705776304;ºF/(BtuIT/s);degree Fahrenheit second per British thermal unit (international table)
+0112/2///62720#UAB251;705776305;ºF/(Btuth/s);degree Fahrenheit second per British thermal unit (thermochemical)
+0112/2///62720#UAB252;705776306;ºF·h·ft²/(BtuIT·in);degree Fahrenheit hour square foot per British thermal unit (international table) inch
+0112/2///62720#UAB253;705776307;ºF·h·ft²/(Btuth·in);degree Fahrenheit hour square foot per British thermal unit (thermochemical) inch
+0112/2///62720#UAB254;705776308;lm/ft²;lumen per square foot
+0112/2///62720#UAB255;705776309;ph;phot
+0112/2///62720#UAB256;705776310;ftc;footcandle
+0112/2///62720#UAB257;705776311;cd/in²;candela per square inch
+0112/2///62720#UAB258;705776312;ftL;footlambert
+0112/2///62720#UAB259;705776313;Lb;lambert
+0112/2///62720#UAB260;705776336;sb;stilb
+0112/2///62720#UAB261;705776337;oz/in²;ounce (avoirdupois) per square inch
+0112/2///62720#UAB262;705776338;lb/ft²;pound (avoirdupois) per square foot
+0112/2///62720#UAB263;705776339;BtuIT/(ft²·h);British thermal unit (international table) per square foot hour
+0112/2///62720#UAB264;705776340;Btuth/(ft²·h);British thermal unit (thermochemical) per square foot hour
+0112/2///62720#UAB265;705776341;Btuth/(ft²·min);British thermal unit (thermochemical) per square foot minute
+0112/2///62720#UAB266;705776342;BtuIT/(ft²·s);British thermal unit (international table) per square foot second
+0112/2///62720#UAB267;705776343;Btuth/(ft²·s);British thermal unit (thermochemical) per square foot second
+0112/2///62720#UAB268;705776344;BtuIT/(in²·s);British thermal unit (international table) per square inch second
+0112/2///62720#UAB269;705776345;calth/(cm²·min);calorie (thermochemical) per square centimetre minute
+0112/2///62720#UAB270;705776368;calth/(cm²·s);calorie (thermochemical) per square centimetre second
+0112/2///62720#UAB271;705776369;BtuIT/ºF;British thermal unit (international table) per degree Fahrenheit
+0112/2///62720#UAB272;705776370;Btuth/ºF;British thermal unit (thermochemical) per degree Fahrenheit
+0112/2///62720#UAB273;705776371;BtuIT/ºR;British thermal unit (international table) per degree Rankine
+0112/2///62720#UAB274;705776372;Btuth/ºR;British thermal unit (thermochemical) per degree Rankine
+0112/2///62720#UAB275;705776373;Btuth/°R)/lb;British thermal unit (thermochemical) per pound degree Rankine
+0112/2///62720#UAB276;705776374;BtuIT/(h·ft²·ºF);British thermal unit (international table) per hour square foot degree Fahrenheit
+0112/2///62720#UAB277;705776375;Btuth/(h·ft²·ºF);British thermal unit (thermochemical) per hour square foot degree Fahrenheit
+0112/2///62720#UAB278;705776376;BtuIT/(s·ft²·ºF);British thermal unit (international table) per second square foot degree Fahrenheit
+0112/2///62720#UAB279;705776377;Btuth/(s·ft²·ºF);British thermal unit (thermochemical) per second square foot degree Fahrenheit
+0112/2///62720#UAB280;705776400;BtuIT/ft³;British thermal unit (international table) per cubic foot
+0112/2///62720#UAB281;705776401;Btuth/ft³;British thermal unit (thermochemical) per cubic foot
+0112/2///62720#UAB282;705776402;Btuth/lb;British thermal unit (thermochemical) per pound
+0112/2///62720#UAB283;705776403;BtuIT/ft²;British thermal unit (international table) per square foot
+0112/2///62720#UAB284;705776404;Btuth/ft²;British thermal unit (thermochemical) per square foot
+0112/2///62720#UAB285;705776405;calth/cm²;calorie (thermochemical) per square centimetre
+0112/2///62720#UAB286;705776406;ft (US survey);foot (U.S. survey)
+0112/2///62720#UAB287;705776407;mi (US survey);mile (based on U.S. survey foot)
+0112/2///62720#UAB288;705776408;acre?ft (US survey);acre?foot (based on U.S. survey foot)
+0112/2///62720#UAB289;705776409;cord;cord (128 ft3)
+0112/2///62720#UAB290;705776432;mi³;cubic mile (UK statute)
+0112/2///62720#UAB291;705776433;RT;ton, register
+0112/2///62720#UAB292;705776434;lbf·ft/in;pound-force foot per inch
+0112/2///62720#UAB293;705776435;lbf·in/in;pound-force inch per inch
+0112/2///62720#UAB294;705776436;perm (0 ºC);perm (0 ºC)
+0112/2///62720#UAB295;705776437;perm (23 ºC);perm (23 ºC)
+0112/2///62720#UAB296;705776438;Ly;langley
+0112/2///62720#UAB297;705776439;b;barn
+0112/2///62720#UAB298;705776440;mGy/s;milligray per second
+0112/2///62720#UAB299;705776441;µGy/s;microgray per second
+0112/2///62720#UAB300;705777168;nGy/s;nanogray per second
+0112/2///62720#UAB301;705777169;Sv/s;sievert per second
+0112/2///62720#UAB302;705777170;mSv/s;millisievert per second
+0112/2///62720#UAB303;705777171;µSv/s;microsievert per second
+0112/2///62720#UAB304;705777172;nSv/s;nanosievert per second
+0112/2///62720#UAB305;705777173;byte/s;byte per second
+0112/2///62720#UAB306;705777174;kbyte/s;kilobyte per second
+0112/2///62720#UAB307;705777175;Mbyte/s;megabyte per second
+0112/2///62720#UAB308;705777176;N·m/°;newton metre per degree
+0112/2///62720#UAB309;705777177;N·m/rad;newton metre per radian
+0112/2///62720#UAB310;705777200;kg/(m³·Pa);kilogram per cubic metre pascal
+0112/2///62720#UAB311;705777201;P/Pa;poise per pascal
+0112/2///62720#UAB312;705777202;V/Pa;volt per pascal
+0112/2///62720#UAB313;705777203;m/(s·bar);metre per second bar
+0112/2///62720#UAB314;705777204;St/Pa;stokes per pascal
+0112/2///62720#UAB315;705777205;m/Pa;metre per pascal
+0112/2///62720#UAB316;705777206;kg/Pa;kilogram per pascal
+0112/2///62720#UAB317;705777207;mol/(kg·Pa);mol per kilogram pascal
+0112/2///62720#UAB319;705777209;K/Pa;kelvin per pascal
+0112/2///62720#UAB320;705777232;A/Pa;ampere per pascal
+0112/2///62720#UAB321;705777233;kg/(s·Pa);kilogram per second pascal
+0112/2///62720#UAB322;705777234;m³/(s·Pa);cubic metre per second pascal
+0112/2///62720#UAB323;705777235;m³/Pa;cubic metre per pascal
+0112/2///62720#UAB324;705777236;J?¹;reciprocal joule
+0112/2///62720#UAB325;705777237;m³/(s·m²);cubic metre per second square metre
+0112/2///62720#UAB326;705777238;V?¹;reciprocal volt
+0112/2///62720#UAB327;705777239;rad?¹;reciprocal radian
+0112/2///62720#UAB328;705777240;m/h;metre per hour
+0112/2///62720#UAB332;705777266;N·m²/A;newton square metre per ampere
+0112/2///62720#UAB333;705777267;Wb·m;weber metre
+0112/2///62720#UAB334;705777268;mol/m²)**??B};mole per cubic metre to the power sum of stoichiometric numbers
+0112/2///62720#UAB335;705777269;Pa**??B};pascal to the power sum of stoichiometric numbers
+0112/2///62720#UAB336;705777270;J/T;joule per tesla
+0112/2///62720#UAB337;705777271;C/m;coulomb per metre
+0112/2///62720#UAB338;705777272;dec;decade
+0112/2///62720#UAB339;705777273;Pa²·s;pascal squared second
+0112/2///62720#UAB340;705777296;E;erlang
+0112/2///62720#UAB341;705777297;o;octet
+0112/2///62720#UAB342;705777298;o/s;octet per second
+0112/2///62720#UAB343;705777299;Sh;shannon
+0112/2///62720#UAB344;705777300;Hart;hartley
+0112/2///62720#UAB345;705777301;nat;natural unit of information
+0112/2///62720#UAB346;705777302;Sh/s;shannon per second
+0112/2///62720#UAB347;705777303;Hart/s;hartley per second
+0112/2///62720#UAB348;705777304;nat/s;natural unit of information per second
+0112/2///62720#UAB349;705777305;s/kg;second per kilogram
+0112/2///62720#UAB350;705777328;W·m²;watt square metre
+0112/2///62720#UAB351;705777329;B;bel
+0112/2///62720#UAB352;705777330;1/(Hz·rad·m³);second per radian cubic metre
+0112/2///62720#UAB353;705777331;A/(m²·K²);ampere per square metre kelvin squared
+0112/2///62720#UAB354;705777332;Wb?¹;reciprocal weber
+0112/2///62720#UAB355;705777333;kg·m/s²;kilogram metre per second squared
+0112/2///62720#UAB356;705777334;J/s;joule per second
+0112/2///62720#UAB357;705777335;pS;picosiemens
+0112/2///62720#UAB358;705777336;kWb;kiloweber
+0112/2///62720#UAB359;705777337;n?;nanoohm
+0112/2///62720#UAB360;705777360;in?¹;reciprocal inch
+0112/2///62720#UAB361;705777361;in?²;reciprocal square inch
+0112/2///62720#UAB362;705777362;mH?O;conventional metre of water
+0112/2///62720#UAB363;705777363;pV;picovolt
+0112/2///62720#UAB364;705777364;kN/m;kilonewton per metre
+0112/2///62720#UAB365;705777365;kcd;kilocandela
+0112/2///62720#UAB366;705777366;t/mo;tonne per month
+0112/2///62720#UAB367;705777367;t/y;tonne per year
+0112/2///62720#UAB368;705777368;kg·m;kilogram metre
+0112/2///62720#UAB369;705777369;mcd;millicandela
+0112/2///62720#UAB370;705777392;in/y;inch per year
+0112/2///62720#UAB371;705777393;dpt;dioptre
+0112/2///62720#UAB372;705777394;%/mo;percent per month
+0112/2///62720#UAB373;705777395;%/hbar;percent per hectobar
+0112/2///62720#UAB374;705777396;W/m;watt per metre
+0112/2///62720#UAB375;705777397;daPa;decapascal
+0112/2///62720#UAB376;705777398;g/mm;gram per millimetre
+0112/2///62720#UAB377;705777399;Fg;French gauge
+0112/2///62720#UAB378;705777400;mm/min;millimetre per minute
+0112/2///62720#UAB379;705777401;bp;big point
+0112/2///62720#UAB380;705777424;l/kg;litre per kilogram
+0112/2///62720#UAB381;705777425;g·mm;gram millimetre
+0112/2///62720#UAB382;705777426;Ch;Charrière gauge
+0112/2///62720#UAB383;705777427;A·min;ampere minute
+0112/2///62720#UAB384;705777428;kF;kilofarad
+0112/2///62720#UAB385;705777429;kT;kilotesla
+0112/2///62720#UAB386;705777430;kH;kilohenry
+0112/2///62720#UAB387;705777431;pfd;pfund
+0112/2///62720#UAB388;705777432;lb/lb;pound per pound
+0112/2///62720#UAB389;705777433;g/mm²;gram per square millimetre
+0112/2///62720#UAB390;705777456;lb/yd²;pound (avoirdupois) per square yard
+0112/2///62720#UAB391;705777457;klb/h;kilopound per hour
+0112/2///62720#UAB392;705777458;km/s;kilometre per second
+0112/2///62720#UAB393;705777459;in/min;inch per minute
+0112/2///62720#UAB394;705777460;yd/s;yard per second
+0112/2///62720#UAB395;705777461;yd/min;yard per minute
+0112/2///62720#UAB396;705777462;yd/h;yard per hour
+0112/2///62720#UAB397;705777463;km/s²;kilometre per second squared
+0112/2///62720#UAB398;705777464;cm/s²;centimetre per second squared
+0112/2///62720#UAB399;705777465;yd/s²;yard per second squared
+0112/2///62720#UAB400;705778192;mm/s²;millimetre per second squared
+0112/2///62720#UAB401;705778193;mi/s²;mile (statute mile) per second squared
+0112/2///62720#UAB402;705778194;lbmol;pound mole
+0112/2///62720#UAB403;705778195;FIT;failures in time
+0112/2///62720#UAB404;705778196;kmol/kg;kilomole per kilogram
+0112/2///62720#UAB405;705778197;lbmol/lb;pound mole per pound
+0112/2///62720#UAB406;705778198;M?·km;megaohm kilometre
+0112/2///62720#UAB407;705778199;°/s²;degree [unit of angle] per second squared
+0112/2///62720#UAB408;705778200;cm²/s;square centimetre per second
+0112/2///62720#UAB409;705778201;dm³/kg;cubic decimetre per kilogram
+0112/2///62720#UAB410;705778224;ft³/lb;cubic foot per pound
+0112/2///62720#UAB411;705778225;in³/lb;cubic inch per pound
+0112/2///62720#UAB412;705778226;p;pond
+0112/2///62720#UAB413;705778227;kg·(cm/s);kilogram centimetre per second
+0112/2///62720#UAB414;705778228;g·(cm/s);gram centimetre per second
+0112/2///62720#UAB415;705778229;lb·(ft/s);pound (avoirdupois) foot per second
+0112/2///62720#UAB416;705778230;lb·(in/s);pound (avoirdupois) inch per second
+0112/2///62720#UAB417;705778231;pdl·ft;poundal foot
+0112/2///62720#UAB418;705778232;pdl·in;poundal inch
+0112/2///62720#UAB419;705778233;dyn·m;dyne metre
+0112/2///62720#UAB420;705778256;mPa/m;millipascal per metre
+0112/2///62720#UAB421;705778257;kPa/m;kilopascal per metre
+0112/2///62720#UAB422;705778258;hPa/m;hectopascal per metre
+0112/2///62720#UAB423;705778259;Atm/m;standard atmosphere per metre
+0112/2///62720#UAB424;705778260;at/m;technical atmosphere per metre
+0112/2///62720#UAB425;705778261;Torr/m;torr per metre
+0112/2///62720#UAB426;705778262;psi/in;psi per inch
+0112/2///62720#UAB427;705778263;pdl/in²;poundal per square inch
+0112/2///62720#UAB428;705778264;N·s/m²;newton second per square metre
+0112/2///62720#UAB429;705778265;kg/(m·s);kilogram per metre second
+0112/2///62720#UAB430;705778288;kg/(m·min);kilogram per metre minute
+0112/2///62720#UAB431;705778289;kg/(m·d);kilogram per metre day
+0112/2///62720#UAB432;705778290;kg/(m·h);kilogram per metre hour
+0112/2///62720#UAB433;705778291;g/(cm·s);gram per centimetre second
+0112/2///62720#UAB434;705778292;pdl·s/in²;poundal second per square inch
+0112/2///62720#UAB435;705778293;lb/(ft·min);pound (avoirdupois) per foot minute
+0112/2///62720#UAB436;705778294;lb/(ft·d);pound (avoirdupois) per foot day
+0112/2///62720#UAB437;705778295;in·pdl;inch poundal
+0112/2///62720#UAB438;705778296;PS;Pferdestaerke
+0112/2///62720#UAB439;705778297;HK;Hefner?Kerze
+0112/2///62720#UAB440;705778320;IK;international candle
+0112/2///62720#UAB441;705778321;cd/ft²;candela per square foot
+0112/2///62720#UAB442;705778322;rem/s;rem per second
+0112/2///62720#UAB443;705778323;1/1;one per one
+0112/2///62720#UAB444;705778324;J/min;joule per minute
+0112/2///62720#UAB445;705778325;J/h;joule per hour
+0112/2///62720#UAB446;705778326;J/d;joule per day
+0112/2///62720#UAB447;705778327;kJ/s;kilojoule per second
+0112/2///62720#UAB448;705778328;kJ/min;kilojoule per minute
+0112/2///62720#UAB449;705778329;kJ/h;kilojoule per hour
+0112/2///62720#UAB450;705778352;kJ/d;kilojoule per day
+0112/2///62720#UAB451;705778353;lbmol/s;pound mole per second
+0112/2///62720#UAB452;705778354;lbmol/h;pound mole per minute
+0112/2///62720#UAB453;705778355;pdl/in;poundal per inch
+0112/2///62720#UAB454;705778356;lbf/yd;pound-force per yard
+0112/2///62720#UAB455;705778357;kcalIT/(g·K);kilocalorie (international table) per gram kelvin
+0112/2///62720#UAB456;705778358;kW/(m²·K);kilowatt per square metre kelvin
+0112/2///62720#UAB457;705778359;W/(m·°C);watt per metre degree Celsius
+0112/2///62720#UAB458;705778360;kW/(m·K);kilowatt per metre kelvin
+0112/2///62720#UAB459;705778361;kW/(m·°C);kilowatt per metre degree Celsius
+0112/2///62720#UAB460;705778384;m²/(s·Pa);square metre per second pascal
+0112/2///62720#UAB461;705778385;m/(°C·m);metre per degree Celcius metre
+0112/2///62720#UAB462;705778386;Pa/(kg/m²);pascal square metre per kilogram
+0112/2///62720#UAB463;705778387;N·m/m;newton metre per metre
+0112/2///62720#UAB464;705778388;Sv/h;sievert per hour
+0112/2///62720#UAB465;705778389;mSv/h;millisievert per hour
+0112/2///62720#UAB466;705778390;µSv/h;microsievert per hour
+0112/2///62720#UAB467;705778391;nSv/h;nanosievert per hour
+0112/2///62720#UAB468;705778392;Sv/min;sievert per minute
+0112/2///62720#UAB469;705778393;mSv/min;millisievert per minute
+0112/2///62720#UAB470;705778416;µSv/min;microsievert per minute
+0112/2///62720#UAB471;705778417;nSv/min;nanosievert per minute
+0112/2///62720#UAB472;705778418;Gy/min;gray per minute
+0112/2///62720#UAB473;705778419;mGy/min;milligray per minute
+0112/2///62720#UAB474;705778420;µGy/min;microgray per minute
+0112/2///62720#UAB475;705778421;nGy/min;nanogray per minute
+0112/2///62720#UAB476;705778422;Gy/h;gray per hour
+0112/2///62720#UAB477;705778423;mGy/h;milligray per hour
+0112/2///62720#UAB478;705778424;µGy/h;microgray per hour
+0112/2///62720#UAB479;705778425;nGy/h;nanogray per hour
+0112/2///62720#UAB480;705778448;B/m;bel per metre
+0112/2///62720#UAB481;705778449;kg/(m²·Pa·s);kilogram per square metre pascal second
+0112/2///62720#UAB482;705778450;m/rad;metre per radiant
+0112/2///62720#UAB483;705778451;lbf·ft/A;pound-force foot per ampere
+0112/2///62720#UAB484;705778452;lbf·ft/lb;pound-force foot per pound
+0112/2///62720#UAB485;705778453;A/kg;ampere per kilogram
+0112/2///62720#UAB486;705778454;C·m²/V;coulomb square metre per volt
+0112/2///62720#UAB487;705778455;J·m²/kg;joule square metre per kilogram
+0112/2///62720#UAB488;705778456;K·m/W;kelvin metre per watt
+0112/2///62720#UAB490;705778480;N·m/kg;newton metre per kilogram
+0112/2///62720#UAB491;705778481;N·m²/kg²;newton square metre per kilogram squared
+0112/2///62720#UAB492;705778482;m²/N;square metre per newton
+0112/2///62720#UAB493;705778483;m²/(s·bar);square metre per second bar
+0112/2///62720#UAB494;705778484;mA/psi;milliampere per pound-force square inch
+0112/2///62720#UAB495;705778485;kg/km;kilogram per kilometre
+0112/2///62720#UAB496;705778486;G?/m;gigaohm per metre
+0112/2///62720#UAB498;705778488;1/VAs;reciprocal volt ampere second
+0112/2///62720#UAB499;705778489;Pa·s/l;pascal second per litre
+0112/2///62720#UAB500;705779216;mmol/l;millimole per litre
+0112/2///62720#UAB503;705779219;cGy;centigray
+0112/2///62720#UAB504;705779220;kGy;kilogray
+0112/2///62720#UAB505;705779221;MGy;megagray
+0112/2///62720#UAB506;705779222;PW;petawatt
+0112/2///62720#UAB507;705779223;EW;exawatt
+0112/2///62720#UAB508;705779224;pJ/s;picojoule per second
+0112/2///62720#UAB509;705779225;nJ/s;nanojoule per second
+0112/2///62720#UAB510;705779248;µJ/s;microjoule per second
+0112/2///62720#UAB511;705779249;mJ/s;millijoule per second
+0112/2///62720#UAB512;705779250;GJ/s;gigajoule per second
+0112/2///62720#UAB513;705779251;TJ/s;terajoule per second
+0112/2///62720#UAB514;705779252;PJ/s;petajoule per second
+0112/2///62720#UAB515;705779253;EJ/s;exajoule per second
+0112/2///62720#UAB523;705779283;nmol;nanomole
+0112/2///62720#UAB530;705779312;pV·A;picovolt ampere
+0112/2///62720#UAB531;705779313;nV·A;nanovolt ampere
+0112/2///62720#UAB532;705779314;µV·A;microvolt ampere
+0112/2///62720#UAB533;705779315;mV·A;millivolt ampere
+0112/2///62720#UAB534;705779316;GV·A;gigavolt ampere
+0112/2///62720#UAB535;705779317;TV·A;teravolt ampere
+0112/2///62720#UAB536;705779318;PV·A;petavolt ampere
+0112/2///62720#UAB537;705779319;EV·A;exavolt ampere
+0112/2///62720#UAB539;705779321;nW/m²;nanowatt per square metre
+0112/2///62720#UAB547;705779351;nN·m/m²;nanonewton metre per square metre
+0112/2///62720#UAB548;705779352;µN·m/m²;micronewton metre per square metre
+0112/2///62720#UAB549;705779353;mN·m/m²;millinewton metre per square metre
+0112/2///62720#UAB551;705779377;cN·m/m²;centinewton metre per square metre
+0112/2///62720#UAB552;705779378;kN·m/m²;kilonewton metre per square metre
+0112/2///62720#UAB553;705779379;MN·m/m²;meganewton metre per square metre
+0112/2///62720#UAB554;705779380;GN·m/m²;giganewton metre per square metre
+0112/2///62720#UAB588;705779480;fF;femtofarad
+0112/2///62720#UAB589;705779481;TBq;terabecquerel
+0112/2///62720#UAB590;705779504;PBq;petabecquerel
+0112/2///62720#UAB591;705779505;Mflops;megafloating point operations per second
+0112/2///62720#UAB592;705779506;Gflops;gigafloatingpoint operations per second
+0112/2///62720#UAB593;705779507;Tflops;terafloating point operations per second
+0112/2///62720#UAB594;705779508;Pflops;petafloating point operations per second
+0112/2///62720#UAB595;705779509;Ma;Mach
+0112/2///62720#UAB596;705779510;mag;Richter magnitude
+0112/2///62720#UAB597;705779511;SPF;sun protection factor
+0112/2///62720#UAB598;705779512;momme (pearl);Momme (pearl)
+0112/2///62720#UAB599;705779513;momme (textile);Momme (textile)
+0112/2///62720#UAB600;705780240;U;enzyme unit
+0112/2///62720#UAB603;705780243;IU;international unit
+0112/2///62720#UAB604;705780244;ms;spin quantum number
+0112/2///62720#UAB605;705780245;pt;point
+0112/2///62720#UAB606;705780246;pi;pica
+0112/2///62720#UAB637;705780343;aA;attoampere
+0112/2///62720#UAB638;705780344;fA;femtoampere
+0112/2///62720#UAB639;705780345;GA;gigaampere
+0112/2///62720#UAB640;705780368;TA;teraampere
+0112/2///62720#UAB641;705780369;PA;petaampere
+0112/2///62720#UAB698;705780536;mHz;millihertz
+0112/2///62720#UAB699;705780537;PHz;petahertz
+0112/2///62720#UAB738;705781368;pJ;picojoule
+0112/2///62720#UAB739;705781369;nJ;nanojoule
+0112/2///62720#UAB740;705781392;µJ;microjoule
+0112/2///62720#UAB787;705781527;k?/m;kiloohm per metre
+0112/2///62720#UAB833;705782387;Mt;megatonne
+0112/2///62720#UAB834;705782388;fg;femtogram
+0112/2///62720#UAB835;705782389;pg;picogram
+0112/2///62720#UAB836;705782390;ng;nanogram
+0112/2///62720#UAB837;705782391;“;zoll
+0112/2///62720#UAB840;705782416;°C?¹;reciprocal degree Celsius
+0112/2///62720#UAC000;705806864;cm?;centimetre to the fourth power
+0112/2///62720#UAC001;705806865;mm/m;millimetre per metre
+0112/2///62720#UAC002;705806866;µm/m;micrometre per metre
+0112/2///62720#UAC003;705806867;kg?¹;reciprocal kilogram
+0112/2///62720#UAC004;705806868;g?¹;reciprocal gram
+0112/2///62720#UAC005;705806869;mg?¹;reciprocal milligram
+0112/2///62720#UAC006;705806870;t?¹;reciprocal tonne
+0112/2///62720#UAC007;705806871;oz?¹;reciprocal ounce (avoirdupois)
+0112/2///62720#UAC008;705806872;lb?¹;reciprocal pound (avoirdupois)
+0112/2///62720#UAC009;705806873;m/(s·K);metre per second kelvin
+0112/2///62720#UAC503;705811987;mBq;millibecquerel
+0112/2///62720#UAC504;705811988;pvar;picovolt ampere reactive
+0112/2///62720#UAC505;705811989;nvar;nanovolt ampere reactive
+0112/2///62720#UAC506;705811990;µvar;microvolt ampere reactive
+0112/2///62720#UAC507;705811991;mvar;millivolt ampere reactive
+0112/2///62720#UAC508;705811992;Gvar;gigavolt ampere reactive
+0112/2///62720#UAC509;705811993;Tvar;teravolt ampere reactive
+0112/2///62720#UAC696;705813302;as;attosecond
+0112/2///62720#UAC697;705813303;fs;femtosecond
+0112/2///62720#UAC698;705813304;Ms;megasecond
+0112/2///62720#UAC770;705814256;fV;femtovolt
+0112/2///62720#UAC771;705814257;nV;nanovolt
+0112/2///62720#UAC772;705814258;GV;gigavolt
+0112/2///62720#UAC773;705814259;TV;teravolt
+0112/2///62720#UAC780;705814288;%/(m³/h);percent hour per cubic metre
+0112/2///62720#UAC781;705814289;%/(cm³/h);percent hour per cubic centimetre
+0112/2///62720#UAC782;705814290;%/(l/h);percent hour per litre
+0112/2///62720#UAC783;705814291;%/(gal (US)/h);percent hour per gallon (US)
+0112/2///62720#UAC784;705814292;%/(gal (UK)/h);percent hour per gallon (UK)
+0112/2///62720#UAC785;705814293;%/(in³/h);percent hour per cubic inch
+0112/2///62720#UAC786;705814294;%/(ft³/h);percent hour per cubic foot
+0112/2///62720#UAC787;705814295;%/(yd³/h);percent hour per cubic yard
+0112/2///62720#UAC788;705814296;%/(m³/min);percent minute per cubic metre
+0112/2///62720#UAC789;705814297;%/(cm³/min);percent minute per cubic centimetre
+0112/2///62720#UAC790;705814320;%/(l/min);percent minute per litre
+0112/2///62720#UAC791;705814321;%/(gal (US)/min);percent minute per gallon (US)
+0112/2///62720#UAC792;705814322;%/(gal (UK)/min);percent minute per gallon (UK)
+0112/2///62720#UAC793;705814323;%/(in³/min);percent minute per cubic inch
+0112/2///62720#UAC794;705814324;%/(ft³/min);percent minute per cubic foot
+0112/2///62720#UAC795;705814325;%/(yd³/min);percent minute per cubic yard
+0112/2///62720#UAC796;705814326;%/(m³/s);percent second per cubic metre
+0112/2///62720#UAC797;705814327;%/(cm³/s);percent second per cubic centimetre
+0112/2///62720#UAC798;705814328;%/(l/s);percent second per litre
+0112/2///62720#UAC799;705814329;%/(gal (US)/s);percent second per gallon (US)
+0112/2///62720#UAC800;705815056;%/(gal (UK)/s);percent second per gallon (UK)
+0112/2///62720#UAC801;705815057;%/(in³/s);percent second per cubic inch
+0112/2///62720#UAC802;705815058;%/(ft³/s);percent second per cubic foot
+0112/2///62720#UAC803;705815059;%/(yd³/s);percent second per cubic yard
+0112/2///62720#UAC804;705815060;%/(mPa·s);percent per millipascal second
+0112/2///62720#UAC805;705815061;%/(Pa·s);percent per pascal second
+0112/2///62720#UAC806;705815062;%/P;percent per poise
+0112/2///62720#UAC807;705815063;%/cP;percent per centipoise
+0112/2///62720#UAC808;705815064;%/(lb/(ft·h));percent foot hour per pound (avoirdupois)
+0112/2///62720#UAC809;705815065;%/(lb/(ft·s));percent foot second per pound (avoirdupois)
+0112/2///62720#UAC810;705815088;%/(lbf·s/ft²);percent square foot per pound-force second
+0112/2///62720#UAC811;705815089;%/(lbf·s/in²);percent square inch per pound-force second
+0112/2///62720#UAC812;705815090;g/m³)/(m³/h;gram hour per power of metre with the exponent 6
+0112/2///62720#UAC813;705815091;g/m³)/(cm³/h;gram hour per cubic metre cubic centimetre
+0112/2///62720#UAC814;705815092;g/m³)/(l/h;gram hour per cubic metre litre
+0112/2///62720#UAC815;705815093;g/m³)/(m³/min;gram minute per power of metre with the exponent 6
+0112/2///62720#UAC816;705815094;g/m³)/(cm³/min;gram minute per cubic metre cubic centimetre
+0112/2///62720#UAC817;705815095;g/m³)/(l/min;gram minute per cubic metre litre
+0112/2///62720#UAC818;705815096;g/m³)/(m³/s;gram second per power of metre with the exponent 6
+0112/2///62720#UAC819;705815097;g/m³)/(cm³/s;gram second per cubic metre cubic centimetre
+0112/2///62720#UAC820;705815120;g/m³)/(l/s;gram second per cubic metre litre
+0112/2///62720#UAC821;705815121;g/l)/(m³/h;gram hour per litre cubic metre
+0112/2///62720#UAC822;705815122;g/l)/(cm³/h;gram hour per litre cubic centimetre
+0112/2///62720#UAC823;705815123;g/l)/(l/h;gram hour per litre squared
+0112/2///62720#UAC824;705815124;g/l)/(m³/min;gram minute per litre cubic metre
+0112/2///62720#UAC825;705815125;g/l)/(cm³/min;gram minute per litre cubic centimetre
+0112/2///62720#UAC826;705815126;g/l)/(l/min;gram minute per litre squared
+0112/2///62720#UAC827;705815127;g/l)/(m³/s;gram second per litre cubic metre
+0112/2///62720#UAC828;705815128;g/l)/(cm³/s;gram second per litre cubic centimetre
+0112/2///62720#UAC829;705815129;g/l)/(l/s;gram second per litre squared
+0112/2///62720#UAC830;705815152;mg/m³)/(m³/h;milligram hour per power of metre with the exponent 6
+0112/2///62720#UAC831;705815153;mg/m³)/(cm³/h;milligram hour per cubic metre cubic centimetre
+0112/2///62720#UAC832;705815154;mg/m³)/(l/h;milligram hour per cubic metre litre
+0112/2///62720#UAC833;705815155;mg/m³)/(m³/min;milligram minute per power of metre with the exponent 6
+0112/2///62720#UAC834;705815156;mg/m³)/(cm³/min;milligram minute per cubic metre cubic centimetre
+0112/2///62720#UAC835;705815157;mg/m³)/(l/s;milligram second per cubic metre litre
+0112/2///62720#UAC836;705815158;mg/l)/(m³/h;milligram hour per litre cubic metre
+0112/2///62720#UAC837;705815159;mg/l)/(cm³/h;milligram hour per litre cubic centimetre
+0112/2///62720#UAC838;705815160;mg/l)/(l/h;milligram hour per litre squared
+0112/2///62720#UAC839;705815161;mg/l)/(m³/min;milligram minute per litre cubic metre
+0112/2///62720#UAC840;705815184;mg/l)/(cm³/min;milligram minute per litre cubic centimetre
+0112/2///62720#UAC841;705815185;mg/l)/(l/min;milligram minute per litre squared
+0112/2///62720#UAC842;705815186;mg/l)/(m³/s;milligram second per litre cubic metre
+0112/2///62720#UAC843;705815187;mg/l)/(cm³/s;milligram second per litre cubic centimetre
+0112/2///62720#UAC844;705815188;mg/l)/(l/s;milligram second per litre squared
+0112/2///62720#UAC845;705815189;lb/ft³)/(gal (US)/h;pound hour per cubic foot gallon (US)
+0112/2///62720#UAC846;705815190;lb/ft³)/(gal (UK)/h;pound hour per cubic foot gallon (UK)
+0112/2///62720#UAC847;705815191;lb/ft³)/(in³/h;pound hour per cubic foot cubic inch
+0112/2///62720#UAC848;705815192;lb/ft³)/(ft³/h;pound hour per power of foot with the exponent 6
+0112/2///62720#UAC849;705815193;lb/ft³)/(yd³/h;pound hour per cubic foot cubic yard
+0112/2///62720#UAC850;705815216;lb/in³)/(gal (US)/h;pound hour per cubic inch gallon (US)
+0112/2///62720#UAC851;705815217;lb/in³)/(gal (UK)/h;pound hour per cubic inch gallon (UK)
+0112/2///62720#UAC852;705815218;lb/in³)/(in³/h;pound hour per power of inch with the exponent 6
+0112/2///62720#UAC853;705815219;lb/in³)/(ft³/h;pound hour per cubic inch cubic foot
+0112/2///62720#UAC854;705815220;lb/in³)/(yd³/h;pound hour per cubic inch cubic yard
+0112/2///62720#UAC855;705815221;lb/(gal (US))/(gal (US)/h;pound hour per square gallon (US)
+0112/2///62720#UAC857;705815223;lb/(gal (US))/(in³/h;pound hour per gallon (US) cubic inch
+0112/2///62720#UAC858;705815224;lb/(gal (US))/(ft³/h;pound hour per gallon (US) cubic foot
+0112/2///62720#UAC859;705815225;lb/(gal (US))/(yd³/h;pound hour per gallon (US) cubic yard
+0112/2///62720#UAC861;705815249;lb/(gal (UK))/(gal (UK)/h;pound hour per square gallon (UK)
+0112/2///62720#UAC862;705815250;lb/(gal (UK))/(in³/h;pound hour per gallon (UK) cubic inch
+0112/2///62720#UAC863;705815251;lb/(gal (UK))/(ft³/h;pound hour per gallon (UK) cubic foot
+0112/2///62720#UAC864;705815252;lb/(gal (UK))/(yd³/h;pound hour per gallon (UK) cubic yard
+0112/2///62720#UAC865;705815253;oz/in³)/(gal (US)/h;ounce hour per cubic inch gallon (US)
+0112/2///62720#UAC866;705815254;oz/in³)/(gal (UK)/h;ounce hour per cubic inch gallon (UK)
+0112/2///62720#UAC867;705815255;oz/in³)/(in³/h;ounce hour per power of inch with the exponent 6
+0112/2///62720#UAC868;705815256;oz/in³)/(ft³/h;ounce hour per cubic inch cubic foot
+0112/2///62720#UAC869;705815257;oz/in³)/(yd³/h;ounce hour per cubic inch cubic yard
+0112/2///62720#UAC870;705815280;lb/ft³)/(gal (US)/min;pound minute per cubic foot gallon (US)
+0112/2///62720#UAC871;705815281;lb·min/(ft³·gal (UK));pound minute per cubic foot gallon (UK)
+0112/2///62720#UAC872;705815282;lb/ft³)/(in³/min;pound minute per cubic foot cubic inch
+0112/2///62720#UAC873;705815283;lb/ft³)/(ft³/min;pound minute per power of foot with the exponent 6
+0112/2///62720#UAC874;705815284;lb/ft³)/(yd³/min;pound minute per cubic foot cubic yard
+0112/2///62720#UAC875;705815285;lb/in³)/(gal (US)/min;pound minute per cubic inch gallon (US)
+0112/2///62720#UAC876;705815286;lb·min/(in³·gal (UK));pound minute per cubic inch gallon (UK)
+0112/2///62720#UAC877;705815287;lb/in³)/(in³/min;pound minute per power of inch with the exponent 6
+0112/2///62720#UAC878;705815288;lb/in³)/(ft³/min;pound minute per cubic inch cubic foot
+0112/2///62720#UAC879;705815289;lb/in³)/(yd³/min;pound minute per cubic inch cubic yard
+0112/2///62720#UAC880;705815312;lb/(gal (US))/(gal (US)/min;pound minute per square gallon (US)
+0112/2///62720#UAC882;705815314;lb/(gal (US))/(in³/min;pound minute per gallon (US) cubic inch
+0112/2///62720#UAC883;705815315;lb/(gal (US))/(ft³/min;pound minute per gallon (US) cubic foot
+0112/2///62720#UAC884;705815316;lb/(gal (US))/(yd³/min;pound minute per gallon (US) cubic yard
+0112/2///62720#UAC886;705815318;lb/(gal (UK))/(gal (UK)/min;pound minute per square gallon (UK)
+0112/2///62720#UAC887;705815319;lb/(gal (UK))/(in³/min;pound minute per gallon (UK) cubic inch
+0112/2///62720#UAC888;705815320;lb/(gal (UK))/(ft³/min;pound minute per gallon (UK) cubic foot
+0112/2///62720#UAC889;705815321;lb/(gal (UK))/(yd³/min;pound minute per gallon (UK) cubic yard
+0112/2///62720#UAD514;705844788;mol?¹;reciprocal mole
+0112/2///62720#UAD611;705845809;m?²;reciprocal square metre
+0112/2///62720#UAD692;705846066;Pa/Pa;pascal per pascal
+0112/2///62720#UAD800;705847824;oz/in³)/(in³/min;ounce minute per power of inch with the exponent 6
+0112/2///62720#UAD801;705847825;oz/in³)/(ft³/min;ounce minute per cubic inch cubic foot
+0112/2///62720#UAD802;705847826;oz/in³)/(yd³/min;ounce minute per cubic inch cubic yard
+0112/2///62720#UAD803;705847827;lb/ft³)/(gal (US)/s;pound second per cubic foot gallon (US)
+0112/2///62720#UAD804;705847828;lb/ft³)/(gal (UK)/s;pound second per cubic foot gallon (UK)
+0112/2///62720#UAD805;705847829;lb/ft³)/(in³/s;pound second per cubic foot cubic inch
+0112/2///62720#UAD806;705847830;lb/ft³)/(ft³/s;pound second per power of foot with the exponent 6
+0112/2///62720#UAD807;705847831;lb/ft³)/(yd³/s;pound second per cubic foot cubic yard
+0112/2///62720#UAD808;705847832;lb/in³)/(gal (US)/s;pound second per cubic inch gallon (US)
+0112/2///62720#UAD809;705847833;lb/in³)/(gal (UK)/s;pound second per cubic inch gallon (UK)
+0112/2///62720#UAD810;705847856;lb/in³)/(in³/s;pound second per power of inch with the exponent 6
+0112/2///62720#UAD811;705847857;lb/in³)/(ft³/s;pound second per cubic inch cubic foot
+0112/2///62720#UAD812;705847858;lb/in³)/(yd³/s;pound second per cubic inch cubic yard
+0112/2///62720#UAD813;705847859;lb/(gal (US))/(gal (US)/s;pound second per square gallon (US)
+0112/2///62720#UAD815;705847861;lb/(gal (US))/(in³/s;pound second per gallon (US) cubic inch
+0112/2///62720#UAD816;705847862;lb/(gal (US))/(ft³/s;pound second per gallon (US) cubic foot
+0112/2///62720#UAD817;705847863;lb/(gal (US))/(yd³/s;pound second per gallon (US) cubic yard
+0112/2///62720#UAD819;705847865;lb/(gal (UK))/(gal (UK)/s;pound second per square gallon (UK)
+0112/2///62720#UAD820;705847888;lb/(gal (UK))/(in³/s;pound second per gallon (UK) cubic inch
+0112/2///62720#UAD821;705847889;lb/(gal (UK))/(ft³/s;pound second per gallon (UK) cubic foot
+0112/2///62720#UAD822;705847890;lb/(gal (UK))/(yd³/s;pound second per gallon (UK) cubic yard
+0112/2///62720#UAD823;705847891;oz/in³)/(gal (US)/s;ounce second per cubic inch gallon (US)
+0112/2///62720#UAD824;705847892;oz/in³)/(gal (UK)/s;ounce second per cubic inch gallon (UK)
+0112/2///62720#UAD825;705847893;oz/in³)/(in³/s;ounce second per power of inch with the exponent 6
+0112/2///62720#UAD826;705847894;oz/in³)/(ft³/s;ounce second per cubic inch cubic foot
+0112/2///62720#UAD827;705847895;oz/in³)/(yd³/s;ounce second per cubic inch cubic yard
+0112/2///62720#UAD828;705847896;g/(m³·mPa·s);gram per cubic metre millipascal second
+0112/2///62720#UAD829;705847897;g/m³)/(Pa·s;gram per cubic metre pascal second
+0112/2///62720#UAD830;705847920;g/m³)/P;gram per cubic metre poise
+0112/2///62720#UAD831;705847921;g/m³)/cP;gram per cubic metre centipoise
+0112/2///62720#UAD832;705847922;g/l)/(Pa·s;gram per litre pascal second
+0112/2///62720#UAD833;705847923;g/l)/P;gram per litre poise
+0112/2///62720#UAD834;705847924;g/l)/cP;gram per litre centipoise
+0112/2///62720#UAD835;705847925;mg/m³)/(mPa·s;milligram per cubic metre millipascal second
+0112/2///62720#UAD836;705847926;mg/m³)/(Pa·s;milligram per cubic metre pascal second
+0112/2///62720#UAD837;705847927;mg/m³)/P;milligram per cubic metre poise
+0112/2///62720#UAD838;705847928;mg/m³)/cP;milligram per cubic metre centipoise
+0112/2///62720#UAD839;705847929;mg/l)/(Pa·s;milligram per litre pascal second
+0112/2///62720#UAD840;705847952;mg/l)/P;milligram per litre poise
+0112/2///62720#UAD841;705847953;mg/l)/cP;milligram per litre centipoise
+0112/2///62720#UAD842;705847954;lb/ft³)/(lb/(ft·h);hour per square foot
+0112/2///62720#UAD843;705847955;lb/ft³)/(lb/(ft·s);second per square foot
+0112/2///62720#UAD844;705847956;lb/ft³)/(lbf·s/ft²;pound per foot pound-force second
+0112/2///62720#UAD845;705847957;lb/ft³)/(lbf·s/in²;pound square inch per cubic foot pound-force second
+0112/2///62720#UAD846;705847958;lb/in³)/(lb/(ft·h);foot hour per cubic inch
+0112/2///62720#UAD847;705847959;lb/in³)/(lb/(ft·s);foot second per cubic inch
+0112/2///62720#UAD848;705847960;lb/in³)/(lbf·s/ft²;pound square foot per cubic inch pound-force second
+0112/2///62720#UAD849;705847961;lb/in³)/(lbf·s/in²;pound square inch per cubic inch pound-force second
+0112/2///62720#UAD850;705847984;lb/(gal (US))/(lb/(ft·h);foot hour per gallon (US)
+0112/2///62720#UAD851;705847985;lb/(gal (US))/(lb/(ft·s);foot second per gallon (US)
+0112/2///62720#UAD852;705847986;lb/(gal (US))/(lbf·s/ft²;pound square foot per gallon (US) pound-force second
+0112/2///62720#UAD853;705847987;lb/(gal (US))/(lbf·s/in²;pound square inch per gallon (US) pound-force second
+0112/2///62720#UAD854;705847988;lb/(gal (UK))/(lb/(ft·h);foot hour per gallon (UK)
+0112/2///62720#UAD855;705847989;lb/(gal (UK))/(lb/(ft·s);foot second per gallon (UK)
+0112/2///62720#UAD856;705847990;lb/(gal (UK))/(lbf·s/ft²;pound square foot per gallon(UK) pound-force second
+0112/2///62720#UAD857;705847991;lb/(gal (UK))/(lbf·s/in²;pound square inch per gallon(UK) pound-force second
+0112/2///62720#UAD858;705847992;oz/in³)/(lb/(ft·h);ounce foot hour per cubic inch pound
+0112/2///62720#UAD859;705847993;oz/in³)/(lb/(ft·s);ounce foot second per cubic inch pound
+0112/2///62720#UAD860;705848016;oz/in³)/(lbf·s/ft²;ounce square foot per cubic inch pound-force second
+0112/2///62720#UAD861;705848017;oz/in³)/(lbf·s/in²;ounce square inch per cubic inch pound-force second
+0112/2///62720#UAD864;705848020;mg/m³)/(m³/s;milligram second per power of metre with the exponent 6
+0112/2///62720#UAD865;705848021;mg/m³)/(cm³/s;milligram second per cubic metre cubic centimetre
+0112/2///62720#UAD866;705848022;oz/in³)/(gal (US)/min;ounce minute per cubic inch gallon (US)
+0112/2///62720#UAD867;705848023;oz·min/(in³·gal (UK));ounce minute per cubic inch gallon (UK)
+0112/2///62720#UAD868;705848024;g/l)/(mPa·s;gram per litre millipascal second
+0112/2///62720#UAD869;705848025;mg/l)/(mPa·s;milligram per litre millipascal second
+0112/2///62720#UAD870;705848048;mg/m³)/(l/min;milligram minute per cubic metre litre
+0112/2///62720#UAD873;705848051;1/%;reciprocal percent
+0112/2///62720#UAD878;705848056;m?/bar;milliohm per bar
+0112/2///62720#UAD879;705848057;?/bar;ohm per bar
+0112/2///62720#UAD880;705848080;k?/bar;kiloohm per bar
+0112/2///62720#UAD881;705848081;M?/bar;megaohm per bar
+0112/2///62720#UAD896;705848118;A/K;ampere per kelvin
+0112/2///62720#UAD897;705848119;mA/K;milliampere per kelvin
+0112/2///62720#UAD898;705848120;µA/K;microampere per kelvin
+0112/2///62720#UAD899;705848121;nA/K;nanoampere per kelvin
+0112/2///62720#UAD900;705848848;kA/K;kiloampere per kelvin
+0112/2///62720#UAD925;705848917;ppm;part per million
+0112/2///62720#UAD926;705848918;ppb;part per billion
+0112/2///62720#UAD927;705848919;ppt;part per trillion
+0112/2///62720#UAD928;705848920;ppq;part per quadrillion
+0112/2///62720#UAD931;705848945;kcmil;thousands of circular mil
+0112/2///62720#UAD932;705848946;K/d;kelvin per day
+0112/2///62720#UAD933;705848947;°R/d;degree Rankine per day
+0112/2///62720#UAD934;705848948;K/m;kelvin per metre
+0112/2///62720#UAD935;705848949;°R/m;degree Rankine per metre
+0112/2///62720#UAD936;705848950;ppm·h;part per million hour
+0112/2///62720#UAD937;705848951;%·h;percent hour
+0112/2///62720#UAD938;705848952;Pa/s;pascal per second
+0112/2///62720#UAD939;705848953;hPa/s;hectopascal per second
+0112/2///62720#UAD940;705848976;hPa/h;hectopascal per hour
+0112/2///62720#UAD941;705848977;A/s;ampere per second
+0112/2///62720#UAD942;705848978;A/ms;ampere per millisecond
+0112/2///62720#UAD943;705848979;A/µs;ampere per microsecond
+0112/2///62720#UAD944;705848980;W/m²;watt per square metre
+0112/2///62720#UAD945;705848981;KW/m²;kilowatt per square metre
