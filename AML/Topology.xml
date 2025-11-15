@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2020 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2021 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -33,6 +33,12 @@
     <Uri>http://opcfoundation.org/UA/AML/</Uri>
     <Uri>http://www.iosb.fraunhofer.de/Topology.aml</Uri>
   </NamespaceUris>
+  <Models>
+	<Model ModelUri="http://www.iosb.fraunhofer.de/Topology.aml" >
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/AML/" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
+    </Model>
+  </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -123,7 +129,6 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=19</Reference>
       <Reference ReferenceType="ns=1;i=4001">ns=2;i=18</Reference>
-      <Reference ReferenceType="ns=1;i=4001">ns=2;i=18</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=12</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=13</Reference>
     </References>
@@ -135,7 +140,6 @@
       <Reference ReferenceType="HasProperty">ns=2;i=11</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=19</Reference>
-      <Reference ReferenceType="ns=1;i=4001">ns=2;i=18</Reference>
       <Reference ReferenceType="ns=1;i=4001">ns=2;i=18</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=15</Reference>
     </References>
