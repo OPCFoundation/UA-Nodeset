@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -67,6 +67,19 @@
     <opc:Field Name="StatusCode" TypeName="ua:StatusCode" />
     <opc:Field Name="Diagnostics" TypeName="ua:DiagnosticInfo" />
   </opc:StructuredType>
+
+  <opc:EnumeratedType Name="SoftwareClass" LengthInBits="32">
+    <opc:EnumeratedValue Name="Firmware" Value="0" />
+    <opc:EnumeratedValue Name="Application" Value="1" />
+    <opc:EnumeratedValue Name="Configuration" Value="2" />
+    <opc:EnumeratedValue Name="Solution" Value="3" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="LocationIndicationType" LengthInBits="16" IsOptionSet="true">
+    <opc:EnumeratedValue Name="None" Value="0" />
+    <opc:EnumeratedValue Name="Visual" Value="1" />
+    <opc:EnumeratedValue Name="Audible" Value="2" />
+  </opc:EnumeratedType>
 
   <opc:EnumeratedType Name="SoftwareVersionFileType" LengthInBits="32">
     <opc:EnumeratedValue Name="Current" Value="0" />

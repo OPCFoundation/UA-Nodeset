@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<opc:TypeDictionary
+  xmlns:opc="http://opcfoundation.org/BinarySchema/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:tns="http://opcfoundation.org/UA/DI/PackageMetadata/"
+  DefaultByteOrder="LittleEndian"
+  TargetNamespace="http://opcfoundation.org/UA/DI/PackageMetadata/"
+>
+  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
+
+  <opc:StructuredType Name="PackageMetadata" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Name" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="opc:String" />
+    <opc:Field Name="ManufacturerUri" TypeName="opc:String" />
+    <opc:Field Name="Manufacturer" TypeName="opc:String" />
+    <opc:Field Name="PackageRevision" TypeName="opc:String" />
+    <opc:Field Name="PackageType" TypeName="tns:PackageType" />
+    <opc:Field Name="SoftwareSubClass" TypeName="opc:String" />
+    <opc:Field Name="DeployCompletePackage" TypeName="opc:Boolean" />
+    <opc:Field Name="SoftwareRevision" TypeName="opc:String" />
+    <opc:Field Name="ReleaseDate" TypeName="opc:DateTime" />
+    <opc:Field Name="TargetManufacturerUri" TypeName="opc:String" />
+    <opc:Field Name="TargetManufacturer" TypeName="opc:String" />
+    <opc:Field Name="NoOfUpdateTargets" TypeName="opc:Int32" />
+    <opc:Field Name="UpdateTargets" TypeName="tns:UpdateTarget" LengthField="NoOfUpdateTargets" />
+    <opc:Field Name="NoOfFiles" TypeName="opc:Int32" />
+    <opc:Field Name="Files" TypeName="tns:FileDescriptor" LengthField="NoOfFiles" />
+    <opc:Field Name="NoOfCompatibilities" TypeName="opc:Int32" />
+    <opc:Field Name="Compatibilities" TypeName="tns:CompatibilityOption" LengthField="NoOfCompatibilities" />
+    <opc:Field Name="NoOfAssignments" TypeName="opc:Int32" />
+    <opc:Field Name="Assignments" TypeName="tns:Assignment" LengthField="NoOfAssignments" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="UpdateTarget" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ProductCode" TypeName="opc:String" />
+    <opc:Field Name="Model" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="FileDescriptor" BaseType="ua:ExtensionObject">
+    <opc:Field Name="FileType" TypeName="tns:FileType" />
+    <opc:Field Name="FileName" TypeName="opc:String" />
+    <opc:Field Name="MimeType" TypeName="opc:String" />
+    <opc:Field Name="Language" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CompatibilityOption" BaseType="ua:ExtensionObject">
+    <opc:Field Name="NoOfCompatibilityRequirements" TypeName="opc:Int32" />
+    <opc:Field Name="CompatibilityRequirements" TypeName="tns:CompatibilityRequirement" LengthField="NoOfCompatibilityRequirements" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="CompatibilityRequirement" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Variable" TypeName="opc:String" />
+    <opc:Field Name="NoOfValues" TypeName="opc:Int32" />
+    <opc:Field Name="Values" TypeName="ua:Variant" LengthField="NoOfValues" />
+    <opc:Field Name="Operation" TypeName="tns:ComparisonOperation" />
+  </opc:StructuredType>
+
+  <opc:EnumeratedType Name="PackageType" LengthInBits="32">
+    <opc:EnumeratedValue Name="Firmware" Value="0" />
+    <opc:EnumeratedValue Name="Application" Value="1" />
+    <opc:EnumeratedValue Name="Configuration" Value="2" />
+    <opc:EnumeratedValue Name="Solution" Value="3" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="FileType" LengthInBits="32">
+    <opc:EnumeratedValue Name="DeploymentItem" Value="0" />
+    <opc:EnumeratedValue Name="ReleaseNotes" Value="1" />
+    <opc:EnumeratedValue Name="LicenseInfo" Value="2" />
+    <opc:EnumeratedValue Name="PreInstallNote" Value="3" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="ComparisonOperation" LengthInBits="32">
+    <opc:EnumeratedValue Name="EqualTo" Value="0" />
+    <opc:EnumeratedValue Name="GreaterThan" Value="1" />
+    <opc:EnumeratedValue Name="GreaterEqual" Value="2" />
+    <opc:EnumeratedValue Name="LessThen" Value="3" />
+    <opc:EnumeratedValue Name="LessEqual" Value="4" />
+    <opc:EnumeratedValue Name="RegularExpression" Value="5" />
+    <opc:EnumeratedValue Name="OneOf" Value="6" />
+    <opc:EnumeratedValue Name="Exist" Value="7" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="Assignment" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Subpackage" TypeName="opc:String" />
+    <opc:Field Name="InstallationOrder" TypeName="opc:UInt32" />
+    <opc:Field Name="NoOfTargets" TypeName="opc:Int32" />
+    <opc:Field Name="Targets" TypeName="tns:PackageTarget" LengthField="NoOfTargets" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="PackageTarget" BaseType="ua:ExtensionObject">
+    <opc:Field Name="TargetType" TypeName="ua:NodeId" />
+    <opc:Field Name="TargetNode" TypeName="ua:NodeId" />
+    <opc:Field Name="ProductInstanceUri" TypeName="opc:String" />
+    <opc:Field Name="AssetId" TypeName="opc:String" />
+    <opc:Field Name="ManufacturerUri" TypeName="opc:String" />
+    <opc:Field Name="ProductCode" TypeName="opc:String" />
+    <opc:Field Name="SerialNumber" TypeName="opc:String" />
+    <opc:Field Name="NoOfFxPath" TypeName="opc:Int32" />
+    <opc:Field Name="FxPath" TypeName="tns:FxPathElement" LengthField="NoOfFxPath" />
+    <opc:Field Name="NoOfFxScope" TypeName="opc:Int32" />
+    <opc:Field Name="FxScope" TypeName="tns:FxPathElement" LengthField="NoOfFxScope" />
+    <opc:Field Name="NoOfBrowsePath" TypeName="opc:Int32" />
+    <opc:Field Name="BrowsePath" TypeName="ua:RelativePathElement" LengthField="NoOfBrowsePath" />
+    <opc:Field Name="TargetServer" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="FxPathElement" BaseType="ua:ExtensionObject">
+    <opc:Field Name="AssetConnectorType" TypeName="ua:NodeId" />
+    <opc:Field Name="ConnectorId" TypeName="opc:UInt16" />
+    <opc:Field Name="ConnectorName" TypeName="opc:String" />
+  </opc:StructuredType>
+
+</opc:TypeDictionary>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://opcfoundation.org/UA/DI/PackageMetadata/Types.xsd"
+  targetNamespace="http://opcfoundation.org/UA/DI/PackageMetadata/Types.xsd"
+  elementFormDefault="qualified"
+>
+  <xs:annotation>
+    <xs:appinfo>
+      <ua:Model ModelUri="http://opcfoundation.org/UA/DI/PackageMetadata/" Version="1.05.0" PublicationDate="2025-04-01T00:00:00Z" />
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+
+  <xs:complexType name="PackageMetadata">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ManufacturerUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Manufacturer" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PackageRevision" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PackageType" type="tns:PackageType" minOccurs="0" />
+      <xs:element name="SoftwareSubClass" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="DeployCompletePackage" type="xs:boolean" minOccurs="0" />
+      <xs:element name="SoftwareRevision" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ReleaseDate" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="TargetManufacturerUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="TargetManufacturer" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="UpdateTargets" type="tns:ListOfUpdateTarget" minOccurs="0" nillable="true" />
+      <xs:element name="Files" type="tns:ListOfFileDescriptor" minOccurs="0" nillable="true" />
+      <xs:element name="Compatibilities" type="tns:ListOfCompatibilityOption" minOccurs="0" nillable="true" />
+      <xs:element name="Assignments" type="tns:ListOfAssignment" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PackageMetadata" type="tns:PackageMetadata" />
+
+  <xs:complexType name="ListOfPackageMetadata">
+    <xs:sequence>
+      <xs:element name="PackageMetadata" type="tns:PackageMetadata" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPackageMetadata" type="tns:ListOfPackageMetadata" nillable="true"></xs:element>
+
+  <xs:complexType name="UpdateTarget">
+    <xs:sequence>
+      <xs:element name="ProductCode" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Model" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateTarget" type="tns:UpdateTarget" />
+
+  <xs:complexType name="ListOfUpdateTarget">
+    <xs:sequence>
+      <xs:element name="UpdateTarget" type="tns:UpdateTarget" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfUpdateTarget" type="tns:ListOfUpdateTarget" nillable="true"></xs:element>
+
+  <xs:complexType name="FileDescriptor">
+    <xs:sequence>
+      <xs:element name="FileType" type="tns:FileType" minOccurs="0" />
+      <xs:element name="FileName" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="MimeType" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Language" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileDescriptor" type="tns:FileDescriptor" />
+
+  <xs:complexType name="ListOfFileDescriptor">
+    <xs:sequence>
+      <xs:element name="FileDescriptor" type="tns:FileDescriptor" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFileDescriptor" type="tns:ListOfFileDescriptor" nillable="true"></xs:element>
+
+  <xs:complexType name="CompatibilityOption">
+    <xs:sequence>
+      <xs:element name="CompatibilityRequirements" type="tns:ListOfCompatibilityRequirement" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompatibilityOption" type="tns:CompatibilityOption" />
+
+  <xs:complexType name="ListOfCompatibilityOption">
+    <xs:sequence>
+      <xs:element name="CompatibilityOption" type="tns:CompatibilityOption" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCompatibilityOption" type="tns:ListOfCompatibilityOption" nillable="true"></xs:element>
+
+  <xs:complexType name="CompatibilityRequirement">
+    <xs:sequence>
+      <xs:element name="Variable" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Values" type="ua:ListOfVariant" minOccurs="0" nillable="true" />
+      <xs:element name="Operation" type="tns:ComparisonOperation" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompatibilityRequirement" type="tns:CompatibilityRequirement" />
+
+  <xs:complexType name="ListOfCompatibilityRequirement">
+    <xs:sequence>
+      <xs:element name="CompatibilityRequirement" type="tns:CompatibilityRequirement" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfCompatibilityRequirement" type="tns:ListOfCompatibilityRequirement" nillable="true"></xs:element>
+
+  <xs:simpleType  name="PackageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Firmware_0" />
+      <xs:enumeration value="Application_1" />
+      <xs:enumeration value="Configuration_2" />
+      <xs:enumeration value="Solution_3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PackageType" type="tns:PackageType" />
+
+  <xs:complexType name="ListOfPackageType">
+    <xs:sequence>
+      <xs:element name="PackageType" type="tns:PackageType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPackageType" type="tns:ListOfPackageType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="FileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DeploymentItem_0" />
+      <xs:enumeration value="ReleaseNotes_1" />
+      <xs:enumeration value="LicenseInfo_2" />
+      <xs:enumeration value="PreInstallNote_3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FileType" type="tns:FileType" />
+
+  <xs:complexType name="ListOfFileType">
+    <xs:sequence>
+      <xs:element name="FileType" type="tns:FileType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFileType" type="tns:ListOfFileType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="ComparisonOperation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EqualTo_0" />
+      <xs:enumeration value="GreaterThan_1" />
+      <xs:enumeration value="GreaterEqual_2" />
+      <xs:enumeration value="LessThen_3" />
+      <xs:enumeration value="LessEqual_4" />
+      <xs:enumeration value="RegularExpression_5" />
+      <xs:enumeration value="OneOf_6" />
+      <xs:enumeration value="Exist_7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ComparisonOperation" type="tns:ComparisonOperation" />
+
+  <xs:complexType name="ListOfComparisonOperation">
+    <xs:sequence>
+      <xs:element name="ComparisonOperation" type="tns:ComparisonOperation" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfComparisonOperation" type="tns:ListOfComparisonOperation" nillable="true"></xs:element>
+
+  <xs:complexType name="Assignment">
+    <xs:sequence>
+      <xs:element name="Subpackage" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="InstallationOrder" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="Targets" type="tns:ListOfPackageTarget" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Assignment" type="tns:Assignment" />
+
+  <xs:complexType name="ListOfAssignment">
+    <xs:sequence>
+      <xs:element name="Assignment" type="tns:Assignment" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfAssignment" type="tns:ListOfAssignment" nillable="true"></xs:element>
+
+  <xs:complexType name="PackageTarget">
+    <xs:sequence>
+      <xs:element name="TargetType" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="TargetNode" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="ProductInstanceUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="AssetId" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ManufacturerUri" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ProductCode" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="SerialNumber" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="FxPath" type="tns:ListOfFxPathElement" minOccurs="0" nillable="true" />
+      <xs:element name="FxScope" type="tns:ListOfFxPathElement" minOccurs="0" nillable="true" />
+      <xs:element name="BrowsePath" type="ua:ListOfRelativePathElement" minOccurs="0" nillable="true" />
+      <xs:element name="TargetServer" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PackageTarget" type="tns:PackageTarget" />
+
+  <xs:complexType name="ListOfPackageTarget">
+    <xs:sequence>
+      <xs:element name="PackageTarget" type="tns:PackageTarget" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPackageTarget" type="tns:ListOfPackageTarget" nillable="true"></xs:element>
+
+  <xs:complexType name="FxPathElement">
+    <xs:sequence>
+      <xs:element name="AssetConnectorType" type="ua:NodeId" minOccurs="0" nillable="true" />
+      <xs:element name="ConnectorId" type="xs:unsignedShort" minOccurs="0" />
+      <xs:element name="ConnectorName" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FxPathElement" type="tns:FxPathElement" />
+
+  <xs:complexType name="ListOfFxPathElement">
+    <xs:sequence>
+      <xs:element name="FxPathElement" type="tns:FxPathElement" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFxPathElement" type="tns:ListOfFxPathElement" nillable="true"></xs:element>
+
+</xs:schema>

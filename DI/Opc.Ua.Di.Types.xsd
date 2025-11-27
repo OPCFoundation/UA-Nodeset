@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -37,7 +37,7 @@
 >
   <xs:annotation>
     <xs:appinfo>
-      <ua:Model ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
+      <ua:Model ModelUri="http://opcfoundation.org/UA/DI/" Version="1.05.0" PublicationDate="2025-11-15T00:00:00Z" />
     </xs:appinfo>
   </xs:annotation>
   
@@ -128,6 +128,36 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListOfParameterResultDataType" type="tns:ListOfParameterResultDataType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="SoftwareClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Firmware_0" />
+      <xs:enumeration value="Application_1" />
+      <xs:enumeration value="Configuration_2" />
+      <xs:enumeration value="Solution_3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SoftwareClass" type="tns:SoftwareClass" />
+
+  <xs:complexType name="ListOfSoftwareClass">
+    <xs:sequence>
+      <xs:element name="SoftwareClass" type="tns:SoftwareClass" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSoftwareClass" type="tns:ListOfSoftwareClass" nillable="true"></xs:element>
+
+  <xs:simpleType  name="LocationIndicationType">
+    <xs:restriction base="xs:unsignedShort">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LocationIndicationType" type="tns:LocationIndicationType" />
+
+  <xs:complexType name="ListOfLocationIndicationType">
+    <xs:sequence>
+      <xs:element name="LocationIndicationType" type="tns:LocationIndicationType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfLocationIndicationType" type="tns:ListOfLocationIndicationType" nillable="true"></xs:element>
 
   <xs:simpleType  name="SoftwareVersionFileType">
     <xs:restriction base="xs:string">

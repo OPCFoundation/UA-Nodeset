@@ -1,0 +1,355 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "PackageMetadata": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManufacturerUri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PackageRevision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PackageType": {
+          "$ref": "#/$defs/PackageType"
+        },
+        "SoftwareSubClass": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "DeployCompletePackage": {
+          "type": "boolean"
+        },
+        "SoftwareRevision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ReleaseDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "TargetManufacturerUri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TargetManufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "UpdateTargets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/UpdateTarget"
+          }
+        },
+        "Files": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FileDescriptor"
+          }
+        },
+        "Compatibilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CompatibilityOption"
+          }
+        },
+        "Assignments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Assignment"
+          }
+        }
+      }
+    },
+    "FileDescriptor": {
+      "type": "object",
+      "properties": {
+        "FileType": {
+          "$ref": "#/$defs/FileType"
+        },
+        "FileName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "MimeType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "CompatibilityOption": {
+      "type": "object",
+      "properties": {
+        "CompatibilityRequirements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CompatibilityRequirement"
+          }
+        }
+      }
+    },
+    "CompatibilityRequirement": {
+      "type": "object",
+      "properties": {
+        "Variable": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Values": {
+          "type": "array",
+          "items": {
+            "$ref": "https://opcfoundation.org/schemas/OpenApi/opc.ua.services.jsonschema.json#/$defs/BaseDataType"
+          }
+        },
+        "Operation": {
+          "$ref": "#/$defs/ComparisonOperation"
+        }
+      }
+    },
+    "PackageType": {
+      "anyOf": [
+        {
+          "const": "Firmware_0",
+          "title": "Firmware"
+        },
+        {
+          "const": "Application_1",
+          "title": "Application"
+        },
+        {
+          "const": "Configuration_2",
+          "title": "Configuration"
+        },
+        {
+          "const": "Solution_3",
+          "title": "Solution"
+        }
+      ]
+    },
+    "FileType": {
+      "anyOf": [
+        {
+          "const": "DeploymentItem_0",
+          "title": "DeploymentItem"
+        },
+        {
+          "const": "ReleaseNotes_1",
+          "title": "ReleaseNotes"
+        },
+        {
+          "const": "LicenseInfo_2",
+          "title": "LicenseInfo"
+        },
+        {
+          "const": "PreInstallNote_3",
+          "title": "PreInstallNote"
+        }
+      ]
+    },
+    "ComparisonOperation": {
+      "anyOf": [
+        {
+          "const": "EqualTo_0",
+          "title": "EqualTo"
+        },
+        {
+          "const": "GreaterThan_1",
+          "title": "GreaterThan"
+        },
+        {
+          "const": "GreaterEqual_2",
+          "title": "GreaterEqual"
+        },
+        {
+          "const": "LessThen_3",
+          "title": "LessThen"
+        },
+        {
+          "const": "LessEqual_4",
+          "title": "LessEqual"
+        },
+        {
+          "const": "RegularExpression_5",
+          "title": "RegularExpression"
+        },
+        {
+          "const": "OneOf_6",
+          "title": "OneOf"
+        },
+        {
+          "const": "Exist_7",
+          "title": "Exist"
+        }
+      ]
+    },
+    "PackageTarget": {
+      "type": "object",
+      "properties": {
+        "TargetType": {
+          "type": "string",
+          "format": "UaNodeId"
+        },
+        "TargetNode": {
+          "type": "string",
+          "format": "UaNodeId"
+        },
+        "ProductInstanceUri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "AssetId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManufacturerUri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ProductCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "SerialNumber": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FxPath": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FxPathElement"
+          }
+        },
+        "FxScope": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FxPathElement"
+          }
+        },
+        "BrowsePath": {
+          "type": "array",
+          "items": {
+            "$ref": "https://opcfoundation.org/schemas/OpenApi/opc.ua.services.jsonschema.json#/$defs/RelativePathElement"
+          }
+        },
+        "TargetServer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "FxPathElement": {
+      "type": "object",
+      "properties": {
+        "AssetConnectorType": {
+          "type": "string",
+          "format": "UaNodeId"
+        },
+        "ConnectorId": {
+          "type": "integer",
+          "format": "uint16"
+        },
+        "ConnectorName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "UpdateTarget": {
+      "type": "object",
+      "properties": {
+        "ProductCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Assignment": {
+      "type": "object",
+      "properties": {
+        "Subpackage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "InstallationOrder": {
+          "type": "integer",
+          "format": "uint32"
+        },
+        "Targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PackageTarget"
+          }
+        }
+      }
+    }
+  }
+}

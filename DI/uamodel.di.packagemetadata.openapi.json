@@ -1,0 +1,427 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "DIPackageMetadata",
+    "description": "A placeholder API that allows OpenAPI tools to be used to generate code for a companion specification.",
+    "version": "1.05.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4840"
+    }
+  ],
+  "paths": {
+    "/get": {
+      "get": {
+        "operationId": "Get",
+        "responses": {
+          "200": {
+            "description": "ModelDataTypes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response",
+                  "properties": {
+                    "PackageMetadata": {
+                      "$ref": "#/components/schemas/PackageMetadata"
+                    },
+                    "FileDescriptor": {
+                      "$ref": "#/components/schemas/FileDescriptor"
+                    },
+                    "CompatibilityOption": {
+                      "$ref": "#/components/schemas/CompatibilityOption"
+                    },
+                    "CompatibilityRequirement": {
+                      "$ref": "#/components/schemas/CompatibilityRequirement"
+                    },
+                    "PackageType": {
+                      "$ref": "#/components/schemas/PackageType"
+                    },
+                    "FileType": {
+                      "$ref": "#/components/schemas/FileType"
+                    },
+                    "ComparisonOperation": {
+                      "$ref": "#/components/schemas/ComparisonOperation"
+                    },
+                    "PackageTarget": {
+                      "$ref": "#/components/schemas/PackageTarget"
+                    },
+                    "FxPathElement": {
+                      "$ref": "#/components/schemas/FxPathElement"
+                    },
+                    "UpdateTarget": {
+                      "$ref": "#/components/schemas/UpdateTarget"
+                    },
+                    "Assignment": {
+                      "$ref": "#/components/schemas/Assignment"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Variant": {
+        "type": "object",
+        "properties": {
+          "UaType": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "Value": { },
+          "Dimensions": {
+            "type": "array",
+            "items": {
+              "minimum": 0,
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.2.17)."
+      },
+      "RelativePathElement": {
+        "type": "object",
+        "properties": {
+          "ReferenceTypeId": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "IsInverse": {
+            "type": "boolean",
+            "default": false
+          },
+          "IncludeSubtypes": {
+            "type": "boolean",
+            "default": false
+          },
+          "TargetName": {
+            "type": "string",
+            "format": "UaQualifiedName"
+          }
+        }
+      },
+      "PackageMetadata": {
+        "type": "object",
+        "properties": {
+          "EncodingMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Description": {
+            "type": "string"
+          },
+          "ManufacturerUri": {
+            "type": "string"
+          },
+          "Manufacturer": {
+            "type": "string"
+          },
+          "PackageRevision": {
+            "type": "string"
+          },
+          "PackageType": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3).",
+            "format": "PackageType"
+          },
+          "SoftwareSubClass": {
+            "type": "string"
+          },
+          "DeployCompletePackage": {
+            "type": "boolean",
+            "default": false
+          },
+          "SoftwareRevision": {
+            "type": "string"
+          },
+          "ReleaseDate": {
+            "type": "string",
+            "format": "date-time",
+            "default": "0001-01-01T00:00:00.0000000+00:00"
+          },
+          "TargetManufacturerUri": {
+            "type": "string"
+          },
+          "TargetManufacturer": {
+            "type": "string"
+          },
+          "UpdateTargets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UpdateTarget"
+            }
+          },
+          "Files": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileDescriptor"
+            }
+          },
+          "Compatibilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CompatibilityOption"
+            }
+          },
+          "Assignments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assignment"
+            }
+          }
+        }
+      },
+      "FileDescriptor": {
+        "type": "object",
+        "properties": {
+          "EncodingMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "FileType": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3).",
+            "format": "FileType"
+          },
+          "FileName": {
+            "type": "string"
+          },
+          "MimeType": {
+            "type": "string"
+          },
+          "Language": {
+            "type": "string"
+          }
+        }
+      },
+      "CompatibilityOption": {
+        "type": "object",
+        "properties": {
+          "CompatibilityRequirements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CompatibilityRequirement"
+            }
+          }
+        }
+      },
+      "CompatibilityRequirement": {
+        "type": "object",
+        "properties": {
+          "Variable": {
+            "type": "string"
+          },
+          "Values": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Variant"
+            }
+          },
+          "Operation": {
+            "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3).",
+            "format": "ComparisonOperation"
+          }
+        }
+      },
+      "PackageType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "Firmware",
+          "Application",
+          "Configuration",
+          "Solution"
+        ]
+      },
+      "FileType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "DeploymentItem",
+          "ReleaseNotes",
+          "LicenseInfo",
+          "PreInstallNote"
+        ]
+      },
+      "ComparisonOperation": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3).",
+        "format": "int32",
+        "x-enum-varnames": [
+          "EqualTo",
+          "GreaterThan",
+          "GreaterEqual",
+          "LessThen",
+          "LessEqual",
+          "RegularExpression",
+          "OneOf",
+          "Exist"
+        ]
+      },
+      "PackageTarget": {
+        "type": "object",
+        "properties": {
+          "EncodingMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "TargetType": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "TargetNode": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "ProductInstanceUri": {
+            "type": "string"
+          },
+          "AssetId": {
+            "type": "string"
+          },
+          "ManufacturerUri": {
+            "type": "string"
+          },
+          "ProductCode": {
+            "type": "string"
+          },
+          "SerialNumber": {
+            "type": "string"
+          },
+          "FxPath": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FxPathElement"
+            }
+          },
+          "FxScope": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FxPathElement"
+            }
+          },
+          "BrowsePath": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelativePathElement"
+            }
+          },
+          "TargetServer": {
+            "type": "string"
+          }
+        }
+      },
+      "FxPathElement": {
+        "type": "object",
+        "properties": {
+          "EncodingMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "AssetConnectorType": {
+            "type": "string",
+            "format": "UaNodeId"
+          },
+          "ConnectorId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          },
+          "ConnectorName": {
+            "type": "string"
+          }
+        }
+      },
+      "UpdateTarget": {
+        "type": "object",
+        "properties": {
+          "ProductCode": {
+            "type": "string"
+          },
+          "Model": {
+            "type": "string"
+          }
+        }
+      },
+      "Assignment": {
+        "type": "object",
+        "properties": {
+          "EncodingMask": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "Subpackage": {
+            "type": "string"
+          },
+          "InstallationOrder": {
+            "maximum": 4294967295,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int64",
+            "default": 0
+          },
+          "Targets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PackageTarget"
+            }
+          }
+        }
+      }
+    }
+  }
+}

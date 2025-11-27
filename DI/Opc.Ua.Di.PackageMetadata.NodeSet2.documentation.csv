@@ -1,0 +1,12 @@
+Id,Name,Link,ConformanceUnits
+1,PackageMetadata,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+2,FileDescriptor,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+3,CompatibilityOption,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+4,CompatibilityRequirement,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+5,PackageType,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+7,FileType,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+9,ComparisonOperation,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+12,PackageTarget,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.5",""
+13,FxPathElement,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.5",""
+239,UpdateTarget,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.3",""
+255,Assignment,"https://reference.opcfoundation.org/DIPackageMetadata/v105/docs/8.7.5",""
