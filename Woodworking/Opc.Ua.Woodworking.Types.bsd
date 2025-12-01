@@ -33,6 +33,7 @@
         <opc:Field SwitchField="SwitchField" TypeName="opc:CharArray" SwitchValue="17" Name="Other"/>
     </opc:StructuredType>
     <opc:EnumeratedType LengthInBits="32" Name="WwEventCategoryEnumeration">
+        <opc:Documentation>This enumeration represents the category of an event.</opc:Documentation>
         <opc:EnumeratedValue Name="OTHER" Value="0"/>
         <opc:EnumeratedValue Name="DIAGNOSTIC" Value="1"/>
         <opc:EnumeratedValue Name="INFORMATION" Value="2"/>
