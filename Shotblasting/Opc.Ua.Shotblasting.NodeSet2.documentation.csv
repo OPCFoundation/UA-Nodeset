@@ -1,0 +1,12 @@
+Id,Name,Link,ConformanceUnits
+1003,ShotBlastMachineType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.1","ShotBlastMachine Basic;ShotBlastMachine Media;ShotBlastMachine Deployment Monitoring;ShotBlastMachine RefillSilo;ShotBlastMachine Pressurised;ShotBlastMachine Filtration System;ShotBlastMachine PAEFS Filtration System;ShotBlastMachine StateMachines;ShotBlastMachine JobManagement;"
+1004,ShotBlastChamberType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.2","ShotBlastChamber Multiple Blasters;"
+1005,ConveyorType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.7",""
+1006,ShotBlastMediaType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.8",""
+1008,BlasterType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.3","Wheel Blaster;Pressurised Blaster;"
+1010,DeploymentType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.9",""
+1011,HopperType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.4","Hopper Fill Level Monitoring;"
+1014,RefillSiloType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.5",""
+1015,FiltrationType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.10","Filtration Status Monitoring;"
+1017,PressurisedBoilerType,"https://reference.opcfoundation.org/Shotblasting/v100/docs/7.6",""
+5060,http://opcfoundation.org/UA/SurfaceTechnology/ShotBlasting/,"https://reference.opcfoundation.org/Shotblasting/v100/docs/9.1",""

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UAProfileSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetProfileGroup="0" ReleaseStatus="Draft" PublicationDate="2026-02-18T08:46:51.2999628Z" xmlns="http://opcfoundation.org/UA/schema/UAProfileSet.xsd">
+  <ProfileGroups>
+    <ProfileGroup Index="0" FullName="UACore 1.05" />
+    <ProfileGroup Index="1" FullName="HPDC 1.00" />
+    <ProfileGroup Index="2" FullName="UACore 1.03" />
+  </ProfileGroups>
+  <Categories>
+    <Category Name="Application Profiles" Version="2" Sort="1" Id="2:296f6c70-9494-4e74-a130-d7699aada26b">
+      <Description>Application level profiles represent a collection of Facets necessary to build a functional OPC UA Application.They specifically include Transport Profiles and generally also Security Profiles.</Description>
+    </Category>
+  </Categories>
+  <Profiles>
+    <Profile Name="Pressurised Shot Blasting Machine Server Facet" ReleaseStatus="Draft" Changed="true" Id="1:8d691d5b-e16e-4814-a4fb-9b454b3db9b9">
+      <ConformanceUnits>
+        <IncludedConformanceUnit Id="1:6d3d23a7-c6a9-4b33-bd71-71bc0839bb13" />
+        <IncludedConformanceUnit Id="1:873a3ef4-a14a-4f42-a516-13525a433c8c" />
+        <IncludedConformanceUnit Id="1:6bf03275-9987-4a34-b34d-dceebe8632e7" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:9a5a1b10-75ef-4657-9cda-12e5884e0c47" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:1bceb3c3-c917-4bc9-b5a3-6519c4f0924d" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:bcc2a867-42f9-4517-9bdf-10724e036c87" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:dbc49c56-a1d2-4fb4-bf04-38a327a82322" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:beaf80a6-beb5-4067-b73d-4005cca878a6" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:3cb8a73d-d993-4cb5-85e3-79550a2bd15c" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:22384630-9af8-4de5-afb2-afcd581099a5" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:a5d9a51a-9dc2-4401-8bcf-aefed1c16eb3" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:ddd6c095-88aa-45bd-ac45-6983e46c22f0" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:0c5dc869-b61f-4926-9e46-3829888dd17d" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:76abe37b-6ec2-446a-b5fd-fde5e092329b" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:7e0bc7b0-0453-465a-b29c-87de017a5fb6" IsOptional="true" />
+      </ConformanceUnits>
+    </Profile>
+    <Profile Name="Wheel Blasting Machine Server Facet" ReleaseStatus="Draft" Changed="true" Id="1:d0e0bd71-fa86-4eda-a003-968dac8b5fe7">
+      <ConformanceUnits>
+        <IncludedConformanceUnit Id="1:6d3d23a7-c6a9-4b33-bd71-71bc0839bb13" />
+        <IncludedConformanceUnit Id="1:29ba4038-7e43-4c38-922f-4e310fea4308" />
+        <IncludedConformanceUnit Id="1:6bf03275-9987-4a34-b34d-dceebe8632e7" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:9a5a1b10-75ef-4657-9cda-12e5884e0c47" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:1bceb3c3-c917-4bc9-b5a3-6519c4f0924d" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:bcc2a867-42f9-4517-9bdf-10724e036c87" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:dbc49c56-a1d2-4fb4-bf04-38a327a82322" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:beaf80a6-beb5-4067-b73d-4005cca878a6" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:3cb8a73d-d993-4cb5-85e3-79550a2bd15c" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:22384630-9af8-4de5-afb2-afcd581099a5" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:a5d9a51a-9dc2-4401-8bcf-aefed1c16eb3" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:ddd6c095-88aa-45bd-ac45-6983e46c22f0" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:0c5dc869-b61f-4926-9e46-3829888dd17d" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:76abe37b-6ec2-446a-b5fd-fde5e092329b" IsOptional="true" />
+        <IncludedConformanceUnit Id="1:7e0bc7b0-0453-465a-b29c-87de017a5fb6" IsOptional="true" />
+      </ConformanceUnits>
+    </Profile>
+  </Profiles>
+  <ProfileFolders>
+    <ProfileFolder Name="HighPressure" Id="1:73c3ed17-54aa-4f22-86d4-d7ada5192d23">
+      <Description>HighPressure</Description>
+      <Category>0:296f6c70-9494-4e74-a130-d7699aada26b</Category>
+    </ProfileFolder>
+  </ProfileFolders>
+  <ConformanceGroups />
+  <ConformanceUnits>
+    <ConformanceUnit Name="ShotBlastMachine Basic" ReleaseStatus="Draft" Changed="true" Id="1:6d3d23a7-c6a9-4b33-bd71-71bc0839bb13">
+      <Description>At least one instance of the ShotBlastMachineMachineType is available on the server. The instance has all mandatory nodes.</Description>
+      <ConformanceGroup>1:0a99abc0-8644-4d70-a0c4-2f94f97defbb</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine Media" ReleaseStatus="Draft" Changed="true" Id="1:6bf03275-9987-4a34-b34d-dceebe8632e7">
+      <Description>Every ShotBlastMachineType instance has at least one instance of the optional node from the ShotBlastMediaType.</Description>
+      <ConformanceGroup>1:0b4adcf4-4a6f-4229-ba95-836e6da184c4</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine Deployment Monitoring" ReleaseStatus="Draft" Changed="true" Id="1:9a5a1b10-75ef-4657-9cda-12e5884e0c47">
+      <Description>Every ShotBlastMachineType instance has at least one instance of the optional nodes from the DeploymentType.</Description>
+      <ConformanceGroup>1:52417b5f-c83b-49dc-83fe-109446772301</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine RefillSilo" ReleaseStatus="Draft" Changed="true" Id="1:1bceb3c3-c917-4bc9-b5a3-6519c4f0924d">
+      <Description>Every ShotBlastMachineType instance has at least one instance of the optional node from the RefillSiloType.</Description>
+      <ConformanceGroup>1:2a620c11-7eea-4ee7-9bee-7b28e427156e</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine Pressurised" ReleaseStatus="Draft" Changed="true" Id="1:bcc2a867-42f9-4517-9bdf-10724e036c87">
+      <Description>Every ShotBlastMachineType instance has at least one instance of the optional node from the PressurisedBoilerType.</Description>
+      <ConformanceGroup>1:33ec65d3-11b3-404c-a6ad-43ffd454d3b8</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine Filtration System" ReleaseStatus="Draft" Changed="true" Id="1:dbc49c56-a1d2-4fb4-bf04-38a327a82322">
+      <Description>Every ShotBlastMachineType instance has at least one instance of the optional node from the FiltrationType.</Description>
+      <ConformanceGroup>1:c1f46bca-0a50-4d37-b471-26d220e0bd2e</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine PAEFS Filtration System OPC40740" ReleaseStatus="Draft" Changed="true" Id="1:beaf80a6-beb5-4067-b73d-4005cca878a6">
+      <Description>Every ShotBlastMachineType instance has not implemented the optional FiltrationType but the FilterSystemType of the OPC 40740 OPC UA for Process Air Extraction and Filtration Systems (PAEFS) Companion Specification.</Description>
+      <ConformanceGroup>1:ea870ec5-849d-4787-aa01-7de56ecdbe95</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine StateMachines" ReleaseStatus="Draft" Changed="true" Id="1:3cb8a73d-d993-4cb5-85e3-79550a2bd15c">
+      <Description>Every ShotBlastMachineType instance has one instance of the optional node from the 3:MachineryOperationModeStateMachineType and the 3:MachineryItemState_StateMachineType.</Description>
+      <ConformanceGroup>1:37488ace-16ec-4cb3-8c76-c5f6da806817</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastMachine JobManagement" ReleaseStatus="Draft" Changed="true" Id="1:22384630-9af8-4de5-afb2-afcd581099a5">
+      <Description>Every ShotBlastMachineType instance has at least one instance of the optional node from the 5:JobManagementType.</Description>
+      <ConformanceGroup>1:e099a5b2-bd4c-4294-824c-db4473d78f8a</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="ShotBlastChamber Multiple Blasters" ReleaseStatus="Draft" Changed="true" Id="1:a5d9a51a-9dc2-4401-8bcf-aefed1c16eb3">
+      <Description>Every ShotBlastChamberType instance has more then one instance of the mandatory Placeholder node from the BlasterType.</Description>
+      <ConformanceGroup>1:25d5b7f2-1be2-4c2a-999c-46f8dc650a9b</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="Wheel Blaster" ReleaseStatus="Draft" Changed="true" Id="1:29ba4038-7e43-4c38-922f-4e310fea4308">
+      <Description>Every BlasterType instance has an instance of the optional node WheelRotationSpeed.</Description>
+      <ConformanceGroup>1:9d838f83-cbf2-45ae-9ee5-d348427b6665</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="Pressurised Blaster" ReleaseStatus="Draft" Changed="true" Id="1:873a3ef4-a14a-4f42-a516-13525a433c8c">
+      <Description>Every BlasterType instance has an instance of the optional node ShotBlastPressure.</Description>
+      <ConformanceGroup>1:0ee77b97-b72d-4127-88ca-d33d71adcb47</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="Hopper Fill Level Monitoring" ReleaseStatus="Draft" Changed="true" Id="1:ddd6c095-88aa-45bd-ac45-6983e46c22f0">
+      <Description>Every HopperType instance has an instance of the optional nodes HopperLevelMax and HopperLevelMin.</Description>
+      <ConformanceGroup>1:099c1d3c-4224-483e-ab74-f34691aa010c</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="Refill Silo Fill Level Monitoring" ReleaseStatus="Draft" Changed="true" Id="1:0c5dc869-b61f-4926-9e46-3829888dd17d">
+      <Description>Every RefillSiloType instance has an instance of the optional nodes RefillSiloLevelMax and RefillSiloLevelMin.</Description>
+      <ConformanceGroup>1:44898dfa-6e4a-4de7-b65b-9d1be4b4db2f</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="Pressurised Boiler Fill Level Monitoring" ReleaseStatus="Draft" Changed="true" Id="1:76abe37b-6ec2-446a-b5fd-fde5e092329b">
+      <Description>Every PressurisedBoilerType instance has an instance of the optional nodes PressurisedBoilerLevelMax and PressurisedBoilerLevelMin.</Description>
+      <ConformanceGroup>1:6d386306-95fa-492b-9081-804b84a8d549</ConformanceGroup>
+    </ConformanceUnit>
+    <ConformanceUnit Name="Filtration Status Monitoring" ReleaseStatus="Draft" Changed="true" Id="1:7e0bc7b0-0453-465a-b29c-87de017a5fb6">
+      <Description>Every FiltrationType instance has an instance of the optional node 3:MachineryItemState_StateMachineType.</Description>
+      <ConformanceGroup>1:3a1e0d7c-c5bc-4ea4-968d-38d64d8c0f08</ConformanceGroup>
+    </ConformanceUnit>
+  </ConformanceUnits>
+</UAProfileSet>
