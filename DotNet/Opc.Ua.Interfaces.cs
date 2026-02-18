@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -38,6 +38,7 @@ using System.Runtime.Serialization;
 
 #if (NET_STANDARD_ASYNC)
 using System.Threading.Tasks;
+using System.Threading;
 #endif
 
 namespace Opc.Ua
@@ -352,6 +353,7 @@ namespace Opc.Ua
     public interface ISessionEndpoint : IEndpointBase
     {
         #if (!OPCUA_EXCLUDE_CreateSession)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the CreateSession service.
         /// </summary>
@@ -359,16 +361,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CreateSession", ReplyAction = Namespaces.OpcUaWsdl + "/CreateSessionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CreateSessionFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSessionAsync instead.")]
+        #endif
         IAsyncResult BeginCreateSession(CreateSessionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CreateSession service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSessionAsync instead.")]
+        #endif
         CreateSessionResponseMessage EndCreateSession(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_CreateSession_ASYNC)
+        /// <summary>
+        /// The async operation contract for the CreateSession service.
+        /// </summary>
+        Task<IServiceResponse> CreateSessionAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_ActivateSession)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the ActivateSession service.
         /// </summary>
@@ -376,16 +392,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/ActivateSession", ReplyAction = Namespaces.OpcUaWsdl + "/ActivateSessionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ActivateSessionFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ActivateSessionAsync instead.")]
+        #endif
         IAsyncResult BeginActivateSession(ActivateSessionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a ActivateSession service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ActivateSessionAsync instead.")]
+        #endif
         ActivateSessionResponseMessage EndActivateSession(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_ActivateSession_ASYNC)
+        /// <summary>
+        /// The async operation contract for the ActivateSession service.
+        /// </summary>
+        Task<IServiceResponse> ActivateSessionAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_CloseSession)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the CloseSession service.
         /// </summary>
@@ -393,16 +423,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CloseSession", ReplyAction = Namespaces.OpcUaWsdl + "/CloseSessionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CloseSessionFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CloseSessionAsync instead.")]
+        #endif
         IAsyncResult BeginCloseSession(CloseSessionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CloseSession service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CloseSessionAsync instead.")]
+        #endif
         CloseSessionResponseMessage EndCloseSession(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_CloseSession_ASYNC)
+        /// <summary>
+        /// The async operation contract for the CloseSession service.
+        /// </summary>
+        Task<IServiceResponse> CloseSessionAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Cancel)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Cancel service.
         /// </summary>
@@ -410,16 +454,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Cancel", ReplyAction = Namespaces.OpcUaWsdl + "/CancelResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CancelFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CancelAsync instead.")]
+        #endif
         IAsyncResult BeginCancel(CancelMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Cancel service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CancelAsync instead.")]
+        #endif
         CancelResponseMessage EndCancel(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Cancel_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Cancel service.
+        /// </summary>
+        Task<IServiceResponse> CancelAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_AddNodes)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the AddNodes service.
         /// </summary>
@@ -427,16 +485,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/AddNodes", ReplyAction = Namespaces.OpcUaWsdl + "/AddNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/AddNodesFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddNodesAsync instead.")]
+        #endif
         IAsyncResult BeginAddNodes(AddNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a AddNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddNodesAsync instead.")]
+        #endif
         AddNodesResponseMessage EndAddNodes(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_AddNodes_ASYNC)
+        /// <summary>
+        /// The async operation contract for the AddNodes service.
+        /// </summary>
+        Task<IServiceResponse> AddNodesAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_AddReferences)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the AddReferences service.
         /// </summary>
@@ -444,16 +516,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/AddReferences", ReplyAction = Namespaces.OpcUaWsdl + "/AddReferencesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/AddReferencesFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddReferencesAsync instead.")]
+        #endif
         IAsyncResult BeginAddReferences(AddReferencesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a AddReferences service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddReferencesAsync instead.")]
+        #endif
         AddReferencesResponseMessage EndAddReferences(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_AddReferences_ASYNC)
+        /// <summary>
+        /// The async operation contract for the AddReferences service.
+        /// </summary>
+        Task<IServiceResponse> AddReferencesAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_DeleteNodes)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the DeleteNodes service.
         /// </summary>
@@ -461,16 +547,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteNodes", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteNodesFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteNodesAsync instead.")]
+        #endif
         IAsyncResult BeginDeleteNodes(DeleteNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteNodesAsync instead.")]
+        #endif
         DeleteNodesResponseMessage EndDeleteNodes(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_DeleteNodes_ASYNC)
+        /// <summary>
+        /// The async operation contract for the DeleteNodes service.
+        /// </summary>
+        Task<IServiceResponse> DeleteNodesAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_DeleteReferences)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the DeleteReferences service.
         /// </summary>
@@ -478,16 +578,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteReferences", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteReferencesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteReferencesFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteReferencesAsync instead.")]
+        #endif
         IAsyncResult BeginDeleteReferences(DeleteReferencesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteReferences service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteReferencesAsync instead.")]
+        #endif
         DeleteReferencesResponseMessage EndDeleteReferences(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_DeleteReferences_ASYNC)
+        /// <summary>
+        /// The async operation contract for the DeleteReferences service.
+        /// </summary>
+        Task<IServiceResponse> DeleteReferencesAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Browse)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Browse service.
         /// </summary>
@@ -495,16 +609,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Browse", ReplyAction = Namespaces.OpcUaWsdl + "/BrowseResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/BrowseFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseAsync instead.")]
+        #endif
         IAsyncResult BeginBrowse(BrowseMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Browse service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseAsync instead.")]
+        #endif
         BrowseResponseMessage EndBrowse(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Browse_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Browse service.
+        /// </summary>
+        Task<IServiceResponse> BrowseAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_BrowseNext)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the BrowseNext service.
         /// </summary>
@@ -512,16 +640,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/BrowseNext", ReplyAction = Namespaces.OpcUaWsdl + "/BrowseNextResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/BrowseNextFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseNextAsync instead.")]
+        #endif
         IAsyncResult BeginBrowseNext(BrowseNextMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a BrowseNext service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseNextAsync instead.")]
+        #endif
         BrowseNextResponseMessage EndBrowseNext(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_BrowseNext_ASYNC)
+        /// <summary>
+        /// The async operation contract for the BrowseNext service.
+        /// </summary>
+        Task<IServiceResponse> BrowseNextAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_TranslateBrowsePathsToNodeIds)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the TranslateBrowsePathsToNodeIds service.
         /// </summary>
@@ -529,16 +671,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIds", ReplyAction = Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIdsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIdsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TranslateBrowsePathsToNodeIdsAsync instead.")]
+        #endif
         IAsyncResult BeginTranslateBrowsePathsToNodeIds(TranslateBrowsePathsToNodeIdsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a TranslateBrowsePathsToNodeIds service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TranslateBrowsePathsToNodeIdsAsync instead.")]
+        #endif
         TranslateBrowsePathsToNodeIdsResponseMessage EndTranslateBrowsePathsToNodeIds(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_TranslateBrowsePathsToNodeIds_ASYNC)
+        /// <summary>
+        /// The async operation contract for the TranslateBrowsePathsToNodeIds service.
+        /// </summary>
+        Task<IServiceResponse> TranslateBrowsePathsToNodeIdsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_RegisterNodes)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the RegisterNodes service.
         /// </summary>
@@ -546,16 +702,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/RegisterNodes", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RegisterNodesFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterNodesAsync instead.")]
+        #endif
         IAsyncResult BeginRegisterNodes(RegisterNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a RegisterNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterNodesAsync instead.")]
+        #endif
         RegisterNodesResponseMessage EndRegisterNodes(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_RegisterNodes_ASYNC)
+        /// <summary>
+        /// The async operation contract for the RegisterNodes service.
+        /// </summary>
+        Task<IServiceResponse> RegisterNodesAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_UnregisterNodes)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the UnregisterNodes service.
         /// </summary>
@@ -563,16 +733,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/UnregisterNodes", ReplyAction = Namespaces.OpcUaWsdl + "/UnregisterNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/UnregisterNodesFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use UnregisterNodesAsync instead.")]
+        #endif
         IAsyncResult BeginUnregisterNodes(UnregisterNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a UnregisterNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use UnregisterNodesAsync instead.")]
+        #endif
         UnregisterNodesResponseMessage EndUnregisterNodes(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_UnregisterNodes_ASYNC)
+        /// <summary>
+        /// The async operation contract for the UnregisterNodes service.
+        /// </summary>
+        Task<IServiceResponse> UnregisterNodesAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_QueryFirst)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the QueryFirst service.
         /// </summary>
@@ -580,16 +764,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/QueryFirst", ReplyAction = Namespaces.OpcUaWsdl + "/QueryFirstResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/QueryFirstFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryFirstAsync instead.")]
+        #endif
         IAsyncResult BeginQueryFirst(QueryFirstMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a QueryFirst service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryFirstAsync instead.")]
+        #endif
         QueryFirstResponseMessage EndQueryFirst(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_QueryFirst_ASYNC)
+        /// <summary>
+        /// The async operation contract for the QueryFirst service.
+        /// </summary>
+        Task<IServiceResponse> QueryFirstAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_QueryNext)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the QueryNext service.
         /// </summary>
@@ -597,16 +795,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/QueryNext", ReplyAction = Namespaces.OpcUaWsdl + "/QueryNextResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/QueryNextFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryNextAsync instead.")]
+        #endif
         IAsyncResult BeginQueryNext(QueryNextMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a QueryNext service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryNextAsync instead.")]
+        #endif
         QueryNextResponseMessage EndQueryNext(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_QueryNext_ASYNC)
+        /// <summary>
+        /// The async operation contract for the QueryNext service.
+        /// </summary>
+        Task<IServiceResponse> QueryNextAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Read)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Read service.
         /// </summary>
@@ -614,16 +826,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Read", ReplyAction = Namespaces.OpcUaWsdl + "/ReadResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ReadFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ReadAsync instead.")]
+        #endif
         IAsyncResult BeginRead(ReadMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Read service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ReadAsync instead.")]
+        #endif
         ReadResponseMessage EndRead(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Read_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Read service.
+        /// </summary>
+        Task<IServiceResponse> ReadAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_HistoryRead)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the HistoryRead service.
         /// </summary>
@@ -631,16 +857,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/HistoryRead", ReplyAction = Namespaces.OpcUaWsdl + "/HistoryReadResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/HistoryReadFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryReadAsync instead.")]
+        #endif
         IAsyncResult BeginHistoryRead(HistoryReadMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a HistoryRead service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryReadAsync instead.")]
+        #endif
         HistoryReadResponseMessage EndHistoryRead(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_HistoryRead_ASYNC)
+        /// <summary>
+        /// The async operation contract for the HistoryRead service.
+        /// </summary>
+        Task<IServiceResponse> HistoryReadAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Write)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Write service.
         /// </summary>
@@ -648,16 +888,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Write", ReplyAction = Namespaces.OpcUaWsdl + "/WriteResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/WriteFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use WriteAsync instead.")]
+        #endif
         IAsyncResult BeginWrite(WriteMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Write service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use WriteAsync instead.")]
+        #endif
         WriteResponseMessage EndWrite(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Write_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Write service.
+        /// </summary>
+        Task<IServiceResponse> WriteAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_HistoryUpdate)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the HistoryUpdate service.
         /// </summary>
@@ -665,16 +919,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/HistoryUpdate", ReplyAction = Namespaces.OpcUaWsdl + "/HistoryUpdateResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/HistoryUpdateFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryUpdateAsync instead.")]
+        #endif
         IAsyncResult BeginHistoryUpdate(HistoryUpdateMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a HistoryUpdate service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryUpdateAsync instead.")]
+        #endif
         HistoryUpdateResponseMessage EndHistoryUpdate(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_HistoryUpdate_ASYNC)
+        /// <summary>
+        /// The async operation contract for the HistoryUpdate service.
+        /// </summary>
+        Task<IServiceResponse> HistoryUpdateAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Call)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Call service.
         /// </summary>
@@ -682,16 +950,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Call", ReplyAction = Namespaces.OpcUaWsdl + "/CallResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CallFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CallAsync instead.")]
+        #endif
         IAsyncResult BeginCall(CallMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Call service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CallAsync instead.")]
+        #endif
         CallResponseMessage EndCall(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Call_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Call service.
+        /// </summary>
+        Task<IServiceResponse> CallAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_CreateMonitoredItems)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the CreateMonitoredItems service.
         /// </summary>
@@ -699,16 +981,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CreateMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/CreateMonitoredItemsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CreateMonitoredItemsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateMonitoredItemsAsync instead.")]
+        #endif
         IAsyncResult BeginCreateMonitoredItems(CreateMonitoredItemsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CreateMonitoredItems service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateMonitoredItemsAsync instead.")]
+        #endif
         CreateMonitoredItemsResponseMessage EndCreateMonitoredItems(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_CreateMonitoredItems_ASYNC)
+        /// <summary>
+        /// The async operation contract for the CreateMonitoredItems service.
+        /// </summary>
+        Task<IServiceResponse> CreateMonitoredItemsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_ModifyMonitoredItems)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the ModifyMonitoredItems service.
         /// </summary>
@@ -716,16 +1012,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/ModifyMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/ModifyMonitoredItemsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ModifyMonitoredItemsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifyMonitoredItemsAsync instead.")]
+        #endif
         IAsyncResult BeginModifyMonitoredItems(ModifyMonitoredItemsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a ModifyMonitoredItems service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifyMonitoredItemsAsync instead.")]
+        #endif
         ModifyMonitoredItemsResponseMessage EndModifyMonitoredItems(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_ModifyMonitoredItems_ASYNC)
+        /// <summary>
+        /// The async operation contract for the ModifyMonitoredItems service.
+        /// </summary>
+        Task<IServiceResponse> ModifyMonitoredItemsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_SetMonitoringMode)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the SetMonitoringMode service.
         /// </summary>
@@ -733,16 +1043,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/SetMonitoringMode", ReplyAction = Namespaces.OpcUaWsdl + "/SetMonitoringModeResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/SetMonitoringModeFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetMonitoringModeAsync instead.")]
+        #endif
         IAsyncResult BeginSetMonitoringMode(SetMonitoringModeMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a SetMonitoringMode service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetMonitoringModeAsync instead.")]
+        #endif
         SetMonitoringModeResponseMessage EndSetMonitoringMode(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_SetMonitoringMode_ASYNC)
+        /// <summary>
+        /// The async operation contract for the SetMonitoringMode service.
+        /// </summary>
+        Task<IServiceResponse> SetMonitoringModeAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_SetTriggering)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the SetTriggering service.
         /// </summary>
@@ -750,16 +1074,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/SetTriggering", ReplyAction = Namespaces.OpcUaWsdl + "/SetTriggeringResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/SetTriggeringFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetTriggeringAsync instead.")]
+        #endif
         IAsyncResult BeginSetTriggering(SetTriggeringMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a SetTriggering service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetTriggeringAsync instead.")]
+        #endif
         SetTriggeringResponseMessage EndSetTriggering(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_SetTriggering_ASYNC)
+        /// <summary>
+        /// The async operation contract for the SetTriggering service.
+        /// </summary>
+        Task<IServiceResponse> SetTriggeringAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_DeleteMonitoredItems)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the DeleteMonitoredItems service.
         /// </summary>
@@ -767,16 +1105,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteMonitoredItemsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteMonitoredItemsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteMonitoredItemsAsync instead.")]
+        #endif
         IAsyncResult BeginDeleteMonitoredItems(DeleteMonitoredItemsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteMonitoredItems service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteMonitoredItemsAsync instead.")]
+        #endif
         DeleteMonitoredItemsResponseMessage EndDeleteMonitoredItems(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_DeleteMonitoredItems_ASYNC)
+        /// <summary>
+        /// The async operation contract for the DeleteMonitoredItems service.
+        /// </summary>
+        Task<IServiceResponse> DeleteMonitoredItemsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_CreateSubscription)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the CreateSubscription service.
         /// </summary>
@@ -784,16 +1136,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CreateSubscription", ReplyAction = Namespaces.OpcUaWsdl + "/CreateSubscriptionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CreateSubscriptionFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSubscriptionAsync instead.")]
+        #endif
         IAsyncResult BeginCreateSubscription(CreateSubscriptionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CreateSubscription service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSubscriptionAsync instead.")]
+        #endif
         CreateSubscriptionResponseMessage EndCreateSubscription(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_CreateSubscription_ASYNC)
+        /// <summary>
+        /// The async operation contract for the CreateSubscription service.
+        /// </summary>
+        Task<IServiceResponse> CreateSubscriptionAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_ModifySubscription)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the ModifySubscription service.
         /// </summary>
@@ -801,16 +1167,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/ModifySubscription", ReplyAction = Namespaces.OpcUaWsdl + "/ModifySubscriptionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ModifySubscriptionFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifySubscriptionAsync instead.")]
+        #endif
         IAsyncResult BeginModifySubscription(ModifySubscriptionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a ModifySubscription service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifySubscriptionAsync instead.")]
+        #endif
         ModifySubscriptionResponseMessage EndModifySubscription(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_ModifySubscription_ASYNC)
+        /// <summary>
+        /// The async operation contract for the ModifySubscription service.
+        /// </summary>
+        Task<IServiceResponse> ModifySubscriptionAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_SetPublishingMode)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the SetPublishingMode service.
         /// </summary>
@@ -818,16 +1198,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/SetPublishingMode", ReplyAction = Namespaces.OpcUaWsdl + "/SetPublishingModeResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/SetPublishingModeFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetPublishingModeAsync instead.")]
+        #endif
         IAsyncResult BeginSetPublishingMode(SetPublishingModeMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a SetPublishingMode service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetPublishingModeAsync instead.")]
+        #endif
         SetPublishingModeResponseMessage EndSetPublishingMode(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_SetPublishingMode_ASYNC)
+        /// <summary>
+        /// The async operation contract for the SetPublishingMode service.
+        /// </summary>
+        Task<IServiceResponse> SetPublishingModeAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Publish)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Publish service.
         /// </summary>
@@ -835,16 +1229,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Publish", ReplyAction = Namespaces.OpcUaWsdl + "/PublishResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/PublishFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use PublishAsync instead.")]
+        #endif
         IAsyncResult BeginPublish(PublishMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Publish service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use PublishAsync instead.")]
+        #endif
         PublishResponseMessage EndPublish(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Publish_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Publish service.
+        /// </summary>
+        Task<IServiceResponse> PublishAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_Republish)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the Republish service.
         /// </summary>
@@ -852,16 +1260,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Republish", ReplyAction = Namespaces.OpcUaWsdl + "/RepublishResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RepublishFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RepublishAsync instead.")]
+        #endif
         IAsyncResult BeginRepublish(RepublishMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Republish service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RepublishAsync instead.")]
+        #endif
         RepublishResponseMessage EndRepublish(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_Republish_ASYNC)
+        /// <summary>
+        /// The async operation contract for the Republish service.
+        /// </summary>
+        Task<IServiceResponse> RepublishAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_TransferSubscriptions)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the TransferSubscriptions service.
         /// </summary>
@@ -869,16 +1291,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/TransferSubscriptions", ReplyAction = Namespaces.OpcUaWsdl + "/TransferSubscriptionsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/TransferSubscriptionsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TransferSubscriptionsAsync instead.")]
+        #endif
         IAsyncResult BeginTransferSubscriptions(TransferSubscriptionsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a TransferSubscriptions service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TransferSubscriptionsAsync instead.")]
+        #endif
         TransferSubscriptionsResponseMessage EndTransferSubscriptions(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_TransferSubscriptions_ASYNC)
+        /// <summary>
+        /// The async operation contract for the TransferSubscriptions service.
+        /// </summary>
+        Task<IServiceResponse> TransferSubscriptionsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_DeleteSubscriptions)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the DeleteSubscriptions service.
         /// </summary>
@@ -886,13 +1322,26 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteSubscriptions", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteSubscriptionsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteSubscriptionsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteSubscriptionsAsync instead.")]
+        #endif
         IAsyncResult BeginDeleteSubscriptions(DeleteSubscriptionsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteSubscriptions service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteSubscriptionsAsync instead.")]
+        #endif
         DeleteSubscriptionsResponseMessage EndDeleteSubscriptions(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_DeleteSubscriptions_ASYNC)
+        /// <summary>
+        /// The async operation contract for the DeleteSubscriptions service.
+        /// </summary>
+        Task<IServiceResponse> DeleteSubscriptionsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
     }
     #endif
@@ -913,24 +1362,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the CreateSession service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/CreateSession", ReplyAction = Namespaces.OpcUaWsdl + "/CreateSessionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CreateSessionFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use CreateSessionAsync instead.")]
+        #endif
         CreateSessionResponseMessage CreateSession(CreateSessionMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the CreateSession service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CreateSession", ReplyAction = Namespaces.OpcUaWsdl + "/CreateSessionResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSessionAsync instead.")]
         #endif
         IAsyncResult BeginCreateSession(CreateSessionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CreateSession service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSessionAsync instead.")]
+        #endif
         CreateSessionResponseMessage EndCreateSession(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -944,24 +1406,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the ActivateSession service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/ActivateSession", ReplyAction = Namespaces.OpcUaWsdl + "/ActivateSessionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ActivateSessionFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use ActivateSessionAsync instead.")]
+        #endif
         ActivateSessionResponseMessage ActivateSession(ActivateSessionMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the ActivateSession service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/ActivateSession", ReplyAction = Namespaces.OpcUaWsdl + "/ActivateSessionResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ActivateSessionAsync instead.")]
         #endif
         IAsyncResult BeginActivateSession(ActivateSessionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a ActivateSession service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ActivateSessionAsync instead.")]
+        #endif
         ActivateSessionResponseMessage EndActivateSession(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -975,24 +1450,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the CloseSession service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/CloseSession", ReplyAction = Namespaces.OpcUaWsdl + "/CloseSessionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CloseSessionFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use CloseSessionAsync instead.")]
+        #endif
         CloseSessionResponseMessage CloseSession(CloseSessionMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the CloseSession service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CloseSession", ReplyAction = Namespaces.OpcUaWsdl + "/CloseSessionResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CloseSessionAsync instead.")]
         #endif
         IAsyncResult BeginCloseSession(CloseSessionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CloseSession service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CloseSessionAsync instead.")]
+        #endif
         CloseSessionResponseMessage EndCloseSession(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1006,24 +1494,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Cancel service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Cancel", ReplyAction = Namespaces.OpcUaWsdl + "/CancelResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CancelFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use CancelAsync instead.")]
+        #endif
         CancelResponseMessage Cancel(CancelMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Cancel service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Cancel", ReplyAction = Namespaces.OpcUaWsdl + "/CancelResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CancelAsync instead.")]
         #endif
         IAsyncResult BeginCancel(CancelMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Cancel service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CancelAsync instead.")]
+        #endif
         CancelResponseMessage EndCancel(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1037,24 +1538,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the AddNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/AddNodes", ReplyAction = Namespaces.OpcUaWsdl + "/AddNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/AddNodesFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use AddNodesAsync instead.")]
+        #endif
         AddNodesResponseMessage AddNodes(AddNodesMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the AddNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/AddNodes", ReplyAction = Namespaces.OpcUaWsdl + "/AddNodesResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddNodesAsync instead.")]
         #endif
         IAsyncResult BeginAddNodes(AddNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a AddNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddNodesAsync instead.")]
+        #endif
         AddNodesResponseMessage EndAddNodes(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1068,24 +1582,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the AddReferences service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/AddReferences", ReplyAction = Namespaces.OpcUaWsdl + "/AddReferencesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/AddReferencesFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use AddReferencesAsync instead.")]
+        #endif
         AddReferencesResponseMessage AddReferences(AddReferencesMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the AddReferences service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/AddReferences", ReplyAction = Namespaces.OpcUaWsdl + "/AddReferencesResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddReferencesAsync instead.")]
         #endif
         IAsyncResult BeginAddReferences(AddReferencesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a AddReferences service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use AddReferencesAsync instead.")]
+        #endif
         AddReferencesResponseMessage EndAddReferences(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1099,24 +1626,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the DeleteNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/DeleteNodes", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteNodesFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use DeleteNodesAsync instead.")]
+        #endif
         DeleteNodesResponseMessage DeleteNodes(DeleteNodesMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the DeleteNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteNodes", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteNodesResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteNodesAsync instead.")]
         #endif
         IAsyncResult BeginDeleteNodes(DeleteNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteNodesAsync instead.")]
+        #endif
         DeleteNodesResponseMessage EndDeleteNodes(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1130,24 +1670,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the DeleteReferences service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/DeleteReferences", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteReferencesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteReferencesFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use DeleteReferencesAsync instead.")]
+        #endif
         DeleteReferencesResponseMessage DeleteReferences(DeleteReferencesMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the DeleteReferences service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteReferences", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteReferencesResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteReferencesAsync instead.")]
         #endif
         IAsyncResult BeginDeleteReferences(DeleteReferencesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteReferences service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteReferencesAsync instead.")]
+        #endif
         DeleteReferencesResponseMessage EndDeleteReferences(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1161,24 +1714,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Browse service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Browse", ReplyAction = Namespaces.OpcUaWsdl + "/BrowseResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/BrowseFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use BrowseAsync instead.")]
+        #endif
         BrowseResponseMessage Browse(BrowseMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Browse service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Browse", ReplyAction = Namespaces.OpcUaWsdl + "/BrowseResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseAsync instead.")]
         #endif
         IAsyncResult BeginBrowse(BrowseMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Browse service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseAsync instead.")]
+        #endif
         BrowseResponseMessage EndBrowse(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1192,24 +1758,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the BrowseNext service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/BrowseNext", ReplyAction = Namespaces.OpcUaWsdl + "/BrowseNextResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/BrowseNextFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use BrowseNextAsync instead.")]
+        #endif
         BrowseNextResponseMessage BrowseNext(BrowseNextMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the BrowseNext service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/BrowseNext", ReplyAction = Namespaces.OpcUaWsdl + "/BrowseNextResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseNextAsync instead.")]
         #endif
         IAsyncResult BeginBrowseNext(BrowseNextMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a BrowseNext service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use BrowseNextAsync instead.")]
+        #endif
         BrowseNextResponseMessage EndBrowseNext(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1223,24 +1802,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the TranslateBrowsePathsToNodeIds service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIds", ReplyAction = Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIdsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIdsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use TranslateBrowsePathsToNodeIdsAsync instead.")]
+        #endif
         TranslateBrowsePathsToNodeIdsResponseMessage TranslateBrowsePathsToNodeIds(TranslateBrowsePathsToNodeIdsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the TranslateBrowsePathsToNodeIds service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIds", ReplyAction = Namespaces.OpcUaWsdl + "/TranslateBrowsePathsToNodeIdsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TranslateBrowsePathsToNodeIdsAsync instead.")]
         #endif
         IAsyncResult BeginTranslateBrowsePathsToNodeIds(TranslateBrowsePathsToNodeIdsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a TranslateBrowsePathsToNodeIds service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TranslateBrowsePathsToNodeIdsAsync instead.")]
+        #endif
         TranslateBrowsePathsToNodeIdsResponseMessage EndTranslateBrowsePathsToNodeIds(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1254,24 +1846,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the RegisterNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/RegisterNodes", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RegisterNodesFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use RegisterNodesAsync instead.")]
+        #endif
         RegisterNodesResponseMessage RegisterNodes(RegisterNodesMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the RegisterNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/RegisterNodes", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterNodesResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterNodesAsync instead.")]
         #endif
         IAsyncResult BeginRegisterNodes(RegisterNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a RegisterNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterNodesAsync instead.")]
+        #endif
         RegisterNodesResponseMessage EndRegisterNodes(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1285,24 +1890,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the UnregisterNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/UnregisterNodes", ReplyAction = Namespaces.OpcUaWsdl + "/UnregisterNodesResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/UnregisterNodesFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use UnregisterNodesAsync instead.")]
+        #endif
         UnregisterNodesResponseMessage UnregisterNodes(UnregisterNodesMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the UnregisterNodes service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/UnregisterNodes", ReplyAction = Namespaces.OpcUaWsdl + "/UnregisterNodesResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use UnregisterNodesAsync instead.")]
         #endif
         IAsyncResult BeginUnregisterNodes(UnregisterNodesMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a UnregisterNodes service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use UnregisterNodesAsync instead.")]
+        #endif
         UnregisterNodesResponseMessage EndUnregisterNodes(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1316,24 +1934,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the QueryFirst service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/QueryFirst", ReplyAction = Namespaces.OpcUaWsdl + "/QueryFirstResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/QueryFirstFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use QueryFirstAsync instead.")]
+        #endif
         QueryFirstResponseMessage QueryFirst(QueryFirstMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the QueryFirst service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/QueryFirst", ReplyAction = Namespaces.OpcUaWsdl + "/QueryFirstResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryFirstAsync instead.")]
         #endif
         IAsyncResult BeginQueryFirst(QueryFirstMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a QueryFirst service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryFirstAsync instead.")]
+        #endif
         QueryFirstResponseMessage EndQueryFirst(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1347,24 +1978,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the QueryNext service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/QueryNext", ReplyAction = Namespaces.OpcUaWsdl + "/QueryNextResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/QueryNextFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use QueryNextAsync instead.")]
+        #endif
         QueryNextResponseMessage QueryNext(QueryNextMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the QueryNext service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/QueryNext", ReplyAction = Namespaces.OpcUaWsdl + "/QueryNextResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryNextAsync instead.")]
         #endif
         IAsyncResult BeginQueryNext(QueryNextMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a QueryNext service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use QueryNextAsync instead.")]
+        #endif
         QueryNextResponseMessage EndQueryNext(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1378,24 +2022,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Read service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Read", ReplyAction = Namespaces.OpcUaWsdl + "/ReadResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ReadFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use ReadAsync instead.")]
+        #endif
         ReadResponseMessage Read(ReadMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Read service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Read", ReplyAction = Namespaces.OpcUaWsdl + "/ReadResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ReadAsync instead.")]
         #endif
         IAsyncResult BeginRead(ReadMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Read service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ReadAsync instead.")]
+        #endif
         ReadResponseMessage EndRead(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1409,24 +2066,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the HistoryRead service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/HistoryRead", ReplyAction = Namespaces.OpcUaWsdl + "/HistoryReadResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/HistoryReadFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use HistoryReadAsync instead.")]
+        #endif
         HistoryReadResponseMessage HistoryRead(HistoryReadMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the HistoryRead service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/HistoryRead", ReplyAction = Namespaces.OpcUaWsdl + "/HistoryReadResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryReadAsync instead.")]
         #endif
         IAsyncResult BeginHistoryRead(HistoryReadMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a HistoryRead service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryReadAsync instead.")]
+        #endif
         HistoryReadResponseMessage EndHistoryRead(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1440,24 +2110,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Write service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Write", ReplyAction = Namespaces.OpcUaWsdl + "/WriteResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/WriteFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use WriteAsync instead.")]
+        #endif
         WriteResponseMessage Write(WriteMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Write service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Write", ReplyAction = Namespaces.OpcUaWsdl + "/WriteResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use WriteAsync instead.")]
         #endif
         IAsyncResult BeginWrite(WriteMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Write service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use WriteAsync instead.")]
+        #endif
         WriteResponseMessage EndWrite(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1471,24 +2154,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the HistoryUpdate service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/HistoryUpdate", ReplyAction = Namespaces.OpcUaWsdl + "/HistoryUpdateResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/HistoryUpdateFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use HistoryUpdateAsync instead.")]
+        #endif
         HistoryUpdateResponseMessage HistoryUpdate(HistoryUpdateMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the HistoryUpdate service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/HistoryUpdate", ReplyAction = Namespaces.OpcUaWsdl + "/HistoryUpdateResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryUpdateAsync instead.")]
         #endif
         IAsyncResult BeginHistoryUpdate(HistoryUpdateMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a HistoryUpdate service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use HistoryUpdateAsync instead.")]
+        #endif
         HistoryUpdateResponseMessage EndHistoryUpdate(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1502,24 +2198,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Call service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Call", ReplyAction = Namespaces.OpcUaWsdl + "/CallResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CallFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use CallAsync instead.")]
+        #endif
         CallResponseMessage Call(CallMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Call service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Call", ReplyAction = Namespaces.OpcUaWsdl + "/CallResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CallAsync instead.")]
         #endif
         IAsyncResult BeginCall(CallMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Call service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CallAsync instead.")]
+        #endif
         CallResponseMessage EndCall(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1533,24 +2242,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the CreateMonitoredItems service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/CreateMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/CreateMonitoredItemsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CreateMonitoredItemsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use CreateMonitoredItemsAsync instead.")]
+        #endif
         CreateMonitoredItemsResponseMessage CreateMonitoredItems(CreateMonitoredItemsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the CreateMonitoredItems service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CreateMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/CreateMonitoredItemsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateMonitoredItemsAsync instead.")]
         #endif
         IAsyncResult BeginCreateMonitoredItems(CreateMonitoredItemsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CreateMonitoredItems service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateMonitoredItemsAsync instead.")]
+        #endif
         CreateMonitoredItemsResponseMessage EndCreateMonitoredItems(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1564,24 +2286,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the ModifyMonitoredItems service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/ModifyMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/ModifyMonitoredItemsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ModifyMonitoredItemsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use ModifyMonitoredItemsAsync instead.")]
+        #endif
         ModifyMonitoredItemsResponseMessage ModifyMonitoredItems(ModifyMonitoredItemsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the ModifyMonitoredItems service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/ModifyMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/ModifyMonitoredItemsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifyMonitoredItemsAsync instead.")]
         #endif
         IAsyncResult BeginModifyMonitoredItems(ModifyMonitoredItemsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a ModifyMonitoredItems service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifyMonitoredItemsAsync instead.")]
+        #endif
         ModifyMonitoredItemsResponseMessage EndModifyMonitoredItems(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1595,24 +2330,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the SetMonitoringMode service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/SetMonitoringMode", ReplyAction = Namespaces.OpcUaWsdl + "/SetMonitoringModeResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/SetMonitoringModeFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use SetMonitoringModeAsync instead.")]
+        #endif
         SetMonitoringModeResponseMessage SetMonitoringMode(SetMonitoringModeMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the SetMonitoringMode service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/SetMonitoringMode", ReplyAction = Namespaces.OpcUaWsdl + "/SetMonitoringModeResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetMonitoringModeAsync instead.")]
         #endif
         IAsyncResult BeginSetMonitoringMode(SetMonitoringModeMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a SetMonitoringMode service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetMonitoringModeAsync instead.")]
+        #endif
         SetMonitoringModeResponseMessage EndSetMonitoringMode(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1626,24 +2374,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the SetTriggering service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/SetTriggering", ReplyAction = Namespaces.OpcUaWsdl + "/SetTriggeringResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/SetTriggeringFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use SetTriggeringAsync instead.")]
+        #endif
         SetTriggeringResponseMessage SetTriggering(SetTriggeringMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the SetTriggering service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/SetTriggering", ReplyAction = Namespaces.OpcUaWsdl + "/SetTriggeringResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetTriggeringAsync instead.")]
         #endif
         IAsyncResult BeginSetTriggering(SetTriggeringMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a SetTriggering service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetTriggeringAsync instead.")]
+        #endif
         SetTriggeringResponseMessage EndSetTriggering(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1657,24 +2418,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the DeleteMonitoredItems service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/DeleteMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteMonitoredItemsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteMonitoredItemsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use DeleteMonitoredItemsAsync instead.")]
+        #endif
         DeleteMonitoredItemsResponseMessage DeleteMonitoredItems(DeleteMonitoredItemsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the DeleteMonitoredItems service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteMonitoredItems", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteMonitoredItemsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteMonitoredItemsAsync instead.")]
         #endif
         IAsyncResult BeginDeleteMonitoredItems(DeleteMonitoredItemsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteMonitoredItems service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteMonitoredItemsAsync instead.")]
+        #endif
         DeleteMonitoredItemsResponseMessage EndDeleteMonitoredItems(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1688,24 +2462,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the CreateSubscription service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/CreateSubscription", ReplyAction = Namespaces.OpcUaWsdl + "/CreateSubscriptionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/CreateSubscriptionFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use CreateSubscriptionAsync instead.")]
+        #endif
         CreateSubscriptionResponseMessage CreateSubscription(CreateSubscriptionMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the CreateSubscription service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/CreateSubscription", ReplyAction = Namespaces.OpcUaWsdl + "/CreateSubscriptionResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSubscriptionAsync instead.")]
         #endif
         IAsyncResult BeginCreateSubscription(CreateSubscriptionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a CreateSubscription service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use CreateSubscriptionAsync instead.")]
+        #endif
         CreateSubscriptionResponseMessage EndCreateSubscription(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1719,24 +2506,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the ModifySubscription service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/ModifySubscription", ReplyAction = Namespaces.OpcUaWsdl + "/ModifySubscriptionResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/ModifySubscriptionFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use ModifySubscriptionAsync instead.")]
+        #endif
         ModifySubscriptionResponseMessage ModifySubscription(ModifySubscriptionMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the ModifySubscription service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/ModifySubscription", ReplyAction = Namespaces.OpcUaWsdl + "/ModifySubscriptionResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifySubscriptionAsync instead.")]
         #endif
         IAsyncResult BeginModifySubscription(ModifySubscriptionMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a ModifySubscription service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use ModifySubscriptionAsync instead.")]
+        #endif
         ModifySubscriptionResponseMessage EndModifySubscription(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1750,24 +2550,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the SetPublishingMode service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/SetPublishingMode", ReplyAction = Namespaces.OpcUaWsdl + "/SetPublishingModeResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/SetPublishingModeFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use SetPublishingModeAsync instead.")]
+        #endif
         SetPublishingModeResponseMessage SetPublishingMode(SetPublishingModeMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the SetPublishingMode service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/SetPublishingMode", ReplyAction = Namespaces.OpcUaWsdl + "/SetPublishingModeResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetPublishingModeAsync instead.")]
         #endif
         IAsyncResult BeginSetPublishingMode(SetPublishingModeMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a SetPublishingMode service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use SetPublishingModeAsync instead.")]
+        #endif
         SetPublishingModeResponseMessage EndSetPublishingMode(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1781,24 +2594,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Publish service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Publish", ReplyAction = Namespaces.OpcUaWsdl + "/PublishResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/PublishFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use PublishAsync instead.")]
+        #endif
         PublishResponseMessage Publish(PublishMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Publish service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Publish", ReplyAction = Namespaces.OpcUaWsdl + "/PublishResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use PublishAsync instead.")]
         #endif
         IAsyncResult BeginPublish(PublishMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Publish service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use PublishAsync instead.")]
+        #endif
         PublishResponseMessage EndPublish(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1812,24 +2638,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the Republish service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/Republish", ReplyAction = Namespaces.OpcUaWsdl + "/RepublishResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RepublishFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use RepublishAsync instead.")]
+        #endif
         RepublishResponseMessage Republish(RepublishMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the Republish service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/Republish", ReplyAction = Namespaces.OpcUaWsdl + "/RepublishResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RepublishAsync instead.")]
         #endif
         IAsyncResult BeginRepublish(RepublishMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a Republish service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RepublishAsync instead.")]
+        #endif
         RepublishResponseMessage EndRepublish(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1843,24 +2682,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the TransferSubscriptions service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/TransferSubscriptions", ReplyAction = Namespaces.OpcUaWsdl + "/TransferSubscriptionsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/TransferSubscriptionsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use TransferSubscriptionsAsync instead.")]
+        #endif
         TransferSubscriptionsResponseMessage TransferSubscriptions(TransferSubscriptionsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the TransferSubscriptions service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/TransferSubscriptions", ReplyAction = Namespaces.OpcUaWsdl + "/TransferSubscriptionsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TransferSubscriptionsAsync instead.")]
         #endif
         IAsyncResult BeginTransferSubscriptions(TransferSubscriptionsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a TransferSubscriptions service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use TransferSubscriptionsAsync instead.")]
+        #endif
         TransferSubscriptionsResponseMessage EndTransferSubscriptions(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1874,24 +2726,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the DeleteSubscriptions service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/DeleteSubscriptions", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteSubscriptionsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/DeleteSubscriptionsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use DeleteSubscriptionsAsync instead.")]
+        #endif
         DeleteSubscriptionsResponseMessage DeleteSubscriptions(DeleteSubscriptionsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the DeleteSubscriptions service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/DeleteSubscriptions", ReplyAction = Namespaces.OpcUaWsdl + "/DeleteSubscriptionsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteSubscriptionsAsync instead.")]
         #endif
         IAsyncResult BeginDeleteSubscriptions(DeleteSubscriptionsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a DeleteSubscriptions service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use DeleteSubscriptionsAsync instead.")]
+        #endif
         DeleteSubscriptionsResponseMessage EndDeleteSubscriptions(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -1952,6 +2817,7 @@ namespace Opc.Ua
     public interface IDiscoveryEndpoint : IEndpointBase
     {
         #if (!OPCUA_EXCLUDE_FindServers)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the FindServers service.
         /// </summary>
@@ -1959,16 +2825,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/FindServers", ReplyAction = Namespaces.OpcUaWsdl + "/FindServersResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/FindServersFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersAsync instead.")]
+        #endif
         IAsyncResult BeginFindServers(FindServersMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a FindServers service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersAsync instead.")]
+        #endif
         FindServersResponseMessage EndFindServers(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_FindServers_ASYNC)
+        /// <summary>
+        /// The async operation contract for the FindServers service.
+        /// </summary>
+        Task<IServiceResponse> FindServersAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_FindServersOnNetwork)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the FindServersOnNetwork service.
         /// </summary>
@@ -1976,16 +2856,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/FindServersOnNetwork", ReplyAction = Namespaces.OpcUaWsdl + "/FindServersOnNetworkResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/FindServersOnNetworkFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersOnNetworkAsync instead.")]
+        #endif
         IAsyncResult BeginFindServersOnNetwork(FindServersOnNetworkMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a FindServersOnNetwork service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersOnNetworkAsync instead.")]
+        #endif
         FindServersOnNetworkResponseMessage EndFindServersOnNetwork(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_FindServersOnNetwork_ASYNC)
+        /// <summary>
+        /// The async operation contract for the FindServersOnNetwork service.
+        /// </summary>
+        Task<IServiceResponse> FindServersOnNetworkAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_GetEndpoints)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the GetEndpoints service.
         /// </summary>
@@ -1993,13 +2887,26 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/GetEndpoints", ReplyAction = Namespaces.OpcUaWsdl + "/GetEndpointsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/GetEndpointsFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use GetEndpointsAsync instead.")]
+        #endif
         IAsyncResult BeginGetEndpoints(GetEndpointsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a GetEndpoints service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use GetEndpointsAsync instead.")]
+        #endif
         GetEndpointsResponseMessage EndGetEndpoints(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_GetEndpoints_ASYNC)
+        /// <summary>
+        /// The async operation contract for the GetEndpoints service.
+        /// </summary>
+        Task<IServiceResponse> GetEndpointsAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
     }
     #endif
@@ -2020,24 +2927,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the FindServers service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/FindServers", ReplyAction = Namespaces.OpcUaWsdl + "/FindServersResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/FindServersFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use FindServersAsync instead.")]
+        #endif
         FindServersResponseMessage FindServers(FindServersMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the FindServers service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/FindServers", ReplyAction = Namespaces.OpcUaWsdl + "/FindServersResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersAsync instead.")]
         #endif
         IAsyncResult BeginFindServers(FindServersMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a FindServers service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersAsync instead.")]
+        #endif
         FindServersResponseMessage EndFindServers(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -2051,24 +2971,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the FindServersOnNetwork service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/FindServersOnNetwork", ReplyAction = Namespaces.OpcUaWsdl + "/FindServersOnNetworkResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/FindServersOnNetworkFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use FindServersOnNetworkAsync instead.")]
+        #endif
         FindServersOnNetworkResponseMessage FindServersOnNetwork(FindServersOnNetworkMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the FindServersOnNetwork service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/FindServersOnNetwork", ReplyAction = Namespaces.OpcUaWsdl + "/FindServersOnNetworkResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersOnNetworkAsync instead.")]
         #endif
         IAsyncResult BeginFindServersOnNetwork(FindServersOnNetworkMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a FindServersOnNetwork service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use FindServersOnNetworkAsync instead.")]
+        #endif
         FindServersOnNetworkResponseMessage EndFindServersOnNetwork(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -2082,24 +3015,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the GetEndpoints service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/GetEndpoints", ReplyAction = Namespaces.OpcUaWsdl + "/GetEndpointsResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/GetEndpointsFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use GetEndpointsAsync instead.")]
+        #endif
         GetEndpointsResponseMessage GetEndpoints(GetEndpointsMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the GetEndpoints service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/GetEndpoints", ReplyAction = Namespaces.OpcUaWsdl + "/GetEndpointsResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use GetEndpointsAsync instead.")]
         #endif
         IAsyncResult BeginGetEndpoints(GetEndpointsMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a GetEndpoints service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use GetEndpointsAsync instead.")]
+        #endif
         GetEndpointsResponseMessage EndGetEndpoints(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -2151,6 +3097,7 @@ namespace Opc.Ua
     public interface IRegistrationEndpoint : IEndpointBase
     {
         #if (!OPCUA_EXCLUDE_RegisterServer)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the RegisterServer service.
         /// </summary>
@@ -2158,16 +3105,30 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/RegisterServer", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterServerResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RegisterServerFault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServerAsync instead.")]
+        #endif
         IAsyncResult BeginRegisterServer(RegisterServerMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a RegisterServer service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServerAsync instead.")]
+        #endif
         RegisterServerResponseMessage EndRegisterServer(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_RegisterServer_ASYNC)
+        /// <summary>
+        /// The async operation contract for the RegisterServer service.
+        /// </summary>
+        Task<IServiceResponse> RegisterServerAsync(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
 
         #if (!OPCUA_EXCLUDE_RegisterServer2)
+        #if (!NET_STANDARD_NO_APM)
         /// <summary>
         /// The operation contract for the RegisterServer2 service.
         /// </summary>
@@ -2175,13 +3136,26 @@ namespace Opc.Ua
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/RegisterServer2", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterServer2Response")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RegisterServer2Fault", Name = "ServiceFault", Namespace = Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServer2Async instead.")]
+        #endif
         IAsyncResult BeginRegisterServer2(RegisterServer2Message request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a RegisterServer2 service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServer2Async instead.")]
+        #endif
         RegisterServer2ResponseMessage EndRegisterServer2(IAsyncResult result);
+        #endif
 
+        #if (NET_STANDARD_ASYNC && !OPCUA_EXCLUDE_RegisterServer2_ASYNC)
+        /// <summary>
+        /// The async operation contract for the RegisterServer2 service.
+        /// </summary>
+        Task<IServiceResponse> RegisterServer2Async(IServiceRequest incoming, SecureChannelContext secureChannelContext, CancellationToken cancellationToken = default);
+        #endif
         #endif
     }
     #endif
@@ -2202,24 +3176,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the RegisterServer service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/RegisterServer", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterServerResponse")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RegisterServerFault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use RegisterServerAsync instead.")]
+        #endif
         RegisterServerResponseMessage RegisterServer(RegisterServerMessage request);
+        #endif
 
         /// <summary>
         /// The operation contract for the RegisterServer service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/RegisterServer", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterServerResponse")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServerAsync instead.")]
         #endif
         IAsyncResult BeginRegisterServer(RegisterServerMessage request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a RegisterServer service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServerAsync instead.")]
+        #endif
         RegisterServerResponseMessage EndRegisterServer(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>
@@ -2233,24 +3220,37 @@ namespace Opc.Ua
         /// <summary>
         /// The operation contract for the RegisterServer2 service.
         /// </summary>
+        #if (!NET_STANDARD_NO_SYNC && !NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContract(Action = Namespaces.OpcUaWsdl + "/RegisterServer2", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterServer2Response")]
         [FaultContract(typeof(ServiceFault), Action = Namespaces.OpcUaWsdl + "/RegisterServer2Fault", Name="ServiceFault", Namespace=Namespaces.OpcUaXsd)]
         #endif
+        #if (NET_STANDARD_OBSOLETE_SYNC && NET_STANDARD_ASYNC)
+        [Obsolete("Sync methods are deprecated in this version. Use RegisterServer2Async instead.")]
+        #endif
         RegisterServer2ResponseMessage RegisterServer2(RegisterServer2Message request);
+        #endif
 
         /// <summary>
         /// The operation contract for the RegisterServer2 service.
         /// </summary>
+        #if (!NET_STANDARD_NO_APM)
         #if (!NET_STANDARD)
         [OperationContractAttribute(AsyncPattern=true, Action=Namespaces.OpcUaWsdl + "/RegisterServer2", ReplyAction = Namespaces.OpcUaWsdl + "/RegisterServer2Response")]
+        #endif
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServer2Async instead.")]
         #endif
         IAsyncResult BeginRegisterServer2(RegisterServer2Message request, AsyncCallback callback, object asyncState);
 
         /// <summary>
         /// The method used to retrieve the results of a RegisterServer2 service request.
         /// </summary>
+        #if (NET_STANDARD_OBSOLETE_APM && NET_STANDARD_ASYNC)
+        [Obsolete("Begin/End methods are deprecated in this version. Use RegisterServer2Async instead.")]
+        #endif
         RegisterServer2ResponseMessage EndRegisterServer2(IAsyncResult result);
+        #endif
 
         #if (NET_STANDARD_ASYNC)
         /// <summary>

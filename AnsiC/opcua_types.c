@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -27528,7 +27528,7 @@ OpcUa_Void OpcUa_SubscriptionDiagnosticsDataType_Initialize(OpcUa_SubscriptionDi
         OpcUa_Field_Initialize(UInt32, DisabledMonitoredItemCount);
         OpcUa_Field_Initialize(UInt32, MonitoringQueueOverflowCount);
         OpcUa_Field_Initialize(UInt32, NextSequenceNumber);
-        OpcUa_Field_Initialize(UInt32, EventQueueOverFlowCount);
+        OpcUa_Field_Initialize(UInt32, EventQueueOverflowCount);
     }
 }
 
@@ -27569,7 +27569,7 @@ OpcUa_Void OpcUa_SubscriptionDiagnosticsDataType_Clear(OpcUa_SubscriptionDiagnos
         OpcUa_Field_Clear(UInt32, DisabledMonitoredItemCount);
         OpcUa_Field_Clear(UInt32, MonitoringQueueOverflowCount);
         OpcUa_Field_Clear(UInt32, NextSequenceNumber);
-        OpcUa_Field_Clear(UInt32, EventQueueOverFlowCount);
+        OpcUa_Field_Clear(UInt32, EventQueueOverflowCount);
     }
 }
 
@@ -27618,7 +27618,7 @@ OpcUa_StatusCode OpcUa_SubscriptionDiagnosticsDataType_GetSize(OpcUa_Subscriptio
     OpcUa_Field_GetSize(UInt32, DisabledMonitoredItemCount);
     OpcUa_Field_GetSize(UInt32, MonitoringQueueOverflowCount);
     OpcUa_Field_GetSize(UInt32, NextSequenceNumber);
-    OpcUa_Field_GetSize(UInt32, EventQueueOverFlowCount);
+    OpcUa_Field_GetSize(UInt32, EventQueueOverflowCount);
 
     *a_pSize = iSize;
 
@@ -27670,7 +27670,7 @@ OpcUa_StatusCode OpcUa_SubscriptionDiagnosticsDataType_Encode(OpcUa_Subscription
     OpcUa_Field_Write(UInt32, DisabledMonitoredItemCount);
     OpcUa_Field_Write(UInt32, MonitoringQueueOverflowCount);
     OpcUa_Field_Write(UInt32, NextSequenceNumber);
-    OpcUa_Field_Write(UInt32, EventQueueOverFlowCount);
+    OpcUa_Field_Write(UInt32, EventQueueOverflowCount);
 
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;
@@ -27722,7 +27722,7 @@ OpcUa_StatusCode OpcUa_SubscriptionDiagnosticsDataType_Decode(OpcUa_Subscription
     OpcUa_Field_Read(UInt32, DisabledMonitoredItemCount);
     OpcUa_Field_Read(UInt32, MonitoringQueueOverflowCount);
     OpcUa_Field_Read(UInt32, NextSequenceNumber);
-    OpcUa_Field_Read(UInt32, EventQueueOverFlowCount);
+    OpcUa_Field_Read(UInt32, EventQueueOverflowCount);
 
     OpcUa_ReturnStatusCode;
     OpcUa_BeginErrorHandling;

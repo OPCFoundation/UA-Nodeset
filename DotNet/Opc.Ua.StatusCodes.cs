@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -37,6 +37,7 @@ namespace Opc.Ua
     /// </summary>
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
     public static partial class StatusCodes
     {
         /// <summary>
@@ -517,7 +518,7 @@ namespace Opc.Ua
         /// <summary>
         /// The semaphore file specified by the client is not valid.
         /// </summary>
-        public const uint BadSempahoreFileMissing = 0x80520000;
+        public const uint BadSemaphoreFileMissing = 0x80520000;
 
         /// <summary>
         /// The security token request type is not valid.

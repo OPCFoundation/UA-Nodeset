@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -1330,8 +1330,14 @@
 #define OpcUa_BrowseName_StartOfOnlineArchive "StartOfOnlineArchive"
 #define OpcUa_BrowseName_StartTime "StartTime"
 #define OpcUa_BrowseName_State "State"
+#define OpcUa_BrowseName_StateDisabledByMethod "StateDisabledByMethod"
+#define OpcUa_BrowseName_StateError "StateError"
 #define OpcUa_BrowseName_StateMachineType "StateMachineType"
 #define OpcUa_BrowseName_StateNumber "StateNumber"
+#define OpcUa_BrowseName_StateOperationalByMethod "StateOperationalByMethod"
+#define OpcUa_BrowseName_StateOperationalByParent "StateOperationalByParent"
+#define OpcUa_BrowseName_StateOperationalFromError "StateOperationalFromError"
+#define OpcUa_BrowseName_StatePausedByParent "StatePausedByParent"
 #define OpcUa_BrowseName_StateType "StateType"
 #define OpcUa_BrowseName_StateVariableType "StateVariableType"
 #define OpcUa_BrowseName_StaticNodeIdTypes "StaticNodeIdTypes"
