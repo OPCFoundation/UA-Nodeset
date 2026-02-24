@@ -1,0 +1,9 @@
+Id,Name,Link,ConformanceUnits
+1003,STSysType,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.1",""
+1004,STBaseControllerType,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.4","STBaseController Basic;STBaseController MachineryItemState;STBaseController MachineryOperationMode;"
+1006,STCompType,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.2",""
+1008,STJobManagementType,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.5.1","STJobManagement Alias;"
+1009,STSystemControllerType,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.3",""
+5001,http://opcfoundation.org/UA/SurfaceTechnology/GeneralTypes/,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/9.1",""
+7002,AddAlias,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.5.2",""
+7003,RemoveAlias,"https://reference.opcfoundation.org/SurfaceTechnology/GeneralTypes/v100/docs/7.5.3",""
