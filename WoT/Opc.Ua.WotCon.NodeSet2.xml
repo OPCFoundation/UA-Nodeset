@@ -28,12 +28,12 @@
  * http://opcfoundation.org/License/MIT/1.00/
 -->
 
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2025-06-30T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2025-12-05T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/WoT-Con/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/WoT-Con/" Version="1.01.0" PublicationDate="2025-06-30T00:00:00Z" ModelVersion="1.1.0">
+    <Model ModelUri="http://opcfoundation.org/UA/WoT-Con/" Version="1.02.0" PublicationDate="2025-12-05T00:00:00Z" ModelVersion="1.2.0">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" XmlSchemaUri="http://opcfoundation.org/UA/2008/02/Types.xsd" Version="1.05.04" PublicationDate="2025-01-08T00:00:00Z" ModelVersion="1.5.4" />
     </Model>
   </Models>
@@ -105,6 +105,7 @@
       <Reference ReferenceType="HasProperty">ns=1;i=99</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=100</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=101</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=39</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
     </References>
@@ -126,7 +127,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=67</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01.0</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.02.0</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=70" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=67" DataType="DateTime">
@@ -136,7 +137,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=67</Reference>
     </References>
     <Value>
-      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2025-06-30T00:00:00Z</DateTime>
+      <DateTime xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">2025-12-05T00:00:00Z</DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=71" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=67" DataType="Boolean">
@@ -203,6 +204,16 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=67</Reference>
     </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=39" BrowseName="ModelVersion" ParentNodeId="ns=1;i=67" DataType="i=24263">
+    <DisplayName>ModelVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=67</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.2.0</String>
+    </Value>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1" BrowseName="1:WoTAssetConnectionManagementType">
     <DisplayName>WoTAssetConnectionManagementType</DisplayName>
@@ -1081,9 +1092,10 @@
       </ListOfExtensionObject>
     </Value>
   </UAVariable>
-  <UAObjectType NodeId="ns=1;i=105" BrowseName="1:WoTAssetConfigurationType" IsAbstract="true">
+  <UAObjectType NodeId="ns=1;i=105" BrowseName="1:WoTAssetConfigurationType">
     <DisplayName>WoTAssetConfigurationType</DisplayName>
-    <Documentation />
+    <Category>WoT Connectivity Base Functionality</Category>
+    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.7</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=108</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=109</Reference>
@@ -1561,7 +1573,7 @@
   <UAReferenceType NodeId="ns=1;i=142" BrowseName="1:HasWoTComponent">
     <DisplayName>HasWoTComponent</DisplayName>
     <Category>WoT Connectivity Base Functionality</Category>
-    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.10</Documentation>
+    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.11</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=47</Reference>
     </References>
@@ -1570,7 +1582,7 @@
   <UAObjectType NodeId="ns=1;i=110" BrowseName="1:WoTAssetFileType">
     <DisplayName>WoTAssetFileType</DisplayName>
     <Category>WoT Connectivity Base Functionality</Category>
-    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.9/#6.3.9.1</Documentation>
+    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.10/#6.3.10.1</Documentation>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=111</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=11575</Reference>
@@ -1578,7 +1590,7 @@
   </UAObjectType>
   <UAMethod NodeId="ns=1;i=111" BrowseName="1:CloseAndUpdate" ParentNodeId="ns=1;i=110">
     <DisplayName>CloseAndUpdate</DisplayName>
-    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.9/#6.3.9.2</Documentation>
+    <Documentation>https://reference.opcfoundation.org/WoT/v100/docs/6.3.10/#6.3.10.2</Documentation>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=112</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
