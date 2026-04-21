@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -181,6 +181,10 @@ namespace Opc.Ua.WebApi
         public const long BadNotWritable = 0x803B0000;
         /// <remarks />
         public const long BadOutOfRange = 0x803C0000;
+        /// <remarks />
+        public const long UncertainOverRange = 0x40F20000;
+        /// <remarks />
+        public const long UncertainUnderRange = 0x40F30000;
         /// <remarks />
         public const long BadNotSupported = 0x803D0000;
         /// <remarks />

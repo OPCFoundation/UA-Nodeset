@@ -75,6 +75,8 @@ class StatusCodes(Enum):
     BadNotReadable = 0x803A0000
     BadNotWritable = 0x803B0000
     BadOutOfRange = 0x803C0000
+    UncertainOverRange = 0x40F20000
+    UncertainUnderRange = 0x40F30000
     BadNotSupported = 0x803D0000
     BadNotFound = 0x803E0000
     BadObjectDeleted = 0x803F0000
