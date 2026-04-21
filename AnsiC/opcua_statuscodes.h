@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -386,6 +386,16 @@ OPCUA_BEGIN_EXTERN_C
  * The value was out of range.
  *===========================================================================*/
 #define OpcUa_BadOutOfRange 0x803C0000
+
+/*============================================================================
+ * The value is over the allowed range.
+ *===========================================================================*/
+#define OpcUa_UncertainOverRange 0x40F20000
+
+/*============================================================================
+ * The value is under the allowed range.
+ *===========================================================================*/
+#define OpcUa_UncertainUnderRange 0x40F30000
 
 /*============================================================================
  * The requested operation is not supported.
@@ -1348,7 +1358,7 @@ OPCUA_BEGIN_EXTERN_C
 #define OpcUa_GoodCascadeInitializationRequest 0x04020000
 
 /*============================================================================
- * The value source supports cascade handshaking, however, the source’s current state does not allow for cascade.
+ * The value source supports cascade handshaking, however, the source's current state does not allow for cascade.
  *===========================================================================*/
 #define OpcUa_GoodCascadeNotInvited 0x04030000
 

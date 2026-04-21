@@ -9809,6 +9809,17 @@
       }
     },
     "UriString": {},
+    "NumberRange": {
+      "type": "object",
+      "properties": {
+        "Low": {
+          "type": "number"
+        },
+        "High": {
+          "type": "number"
+        }
+      }
+    },
     "ProgramDiagnostic2DataType": {
       "type": "object",
       "properties": {
@@ -9870,6 +9881,64 @@
         },
         "LastMethodReturnStatus": {
           "$ref": "#/$defs/StatusCode"
+        }
+      }
+    },
+    "AliasNameVerboseDataType": {
+      "type": "object",
+      "properties": {
+        "AliasName": {
+          "type": "string",
+          "format": "UaQualifiedName"
+        },
+        "ReferencedNodes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "UaNodeId"
+          }
+        },
+        "ServerUris": {
+          "type": "array",
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "AliasNameCategoryId": {
+          "type": "string",
+          "format": "UaNodeId"
+        }
+      }
+    },
+    "AliasCategoryUpdateDataType": {
+      "type": "object",
+      "properties": {
+        "Category": {
+          "$ref": "#/$defs/PortableNodeId"
+        },
+        "LastChange": {
+          "type": "integer",
+          "format": "uint32"
+        }
+      }
+    },
+    "AliasUpdateDataType": {
+      "type": "object",
+      "properties": {
+        "ApplicationUri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Categories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/AliasCategoryUpdateDataType"
+          }
         }
       }
     },

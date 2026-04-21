@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -361,6 +361,11 @@
     <opc:Field Name="Exponent" TypeName="opc:SByte" />
     <opc:Field Name="AlphabeticCode" TypeName="opc:String" />
     <opc:Field Name="Currency" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="NumberRange" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Low" TypeName="ua:Variant" />
+    <opc:Field Name="High" TypeName="ua:Variant" />
   </opc:StructuredType>
 
   <opc:StructuredType Name="AnnotationDataType" BaseType="ua:ExtensionObject">
@@ -1394,6 +1399,26 @@
     <opc:Field Name="AliasName" TypeName="ua:QualifiedName" />
     <opc:Field Name="NoOfReferencedNodes" TypeName="opc:Int32" />
     <opc:Field Name="ReferencedNodes" TypeName="ua:ExpandedNodeId" LengthField="NoOfReferencedNodes" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="AliasNameVerboseDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="AliasName" TypeName="ua:QualifiedName" />
+    <opc:Field Name="NoOfReferencedNodes" TypeName="opc:Int32" />
+    <opc:Field Name="ReferencedNodes" TypeName="ua:ExpandedNodeId" LengthField="NoOfReferencedNodes" />
+    <opc:Field Name="NoOfServerUris" TypeName="opc:Int32" />
+    <opc:Field Name="ServerUris" TypeName="opc:String" LengthField="NoOfServerUris" />
+    <opc:Field Name="AliasNameCategoryId" TypeName="ua:NodeId" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="AliasCategoryUpdateDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Category" TypeName="tns:PortableNodeId" />
+    <opc:Field Name="LastChange" TypeName="opc:UInt32" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="AliasUpdateDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ApplicationUri" TypeName="opc:String" />
+    <opc:Field Name="NoOfCategories" TypeName="opc:Int32" />
+    <opc:Field Name="Categories" TypeName="tns:AliasCategoryUpdateDataType" LengthField="NoOfCategories" />
   </opc:StructuredType>
 
   <opc:EnumeratedType Name="PasswordOptionsMask" LengthInBits="32" IsOptionSet="true">

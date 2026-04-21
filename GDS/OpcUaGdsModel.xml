@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -37,12 +37,12 @@
   xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
   xmlns:uasc="http://opcfoundation.org/UA/PushConfiguration/"
   TargetNamespace="http://opcfoundation.org/UA/GDS/"
-  TargetVersion="1.05.06"
-  TargetPublicationDate="2025-10-31T00:00:00Z"
+  TargetVersion="1.05.07"
+  TargetPublicationDate="2026-04-15T00:00:00Z"
 >
   <opc:Namespaces>
     <opc:Namespace Name="OpcUaGds" Prefix="Opc.Ua.Gds" XmlNamespace="http://opcfoundation.org/UA/GDS/Types.xsd" XmlPrefix="GDS">http://opcfoundation.org/UA/GDS/</opc:Namespace>
-    <opc:Namespace Name="OpcUa" Version="1.05.06" PublicationDate="2025-10-31T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="OpcUa" Version="1.05.07" PublicationDate="2026-04-15T00:00:00Z" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd" XmlPrefix="OpcUa">http://opcfoundation.org/UA/</opc:Namespace>
   </opc:Namespaces>
 
   <opc:PermissionSets>
@@ -66,7 +66,7 @@
         <opc:Permission>Call</opc:Permission>
       </opc:RolePermission>
     </opc:PermissionSet>
-    
+
     <opc:PermissionSet Name="KeyCredentialAdmin">
       <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
@@ -76,7 +76,7 @@
         <opc:Permission>Call</opc:Permission>
       </opc:RolePermission>
     </opc:PermissionSet>
-    
+
     <opc:PermissionSet Name="AuditEventDefaultPermissions">
       <opc:RolePermission Role="ua:WellKnownRole_Anonymous">
         <opc:Permission>Browse</opc:Permission>
@@ -100,17 +100,17 @@
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespaceVersion" DataType="ua:String">
         <opc:DefaultValue>
-          <uax:String>1.05.06</uax:String>
+          <uax:String>1.05.07</uax:String>
         </opc:DefaultValue>
       </opc:Property>
-      <opc:Property SymbolicName="ModelVersion" DataType="ua:SemanticVersionString">
+      <opc:Property SymbolicName="ua:ModelVersion" DataType="ua:SemanticVersionString">
         <opc:DefaultValue>
-          <uax:String>1.5.6</uax:String>
+          <uax:String>1.5.7</uax:String>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:NamespacePublicationDate" DataType="ua:DateTime">
         <opc:DefaultValue>
-          <uax:DateTime>2025-10-31T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2026-04-15T00:00:00Z</uax:DateTime>
         </opc:DefaultValue>
       </opc:Property>
       <opc:Property SymbolicName="ua:IsNamespaceSubset" DataType="ua:Boolean">
@@ -649,11 +649,23 @@
       <opc:Property SymbolicName="ServiceUri"  DataType="ua:String" ValueRank="Scalar" ModellingRule="Mandatory" />
       <opc:Property SymbolicName="ServiceCertificate"  DataType="ua:ByteString" ValueRank="Scalar" ModellingRule="Mandatory" />
       <opc:Property SymbolicName="UserTokenPolicies"  DataType="ua:UserTokenPolicy" ValueRank="Array" ModellingRule="Optional" />
+      <opc:Property SymbolicName="SupportedRoles"  DataType="ua:String" ValueRank="Array" ModellingRule="Optional" ReleaseStatus="RC" />
       <opc:Method SymbolicName="GetServiceDescription" TypeDefinition="GetServiceDescriptionMethodType" ModellingRule="Mandatory" />
       <opc:Method SymbolicName="RequestAccessToken" TypeDefinition="RequestAccessTokenMethodType" ModellingRule="Optional" />
-      <opc:Method SymbolicName="RequestAccessToken2" TypeDefinition="RequestAccessToken2MethodType" ModellingRule="Optional"  ReleaseStatus="Draft" />
-      <opc:Method SymbolicName="RefreshToken" TypeDefinition="RefreshTokenMethodType" ModellingRule="Optional" ReleaseStatus="Draft" />
+      <opc:Method SymbolicName="StartRequestToken" TypeDefinition="StartRequestTokenMethodType" ModellingRule="Optional"  ReleaseStatus="RC" />
+      <opc:Method SymbolicName="FinishRequestToken" TypeDefinition="FinishRequestTokenMethodType" ModellingRule="Optional"  ReleaseStatus="RC" />
+      <opc:Method SymbolicName="RefreshToken" TypeDefinition="RefreshTokenMethodType" ModellingRule="Optional" ReleaseStatus="RC" />
     </opc:Children>
+    <opc:References>
+      <opc:Reference>
+        <opc:ReferenceType>ua:GeneratesEvent</opc:ReferenceType>
+        <opc:TargetId>AccessTokenRequestedAuditEventType</opc:TargetId>
+      </opc:Reference>
+      <opc:Reference>
+        <opc:ReferenceType>ua:GeneratesEvent</opc:ReferenceType>
+        <opc:TargetId>AccessTokenIssuedAuditEventType</opc:TargetId>
+      </opc:Reference>
+    </opc:References>
   </opc:ObjectType>
 
   <opc:Method SymbolicName="GetServiceDescriptionMethodType">
@@ -674,27 +686,50 @@
     </opc:OutputArguments>
   </opc:Method>
 
-  <opc:Method SymbolicName="RequestAccessToken2MethodType" ReleaseStatus="Draft">
+  <opc:Method SymbolicName="StartRequestTokenMethodType" ReleaseStatus="RC">
     <opc:InputArguments>
-      <opc:Argument Name="IdentityToken" DataType="ua:UserIdentityToken"></opc:Argument>
       <opc:Argument Name="ResourceId" DataType="ua:String"></opc:Argument>
+      
+      <opc:Argument Name="PolicyId" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="RequestorData" DataType="ua:ByteString"></opc:Argument>
+    </opc:InputArguments>
+    <opc:OutputArguments>
+      <opc:Argument Name="ServiceData" DataType="ua:ByteString"></opc:Argument>
+      <opc:Argument Name="RequestId" DataType="ua:Guid"></opc:Argument>
+    </opc:OutputArguments>
+  </opc:Method>
+  
+  <opc:Method SymbolicName="FinishRequestTokenMethodType" ReleaseStatus="RC">
+    <opc:InputArguments>
+      <opc:Argument Name="RequestId" DataType="ua:Guid"></opc:Argument>
+      <opc:Argument Name="RequestedRoles" DataType="ua:String" ValueRank="Array"></opc:Argument>
+      <opc:Argument Name="UserIdentityToken" DataType="ua:UserIdentityToken"></opc:Argument>
+      <opc:Argument Name="UserTokenSignature" DataType="ua:SignatureData"></opc:Argument>
     </opc:InputArguments>
     <opc:OutputArguments>
       <opc:Argument Name="AccessToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="AccessTokenExpiryTime" DataType="ua:DateTime"></opc:Argument>
       <opc:Argument Name="RefreshToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="RefreshTokenExpiryTime" DataType="ua:DateTime"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
 
-  <opc:Method SymbolicName="RefreshTokenMethodType" ReleaseStatus="Draft">
+  <opc:Method SymbolicName="RefreshTokenMethodType" ReleaseStatus="RC">
     <opc:InputArguments>
-      <opc:Argument Name="RefreshToken" DataType="ua:String"></opc:Argument>
       <opc:Argument Name="ResourceId" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="CurrentRefreshToken" DataType="ua:String"></opc:Argument>
     </opc:InputArguments>
     <opc:OutputArguments>
       <opc:Argument Name="AccessToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="AccessTokenExpiryTime" DataType="ua:DateTime"></opc:Argument>
       <opc:Argument Name="NewRefreshToken" DataType="ua:String"></opc:Argument>
+      <opc:Argument Name="NewRefreshTokenExpiryTime" DataType="ua:DateTime"></opc:Argument>
     </opc:OutputArguments>
   </opc:Method>
+
+  <opc:ObjectType SymbolicName="AccessTokenRequestedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" PartNo="12" ReleaseStatus="RC">
+    <opc:RolePermissions Name="AuditEventDefaultPermissions" />
+  </opc:ObjectType>
 
   <opc:ObjectType SymbolicName="AccessTokenIssuedAuditEventType" BaseType="ua:AuditUpdateMethodEventType" IsAbstract="true" PartNo="12">
     <opc:RolePermissions Name="AuditEventDefaultPermissions" />
@@ -703,6 +738,9 @@
   <opc:Object SymbolicName="Directory" TypeDefinition="CertificateDirectoryType">
 
     <opc:Children>
+      <opc:Method SymbolicName="RevokeCertificate" ModellingRule="Mandatory" />
+      <opc:Method SymbolicName="GetCertificates" ModellingRule="Mandatory" />
+      <opc:Method SymbolicName="CheckRevocationStatus" ModellingRule="Mandatory" />
       <opc:Object SymbolicName="CertificateGroups" ModellingRule="Mandatory">
         <opc:Children>
           <opc:Object SymbolicName="ua:DefaultApplicationGroup" ModellingRule="Mandatory">

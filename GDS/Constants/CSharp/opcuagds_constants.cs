@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -26,6 +26,9 @@
  * The complete license agreement can be found here:
  * http://opcfoundation.org/License/MIT/1.00/
  * ======================================================================*/
+#pragma warning disable CA1707 // Identifiers should not contain underscores
+#pragma warning disable CA1515 // Types can be made internal
+
 namespace Opc.Ua.Gds.WebApi
 {
     /// <summary>
@@ -44,6 +47,8 @@ namespace Opc.Ua.Gds.WebApi
     {
         /// <remarks />
         public const string AccessTokenIssuedAuditEventType = "AccessTokenIssuedAuditEventType";
+        /// <remarks />
+        public const string AccessTokenRequestedAuditEventType = "AccessTokenRequestedAuditEventType";
         /// <remarks />
         public const string ApplicationRecordDataType = "ApplicationRecordDataType";
         /// <remarks />
@@ -81,6 +86,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string FinishRequest = "FinishRequest";
         /// <remarks />
+        public const string FinishRequestToken = "FinishRequestToken";
+        /// <remarks />
         public const string GetApplication = "GetApplication";
         /// <remarks />
         public const string GetCertificateGroups = "GetCertificateGroups";
@@ -105,8 +112,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string KeyCredentialServiceType = "KeyCredentialServiceType";
         /// <remarks />
-        public const string ModelVersion = "ModelVersion";
-        /// <remarks />
         public const string OpcUaGds_BinarySchema = "Opc.Ua.Gds";
         /// <remarks />
         public const string OpcUaGds_XmlSchema = "Opc.Ua.Gds";
@@ -118,6 +123,8 @@ namespace Opc.Ua.Gds.WebApi
         public const string QueryApplications = "QueryApplications";
         /// <remarks />
         public const string QueryServers = "QueryServers";
+        /// <remarks />
+        public const string RefreshToken = "RefreshToken";
         /// <remarks />
         public const string RegisterApplication = "RegisterApplication";
         /// <remarks />
@@ -141,7 +148,11 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string StartRequest = "StartRequest";
         /// <remarks />
+        public const string StartRequestToken = "StartRequestToken";
+        /// <remarks />
         public const string StartSigningRequest = "StartSigningRequest";
+        /// <remarks />
+        public const string SupportedRoles = "SupportedRoles";
         /// <remarks />
         public const string UnregisterApplication = "UnregisterApplication";
         /// <remarks />
@@ -180,7 +191,7 @@ namespace Opc.Ua.Gds.WebApi
                 }
             }
 
-            return value.ToString();
+            return value?.ToString();
         }
     }
 
@@ -453,6 +464,12 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string AuthorizationServiceType_RequestAccessToken = "nsu=" + Namespaces.Uri + ";i=969";
         /// <remarks />
+        public const string AuthorizationServiceType_StartRequestToken = "nsu=" + Namespaces.Uri + ";i=95";
+        /// <remarks />
+        public const string AuthorizationServiceType_FinishRequestToken = "nsu=" + Namespaces.Uri + ";i=98";
+        /// <remarks />
+        public const string AuthorizationServiceType_RefreshToken = "nsu=" + Namespaces.Uri + ";i=64";
+        /// <remarks />
         public const string Directory_FindApplications = "nsu=" + Namespaces.Uri + ";i=143";
         /// <remarks />
         public const string Directory_RegisterApplication = "nsu=" + Namespaces.Uri + ";i=146";
@@ -617,11 +634,17 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string Directory_FinishRequest = "nsu=" + Namespaces.Uri + ";i=163";
         /// <remarks />
+        public const string Directory_RevokeCertificate = "nsu=" + Namespaces.Uri + ";i=15005";
+        /// <remarks />
         public const string Directory_GetCertificateGroups = "nsu=" + Namespaces.Uri + ";i=508";
+        /// <remarks />
+        public const string Directory_GetCertificates = "nsu=" + Namespaces.Uri + ";i=174";
         /// <remarks />
         public const string Directory_GetTrustList = "nsu=" + Namespaces.Uri + ";i=204";
         /// <remarks />
         public const string Directory_GetCertificateStatus = "nsu=" + Namespaces.Uri + ";i=225";
+        /// <remarks />
+        public const string Directory_CheckRevocationStatus = "nsu=" + Namespaces.Uri + ";i=177";
 
         /// <summary>
         /// Converts a value to a name for display.
@@ -636,7 +659,7 @@ namespace Opc.Ua.Gds.WebApi
                 }
             }
 
-            return value.ToString();
+            return value?.ToString();
         }
     }
 
@@ -698,8 +721,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string ApplicationRecordDataType_Encoding_DefaultBinary = "nsu=" + Namespaces.Uri + ";i=134";
         /// <remarks />
         public const string ApplicationRecordDataType_Encoding_DefaultXml = "nsu=" + Namespaces.Uri + ";i=127";
-        /// <remarks />
-        public const string ApplicationRecordDataType_Encoding_DefaultJson = "nsu=" + Namespaces.Uri + ";i=8001";
 
         /// <summary>
         /// Converts a value to a name for display.
@@ -714,7 +735,7 @@ namespace Opc.Ua.Gds.WebApi
                 }
             }
 
-            return value.ToString();
+            return value?.ToString();
         }
     }
 
@@ -749,6 +770,8 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string AuthorizationServiceType = "nsu=" + Namespaces.Uri + ";i=966";
         /// <remarks />
+        public const string AccessTokenRequestedAuditEventType = "nsu=" + Namespaces.Uri + ";i=111";
+        /// <remarks />
         public const string AccessTokenIssuedAuditEventType = "nsu=" + Namespaces.Uri + ";i=975";
 
         /// <summary>
@@ -764,7 +787,7 @@ namespace Opc.Ua.Gds.WebApi
                 }
             }
 
-            return value.ToString();
+            return value?.ToString();
         }
     }
 
@@ -1815,17 +1838,43 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string AuthorizationServicesFolderType_ServiceName_Placeholder_RequestAccessToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=242";
         /// <remarks />
+        public const string AuthorizationServicesFolderType_ServiceName_Placeholder_StartRequestToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=74";
+        /// <remarks />
+        public const string AuthorizationServicesFolderType_ServiceName_Placeholder_StartRequestToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=75";
+        /// <remarks />
+        public const string AuthorizationServicesFolderType_ServiceName_Placeholder_FinishRequestToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=93";
+        /// <remarks />
+        public const string AuthorizationServicesFolderType_ServiceName_Placeholder_FinishRequestToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=94";
+        /// <remarks />
+        public const string AuthorizationServicesFolderType_ServiceName_Placeholder_RefreshToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=38";
+        /// <remarks />
+        public const string AuthorizationServicesFolderType_ServiceName_Placeholder_RefreshToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=39";
+        /// <remarks />
         public const string AuthorizationServiceType_ServiceUri = "nsu=" + Namespaces.Uri + ";i=1003";
         /// <remarks />
         public const string AuthorizationServiceType_ServiceCertificate = "nsu=" + Namespaces.Uri + ";i=968";
         /// <remarks />
         public const string AuthorizationServiceType_UserTokenPolicies = "nsu=" + Namespaces.Uri + ";i=967";
         /// <remarks />
+        public const string AuthorizationServiceType_SupportedRoles = "nsu=" + Namespaces.Uri + ";i=110";
+        /// <remarks />
         public const string AuthorizationServiceType_GetServiceDescription_OutputArguments = "nsu=" + Namespaces.Uri + ";i=1005";
         /// <remarks />
         public const string AuthorizationServiceType_RequestAccessToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=970";
         /// <remarks />
         public const string AuthorizationServiceType_RequestAccessToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=971";
+        /// <remarks />
+        public const string AuthorizationServiceType_StartRequestToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=96";
+        /// <remarks />
+        public const string AuthorizationServiceType_StartRequestToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=97";
+        /// <remarks />
+        public const string AuthorizationServiceType_FinishRequestToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=99";
+        /// <remarks />
+        public const string AuthorizationServiceType_FinishRequestToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=100";
+        /// <remarks />
+        public const string AuthorizationServiceType_RefreshToken_InputArguments = "nsu=" + Namespaces.Uri + ";i=65";
+        /// <remarks />
+        public const string AuthorizationServiceType_RefreshToken_OutputArguments = "nsu=" + Namespaces.Uri + ";i=66";
         /// <remarks />
         public const string Directory_FindApplications_InputArguments = "nsu=" + Namespaces.Uri + ";i=144";
         /// <remarks />
@@ -2694,7 +2743,7 @@ namespace Opc.Ua.Gds.WebApi
                 }
             }
 
-            return value.ToString();
+            return value?.ToString();
         }
     }
     

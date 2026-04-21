@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -94,6 +94,7 @@
 /* #define OPCUA_EXCLUDE_ThreeDFrame */
 /* #define OPCUA_EXCLUDE_IdentityMappingRuleType */
 /* #define OPCUA_EXCLUDE_CurrencyUnitType */
+/* #define OPCUA_EXCLUDE_NumberRange */
 /* #define OPCUA_EXCLUDE_AnnotationDataType */
 /* #define OPCUA_EXCLUDE_LinearConversionDataType */
 /* #define OPCUA_EXCLUDE_QuantityDimension */
@@ -197,6 +198,9 @@
 /* #define OPCUA_EXCLUDE_JsonActionRequestMessage */
 /* #define OPCUA_EXCLUDE_JsonActionResponseMessage */
 /* #define OPCUA_EXCLUDE_AliasNameDataType */
+/* #define OPCUA_EXCLUDE_AliasNameVerboseDataType */
+/* #define OPCUA_EXCLUDE_AliasCategoryUpdateDataType */
+/* #define OPCUA_EXCLUDE_AliasUpdateDataType */
 /* #define OPCUA_EXCLUDE_UserManagementDataType */
 /* #define OPCUA_EXCLUDE_PriorityMappingEntryType */
 /* #define OPCUA_EXCLUDE_LldpManagementAddressTxPortType */
