@@ -511,6 +511,7 @@ export class BrowseNames {
    static readonly DefaultHEConfiguration: string = 'DefaultHEConfiguration'
    static readonly DefaultHttpsGroup: string = 'DefaultHttpsGroup'
    static readonly DefaultInstanceBrowseName: string = 'DefaultInstanceBrowseName'
+   static readonly DefaultJson: string = 'Default JSON'
    static readonly DefaultResponse: string = 'DefaultResponse'
    static readonly DefaultRolePermissions: string = 'DefaultRolePermissions'
    static readonly DefaultSecurityKeyServices: string = 'DefaultSecurityKeyServices'
@@ -3262,6 +3263,7 @@ export class MethodIds {
 export class ObjectIds {
     static readonly DefaultBinary: string = 'i=3062'
     static readonly DefaultXml: string = 'i=3063'
+    static readonly DefaultJson: string = 'i=24502'
     static readonly ModellingRule_Mandatory: string = 'i=78'
     static readonly ModellingRule_Optional: string = 'i=80'
     static readonly ModellingRule_ExposesItsArray: string = 'i=83'

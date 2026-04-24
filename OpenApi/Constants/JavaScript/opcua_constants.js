@@ -511,6 +511,7 @@ export const BrowseNames = Object.freeze({
    DefaultHEConfiguration: 'DefaultHEConfiguration',
    DefaultHttpsGroup: 'DefaultHttpsGroup',
    DefaultInstanceBrowseName: 'DefaultInstanceBrowseName',
+   DefaultJson: 'Default JSON',
    DefaultResponse: 'DefaultResponse',
    DefaultRolePermissions: 'DefaultRolePermissions',
    DefaultSecurityKeyServices: 'DefaultSecurityKeyServices',
@@ -3262,6 +3263,7 @@ export const MethodIds = Object.freeze({
 export const ObjectIds = Object.freeze({
    DefaultBinary: 'i=3062',
    DefaultXml: 'i=3063',
+   DefaultJson: 'i=24502',
    ModellingRule_Mandatory: 'i=78',
    ModellingRule_Optional: 'i=80',
    ModellingRule_ExposesItsArray: 'i=83',

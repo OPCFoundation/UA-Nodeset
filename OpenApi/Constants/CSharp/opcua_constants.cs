@@ -1066,6 +1066,8 @@ namespace Opc.Ua.WebApi
         /// <remarks />
         public const string DefaultInstanceBrowseName = "DefaultInstanceBrowseName";
         /// <remarks />
+        public const string DefaultJson = "Default JSON";
+        /// <remarks />
         public const string DefaultResponse = "DefaultResponse";
         /// <remarks />
         public const string DefaultRolePermissions = "DefaultRolePermissions";
@@ -6599,6 +6601,8 @@ namespace Opc.Ua.WebApi
         public const string DefaultBinary = "i=3062";
         /// <remarks />
         public const string DefaultXml = "i=3063";
+        /// <remarks />
+        public const string DefaultJson = "i=24502";
         /// <remarks />
         public const string ModellingRule_Mandatory = "i=78";
         /// <remarks />

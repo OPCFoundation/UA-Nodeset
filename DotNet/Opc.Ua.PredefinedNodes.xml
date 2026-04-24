@@ -63,6 +63,23 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>3063</uax:NumericId>
   </DefaultXml>
+  <DefaultJson xmlns="http://opcfoundation.org/UA/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>i=24502</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>0</uax:NamespaceIndex>
+      <uax:Name>Default JSON</uax:Name>
+    </uax:BrowseName>
+    <uax:ReferenceTypeId>
+      <uax:Identifier>i=47</uax:Identifier>
+    </uax:ReferenceTypeId>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>i=58</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>24502</uax:NumericId>
+  </DefaultJson>
   <BaseDataType xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
     <uax:NodeId>
@@ -1831,7 +1848,7 @@
       <uax:NumericId>15960</uax:NumericId>
       <uax:Value>
         <uax:Value>
-          <uax:DateTime>2026-04-15T00:00:00Z</uax:DateTime>
+          <uax:DateTime>2026-04-20T00:00:00Z</uax:DateTime>
         </uax:Value>
       </uax:Value>
       <uax:DataType>
@@ -165836,7 +165853,7 @@ ZXMueHNkIg0KICB0YXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8y
 MDA4LzAyL1R5cGVzLnhzZCINCiAgZWxlbWVudEZvcm1EZWZhdWx0PSJxdWFsaWZpZWQiDQo+DQog
 IDx4czphbm5vdGF0aW9uPg0KICAgIDx4czphcHBpbmZvPg0KICAgICAgPHVhOk1vZGVsIE1vZGVs
 VXJpPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIiBWZXJzaW9uPSIxLjA1LjA3IiBQdWJs
-aWNhdGlvbkRhdGU9IjIwMjYtMDQtMTVUMDA6MDA6MDBaIiAvPg0KICAgIDwveHM6YXBwaW5mbz4N
+aWNhdGlvbkRhdGU9IjIwMjYtMDQtMjBUMDA6MDA6MDBaIiAvPg0KICAgIDwveHM6YXBwaW5mbz4N
 CiAgPC94czphbm5vdGF0aW9uPg0KICANCiAgPHhzOmVsZW1lbnQgbmFtZT0iQm9vbGVhbiIgdHlw
 ZT0ieHM6Ym9vbGVhbiIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mQm9vbGVh
 biI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQm9vbGVhbiIg

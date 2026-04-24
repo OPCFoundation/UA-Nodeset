@@ -540,6 +540,7 @@
 #define OpcUa_BrowseName_DefaultHEConfiguration "DefaultHEConfiguration"
 #define OpcUa_BrowseName_DefaultHttpsGroup "DefaultHttpsGroup"
 #define OpcUa_BrowseName_DefaultInstanceBrowseName "DefaultInstanceBrowseName"
+#define OpcUa_BrowseName_DefaultJson "Default JSON"
 #define OpcUa_BrowseName_DefaultResponse "DefaultResponse"
 #define OpcUa_BrowseName_DefaultRolePermissions "DefaultRolePermissions"
 #define OpcUa_BrowseName_DefaultSecurityKeyServices "DefaultSecurityKeyServices"

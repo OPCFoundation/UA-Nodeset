@@ -2652,6 +2652,8 @@ namespace Opc.Ua
 
         public const uint DefaultXml = 3063;
 
+        public const uint DefaultJson = 24502;
+
         public const uint ModellingRule_Mandatory = 78;
 
         public const uint ModellingRule_Optional = 80;
@@ -20184,6 +20186,8 @@ namespace Opc.Ua
 
         public static readonly NodeId DefaultXml = new NodeId(Opc.Ua.Objects.DefaultXml);
 
+        public static readonly NodeId DefaultJson = new NodeId(Opc.Ua.Objects.DefaultJson);
+
         public static readonly NodeId ModellingRule_Mandatory = new NodeId(Opc.Ua.Objects.ModellingRule_Mandatory);
 
         public static readonly NodeId ModellingRule_Optional = new NodeId(Opc.Ua.Objects.ModellingRule_Optional);
@@ -36128,6 +36132,8 @@ namespace Opc.Ua
         public const string DefaultHttpsGroup = "DefaultHttpsGroup";
 
         public const string DefaultInstanceBrowseName = "DefaultInstanceBrowseName";
+
+        public const string DefaultJson = "Default JSON";
 
         public const string DefaultResponse = "DefaultResponse";
 

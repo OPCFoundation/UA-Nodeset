@@ -1337,6 +1337,7 @@
  *===========================================================================*/
 #define OpcUaId_DefaultBinary 3062
 #define OpcUaId_DefaultXml 3063
+#define OpcUaId_DefaultJson 24502
 #define OpcUaId_ModellingRule_Mandatory 78
 #define OpcUaId_ModellingRule_Optional 80
 #define OpcUaId_ModellingRule_ExposesItsArray 83
