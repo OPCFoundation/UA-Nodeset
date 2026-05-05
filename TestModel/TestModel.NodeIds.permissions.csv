@@ -1,0 +1,8 @@
+Seeker_Identities,196,Variable,"[SigningRequired,EncryptionRequired]","{'SecurityAdmin':'(59391) All'}"
+TestObject,233,Object,,"{'AuthenticatedUser':'(4097) Browse|Call'}"
+TestObject_Blue,239,Method,"[SigningRequired,SessionRequired,ApplyRestrictionsToBrowse]","{'SecurityAdmin':'(4097) Browse|Call'}"
+TestObject_Red,234,Variable,"[SigningRequired,EncryptionRequired]","{'SecurityAdmin':'(97) Browse|Read|Write'}"
+TestObject_Red_X,236,Variable,"[SigningRequired,EncryptionRequired]","{'SecurityAdmin':'(97) Browse|Read|Write'}"
+TestObject_Red_Y,237,Variable,"[SigningRequired,EncryptionRequired]","{'SecurityAdmin':'(97) Browse|Read|Write'}"
+TestObject_Red_Yellow,235,Variable,"[SigningRequired,SessionRequired]","{'Seeker':'(33) Browse|Read'}"
+TestObject_Red_Z,238,Variable,"[SigningRequired,EncryptionRequired]","{'SecurityAdmin':'(97) Browse|Read|Write'}"

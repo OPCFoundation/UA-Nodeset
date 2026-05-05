@@ -323,6 +323,7 @@ export class ObjectIds {
     static readonly Directory_CertificateGroups_DefaultUserTokenGroup_TrustList: string = 'nsu=' + NS + ';i=684'
     static readonly ApplicationRecordDataType_Encoding_DefaultBinary: string = 'nsu=' + NS + ';i=134'
     static readonly ApplicationRecordDataType_Encoding_DefaultXml: string = 'nsu=' + NS + ';i=127'
+    static readonly ApplicationRecordDataType_Encoding_DefaultJson: string = 'nsu=' + NS + ';i=8001'
 }
 
 export class ObjectTypeIds {

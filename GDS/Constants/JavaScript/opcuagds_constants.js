@@ -323,6 +323,7 @@ export const ObjectIds = Object.freeze({
    Directory_CertificateGroups_DefaultUserTokenGroup_TrustList: 'nsu=' + NS + ';i=684',
    ApplicationRecordDataType_Encoding_DefaultBinary: 'nsu=' + NS + ';i=134',
    ApplicationRecordDataType_Encoding_DefaultXml: 'nsu=' + NS + ';i=127',
+   ApplicationRecordDataType_Encoding_DefaultJson: 'nsu=' + NS + ';i=8001',
 });
 
 export const ObjectTypeIds = Object.freeze({

@@ -721,6 +721,8 @@ namespace Opc.Ua.Gds.WebApi
         public const string ApplicationRecordDataType_Encoding_DefaultBinary = "nsu=" + Namespaces.Uri + ";i=134";
         /// <remarks />
         public const string ApplicationRecordDataType_Encoding_DefaultXml = "nsu=" + Namespaces.Uri + ";i=127";
+        /// <remarks />
+        public const string ApplicationRecordDataType_Encoding_DefaultJson = "nsu=" + Namespaces.Uri + ";i=8001";
 
         /// <summary>
         /// Converts a value to a name for display.

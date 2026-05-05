@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="urn:opcfoundation.org:2024-01:DemoModelTypes.xsd"
+  targetNamespace="urn:opcfoundation.org:2024-01:DemoModelTypes.xsd"
+  elementFormDefault="qualified"
+>
+  <xs:annotation>
+    <xs:appinfo>
+      <ua:Model ModelUri="urn:opcfoundation.org:2024-01:DemoModel" Version="1.05.07" PublicationDate="2026-05-01T00:00:00Z" />
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+
+  <xs:simpleType  name="EnumUnderscoreTest">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="x_x_1" />
+      <xs:enumeration value="_x_2" />
+      <xs:enumeration value="x__3" />
+      <xs:enumeration value="__4" />
+      <xs:enumeration value="Test5_-1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EnumUnderscoreTest" type="tns:EnumUnderscoreTest" />
+
+  <xs:complexType name="ListOfEnumUnderscoreTest">
+    <xs:sequence>
+      <xs:element name="EnumUnderscoreTest" type="tns:EnumUnderscoreTest" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfEnumUnderscoreTest" type="tns:ListOfEnumUnderscoreTest" nillable="true"></xs:element>
+
+  <xs:simpleType  name="HeaterStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Off_0" />
+      <xs:enumeration value="Heating_1" />
+      <xs:enumeration value="Cooling_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HeaterStatus" type="tns:HeaterStatus" />
+
+  <xs:complexType name="ListOfHeaterStatus">
+    <xs:sequence>
+      <xs:element name="HeaterStatus" type="tns:HeaterStatus" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfHeaterStatus" type="tns:ListOfHeaterStatus" nillable="true"></xs:element>
+
+  <xs:complexType name="Vector">
+    <xs:sequence>
+      <xs:element name="X" type="xs:double" minOccurs="0" />
+      <xs:element name="Y" type="xs:double" minOccurs="0" />
+      <xs:element name="Z" type="xs:double" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vector" type="tns:Vector" />
+
+  <xs:complexType name="ListOfVector">
+    <xs:sequence>
+      <xs:element name="Vector" type="tns:Vector" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfVector" type="tns:ListOfVector" nillable="true"></xs:element>
+
+  <xs:complexType name="WorkOrderStatusType">
+    <xs:sequence>
+      <xs:element name="Actor" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Timestamp" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="Comment" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkOrderStatusType" type="tns:WorkOrderStatusType" />
+
+  <xs:complexType name="ListOfWorkOrderStatusType">
+    <xs:sequence>
+      <xs:element name="WorkOrderStatusType" type="tns:WorkOrderStatusType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfWorkOrderStatusType" type="tns:ListOfWorkOrderStatusType" nillable="true"></xs:element>
+
+  <xs:complexType name="WorkOrderType">
+    <xs:sequence>
+      <xs:element name="ID" type="ua:Guid" minOccurs="0" />
+      <xs:element name="AssetID" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="StartTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="StatusComments" type="tns:ListOfWorkOrderStatusType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkOrderType" type="tns:WorkOrderType" />
+
+  <xs:complexType name="ListOfWorkOrderType">
+    <xs:sequence>
+      <xs:element name="WorkOrderType" type="tns:WorkOrderType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfWorkOrderType" type="tns:ListOfWorkOrderType" nillable="true"></xs:element>
+
+  <xs:complexType name="ExtendedWorkOrderType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WorkOrderType">
+        <xs:sequence>
+          <xs:element name="ContactX" type="xs:unsignedInt" minOccurs="0" />
+          <xs:element name="ContactY" type="ua:ListOfString" minOccurs="0" nillable="true" />
+          <xs:element name="ContactZ" type="xs:base64Binary" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExtendedWorkOrderType" type="tns:ExtendedWorkOrderType" />
+
+  <xs:complexType name="ListOfExtendedWorkOrderType">
+    <xs:sequence>
+      <xs:element name="ExtendedWorkOrderType" type="tns:ExtendedWorkOrderType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfExtendedWorkOrderType" type="tns:ListOfExtendedWorkOrderType" nillable="true"></xs:element>
+
+  <xs:complexType name="PenultimateWorkOrderType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExtendedWorkOrderType">
+        <xs:sequence>
+          <xs:element name="Address" type="xs:string" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PenultimateWorkOrderType" type="tns:PenultimateWorkOrderType" />
+
+  <xs:complexType name="ListOfPenultimateWorkOrderType">
+    <xs:sequence>
+      <xs:element name="PenultimateWorkOrderType" type="tns:PenultimateWorkOrderType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPenultimateWorkOrderType" type="tns:ListOfPenultimateWorkOrderType" nillable="true"></xs:element>
+
+  <xs:complexType name="FinalWorkOrderType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PenultimateWorkOrderType">
+        <xs:sequence>
+          <xs:element name="Phone" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="Email" type="xs:string" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FinalWorkOrderType" type="tns:FinalWorkOrderType" />
+
+  <xs:complexType name="ListOfFinalWorkOrderType">
+    <xs:sequence>
+      <xs:element name="FinalWorkOrderType" type="tns:FinalWorkOrderType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfFinalWorkOrderType" type="tns:ListOfFinalWorkOrderType" nillable="true"></xs:element>
+
+  <xs:complexType name="SampleUnion">
+    <xs:sequence>
+      <xs:element name="SwitchField" type="xs:unsignedInt" minOccurs="0" />
+      <xs:choice>
+        <xs:element name="FieldX" type="xs:unsignedInt" minOccurs="0" />
+        <xs:element name="FieldY" type="ua:ListOfString" minOccurs="0" nillable="true" />
+        <xs:element name="FieldZ" type="xs:base64Binary" minOccurs="0" nillable="true" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SampleUnion" type="tns:SampleUnion" />
+
+  <xs:complexType name="ListOfSampleUnion">
+    <xs:sequence>
+      <xs:element name="SampleUnion" type="tns:SampleUnion" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSampleUnion" type="tns:ListOfSampleUnion" nillable="true"></xs:element>
+
+  <xs:complexType name="SampleStructureWithOptionalFields">
+    <xs:sequence>
+      <xs:element name="FieldX" type="xs:unsignedInt" minOccurs="0" />
+      <xs:element name="FieldY" type="ua:ListOfString" minOccurs="0" nillable="true" />
+      <xs:element name="FieldZ" type="xs:base64Binary" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SampleStructureWithOptionalFields" type="tns:SampleStructureWithOptionalFields" />
+
+  <xs:complexType name="ListOfSampleStructureWithOptionalFields">
+    <xs:sequence>
+      <xs:element name="SampleStructureWithOptionalFields" type="tns:SampleStructureWithOptionalFields" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSampleStructureWithOptionalFields" type="tns:ListOfSampleStructureWithOptionalFields" nillable="true"></xs:element>
+
+  <xs:complexType name="SampleUnionAllowSubtypes">
+    <xs:sequence>
+      <xs:element name="SwitchField" type="xs:unsignedInt" minOccurs="0" />
+      <xs:choice>
+        <xs:element name="FieldX" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
+        <xs:element name="FieldY" type="tns:WorkOrderStatusType" minOccurs="0" nillable="true" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SampleUnionAllowSubtypes" type="tns:SampleUnionAllowSubtypes" />
+
+  <xs:complexType name="ListOfSampleUnionAllowSubtypes">
+    <xs:sequence>
+      <xs:element name="SampleUnionAllowSubtypes" type="tns:SampleUnionAllowSubtypes" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSampleUnionAllowSubtypes" type="tns:ListOfSampleUnionAllowSubtypes" nillable="true"></xs:element>
+
+  <xs:complexType name="SampleStructureAllowSubtypes">
+    <xs:sequence>
+      <xs:element name="FieldX" type="ua:ExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="FieldY" type="ua:ListOfExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="FieldZ" type="ua:ListOfExtensionObject" minOccurs="0" nillable="true" />
+      <xs:element name="FieldW" type="tns:WorkOrderStatusType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SampleStructureAllowSubtypes" type="tns:SampleStructureAllowSubtypes" />
+
+  <xs:complexType name="ListOfSampleStructureAllowSubtypes">
+    <xs:sequence>
+      <xs:element name="SampleStructureAllowSubtypes" type="tns:SampleStructureAllowSubtypes" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSampleStructureAllowSubtypes" type="tns:ListOfSampleStructureAllowSubtypes" nillable="true"></xs:element>
+
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element name="LastName" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" type="tns:Person" />
+
+  <xs:complexType name="ListOfPerson">
+    <xs:sequence>
+      <xs:element name="Person" type="tns:Person" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPerson" type="tns:ListOfPerson" nillable="true"></xs:element>
+
+  <xs:complexType name="Student">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Person">
+        <xs:sequence>
+          <xs:element name="FirstName" type="xs:string" minOccurs="0" nillable="true" />
+          <xs:element name="University" type="xs:string" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Student" type="tns:Student" />
+
+  <xs:complexType name="ListOfStudent">
+    <xs:sequence>
+      <xs:element name="Student" type="tns:Student" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfStudent" type="tns:ListOfStudent" nillable="true"></xs:element>
+
+</xs:schema>

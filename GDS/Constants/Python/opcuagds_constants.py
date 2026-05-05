@@ -337,6 +337,7 @@ class ObjectIds(Enum):
     Directory_CertificateGroups_DefaultUserTokenGroup_TrustList = "nsu=http://opcfoundation.org/UA/GDS/;i=684"
     ApplicationRecordDataType_Encoding_DefaultBinary = "nsu=http://opcfoundation.org/UA/GDS/;i=134"
     ApplicationRecordDataType_Encoding_DefaultXml = "nsu=http://opcfoundation.org/UA/GDS/;i=127"
+    ApplicationRecordDataType_Encoding_DefaultJson = "nsu=http://opcfoundation.org/UA/GDS/;i=8001"
 
 def get_ObjectIds_name(value: str) -> str:
     try:

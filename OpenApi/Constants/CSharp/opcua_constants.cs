@@ -8743,6 +8743,722 @@ namespace Opc.Ua.WebApi
         public const string ProgramDiagnostic2DataType_Encoding_DefaultXml = "i=24038";
         /// <remarks />
         public const string Annotation_Encoding_DefaultXml = "i=892";
+        /// <remarks />
+        public const string Union_Encoding_DefaultJson = "i=15085";
+        /// <remarks />
+        public const string KeyValuePair_Encoding_DefaultJson = "i=15041";
+        /// <remarks />
+        public const string AdditionalParametersType_Encoding_DefaultJson = "i=17547";
+        /// <remarks />
+        public const string EphemeralKeyType_Encoding_DefaultJson = "i=17557";
+        /// <remarks />
+        public const string EndpointType_Encoding_DefaultJson = "i=16150";
+        /// <remarks />
+        public const string BitFieldDefinition_Encoding_DefaultJson = "i=32430";
+        /// <remarks />
+        public const string RationalNumber_Encoding_DefaultJson = "i=19064";
+        /// <remarks />
+        public const string Vector_Encoding_DefaultJson = "i=19065";
+        /// <remarks />
+        public const string ThreeDVector_Encoding_DefaultJson = "i=19066";
+        /// <remarks />
+        public const string CartesianCoordinates_Encoding_DefaultJson = "i=19067";
+        /// <remarks />
+        public const string ThreeDCartesianCoordinates_Encoding_DefaultJson = "i=19068";
+        /// <remarks />
+        public const string Orientation_Encoding_DefaultJson = "i=19069";
+        /// <remarks />
+        public const string ThreeDOrientation_Encoding_DefaultJson = "i=19070";
+        /// <remarks />
+        public const string Frame_Encoding_DefaultJson = "i=19071";
+        /// <remarks />
+        public const string ThreeDFrame_Encoding_DefaultJson = "i=19072";
+        /// <remarks />
+        public const string IdentityMappingRuleType_Encoding_DefaultJson = "i=15042";
+        /// <remarks />
+        public const string CurrencyUnitType_Encoding_DefaultJson = "i=23528";
+        /// <remarks />
+        public const string NumberRange_Encoding_DefaultJson = "i=24368";
+        /// <remarks />
+        public const string AnnotationDataType_Encoding_DefaultJson = "i=32584";
+        /// <remarks />
+        public const string LinearConversionDataType_Encoding_DefaultJson = "i=32585";
+        /// <remarks />
+        public const string QuantityDimension_Encoding_DefaultJson = "i=32586";
+        /// <remarks />
+        public const string TrustListDataType_Encoding_DefaultJson = "i=15044";
+        /// <remarks />
+        public const string BaseConfigurationDataType_Encoding_DefaultJson = "i=16632";
+        /// <remarks />
+        public const string BaseConfigurationRecordDataType_Encoding_DefaultJson = "i=16633";
+        /// <remarks />
+        public const string CertificateGroupDataType_Encoding_DefaultJson = "i=16634";
+        /// <remarks />
+        public const string ConfigurationUpdateTargetType_Encoding_DefaultJson = "i=16635";
+        /// <remarks />
+        public const string TransactionErrorType_Encoding_DefaultJson = "i=32390";
+        /// <remarks />
+        public const string ApplicationConfigurationDataType_Encoding_DefaultJson = "i=23776";
+        /// <remarks />
+        public const string ApplicationIdentityDataType_Encoding_DefaultJson = "i=16637";
+        /// <remarks />
+        public const string EndpointDataType_Encoding_DefaultJson = "i=16642";
+        /// <remarks />
+        public const string ServerEndpointDataType_Encoding_DefaultJson = "i=16643";
+        /// <remarks />
+        public const string SecuritySettingsDataType_Encoding_DefaultJson = "i=16644";
+        /// <remarks />
+        public const string UserTokenSettingsDataType_Encoding_DefaultJson = "i=16645";
+        /// <remarks />
+        public const string ServiceCertificateDataType_Encoding_DefaultJson = "i=23739";
+        /// <remarks />
+        public const string AuthorizationServiceConfigurationDataType_Encoding_DefaultJson = "i=23777";
+        /// <remarks />
+        public const string DecimalDataType_Encoding_DefaultJson = "i=15045";
+        /// <remarks />
+        public const string DataTypeSchemaHeader_Encoding_DefaultJson = "i=16151";
+        /// <remarks />
+        public const string DataTypeDescription_Encoding_DefaultJson = "i=15057";
+        /// <remarks />
+        public const string StructureDescription_Encoding_DefaultJson = "i=15058";
+        /// <remarks />
+        public const string EnumDescription_Encoding_DefaultJson = "i=15059";
+        /// <remarks />
+        public const string SimpleTypeDescription_Encoding_DefaultJson = "i=15700";
+        /// <remarks />
+        public const string UABinaryFileDataType_Encoding_DefaultJson = "i=15714";
+        /// <remarks />
+        public const string PortableQualifiedName_Encoding_DefaultJson = "i=24132";
+        /// <remarks />
+        public const string PortableNodeId_Encoding_DefaultJson = "i=24133";
+        /// <remarks />
+        public const string UnsignedRationalNumber_Encoding_DefaultJson = "i=24134";
+        /// <remarks />
+        public const string DataSetMetaDataType_Encoding_DefaultJson = "i=15050";
+        /// <remarks />
+        public const string FieldMetaData_Encoding_DefaultJson = "i=15051";
+        /// <remarks />
+        public const string ConfigurationVersionDataType_Encoding_DefaultJson = "i=15049";
+        /// <remarks />
+        public const string PublishedDataSetDataType_Encoding_DefaultJson = "i=16152";
+        /// <remarks />
+        public const string PublishedDataSetSourceDataType_Encoding_DefaultJson = "i=16153";
+        /// <remarks />
+        public const string PublishedVariableDataType_Encoding_DefaultJson = "i=15060";
+        /// <remarks />
+        public const string PublishedDataItemsDataType_Encoding_DefaultJson = "i=16154";
+        /// <remarks />
+        public const string PublishedEventsDataType_Encoding_DefaultJson = "i=16155";
+        /// <remarks />
+        public const string PublishedDataSetCustomSourceDataType_Encoding_DefaultJson = "i=25561";
+        /// <remarks />
+        public const string ActionTargetDataType_Encoding_DefaultJson = "i=18622";
+        /// <remarks />
+        public const string PublishedActionDataType_Encoding_DefaultJson = "i=18623";
+        /// <remarks />
+        public const string ActionMethodDataType_Encoding_DefaultJson = "i=18624";
+        /// <remarks />
+        public const string PublishedActionMethodDataType_Encoding_DefaultJson = "i=18945";
+        /// <remarks />
+        public const string DataSetWriterDataType_Encoding_DefaultJson = "i=16156";
+        /// <remarks />
+        public const string DataSetWriterTransportDataType_Encoding_DefaultJson = "i=16157";
+        /// <remarks />
+        public const string DataSetWriterMessageDataType_Encoding_DefaultJson = "i=16158";
+        /// <remarks />
+        public const string PubSubGroupDataType_Encoding_DefaultJson = "i=16159";
+        /// <remarks />
+        public const string WriterGroupDataType_Encoding_DefaultJson = "i=21198";
+        /// <remarks />
+        public const string WriterGroupTransportDataType_Encoding_DefaultJson = "i=16161";
+        /// <remarks />
+        public const string WriterGroupMessageDataType_Encoding_DefaultJson = "i=16280";
+        /// <remarks />
+        public const string PubSubConnectionDataType_Encoding_DefaultJson = "i=16281";
+        /// <remarks />
+        public const string ConnectionTransportDataType_Encoding_DefaultJson = "i=16282";
+        /// <remarks />
+        public const string NetworkAddressDataType_Encoding_DefaultJson = "i=21199";
+        /// <remarks />
+        public const string NetworkAddressUrlDataType_Encoding_DefaultJson = "i=21200";
+        /// <remarks />
+        public const string ReaderGroupDataType_Encoding_DefaultJson = "i=21201";
+        /// <remarks />
+        public const string ReaderGroupTransportDataType_Encoding_DefaultJson = "i=16284";
+        /// <remarks />
+        public const string ReaderGroupMessageDataType_Encoding_DefaultJson = "i=16285";
+        /// <remarks />
+        public const string DataSetReaderDataType_Encoding_DefaultJson = "i=16286";
+        /// <remarks />
+        public const string DataSetReaderTransportDataType_Encoding_DefaultJson = "i=16287";
+        /// <remarks />
+        public const string DataSetReaderMessageDataType_Encoding_DefaultJson = "i=16288";
+        /// <remarks />
+        public const string SubscribedDataSetDataType_Encoding_DefaultJson = "i=16308";
+        /// <remarks />
+        public const string TargetVariablesDataType_Encoding_DefaultJson = "i=16310";
+        /// <remarks />
+        public const string FieldTargetDataType_Encoding_DefaultJson = "i=15061";
+        /// <remarks />
+        public const string SubscribedDataSetMirrorDataType_Encoding_DefaultJson = "i=16311";
+        /// <remarks />
+        public const string PubSubConfigurationDataType_Encoding_DefaultJson = "i=21202";
+        /// <remarks />
+        public const string StandaloneSubscribedDataSetRefDataType_Encoding_DefaultJson = "i=23987";
+        /// <remarks />
+        public const string StandaloneSubscribedDataSetDataType_Encoding_DefaultJson = "i=23988";
+        /// <remarks />
+        public const string SecurityGroupDataType_Encoding_DefaultJson = "i=23989";
+        /// <remarks />
+        public const string PubSubKeyPushTargetDataType_Encoding_DefaultJson = "i=25562";
+        /// <remarks />
+        public const string PubSubConfiguration2DataType_Encoding_DefaultJson = "i=23990";
+        /// <remarks />
+        public const string UadpWriterGroupMessageDataType_Encoding_DefaultJson = "i=16323";
+        /// <remarks />
+        public const string UadpDataSetWriterMessageDataType_Encoding_DefaultJson = "i=16391";
+        /// <remarks />
+        public const string UadpDataSetReaderMessageDataType_Encoding_DefaultJson = "i=16392";
+        /// <remarks />
+        public const string JsonWriterGroupMessageDataType_Encoding_DefaultJson = "i=16393";
+        /// <remarks />
+        public const string JsonDataSetWriterMessageDataType_Encoding_DefaultJson = "i=16394";
+        /// <remarks />
+        public const string JsonDataSetReaderMessageDataType_Encoding_DefaultJson = "i=16404";
+        /// <remarks />
+        public const string QosDataType_Encoding_DefaultJson = "i=23991";
+        /// <remarks />
+        public const string TransmitQosDataType_Encoding_DefaultJson = "i=23992";
+        /// <remarks />
+        public const string TransmitQosPriorityDataType_Encoding_DefaultJson = "i=23993";
+        /// <remarks />
+        public const string ReceiveQosDataType_Encoding_DefaultJson = "i=23996";
+        /// <remarks />
+        public const string ReceiveQosPriorityDataType_Encoding_DefaultJson = "i=23997";
+        /// <remarks />
+        public const string DatagramConnectionTransportDataType_Encoding_DefaultJson = "i=17476";
+        /// <remarks />
+        public const string DatagramConnectionTransport2DataType_Encoding_DefaultJson = "i=24000";
+        /// <remarks />
+        public const string DatagramWriterGroupTransportDataType_Encoding_DefaultJson = "i=21203";
+        /// <remarks />
+        public const string DatagramWriterGroupTransport2DataType_Encoding_DefaultJson = "i=24001";
+        /// <remarks />
+        public const string DatagramDataSetReaderTransportDataType_Encoding_DefaultJson = "i=24002";
+        /// <remarks />
+        public const string DtlsPubSubConnectionDataType_Encoding_DefaultJson = "i=18946";
+        /// <remarks />
+        public const string BrokerConnectionTransportDataType_Encoding_DefaultJson = "i=15726";
+        /// <remarks />
+        public const string BrokerWriterGroupTransportDataType_Encoding_DefaultJson = "i=16524";
+        /// <remarks />
+        public const string BrokerDataSetWriterTransportDataType_Encoding_DefaultJson = "i=16525";
+        /// <remarks />
+        public const string BrokerDataSetReaderTransportDataType_Encoding_DefaultJson = "i=16526";
+        /// <remarks />
+        public const string PubSubConfigurationRefDataType_Encoding_DefaultJson = "i=25563";
+        /// <remarks />
+        public const string PubSubConfigurationValueDataType_Encoding_DefaultJson = "i=25564";
+        /// <remarks />
+        public const string AliasNameDataType_Encoding_DefaultJson = "i=23511";
+        /// <remarks />
+        public const string AliasNameVerboseDataType_Encoding_DefaultJson = "i=24369";
+        /// <remarks />
+        public const string AliasCategoryUpdateDataType_Encoding_DefaultJson = "i=24370";
+        /// <remarks />
+        public const string AliasUpdateDataType_Encoding_DefaultJson = "i=24371";
+        /// <remarks />
+        public const string UserManagementDataType_Encoding_DefaultJson = "i=24300";
+        /// <remarks />
+        public const string PriorityMappingEntryType_Encoding_DefaultJson = "i=25247";
+        /// <remarks />
+        public const string LldpManagementAddressTxPortType_Encoding_DefaultJson = "i=19299";
+        /// <remarks />
+        public const string LldpManagementAddressType_Encoding_DefaultJson = "i=19300";
+        /// <remarks />
+        public const string LldpTlvType_Encoding_DefaultJson = "i=19301";
+        /// <remarks />
+        public const string ReferenceDescriptionDataType_Encoding_DefaultJson = "i=32677";
+        /// <remarks />
+        public const string ReferenceListEntryDataType_Encoding_DefaultJson = "i=32678";
+        /// <remarks />
+        public const string LogRecord_Encoding_DefaultJson = "i=19387";
+        /// <remarks />
+        public const string LogRecordsDataType_Encoding_DefaultJson = "i=19803";
+        /// <remarks />
+        public const string SpanContextDataType_Encoding_DefaultJson = "i=19804";
+        /// <remarks />
+        public const string TraceContextDataType_Encoding_DefaultJson = "i=19805";
+        /// <remarks />
+        public const string NameValuePair_Encoding_DefaultJson = "i=19806";
+        /// <remarks />
+        public const string RolePermissionType_Encoding_DefaultJson = "i=15062";
+        /// <remarks />
+        public const string DataTypeDefinition_Encoding_DefaultJson = "i=15063";
+        /// <remarks />
+        public const string StructureField_Encoding_DefaultJson = "i=15065";
+        /// <remarks />
+        public const string StructureDefinition_Encoding_DefaultJson = "i=15066";
+        /// <remarks />
+        public const string EnumDefinition_Encoding_DefaultJson = "i=15067";
+        /// <remarks />
+        public const string Node_Encoding_DefaultJson = "i=15068";
+        /// <remarks />
+        public const string InstanceNode_Encoding_DefaultJson = "i=15069";
+        /// <remarks />
+        public const string TypeNode_Encoding_DefaultJson = "i=15070";
+        /// <remarks />
+        public const string ObjectNode_Encoding_DefaultJson = "i=15071";
+        /// <remarks />
+        public const string ObjectTypeNode_Encoding_DefaultJson = "i=15073";
+        /// <remarks />
+        public const string VariableNode_Encoding_DefaultJson = "i=15074";
+        /// <remarks />
+        public const string VariableTypeNode_Encoding_DefaultJson = "i=15075";
+        /// <remarks />
+        public const string ReferenceTypeNode_Encoding_DefaultJson = "i=15076";
+        /// <remarks />
+        public const string MethodNode_Encoding_DefaultJson = "i=15077";
+        /// <remarks />
+        public const string ViewNode_Encoding_DefaultJson = "i=15078";
+        /// <remarks />
+        public const string DataTypeNode_Encoding_DefaultJson = "i=15079";
+        /// <remarks />
+        public const string ReferenceNode_Encoding_DefaultJson = "i=15080";
+        /// <remarks />
+        public const string Argument_Encoding_DefaultJson = "i=15081";
+        /// <remarks />
+        public const string EnumValueType_Encoding_DefaultJson = "i=15082";
+        /// <remarks />
+        public const string EnumField_Encoding_DefaultJson = "i=15083";
+        /// <remarks />
+        public const string OptionSet_Encoding_DefaultJson = "i=15084";
+        /// <remarks />
+        public const string TimeZoneDataType_Encoding_DefaultJson = "i=15086";
+        /// <remarks />
+        public const string ApplicationDescription_Encoding_DefaultJson = "i=15087";
+        /// <remarks />
+        public const string RequestHeader_Encoding_DefaultJson = "i=15088";
+        /// <remarks />
+        public const string ResponseHeader_Encoding_DefaultJson = "i=15089";
+        /// <remarks />
+        public const string ServiceFault_Encoding_DefaultJson = "i=15090";
+        /// <remarks />
+        public const string SessionlessInvokeRequestType_Encoding_DefaultJson = "i=15091";
+        /// <remarks />
+        public const string SessionlessInvokeResponseType_Encoding_DefaultJson = "i=15092";
+        /// <remarks />
+        public const string FindServersRequest_Encoding_DefaultJson = "i=15093";
+        /// <remarks />
+        public const string FindServersResponse_Encoding_DefaultJson = "i=15094";
+        /// <remarks />
+        public const string ServerOnNetwork_Encoding_DefaultJson = "i=15095";
+        /// <remarks />
+        public const string FindServersOnNetworkRequest_Encoding_DefaultJson = "i=15096";
+        /// <remarks />
+        public const string FindServersOnNetworkResponse_Encoding_DefaultJson = "i=15097";
+        /// <remarks />
+        public const string UserTokenPolicy_Encoding_DefaultJson = "i=15098";
+        /// <remarks />
+        public const string EndpointDescription_Encoding_DefaultJson = "i=15099";
+        /// <remarks />
+        public const string GetEndpointsRequest_Encoding_DefaultJson = "i=15100";
+        /// <remarks />
+        public const string GetEndpointsResponse_Encoding_DefaultJson = "i=15101";
+        /// <remarks />
+        public const string RegisteredServer_Encoding_DefaultJson = "i=15102";
+        /// <remarks />
+        public const string RegisterServerRequest_Encoding_DefaultJson = "i=15103";
+        /// <remarks />
+        public const string RegisterServerResponse_Encoding_DefaultJson = "i=15104";
+        /// <remarks />
+        public const string DiscoveryConfiguration_Encoding_DefaultJson = "i=15105";
+        /// <remarks />
+        public const string MdnsDiscoveryConfiguration_Encoding_DefaultJson = "i=15106";
+        /// <remarks />
+        public const string RegisterServer2Request_Encoding_DefaultJson = "i=15107";
+        /// <remarks />
+        public const string RegisterServer2Response_Encoding_DefaultJson = "i=15130";
+        /// <remarks />
+        public const string ChannelSecurityToken_Encoding_DefaultJson = "i=15131";
+        /// <remarks />
+        public const string OpenSecureChannelRequest_Encoding_DefaultJson = "i=15132";
+        /// <remarks />
+        public const string OpenSecureChannelResponse_Encoding_DefaultJson = "i=15133";
+        /// <remarks />
+        public const string CloseSecureChannelRequest_Encoding_DefaultJson = "i=15134";
+        /// <remarks />
+        public const string CloseSecureChannelResponse_Encoding_DefaultJson = "i=15135";
+        /// <remarks />
+        public const string SignedSoftwareCertificate_Encoding_DefaultJson = "i=15136";
+        /// <remarks />
+        public const string SignatureData_Encoding_DefaultJson = "i=15137";
+        /// <remarks />
+        public const string CreateSessionRequest_Encoding_DefaultJson = "i=15138";
+        /// <remarks />
+        public const string CreateSessionResponse_Encoding_DefaultJson = "i=15139";
+        /// <remarks />
+        public const string UserIdentityToken_Encoding_DefaultJson = "i=15140";
+        /// <remarks />
+        public const string AnonymousIdentityToken_Encoding_DefaultJson = "i=15141";
+        /// <remarks />
+        public const string UserNameIdentityToken_Encoding_DefaultJson = "i=15142";
+        /// <remarks />
+        public const string X509IdentityToken_Encoding_DefaultJson = "i=15143";
+        /// <remarks />
+        public const string IssuedIdentityToken_Encoding_DefaultJson = "i=15144";
+        /// <remarks />
+        public const string ActivateSessionRequest_Encoding_DefaultJson = "i=15145";
+        /// <remarks />
+        public const string ActivateSessionResponse_Encoding_DefaultJson = "i=15146";
+        /// <remarks />
+        public const string CloseSessionRequest_Encoding_DefaultJson = "i=15147";
+        /// <remarks />
+        public const string CloseSessionResponse_Encoding_DefaultJson = "i=15148";
+        /// <remarks />
+        public const string CancelRequest_Encoding_DefaultJson = "i=15149";
+        /// <remarks />
+        public const string CancelResponse_Encoding_DefaultJson = "i=15150";
+        /// <remarks />
+        public const string NodeAttributes_Encoding_DefaultJson = "i=15151";
+        /// <remarks />
+        public const string ObjectAttributes_Encoding_DefaultJson = "i=15152";
+        /// <remarks />
+        public const string VariableAttributes_Encoding_DefaultJson = "i=15153";
+        /// <remarks />
+        public const string MethodAttributes_Encoding_DefaultJson = "i=15157";
+        /// <remarks />
+        public const string ObjectTypeAttributes_Encoding_DefaultJson = "i=15158";
+        /// <remarks />
+        public const string VariableTypeAttributes_Encoding_DefaultJson = "i=15159";
+        /// <remarks />
+        public const string ReferenceTypeAttributes_Encoding_DefaultJson = "i=15160";
+        /// <remarks />
+        public const string DataTypeAttributes_Encoding_DefaultJson = "i=15161";
+        /// <remarks />
+        public const string ViewAttributes_Encoding_DefaultJson = "i=15162";
+        /// <remarks />
+        public const string GenericAttributeValue_Encoding_DefaultJson = "i=15163";
+        /// <remarks />
+        public const string GenericAttributes_Encoding_DefaultJson = "i=15164";
+        /// <remarks />
+        public const string AddNodesItem_Encoding_DefaultJson = "i=15165";
+        /// <remarks />
+        public const string AddNodesResult_Encoding_DefaultJson = "i=15166";
+        /// <remarks />
+        public const string AddNodesRequest_Encoding_DefaultJson = "i=15167";
+        /// <remarks />
+        public const string AddNodesResponse_Encoding_DefaultJson = "i=15168";
+        /// <remarks />
+        public const string AddReferencesItem_Encoding_DefaultJson = "i=15169";
+        /// <remarks />
+        public const string AddReferencesRequest_Encoding_DefaultJson = "i=15170";
+        /// <remarks />
+        public const string AddReferencesResponse_Encoding_DefaultJson = "i=15171";
+        /// <remarks />
+        public const string DeleteNodesItem_Encoding_DefaultJson = "i=15172";
+        /// <remarks />
+        public const string DeleteNodesRequest_Encoding_DefaultJson = "i=15173";
+        /// <remarks />
+        public const string DeleteNodesResponse_Encoding_DefaultJson = "i=15174";
+        /// <remarks />
+        public const string DeleteReferencesItem_Encoding_DefaultJson = "i=15175";
+        /// <remarks />
+        public const string DeleteReferencesRequest_Encoding_DefaultJson = "i=15176";
+        /// <remarks />
+        public const string DeleteReferencesResponse_Encoding_DefaultJson = "i=15177";
+        /// <remarks />
+        public const string ViewDescription_Encoding_DefaultJson = "i=15179";
+        /// <remarks />
+        public const string BrowseDescription_Encoding_DefaultJson = "i=15180";
+        /// <remarks />
+        public const string ReferenceDescription_Encoding_DefaultJson = "i=15182";
+        /// <remarks />
+        public const string BrowseResult_Encoding_DefaultJson = "i=15183";
+        /// <remarks />
+        public const string BrowseRequest_Encoding_DefaultJson = "i=15184";
+        /// <remarks />
+        public const string BrowseResponse_Encoding_DefaultJson = "i=15185";
+        /// <remarks />
+        public const string BrowseNextRequest_Encoding_DefaultJson = "i=15186";
+        /// <remarks />
+        public const string BrowseNextResponse_Encoding_DefaultJson = "i=15187";
+        /// <remarks />
+        public const string RelativePathElement_Encoding_DefaultJson = "i=15188";
+        /// <remarks />
+        public const string RelativePath_Encoding_DefaultJson = "i=15189";
+        /// <remarks />
+        public const string BrowsePath_Encoding_DefaultJson = "i=15190";
+        /// <remarks />
+        public const string BrowsePathTarget_Encoding_DefaultJson = "i=15191";
+        /// <remarks />
+        public const string BrowsePathResult_Encoding_DefaultJson = "i=15192";
+        /// <remarks />
+        public const string TranslateBrowsePathsToNodeIdsRequest_Encoding_DefaultJson = "i=15193";
+        /// <remarks />
+        public const string TranslateBrowsePathsToNodeIdsResponse_Encoding_DefaultJson = "i=15194";
+        /// <remarks />
+        public const string RegisterNodesRequest_Encoding_DefaultJson = "i=15195";
+        /// <remarks />
+        public const string RegisterNodesResponse_Encoding_DefaultJson = "i=15196";
+        /// <remarks />
+        public const string UnregisterNodesRequest_Encoding_DefaultJson = "i=15197";
+        /// <remarks />
+        public const string UnregisterNodesResponse_Encoding_DefaultJson = "i=15198";
+        /// <remarks />
+        public const string EndpointConfiguration_Encoding_DefaultJson = "i=15199";
+        /// <remarks />
+        public const string QueryDataDescription_Encoding_DefaultJson = "i=15200";
+        /// <remarks />
+        public const string NodeTypeDescription_Encoding_DefaultJson = "i=15201";
+        /// <remarks />
+        public const string QueryDataSet_Encoding_DefaultJson = "i=15202";
+        /// <remarks />
+        public const string NodeReference_Encoding_DefaultJson = "i=15203";
+        /// <remarks />
+        public const string ContentFilterElement_Encoding_DefaultJson = "i=15204";
+        /// <remarks />
+        public const string ContentFilter_Encoding_DefaultJson = "i=15205";
+        /// <remarks />
+        public const string FilterOperand_Encoding_DefaultJson = "i=15206";
+        /// <remarks />
+        public const string ElementOperand_Encoding_DefaultJson = "i=15207";
+        /// <remarks />
+        public const string LiteralOperand_Encoding_DefaultJson = "i=15208";
+        /// <remarks />
+        public const string AttributeOperand_Encoding_DefaultJson = "i=15209";
+        /// <remarks />
+        public const string SimpleAttributeOperand_Encoding_DefaultJson = "i=15210";
+        /// <remarks />
+        public const string ContentFilterElementResult_Encoding_DefaultJson = "i=15211";
+        /// <remarks />
+        public const string ContentFilterResult_Encoding_DefaultJson = "i=15228";
+        /// <remarks />
+        public const string ParsingResult_Encoding_DefaultJson = "i=15236";
+        /// <remarks />
+        public const string QueryFirstRequest_Encoding_DefaultJson = "i=15244";
+        /// <remarks />
+        public const string QueryFirstResponse_Encoding_DefaultJson = "i=15252";
+        /// <remarks />
+        public const string QueryNextRequest_Encoding_DefaultJson = "i=15254";
+        /// <remarks />
+        public const string QueryNextResponse_Encoding_DefaultJson = "i=15255";
+        /// <remarks />
+        public const string ReadValueId_Encoding_DefaultJson = "i=15256";
+        /// <remarks />
+        public const string ReadRequest_Encoding_DefaultJson = "i=15257";
+        /// <remarks />
+        public const string ReadResponse_Encoding_DefaultJson = "i=15258";
+        /// <remarks />
+        public const string HistoryReadValueId_Encoding_DefaultJson = "i=15259";
+        /// <remarks />
+        public const string HistoryReadResult_Encoding_DefaultJson = "i=15260";
+        /// <remarks />
+        public const string HistoryReadDetails_Encoding_DefaultJson = "i=15261";
+        /// <remarks />
+        public const string ReadEventDetails_Encoding_DefaultJson = "i=15262";
+        /// <remarks />
+        public const string ReadEventDetails2_Encoding_DefaultJson = "i=32802";
+        /// <remarks />
+        public const string SortRuleElement_Encoding_DefaultJson = "i=18654";
+        /// <remarks />
+        public const string ReadEventDetailsSorted_Encoding_DefaultJson = "i=18655";
+        /// <remarks />
+        public const string ReadRawModifiedDetails_Encoding_DefaultJson = "i=15263";
+        /// <remarks />
+        public const string ReadProcessedDetails_Encoding_DefaultJson = "i=15264";
+        /// <remarks />
+        public const string ReadAtTimeDetails_Encoding_DefaultJson = "i=15269";
+        /// <remarks />
+        public const string ReadAnnotationDataDetails_Encoding_DefaultJson = "i=23512";
+        /// <remarks />
+        public const string HistoryData_Encoding_DefaultJson = "i=15270";
+        /// <remarks />
+        public const string ModificationInfo_Encoding_DefaultJson = "i=15271";
+        /// <remarks />
+        public const string HistoryModifiedData_Encoding_DefaultJson = "i=15272";
+        /// <remarks />
+        public const string HistoryEvent_Encoding_DefaultJson = "i=15273";
+        /// <remarks />
+        public const string HistoryModifiedEvent_Encoding_DefaultJson = "i=32833";
+        /// <remarks />
+        public const string HistoryReadRequest_Encoding_DefaultJson = "i=15274";
+        /// <remarks />
+        public const string HistoryReadResponse_Encoding_DefaultJson = "i=15275";
+        /// <remarks />
+        public const string WriteValue_Encoding_DefaultJson = "i=15276";
+        /// <remarks />
+        public const string WriteRequest_Encoding_DefaultJson = "i=15277";
+        /// <remarks />
+        public const string WriteResponse_Encoding_DefaultJson = "i=15278";
+        /// <remarks />
+        public const string HistoryUpdateDetails_Encoding_DefaultJson = "i=15279";
+        /// <remarks />
+        public const string UpdateDataDetails_Encoding_DefaultJson = "i=15280";
+        /// <remarks />
+        public const string UpdateStructureDataDetails_Encoding_DefaultJson = "i=15281";
+        /// <remarks />
+        public const string UpdateEventDetails_Encoding_DefaultJson = "i=15282";
+        /// <remarks />
+        public const string DeleteRawModifiedDetails_Encoding_DefaultJson = "i=15283";
+        /// <remarks />
+        public const string DeleteAtTimeDetails_Encoding_DefaultJson = "i=15284";
+        /// <remarks />
+        public const string DeleteEventDetails_Encoding_DefaultJson = "i=15285";
+        /// <remarks />
+        public const string HistoryUpdateResult_Encoding_DefaultJson = "i=15286";
+        /// <remarks />
+        public const string HistoryUpdateRequest_Encoding_DefaultJson = "i=15287";
+        /// <remarks />
+        public const string HistoryUpdateResponse_Encoding_DefaultJson = "i=15288";
+        /// <remarks />
+        public const string CallMethodRequest_Encoding_DefaultJson = "i=15289";
+        /// <remarks />
+        public const string CallMethodResult_Encoding_DefaultJson = "i=15290";
+        /// <remarks />
+        public const string CallRequest_Encoding_DefaultJson = "i=15291";
+        /// <remarks />
+        public const string CallResponse_Encoding_DefaultJson = "i=15292";
+        /// <remarks />
+        public const string MonitoringFilter_Encoding_DefaultJson = "i=15293";
+        /// <remarks />
+        public const string DataChangeFilter_Encoding_DefaultJson = "i=15294";
+        /// <remarks />
+        public const string EventFilter_Encoding_DefaultJson = "i=15295";
+        /// <remarks />
+        public const string AggregateConfiguration_Encoding_DefaultJson = "i=15304";
+        /// <remarks />
+        public const string AggregateFilter_Encoding_DefaultJson = "i=15312";
+        /// <remarks />
+        public const string MonitoringFilterResult_Encoding_DefaultJson = "i=15313";
+        /// <remarks />
+        public const string EventFilterResult_Encoding_DefaultJson = "i=15314";
+        /// <remarks />
+        public const string AggregateFilterResult_Encoding_DefaultJson = "i=15315";
+        /// <remarks />
+        public const string MonitoringParameters_Encoding_DefaultJson = "i=15320";
+        /// <remarks />
+        public const string MonitoredItemCreateRequest_Encoding_DefaultJson = "i=15321";
+        /// <remarks />
+        public const string MonitoredItemCreateResult_Encoding_DefaultJson = "i=15322";
+        /// <remarks />
+        public const string CreateMonitoredItemsRequest_Encoding_DefaultJson = "i=15323";
+        /// <remarks />
+        public const string CreateMonitoredItemsResponse_Encoding_DefaultJson = "i=15324";
+        /// <remarks />
+        public const string MonitoredItemModifyRequest_Encoding_DefaultJson = "i=15325";
+        /// <remarks />
+        public const string MonitoredItemModifyResult_Encoding_DefaultJson = "i=15326";
+        /// <remarks />
+        public const string ModifyMonitoredItemsRequest_Encoding_DefaultJson = "i=15327";
+        /// <remarks />
+        public const string ModifyMonitoredItemsResponse_Encoding_DefaultJson = "i=15328";
+        /// <remarks />
+        public const string SetMonitoringModeRequest_Encoding_DefaultJson = "i=15329";
+        /// <remarks />
+        public const string SetMonitoringModeResponse_Encoding_DefaultJson = "i=15331";
+        /// <remarks />
+        public const string SetTriggeringRequest_Encoding_DefaultJson = "i=15332";
+        /// <remarks />
+        public const string SetTriggeringResponse_Encoding_DefaultJson = "i=15333";
+        /// <remarks />
+        public const string DeleteMonitoredItemsRequest_Encoding_DefaultJson = "i=15335";
+        /// <remarks />
+        public const string DeleteMonitoredItemsResponse_Encoding_DefaultJson = "i=15336";
+        /// <remarks />
+        public const string CreateSubscriptionRequest_Encoding_DefaultJson = "i=15337";
+        /// <remarks />
+        public const string CreateSubscriptionResponse_Encoding_DefaultJson = "i=15338";
+        /// <remarks />
+        public const string ModifySubscriptionRequest_Encoding_DefaultJson = "i=15339";
+        /// <remarks />
+        public const string ModifySubscriptionResponse_Encoding_DefaultJson = "i=15340";
+        /// <remarks />
+        public const string SetPublishingModeRequest_Encoding_DefaultJson = "i=15341";
+        /// <remarks />
+        public const string SetPublishingModeResponse_Encoding_DefaultJson = "i=15342";
+        /// <remarks />
+        public const string NotificationMessage_Encoding_DefaultJson = "i=15343";
+        /// <remarks />
+        public const string NotificationData_Encoding_DefaultJson = "i=15344";
+        /// <remarks />
+        public const string DataChangeNotification_Encoding_DefaultJson = "i=15345";
+        /// <remarks />
+        public const string MonitoredItemNotification_Encoding_DefaultJson = "i=15346";
+        /// <remarks />
+        public const string EventNotificationList_Encoding_DefaultJson = "i=15347";
+        /// <remarks />
+        public const string EventFieldList_Encoding_DefaultJson = "i=15348";
+        /// <remarks />
+        public const string HistoryEventFieldList_Encoding_DefaultJson = "i=15349";
+        /// <remarks />
+        public const string StatusChangeNotification_Encoding_DefaultJson = "i=15350";
+        /// <remarks />
+        public const string SubscriptionAcknowledgement_Encoding_DefaultJson = "i=15351";
+        /// <remarks />
+        public const string PublishRequest_Encoding_DefaultJson = "i=15352";
+        /// <remarks />
+        public const string PublishResponse_Encoding_DefaultJson = "i=15353";
+        /// <remarks />
+        public const string RepublishRequest_Encoding_DefaultJson = "i=15354";
+        /// <remarks />
+        public const string RepublishResponse_Encoding_DefaultJson = "i=15355";
+        /// <remarks />
+        public const string TransferResult_Encoding_DefaultJson = "i=15356";
+        /// <remarks />
+        public const string TransferSubscriptionsRequest_Encoding_DefaultJson = "i=15357";
+        /// <remarks />
+        public const string TransferSubscriptionsResponse_Encoding_DefaultJson = "i=15358";
+        /// <remarks />
+        public const string DeleteSubscriptionsRequest_Encoding_DefaultJson = "i=15359";
+        /// <remarks />
+        public const string DeleteSubscriptionsResponse_Encoding_DefaultJson = "i=15360";
+        /// <remarks />
+        public const string BuildInfo_Encoding_DefaultJson = "i=15361";
+        /// <remarks />
+        public const string RedundantServerDataType_Encoding_DefaultJson = "i=15362";
+        /// <remarks />
+        public const string EndpointUrlListDataType_Encoding_DefaultJson = "i=15363";
+        /// <remarks />
+        public const string NetworkGroupDataType_Encoding_DefaultJson = "i=15364";
+        /// <remarks />
+        public const string SamplingIntervalDiagnosticsDataType_Encoding_DefaultJson = "i=15365";
+        /// <remarks />
+        public const string ServerDiagnosticsSummaryDataType_Encoding_DefaultJson = "i=15366";
+        /// <remarks />
+        public const string ServerStatusDataType_Encoding_DefaultJson = "i=15367";
+        /// <remarks />
+        public const string SessionDiagnosticsDataType_Encoding_DefaultJson = "i=15368";
+        /// <remarks />
+        public const string SessionSecurityDiagnosticsDataType_Encoding_DefaultJson = "i=15369";
+        /// <remarks />
+        public const string ServiceCounterDataType_Encoding_DefaultJson = "i=15370";
+        /// <remarks />
+        public const string StatusResult_Encoding_DefaultJson = "i=15371";
+        /// <remarks />
+        public const string SubscriptionDiagnosticsDataType_Encoding_DefaultJson = "i=15372";
+        /// <remarks />
+        public const string ModelChangeStructureDataType_Encoding_DefaultJson = "i=15373";
+        /// <remarks />
+        public const string SemanticChangeStructureDataType_Encoding_DefaultJson = "i=15374";
+        /// <remarks />
+        public const string Range_Encoding_DefaultJson = "i=15375";
+        /// <remarks />
+        public const string EUInformation_Encoding_DefaultJson = "i=15376";
+        /// <remarks />
+        public const string ComplexNumberType_Encoding_DefaultJson = "i=15377";
+        /// <remarks />
+        public const string DoubleComplexNumberType_Encoding_DefaultJson = "i=15378";
+        /// <remarks />
+        public const string AxisInformation_Encoding_DefaultJson = "i=15379";
+        /// <remarks />
+        public const string XVType_Encoding_DefaultJson = "i=15380";
+        /// <remarks />
+        public const string ProgramDiagnosticDataType_Encoding_DefaultJson = "i=15381";
+        /// <remarks />
+        public const string ProgramDiagnostic2DataType_Encoding_DefaultJson = "i=24042";
+        /// <remarks />
+        public const string Annotation_Encoding_DefaultJson = "i=15382";
 
         /// <summary>
         /// Converts a value to a name for display.
