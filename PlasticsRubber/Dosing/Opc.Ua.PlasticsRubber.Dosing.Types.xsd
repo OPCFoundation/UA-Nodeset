@@ -1,0 +1,65 @@
+<xs:schema xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/Dosing/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" targetNamespace="http://opcfoundation.org/UA/PlasticsRubber/Dosing/Types.xsd">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="ActivateRemoteControl">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OFF_0"/>
+            <xs:enumeration value="SEPARATE_INTERFACE_1"/>
+            <xs:enumeration value="OPC_UA_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ActivateRemoteControl" name="ActivateRemoteControl"/>
+    <xs:complexType name="ListOfActivateRemoteControl">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:ActivateRemoteControl" minOccurs="0" name="ActivateRemoteControl" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfActivateRemoteControl" name="ListOfActivateRemoteControl"/>
+    <xs:simpleType name="ComponentStateEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Off_0"/>
+            <xs:enumeration value="Ready_1"/>
+            <xs:enumeration value="Dosing_2"/>
+            <xs:enumeration value="Calibration_3"/>
+            <xs:enumeration value="Error_4"/>
+            <xs:enumeration value="Cleaning_5"/>
+            <xs:enumeration value="Purging_6"/>
+            <xs:enumeration value="Priming_7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ComponentStateEnumeration" name="ComponentStateEnumeration"/>
+    <xs:complexType name="ListOfComponentStateEnumeration">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:ComponentStateEnumeration" minOccurs="0" name="ComponentStateEnumeration" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfComponentStateEnumeration" name="ListOfComponentStateEnumeration"/>
+    <xs:simpleType name="DosingModeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ONLY_CONVEYING_0"/>
+            <xs:enumeration value="VOLUMETRIC_1"/>
+            <xs:enumeration value="GRAVIMETRIC_2"/>
+            <xs:enumeration value="OTHER_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DosingModeEnumeration" name="DosingModeEnumeration"/>
+    <xs:complexType name="ListOfDosingModeEnumeration">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:DosingModeEnumeration" minOccurs="0" name="DosingModeEnumeration" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfDosingModeEnumeration" name="ListOfDosingModeEnumeration"/>
+    <xs:simpleType name="RemoteControlActivated">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OFF_0"/>
+            <xs:enumeration value="SEPARATE_INTERFACE_1"/>
+            <xs:enumeration value="OPC_UA_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:RemoteControlActivated" name="RemoteControlActivated"/>
+    <xs:complexType name="ListOfRemoteControlActivated">
+        <xs:sequence>
+            <xs:element nillable="true" type="tns:RemoteControlActivated" minOccurs="0" name="RemoteControlActivated" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" type="tns:ListOfRemoteControlActivated" name="ListOfRemoteControlActivated"/>
+</xs:schema>
