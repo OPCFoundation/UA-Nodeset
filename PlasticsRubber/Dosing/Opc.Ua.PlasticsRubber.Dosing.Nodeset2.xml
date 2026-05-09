@@ -21788,7 +21788,7 @@
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6005" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5001" DataType="IdType" ValueRank="1" ArrayDimensions="0">
