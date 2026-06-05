@@ -1,0 +1,11 @@
+Id,Name,Link,ConformanceUnits
+1003,STSysMaterialTransportLineType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.1","MSS STSysMaterialTransportLineType Basic;MSS STSysMaterialTransportLineType Monitoring;MSS STSysMaterialTransportLineType Description;"
+1004,STCompPowderVibrationType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.4","MSS STCompPowderVibrationType Basic;MSS STCompPowderVibrationType Monitoring;"
+1005,STSysVesselType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.7","MSS STSysVesselType Basic;MSS STSysVesselType Monitoring;MSS STSysVesselType Components;MSS STSysVesselType Description;"
+1006,STSysRamType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.2","MSS STSysRamType Basic;MSS STSysRamType Components;"
+1007,STCompStirrerType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.8","MSS STCompStirrerType Basic;MSS STCompStirrerType Monitoring;"
+1008,STCompPowderSieveType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.5","MSS STCompPowderSieveType Basic;MSS STCompPowderSieveType Description;"
+1009,STCompRamType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.3","MSS STCompRamType Basic;MSS STCompRamType Monitoring;MSS STCompRamType Description;"
+1012,STCompProcessValveType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.6","MSS STCompProcessValveType Basic;MSS STCompProcessValveType Monitoring;MSS STCompProcessValveType Description;"
+1013,STCompHeaterType,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/7.9","MSS STCompHeaterType Basic;MSS STCompHeaterType Monitoring;MSS STCompHeaterType Description;"
+5068,http://opcfoundation.org/UA/SurfaceTechnology/OCT-MSS/,"https://reference.opcfoundation.org/SurfaceTechnology/OCT-MSS/v100/docs/9.1",""
