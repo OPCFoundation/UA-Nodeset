@@ -284,7 +284,7 @@
 2101;MassFlowRate;Mass flow rate;kg/sec;-;Float;NO
 28683;Pressure;Pressure;Pa;-;Float;NO
 28684;Temperature;Temperature;K;-;Float;NO
-28685;Weight;Weight;kg;-;Float;YES
+28685;Mass;Mass;kg;-;Float;YES
 28686;Volume;Volume;m3;-;Float;YES
 28687;Density;Density;kg/m3;-;Float;NO
 28688;HeatFlow;Heat Flow;W/m2;-;Float;NO

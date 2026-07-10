@@ -1,0 +1,40 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<opc:TypeDictionary xmlns:opc="http://opcfoundation.org/BinarySchema/" TargetNamespace="http://opcfoundation.org/UA/ECM/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ua="http://opcfoundation.org/UA/" DefaultByteOrder="LittleEndian" xmlns:tns="http://opcfoundation.org/UA/ECM/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType Name="AcPeDataType" BaseType="ua:ExtensionObject">
+        <opc:Field TypeName="opc:Float" Name="L1"/>
+        <opc:Field TypeName="opc:Float" Name="L2"/>
+        <opc:Field TypeName="opc:Float" Name="L3"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="AcPpDataType" BaseType="ua:ExtensionObject">
+        <opc:Field TypeName="opc:Float" Name="L1L2"/>
+        <opc:Field TypeName="opc:Float" Name="L2L3"/>
+        <opc:Field TypeName="opc:Float" Name="L3L1"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="EnergyStateInformationDataType" BaseType="ua:ExtensionObject">
+        <opc:Field TypeName="opc:Byte" Name="IDSource"/>
+        <opc:Field TypeName="opc:Byte" Name="IDDestination"/>
+        <opc:Field TypeName="opc:Double" Name="RegularTimeToOperate"/>
+        <opc:Field TypeName="opc:Float" Name="ModePowerConsumption"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="MeasurementPeriodDataType" BaseType="ua:ExtensionObject">
+        <opc:Field TypeName="opc:Double" Name="Duration"/>
+        <opc:Field TypeName="tns:MeasurementPeriodEnum" Name="Definition"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="StandbyModeTransitionDataType" BaseType="ua:ExtensionObject">
+        <opc:Field TypeName="opc:Byte" Name="IDDestination"/>
+        <opc:Field TypeName="opc:Double" Name="CurrentTimeToDestination"/>
+        <opc:Field TypeName="opc:Double" Name="CurrentTimeToOperate"/>
+        <opc:Field TypeName="opc:Float" Name="EnergyConsumptionToDestination"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType Name="MeasurementPeriodEnum" LengthInBits="32">
+        <opc:EnumeratedValue Value="0" Name="SlidingDemand"/>
+        <opc:EnumeratedValue Value="1" Name="FixedBlockCompleted"/>
+        <opc:EnumeratedValue Value="2" Name="FixedBlockInstantaneous"/>
+        <opc:EnumeratedValue Value="3" Name="FixedBlockPredicted"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
