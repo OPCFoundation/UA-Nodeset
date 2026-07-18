@@ -1,0 +1,415 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<xs:schema xmlns:tns="http://opcfoundation.org/UA/UnattendedRetail/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/UnattendedRetail/Types.xsd">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="AssetConfigurationEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AcceptToCashboxOrStacker_0"/>
+            <xs:enumeration value="AcceptToRecyclerOrTube_1"/>
+            <xs:enumeration value="AcceptToEscrowAndStacker_2"/>
+            <xs:enumeration value="AcceptToEscrowAndRecycler_3"/>
+            <xs:enumeration value="Reject_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AssetConfigurationEnum" type="tns:AssetConfigurationEnum"/>
+    <xs:complexType name="ListOfAssetConfigurationEnum">
+        <xs:sequence>
+            <xs:element name="AssetConfigurationEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:AssetConfigurationEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfAssetConfigurationEnum" nillable="true" type="tns:ListOfAssetConfigurationEnum"/>
+    <xs:simpleType name="AvailabilityEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Available_0"/>
+            <xs:enumeration value="OutOfOrder_1"/>
+            <xs:enumeration value="TemporaryNotAvailable_2"/>
+            <xs:enumeration value="Empty_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AvailabilityEnum" type="tns:AvailabilityEnum"/>
+    <xs:complexType name="ListOfAvailabilityEnum">
+        <xs:sequence>
+            <xs:element name="AvailabilityEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:AvailabilityEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfAvailabilityEnum" nillable="true" type="tns:ListOfAvailabilityEnum"/>
+    <xs:simpleType name="DeliveryAndPaymentStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DeliveryRequestReceived_0"/>
+            <xs:enumeration value="PaymentInExecution_1"/>
+            <xs:enumeration value="PaymentFinished_2"/>
+            <xs:enumeration value="PaymentFailed_3"/>
+            <xs:enumeration value="PaymentCancelledByUser_4"/>
+            <xs:enumeration value="PaymentFailedWrongPrice_5"/>
+            <xs:enumeration value="DeliveryInExecution_6"/>
+            <xs:enumeration value="DeliveryAndPaymentSuccess_7"/>
+            <xs:enumeration value="DeliveryFailRefundInExecution_8"/>
+            <xs:enumeration value="DeliveryFailRefundSuccess_9"/>
+            <xs:enumeration value="DeliveryAndRefundFailed_10"/>
+            <xs:enumeration value="DeliveryMixResultRefundInExecution_11"/>
+            <xs:enumeration value="DeliveryMixResultRefundSuccess_12"/>
+            <xs:enumeration value="DeliveryMixResultRefundFailed_13"/>
+            <xs:enumeration value="CancelledByUserRefundInExcecution_14"/>
+            <xs:enumeration value="CancelledByUserRefundSuccess_15"/>
+            <xs:enumeration value="CancelledByUserRefundFailed_16"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="DeliveryAndPaymentStatusEnum" type="tns:DeliveryAndPaymentStatusEnum"/>
+    <xs:complexType name="ListOfDeliveryAndPaymentStatusEnum">
+        <xs:sequence>
+            <xs:element name="DeliveryAndPaymentStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:DeliveryAndPaymentStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfDeliveryAndPaymentStatusEnum" nillable="true" type="tns:ListOfDeliveryAndPaymentStatusEnum"/>
+    <xs:simpleType name="DeliveryStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ReadyToDeliver_0"/>
+            <xs:enumeration value="DeliveryStarted_1"/>
+            <xs:enumeration value="DeliveryFinished_2"/>
+            <xs:enumeration value="DeliveryFailed_3"/>
+            <xs:enumeration value="DeliveryCannotStart_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="DeliveryStatusEnum" type="tns:DeliveryStatusEnum"/>
+    <xs:complexType name="ListOfDeliveryStatusEnum">
+        <xs:sequence>
+            <xs:element name="DeliveryStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:DeliveryStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfDeliveryStatusEnum" nillable="true" type="tns:ListOfDeliveryStatusEnum"/>
+    <xs:simpleType name="MachineEngineWorkingStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Initializing_0"/>
+            <xs:enumeration value="WaitingForTemperature_1"/>
+            <xs:enumeration value="Ready_2"/>
+            <xs:enumeration value="Cleaning_3"/>
+            <xs:enumeration value="Dispensing_4"/>
+            <xs:enumeration value="Busy_5"/>
+            <xs:enumeration value="OutOfOrder_6"/>
+            <xs:enumeration value="EnergySavingMode_7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="MachineEngineWorkingStatusEnum" type="tns:MachineEngineWorkingStatusEnum"/>
+    <xs:complexType name="ListOfMachineEngineWorkingStatusEnum">
+        <xs:sequence>
+            <xs:element name="MachineEngineWorkingStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:MachineEngineWorkingStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfMachineEngineWorkingStatusEnum" nillable="true" type="tns:ListOfMachineEngineWorkingStatusEnum"/>
+    <xs:simpleType name="OperationStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Idle_0"/>
+            <xs:enumeration value="Ongoing_1"/>
+            <xs:enumeration value="SuccessfullyFinished_2"/>
+            <xs:enumeration value="Failed_3"/>
+            <xs:enumeration value="Failed_NoCommunication_4"/>
+            <xs:enumeration value="Failed_NotEnoughCredit_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="OperationStatusEnum" type="tns:OperationStatusEnum"/>
+    <xs:complexType name="ListOfOperationStatusEnum">
+        <xs:sequence>
+            <xs:element name="OperationStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:OperationStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfOperationStatusEnum" nillable="true" type="tns:ListOfOperationStatusEnum"/>
+    <xs:simpleType name="OutputStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Free_0"/>
+            <xs:enumeration value="ProductNotTaken_1"/>
+            <xs:enumeration value="OutOfOrder_2"/>
+            <xs:enumeration value="Locked_3"/>
+            <xs:enumeration value="CleaningRequired_4"/>
+            <xs:enumeration value="VendorSpecific_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="OutputStatusEnum" type="tns:OutputStatusEnum"/>
+    <xs:complexType name="ListOfOutputStatusEnum">
+        <xs:sequence>
+            <xs:element name="OutputStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:OutputStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfOutputStatusEnum" nillable="true" type="tns:ListOfOutputStatusEnum"/>
+    <xs:simpleType name="PaymentModeOrDeviceStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Available_0"/>
+            <xs:enumeration value="Offline_1"/>
+            <xs:enumeration value="OutOfOrder_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="PaymentModeOrDeviceStatusEnum" type="tns:PaymentModeOrDeviceStatusEnum"/>
+    <xs:complexType name="ListOfPaymentModeOrDeviceStatusEnum">
+        <xs:sequence>
+            <xs:element name="PaymentModeOrDeviceStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:PaymentModeOrDeviceStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfPaymentModeOrDeviceStatusEnum" nillable="true" type="tns:ListOfPaymentModeOrDeviceStatusEnum"/>
+    <xs:simpleType name="PaymentServiceStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Available_0"/>
+            <xs:enumeration value="Offline_1"/>
+            <xs:enumeration value="OutOfOrder_2"/>
+            <xs:enumeration value="ExternallyStopped_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="PaymentServiceStatusEnum" type="tns:PaymentServiceStatusEnum"/>
+    <xs:complexType name="ListOfPaymentServiceStatusEnum">
+        <xs:sequence>
+            <xs:element name="PaymentServiceStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:PaymentServiceStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfPaymentServiceStatusEnum" nillable="true" type="tns:ListOfPaymentServiceStatusEnum"/>
+    <xs:simpleType name="PayoutStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Idle_0"/>
+            <xs:enumeration value="Ongoing_1"/>
+            <xs:enumeration value="SuccessfullyFinished_2"/>
+            <xs:enumeration value="Failed_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="PayoutStatusEnum" type="tns:PayoutStatusEnum"/>
+    <xs:complexType name="ListOfPayoutStatusEnum">
+        <xs:sequence>
+            <xs:element name="PayoutStatusEnum" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:PayoutStatusEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfPayoutStatusEnum" nillable="true" type="tns:ListOfPayoutStatusEnum"/>
+    <xs:complexType name="ActualPaymentDataType">
+        <xs:sequence>
+            <xs:element name="PaymentMode" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="PaymentDevice" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="UserId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="MonetaryValue" maxOccurs="1" minOccurs="0" type="tns:PriceDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ActualPaymentDataType" type="tns:ActualPaymentDataType"/>
+    <xs:complexType name="ListOfActualPaymentDataType">
+        <xs:sequence>
+            <xs:element name="ActualPaymentDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:ActualPaymentDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfActualPaymentDataType" nillable="true" type="tns:ListOfActualPaymentDataType"/>
+    <xs:complexType name="AvailabilityStatusDataType">
+        <xs:sequence>
+            <xs:element name="Id" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="Status" maxOccurs="1" minOccurs="0" type="tns:AvailabilityEnum"/>
+            <xs:element name="EstimatedRemainingStock" maxOccurs="1" minOccurs="0" type="xs:unsignedInt"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AvailabilityStatusDataType" type="tns:AvailabilityStatusDataType"/>
+    <xs:complexType name="ListOfAvailabilityStatusDataType">
+        <xs:sequence>
+            <xs:element name="AvailabilityStatusDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:AvailabilityStatusDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfAvailabilityStatusDataType" nillable="true" type="tns:ListOfAvailabilityStatusDataType"/>
+    <xs:complexType name="BasketProgressDataType">
+        <xs:sequence>
+            <xs:element name="BasketId" maxOccurs="1" minOccurs="0" type="xs:unsignedLong"/>
+            <xs:element name="TransactionIds" maxOccurs="1" minOccurs="0" type="ua:ListOfUInt64"/>
+            <xs:element name="Status" maxOccurs="1" minOccurs="0" type="tns:DeliveryAndPaymentStatusEnum"/>
+            <xs:element name="BasketFinished" maxOccurs="1" minOccurs="0" type="xs:boolean"/>
+            <xs:element name="PaymentMode" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="UserId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="UsedPrice" maxOccurs="1" minOccurs="0" type="tns:PriceAndContextDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="BasketProgressDataType" type="tns:BasketProgressDataType"/>
+    <xs:complexType name="ListOfBasketProgressDataType">
+        <xs:sequence>
+            <xs:element name="BasketProgressDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:BasketProgressDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfBasketProgressDataType" nillable="true" type="tns:ListOfBasketProgressDataType"/>
+    <xs:complexType name="DeliveryProgressDataType">
+        <xs:sequence>
+            <xs:element name="ProgressInPercent" maxOccurs="1" minOccurs="0" type="xs:unsignedByte"/>
+            <xs:element name="Status" maxOccurs="1" minOccurs="0" type="tns:ListOfOutputDeliveryStatusDataType"/>
+            <xs:element name="TransactionId" maxOccurs="1" minOccurs="0" type="xs:unsignedLong"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="DeliveryProgressDataType" type="tns:DeliveryProgressDataType"/>
+    <xs:complexType name="ListOfDeliveryProgressDataType">
+        <xs:sequence>
+            <xs:element name="DeliveryProgressDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:DeliveryProgressDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfDeliveryProgressDataType" nillable="true" type="tns:ListOfDeliveryProgressDataType"/>
+    <xs:complexType name="DeliveryRequestDataType">
+        <xs:sequence>
+            <xs:element name="TransactionId" maxOccurs="1" minOccurs="0" type="xs:unsignedLong"/>
+            <xs:element name="SelectionId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="Options" maxOccurs="1" minOccurs="0" type="tns:ListOfOptionSelectionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="DeliveryRequestDataType" type="tns:DeliveryRequestDataType"/>
+    <xs:complexType name="ListOfDeliveryRequestDataType">
+        <xs:sequence>
+            <xs:element name="DeliveryRequestDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:DeliveryRequestDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfDeliveryRequestDataType" nillable="true" type="tns:ListOfDeliveryRequestDataType"/>
+    <xs:complexType name="OptionDescriptionDataType">
+        <xs:sequence>
+            <xs:element name="OptionId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="Range" maxOccurs="1" minOccurs="0" type="ua:Range"/>
+            <xs:element name="Step" maxOccurs="1" minOccurs="0" type="xs:double"/>
+            <xs:element name="Default" maxOccurs="1" minOccurs="0" type="xs:double"/>
+            <xs:element name="EngineeringUnit" maxOccurs="1" minOccurs="0" type="ua:EUInformation"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="OptionDescriptionDataType" type="tns:OptionDescriptionDataType"/>
+    <xs:complexType name="ListOfOptionDescriptionDataType">
+        <xs:sequence>
+            <xs:element name="OptionDescriptionDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:OptionDescriptionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfOptionDescriptionDataType" nillable="true" type="tns:ListOfOptionDescriptionDataType"/>
+    <xs:complexType name="OptionSelectionDataType">
+        <xs:sequence>
+            <xs:element name="OptionId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="Value" maxOccurs="1" minOccurs="0" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="OptionSelectionDataType" type="tns:OptionSelectionDataType"/>
+    <xs:complexType name="ListOfOptionSelectionDataType">
+        <xs:sequence>
+            <xs:element name="OptionSelectionDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:OptionSelectionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfOptionSelectionDataType" nillable="true" type="tns:ListOfOptionSelectionDataType"/>
+    <xs:complexType name="OutputDeliveryStatusDataType">
+        <xs:sequence>
+            <xs:element name="Status" maxOccurs="1" minOccurs="0" type="tns:DeliveryStatusEnum"/>
+            <xs:element name="OutputId" maxOccurs="1" minOccurs="0" type="xs:unsignedShort"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="OutputDeliveryStatusDataType" type="tns:OutputDeliveryStatusDataType"/>
+    <xs:complexType name="ListOfOutputDeliveryStatusDataType">
+        <xs:sequence>
+            <xs:element name="OutputDeliveryStatusDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:OutputDeliveryStatusDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfOutputDeliveryStatusDataType" nillable="true" type="tns:ListOfOutputDeliveryStatusDataType"/>
+    <xs:complexType name="OutputStatusDataType">
+        <xs:sequence>
+            <xs:element name="OutputId" maxOccurs="1" minOccurs="0" type="xs:unsignedShort"/>
+            <xs:element name="Status" maxOccurs="1" minOccurs="0" type="tns:OutputStatusEnum"/>
+            <xs:element name="VendorStatus" maxOccurs="1" minOccurs="0" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="OutputStatusDataType" type="tns:OutputStatusDataType"/>
+    <xs:complexType name="ListOfOutputStatusDataType">
+        <xs:sequence>
+            <xs:element name="OutputStatusDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:OutputStatusDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfOutputStatusDataType" nillable="true" type="tns:ListOfOutputStatusDataType"/>
+    <xs:complexType name="PriceDataType">
+        <xs:sequence>
+            <xs:element name="Amount" maxOccurs="1" minOccurs="0" type="xs:unsignedInt"/>
+            <xs:element name="Currency" maxOccurs="1" minOccurs="0" type="ua:CurrencyUnitType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PriceDataType" type="tns:PriceDataType"/>
+    <xs:complexType name="ListOfPriceDataType">
+        <xs:sequence>
+            <xs:element name="PriceDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:PriceDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfPriceDataType" nillable="true" type="tns:ListOfPriceDataType"/>
+    <xs:complexType name="PriceAndContextDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:PriceDataType">
+                <xs:sequence>
+                    <xs:element name="PriceListId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+                    <xs:element name="Tax" maxOccurs="1" minOccurs="0" type="xs:double"/>
+                    <xs:element name="DiscountSurcharge" maxOccurs="1" minOccurs="0" type="xs:int"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="PriceAndContextDataType" type="tns:PriceAndContextDataType"/>
+    <xs:complexType name="ListOfPriceAndContextDataType">
+        <xs:sequence>
+            <xs:element name="PriceAndContextDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:PriceAndContextDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfPriceAndContextDataType" nillable="true" type="tns:ListOfPriceAndContextDataType"/>
+    <xs:complexType name="SelectionDataType">
+        <xs:sequence>
+            <xs:element name="MachineEngineProductInstanceUri" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="SelectionListVersion" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="SelectionId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="Options" maxOccurs="1" minOccurs="0" type="tns:ListOfOptionSelectionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SelectionDataType" type="tns:SelectionDataType"/>
+    <xs:complexType name="ListOfSelectionDataType">
+        <xs:sequence>
+            <xs:element name="SelectionDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:SelectionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfSelectionDataType" nillable="true" type="tns:ListOfSelectionDataType"/>
+    <xs:complexType name="SelectionDescriptionDataType">
+        <xs:sequence>
+            <xs:element name="SelectionId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="AvailableOptionIds" maxOccurs="1" minOccurs="0" type="ua:ListOfString"/>
+            <xs:element name="IsStoppable" maxOccurs="1" minOccurs="0" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SelectionDescriptionDataType" type="tns:SelectionDescriptionDataType"/>
+    <xs:complexType name="ListOfSelectionDescriptionDataType">
+        <xs:sequence>
+            <xs:element name="SelectionDescriptionDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:SelectionDescriptionDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfSelectionDescriptionDataType" nillable="true" type="tns:ListOfSelectionDescriptionDataType"/>
+    <xs:complexType name="SelectionPriceDataType">
+        <xs:sequence>
+            <xs:element name="SelectionId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="Price" maxOccurs="1" minOccurs="0" type="tns:PriceAndContextDataType"/>
+            <xs:element name="OptionsThatMayAffectThePrice" maxOccurs="1" minOccurs="0" type="ua:ListOfString"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SelectionPriceDataType" type="tns:SelectionPriceDataType"/>
+    <xs:complexType name="ListOfSelectionPriceDataType">
+        <xs:sequence>
+            <xs:element name="SelectionPriceDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:SelectionPriceDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfSelectionPriceDataType" nillable="true" type="tns:ListOfSelectionPriceDataType"/>
+    <xs:complexType name="SlotConfigurationDataType">
+        <xs:sequence>
+            <xs:element name="SlotIndex" maxOccurs="1" minOccurs="0" type="xs:int"/>
+            <xs:element name="SupportedAssetListIndex" maxOccurs="1" minOccurs="0" type="xs:unsignedInt"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SlotConfigurationDataType" type="tns:SlotConfigurationDataType"/>
+    <xs:complexType name="ListOfSlotConfigurationDataType">
+        <xs:sequence>
+            <xs:element name="SlotConfigurationDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:SlotConfigurationDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfSlotConfigurationDataType" nillable="true" type="tns:ListOfSlotConfigurationDataType"/>
+    <xs:complexType name="TransactionProgressDataType">
+        <xs:sequence>
+            <xs:element name="TransactionId" maxOccurs="1" minOccurs="0" type="xs:unsignedLong"/>
+            <xs:element name="Status" maxOccurs="1" minOccurs="0" type="tns:DeliveryAndPaymentStatusEnum"/>
+            <xs:element name="TransactionFinished" maxOccurs="1" minOccurs="0" type="xs:boolean"/>
+            <xs:element name="PaymentMode" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="UserId" maxOccurs="1" minOccurs="0" type="xs:string"/>
+            <xs:element name="UsedPrice" maxOccurs="1" minOccurs="0" type="tns:PriceAndContextDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="TransactionProgressDataType" type="tns:TransactionProgressDataType"/>
+    <xs:complexType name="ListOfTransactionProgressDataType">
+        <xs:sequence>
+            <xs:element name="TransactionProgressDataType" maxOccurs="unbounded" minOccurs="0" nillable="true" type="tns:TransactionProgressDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfTransactionProgressDataType" nillable="true" type="tns:ListOfTransactionProgressDataType"/>
+</xs:schema>

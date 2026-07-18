@@ -1,0 +1,185 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<opc:TypeDictionary xmlns:tns="http://opcfoundation.org/UA/UnattendedRetail/" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/UnattendedRetail/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultByteOrder="LittleEndian">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType Name="ActualPaymentDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="PaymentMode" TypeName="opc:CharArray"/>
+        <opc:Field Name="PaymentDevice" TypeName="opc:CharArray"/>
+        <opc:Field Name="UserId" TypeName="opc:CharArray"/>
+        <opc:Field Name="MonetaryValue" TypeName="tns:PriceDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="AvailabilityStatusDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="Id" TypeName="opc:CharArray"/>
+        <opc:Field Name="Status" TypeName="tns:AvailabilityEnum"/>
+        <opc:Field Name="EstimatedRemainingStock" TypeName="opc:UInt32"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="BasketProgressDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="BasketId" TypeName="opc:UInt64"/>
+        <opc:Field Name="NoOfTransactionIds" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfTransactionIds" Name="TransactionIds" TypeName="opc:UInt64"/>
+        <opc:Field Name="Status" TypeName="tns:DeliveryAndPaymentStatusEnum"/>
+        <opc:Field Name="BasketFinished" TypeName="opc:Boolean"/>
+        <opc:Field Name="PaymentMode" TypeName="opc:CharArray"/>
+        <opc:Field Name="UserId" TypeName="opc:CharArray"/>
+        <opc:Field Name="UsedPrice" TypeName="tns:PriceAndContextDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="DeliveryProgressDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="ProgressInPercent" TypeName="opc:Byte"/>
+        <opc:Field Name="NoOfStatus" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfStatus" Name="Status" TypeName="tns:OutputDeliveryStatusDataType"/>
+        <opc:Field Name="TransactionId" TypeName="opc:UInt64"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="DeliveryRequestDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="TransactionId" TypeName="opc:UInt64"/>
+        <opc:Field Name="SelectionId" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfOptions" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfOptions" Name="Options" TypeName="tns:OptionSelectionDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="OptionDescriptionDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="OptionId" TypeName="opc:CharArray"/>
+        <opc:Field Name="Range" TypeName="ua:Range"/>
+        <opc:Field Name="Step" TypeName="opc:Double"/>
+        <opc:Field Name="Default" TypeName="opc:Double"/>
+        <opc:Field Name="EngineeringUnit" TypeName="ua:EUInformation"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="OptionSelectionDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="OptionId" TypeName="opc:CharArray"/>
+        <opc:Field Name="Value" TypeName="opc:Double"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="OutputDeliveryStatusDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="Status" TypeName="tns:DeliveryStatusEnum"/>
+        <opc:Field Name="OutputId" TypeName="opc:UInt16"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="OutputStatusDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="OutputId" TypeName="opc:UInt16"/>
+        <opc:Field Name="Status" TypeName="tns:OutputStatusEnum"/>
+        <opc:Field Name="VendorStatus" TypeName="opc:Int32"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="PriceDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="Amount" TypeName="opc:UInt32"/>
+        <opc:Field Name="Currency" TypeName="ua:CurrencyUnitType"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="PriceAndContextDataType" BaseType="tns:PriceDataType">
+        <opc:Field Name="Amount" SourceType="tns:PriceDataType" TypeName="opc:UInt32"/>
+        <opc:Field Name="Currency" SourceType="tns:PriceDataType" TypeName="ua:CurrencyUnitType"/>
+        <opc:Field Name="PriceListId" TypeName="opc:CharArray"/>
+        <opc:Field Name="Tax" TypeName="opc:Double"/>
+        <opc:Field Name="DiscountSurcharge" TypeName="opc:Int32"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="SelectionDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="MachineEngineProductInstanceUri" TypeName="opc:CharArray"/>
+        <opc:Field Name="SelectionListVersion" TypeName="opc:CharArray"/>
+        <opc:Field Name="SelectionId" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfOptions" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfOptions" Name="Options" TypeName="tns:OptionSelectionDataType"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="SelectionDescriptionDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="SelectionId" TypeName="opc:CharArray"/>
+        <opc:Field Name="NoOfAvailableOptionIds" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfAvailableOptionIds" Name="AvailableOptionIds" TypeName="opc:CharArray"/>
+        <opc:Field Name="IsStoppable" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="SelectionPriceDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="SelectionId" TypeName="opc:CharArray"/>
+        <opc:Field Name="Price" TypeName="tns:PriceAndContextDataType"/>
+        <opc:Field Name="NoOfOptionsThatMayAffectThePrice" TypeName="opc:Int32"/>
+        <opc:Field LengthField="NoOfOptionsThatMayAffectThePrice" Name="OptionsThatMayAffectThePrice" TypeName="opc:CharArray"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="SlotConfigurationDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="SlotIndex" TypeName="opc:Int32"/>
+        <opc:Field Name="SupportedAssetListIndex" TypeName="opc:UInt32"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="TransactionProgressDataType" BaseType="ua:ExtensionObject">
+        <opc:Field Name="TransactionId" TypeName="opc:UInt64"/>
+        <opc:Field Name="Status" TypeName="tns:DeliveryAndPaymentStatusEnum"/>
+        <opc:Field Name="TransactionFinished" TypeName="opc:Boolean"/>
+        <opc:Field Name="PaymentMode" TypeName="opc:CharArray"/>
+        <opc:Field Name="UserId" TypeName="opc:CharArray"/>
+        <opc:Field Name="UsedPrice" TypeName="tns:PriceAndContextDataType"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType Name="AssetConfigurationEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="AcceptToCashboxOrStacker" Value="0"/>
+        <opc:EnumeratedValue Name="AcceptToRecyclerOrTube" Value="1"/>
+        <opc:EnumeratedValue Name="AcceptToEscrowAndStacker" Value="2"/>
+        <opc:EnumeratedValue Name="AcceptToEscrowAndRecycler" Value="3"/>
+        <opc:EnumeratedValue Name="Reject" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="AvailabilityEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Available" Value="0"/>
+        <opc:EnumeratedValue Name="OutOfOrder" Value="1"/>
+        <opc:EnumeratedValue Name="TemporaryNotAvailable" Value="2"/>
+        <opc:EnumeratedValue Name="Empty" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="DeliveryAndPaymentStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="DeliveryRequestReceived" Value="0"/>
+        <opc:EnumeratedValue Name="PaymentInExecution" Value="1"/>
+        <opc:EnumeratedValue Name="PaymentFinished" Value="2"/>
+        <opc:EnumeratedValue Name="PaymentFailed" Value="3"/>
+        <opc:EnumeratedValue Name="PaymentCancelledByUser" Value="4"/>
+        <opc:EnumeratedValue Name="PaymentFailedWrongPrice" Value="5"/>
+        <opc:EnumeratedValue Name="DeliveryInExecution" Value="6"/>
+        <opc:EnumeratedValue Name="DeliveryAndPaymentSuccess" Value="7"/>
+        <opc:EnumeratedValue Name="DeliveryFailRefundInExecution" Value="8"/>
+        <opc:EnumeratedValue Name="DeliveryFailRefundSuccess" Value="9"/>
+        <opc:EnumeratedValue Name="DeliveryAndRefundFailed" Value="10"/>
+        <opc:EnumeratedValue Name="DeliveryMixResultRefundInExecution" Value="11"/>
+        <opc:EnumeratedValue Name="DeliveryMixResultRefundSuccess" Value="12"/>
+        <opc:EnumeratedValue Name="DeliveryMixResultRefundFailed" Value="13"/>
+        <opc:EnumeratedValue Name="CancelledByUserRefundInExcecution" Value="14"/>
+        <opc:EnumeratedValue Name="CancelledByUserRefundSuccess" Value="15"/>
+        <opc:EnumeratedValue Name="CancelledByUserRefundFailed" Value="16"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="DeliveryStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="ReadyToDeliver" Value="0"/>
+        <opc:EnumeratedValue Name="DeliveryStarted" Value="1"/>
+        <opc:EnumeratedValue Name="DeliveryFinished" Value="2"/>
+        <opc:EnumeratedValue Name="DeliveryFailed" Value="3"/>
+        <opc:EnumeratedValue Name="DeliveryCannotStart" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="MachineEngineWorkingStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Initializing" Value="0"/>
+        <opc:EnumeratedValue Name="WaitingForTemperature" Value="1"/>
+        <opc:EnumeratedValue Name="Ready" Value="2"/>
+        <opc:EnumeratedValue Name="Cleaning" Value="3"/>
+        <opc:EnumeratedValue Name="Dispensing" Value="4"/>
+        <opc:EnumeratedValue Name="Busy" Value="5"/>
+        <opc:EnumeratedValue Name="OutOfOrder" Value="6"/>
+        <opc:EnumeratedValue Name="EnergySavingMode" Value="7"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="OperationStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Idle" Value="0"/>
+        <opc:EnumeratedValue Name="Ongoing" Value="1"/>
+        <opc:EnumeratedValue Name="SuccessfullyFinished" Value="2"/>
+        <opc:EnumeratedValue Name="Failed" Value="3"/>
+        <opc:EnumeratedValue Name="Failed_NoCommunication" Value="4"/>
+        <opc:EnumeratedValue Name="Failed_NotEnoughCredit" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="OutputStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Free" Value="0"/>
+        <opc:EnumeratedValue Name="ProductNotTaken" Value="1"/>
+        <opc:EnumeratedValue Name="OutOfOrder" Value="2"/>
+        <opc:EnumeratedValue Name="Locked" Value="3"/>
+        <opc:EnumeratedValue Name="CleaningRequired" Value="4"/>
+        <opc:EnumeratedValue Name="VendorSpecific" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="PaymentModeOrDeviceStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Available" Value="0"/>
+        <opc:EnumeratedValue Name="Offline" Value="1"/>
+        <opc:EnumeratedValue Name="OutOfOrder" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="PaymentServiceStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Available" Value="0"/>
+        <opc:EnumeratedValue Name="Offline" Value="1"/>
+        <opc:EnumeratedValue Name="OutOfOrder" Value="2"/>
+        <opc:EnumeratedValue Name="ExternallyStopped" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="PayoutStatusEnum" LengthInBits="32">
+        <opc:EnumeratedValue Name="Idle" Value="0"/>
+        <opc:EnumeratedValue Name="Ongoing" Value="1"/>
+        <opc:EnumeratedValue Name="SuccessfullyFinished" Value="2"/>
+        <opc:EnumeratedValue Name="Failed" Value="3"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
