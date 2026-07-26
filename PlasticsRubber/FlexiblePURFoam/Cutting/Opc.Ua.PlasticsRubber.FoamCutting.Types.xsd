@@ -1,0 +1,220 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/Types.xsd" elementFormDefault="qualified">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="BottomFixtureEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the type of material fixture for the material bottom.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="Mechanical_Fixture_1"/>
+            <xs:enumeration value="Vacuum_Fixture_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:BottomFixtureEnumeration" name="BottomFixtureEnumeration"/>
+    <xs:complexType name="ListOfBottomFixtureEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:BottomFixtureEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="BottomFixtureEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBottomFixtureEnumeration" nillable="true" name="ListOfBottomFixtureEnumeration"/>
+    <xs:simpleType name="ConveyorCategoryEnumeration">
+        <xs:annotation>
+            <xs:documentation>This property provides information, if this conveyor is used for unloading, loading or transportation of material.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Loading_0"/>
+            <xs:enumeration value="Unloading_1"/>
+            <xs:enumeration value="Transportation_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ConveyorCategoryEnumeration" name="ConveyorCategoryEnumeration"/>
+    <xs:complexType name="ListOfConveyorCategoryEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:ConveyorCategoryEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="ConveyorCategoryEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConveyorCategoryEnumeration" nillable="true" name="ListOfConveyorCategoryEnumeration"/>
+    <xs:simpleType name="ConveyorSubCategoryEnumeration">
+        <xs:annotation>
+            <xs:documentation>This property provides information on what type of conveyor this instance is.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="AlignmentBelt_1"/>
+            <xs:enumeration value="Turntable_2"/>
+            <xs:enumeration value="Seperator_3"/>
+            <xs:enumeration value="Stacker_4"/>
+            <xs:enumeration value="Destacker_5"/>
+            <xs:enumeration value="PopUp_6"/>
+            <xs:enumeration value="ScissorTable_7"/>
+            <xs:enumeration value="CrossConveyor_8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ConveyorSubCategoryEnumeration" name="ConveyorSubCategoryEnumeration"/>
+    <xs:complexType name="ListOfConveyorSubCategoryEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:ConveyorSubCategoryEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="ConveyorSubCategoryEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConveyorSubCategoryEnumeration" nillable="true" name="ListOfConveyorSubCategoryEnumeration"/>
+    <xs:simpleType name="DirectionEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the current transportation direction of the conveyor.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Forward_0"/>
+            <xs:enumeration value="Backward_1"/>
+            <xs:enumeration value="Sideward_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DirectionEnumeration" name="DirectionEnumeration"/>
+    <xs:complexType name="ListOfDirectionEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:DirectionEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="DirectionEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDirectionEnumeration" nillable="true" name="ListOfDirectionEnumeration"/>
+    <xs:simpleType name="GrindingUnitStateEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the current state of the grinding unit.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Off_0"/>
+            <xs:enumeration value="Standby_1"/>
+            <xs:enumeration value="Running_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:GrindingUnitStateEnumeration" name="GrindingUnitStateEnumeration"/>
+    <xs:complexType name="ListOfGrindingUnitStateEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:GrindingUnitStateEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="GrindingUnitStateEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGrindingUnitStateEnumeration" nillable="true" name="ListOfGrindingUnitStateEnumeration"/>
+    <xs:simpleType name="LightBarrierEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the positions of light barriers on this instance of conveyor.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="Infeed_1"/>
+            <xs:enumeration value="Outfeed_2"/>
+            <xs:enumeration value="Safety_3"/>
+            <xs:enumeration value="Other_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LightBarrierEnumeration" name="LightBarrierEnumeration"/>
+    <xs:complexType name="ListOfLightBarrierEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:LightBarrierEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="LightBarrierEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLightBarrierEnumeration" nillable="true" name="ListOfLightBarrierEnumeration"/>
+    <xs:simpleType name="MaterialSupportCategoryEnumeration">
+        <xs:annotation>
+            <xs:documentation>This Property provides information about the category of the material support system.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="Fixed_Machine_Table_1"/>
+            <xs:enumeration value="Sliding_Machine_Table_2"/>
+            <xs:enumeration value="Carousel_3"/>
+            <xs:enumeration value="Conveyor_Belt_4"/>
+            <xs:enumeration value="Turntable_90Degrees_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MaterialSupportCategoryEnumeration" name="MaterialSupportCategoryEnumeration"/>
+    <xs:complexType name="ListOfMaterialSupportCategoryEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:MaterialSupportCategoryEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="MaterialSupportCategoryEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMaterialSupportCategoryEnumeration" nillable="true" name="ListOfMaterialSupportCategoryEnumeration"/>
+    <xs:simpleType name="PossibleDirectionEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the possible working directions of the conveyor.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Forwards_0"/>
+            <xs:enumeration value="Backwards_1"/>
+            <xs:enumeration value="Reversible_2"/>
+            <xs:enumeration value="Sidewards_3"/>
+            <xs:enumeration value="Any_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:PossibleDirectionEnumeration" name="PossibleDirectionEnumeration"/>
+    <xs:complexType name="ListOfPossibleDirectionEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:PossibleDirectionEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="PossibleDirectionEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPossibleDirectionEnumeration" nillable="true" name="ListOfPossibleDirectionEnumeration"/>
+    <xs:simpleType name="ProcessingModeEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the current processing mode as addition to the MachineOperationMode state Processing.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Manual_0"/>
+            <xs:enumeration value="SemiAutomatic_1"/>
+            <xs:enumeration value="Automatic_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ProcessingModeEnumeration" name="ProcessingModeEnumeration"/>
+    <xs:complexType name="ListOfProcessingModeEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:ProcessingModeEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="ProcessingModeEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProcessingModeEnumeration" nillable="true" name="ListOfProcessingModeEnumeration"/>
+    <xs:simpleType name="SideFixtureEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the type of material fixture for the material side.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="Right_1"/>
+            <xs:enumeration value="Left_2"/>
+            <xs:enumeration value="Both_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:SideFixtureEnumeration" name="SideFixtureEnumeration"/>
+    <xs:complexType name="ListOfSideFixtureEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:SideFixtureEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="SideFixtureEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSideFixtureEnumeration" nillable="true" name="ListOfSideFixtureEnumeration"/>
+    <xs:simpleType name="TopFixtureEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the type of material fixture for the material top.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None_0"/>
+            <xs:enumeration value="Pressure_Pad_1"/>
+            <xs:enumeration value="Pressure_Roller_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:TopFixtureEnumeration" name="TopFixtureEnumeration"/>
+    <xs:complexType name="ListOfTopFixtureEnumeration">
+        <xs:sequence>
+            <xs:element type="tns:TopFixtureEnumeration" minOccurs="0" nillable="true" maxOccurs="unbounded" name="TopFixtureEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTopFixtureEnumeration" nillable="true" name="ListOfTopFixtureEnumeration"/>
+    <xs:complexType name="ActiveVacuumUnitsDataType">
+        <xs:annotation>
+            <xs:documentation>Provides information about the position of a vacuum unit and the current vacuum power, given as a float value between 0 (off) and 1 (full power).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="xs:string" minOccurs="0" maxOccurs="1" name="Position"/>
+            <xs:element type="xs:float" minOccurs="0" maxOccurs="1" name="VacuumPower"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ActiveVacuumUnitsDataType" name="ActiveVacuumUnitsDataType"/>
+    <xs:complexType name="ListOfActiveVacuumUnitsDataType">
+        <xs:sequence>
+            <xs:element type="tns:ActiveVacuumUnitsDataType" minOccurs="0" nillable="true" maxOccurs="unbounded" name="ActiveVacuumUnitsDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfActiveVacuumUnitsDataType" nillable="true" name="ListOfActiveVacuumUnitsDataType"/>
+</xs:schema>

@@ -1,0 +1,88 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ua="http://opcfoundation.org/UA/" xmlns:opc="http://opcfoundation.org/BinarySchema/" DefaultByteOrder="LittleEndian" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType Name="ActiveVacuumUnitsDataType" BaseType="ua:ExtensionObject">
+        <opc:Documentation>Provides information about the position of a vacuum unit and the current vacuum power, given as a float value between 0 (off) and 1 (full power).</opc:Documentation>
+        <opc:Field TypeName="opc:CharArray" Name="Position"/>
+        <opc:Field TypeName="opc:Float" Name="VacuumPower"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="BottomFixtureEnumeration">
+        <opc:Documentation>Provides information about the type of material fixture for the material bottom.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="Mechanical_Fixture" Value="1"/>
+        <opc:EnumeratedValue Name="Vacuum_Fixture" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ConveyorCategoryEnumeration">
+        <opc:Documentation>This property provides information, if this conveyor is used for unloading, loading or transportation of material.</opc:Documentation>
+        <opc:EnumeratedValue Name="Loading" Value="0"/>
+        <opc:EnumeratedValue Name="Unloading" Value="1"/>
+        <opc:EnumeratedValue Name="Transportation" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ConveyorSubCategoryEnumeration">
+        <opc:Documentation>This property provides information on what type of conveyor this instance is.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="AlignmentBelt" Value="1"/>
+        <opc:EnumeratedValue Name="Turntable" Value="2"/>
+        <opc:EnumeratedValue Name="Seperator" Value="3"/>
+        <opc:EnumeratedValue Name="Stacker" Value="4"/>
+        <opc:EnumeratedValue Name="Destacker" Value="5"/>
+        <opc:EnumeratedValue Name="PopUp" Value="6"/>
+        <opc:EnumeratedValue Name="ScissorTable" Value="7"/>
+        <opc:EnumeratedValue Name="CrossConveyor" Value="8"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="DirectionEnumeration">
+        <opc:Documentation>Provides information about the current transportation direction of the conveyor.</opc:Documentation>
+        <opc:EnumeratedValue Name="Forward" Value="0"/>
+        <opc:EnumeratedValue Name="Backward" Value="1"/>
+        <opc:EnumeratedValue Name="Sideward" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="GrindingUnitStateEnumeration">
+        <opc:Documentation>Provides information about the current state of the grinding unit.</opc:Documentation>
+        <opc:EnumeratedValue Name="Off" Value="0"/>
+        <opc:EnumeratedValue Name="Standby" Value="1"/>
+        <opc:EnumeratedValue Name="Running" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LightBarrierEnumeration">
+        <opc:Documentation>Provides information about the positions of light barriers on this instance of conveyor.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="Infeed" Value="1"/>
+        <opc:EnumeratedValue Name="Outfeed" Value="2"/>
+        <opc:EnumeratedValue Name="Safety" Value="3"/>
+        <opc:EnumeratedValue Name="Other" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MaterialSupportCategoryEnumeration">
+        <opc:Documentation>This Property provides information about the category of the material support system.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="Fixed_Machine_Table" Value="1"/>
+        <opc:EnumeratedValue Name="Sliding_Machine_Table" Value="2"/>
+        <opc:EnumeratedValue Name="Carousel" Value="3"/>
+        <opc:EnumeratedValue Name="Conveyor_Belt" Value="4"/>
+        <opc:EnumeratedValue Name="Turntable_90Degrees" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PossibleDirectionEnumeration">
+        <opc:Documentation>Provides information about the possible working directions of the conveyor.</opc:Documentation>
+        <opc:EnumeratedValue Name="Forwards" Value="0"/>
+        <opc:EnumeratedValue Name="Backwards" Value="1"/>
+        <opc:EnumeratedValue Name="Reversible" Value="2"/>
+        <opc:EnumeratedValue Name="Sidewards" Value="3"/>
+        <opc:EnumeratedValue Name="Any" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ProcessingModeEnumeration">
+        <opc:Documentation>Provides information about the current processing mode as addition to the MachineOperationMode state Processing.</opc:Documentation>
+        <opc:EnumeratedValue Name="Manual" Value="0"/>
+        <opc:EnumeratedValue Name="SemiAutomatic" Value="1"/>
+        <opc:EnumeratedValue Name="Automatic" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SideFixtureEnumeration">
+        <opc:Documentation>Provides information about the type of material fixture for the material side.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="Right" Value="1"/>
+        <opc:EnumeratedValue Name="Left" Value="2"/>
+        <opc:EnumeratedValue Name="Both" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TopFixtureEnumeration">
+        <opc:Documentation>Provides information about the type of material fixture for the material top.</opc:Documentation>
+        <opc:EnumeratedValue Name="None" Value="0"/>
+        <opc:EnumeratedValue Name="Pressure_Pad" Value="1"/>
+        <opc:EnumeratedValue Name="Pressure_Roller" Value="2"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
