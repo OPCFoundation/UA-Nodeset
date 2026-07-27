@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s3="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:s1="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:s2="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd" xmlns:s4="http://opcfoundation.org/UA/Machinery/Types.xsd">
     <NamespaceUris>
         <Uri>http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/</Uri>
@@ -67,6 +72,7 @@
     <UADataType BrowseName="1:BottomFixtureEnumeration" NodeId="ns=1;i=3006">
         <DisplayName>BottomFixtureEnumeration</DisplayName>
         <Description>Provides information about the type of material fixture for the material bottom.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/9.4.3</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
@@ -145,6 +151,7 @@
     <UADataType BrowseName="1:ConveyorCategoryEnumeration" NodeId="ns=1;i=3027">
         <DisplayName>ConveyorCategoryEnumeration</DisplayName>
         <Description>This property provides information, if this conveyor is used for unloading, loading or transportation of material.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/8.4</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
@@ -223,6 +230,7 @@
     <UADataType BrowseName="1:ConveyorSubCategoryEnumeration" NodeId="ns=1;i=3024">
         <DisplayName>ConveyorSubCategoryEnumeration</DisplayName>
         <Description>This property provides information on what type of conveyor this instance is.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/8.5</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
@@ -415,6 +423,7 @@
     <UADataType BrowseName="1:DirectionEnumeration" NodeId="ns=1;i=3030">
         <DisplayName>DirectionEnumeration</DisplayName>
         <Description>Provides information about the current transportation direction of the conveyor.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/12.4</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
@@ -493,6 +502,7 @@
     <UADataType BrowseName="1:GrindingUnitStateEnumeration" NodeId="ns=1;i=3003">
         <DisplayName>GrindingUnitStateEnumeration</DisplayName>
         <Description>Provides information about the current state of the grinding unit.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/11.6</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
@@ -571,6 +581,7 @@
     <UADataType BrowseName="1:LightBarrierEnumeration" NodeId="ns=1;i=3021">
         <DisplayName>LightBarrierEnumeration</DisplayName>
         <Description>Provides information about the positions of light barriers on this instance of conveyor.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/8.11</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
@@ -687,6 +698,7 @@
     <UADataType BrowseName="1:MaterialSupportCategoryEnumeration" NodeId="ns=1;i=3015">
         <DisplayName>MaterialSupportCategoryEnumeration</DisplayName>
         <Description>This Property provides information about the category of the material support system.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/9.2</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
@@ -822,6 +834,7 @@
     <UADataType BrowseName="1:PossibleDirectionEnumeration" NodeId="ns=1;i=3018">
         <DisplayName>PossibleDirectionEnumeration</DisplayName>
         <Description>Provides information about the possible working directions of the conveyor.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/8.12</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
@@ -938,6 +951,7 @@
     <UADataType BrowseName="1:ProcessingModeEnumeration" NodeId="ns=1;i=3005">
         <DisplayName>ProcessingModeEnumeration</DisplayName>
         <Description>Provides information about the current processing mode as addition to the MachineOperationMode state Processing.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/13.5</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
@@ -1016,6 +1030,7 @@
     <UADataType BrowseName="1:SideFixtureEnumeration" NodeId="ns=1;i=3009">
         <DisplayName>SideFixtureEnumeration</DisplayName>
         <Description>Provides information about the type of material fixture for the material side.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/9.4.2</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
@@ -1113,6 +1128,7 @@
     <UADataType BrowseName="1:TopFixtureEnumeration" NodeId="ns=1;i=3012">
         <DisplayName>TopFixtureEnumeration</DisplayName>
         <Description>Provides information about the type of material fixture for the material top.</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/9.4.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
@@ -1191,6 +1207,7 @@
     <UADataType BrowseName="1:ActiveVacuumUnitsDataType" NodeId="ns=1;i=3004">
         <DisplayName>ActiveVacuumUnitsDataType</DisplayName>
         <Description>Provides information about the position of a vacuum unit and the current vacuum power, given as a float value between 0 (off) and 1 (full power).</Description>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/10.6.1.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
             <Reference ReferenceType="HasEncoding">ns=1;i=5073</Reference>
@@ -1616,6 +1633,8 @@
     <UAObjectType IsAbstract="true" BrowseName="1:FoamCuttingCycleInformationEventType" NodeId="ns=1;i=1003">
         <DisplayName>FoamCuttingCycleInformationEventType</DisplayName>
         <Description>Provides collected information about a production cycle on the foam cutting machine.</Description>
+        <Category>OPC 40092-1 FoamCuttingCycleInformationEvent</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/15</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=2041</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
@@ -1664,6 +1683,8 @@
     <UAObjectType BrowseName="1:ConveyorConfigurationType" NodeId="ns=1;i=1010">
         <DisplayName>ConveyorConfigurationType</DisplayName>
         <Description>The ConveyorConfigurationType details the configuration of the conveyor that is used to feed material towards or away from the cutting edge of the knife.</Description>
+        <Category>OPC 40092-1 ConveyorConfiguration</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/8.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6815</Reference>
@@ -1917,6 +1938,8 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:ConveyorProcessMonitoringType" NodeId="ns=1;i=1012">
         <DisplayName>ConveyorProcessMonitoringType</DisplayName>
         <Description>Provides information about the process values of one conveyor.</Description>
+        <Category>OPC 40092-1 ConveyorProcessMonitoring</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/12.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6032</Reference>
@@ -4030,6 +4053,8 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:ErrorHandlingType" NodeId="ns=1;i=1006">
         <DisplayName>ErrorHandlingType</DisplayName>
         <Description>The ErrorHandlingType provides Variables and Methods for simple error handling.</Description>
+        <Category>OPC 40092-1 ErrorHandling</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/14.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6020</Reference>
@@ -4057,6 +4082,10 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:FoamCuttingMachineType" NodeId="ns=1;i=1013">
         <DisplayName>FoamCuttingMachineType</DisplayName>
         <Description>This OPC UA ObjectType is used for the root Object representing a foam cutting machine.</Description>
+        <Category>OPC 40092-1 Basic</Category>
+        <Category>OPC 40092-1 ErrorHandling</Category>
+        <Category>OPC 40092-1 FoamCuttingCycleInformationEvent</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/6.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5062</Reference>
@@ -12906,6 +12935,8 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:KnifeType" NodeId="ns=1;i=1008">
         <DisplayName>KnifeType</DisplayName>
         <Description>Contains process values of one knife.</Description>
+        <Category>OPC 40092-1 Knife</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/11.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5076</Reference>
@@ -13041,6 +13072,8 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:MachineConfigurationType" NodeId="ns=1;i=1007">
         <DisplayName>MachineConfigurationType</DisplayName>
         <Description>The MachineConfigurationType lists the current configuration of the foam cutting machine.</Description>
+        <Category>OPC 40092-1 Basic</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/7.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5040</Reference>
@@ -13633,6 +13666,8 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:MaterialSupportType" NodeId="ns=1;i=1005">
         <DisplayName>MaterialSupportType</DisplayName>
         <Description>This ObjectType defines the configuration of the physical part of the machine that supports, holds and feeds the foam to be cut. The information model for this ObjectType is structured based on the category of the material support, the kinds of fixtures, quantity of vacuum units that hold the foam block in place and the general dimensions of the table.</Description>
+        <Category>OPC 40092-1 Basic</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/9.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5038</Reference>
@@ -13929,6 +13964,9 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:OperationType" NodeId="ns=1;i=1009">
         <DisplayName>OperationType</DisplayName>
         <Description>Provides Objects and Variables relevant for the operation of the machine.</Description>
+        <Category>OPC 40092-1 JobInformation</Category>
+        <Category>OPC 40092-1 PeripheralDevices</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/13.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6023</Reference>
@@ -14005,6 +14043,16 @@ Each array entry represents one light barrier.</Description>
     <UAObjectType BrowseName="1:ProcessMonitoringType" NodeId="ns=1;i=1004">
         <DisplayName>ProcessMonitoringType</DisplayName>
         <Description>Provides the process values of the different components of the foam cutting machine.</Description>
+        <Category>OPC 40092-1 Basic</Category>
+        <Category>OPC 40092-1 ConveyorProcessMonitoring</Category>
+        <Category>OPC 40092-1 CuttingSpeedFeed</Category>
+        <Category>OPC 40092-1 CuttingUnitParameters</Category>
+        <Category>OPC 40092-1 Knife</Category>
+        <Category>OPC 40092-1 MainAxisDrives</Category>
+        <Category>OPC 40092-1 MaterialSupport</Category>
+        <Category>OPC 40092-1 Supply</Category>
+        <Category>OPC 40092-1 WindingSystem</Category>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/10.1</Documentation>
         <References>
             <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
@@ -19721,6 +19769,7 @@ Each array entry represents one light barrier.</Description>
     </UAVariable>
     <UAObject BrowseName="1:http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/" NodeId="ns=1;i=5099" SymbolicName="http___opcfoundation_org_UA_PlasticsRubber_FlexiblePURFoam_Cutting_">
         <DisplayName>http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/</DisplayName>
+        <Documentation>https://reference.opcfoundation.org/specs/OPC-40092-1/17.1</Documentation>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
             <Reference IsForward="false" ReferenceType="HasComponent">i=11715</Reference>

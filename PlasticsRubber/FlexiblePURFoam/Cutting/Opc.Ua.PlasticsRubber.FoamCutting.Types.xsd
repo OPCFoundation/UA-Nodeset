@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/Types.xsd" elementFormDefault="qualified">
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
     <xs:simpleType name="BottomFixtureEnumeration">

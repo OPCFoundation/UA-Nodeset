@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
 <opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ua="http://opcfoundation.org/UA/" xmlns:opc="http://opcfoundation.org/BinarySchema/" DefaultByteOrder="LittleEndian" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/FlexiblePURFoam/Cutting/">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
     <opc:StructuredType Name="ActiveVacuumUnitsDataType" BaseType="ua:ExtensionObject">
