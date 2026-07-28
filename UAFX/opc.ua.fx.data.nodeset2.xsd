@@ -1,4 +1,9 @@
-<xs:schema targetNamespace="http://opcfoundation.org/UA/FX/Data/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/FX/Data/Types.xsd">
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://opcfoundation.org/UA/FX/Data/Types.xsd" elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/FX/Data/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd">
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
     <xs:simpleType name="AssetVerificationModeEnum">
         <xs:restriction base="xs:string">
@@ -7,13 +12,13 @@
             <xs:enumeration value="AssetIdentityAndCompatibility_2"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:AssetVerificationModeEnum" name="AssetVerificationModeEnum"/>
+    <xs:element name="AssetVerificationModeEnum" type="tns:AssetVerificationModeEnum"/>
     <xs:complexType name="ListOfAssetVerificationModeEnum">
         <xs:sequence>
-            <xs:element type="tns:AssetVerificationModeEnum" minOccurs="0" maxOccurs="unbounded" name="AssetVerificationModeEnum" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="AssetVerificationModeEnum" nillable="true" type="tns:AssetVerificationModeEnum" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfAssetVerificationModeEnum" name="ListOfAssetVerificationModeEnum" nillable="true"/>
+    <xs:element name="ListOfAssetVerificationModeEnum" nillable="true" type="tns:ListOfAssetVerificationModeEnum"/>
     <xs:simpleType name="AssetVerificationResultEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="NotSet_0"/>
@@ -22,13 +27,13 @@
             <xs:enumeration value="Mismatch_3"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:AssetVerificationResultEnum" name="AssetVerificationResultEnum"/>
+    <xs:element name="AssetVerificationResultEnum" type="tns:AssetVerificationResultEnum"/>
     <xs:complexType name="ListOfAssetVerificationResultEnum">
         <xs:sequence>
-            <xs:element type="tns:AssetVerificationResultEnum" minOccurs="0" maxOccurs="unbounded" name="AssetVerificationResultEnum" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="AssetVerificationResultEnum" nillable="true" type="tns:AssetVerificationResultEnum" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfAssetVerificationResultEnum" name="ListOfAssetVerificationResultEnum" nillable="true"/>
+    <xs:element name="ListOfAssetVerificationResultEnum" nillable="true" type="tns:ListOfAssetVerificationResultEnum"/>
     <xs:simpleType name="FunctionalEntityVerificationResultEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="NotSet_0"/>
@@ -36,13 +41,31 @@
             <xs:enumeration value="Mismatch_2"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:FunctionalEntityVerificationResultEnum" name="FunctionalEntityVerificationResultEnum"/>
+    <xs:element name="FunctionalEntityVerificationResultEnum" type="tns:FunctionalEntityVerificationResultEnum"/>
     <xs:complexType name="ListOfFunctionalEntityVerificationResultEnum">
         <xs:sequence>
-            <xs:element type="tns:FunctionalEntityVerificationResultEnum" minOccurs="0" maxOccurs="unbounded" name="FunctionalEntityVerificationResultEnum" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="FunctionalEntityVerificationResultEnum" nillable="true" type="tns:FunctionalEntityVerificationResultEnum" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfFunctionalEntityVerificationResultEnum" name="ListOfFunctionalEntityVerificationResultEnum" nillable="true"/>
+    <xs:element name="ListOfFunctionalEntityVerificationResultEnum" nillable="true" type="tns:ListOfFunctionalEntityVerificationResultEnum"/>
+    <xs:simpleType name="FxTimeUnitsEnum">
+        <xs:annotation>
+            <xs:documentation>This enumeration describes the support units of time</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Nanosecond_0"/>
+            <xs:enumeration value="Microsecond_1"/>
+            <xs:enumeration value="Millisecond_2"/>
+            <xs:enumeration value="Second_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="FxTimeUnitsEnum" type="tns:FxTimeUnitsEnum"/>
+    <xs:complexType name="ListOfFxTimeUnitsEnum">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="FxTimeUnitsEnum" nillable="true" type="tns:FxTimeUnitsEnum" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfFxTimeUnitsEnum" nillable="true" type="tns:ListOfFxTimeUnitsEnum"/>
     <xs:simpleType name="PubSubConnectionEndpointModeEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="PublisherSubscriber_1"/>
@@ -50,348 +73,364 @@
             <xs:enumeration value="Subscriber_3"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:PubSubConnectionEndpointModeEnum" name="PubSubConnectionEndpointModeEnum"/>
+    <xs:element name="PubSubConnectionEndpointModeEnum" type="tns:PubSubConnectionEndpointModeEnum"/>
     <xs:complexType name="ListOfPubSubConnectionEndpointModeEnum">
         <xs:sequence>
-            <xs:element type="tns:PubSubConnectionEndpointModeEnum" minOccurs="0" maxOccurs="unbounded" name="PubSubConnectionEndpointModeEnum" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubConnectionEndpointModeEnum" nillable="true" type="tns:PubSubConnectionEndpointModeEnum" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubConnectionEndpointModeEnum" name="ListOfPubSubConnectionEndpointModeEnum" nillable="true"/>
+    <xs:element name="ListOfPubSubConnectionEndpointModeEnum" nillable="true" type="tns:ListOfPubSubConnectionEndpointModeEnum"/>
     <xs:complexType name="AssetVerificationDataType">
         <xs:sequence>
-            <xs:element type="ua:NodeId" minOccurs="0" maxOccurs="1" name="AssetToVerify"/>
-            <xs:element type="tns:AssetVerificationModeEnum" minOccurs="0" maxOccurs="1" name="VerificationMode"/>
-            <xs:element type="tns:AssetVerificationResultEnum" minOccurs="0" maxOccurs="1" name="ExpectedVerificationResult"/>
-            <xs:element type="ua:ListOfKeyValuePair" minOccurs="0" maxOccurs="1" name="ExpectedVerificationVariables"/>
-            <xs:element type="tns:ListOfNodeIdValuePair" minOccurs="0" maxOccurs="1" name="ExpectedAdditionalVerificationVariables"/>
+            <xs:element maxOccurs="1" name="AssetToVerify" type="ua:NodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationMode" type="tns:AssetVerificationModeEnum" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ExpectedVerificationResult" type="tns:AssetVerificationResultEnum" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ExpectedVerificationVariables" type="ua:ListOfKeyValuePair" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ExpectedAdditionalVerificationVariables" type="tns:ListOfNodeIdValuePair" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:AssetVerificationDataType" name="AssetVerificationDataType"/>
+    <xs:element name="AssetVerificationDataType" type="tns:AssetVerificationDataType"/>
     <xs:complexType name="ListOfAssetVerificationDataType">
         <xs:sequence>
-            <xs:element type="tns:AssetVerificationDataType" minOccurs="0" maxOccurs="unbounded" name="AssetVerificationDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="AssetVerificationDataType" nillable="true" type="tns:AssetVerificationDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfAssetVerificationDataType" name="ListOfAssetVerificationDataType" nillable="true"/>
+    <xs:element name="ListOfAssetVerificationDataType" nillable="true" type="tns:ListOfAssetVerificationDataType"/>
     <xs:complexType name="AssetVerificationResultDataType">
         <xs:sequence>
-            <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="VerificationStatus"/>
-            <xs:element type="tns:AssetVerificationResultEnum" minOccurs="0" maxOccurs="1" name="VerificationResult"/>
-            <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="VerificationVariablesErrors"/>
-            <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="VerificationAdditionalVariablesErrors"/>
+            <xs:element maxOccurs="1" name="VerificationStatus" type="ua:StatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationResult" type="tns:AssetVerificationResultEnum" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationVariablesErrors" type="ua:ListOfStatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationAdditionalVariablesErrors" type="ua:ListOfStatusCode" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:AssetVerificationResultDataType" name="AssetVerificationResultDataType"/>
+    <xs:element name="AssetVerificationResultDataType" type="tns:AssetVerificationResultDataType"/>
     <xs:complexType name="ListOfAssetVerificationResultDataType">
         <xs:sequence>
-            <xs:element type="tns:AssetVerificationResultDataType" minOccurs="0" maxOccurs="unbounded" name="AssetVerificationResultDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="AssetVerificationResultDataType" nillable="true" type="tns:AssetVerificationResultDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfAssetVerificationResultDataType" name="ListOfAssetVerificationResultDataType" nillable="true"/>
+    <xs:element name="ListOfAssetVerificationResultDataType" nillable="true" type="tns:ListOfAssetVerificationResultDataType"/>
     <xs:complexType name="CommunicationConfigurationDataType">
         <xs:sequence/>
     </xs:complexType>
-    <xs:element type="tns:CommunicationConfigurationDataType" name="CommunicationConfigurationDataType"/>
+    <xs:element name="CommunicationConfigurationDataType" type="tns:CommunicationConfigurationDataType"/>
     <xs:complexType name="ListOfCommunicationConfigurationDataType">
         <xs:sequence>
-            <xs:element type="tns:CommunicationConfigurationDataType" minOccurs="0" maxOccurs="unbounded" name="CommunicationConfigurationDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="CommunicationConfigurationDataType" nillable="true" type="tns:CommunicationConfigurationDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCommunicationConfigurationDataType" name="ListOfCommunicationConfigurationDataType" nillable="true"/>
+    <xs:element name="ListOfCommunicationConfigurationDataType" nillable="true" type="tns:ListOfCommunicationConfigurationDataType"/>
     <xs:complexType name="PubSubCommunicationConfigurationDataType">
         <xs:complexContent mixed="false">
             <xs:extension base="ua:ExtensionObject">
                 <xs:sequence>
-                    <xs:element type="ua:PubSubConfiguration2DataType" minOccurs="0" maxOccurs="1" name="PubSubConfiguration"/>
-                    <xs:element type="xs:boolean" minOccurs="0" maxOccurs="1" name="RequireCompleteUpdate"/>
-                    <xs:element type="ua:ListOfPubSubConfigurationRefDataType" minOccurs="0" maxOccurs="1" name="ConfigurationReferences"/>
+                    <xs:element maxOccurs="1" name="PubSubConfiguration" type="ua:PubSubConfiguration2DataType" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="RequireCompleteUpdate" type="xs:boolean" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ConfigurationReferences" type="ua:ListOfPubSubConfigurationRefDataType" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubCommunicationConfigurationDataType" name="PubSubCommunicationConfigurationDataType"/>
+    <xs:element name="PubSubCommunicationConfigurationDataType" type="tns:PubSubCommunicationConfigurationDataType"/>
     <xs:complexType name="ListOfPubSubCommunicationConfigurationDataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubCommunicationConfigurationDataType" minOccurs="0" maxOccurs="unbounded" name="PubSubCommunicationConfigurationDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubCommunicationConfigurationDataType" nillable="true" type="tns:PubSubCommunicationConfigurationDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubCommunicationConfigurationDataType" name="ListOfPubSubCommunicationConfigurationDataType" nillable="true"/>
+    <xs:element name="ListOfPubSubCommunicationConfigurationDataType" nillable="true" type="tns:ListOfPubSubCommunicationConfigurationDataType"/>
     <xs:complexType name="CommunicationConfigurationResultDataType">
         <xs:sequence/>
     </xs:complexType>
-    <xs:element type="tns:CommunicationConfigurationResultDataType" name="CommunicationConfigurationResultDataType"/>
+    <xs:element name="CommunicationConfigurationResultDataType" type="tns:CommunicationConfigurationResultDataType"/>
     <xs:complexType name="ListOfCommunicationConfigurationResultDataType">
         <xs:sequence>
-            <xs:element type="tns:CommunicationConfigurationResultDataType" minOccurs="0" maxOccurs="unbounded" name="CommunicationConfigurationResultDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="CommunicationConfigurationResultDataType" nillable="true" type="tns:CommunicationConfigurationResultDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCommunicationConfigurationResultDataType" name="ListOfCommunicationConfigurationResultDataType" nillable="true"/>
+    <xs:element name="ListOfCommunicationConfigurationResultDataType" nillable="true" type="tns:ListOfCommunicationConfigurationResultDataType"/>
     <xs:complexType name="PubSubCommunicationConfigurationResultDataType">
         <xs:complexContent mixed="false">
             <xs:extension base="ua:ExtensionObject">
                 <xs:sequence>
-                    <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="Result"/>
-                    <xs:element type="xs:boolean" minOccurs="0" maxOccurs="1" name="ChangesApplied"/>
-                    <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="ReferenceResults"/>
-                    <xs:element type="ua:ListOfPubSubConfigurationValueDataType" minOccurs="0" maxOccurs="1" name="ConfigurationValues"/>
-                    <xs:element type="ua:ListOfNodeId" minOccurs="0" maxOccurs="1" name="ConfigurationObjects"/>
+                    <xs:element maxOccurs="1" name="Result" type="ua:StatusCode" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ChangesApplied" type="xs:boolean" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ReferenceResults" type="ua:ListOfStatusCode" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ConfigurationValues" type="ua:ListOfPubSubConfigurationValueDataType" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ConfigurationObjects" type="ua:ListOfNodeId" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubCommunicationConfigurationResultDataType" name="PubSubCommunicationConfigurationResultDataType"/>
+    <xs:element name="PubSubCommunicationConfigurationResultDataType" type="tns:PubSubCommunicationConfigurationResultDataType"/>
     <xs:complexType name="ListOfPubSubCommunicationConfigurationResultDataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubCommunicationConfigurationResultDataType" minOccurs="0" maxOccurs="unbounded" name="PubSubCommunicationConfigurationResultDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubCommunicationConfigurationResultDataType" nillable="true" type="tns:PubSubCommunicationConfigurationResultDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubCommunicationConfigurationResultDataType" name="ListOfPubSubCommunicationConfigurationResultDataType" nillable="true"/>
+    <xs:element name="ListOfPubSubCommunicationConfigurationResultDataType" nillable="true" type="tns:ListOfPubSubCommunicationConfigurationResultDataType"/>
     <xs:complexType name="CommunicationLinkConfigurationDataType">
         <xs:sequence/>
     </xs:complexType>
-    <xs:element type="tns:CommunicationLinkConfigurationDataType" name="CommunicationLinkConfigurationDataType"/>
+    <xs:element name="CommunicationLinkConfigurationDataType" type="tns:CommunicationLinkConfigurationDataType"/>
     <xs:complexType name="ListOfCommunicationLinkConfigurationDataType">
         <xs:sequence>
-            <xs:element type="tns:CommunicationLinkConfigurationDataType" minOccurs="0" maxOccurs="unbounded" name="CommunicationLinkConfigurationDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="CommunicationLinkConfigurationDataType" nillable="true" type="tns:CommunicationLinkConfigurationDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCommunicationLinkConfigurationDataType" name="ListOfCommunicationLinkConfigurationDataType" nillable="true"/>
+    <xs:element name="ListOfCommunicationLinkConfigurationDataType" nillable="true" type="tns:ListOfCommunicationLinkConfigurationDataType"/>
     <xs:complexType name="PubSubCommunicationLinkConfigurationDataType">
         <xs:complexContent mixed="false">
             <xs:extension base="ua:ExtensionObject">
                 <xs:sequence>
-                    <xs:element type="ua:PubSubConfigurationRefDataType" minOccurs="0" maxOccurs="1" name="DataSetReaderRef"/>
-                    <xs:element type="ua:ConfigurationVersionDataType" minOccurs="0" maxOccurs="1" name="ExpectedSubscribedDataSetVersion"/>
-                    <xs:element type="ua:PubSubConfigurationRefDataType" minOccurs="0" maxOccurs="1" name="DataSetWriterRef"/>
-                    <xs:element type="ua:ConfigurationVersionDataType" minOccurs="0" maxOccurs="1" name="ExpectedPublishedDataSetVersion"/>
+                    <xs:element maxOccurs="1" name="DataSetReaderRef" type="ua:PubSubConfigurationRefDataType" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ExpectedSubscribedDataSetVersion" type="ua:ConfigurationVersionDataType" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="DataSetWriterRef" type="ua:PubSubConfigurationRefDataType" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="ExpectedPublishedDataSetVersion" type="ua:ConfigurationVersionDataType" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubCommunicationLinkConfigurationDataType" name="PubSubCommunicationLinkConfigurationDataType"/>
+    <xs:element name="PubSubCommunicationLinkConfigurationDataType" type="tns:PubSubCommunicationLinkConfigurationDataType"/>
     <xs:complexType name="ListOfPubSubCommunicationLinkConfigurationDataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubCommunicationLinkConfigurationDataType" minOccurs="0" maxOccurs="unbounded" name="PubSubCommunicationLinkConfigurationDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubCommunicationLinkConfigurationDataType" nillable="true" type="tns:PubSubCommunicationLinkConfigurationDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubCommunicationLinkConfigurationDataType" name="ListOfPubSubCommunicationLinkConfigurationDataType" nillable="true"/>
+    <xs:element name="ListOfPubSubCommunicationLinkConfigurationDataType" nillable="true" type="tns:ListOfPubSubCommunicationLinkConfigurationDataType"/>
     <xs:complexType name="ConnectionEndpointConfigurationDataType">
         <xs:sequence>
-            <xs:element type="ua:NodeId" minOccurs="0" maxOccurs="1" name="FunctionalEntityNode"/>
-            <xs:element type="tns:ConnectionEndpointDefinitionDataType" minOccurs="0" maxOccurs="1" name="ConnectionEndpoint"/>
-            <xs:element type="tns:ListOfNodeIdValuePair" minOccurs="0" maxOccurs="1" name="ExpectedVerificationVariables"/>
-            <xs:element type="ua:ListOfNodeId" minOccurs="0" maxOccurs="1" name="ControlGroups"/>
-            <xs:element type="tns:ListOfNodeIdValuePair" minOccurs="0" maxOccurs="1" name="ConfigurationData"/>
-            <xs:element type="ua:ExtensionObject" minOccurs="0" maxOccurs="1" name="CommunicationLinks"/>
+            <xs:element maxOccurs="1" name="FunctionalEntityNode" type="ua:NodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConnectionEndpoint" type="tns:ConnectionEndpointDefinitionDataType" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ExpectedVerificationVariables" type="tns:ListOfNodeIdValuePair" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ControlGroups" type="ua:ListOfNodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConfigurationData" type="tns:ListOfNodeIdValuePair" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="CommunicationLinks" type="ua:ExtensionObject" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ConnectionEndpointConfigurationDataType" name="ConnectionEndpointConfigurationDataType"/>
+    <xs:element name="ConnectionEndpointConfigurationDataType" type="tns:ConnectionEndpointConfigurationDataType"/>
     <xs:complexType name="ListOfConnectionEndpointConfigurationDataType">
         <xs:sequence>
-            <xs:element type="tns:ConnectionEndpointConfigurationDataType" minOccurs="0" maxOccurs="unbounded" name="ConnectionEndpointConfigurationDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="ConnectionEndpointConfigurationDataType" nillable="true" type="tns:ConnectionEndpointConfigurationDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfConnectionEndpointConfigurationDataType" name="ListOfConnectionEndpointConfigurationDataType" nillable="true"/>
+    <xs:element name="ListOfConnectionEndpointConfigurationDataType" nillable="true" type="tns:ListOfConnectionEndpointConfigurationDataType"/>
     <xs:complexType name="ConnectionEndpointConfigurationResultDataType">
         <xs:sequence>
-            <xs:element type="ua:NodeId" minOccurs="0" maxOccurs="1" name="ConnectionEndpointId"/>
-            <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="FunctionalEntityNodeResult"/>
-            <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="ConnectionEndpointResult"/>
-            <xs:element type="tns:FunctionalEntityVerificationResultEnum" minOccurs="0" maxOccurs="1" name="VerificationResult"/>
-            <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="VerificationStatus"/>
-            <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="VerificationVariablesErrors"/>
-            <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="EstablishControlResult"/>
-            <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="ConfigurationDataResult"/>
-            <xs:element type="ua:ListOfStatusCode" minOccurs="0" maxOccurs="1" name="ReassignControlResult"/>
-            <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="CommunicationLinksResult"/>
-            <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="EnableCommunicationResult"/>
+            <xs:element maxOccurs="1" name="ConnectionEndpointId" type="ua:NodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="FunctionalEntityNodeResult" type="ua:StatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConnectionEndpointResult" type="ua:StatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationResult" type="tns:FunctionalEntityVerificationResultEnum" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationStatus" type="ua:StatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="VerificationVariablesErrors" type="ua:ListOfStatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="EstablishControlResult" type="ua:ListOfStatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConfigurationDataResult" type="ua:ListOfStatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ReassignControlResult" type="ua:ListOfStatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="CommunicationLinksResult" type="ua:StatusCode" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="EnableCommunicationResult" type="ua:StatusCode" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ConnectionEndpointConfigurationResultDataType" name="ConnectionEndpointConfigurationResultDataType"/>
+    <xs:element name="ConnectionEndpointConfigurationResultDataType" type="tns:ConnectionEndpointConfigurationResultDataType"/>
     <xs:complexType name="ListOfConnectionEndpointConfigurationResultDataType">
         <xs:sequence>
-            <xs:element type="tns:ConnectionEndpointConfigurationResultDataType" minOccurs="0" maxOccurs="unbounded" name="ConnectionEndpointConfigurationResultDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="ConnectionEndpointConfigurationResultDataType" nillable="true" type="tns:ConnectionEndpointConfigurationResultDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfConnectionEndpointConfigurationResultDataType" name="ListOfConnectionEndpointConfigurationResultDataType" nillable="true"/>
+    <xs:element name="ListOfConnectionEndpointConfigurationResultDataType" nillable="true" type="tns:ListOfConnectionEndpointConfigurationResultDataType"/>
     <xs:complexType name="ConnectionEndpointParameterDataType">
         <xs:sequence>
-            <xs:element type="xs:string" minOccurs="0" maxOccurs="1" name="Name"/>
-            <xs:element type="ua:NodeId" minOccurs="0" maxOccurs="1" name="ConnectionEndpointTypeId"/>
-            <xs:element type="ua:ListOfNodeId" minOccurs="0" maxOccurs="1" name="InputVariableIds"/>
-            <xs:element type="ua:ListOfNodeId" minOccurs="0" maxOccurs="1" name="OutputVariableIds"/>
-            <xs:element type="xs:boolean" minOccurs="0" maxOccurs="1" name="IsPersistent"/>
-            <xs:element type="xs:double" minOccurs="0" maxOccurs="1" name="CleanupTimeout"/>
-            <xs:element type="tns:RelatedEndpointDataType" minOccurs="0" maxOccurs="1" name="RelatedEndpoint"/>
-            <xs:element type="xs:boolean" minOccurs="0" maxOccurs="1" name="IsPreconfigured"/>
+            <xs:element maxOccurs="1" name="Name" type="xs:string" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConnectionEndpointTypeId" type="ua:NodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="InputVariableIds" type="ua:ListOfNodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="OutputVariableIds" type="ua:ListOfNodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="IsPersistent" type="xs:boolean" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="CleanupTimeout" type="xs:double" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="RelatedEndpoint" type="tns:RelatedEndpointDataType" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="IsPreconfigured" type="xs:boolean" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ConnectionEndpointParameterDataType" name="ConnectionEndpointParameterDataType"/>
+    <xs:element name="ConnectionEndpointParameterDataType" type="tns:ConnectionEndpointParameterDataType"/>
     <xs:complexType name="ListOfConnectionEndpointParameterDataType">
         <xs:sequence>
-            <xs:element type="tns:ConnectionEndpointParameterDataType" minOccurs="0" maxOccurs="unbounded" name="ConnectionEndpointParameterDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="ConnectionEndpointParameterDataType" nillable="true" type="tns:ConnectionEndpointParameterDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfConnectionEndpointParameterDataType" name="ListOfConnectionEndpointParameterDataType" nillable="true"/>
+    <xs:element name="ListOfConnectionEndpointParameterDataType" nillable="true" type="tns:ListOfConnectionEndpointParameterDataType"/>
     <xs:complexType name="PubSubConnectionEndpointParameterDataType">
         <xs:complexContent mixed="false">
             <xs:extension base="ua:ExtensionObject">
                 <xs:sequence>
-                    <xs:element type="tns:PubSubConnectionEndpointModeEnum" minOccurs="0" maxOccurs="1" name="Mode"/>
+                    <xs:element maxOccurs="1" name="Mode" type="tns:PubSubConnectionEndpointModeEnum" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubConnectionEndpointParameterDataType" name="PubSubConnectionEndpointParameterDataType"/>
+    <xs:element name="PubSubConnectionEndpointParameterDataType" type="tns:PubSubConnectionEndpointParameterDataType"/>
     <xs:complexType name="ListOfPubSubConnectionEndpointParameterDataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubConnectionEndpointParameterDataType" minOccurs="0" maxOccurs="unbounded" name="PubSubConnectionEndpointParameterDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubConnectionEndpointParameterDataType" nillable="true" type="tns:PubSubConnectionEndpointParameterDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubConnectionEndpointParameterDataType" name="ListOfPubSubConnectionEndpointParameterDataType" nillable="true"/>
+    <xs:element name="ListOfPubSubConnectionEndpointParameterDataType" nillable="true" type="tns:ListOfPubSubConnectionEndpointParameterDataType"/>
+    <xs:complexType name="IntervalRange">
+        <xs:sequence>
+            <xs:element maxOccurs="1" name="Min" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Max" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Increment" type="xs:unsignedShort" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Multiplier" type="xs:unsignedShort" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Unit" type="tns:FxTimeUnitsEnum" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IntervalRange" type="tns:IntervalRange"/>
+    <xs:complexType name="ListOfIntervalRange">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="IntervalRange" nillable="true" type="tns:IntervalRange" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfIntervalRange" nillable="true" type="tns:ListOfIntervalRange"/>
     <xs:complexType name="NodeIdArray">
         <xs:sequence>
-            <xs:element type="ua:NodeId" minOccurs="0" maxOccurs="1" name="Node"/>
-            <xs:element type="ua:ListOfUInt32" minOccurs="0" maxOccurs="1" name="ArrayIndex"/>
+            <xs:element maxOccurs="1" name="Node" type="ua:NodeId" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ArrayIndex" type="ua:ListOfUInt32" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:NodeIdArray" name="NodeIdArray"/>
+    <xs:element name="NodeIdArray" type="tns:NodeIdArray"/>
     <xs:complexType name="ListOfNodeIdArray">
         <xs:sequence>
-            <xs:element type="tns:NodeIdArray" minOccurs="0" maxOccurs="unbounded" name="NodeIdArray" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="NodeIdArray" nillable="true" type="tns:NodeIdArray" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfNodeIdArray" name="ListOfNodeIdArray" nillable="true"/>
+    <xs:element name="ListOfNodeIdArray" nillable="true" type="tns:ListOfNodeIdArray"/>
     <xs:complexType name="NodeIdValuePair">
         <xs:sequence>
-            <xs:element type="tns:NodeIdArray" minOccurs="0" maxOccurs="1" name="Key"/>
-            <xs:element type="ua:Variant" minOccurs="0" maxOccurs="1" name="Value"/>
+            <xs:element maxOccurs="1" name="Key" type="tns:NodeIdArray" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="Value" type="ua:Variant" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:NodeIdValuePair" name="NodeIdValuePair"/>
+    <xs:element name="NodeIdValuePair" type="tns:NodeIdValuePair"/>
     <xs:complexType name="ListOfNodeIdValuePair">
         <xs:sequence>
-            <xs:element type="tns:NodeIdValuePair" minOccurs="0" maxOccurs="unbounded" name="NodeIdValuePair" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="NodeIdValuePair" nillable="true" type="tns:NodeIdValuePair" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfNodeIdValuePair" name="ListOfNodeIdValuePair" nillable="true"/>
+    <xs:element name="ListOfNodeIdValuePair" nillable="true" type="tns:ListOfNodeIdValuePair"/>
     <xs:complexType name="RelatedEndpointDataType">
         <xs:sequence>
-            <xs:element type="xs:string" minOccurs="0" maxOccurs="1" name="Address"/>
-            <xs:element type="ua:ListOfPortableQualifiedName" minOccurs="0" maxOccurs="1" name="ConnectionEndpointPath"/>
-            <xs:element type="xs:string" minOccurs="0" maxOccurs="1" name="ConnectionEndpointName"/>
+            <xs:element maxOccurs="1" name="Address" type="xs:string" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConnectionEndpointPath" type="ua:ListOfPortableQualifiedName" minOccurs="0"/>
+            <xs:element maxOccurs="1" name="ConnectionEndpointName" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:RelatedEndpointDataType" name="RelatedEndpointDataType"/>
+    <xs:element name="RelatedEndpointDataType" type="tns:RelatedEndpointDataType"/>
     <xs:complexType name="ListOfRelatedEndpointDataType">
         <xs:sequence>
-            <xs:element type="tns:RelatedEndpointDataType" minOccurs="0" maxOccurs="unbounded" name="RelatedEndpointDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="RelatedEndpointDataType" nillable="true" type="tns:RelatedEndpointDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfRelatedEndpointDataType" name="ListOfRelatedEndpointDataType" nillable="true"/>
+    <xs:element name="ListOfRelatedEndpointDataType" nillable="true" type="tns:ListOfRelatedEndpointDataType"/>
     <xs:complexType name="ReserveCommunicationIdsDataType">
         <xs:sequence/>
     </xs:complexType>
-    <xs:element type="tns:ReserveCommunicationIdsDataType" name="ReserveCommunicationIdsDataType"/>
+    <xs:element name="ReserveCommunicationIdsDataType" type="tns:ReserveCommunicationIdsDataType"/>
     <xs:complexType name="ListOfReserveCommunicationIdsDataType">
         <xs:sequence>
-            <xs:element type="tns:ReserveCommunicationIdsDataType" minOccurs="0" maxOccurs="unbounded" name="ReserveCommunicationIdsDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="ReserveCommunicationIdsDataType" nillable="true" type="tns:ReserveCommunicationIdsDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfReserveCommunicationIdsDataType" name="ListOfReserveCommunicationIdsDataType" nillable="true"/>
+    <xs:element name="ListOfReserveCommunicationIdsDataType" nillable="true" type="tns:ListOfReserveCommunicationIdsDataType"/>
     <xs:complexType name="PubSubReserveCommunicationIdsDataType">
         <xs:complexContent mixed="false">
             <xs:extension base="ua:ExtensionObject">
                 <xs:sequence>
-                    <xs:element type="xs:string" minOccurs="0" maxOccurs="1" name="TransportProfileUri"/>
-                    <xs:element type="xs:unsignedShort" minOccurs="0" maxOccurs="1" name="NumReqWriterGroupIds"/>
-                    <xs:element type="xs:unsignedShort" minOccurs="0" maxOccurs="1" name="NumReqDataSetWriterIds"/>
+                    <xs:element maxOccurs="1" name="TransportProfileUri" type="xs:string" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="NumReqWriterGroupIds" type="xs:unsignedShort" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="NumReqDataSetWriterIds" type="xs:unsignedShort" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubReserveCommunicationIdsDataType" name="PubSubReserveCommunicationIdsDataType"/>
+    <xs:element name="PubSubReserveCommunicationIdsDataType" type="tns:PubSubReserveCommunicationIdsDataType"/>
     <xs:complexType name="ListOfPubSubReserveCommunicationIdsDataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubReserveCommunicationIdsDataType" minOccurs="0" maxOccurs="unbounded" name="PubSubReserveCommunicationIdsDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubReserveCommunicationIdsDataType" nillable="true" type="tns:PubSubReserveCommunicationIdsDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubReserveCommunicationIdsDataType" name="ListOfPubSubReserveCommunicationIdsDataType" nillable="true"/>
+    <xs:element name="ListOfPubSubReserveCommunicationIdsDataType" nillable="true" type="tns:ListOfPubSubReserveCommunicationIdsDataType"/>
     <xs:complexType name="PubSubReserveCommunicationIds2DataType">
         <xs:complexContent mixed="false">
             <xs:extension base="tns:PubSubReserveCommunicationIdsDataType">
                 <xs:sequence>
-                    <xs:element type="xs:boolean" minOccurs="0" maxOccurs="1" name="RequestTransportSpecificInfo"/>
+                    <xs:element maxOccurs="1" name="RequestTransportSpecificInfo" type="xs:boolean" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubReserveCommunicationIds2DataType" name="PubSubReserveCommunicationIds2DataType"/>
+    <xs:element name="PubSubReserveCommunicationIds2DataType" type="tns:PubSubReserveCommunicationIds2DataType"/>
     <xs:complexType name="ListOfPubSubReserveCommunicationIds2DataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubReserveCommunicationIds2DataType" minOccurs="0" maxOccurs="unbounded" name="PubSubReserveCommunicationIds2DataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubReserveCommunicationIds2DataType" nillable="true" type="tns:PubSubReserveCommunicationIds2DataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubReserveCommunicationIds2DataType" name="ListOfPubSubReserveCommunicationIds2DataType" nillable="true"/>
+    <xs:element name="ListOfPubSubReserveCommunicationIds2DataType" nillable="true" type="tns:ListOfPubSubReserveCommunicationIds2DataType"/>
     <xs:complexType name="ReserveCommunicationIdsResultDataType">
         <xs:sequence/>
     </xs:complexType>
-    <xs:element type="tns:ReserveCommunicationIdsResultDataType" name="ReserveCommunicationIdsResultDataType"/>
+    <xs:element name="ReserveCommunicationIdsResultDataType" type="tns:ReserveCommunicationIdsResultDataType"/>
     <xs:complexType name="ListOfReserveCommunicationIdsResultDataType">
         <xs:sequence>
-            <xs:element type="tns:ReserveCommunicationIdsResultDataType" minOccurs="0" maxOccurs="unbounded" name="ReserveCommunicationIdsResultDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="ReserveCommunicationIdsResultDataType" nillable="true" type="tns:ReserveCommunicationIdsResultDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfReserveCommunicationIdsResultDataType" name="ListOfReserveCommunicationIdsResultDataType" nillable="true"/>
+    <xs:element name="ListOfReserveCommunicationIdsResultDataType" nillable="true" type="tns:ListOfReserveCommunicationIdsResultDataType"/>
     <xs:complexType name="PubSubReserveCommunicationIdsResultDataType">
         <xs:complexContent mixed="false">
             <xs:extension base="ua:ExtensionObject">
                 <xs:sequence>
-                    <xs:element type="ua:StatusCode" minOccurs="0" maxOccurs="1" name="Result"/>
-                    <xs:element type="ua:Variant" minOccurs="0" maxOccurs="1" name="DefaultPublisherId"/>
-                    <xs:element type="ua:ListOfUInt16" minOccurs="0" maxOccurs="1" name="WriterGroupIds"/>
-                    <xs:element type="ua:ListOfUInt16" minOccurs="0" maxOccurs="1" name="DataSetWriterIds"/>
+                    <xs:element maxOccurs="1" name="Result" type="ua:StatusCode" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="DefaultPublisherId" type="ua:Variant" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="WriterGroupIds" type="ua:ListOfUInt16" minOccurs="0"/>
+                    <xs:element maxOccurs="1" name="DataSetWriterIds" type="ua:ListOfUInt16" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubReserveCommunicationIdsResultDataType" name="PubSubReserveCommunicationIdsResultDataType"/>
+    <xs:element name="PubSubReserveCommunicationIdsResultDataType" type="tns:PubSubReserveCommunicationIdsResultDataType"/>
     <xs:complexType name="ListOfPubSubReserveCommunicationIdsResultDataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubReserveCommunicationIdsResultDataType" minOccurs="0" maxOccurs="unbounded" name="PubSubReserveCommunicationIdsResultDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubReserveCommunicationIdsResultDataType" nillable="true" type="tns:PubSubReserveCommunicationIdsResultDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubReserveCommunicationIdsResultDataType" name="ListOfPubSubReserveCommunicationIdsResultDataType" nillable="true"/>
+    <xs:element name="ListOfPubSubReserveCommunicationIdsResultDataType" nillable="true" type="tns:ListOfPubSubReserveCommunicationIdsResultDataType"/>
     <xs:complexType name="PubSubReserveCommunicationIdsResult2DataType">
         <xs:complexContent mixed="false">
             <xs:extension base="tns:PubSubReserveCommunicationIdsResultDataType">
                 <xs:sequence>
-                    <xs:element type="ua:Variant" minOccurs="0" maxOccurs="1" name="TransportSpecificInfo"/>
+                    <xs:element maxOccurs="1" name="TransportSpecificInfo" type="ua:Variant" minOccurs="0"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element type="tns:PubSubReserveCommunicationIdsResult2DataType" name="PubSubReserveCommunicationIdsResult2DataType"/>
+    <xs:element name="PubSubReserveCommunicationIdsResult2DataType" type="tns:PubSubReserveCommunicationIdsResult2DataType"/>
     <xs:complexType name="ListOfPubSubReserveCommunicationIdsResult2DataType">
         <xs:sequence>
-            <xs:element type="tns:PubSubReserveCommunicationIdsResult2DataType" minOccurs="0" maxOccurs="unbounded" name="PubSubReserveCommunicationIdsResult2DataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="PubSubReserveCommunicationIdsResult2DataType" nillable="true" type="tns:PubSubReserveCommunicationIdsResult2DataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfPubSubReserveCommunicationIdsResult2DataType" name="ListOfPubSubReserveCommunicationIdsResult2DataType" nillable="true"/>
+    <xs:element name="ListOfPubSubReserveCommunicationIdsResult2DataType" nillable="true" type="tns:ListOfPubSubReserveCommunicationIdsResult2DataType"/>
     <xs:complexType name="ConnectionEndpointDefinitionDataType">
         <xs:sequence>
-            <xs:element type="xs:unsignedInt" minOccurs="0" maxOccurs="1" name="SwitchField"/>
+            <xs:element maxOccurs="1" name="SwitchField" type="xs:unsignedInt" minOccurs="0"/>
             <xs:choice>
-                <xs:element type="ua:ExtensionObject" minOccurs="0" maxOccurs="1" name="Parameter"/>
-                <xs:element type="ua:NodeId" minOccurs="0" maxOccurs="1" name="Node"/>
+                <xs:element maxOccurs="1" name="Parameter" type="ua:ExtensionObject" minOccurs="0"/>
+                <xs:element maxOccurs="1" name="Node" type="ua:NodeId" minOccurs="0"/>
             </xs:choice>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ConnectionEndpointDefinitionDataType" name="ConnectionEndpointDefinitionDataType"/>
+    <xs:element name="ConnectionEndpointDefinitionDataType" type="tns:ConnectionEndpointDefinitionDataType"/>
     <xs:complexType name="ListOfConnectionEndpointDefinitionDataType">
         <xs:sequence>
-            <xs:element type="tns:ConnectionEndpointDefinitionDataType" minOccurs="0" maxOccurs="unbounded" name="ConnectionEndpointDefinitionDataType" nillable="true"/>
+            <xs:element maxOccurs="unbounded" name="ConnectionEndpointDefinitionDataType" nillable="true" type="tns:ConnectionEndpointDefinitionDataType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfConnectionEndpointDefinitionDataType" name="ListOfConnectionEndpointDefinitionDataType" nillable="true"/>
+    <xs:element name="ListOfConnectionEndpointDefinitionDataType" nillable="true" type="tns:ListOfConnectionEndpointDefinitionDataType"/>
 </xs:schema>
