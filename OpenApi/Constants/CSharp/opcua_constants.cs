@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026, OPC Federation AISBL, All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -16497,6 +16497,8 @@ namespace Opc.Ua.WebApi
         public const string ServerConfiguration_MulticastDnsEnabled = "i=12641";
         /// <remarks />
         public const string ServerConfiguration_HasSecureElement = "i=23597";
+        /// <remarks />
+        public const string ServerConfiguration_InApplicationSetup = "i=19309";
         /// <remarks />
         public const string ServerConfiguration_UpdateCertificate_InputArguments = "i=13738";
         /// <remarks />

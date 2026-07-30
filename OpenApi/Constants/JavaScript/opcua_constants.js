@@ -8187,6 +8187,7 @@ export const VariableIds = Object.freeze({
    ServerConfiguration_MaxTrustListSize: 'i=12640',
    ServerConfiguration_MulticastDnsEnabled: 'i=12641',
    ServerConfiguration_HasSecureElement: 'i=23597',
+   ServerConfiguration_InApplicationSetup: 'i=19309',
    ServerConfiguration_UpdateCertificate_InputArguments: 'i=13738',
    ServerConfiguration_UpdateCertificate_OutputArguments: 'i=13739',
    ServerConfiguration_CreateSelfSignedCertificate_InputArguments: 'i=19343',

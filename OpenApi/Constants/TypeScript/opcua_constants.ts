@@ -8187,6 +8187,7 @@ export class VariableIds {
     static readonly ServerConfiguration_MaxTrustListSize: string = 'i=12640'
     static readonly ServerConfiguration_MulticastDnsEnabled: string = 'i=12641'
     static readonly ServerConfiguration_HasSecureElement: string = 'i=23597'
+    static readonly ServerConfiguration_InApplicationSetup: string = 'i=19309'
     static readonly ServerConfiguration_UpdateCertificate_InputArguments: string = 'i=13738'
     static readonly ServerConfiguration_UpdateCertificate_OutputArguments: string = 'i=13739'
     static readonly ServerConfiguration_CreateSelfSignedCertificate_InputArguments: string = 'i=19343'

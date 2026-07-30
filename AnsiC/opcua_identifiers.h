@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026, OPC Federation AISBL, All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -6264,6 +6264,7 @@
 #define OpcUaId_ServerConfiguration_MaxTrustListSize 12640
 #define OpcUaId_ServerConfiguration_MulticastDnsEnabled 12641
 #define OpcUaId_ServerConfiguration_HasSecureElement 23597
+#define OpcUaId_ServerConfiguration_InApplicationSetup 19309
 #define OpcUaId_ServerConfiguration_UpdateCertificate_InputArguments 13738
 #define OpcUaId_ServerConfiguration_UpdateCertificate_OutputArguments 13739
 #define OpcUaId_ServerConfiguration_CreateSelfSignedCertificate_InputArguments 19343

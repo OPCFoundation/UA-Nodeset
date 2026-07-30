@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2026 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2026, OPC Federation AISBL, All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -12505,6 +12505,8 @@ namespace Opc.Ua
         public const uint ServerConfiguration_MulticastDnsEnabled = 12641;
 
         public const uint ServerConfiguration_HasSecureElement = 23597;
+
+        public const uint ServerConfiguration_InApplicationSetup = 19309;
 
         public const uint ServerConfiguration_UpdateCertificate_InputArguments = 13738;
 
@@ -30755,6 +30757,8 @@ namespace Opc.Ua
         public static readonly NodeId ServerConfiguration_MulticastDnsEnabled = new NodeId(Opc.Ua.Variables.ServerConfiguration_MulticastDnsEnabled);
 
         public static readonly NodeId ServerConfiguration_HasSecureElement = new NodeId(Opc.Ua.Variables.ServerConfiguration_HasSecureElement);
+
+        public static readonly NodeId ServerConfiguration_InApplicationSetup = new NodeId(Opc.Ua.Variables.ServerConfiguration_InApplicationSetup);
 
         public static readonly NodeId ServerConfiguration_UpdateCertificate_InputArguments = new NodeId(Opc.Ua.Variables.ServerConfiguration_UpdateCertificate_InputArguments);
 

@@ -349,6 +349,7 @@ ServerConfiguration_CreateSigningRequest_OutputArguments,12739,Variable,"[Signin
 ServerConfiguration_GetRejectedList,12777,Method,"[SigningRequired]","{'SecurityAdmin':'(61455) All'}"
 ServerConfiguration_GetRejectedList_OutputArguments,12778,Variable,"[SigningRequired]","{'SecurityAdmin':'(59391) All'}"
 ServerConfiguration_HasSecureElement,23597,Variable,,"{'Anonymous':'(33) Browse|Read','ConfigureAdmin':'(59391) All','SecurityAdmin':'(59391) All'}"
+ServerConfiguration_InApplicationSetup,19309,Variable,,"{'Anonymous':'(33) Browse|Read','ConfigureAdmin':'(59391) All','SecurityAdmin':'(59391) All'}"
 ServerConfiguration_MaxTrustListSize,12640,Variable,,"{'Anonymous':'(33) Browse|Read','ConfigureAdmin':'(59391) All','SecurityAdmin':'(59391) All'}"
 ServerConfiguration_MulticastDnsEnabled,12641,Variable,,"{'Anonymous':'(33) Browse|Read','ConfigureAdmin':'(59391) All','SecurityAdmin':'(59391) All'}"
 ServerConfiguration_ProductUri,25725,Variable,,"{'Anonymous':'(33) Browse|Read','ConfigureAdmin':'(59391) All','SecurityAdmin':'(59391) All'}"
