@@ -1,0 +1,109 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<xs:schema targetNamespace="http://opcfoundation.org/UA/PlasticsRubber/GDD/Types.xsd" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/GDD/Types.xsd">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="AirFlowModeEnumeration">
+        <xs:annotation>
+            <xs:documentation>Determines the air flow, either from a fan or from compressed air. </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CONTINUOUS_0"/>
+            <xs:enumeration value="INTERVAL_1"/>
+            <xs:enumeration value="OPTIMIZED_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AirFlowModeEnumeration" type="tns:AirFlowModeEnumeration"/>
+    <xs:complexType name="ListOfAirFlowModeEnumeration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="AirFlowModeEnumeration" nillable="true" minOccurs="0" type="tns:AirFlowModeEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfAirFlowModeEnumeration" nillable="true" type="tns:ListOfAirFlowModeEnumeration"/>
+    <xs:simpleType name="AirSourceEnumeration">
+        <xs:annotation>
+            <xs:documentation>Determines the source of the air.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FRESH_AIR_0"/>
+            <xs:enumeration value="RETURN_AIR_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AirSourceEnumeration" type="tns:AirSourceEnumeration"/>
+    <xs:complexType name="ListOfAirSourceEnumeration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="AirSourceEnumeration" nillable="true" minOccurs="0" type="tns:AirSourceEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfAirSourceEnumeration" nillable="true" type="tns:ListOfAirSourceEnumeration"/>
+    <xs:simpleType name="DryingLevelEnumeration">
+        <xs:annotation>
+            <xs:documentation>Indicates how much drying is required.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LOW_0"/>
+            <xs:enumeration value="MEDIUM_1"/>
+            <xs:enumeration value="HIGH_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="DryingLevelEnumeration" type="tns:DryingLevelEnumeration"/>
+    <xs:complexType name="ListOfDryingLevelEnumeration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="DryingLevelEnumeration" nillable="true" minOccurs="0" type="tns:DryingLevelEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfDryingLevelEnumeration" nillable="true" type="tns:ListOfDryingLevelEnumeration"/>
+    <xs:simpleType name="DryingModeEnumeration">
+        <xs:annotation>
+            <xs:documentation>The drying mode determines the drying process.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BATCH_0"/>
+            <xs:enumeration value="CONTINUOUS_1"/>
+            <xs:enumeration value="COMBINED_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="DryingModeEnumeration" type="tns:DryingModeEnumeration"/>
+    <xs:complexType name="ListOfDryingModeEnumeration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="DryingModeEnumeration" nillable="true" minOccurs="0" type="tns:DryingModeEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfDryingModeEnumeration" nillable="true" type="tns:ListOfDryingModeEnumeration"/>
+    <xs:simpleType name="FunctionStatusEnumeration">
+        <xs:annotation>
+            <xs:documentation>Provides information about the current operation state of a function.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OFF_0"/>
+            <xs:enumeration value="ON_1"/>
+            <xs:enumeration value="REQUESTED_OFF_2"/>
+            <xs:enumeration value="REQUESTED_ON_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="FunctionStatusEnumeration" type="tns:FunctionStatusEnumeration"/>
+    <xs:complexType name="ListOfFunctionStatusEnumeration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="FunctionStatusEnumeration" nillable="true" minOccurs="0" type="tns:FunctionStatusEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfFunctionStatusEnumeration" nillable="true" type="tns:ListOfFunctionStatusEnumeration"/>
+    <xs:simpleType name="MainFailureBehaviourEnumeration">
+        <xs:annotation>
+            <xs:documentation>Determines how the dryer should react after a power failure, for example.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="STANDBY_0"/>
+            <xs:enumeration value="CONTINUE_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="MainFailureBehaviourEnumeration" type="tns:MainFailureBehaviourEnumeration"/>
+    <xs:complexType name="ListOfMainFailureBehaviourEnumeration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="MainFailureBehaviourEnumeration" nillable="true" minOccurs="0" type="tns:MainFailureBehaviourEnumeration"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListOfMainFailureBehaviourEnumeration" nillable="true" type="tns:ListOfMainFailureBehaviourEnumeration"/>
+</xs:schema>

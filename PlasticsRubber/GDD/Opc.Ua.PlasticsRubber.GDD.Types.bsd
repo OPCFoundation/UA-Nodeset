@@ -1,0 +1,43 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/GDD/" xmlns:opc="http://opcfoundation.org/BinarySchema/" DefaultByteOrder="LittleEndian" xmlns:ua="http://opcfoundation.org/UA/" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/GDD/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:EnumeratedType Name="AirFlowModeEnumeration" LengthInBits="32">
+        <opc:Documentation>Determines the air flow, either from a fan or from compressed air. </opc:Documentation>
+        <opc:EnumeratedValue Name="CONTINUOUS" Value="0"/>
+        <opc:EnumeratedValue Name="INTERVAL" Value="1"/>
+        <opc:EnumeratedValue Name="OPTIMIZED" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="AirSourceEnumeration" LengthInBits="32">
+        <opc:Documentation>Determines the source of the air.</opc:Documentation>
+        <opc:EnumeratedValue Name="FRESH_AIR" Value="0"/>
+        <opc:EnumeratedValue Name="RETURN_AIR" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="DryingLevelEnumeration" LengthInBits="32">
+        <opc:Documentation>Indicates how much drying is required.</opc:Documentation>
+        <opc:EnumeratedValue Name="LOW" Value="0"/>
+        <opc:EnumeratedValue Name="MEDIUM" Value="1"/>
+        <opc:EnumeratedValue Name="HIGH" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="DryingModeEnumeration" LengthInBits="32">
+        <opc:Documentation>The drying mode determines the drying process.</opc:Documentation>
+        <opc:EnumeratedValue Name="BATCH" Value="0"/>
+        <opc:EnumeratedValue Name="CONTINUOUS" Value="1"/>
+        <opc:EnumeratedValue Name="COMBINED" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="FunctionStatusEnumeration" LengthInBits="32">
+        <opc:Documentation>Provides information about the current operation state of a function.</opc:Documentation>
+        <opc:EnumeratedValue Name="OFF" Value="0"/>
+        <opc:EnumeratedValue Name="ON" Value="1"/>
+        <opc:EnumeratedValue Name="REQUESTED_OFF" Value="2"/>
+        <opc:EnumeratedValue Name="REQUESTED_ON" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType Name="MainFailureBehaviourEnumeration" LengthInBits="32">
+        <opc:Documentation>Determines how the dryer should react after a power failure, for example.</opc:Documentation>
+        <opc:EnumeratedValue Name="STANDBY" Value="0"/>
+        <opc:EnumeratedValue Name="CONTINUE" Value="1"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
