@@ -1,11 +1,11 @@
-<opc:TypeDictionary TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/Dosing/" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/Dosing/" DefaultByteOrder="LittleEndian" xmlns:ua="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opc="http://opcfoundation.org/BinarySchema/">
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/Dosing/" xmlns:ua="http://opcfoundation.org/UA/" DefaultByteOrder="LittleEndian" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/Dosing/" xmlns:opc="http://opcfoundation.org/BinarySchema/">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
-    <opc:EnumeratedType Name="ActivateRemoteControl" LengthInBits="32">
-        <opc:EnumeratedValue Name="OFF" Value="0"/>
-        <opc:EnumeratedValue Name="SEPARATE_INTERFACE" Value="1"/>
-        <opc:EnumeratedValue Name="OPC_UA" Value="2"/>
-    </opc:EnumeratedType>
-    <opc:EnumeratedType Name="ComponentStateEnumeration" LengthInBits="32">
+    <opc:EnumeratedType LengthInBits="32" Name="ComponentStateEnumeration">
         <opc:EnumeratedValue Name="Off" Value="0"/>
         <opc:EnumeratedValue Name="Ready" Value="1"/>
         <opc:EnumeratedValue Name="Dosing" Value="2"/>
@@ -15,15 +15,10 @@
         <opc:EnumeratedValue Name="Purging" Value="6"/>
         <opc:EnumeratedValue Name="Priming" Value="7"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType Name="DosingModeEnumeration" LengthInBits="32">
+    <opc:EnumeratedType LengthInBits="32" Name="DosingModeEnumeration">
         <opc:EnumeratedValue Name="ONLY_CONVEYING" Value="0"/>
         <opc:EnumeratedValue Name="VOLUMETRIC" Value="1"/>
         <opc:EnumeratedValue Name="GRAVIMETRIC" Value="2"/>
         <opc:EnumeratedValue Name="OTHER" Value="3"/>
-    </opc:EnumeratedType>
-    <opc:EnumeratedType Name="RemoteControlActivated" LengthInBits="32">
-        <opc:EnumeratedValue Name="OFF" Value="0"/>
-        <opc:EnumeratedValue Name="SEPARATE_INTERFACE" Value="1"/>
-        <opc:EnumeratedValue Name="OPC_UA" Value="2"/>
     </opc:EnumeratedType>
 </opc:TypeDictionary>
