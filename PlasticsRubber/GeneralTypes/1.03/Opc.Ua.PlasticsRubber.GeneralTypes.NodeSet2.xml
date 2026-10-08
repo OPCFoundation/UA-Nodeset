@@ -8331,17 +8331,19 @@ In semi-automatic mode also during waiting time (e.g. for manual loading/unloadi
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:ExtensionObject>
-                <uax:TypeId>
-                    <uax:Identifier>ns=1;i=5025</uax:Identifier>
-                </uax:TypeId>
-                <uax:Body>
-                    <PageEntryDataType xmlns="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd">
-                        <Id></Id>
-                        <Title/>
-                    </PageEntryDataType>
-                </uax:Body>
-            </uax:ExtensionObject>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5025</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <PageEntryDataType xmlns="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd">
+                            <Id></Id>
+                            <Title/>
+                        </PageEntryDataType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
         </Value>
     </UAVariable>
     <UAMethod ParentNodeId="ns=1;i=1016" NodeId="ns=1;i=7019" BrowseName="1:SetMachineTime">
@@ -9430,18 +9432,20 @@ In semi-automatic mode also during waiting time (e.g. for manual loading/unloadi
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:ExtensionObject>
-                <uax:TypeId>
-                    <uax:Identifier>ns=1;i=5034</uax:Identifier>
-                </uax:TypeId>
-                <uax:Body>
-                    <PIDParametersDataType xmlns="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd">
-                        <P>0</P>
-                        <I>0</I>
-                        <D>0</D>
-                    </PIDParametersDataType>
-                </uax:Body>
-            </uax:ExtensionObject>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5034</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <PIDParametersDataType xmlns="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd">
+                            <P>0</P>
+                            <I>0</I>
+                            <D>0</D>
+                        </PIDParametersDataType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
         </Value>
     </UAVariable>
     <UAVariable DataType="ControlModeEnumeration" ParentNodeId="ns=1;i=5045" NodeId="ns=1;i=6462" BrowseName="1:ControlMode">
@@ -10535,18 +10539,20 @@ In semi-automatic mode also during waiting time (e.g. for manual loading/unloadi
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:ExtensionObject>
-                <uax:TypeId>
-                    <uax:Identifier>ns=1;i=5034</uax:Identifier>
-                </uax:TypeId>
-                <uax:Body>
-                    <PIDParametersDataType xmlns="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd">
-                        <P>0</P>
-                        <I>0</I>
-                        <D>0</D>
-                    </PIDParametersDataType>
-                </uax:Body>
-            </uax:ExtensionObject>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>ns=1;i=5034</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <PIDParametersDataType xmlns="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/Types.xsd">
+                            <P>0</P>
+                            <I>0</I>
+                            <D>0</D>
+                        </PIDParametersDataType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
         </Value>
     </UAVariable>
     <UAVariable DataType="Double" ParentNodeId="ns=1;i=1057" NodeId="ns=1;i=6365" BrowseName="1:SetRampDown" AccessLevel="3">
