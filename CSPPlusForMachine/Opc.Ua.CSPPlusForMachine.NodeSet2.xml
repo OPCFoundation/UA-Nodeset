@@ -65,6 +65,8 @@
     <Alias Alias="Number">i=26</Alias>
     <Alias Alias="Integer">i=27</Alias>
     <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="IdType">i=256</Alias>
+    <Alias Alias="NumericRange">i=291</Alias>
     <Alias Alias="HasComponent">i=47</Alias>
     <Alias Alias="HasProperty">i=46</Alias>
     <Alias Alias="Organizes">i=35</Alias>
