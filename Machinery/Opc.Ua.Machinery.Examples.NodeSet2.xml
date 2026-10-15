@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s7="http://opcfoundation.org/UA/PADIM/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:s4="http://opcfoundation.org/UA/Machinery/Jobs/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s3="http://opcfoundation.org/UA/Machinery/Types.xsd" xmlns:s1="http://opcfoundation.org/UA/Machinery/Example/Types.xsd" xmlns:s5="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/Types.xsd" xmlns:s6="http://opcfoundation.org/UA/Machinery/ProcessValues/Types.xsd" xmlns:s9="http://opcfoundation.org/UA/Machinery/Result/Types.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:s2="http://opcfoundation.org/UA/DI/Types.xsd" xmlns:s8="http://opcfoundation.org/UA/IA/Types.xsd">
     <NamespaceUris>
         <Uri>http://opcfoundation.org/UA/Machinery/Example/</Uri>
