@@ -3,8 +3,6 @@
 SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
 SPDX-License-Identifier: MIT
 -->
-<!-- SPDX-License-Identifier: LicenseRef-OPC-Foundation -->
-<!-- License: https://opcfoundation.org/license/ -->
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/Machinery/</Uri>
