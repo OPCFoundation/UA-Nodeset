@@ -1,0 +1,11 @@
+Id,Name,Link,ConformanceUnits
+10,DataElementType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.2","DPP Base;"
+12,SingleValuedDataElementType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.4","DPP Base;"
+15,MultiValuedDataElementType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.5","DPP Base;"
+19,DataElementCollectionType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.6","DPP Base;"
+22,RelatedResourceType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.7","DPP Base;"
+27,MultiLanguageDataElementType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.8","DPP Base;"
+29,DigitalProductPassportType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.9","DPP Base;"
+112,http://opcfoundation.org/UA/DigitalProductPassport/,"https://reference.opcfoundation.org/DigitalProductPassport/v100/docs/9.1",""
+120,VerifiableCredentialType,"https://reference.opcfoundation.org/specs/OPC-30450-1/6.3","DPP Base;"
+124,GranularityEnumeration,"https://reference.opcfoundation.org/specs/OPC-30450-1/7.1","DPP Base;"
