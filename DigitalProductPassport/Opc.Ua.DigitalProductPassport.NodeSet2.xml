@@ -514,7 +514,7 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=11616</Reference>
       <Reference ReferenceType="i=47" IsForward="false">i=11715</Reference>
-      <Reference ReferenceType="i=46">ns=1;s=NamespaceMetadata.ModelVersion</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=126</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=119" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=112" DataType="i=12">
@@ -576,7 +576,7 @@ SPDX-License-Identifier: MIT
       <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2026-11-01T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=NamespaceMetadata.ModelVersion" BrowseName="ModelVersion" ParentNodeId="ns=1;i=112" DataType="i=12">
+  <UAVariable NodeId="ns=1;i=126" BrowseName="ModelVersion" ParentNodeId="ns=1;i=112" DataType="i=12">
     <References>
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
