@@ -10,13 +10,12 @@ SPDX-License-Identifier: MIT
     <Uri>http://opcfoundation.org/UA/IA/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.04.2" PublicationDate="2026-11-01T00:00:00Z" ModelVersion="1.04.2">
+    <Model ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.04.2" PublicationDate="2026-11-02T00:00:00Z" ModelVersion="1.4.2">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.07" PublicationDate="2026-07-30T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.05.0" PublicationDate="2025-11-15T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/IA/" Version="1.01.4" PublicationDate="2025-05-23T00:00:00Z" />
     </Model>
   </Models>
-  <Aliases />
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:IMachineTagNameplateType" IsAbstract="true">
     <DisplayName>IMachineTagNameplateType</DisplayName>
     <Description>Interface containing information of the identification of a machine set by the customer</Description>
@@ -24,7 +23,6 @@ SPDX-License-Identifier: MIT
     <Documentation>https://reference.opcfoundation.org/specs/OPC-40001-1/8.5</Documentation>
     <References>
       <Reference ReferenceType="i=45" IsForward="false">ns=2;i=15048</Reference>
-      <Reference ReferenceType="i=17603" IsForward="false">ns=1;i=1012</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6028</Reference>
     </References>
   </UAObjectType>
@@ -44,7 +42,6 @@ SPDX-License-Identifier: MIT
     <Documentation>https://reference.opcfoundation.org/specs/OPC-40001-1/17.3</Documentation>
     <References>
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1011</Reference>
-      <Reference ReferenceType="i=17603" IsForward="false">ns=1;i=5052</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6107</Reference>
       <Reference ReferenceType="i=47">ns=1;i=6109</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6108</Reference>
@@ -114,7 +111,6 @@ SPDX-License-Identifier: MIT
     <Documentation>https://reference.opcfoundation.org/specs/OPC-40001-1/8.2</Documentation>
     <References>
       <Reference ReferenceType="i=45" IsForward="false">ns=2;i=15035</Reference>
-      <Reference ReferenceType="i=17603" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6027</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6022</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6026</Reference>
@@ -174,7 +170,6 @@ SPDX-License-Identifier: MIT
     <Documentation>https://reference.opcfoundation.org/specs/OPC-40001-1/8.4</Documentation>
     <References>
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1003</Reference>
-      <Reference ReferenceType="i=17603" IsForward="false">ns=1;i=1012</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6023</Reference>
     </References>
   </UAObjectType>
@@ -961,14 +956,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1002</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5010</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5014</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5018</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5020</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5021</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5022</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5023</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5023</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6040</Reference>
     </References>
   </UAObject>
@@ -1341,14 +1328,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1002</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5008</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5009</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5010</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5011</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5011</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5012</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5016</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5020</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6039</Reference>
     </References>
   </UAObject>
@@ -1369,14 +1348,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1002</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5009</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5013</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5016</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5017</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5018</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5019</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5019</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5022</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6041</Reference>
     </References>
   </UAObject>
@@ -1397,14 +1368,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1002</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5008</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5012</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5013</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5014</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5015</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5015</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5017</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5021</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6038</Reference>
     </References>
   </UAObject>
@@ -1821,14 +1784,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5028</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5032</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5033</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5034</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5035</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5035</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5037</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5041</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6060</Reference>
     </References>
   </UAObject>
@@ -1849,14 +1804,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5028</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5029</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5030</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5031</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5031</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5032</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5036</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5040</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6059</Reference>
     </References>
   </UAObject>
@@ -1877,14 +1824,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5030</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5034</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5038</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5040</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5041</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5042</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5043</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5043</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6061</Reference>
     </References>
   </UAObject>
@@ -1905,14 +1844,6 @@ SPDX-License-Identifier: MIT
     <References>
       <Reference ReferenceType="i=40">i=2307</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5029</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5033</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5036</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5037</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5038</Reference>
-      <Reference ReferenceType="i=51" IsForward="false">ns=1;i=5039</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5039</Reference>
-      <Reference ReferenceType="i=52" IsForward="false">ns=1;i=5042</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6062</Reference>
     </References>
   </UAObject>
@@ -1964,7 +1895,7 @@ SPDX-License-Identifier: MIT
       <Reference ReferenceType="i=46">ns=1;i=6035</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6036</Reference>
       <Reference ReferenceType="i=46">ns=1;i=6037</Reference>
-      <Reference ReferenceType="i=46">ns=1;s=NamespaceMetadata.ModelVersion</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=6113</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6031" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5001" DataType="i=1">
@@ -1984,7 +1915,7 @@ SPDX-License-Identifier: MIT
       <Reference ReferenceType="i=46" IsForward="false">ns=1;i=5001</Reference>
     </References>
     <Value>
-      <uax:DateTime>2026-11-01T00:00:00Z</uax:DateTime>
+      <uax:DateTime>2026-11-02T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6033" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5001" DataType="i=12">
@@ -2039,7 +1970,7 @@ SPDX-License-Identifier: MIT
       <uax:String></uax:String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=NamespaceMetadata.ModelVersion" BrowseName="ModelVersion" ParentNodeId="ns=1;i=5001" DataType="i=12">
+  <UAVariable NodeId="ns=1;i=6113" BrowseName="ModelVersion" ParentNodeId="ns=1;i=5001" DataType="i=12">
     <DisplayName>ModelVersion</DisplayName>
     <References>
       <Reference ReferenceType="i=40">i=68</Reference>
