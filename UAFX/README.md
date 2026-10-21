@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 10000-81 UAFX Part 81: Connecting Devices and Information Model](https://reference.opcfoundation.org/specs/OPC-10000-81) | 1.00.04 | 2026-07-22 | [Unified Architecture Field eXchange - UAFX](https://opcfoundation.org/about/working-groups/view/2) | `opc.ua.fx.ac.nodeset2.xml` |
+| [OPC 10000-81 UAFX Part 81: Connecting Devices and Information Model](https://reference.opcfoundation.org/specs/OPC-10000-81) | 1.00.04 | 2026-07-22 | [Unified Architecture Field eXchange - UAFX](https://opcfoundation.org/about/working-groups/view/2) | `opc.ua.fx.ac.nodeset2.xml`, `opc.ua.fx.cm.nodeset2.xml`, `opc.ua.fx.data.nodeset2.xml` |
 
 ## Reporting issues
 

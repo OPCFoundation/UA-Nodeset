@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 30040 AutomationML](https://reference.opcfoundation.org/specs/OPC-30040) | 1.00 | 2016-02-22 | [AutomationML model](https://opcfoundation.org/about/working-groups/view/40) | `Opc.Ua.AMLBaseTypes.NodeSet2.xml` |
+| [OPC 30040 AutomationML](https://reference.opcfoundation.org/specs/OPC-30040) | 1.00 | 2016-02-22 | [AutomationML model](https://opcfoundation.org/about/working-groups/view/40) | `Opc.Ua.AMLBaseTypes.NodeSet2.xml`, `Opc.Ua.AMLLibraries.NodeSet2.xml` |
 
 ## Reporting issues
 

@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 30120 IO-Link Devices and IO-Link Masters](https://reference.opcfoundation.org/specs/OPC-30120) | 1.00.1 | 2022-03-24 | [IO-Link](https://opcfoundation.org/about/working-groups/view/50) | `Opc.Ua.IOLink.NodeSet2.xml` |
+| [OPC 30120 IO-Link Devices and IO-Link Masters](https://reference.opcfoundation.org/specs/OPC-30120) | 1.00.1 | 2022-03-24 | [IO-Link](https://opcfoundation.org/about/working-groups/view/50) | `Opc.Ua.IOLink.NodeSet2.xml`, `Opc.Ua.IOLinkIODD.NodeSet2.xml` |
 
 ### NodeSet versions
 

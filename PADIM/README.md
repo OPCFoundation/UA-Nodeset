@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 30081 Process Automation Devices - PADIM](https://reference.opcfoundation.org/specs/OPC-30081) | 1.02.0 | 2025-11-26 | [Process Automation Devices - PADIM](https://opcfoundation.org/about/working-groups/view/10) | `Opc.Ua.PADIM.NodeSet2.xml` |
+| [OPC 30081 Process Automation Devices - PADIM](https://reference.opcfoundation.org/specs/OPC-30081) | 1.02.0 | 2025-11-26 | [Process Automation Devices - PADIM](https://opcfoundation.org/about/working-groups/view/10) | `Opc.Ua.IRDI.NodeSet2.xml`, `Opc.Ua.PADIM.NodeSet2.xml` |
 
 ### IRDI dictionary
 

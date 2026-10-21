@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 40400-1 UA for Powertrain](https://reference.opcfoundation.org/specs/OPC-40400-1) | 1.0.0 | 2024-11-01 | [Powertrain](https://opcfoundation.org/about/working-groups/view/23) | `Opc.Ua.Powertrain.NodeSet2.xml` |
+| [OPC 40400-1 UA for Powertrain](https://reference.opcfoundation.org/specs/OPC-40400-1) | 1.0.0 | 2024-11-01 | [Powertrain](https://opcfoundation.org/about/working-groups/view/23) | `Opc.Ua.Powertrain.NodeSet2.xml`, `powertraindictionary.nodeset2.xml` |
 
 ### NodeSet versions
 

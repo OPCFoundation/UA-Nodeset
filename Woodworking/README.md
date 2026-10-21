@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 40550-1 Woodworking Machinery - Vertical Interface](https://reference.opcfoundation.org/specs/OPC-40550-1) | 0.14 | 2021-01-27 | [Woodworking Machinery](https://opcfoundation.org/about/working-groups/view/25) | `Opc.Ua.Eumabois.Nodeset2.xml` |
+| [OPC 40550-1 Woodworking Machinery - Vertical Interface](https://reference.opcfoundation.org/specs/OPC-40550-1) | 0.14 | 2021-01-27 | [Woodworking Machinery](https://opcfoundation.org/about/working-groups/view/25) | `Opc.Ua.Eumabois.Nodeset2.xml`, `Opc.Ua.Woodworking.NodeSet2.xml` |
 
 ### NodeSet versions
 

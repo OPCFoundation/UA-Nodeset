@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 40570 Wire Harness Manufacturing](https://reference.opcfoundation.org/specs/OPC-40570) | 1.0.0 | 2025-04-01 | [Cable Harness Manufacturing](https://opcfoundation.org/about/working-groups/view/86) | `opc.ua.wireharness.nodeset2.xml` |
+| [OPC 40570 Wire Harness Manufacturing](https://reference.opcfoundation.org/specs/OPC-40570) | 1.0.0 | 2025-04-01 | [Cable Harness Manufacturing](https://opcfoundation.org/about/working-groups/view/86) | `opc.ua.wireharness.nodeset2.xml`, `opc.ua.wireharness.vec.nodeset2.xml` |
 
 ## Reporting issues
 

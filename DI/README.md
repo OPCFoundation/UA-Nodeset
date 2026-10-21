@@ -10,7 +10,7 @@ Normative files for the specification below, released by the OPC Foundation. See
 
 | Specification | Version | Publication date | Working group | NodeSets |
 |--|--|--|--|--|
-| [OPC 10000-100 Devices](https://reference.opcfoundation.org/specs/OPC-10000-100) | 1.05.0 | 2025-11-15 | [Basic Devices Model - DI](https://opcfoundation.org/about/working-groups/view/3) | `Opc.Ua.Di.NodeSet2.xml` |
+| [OPC 10000-100 Devices](https://reference.opcfoundation.org/specs/OPC-10000-100) | 1.05.0 | 2025-11-15 | [Basic Devices Model - DI](https://opcfoundation.org/about/working-groups/view/3) | `Opc.Ua.Di.NodeSet2.xml`, `Opc.Ua.Di.PackageMetadata.NodeSet2.xml` |
 
 ### NodeSet versions
 
