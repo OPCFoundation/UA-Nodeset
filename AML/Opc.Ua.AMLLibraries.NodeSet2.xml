@@ -34,8 +34,8 @@
     <Uri>http://opcfoundation.org/UA/AMLLibs/</Uri>
   </NamespaceUris>
   <Models>
-	<Model ModelUri="http://opcfoundation.org/UA/AMLLibs/" >
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/AML/" />
+	<Model ModelUri="http://opcfoundation.org/UA/AMLLibs/" Version="1.00" PublicationDate="2016-02-22T00:00:01Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/AML/" Version="1.00" PublicationDate="2016-02-22T00:00:01Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2019-05-01T00:00:00Z" />
     </Model>
   </Models>
