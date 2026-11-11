@@ -1,0 +1,40 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<xs:schema targetNamespace="http://opcfoundation.org/UA/PlasticsRubber/Moulds/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/Moulds/Types.xsd" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:complexType name="CavityCycleCounterDataType">
+        <xs:annotation>
+            <xs:documentation>Provides information about the cycle counter of one cavity of the mould.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element maxOccurs="1" name="CavityId" minOccurs="0" type="xs:string"/>
+            <xs:element maxOccurs="1" name="CavityCycleCounter" minOccurs="0" type="xs:unsignedLong"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CavityCycleCounterDataType" type="tns:CavityCycleCounterDataType"/>
+    <xs:complexType name="ListOfCavityCycleCounterDataType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" nillable="true" name="CavityCycleCounterDataType" minOccurs="0" type="tns:CavityCycleCounterDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" name="ListOfCavityCycleCounterDataType" type="tns:ListOfCavityCycleCounterDataType"/>
+    <xs:complexType name="CavityStructureDataType">
+        <xs:annotation>
+            <xs:documentation>Provides information about one cavity of the mould</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element maxOccurs="1" name="CavityId" minOccurs="0" type="xs:string"/>
+            <xs:element maxOccurs="1" name="CavityActive" minOccurs="0" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CavityStructureDataType" type="tns:CavityStructureDataType"/>
+    <xs:complexType name="ListOfCavityStructureDataType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" nillable="true" name="CavityStructureDataType" minOccurs="0" type="tns:CavityStructureDataType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element nillable="true" name="ListOfCavityStructureDataType" type="tns:ListOfCavityStructureDataType"/>
+</xs:schema>

@@ -1,0 +1,18 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<opc:TypeDictionary xmlns:ua="http://opcfoundation.org/UA/" xmlns:tns="http://opcfoundation.org/UA/PlasticsRubber/Moulds/" xmlns:opc="http://opcfoundation.org/BinarySchema/" DefaultByteOrder="LittleEndian" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/Moulds/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType Name="CavityCycleCounterDataType" BaseType="ua:ExtensionObject">
+        <opc:Documentation>Provides information about the cycle counter of one cavity of the mould.</opc:Documentation>
+        <opc:Field Name="CavityId" TypeName="opc:CharArray"/>
+        <opc:Field Name="CavityCycleCounter" TypeName="opc:UInt64"/>
+    </opc:StructuredType>
+    <opc:StructuredType Name="CavityStructureDataType" BaseType="ua:ExtensionObject">
+        <opc:Documentation>Provides information about one cavity of the mould</opc:Documentation>
+        <opc:Field Name="CavityId" TypeName="opc:CharArray"/>
+        <opc:Field Name="CavityActive" TypeName="opc:Boolean"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>
