@@ -1,0 +1,22 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/DigitalProductPassport/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/DigitalProductPassport/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+  <xs:simpleType name="GranularityEnumeration">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Model_0" />
+      <xs:enumeration value="Batch_1" />
+      <xs:enumeration value="Item_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GranularityEnumeration" type="tns:GranularityEnumeration" />
+  <xs:complexType name="ListOfGranularityEnumeration">
+    <xs:sequence>
+      <xs:element name="GranularityEnumeration" type="tns:GranularityEnumeration" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfGranularityEnumeration" type="tns:ListOfGranularityEnumeration" nillable="true" />
+</xs:schema>
