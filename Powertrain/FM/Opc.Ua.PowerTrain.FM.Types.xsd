@@ -1,0 +1,93 @@
+<!--
+SPDX-FileCopyrightText: Copyright (c) 2026, OPC Federation AISBL
+SPDX-License-Identifier: MIT
+-->
+
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Powertrain/FunctionalModel/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Powertrain/FunctionalModel/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="PtEventClassEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UNSPECIFIED_0"/>
+            <xs:enumeration value="MICROCONTROLLER_HARDWARE_OR_SOFTWARE_1"/>
+            <xs:enumeration value="MAINS_SUPPLY_2"/>
+            <xs:enumeration value="LOW_VOLTAGE_SUPPLY_3"/>
+            <xs:enumeration value="DC_LINK_OVERVOLTAGE_4"/>
+            <xs:enumeration value="POWER_ELECTRONICS_5"/>
+            <xs:enumeration value="OVERTEMPERATURE_ELECTRONIC_DEVICE_6"/>
+            <xs:enumeration value="ISOLATION_FAULT_7"/>
+            <xs:enumeration value="MOTOR_OVERLOAD_8"/>
+            <xs:enumeration value="FIELDBUS_SYSTEM_9"/>
+            <xs:enumeration value="SAFETY_CHANNEL_10"/>
+            <xs:enumeration value="FEEDBACK_11"/>
+            <xs:enumeration value="INTERNAL_COMMUNICATION_12"/>
+            <xs:enumeration value="INFEED_13"/>
+            <xs:enumeration value="BRAKE_RESISTOR_14"/>
+            <xs:enumeration value="LINE_FILTER_15"/>
+            <xs:enumeration value="EXTERNAL_16"/>
+            <xs:enumeration value="TECHNOLOGY_17"/>
+            <xs:enumeration value="ENGINEERING_18"/>
+            <xs:enumeration value="OTHER_19"/>
+            <xs:enumeration value="AUXILIARY_DEVICE_20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:PtEventClassEnumeration" name="PtEventClassEnumeration"/>
+    <xs:complexType name="ListOfPtEventClassEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PtEventClassEnumeration" name="PtEventClassEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPtEventClassEnumeration" name="ListOfPtEventClassEnumeration" nillable="true"/>
+    <xs:simpleType name="PtEventTypeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UNSPECIFIED_0"/>
+            <xs:enumeration value="FAULT_1"/>
+            <xs:enumeration value="WARNING_2"/>
+            <xs:enumeration value="MAINTENANCE_3"/>
+            <xs:enumeration value="MAINTENANCE_REQUIRED_4"/>
+            <xs:enumeration value="MAINTENANCE_DEMANDED_5"/>
+            <xs:enumeration value="MAINTENANCE_CALIBRATION_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:PtEventTypeEnumeration" name="PtEventTypeEnumeration"/>
+    <xs:complexType name="ListOfPtEventTypeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PtEventTypeEnumeration" name="PtEventTypeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPtEventTypeEnumeration" name="ListOfPtEventTypeEnumeration" nillable="true"/>
+    <xs:complexType name="PtGearFactorDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="InputTurns"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="OutputTurns"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PtGearFactorDataType" name="PtGearFactorDataType"/>
+    <xs:complexType name="ListOfPtGearFactorDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PtGearFactorDataType" name="PtGearFactorDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPtGearFactorDataType" name="ListOfPtGearFactorDataType" nillable="true"/>
+    <xs:complexType name="PtLogEntryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="FaultSituationNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="EventNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:PtEventTypeEnumeration" name="EventType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:PtEventClassEnumeration" name="EventClass"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="VendorEventCode"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="VendorEventSubcode"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="EventText"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EventComing"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EventGoing"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EventAcknowledged"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:PtLogEntryDataType" name="PtLogEntryDataType"/>
+    <xs:complexType name="ListOfPtLogEntryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PtLogEntryDataType" name="PtLogEntryDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPtLogEntryDataType" name="ListOfPtLogEntryDataType" nillable="true"/>
+</xs:schema>
